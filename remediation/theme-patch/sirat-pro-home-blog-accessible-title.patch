@@ -1,0 +1,11 @@
+--- wp-content/themes/sirat-pro/template-parts/home/section-our-blog.php
++++ wp-content/themes/sirat-pro/template-parts/home/section-our-blog.php
+@@ -122,7 +122,7 @@
+               </div>
+             </div>
+             <div class="col-lg-6 col-md-6 col-sm-6 blog-info">
+-              <h3 class="aiamigos-blog-card-title"><?php the_title(); ?><span class="screen-reader-text"><?php the_title(); ?></span></h3>
++              <h3 class="aiamigos-blog-card-title"><?php the_title(); ?></h3>
+               <div class="news-text"><?php $excerpt = get_the_excerpt();
+         echo esc_html(vw_sirat_pro_string_limit_words($excerpt, $blog_excerpt)); ?></div>
+               <?php if (get_theme_mod('vw_sirat_pro_our_blog_main_link_title') != '')

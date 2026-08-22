@@ -1,0 +1,2111 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-13T16:18:33.417Z",
+  "mode": "live",
+  "baseUrl": "https://remediation.aiamigos.org/",
+  "snapshotRoot": null,
+  "durationMs": 18472,
+  "result": "fail",
+  "summary": {
+    "checks": 15,
+    "pass": 4,
+    "fail": 10,
+    "skip": 1,
+    "sitemapUrls": 106,
+    "uniqueInternalTargets": 134
+  },
+  "checks": [
+    {
+      "id": "routing.root_home_blog",
+      "title": "Root, legacy home, and blog routing",
+      "severity": "critical",
+      "status": "pass",
+      "summary": "Primary routes are consolidated.",
+      "metrics": {
+        "rootStatus": 200,
+        "oldHomeInitialStatus": 301,
+        "blogStatus": 200
+      },
+      "failures": [],
+      "notes": []
+    },
+    {
+      "id": "routing.quarantine",
+      "title": "Quarantine and preserved-route policy",
+      "severity": "critical",
+      "status": "fail",
+      "summary": "Exact quarantine or preservation rules failed.",
+      "metrics": {
+        "configuredGone": 8,
+        "configuredQuarantined": 7,
+        "configuredPreserved": 1,
+        "observed": 16,
+        "gone410": 0
+      },
+      "failures": [
+        {
+          "message": "Known demo route must return exactly 410 Gone.",
+          "url": "https://remediation.aiamigos.org/classes/recent-case-title-01/",
+          "status": 404,
+          "finalUrl": "https://remediation.aiamigos.org/classes/recent-case-title-01/"
+        },
+        {
+          "message": "Known demo route must return exactly 410 Gone.",
+          "url": "https://remediation.aiamigos.org/classes/recent-case-title-02/",
+          "status": 200,
+          "finalUrl": "https://remediation.aiamigos.org/classes/recent-case-title-02/"
+        },
+        {
+          "message": "Known demo route must return exactly 410 Gone.",
+          "url": "https://remediation.aiamigos.org/testimonials/client-name-01/",
+          "status": 200,
+          "finalUrl": "https://remediation.aiamigos.org/testimonials/client-name-01/"
+        },
+        {
+          "message": "Known demo route must return exactly 410 Gone.",
+          "url": "https://remediation.aiamigos.org/testimonials/client-name-02/",
+          "status": 200,
+          "finalUrl": "https://remediation.aiamigos.org/testimonials/client-name-02/"
+        },
+        {
+          "message": "Known demo route must return exactly 410 Gone.",
+          "url": "https://remediation.aiamigos.org/testimonials/client-name-03/",
+          "status": 200,
+          "finalUrl": "https://remediation.aiamigos.org/testimonials/client-name-03/"
+        },
+        {
+          "message": "Known demo route must return exactly 410 Gone.",
+          "url": "https://remediation.aiamigos.org/team/member-name-02/",
+          "status": 200,
+          "finalUrl": "https://remediation.aiamigos.org/team/member-name-02/"
+        },
+        {
+          "message": "Known demo route must return exactly 410 Gone.",
+          "url": "https://remediation.aiamigos.org/team/member-name-03/",
+          "status": 200,
+          "finalUrl": "https://remediation.aiamigos.org/team/member-name-03/"
+        },
+        {
+          "message": "Known demo route must return exactly 410 Gone.",
+          "url": "https://remediation.aiamigos.org/team/member-name-04/",
+          "status": 200,
+          "finalUrl": "https://remediation.aiamigos.org/team/member-name-04/"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "security.registration_closed",
+      "title": "Public account registration is closed",
+      "severity": "critical",
+      "status": "pass",
+      "summary": "Anonymous registration is closed.",
+      "metrics": {
+        "observed": true,
+        "status": 200,
+        "finalUrl": "https://remediation.aiamigos.org/wp-login.php?registration=disabled"
+      },
+      "failures": [],
+      "notes": []
+    },
+    {
+      "id": "inventory.sitemaps",
+      "title": "Sitemap and indexable inventory",
+      "severity": "critical",
+      "status": "pass",
+      "summary": "106 sitemap URLs are clean.",
+      "metrics": {
+        "sitemapFiles": 10,
+        "sitemapUrls": 106,
+        "observedPages": 106,
+        "non200": 0,
+        "redirects": 0,
+        "noindex": 0,
+        "canonicalMismatch": 0
+      },
+      "failures": [],
+      "notes": []
+    },
+    {
+      "id": "archives.pagination",
+      "title": "Blog pager uniqueness and completeness",
+      "severity": "critical",
+      "status": "fail",
+      "summary": "Pager routing, uniqueness, or completeness failed.",
+      "metrics": {
+        "postsExposed": 69,
+        "postsMissing": 0,
+        "pagerPages": 7,
+        "postSitemapUrls": 69,
+        "expectedPagerPages": 7,
+        "legacyPagerUrlsObserved": 6
+      },
+      "failures": [
+        {
+          "message": "Paginated archive titles are duplicated.",
+          "value": "blog",
+          "urls": [
+            "https://remediation.aiamigos.org/blog/",
+            "https://remediation.aiamigos.org/blog/page/2/",
+            "https://remediation.aiamigos.org/blog/page/7/",
+            "https://remediation.aiamigos.org/blog/page/3/",
+            "https://remediation.aiamigos.org/blog/page/6/",
+            "https://remediation.aiamigos.org/blog/page/4/",
+            "https://remediation.aiamigos.org/blog/page/5/"
+          ]
+        },
+        {
+          "message": "Legacy root /page/2/ does not permanently redirect to /blog/page/2/.",
+          "url": "https://remediation.aiamigos.org/page/2/",
+          "expectedFinal": "https://remediation.aiamigos.org/blog/page/2/",
+          "chain": [
+            {
+              "url": "https://remediation.aiamigos.org/page/2/",
+              "status": 200,
+              "location": null
+            }
+          ],
+          "finalUrl": "https://remediation.aiamigos.org/page/2/"
+        },
+        {
+          "message": "Legacy root /page/3/ does not permanently redirect to /blog/page/3/.",
+          "url": "https://remediation.aiamigos.org/page/3/",
+          "expectedFinal": "https://remediation.aiamigos.org/blog/page/3/",
+          "chain": [
+            {
+              "url": "https://remediation.aiamigos.org/page/3/",
+              "status": 200,
+              "location": null
+            }
+          ],
+          "finalUrl": "https://remediation.aiamigos.org/page/3/"
+        },
+        {
+          "message": "Legacy root /page/4/ does not permanently redirect to /blog/page/4/.",
+          "url": "https://remediation.aiamigos.org/page/4/",
+          "expectedFinal": "https://remediation.aiamigos.org/blog/page/4/",
+          "chain": [
+            {
+              "url": "https://remediation.aiamigos.org/page/4/",
+              "status": 200,
+              "location": null
+            }
+          ],
+          "finalUrl": "https://remediation.aiamigos.org/page/4/"
+        },
+        {
+          "message": "Legacy root /page/5/ does not permanently redirect to /blog/page/5/.",
+          "url": "https://remediation.aiamigos.org/page/5/",
+          "expectedFinal": "https://remediation.aiamigos.org/blog/page/5/",
+          "chain": [
+            {
+              "url": "https://remediation.aiamigos.org/page/5/",
+              "status": 200,
+              "location": null
+            }
+          ],
+          "finalUrl": "https://remediation.aiamigos.org/page/5/"
+        },
+        {
+          "message": "Legacy root /page/6/ does not permanently redirect to /blog/page/6/.",
+          "url": "https://remediation.aiamigos.org/page/6/",
+          "expectedFinal": "https://remediation.aiamigos.org/blog/page/6/",
+          "chain": [
+            {
+              "url": "https://remediation.aiamigos.org/page/6/",
+              "status": 200,
+              "location": null
+            }
+          ],
+          "finalUrl": "https://remediation.aiamigos.org/page/6/"
+        },
+        {
+          "message": "Legacy root /page/7/ does not permanently redirect to /blog/page/7/.",
+          "url": "https://remediation.aiamigos.org/page/7/",
+          "expectedFinal": "https://remediation.aiamigos.org/blog/page/7/",
+          "chain": [
+            {
+              "url": "https://remediation.aiamigos.org/page/7/",
+              "status": 200,
+              "location": null
+            }
+          ],
+          "finalUrl": "https://remediation.aiamigos.org/page/7/"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "links.internal_integrity",
+      "title": "Internal broken links and redirect waste",
+      "severity": "critical",
+      "status": "fail",
+      "summary": "Broken links or redirect waste remain.",
+      "metrics": {
+        "sourcePages": 107,
+        "uniqueInternalTargets": 134,
+        "discoveredArchivePagerTargets": 9,
+        "testedTargets": 143,
+        "unobservedTargets": 0,
+        "requestErrors": 0,
+        "brokenTargets": 4,
+        "redirectingTargets": 4,
+        "directNoncanonicalTargets": 1
+      },
+      "failures": [
+        {
+          "message": "Internal link points at a noncanonical scheme, host, or /index.php/ route.",
+          "url": "https://remediation.aiamigos.org/index.php/blog/",
+          "sourcePages": [
+            "https://remediation.aiamigos.org/",
+            "https://remediation.aiamigos.org/page/2/"
+          ],
+          "rawHrefs": [
+            "https://remediation.aiamigos.org/index.php/blog/"
+          ]
+        },
+        {
+          "message": "Internal destination returned 404.",
+          "url": "https://remediation.aiamigos.org/grokai/",
+          "sourcePages": [
+            "https://remediation.aiamigos.org/custom-gpt-models/"
+          ]
+        },
+        {
+          "message": "Internal destination redirects; templates should link to its final URL.",
+          "url": "https://remediation.aiamigos.org/AI-app-development",
+          "finalUrl": "https://remediation.aiamigos.org/AI-app-development/",
+          "chain": [
+            {
+              "url": "https://remediation.aiamigos.org/AI-app-development",
+              "status": 301,
+              "location": "https://remediation.aiamigos.org/AI-app-development/"
+            },
+            {
+              "url": "https://remediation.aiamigos.org/AI-app-development/",
+              "status": 200,
+              "location": null
+            }
+          ],
+          "sourcePages": [
+            "https://remediation.aiamigos.org/prompt-engineering/"
+          ]
+        },
+        {
+          "message": "Internal destination redirects; templates should link to its final URL.",
+          "url": "https://remediation.aiamigos.org/the-magical-world-of-ai-from-baby-steps-to-quantum-leaps/",
+          "finalUrl": "https://remediation.aiamigos.org/ai-evolution/",
+          "chain": [
+            {
+              "url": "https://remediation.aiamigos.org/the-magical-world-of-ai-from-baby-steps-to-quantum-leaps/",
+              "status": 301,
+              "location": "https://remediation.aiamigos.org/ai-evolution/"
+            },
+            {
+              "url": "https://remediation.aiamigos.org/ai-evolution/",
+              "status": 200,
+              "location": null
+            }
+          ],
+          "sourcePages": [
+            "https://remediation.aiamigos.org/generative-ai-solutions/",
+            "https://remediation.aiamigos.org/co-evolving-ai/",
+            "https://remediation.aiamigos.org/ai-in-finance/",
+            "https://remediation.aiamigos.org/ai-in-healthcare/",
+            "https://remediation.aiamigos.org/large-language-model/",
+            "https://remediation.aiamigos.org/artificial-intelligence-ai/",
+            "https://remediation.aiamigos.org/ai-data-types-models/",
+            "https://remediation.aiamigos.org/text-to-video-software/",
+            "https://remediation.aiamigos.org/ais-dawn-revolutionizing-the-digital-realm/"
+          ]
+        },
+        {
+          "message": "Internal destination returned 404.",
+          "url": "https://remediation.aiamigos.org/demystifying-artificial-intelligence-ai-how-does-it-shape-our-world",
+          "sourcePages": [
+            "https://remediation.aiamigos.org/latest-blog-title-01/"
+          ]
+        },
+        {
+          "message": "Internal destination redirects; templates should link to its final URL.",
+          "url": "https://remediation.aiamigos.org/index.php/blog/",
+          "finalUrl": "https://remediation.aiamigos.org/blog/",
+          "chain": [
+            {
+              "url": "https://remediation.aiamigos.org/index.php/blog/",
+              "status": 301,
+              "location": "https://remediation.aiamigos.org/blog/"
+            },
+            {
+              "url": "https://remediation.aiamigos.org/blog/",
+              "status": 200,
+              "location": null
+            }
+          ],
+          "sourcePages": [
+            "https://remediation.aiamigos.org/",
+            "https://remediation.aiamigos.org/page/2/"
+          ]
+        },
+        {
+          "message": "Internal destination returned 404.",
+          "url": "https://remediation.aiamigos.org/academy/www.youtube.com/@Aieducation4kids",
+          "sourcePages": [
+            "https://remediation.aiamigos.org/academy/"
+          ]
+        },
+        {
+          "message": "Internal destination redirects; templates should link to its final URL.",
+          "url": "https://remediation.aiamigos.org/ai-career-path/",
+          "finalUrl": "https://remediation.aiamigos.org/ai-career-paths/",
+          "chain": [
+            {
+              "url": "https://remediation.aiamigos.org/ai-career-path/",
+              "status": 301,
+              "location": "https://remediation.aiamigos.org/ai-career-paths/"
+            },
+            {
+              "url": "https://remediation.aiamigos.org/ai-career-paths/",
+              "status": 200,
+              "location": null
+            }
+          ],
+          "sourcePages": [
+            "https://remediation.aiamigos.org/ai-career/"
+          ]
+        },
+        {
+          "message": "Internal destination returned 404.",
+          "url": "https://remediation.aiamigos.org/ai-certifications/",
+          "sourcePages": [
+            "https://remediation.aiamigos.org/ai-career/"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "inventory.discovered_indexables",
+      "title": "Discovered indexable routes outside canonical inventory",
+      "severity": "high",
+      "status": "fail",
+      "summary": "Legacy or redundant archives remain indexable.",
+      "metrics": {
+        "discoveredHtmlPages": 141,
+        "indexableOutsideSitemap": 35,
+        "disallowedIndexables": 19
+      },
+      "failures": [
+        {
+          "message": "Disallowed archive/legacy path is indexable.",
+          "url": "https://remediation.aiamigos.org/category/blog/",
+          "canonical": "https://remediation.aiamigos.org/category/blog/",
+          "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+        },
+        {
+          "message": "Disallowed archive/legacy path is indexable.",
+          "url": "https://remediation.aiamigos.org/page/2/",
+          "canonical": "https://remediation.aiamigos.org/",
+          "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+        },
+        {
+          "message": "Disallowed archive/legacy path is indexable.",
+          "url": "https://remediation.aiamigos.org/page/3/",
+          "canonical": "https://remediation.aiamigos.org/",
+          "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+        },
+        {
+          "message": "Disallowed archive/legacy path is indexable.",
+          "url": "https://remediation.aiamigos.org/page/4/",
+          "canonical": "https://remediation.aiamigos.org/",
+          "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+        },
+        {
+          "message": "Disallowed archive/legacy path is indexable.",
+          "url": "https://remediation.aiamigos.org/page/5/",
+          "canonical": "https://remediation.aiamigos.org/",
+          "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+        },
+        {
+          "message": "Disallowed archive/legacy path is indexable.",
+          "url": "https://remediation.aiamigos.org/page/6/",
+          "canonical": "https://remediation.aiamigos.org/",
+          "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+        },
+        {
+          "message": "Disallowed archive/legacy path is indexable.",
+          "url": "https://remediation.aiamigos.org/page/7/",
+          "canonical": "https://remediation.aiamigos.org/",
+          "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+        },
+        {
+          "message": "Disallowed archive/legacy path is indexable.",
+          "url": "https://remediation.aiamigos.org/author/aiamigos-org/",
+          "canonical": "https://remediation.aiamigos.org/author/aiamigos-org/",
+          "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+        },
+        {
+          "message": "Disallowed archive/legacy path is indexable.",
+          "url": "https://remediation.aiamigos.org/category/blog/page/2/",
+          "canonical": "https://remediation.aiamigos.org/category/blog/page/2/",
+          "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+        },
+        {
+          "message": "Disallowed archive/legacy path is indexable.",
+          "url": "https://remediation.aiamigos.org/category/blog/page/6/",
+          "canonical": "https://remediation.aiamigos.org/category/blog/page/6/",
+          "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+        },
+        {
+          "message": "Disallowed archive/legacy path is indexable.",
+          "url": "https://remediation.aiamigos.org/author/aiamigos-org/page/2/",
+          "canonical": "https://remediation.aiamigos.org/author/aiamigos-org/page/2/",
+          "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+        },
+        {
+          "message": "Disallowed archive/legacy path is indexable.",
+          "url": "https://remediation.aiamigos.org/author/aiamigos-org/page/7/",
+          "canonical": "https://remediation.aiamigos.org/author/aiamigos-org/page/7/",
+          "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+        },
+        {
+          "message": "Disallowed archive/legacy path is indexable.",
+          "url": "https://remediation.aiamigos.org/category/blog/page/3/",
+          "canonical": "https://remediation.aiamigos.org/category/blog/page/3/",
+          "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+        },
+        {
+          "message": "Disallowed archive/legacy path is indexable.",
+          "url": "https://remediation.aiamigos.org/category/blog/page/5/",
+          "canonical": "https://remediation.aiamigos.org/category/blog/page/5/",
+          "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+        },
+        {
+          "message": "Disallowed archive/legacy path is indexable.",
+          "url": "https://remediation.aiamigos.org/author/aiamigos-org/page/3/",
+          "canonical": "https://remediation.aiamigos.org/author/aiamigos-org/page/3/",
+          "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+        },
+        {
+          "message": "Disallowed archive/legacy path is indexable.",
+          "url": "https://remediation.aiamigos.org/author/aiamigos-org/page/6/",
+          "canonical": "https://remediation.aiamigos.org/author/aiamigos-org/page/6/",
+          "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+        },
+        {
+          "message": "Disallowed archive/legacy path is indexable.",
+          "url": "https://remediation.aiamigos.org/category/blog/page/4/",
+          "canonical": "https://remediation.aiamigos.org/category/blog/page/4/",
+          "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+        },
+        {
+          "message": "Disallowed archive/legacy path is indexable.",
+          "url": "https://remediation.aiamigos.org/author/aiamigos-org/page/4/",
+          "canonical": "https://remediation.aiamigos.org/author/aiamigos-org/page/4/",
+          "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+        },
+        {
+          "message": "Disallowed archive/legacy path is indexable.",
+          "url": "https://remediation.aiamigos.org/author/aiamigos-org/page/5/",
+          "canonical": "https://remediation.aiamigos.org/author/aiamigos-org/page/5/",
+          "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+        }
+      ],
+      "notes": [
+        "Indexable pagination may legitimately sit outside XML sitemaps; only configured disallowed path classes fail this check."
+      ]
+    },
+    {
+      "id": "pages.metadata",
+      "title": "Metadata, canonicals, and social cards",
+      "severity": "high",
+      "status": "fail",
+      "summary": "Metadata remediation remains incomplete.",
+      "metrics": {
+        "pages": 106,
+        "missingTitles": 0,
+        "missingDescriptions": 10,
+        "longTitles": 36,
+        "longDescriptions": 48,
+        "incompleteOpenGraph": 22,
+        "incompleteTwitter": 23
+      },
+      "failures": [
+        {
+          "message": "Title is shorter than 10 characters.",
+          "url": "https://remediation.aiamigos.org/blog/",
+          "title": "Blog",
+          "length": 4
+        },
+        {
+          "message": "Missing meta description.",
+          "url": "https://remediation.aiamigos.org/blog/"
+        },
+        {
+          "message": "Core Open Graph fields are incomplete.",
+          "url": "https://remediation.aiamigos.org/blog/",
+          "og": {
+            "title": "Blog",
+            "description": "Introduction In the insurance and financial sectors, the conversation has shifted. We are no longer just talking about “chatbots” or simple text generation. We are talking about Agentic AI systems that can reason, plan, and execute complex enterprise workflows. As we look to build the next generation of SaaS platforms at the enterprise level, security, [&hellip;]",
+            "image": null,
+            "url": "https://remediation.aiamigos.org/blog/"
+          }
+        },
+        {
+          "message": "Core Twitter card fields are incomplete.",
+          "url": "https://remediation.aiamigos.org/blog/",
+          "twitter": {
+            "title": "Blog",
+            "description": "Introduction In the insurance and financial sectors, the conversation has shifted. We are no longer just talking about “chatbots” or simple text generation. We are talking about Agentic AI systems that can reason, plan, and execute complex enterprise workflows. As we look to build the next generation of SaaS platforms at the enterprise level, security, [&hellip;]",
+            "image": null,
+            "card": "summary_large_image"
+          }
+        },
+        {
+          "message": "Title exceeds 60 characters.",
+          "url": "https://remediation.aiamigos.org/building-agentic-ai-saas-a-strategic-roadmap-using-google-gemini-enterprise/",
+          "title": "Building Agentic AI SaaS: A Strategic Roadmap Using Google Gemini Enterprise",
+          "length": 76
+        },
+        {
+          "message": "Title exceeds 60 characters.",
+          "url": "https://remediation.aiamigos.org/langgraph-5-stunning-secrets-for-building-a-generative-ai-application/",
+          "title": "LangGraph: 5 Stunning Secrets for Building a Generative AI Application",
+          "length": 70
+        },
+        {
+          "message": "Meta description exceeds 160 characters.",
+          "url": "https://remediation.aiamigos.org/langgraph-5-stunning-secrets-for-building-a-generative-ai-application/",
+          "length": 433
+        },
+        {
+          "message": "Core Open Graph fields are incomplete.",
+          "url": "https://remediation.aiamigos.org/langgraph-5-stunning-secrets-for-building-a-generative-ai-application/",
+          "og": {
+            "title": "LangGraph: 5 Stunning Secrets for Building a Generative AI Application",
+            "description": "LangGraph Building robust, enterprise-grade AI applications often means juggling multiple data sources—internal databases, intranet systems, web searches, and third-party APIs. Traditional approaches can quickly become unwieldy, especially when you have to orchestrate many steps and maintain state across them. LangGraph provides a graph-based solution for creating multi-agent, stateful workflows with large language models (LLMs).",
+            "image": null,
+            "url": "https://remediation.aiamigos.org/langgraph-5-stunning-secrets-for-building-a-generative-ai-application/"
+          }
+        },
+        {
+          "message": "Core Twitter card fields are incomplete.",
+          "url": "https://remediation.aiamigos.org/langgraph-5-stunning-secrets-for-building-a-generative-ai-application/",
+          "twitter": {
+            "title": "LangGraph: 5 Stunning Secrets for Building a Generative AI Application",
+            "description": "LangGraph Building robust, enterprise-grade AI applications often means juggling multiple data sources—internal databases, intranet systems, web searches, and third-party APIs. Traditional approaches can quickly become unwieldy, especially when you have to orchestrate many steps and maintain state across them. LangGraph provides a graph-based solution for creating multi-agent, stateful workflows with large language models (LLMs).",
+            "image": null,
+            "card": "summary_large_image"
+          }
+        },
+        {
+          "message": "Title exceeds 60 characters.",
+          "url": "https://remediation.aiamigos.org/ways-to-test-a-rag-architecture-based-generative-ai-application/",
+          "title": "Ways to Test a RAG Architecture-Based Generative AI Application",
+          "length": 63
+        },
+        {
+          "message": "Core Open Graph fields are incomplete.",
+          "url": "https://remediation.aiamigos.org/ways-to-test-a-rag-architecture-based-generative-ai-application/",
+          "og": {
+            "title": "Ways to Test a RAG Architecture-Based Generative AI Application",
+            "description": "Testing a Retrieval-Augmented Generation (RAG) architecture-based generative AI application is crucial to ensure it performs effectively, efficiently, and",
+            "image": null,
+            "url": "https://remediation.aiamigos.org/ways-to-test-a-rag-architecture-based-generative-ai-application/"
+          }
+        },
+        {
+          "message": "Core Twitter card fields are incomplete.",
+          "url": "https://remediation.aiamigos.org/ways-to-test-a-rag-architecture-based-generative-ai-application/",
+          "twitter": {
+            "title": "Ways to Test a RAG Architecture-Based Generative AI Application",
+            "description": "Testing a Retrieval-Augmented Generation (RAG) architecture-based generative AI application is crucial to ensure it performs effectively, efficiently, and",
+            "image": null,
+            "card": "summary_large_image"
+          }
+        },
+        {
+          "message": "Title exceeds 60 characters.",
+          "url": "https://remediation.aiamigos.org/rag-architecture-types-with-implementation-details-and-their-use-cases/",
+          "title": "RAG Architecture Types with Implementation Details and Use Cases",
+          "length": 64
+        },
+        {
+          "message": "Meta description exceeds 160 characters.",
+          "url": "https://remediation.aiamigos.org/rag-architecture-types-with-implementation-details-and-their-use-cases/",
+          "length": 378
+        },
+        {
+          "message": "Title exceeds 60 characters.",
+          "url": "https://remediation.aiamigos.org/tesseract-an-ocr-optical-character-recognition-tool-for-image-reading-from-excel/",
+          "title": "Tesseract, an OCR (Optical Character Recognition) tool for Image Reading from Excel",
+          "length": 83
+        },
+        {
+          "message": "Title exceeds 60 characters.",
+          "url": "https://remediation.aiamigos.org/fine-tuning-your-generative-ai-application-a-comprehensive-guide-to-parameters-and-configurations/",
+          "title": "Fine-Tuning Your Generative AI Application: A Comprehensive Guide to Parameters and Configurations",
+          "length": 98
+        },
+        {
+          "message": "Meta description exceeds 160 characters.",
+          "url": "https://remediation.aiamigos.org/fine-tuning-your-generative-ai-application-a-comprehensive-guide-to-parameters-and-configurations/",
+          "length": 201
+        },
+        {
+          "message": "Title exceeds 60 characters.",
+          "url": "https://remediation.aiamigos.org/a-comprehensive-guide-to-nvidia-monai-unlocking-ai-in-medical-imaging/",
+          "title": "A Comprehensive Guide to NVIDIA MONAI: Unlocking AI in Medical Imaging",
+          "length": 70
+        },
+        {
+          "message": "Meta description exceeds 160 characters.",
+          "url": "https://remediation.aiamigos.org/a-comprehensive-guide-to-nvidia-monai-unlocking-ai-in-medical-imaging/",
+          "length": 170
+        },
+        {
+          "message": "Title exceeds 60 characters.",
+          "url": "https://remediation.aiamigos.org/choosing-the-right-vector-database-with-caching-a-comprehensive-guide-for-genai-applications/",
+          "title": "Choosing the Right Vector Database with Caching: A Comprehensive Guide for GenAI Applications",
+          "length": 93
+        },
+        {
+          "message": "Meta description exceeds 160 characters.",
+          "url": "https://remediation.aiamigos.org/open-source-generative-ai-projects/",
+          "length": 905
+        },
+        {
+          "message": "Meta description exceeds 160 characters.",
+          "url": "https://remediation.aiamigos.org/ai-healthcare-interoperability/",
+          "length": 491
+        },
+        {
+          "message": "Meta description exceeds 160 characters.",
+          "url": "https://remediation.aiamigos.org/python-deployment-best-practices-a-comprehensive-guide/",
+          "length": 321
+        },
+        {
+          "message": "Title exceeds 60 characters.",
+          "url": "https://remediation.aiamigos.org/nvidias-chat-with-rtx-the-key-to-next-generation-chatbots-on-your-pc/",
+          "title": "NVIDIA's Chat with RTX: The Key to Next-Generation Chatbots on Your PC",
+          "length": 70
+        },
+        {
+          "message": "Title exceeds 60 characters.",
+          "url": "https://remediation.aiamigos.org/ai-evolution/",
+          "title": "AI Evolution: 13 Breakthrough Stages from Rule-Based Systems to Quantum Wonders",
+          "length": 79
+        },
+        {
+          "message": "Meta description exceeds 160 characters.",
+          "url": "https://remediation.aiamigos.org/ai-leader-with-no-code/",
+          "length": 319
+        },
+        {
+          "message": "Meta description exceeds 160 characters.",
+          "url": "https://remediation.aiamigos.org/top-20-generative-ai-tools-for-creative-exploration/",
+          "length": 343
+        },
+        {
+          "message": "Meta description exceeds 160 characters.",
+          "url": "https://remediation.aiamigos.org/applications-of-generative-ai/",
+          "length": 492
+        },
+        {
+          "message": "Meta description exceeds 160 characters.",
+          "url": "https://remediation.aiamigos.org/limitations-of-generative-ai/",
+          "length": 450
+        },
+        {
+          "message": "Meta description exceeds 160 characters.",
+          "url": "https://remediation.aiamigos.org/the-future-of-generative-ai/",
+          "length": 537
+        },
+        {
+          "message": "Meta description exceeds 160 characters.",
+          "url": "https://remediation.aiamigos.org/generative-ai-vs-traditional-ai/",
+          "length": 827
+        },
+        {
+          "message": "Meta description exceeds 160 characters.",
+          "url": "https://remediation.aiamigos.org/the-explainability-of-generative-ai-models/",
+          "length": 282
+        },
+        {
+          "message": "Meta description exceeds 160 characters.",
+          "url": "https://remediation.aiamigos.org/the-role-of-generative-ai-in-creative-industries/",
+          "length": 874
+        },
+        {
+          "message": "Meta description exceeds 160 characters.",
+          "url": "https://remediation.aiamigos.org/training-data-for-generative-ai-models/",
+          "length": 305
+        },
+        {
+          "message": "Title exceeds 60 characters.",
+          "url": "https://remediation.aiamigos.org/building-features-faster-and-better-with-ai/",
+          "title": "AI to the Rescue: Building Features Faster and Better with AI.",
+          "length": 62
+        },
+        {
+          "message": "Meta description exceeds 160 characters.",
+          "url": "https://remediation.aiamigos.org/building-features-faster-and-better-with-ai/",
+          "length": 359
+        },
+        {
+          "message": "Title exceeds 60 characters.",
+          "url": "https://remediation.aiamigos.org/how-ai-is-transforming-software-engineering/",
+          "title": "How AI is Transforming Software Engineering: Future Trends and Tools",
+          "length": 68
+        },
+        {
+          "message": "Meta description exceeds 160 characters.",
+          "url": "https://remediation.aiamigos.org/how-ai-is-transforming-software-engineering/",
+          "length": 337
+        },
+        {
+          "message": "Meta description exceeds 160 characters.",
+          "url": "https://remediation.aiamigos.org/generative-and-discriminative-models/",
+          "length": 185
+        },
+        {
+          "message": "Meta description exceeds 160 characters.",
+          "url": "https://remediation.aiamigos.org/ethical-ai/",
+          "length": 478
+        },
+        {
+          "message": "Title exceeds 60 characters.",
+          "url": "https://remediation.aiamigos.org/local-llm-on-your-laptop/",
+          "title": "Run Your Own Mini-AI: Local LLM on Your Laptop (Free, DIY, & Fun!)",
+          "length": 66
+        },
+        {
+          "message": "Meta description exceeds 160 characters.",
+          "url": "https://remediation.aiamigos.org/local-llm-on-your-laptop/",
+          "length": 489
+        },
+        {
+          "message": "Title exceeds 60 characters.",
+          "url": "https://remediation.aiamigos.org/custom-gpt-models/",
+          "title": "A Comprehensive Guide to Creating Custom GPT Models with OpenAI and GrokAI",
+          "length": 74
+        },
+        {
+          "message": "Title exceeds 60 characters.",
+          "url": "https://remediation.aiamigos.org/prompt-engineering/",
+          "title": "Prompt Engineering: 5 Key Strategies to Unlock AI's Powerful Potential",
+          "length": 70
+        },
+        {
+          "message": "Meta description exceeds 160 characters.",
+          "url": "https://remediation.aiamigos.org/prompt-engineering/",
+          "length": 286
+        },
+        {
+          "message": "Title exceeds 60 characters.",
+          "url": "https://remediation.aiamigos.org/generative-ai-solutions/",
+          "title": "Generative AI Solutions: 12 Steps to Unleash Powerful, Innovative Tech",
+          "length": 70
+        },
+        {
+          "message": "Meta description exceeds 160 characters.",
+          "url": "https://remediation.aiamigos.org/algorithms-in-artificial-intelligence/",
+          "length": 638
+        },
+        {
+          "message": "Title exceeds 60 characters.",
+          "url": "https://remediation.aiamigos.org/ai-and-robotics/",
+          "title": "AI and Robotics: Transforming Manufacturing into a Data-Driven Enterprise",
+          "length": 73
+        },
+        {
+          "message": "Title exceeds 60 characters.",
+          "url": "https://remediation.aiamigos.org/decentralized-ai/",
+          "title": "Decentralized AI: Revolutionizing Data Privacy on the Blockchain",
+          "length": 64
+        },
+        {
+          "message": "Meta description exceeds 160 characters.",
+          "url": "https://remediation.aiamigos.org/decentralized-ai/",
+          "length": 293
+        }
+      ],
+      "notes": [
+        "114 additional failure detail(s) omitted; see metrics for totals."
+      ]
+    },
+    {
+      "id": "pages.headings",
+      "title": "Heading structure",
+      "severity": "high",
+      "status": "fail",
+      "summary": "Heading defects remain.",
+      "metrics": {
+        "pages": 106,
+        "missingOrMultipleH1": 5,
+        "pagesWithBlankHeadings": 7,
+        "pagesWithLevelSkips": 16
+      },
+      "failures": [
+        {
+          "message": "Expected exactly one nonempty H1; found 0.",
+          "url": "https://remediation.aiamigos.org/blog/",
+          "h1": []
+        },
+        {
+          "message": "Expected exactly one nonempty H1; found 2.",
+          "url": "https://remediation.aiamigos.org/langgraph-5-stunning-secrets-for-building-a-generative-ai-application/",
+          "h1": [
+            {
+              "level": 1,
+              "text": "LangGraph: 5 Stunning Secrets for Building a Generative AI Application"
+            },
+            {
+              "level": 1,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "message": "Blank heading elements remain.",
+          "url": "https://remediation.aiamigos.org/langgraph-5-stunning-secrets-for-building-a-generative-ai-application/",
+          "count": 1
+        },
+        {
+          "message": "Expected exactly one nonempty H1; found 3.",
+          "url": "https://remediation.aiamigos.org/a-comprehensive-guide-to-nvidia-monai-unlocking-ai-in-medical-imaging/",
+          "h1": [
+            {
+              "level": 1,
+              "text": "A Comprehensive Guide to NVIDIA MONAI: Unlocking AI in Medical Imaging"
+            },
+            {
+              "level": 1,
+              "text": ""
+            },
+            {
+              "level": 1,
+              "text": "Introduction"
+            }
+          ]
+        },
+        {
+          "message": "Blank heading elements remain.",
+          "url": "https://remediation.aiamigos.org/a-comprehensive-guide-to-nvidia-monai-unlocking-ai-in-medical-imaging/",
+          "count": 1
+        },
+        {
+          "message": "Blank heading elements remain.",
+          "url": "https://remediation.aiamigos.org/open-source-generative-ai-projects/",
+          "count": 1
+        },
+        {
+          "message": "Expected exactly one nonempty H1; found 2.",
+          "url": "https://remediation.aiamigos.org/python-deployment-best-practices-a-comprehensive-guide/",
+          "h1": [
+            {
+              "level": 1,
+              "text": "Python Deployment Best Practices: A Comprehensive Guide"
+            },
+            {
+              "level": 1,
+              "text": "Introduction"
+            }
+          ]
+        },
+        {
+          "message": "Blank heading elements remain.",
+          "url": "https://remediation.aiamigos.org/creative-ai/",
+          "count": 1
+        },
+        {
+          "message": "Blank heading elements remain.",
+          "url": "https://remediation.aiamigos.org/large-language-model/",
+          "count": 1
+        },
+        {
+          "message": "Blank heading elements remain.",
+          "url": "https://remediation.aiamigos.org/ais-dawn-revolutionizing-the-digital-realm/",
+          "count": 1
+        },
+        {
+          "message": "Heading levels skip hierarchy.",
+          "url": "https://remediation.aiamigos.org/latest-blog-title-01/",
+          "skips": [
+            {
+              "from": 3,
+              "to": 5,
+              "text": "Why This Matters?"
+            }
+          ]
+        },
+        {
+          "message": "Expected exactly one nonempty H1; found 0.",
+          "url": "https://remediation.aiamigos.org/",
+          "h1": []
+        },
+        {
+          "message": "Heading levels skip hierarchy.",
+          "url": "https://remediation.aiamigos.org/",
+          "skips": [
+            {
+              "from": 3,
+              "to": 5,
+              "text": "Building Agentic AI SaaS: A Strategic Roadmap Using Google Gemini Enterprise Building Agentic AI SaaS: A Strategic Roadmap Using Google Gemini Enterprise"
+            }
+          ]
+        },
+        {
+          "message": "Heading levels skip hierarchy.",
+          "url": "https://remediation.aiamigos.org/classes/",
+          "skips": [
+            {
+              "from": 1,
+              "to": 3,
+              "text": "Subscribe to Newsletter"
+            }
+          ]
+        },
+        {
+          "message": "Heading levels skip hierarchy.",
+          "url": "https://remediation.aiamigos.org/ai-career-paths/",
+          "skips": [
+            {
+              "from": 1,
+              "to": 3,
+              "text": "Subscribe to Newsletter"
+            }
+          ]
+        },
+        {
+          "message": "Heading levels skip hierarchy.",
+          "url": "https://remediation.aiamigos.org/machine-learning-engineer/",
+          "skips": [
+            {
+              "from": 1,
+              "to": 3,
+              "text": "Subscribe to Newsletter"
+            }
+          ]
+        },
+        {
+          "message": "Blank heading elements remain.",
+          "url": "https://remediation.aiamigos.org/ai-career/",
+          "count": 1
+        },
+        {
+          "message": "Heading levels skip hierarchy.",
+          "url": "https://remediation.aiamigos.org/ai-career/",
+          "skips": [
+            {
+              "from": 1,
+              "to": 3,
+              "text": "Subscribe to Newsletter"
+            }
+          ]
+        },
+        {
+          "message": "Heading levels skip hierarchy.",
+          "url": "https://remediation.aiamigos.org/newsletter/",
+          "skips": [
+            {
+              "from": 1,
+              "to": 3,
+              "text": "Subscribe to Newsletter"
+            }
+          ]
+        },
+        {
+          "message": "A heading exceeds 60 words.",
+          "url": "https://remediation.aiamigos.org/about-us/",
+          "maximumWords": 353
+        },
+        {
+          "message": "Heading levels skip hierarchy.",
+          "url": "https://remediation.aiamigos.org/contact/",
+          "skips": [
+            {
+              "from": 1,
+              "to": 3,
+              "text": "Subscribe to Newsletter"
+            }
+          ]
+        },
+        {
+          "message": "Heading levels skip hierarchy.",
+          "url": "https://remediation.aiamigos.org/faq/",
+          "skips": [
+            {
+              "from": 1,
+              "to": 3,
+              "text": "Subscribe to Newsletter"
+            }
+          ]
+        },
+        {
+          "message": "Heading levels skip hierarchy.",
+          "url": "https://remediation.aiamigos.org/page/",
+          "skips": [
+            {
+              "from": 1,
+              "to": 3,
+              "text": "Subscribe to Newsletter"
+            }
+          ]
+        },
+        {
+          "message": "Heading levels skip hierarchy.",
+          "url": "https://remediation.aiamigos.org/services/",
+          "skips": [
+            {
+              "from": 3,
+              "to": 5,
+              "text": "AI for Kids"
+            }
+          ]
+        },
+        {
+          "message": "Heading levels skip hierarchy.",
+          "url": "https://remediation.aiamigos.org/classes/recent-case-title-02/",
+          "skips": [
+            {
+              "from": 1,
+              "to": 3,
+              "text": "Recent Posts"
+            }
+          ]
+        },
+        {
+          "message": "Heading levels skip hierarchy.",
+          "url": "https://remediation.aiamigos.org/team/member-name-01/",
+          "skips": [
+            {
+              "from": 1,
+              "to": 3,
+              "text": "Recent Posts"
+            }
+          ]
+        },
+        {
+          "message": "Heading levels skip hierarchy.",
+          "url": "https://remediation.aiamigos.org/team/member-name-02/",
+          "skips": [
+            {
+              "from": 1,
+              "to": 3,
+              "text": "Recent Posts"
+            }
+          ]
+        },
+        {
+          "message": "Heading levels skip hierarchy.",
+          "url": "https://remediation.aiamigos.org/team/member-name-03/",
+          "skips": [
+            {
+              "from": 1,
+              "to": 3,
+              "text": "Recent Posts"
+            }
+          ]
+        },
+        {
+          "message": "Heading levels skip hierarchy.",
+          "url": "https://remediation.aiamigos.org/team/member-name-04/",
+          "skips": [
+            {
+              "from": 1,
+              "to": 3,
+              "text": "Recent Posts"
+            }
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "pages.jsonld",
+      "title": "JSON-LD syntax and identity hygiene",
+      "severity": "high",
+      "status": "pass",
+      "summary": "JSON-LD is parseable and avoids placeholder people.",
+      "metrics": {
+        "pages": 106,
+        "missingJsonLd": 0,
+        "parseErrorPages": 0,
+        "placeholderPersonPages": 0
+      },
+      "failures": [],
+      "notes": []
+    },
+    {
+      "id": "content.leaks",
+      "title": "Shortcode, demo-copy, and placeholder leaks",
+      "severity": "critical",
+      "status": "fail",
+      "summary": "Public placeholder or shortcode leakage remains.",
+      "metrics": {
+        "pages": 106,
+        "hits": 125,
+        "affectedPages": 106,
+        "knownDemoPaths": 7,
+        "pagesWithoutMainLandmark": 2,
+        "countsByPattern": {
+          "raw_mailpoet_shortcode": 106,
+          "theme_latin_demo_copy": 7,
+          "placeholder_client_name": 3,
+          "placeholder_member_name": 3,
+          "placeholder_case_title": 1,
+          "placeholder_company_token": 0,
+          "placeholder_service_url": 1,
+          "misspelled_linkedin": 4
+        }
+      },
+      "failures": [
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://remediation.aiamigos.org/blog/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://remediation.aiamigos.org/building-agentic-ai-saas-a-strategic-roadmap-using-google-gemini-enterprise/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://remediation.aiamigos.org/langgraph-5-stunning-secrets-for-building-a-generative-ai-application/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://remediation.aiamigos.org/ways-to-test-a-rag-architecture-based-generative-ai-application/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://remediation.aiamigos.org/rag-architecture-types-with-implementation-details-and-their-use-cases/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://remediation.aiamigos.org/tesseract-an-ocr-optical-character-recognition-tool-for-image-reading-from-excel/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://remediation.aiamigos.org/fine-tuning-your-generative-ai-application-a-comprehensive-guide-to-parameters-and-configurations/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://remediation.aiamigos.org/a-comprehensive-guide-to-nvidia-monai-unlocking-ai-in-medical-imaging/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://remediation.aiamigos.org/choosing-the-right-vector-database-with-caching-a-comprehensive-guide-for-genai-applications/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://remediation.aiamigos.org/open-source-generative-ai-projects/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://remediation.aiamigos.org/ai-healthcare-interoperability/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://remediation.aiamigos.org/python-deployment-best-practices-a-comprehensive-guide/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://remediation.aiamigos.org/nvidias-chat-with-rtx-the-key-to-next-generation-chatbots-on-your-pc/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://remediation.aiamigos.org/ai-evolution/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://remediation.aiamigos.org/ai-leader-with-no-code/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://remediation.aiamigos.org/top-20-generative-ai-tools-for-creative-exploration/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://remediation.aiamigos.org/applications-of-generative-ai/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://remediation.aiamigos.org/limitations-of-generative-ai/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://remediation.aiamigos.org/the-future-of-generative-ai/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://remediation.aiamigos.org/generative-ai-vs-traditional-ai/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://remediation.aiamigos.org/the-explainability-of-generative-ai-models/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://remediation.aiamigos.org/the-role-of-generative-ai-in-creative-industries/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://remediation.aiamigos.org/training-data-for-generative-ai-models/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://remediation.aiamigos.org/building-features-faster-and-better-with-ai/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://remediation.aiamigos.org/how-ai-is-transforming-software-engineering/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://remediation.aiamigos.org/generative-and-discriminative-models/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://remediation.aiamigos.org/ethical-ai/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://remediation.aiamigos.org/local-llm-on-your-laptop/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://remediation.aiamigos.org/custom-gpt-models/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://remediation.aiamigos.org/prompt-engineering/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://remediation.aiamigos.org/generative-ai-solutions/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://remediation.aiamigos.org/algorithms-in-artificial-intelligence/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://remediation.aiamigos.org/ai-and-robotics/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://remediation.aiamigos.org/data-gen-ai/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://remediation.aiamigos.org/decentralized-ai/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://remediation.aiamigos.org/general-ai/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://remediation.aiamigos.org/creative-ai/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://remediation.aiamigos.org/self-aware-ai/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://remediation.aiamigos.org/co-evolving-ai/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://remediation.aiamigos.org/emotional-ai/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://remediation.aiamigos.org/adaptive-ai/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://remediation.aiamigos.org/superintelligent-ai/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://remediation.aiamigos.org/deep-learning-ai/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://remediation.aiamigos.org/machine-learning/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://remediation.aiamigos.org/ai-rule-based-systems/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://remediation.aiamigos.org/ai-pin-technology-and-its-5-main-benefits/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://remediation.aiamigos.org/prompt-design-and-engineering/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://remediation.aiamigos.org/ai-companies-top-100/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://remediation.aiamigos.org/ai-in-finance/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://remediation.aiamigos.org/ai-in-healthcare/",
+          "sample": "[mailpoet_form id=”3″]"
+        }
+      ],
+      "notes": [
+        "82 additional failure detail(s) omitted; see metrics for totals."
+      ]
+    },
+    {
+      "id": "resources.http_references",
+      "title": "Explicit HTTP references",
+      "severity": "medium",
+      "status": "fail",
+      "summary": "Mixed-scheme references remain.",
+      "metrics": {
+        "pages": 106,
+        "affectedPages": 106,
+        "references": 114,
+        "uniqueReferences": 9
+      },
+      "failures": [
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://remediation.aiamigos.org/blog/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://remediation.aiamigos.org/building-agentic-ai-saas-a-strategic-roadmap-using-google-gemini-enterprise/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://remediation.aiamigos.org/langgraph-5-stunning-secrets-for-building-a-generative-ai-application/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://remediation.aiamigos.org/ways-to-test-a-rag-architecture-based-generative-ai-application/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://remediation.aiamigos.org/rag-architecture-types-with-implementation-details-and-their-use-cases/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://remediation.aiamigos.org/tesseract-an-ocr-optical-character-recognition-tool-for-image-reading-from-excel/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://remediation.aiamigos.org/fine-tuning-your-generative-ai-application-a-comprehensive-guide-to-parameters-and-configurations/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://remediation.aiamigos.org/a-comprehensive-guide-to-nvidia-monai-unlocking-ai-in-medical-imaging/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://remediation.aiamigos.org/choosing-the-right-vector-database-with-caching-a-comprehensive-guide-for-genai-applications/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://remediation.aiamigos.org/open-source-generative-ai-projects/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://remediation.aiamigos.org/ai-healthcare-interoperability/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://remediation.aiamigos.org/python-deployment-best-practices-a-comprehensive-guide/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://remediation.aiamigos.org/nvidias-chat-with-rtx-the-key-to-next-generation-chatbots-on-your-pc/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://remediation.aiamigos.org/ai-evolution/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://remediation.aiamigos.org/ai-leader-with-no-code/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://remediation.aiamigos.org/top-20-generative-ai-tools-for-creative-exploration/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://remediation.aiamigos.org/applications-of-generative-ai/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://remediation.aiamigos.org/limitations-of-generative-ai/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://remediation.aiamigos.org/the-future-of-generative-ai/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://remediation.aiamigos.org/generative-ai-vs-traditional-ai/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://remediation.aiamigos.org/the-explainability-of-generative-ai-models/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://remediation.aiamigos.org/the-role-of-generative-ai-in-creative-industries/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://remediation.aiamigos.org/training-data-for-generative-ai-models/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://remediation.aiamigos.org/building-features-faster-and-better-with-ai/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://remediation.aiamigos.org/how-ai-is-transforming-software-engineering/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://remediation.aiamigos.org/generative-and-discriminative-models/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://remediation.aiamigos.org/ethical-ai/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://remediation.aiamigos.org/local-llm-on-your-laptop/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://remediation.aiamigos.org/custom-gpt-models/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://remediation.aiamigos.org/prompt-engineering/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://remediation.aiamigos.org/generative-ai-solutions/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://remediation.aiamigos.org/algorithms-in-artificial-intelligence/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://remediation.aiamigos.org/ai-and-robotics/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://remediation.aiamigos.org/data-gen-ai/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://remediation.aiamigos.org/decentralized-ai/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://remediation.aiamigos.org/general-ai/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://remediation.aiamigos.org/creative-ai/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://remediation.aiamigos.org/self-aware-ai/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://remediation.aiamigos.org/co-evolving-ai/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://remediation.aiamigos.org/emotional-ai/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://remediation.aiamigos.org/adaptive-ai/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://remediation.aiamigos.org/superintelligent-ai/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://remediation.aiamigos.org/deep-learning-ai/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://remediation.aiamigos.org/machine-learning/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://remediation.aiamigos.org/ai-rule-based-systems/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://remediation.aiamigos.org/ai-pin-technology-and-its-5-main-benefits/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://remediation.aiamigos.org/prompt-design-and-engineering/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://remediation.aiamigos.org/ai-companies-top-100/",
+          "reference": "http://ai.baidu.com/"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://remediation.aiamigos.org/ai-companies-top-100/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://remediation.aiamigos.org/ai-in-finance/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        }
+      ],
+      "notes": [
+        "64 additional failure detail(s) omitted; see metrics for totals."
+      ]
+    },
+    {
+      "id": "responses.headers",
+      "title": "Response security and cache headers",
+      "severity": "medium",
+      "status": "fail",
+      "summary": "Response hardening/caching headers remain incomplete.",
+      "metrics": {
+        "pages": 106,
+        "missingByHeader": {
+          "strict-transport-security": 106,
+          "x-content-type-options": 106,
+          "referrer-policy": 106,
+          "permissions-policy": 106
+        },
+        "missingFrameProtection": 106,
+        "missingCacheControl": 106,
+        "poweredByExposed": 106
+      },
+      "failures": [
+        {
+          "message": "strict-transport-security is missing on 106/106 HTML responses.",
+          "header": "strict-transport-security",
+          "sampleUrls": [
+            "https://remediation.aiamigos.org/blog/",
+            "https://remediation.aiamigos.org/building-agentic-ai-saas-a-strategic-roadmap-using-google-gemini-enterprise/",
+            "https://remediation.aiamigos.org/langgraph-5-stunning-secrets-for-building-a-generative-ai-application/",
+            "https://remediation.aiamigos.org/ways-to-test-a-rag-architecture-based-generative-ai-application/",
+            "https://remediation.aiamigos.org/rag-architecture-types-with-implementation-details-and-their-use-cases/",
+            "https://remediation.aiamigos.org/tesseract-an-ocr-optical-character-recognition-tool-for-image-reading-from-excel/",
+            "https://remediation.aiamigos.org/fine-tuning-your-generative-ai-application-a-comprehensive-guide-to-parameters-and-configurations/",
+            "https://remediation.aiamigos.org/a-comprehensive-guide-to-nvidia-monai-unlocking-ai-in-medical-imaging/",
+            "https://remediation.aiamigos.org/choosing-the-right-vector-database-with-caching-a-comprehensive-guide-for-genai-applications/",
+            "https://remediation.aiamigos.org/open-source-generative-ai-projects/"
+          ]
+        },
+        {
+          "message": "x-content-type-options is missing on 106/106 HTML responses.",
+          "header": "x-content-type-options",
+          "sampleUrls": [
+            "https://remediation.aiamigos.org/blog/",
+            "https://remediation.aiamigos.org/building-agentic-ai-saas-a-strategic-roadmap-using-google-gemini-enterprise/",
+            "https://remediation.aiamigos.org/langgraph-5-stunning-secrets-for-building-a-generative-ai-application/",
+            "https://remediation.aiamigos.org/ways-to-test-a-rag-architecture-based-generative-ai-application/",
+            "https://remediation.aiamigos.org/rag-architecture-types-with-implementation-details-and-their-use-cases/",
+            "https://remediation.aiamigos.org/tesseract-an-ocr-optical-character-recognition-tool-for-image-reading-from-excel/",
+            "https://remediation.aiamigos.org/fine-tuning-your-generative-ai-application-a-comprehensive-guide-to-parameters-and-configurations/",
+            "https://remediation.aiamigos.org/a-comprehensive-guide-to-nvidia-monai-unlocking-ai-in-medical-imaging/",
+            "https://remediation.aiamigos.org/choosing-the-right-vector-database-with-caching-a-comprehensive-guide-for-genai-applications/",
+            "https://remediation.aiamigos.org/open-source-generative-ai-projects/"
+          ]
+        },
+        {
+          "message": "referrer-policy is missing on 106/106 HTML responses.",
+          "header": "referrer-policy",
+          "sampleUrls": [
+            "https://remediation.aiamigos.org/blog/",
+            "https://remediation.aiamigos.org/building-agentic-ai-saas-a-strategic-roadmap-using-google-gemini-enterprise/",
+            "https://remediation.aiamigos.org/langgraph-5-stunning-secrets-for-building-a-generative-ai-application/",
+            "https://remediation.aiamigos.org/ways-to-test-a-rag-architecture-based-generative-ai-application/",
+            "https://remediation.aiamigos.org/rag-architecture-types-with-implementation-details-and-their-use-cases/",
+            "https://remediation.aiamigos.org/tesseract-an-ocr-optical-character-recognition-tool-for-image-reading-from-excel/",
+            "https://remediation.aiamigos.org/fine-tuning-your-generative-ai-application-a-comprehensive-guide-to-parameters-and-configurations/",
+            "https://remediation.aiamigos.org/a-comprehensive-guide-to-nvidia-monai-unlocking-ai-in-medical-imaging/",
+            "https://remediation.aiamigos.org/choosing-the-right-vector-database-with-caching-a-comprehensive-guide-for-genai-applications/",
+            "https://remediation.aiamigos.org/open-source-generative-ai-projects/"
+          ]
+        },
+        {
+          "message": "permissions-policy is missing on 106/106 HTML responses.",
+          "header": "permissions-policy",
+          "sampleUrls": [
+            "https://remediation.aiamigos.org/blog/",
+            "https://remediation.aiamigos.org/building-agentic-ai-saas-a-strategic-roadmap-using-google-gemini-enterprise/",
+            "https://remediation.aiamigos.org/langgraph-5-stunning-secrets-for-building-a-generative-ai-application/",
+            "https://remediation.aiamigos.org/ways-to-test-a-rag-architecture-based-generative-ai-application/",
+            "https://remediation.aiamigos.org/rag-architecture-types-with-implementation-details-and-their-use-cases/",
+            "https://remediation.aiamigos.org/tesseract-an-ocr-optical-character-recognition-tool-for-image-reading-from-excel/",
+            "https://remediation.aiamigos.org/fine-tuning-your-generative-ai-application-a-comprehensive-guide-to-parameters-and-configurations/",
+            "https://remediation.aiamigos.org/a-comprehensive-guide-to-nvidia-monai-unlocking-ai-in-medical-imaging/",
+            "https://remediation.aiamigos.org/choosing-the-right-vector-database-with-caching-a-comprehensive-guide-for-genai-applications/",
+            "https://remediation.aiamigos.org/open-source-generative-ai-projects/"
+          ]
+        },
+        {
+          "message": "Frame protection is missing on 106/106 HTML responses.",
+          "sampleUrls": [
+            "https://remediation.aiamigos.org/blog/",
+            "https://remediation.aiamigos.org/building-agentic-ai-saas-a-strategic-roadmap-using-google-gemini-enterprise/",
+            "https://remediation.aiamigos.org/langgraph-5-stunning-secrets-for-building-a-generative-ai-application/",
+            "https://remediation.aiamigos.org/ways-to-test-a-rag-architecture-based-generative-ai-application/",
+            "https://remediation.aiamigos.org/rag-architecture-types-with-implementation-details-and-their-use-cases/",
+            "https://remediation.aiamigos.org/tesseract-an-ocr-optical-character-recognition-tool-for-image-reading-from-excel/",
+            "https://remediation.aiamigos.org/fine-tuning-your-generative-ai-application-a-comprehensive-guide-to-parameters-and-configurations/",
+            "https://remediation.aiamigos.org/a-comprehensive-guide-to-nvidia-monai-unlocking-ai-in-medical-imaging/",
+            "https://remediation.aiamigos.org/choosing-the-right-vector-database-with-caching-a-comprehensive-guide-for-genai-applications/",
+            "https://remediation.aiamigos.org/open-source-generative-ai-projects/"
+          ]
+        },
+        {
+          "message": "Explicit HTML Cache-Control is missing on 106/106 responses.",
+          "sampleUrls": [
+            "https://remediation.aiamigos.org/blog/",
+            "https://remediation.aiamigos.org/building-agentic-ai-saas-a-strategic-roadmap-using-google-gemini-enterprise/",
+            "https://remediation.aiamigos.org/langgraph-5-stunning-secrets-for-building-a-generative-ai-application/",
+            "https://remediation.aiamigos.org/ways-to-test-a-rag-architecture-based-generative-ai-application/",
+            "https://remediation.aiamigos.org/rag-architecture-types-with-implementation-details-and-their-use-cases/",
+            "https://remediation.aiamigos.org/tesseract-an-ocr-optical-character-recognition-tool-for-image-reading-from-excel/",
+            "https://remediation.aiamigos.org/fine-tuning-your-generative-ai-application-a-comprehensive-guide-to-parameters-and-configurations/",
+            "https://remediation.aiamigos.org/a-comprehensive-guide-to-nvidia-monai-unlocking-ai-in-medical-imaging/",
+            "https://remediation.aiamigos.org/choosing-the-right-vector-database-with-caching-a-comprehensive-guide-for-genai-applications/",
+            "https://remediation.aiamigos.org/open-source-generative-ai-projects/"
+          ]
+        },
+        {
+          "message": "X-Powered-By is exposed on 106/106 responses.",
+          "values": [
+            "PHP/8.1.34"
+          ],
+          "sampleUrls": [
+            "https://remediation.aiamigos.org/blog/",
+            "https://remediation.aiamigos.org/building-agentic-ai-saas-a-strategic-roadmap-using-google-gemini-enterprise/",
+            "https://remediation.aiamigos.org/langgraph-5-stunning-secrets-for-building-a-generative-ai-application/",
+            "https://remediation.aiamigos.org/ways-to-test-a-rag-architecture-based-generative-ai-application/",
+            "https://remediation.aiamigos.org/rag-architecture-types-with-implementation-details-and-their-use-cases/",
+            "https://remediation.aiamigos.org/tesseract-an-ocr-optical-character-recognition-tool-for-image-reading-from-excel/",
+            "https://remediation.aiamigos.org/fine-tuning-your-generative-ai-application-a-comprehensive-guide-to-parameters-and-configurations/",
+            "https://remediation.aiamigos.org/a-comprehensive-guide-to-nvidia-monai-unlocking-ai-in-medical-imaging/",
+            "https://remediation.aiamigos.org/choosing-the-right-vector-database-with-caching-a-comprehensive-guide-for-genai-applications/",
+            "https://remediation.aiamigos.org/open-source-generative-ai-projects/"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "browser.runtime",
+      "title": "Rendered console and runtime health",
+      "severity": "high",
+      "status": "skip",
+      "summary": "Rendered runtime was not observed.",
+      "metrics": {
+        "pages": 0,
+        "exceptions": 0,
+        "consoleErrors": 0,
+        "logErrors": 0,
+        "networkFailures": 0
+      },
+      "failures": [],
+      "notes": [
+        "Browser probing disabled by CLI."
+      ]
+    },
+    {
+      "id": "performance.budgets",
+      "title": "HTML and rendered transfer budgets",
+      "severity": "high",
+      "status": "fail",
+      "summary": "One or more performance budgets failed.",
+      "metrics": {
+        "staticPages": [
+          {
+            "url": "https://remediation.aiamigos.org/",
+            "htmlBytes": 143395,
+            "scripts": 27,
+            "elements": 689
+          },
+          {
+            "url": "https://remediation.aiamigos.org/blog/",
+            "htmlBytes": 122238,
+            "scripts": 27,
+            "elements": 504
+          },
+          {
+            "url": "https://remediation.aiamigos.org/page/2/",
+            "htmlBytes": 143242,
+            "scripts": 27,
+            "elements": 689
+          }
+        ],
+        "browserPages": [],
+        "budgets": {
+          "htmlBytes": 250000,
+          "totalTransferBytes": 3000000,
+          "imageTransferBytes": 1500000,
+          "scriptTransferBytes": 750000,
+          "resourceCount": 80,
+          "scriptCount": 20,
+          "domNodes": 1500,
+          "horizontalOverflowPx": 0
+        }
+      },
+      "failures": [
+        {
+          "message": "Static script count exceeds budget.",
+          "url": "https://remediation.aiamigos.org/",
+          "actual": 27,
+          "budget": 20
+        },
+        {
+          "message": "Static script count exceeds budget.",
+          "url": "https://remediation.aiamigos.org/blog/",
+          "actual": 27,
+          "budget": 20
+        },
+        {
+          "message": "Static script count exceeds budget.",
+          "url": "https://remediation.aiamigos.org/page/2/",
+          "actual": 27,
+          "budget": 20
+        }
+      ],
+      "notes": [
+        "Transfer-byte and rendered-DOM budgets require live browser observation; static HTML checks still ran."
+      ]
+    }
+  ],
+  "evidence": {
+    "robots": {
+      "url": "https://remediation.aiamigos.org/robots.txt",
+      "status": 200,
+      "observed": true
+    },
+    "sitemaps": [
+      {
+        "url": "https://remediation.aiamigos.org/sitemap_index.xml",
+        "status": 200,
+        "locationCount": 7,
+        "kind": "index"
+      },
+      {
+        "url": "https://remediation.aiamigos.org/sitemap.xml",
+        "status": 200,
+        "locationCount": 7,
+        "kind": "index"
+      },
+      {
+        "url": "https://remediation.aiamigos.org/wp-sitemap.xml",
+        "status": 200,
+        "locationCount": 7,
+        "kind": "index"
+      },
+      {
+        "url": "https://remediation.aiamigos.org/post-sitemap.xml",
+        "status": 200,
+        "locationCount": 69,
+        "kind": "urlset"
+      },
+      {
+        "url": "https://remediation.aiamigos.org/page-sitemap.xml",
+        "status": 200,
+        "locationCount": 17,
+        "kind": "urlset"
+      },
+      {
+        "url": "https://remediation.aiamigos.org/services-sitemap.xml",
+        "status": 200,
+        "locationCount": 4,
+        "kind": "urlset"
+      },
+      {
+        "url": "https://remediation.aiamigos.org/classes-sitemap.xml",
+        "status": 200,
+        "locationCount": 1,
+        "kind": "urlset"
+      },
+      {
+        "url": "https://remediation.aiamigos.org/testimonials-sitemap.xml",
+        "status": 200,
+        "locationCount": 3,
+        "kind": "urlset"
+      },
+      {
+        "url": "https://remediation.aiamigos.org/team-sitemap.xml",
+        "status": 200,
+        "locationCount": 4,
+        "kind": "urlset"
+      },
+      {
+        "url": "https://remediation.aiamigos.org/category-sitemap.xml",
+        "status": 200,
+        "locationCount": 8,
+        "kind": "urlset"
+      }
+    ],
+    "browser": {
+      "skipped": true,
+      "reason": "Browser probing disabled by CLI."
+    },
+    "limitations": [
+      "This is a deterministic lab crawl, not Search Console, field Core Web Vitals, analytics, or legal validation."
+    ]
+  },
+  "config": {
+    "routes": {
+      "root": "/",
+      "oldHome": "/home/",
+      "blog": "/blog/",
+      "legacyPageTwo": "/page/2/"
+    },
+    "routePolicies": {
+      "gonePaths": [
+        "/classes/recent-case-title-01/",
+        "/classes/recent-case-title-02/",
+        "/testimonials/client-name-01/",
+        "/testimonials/client-name-02/",
+        "/testimonials/client-name-03/",
+        "/team/member-name-02/",
+        "/team/member-name-03/",
+        "/team/member-name-04/"
+      ],
+      "quarantinedPaths": [
+        "/ai-certifications/",
+        "/gpt-models/",
+        "/grokai/",
+        "/ai-model-benchmarks-a-comprehensive-guide/",
+        "/newsletter-2/",
+        "/others/",
+        "/shop/"
+      ],
+      "preservedPaths": [
+        "/team/member-name-01/"
+      ],
+      "registrationPath": "/wp-login.php?action=register"
+    },
+    "concurrency": 10,
+    "timeoutMs": 20000,
+    "maxSitemaps": 50,
+    "maxSitemapUrls": 1000,
+    "maxInternalTargets": 500,
+    "internalProbeSeedLimit": 30,
+    "maxPagerPages": 50,
+    "detailLimit": 50,
+    "expectedBrandPattern": "AI\\s*Amigos",
+    "genericRootTitlePattern": "^(?:blog|home|welcome)$",
+    "metadata": {
+      "titleMin": 10,
+      "titleMax": 60,
+      "descriptionMin": 50,
+      "descriptionMax": 160,
+      "requireSocialImages": true
+    },
+    "headings": {
+      "maxHeadingWords": 60,
+      "disallowLevelSkips": true
+    },
+    "performance": {
+      "htmlBytes": 250000,
+      "totalTransferBytes": 3000000,
+      "imageTransferBytes": 1500000,
+      "scriptTransferBytes": 750000,
+      "resourceCount": 80,
+      "scriptCount": 20,
+      "domNodes": 1500,
+      "horizontalOverflowPx": 0
+    },
+    "browser": {
+      "settleMs": 2000,
+      "width": 390,
+      "height": 844,
+      "deviceScaleFactor": 1,
+      "mobile": true,
+      "maxPages": 3
+    },
+    "requiredHeaders": [
+      "strict-transport-security",
+      "x-content-type-options",
+      "referrer-policy",
+      "permissions-policy"
+    ],
+    "requireFrameProtection": true,
+    "requireHtmlCachePolicy": true,
+    "forbidPoweredBy": true,
+    "disallowedIndexablePathPatterns": [
+      "^/author/",
+      "^/page/[2-9][0-9]*/?$",
+      "^/category/blog(?:/page/[2-9][0-9]*)?/?$"
+    ],
+    "placeholderPatterns": [
+      {
+        "id": "raw_mailpoet_shortcode",
+        "pattern": "\\[mailpoet_form\\b[^\\]]*\\]",
+        "flags": "i",
+        "scope": "body"
+      },
+      {
+        "id": "theme_latin_demo_copy",
+        "pattern": "Te obtinuit ut adepto satis somno",
+        "flags": "i"
+      },
+      {
+        "id": "placeholder_client_name",
+        "pattern": "\\bClient Name \\d{1,2}\\b",
+        "flags": "i",
+        "scope": "body"
+      },
+      {
+        "id": "placeholder_member_name",
+        "pattern": "\\bMember Name \\d{1,2}\\b",
+        "flags": "i",
+        "scope": "body"
+      },
+      {
+        "id": "placeholder_case_title",
+        "pattern": "\\bRecent Case Title \\d{1,2}\\b",
+        "flags": "i",
+        "scope": "body"
+      },
+      {
+        "id": "placeholder_company_token",
+        "pattern": "\\[Your Company Name(?:/AIAmigos\\.org)?\\]",
+        "flags": "i"
+      },
+      {
+        "id": "placeholder_service_url",
+        "pattern": "\\bService Url\\b",
+        "flags": "i"
+      },
+      {
+        "id": "misspelled_linkedin",
+        "pattern": "\\bLinkden\\b",
+        "flags": "i"
+      }
+    ]
+  }
+}

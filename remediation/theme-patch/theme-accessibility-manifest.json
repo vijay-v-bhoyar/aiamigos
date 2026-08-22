@@ -1,0 +1,20 @@
+{
+  "generatedAt": "2026-08-13",
+  "scope": "staging-only Sirat Pro accessibility patch for duplicate home blog title text",
+  "target": {
+    "remotePath": "wp-content/themes/sirat-pro/template-parts/home/section-our-blog.php",
+    "preimagePath": "remediation/theme-patch/prepared/wp-content/themes/sirat-pro/template-parts/home/section-our-blog.php",
+    "preimageSha256": "8cc6a5771f0b7ae557c263a3cf422976751eb655079f0b611a19d02828206258",
+    "preimageBytes": 5069,
+    "patchPath": "remediation/theme-patch/sirat-pro-home-blog-accessible-title.patch",
+    "patchSha256": "68ff5b996f27d13076749460ba95711d333ef26923a6878c32fcccc849377c4b",
+    "preparedReviewPath": "remediation/theme-patch/prepared-accessibility/wp-content/themes/sirat-pro/template-parts/home/section-our-blog.php",
+    "preparedReviewSha256": "1080ef43965d07b238668405b749626992c3a70b6bee8633dec9f25b746d26e5",
+    "canonicalPatchedSha256": "174c72bf0ca894cdddd60132a59d66937a0b7b86dc47b05bd8bf38872a35fd32",
+    "canonicalPatchedBytes": 5008,
+    "expectedReplacementCount": 1
+  },
+  "bytePolicy": "The hash gate applies to the exact CRLF preimage. The prepared review copy is LF-normalized; after line-ending normalization its content must equal the canonical one-line transformation. Apply the patch to the exact preimage to preserve source byte style.",
+  "rollback": "Restore the exact 8cc6a5771f0b7ae557c263a3cf422976751eb655079f0b611a19d02828206258 preimage bytes and purge only the affected staging cache key.",
+  "productionAuthorized": false
+}

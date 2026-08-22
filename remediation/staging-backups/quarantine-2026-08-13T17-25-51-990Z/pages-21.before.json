@@ -1,0 +1,121 @@
+{
+  "id": 21,
+  "date": "2023-10-08T04:44:30",
+  "date_gmt": "2023-10-08T03:44:30",
+  "guid": {
+    "rendered": "https://remediation.aiamigos.org/index.php/services/",
+    "raw": "https://remediation.aiamigos.org/index.php/services/"
+  },
+  "modified": "2023-10-08T04:44:30",
+  "modified_gmt": "2023-10-08T03:44:30",
+  "password": "",
+  "slug": "services",
+  "status": "publish",
+  "type": "page",
+  "link": "https://remediation.aiamigos.org/services/",
+  "title": {
+    "raw": "Services",
+    "rendered": "Services"
+  },
+  "content": {
+    "raw": "[sirat-pro-services]",
+    "rendered": "<div class=\"row services-short\" id=\"our-services\"><div class=\"col-lg-3 col-md-6 col-sm-6\">\n                        <div class=\"our-services-box\">\n                          <div class=\"services-icon\">\n                            <img decoding=\"async\" class=\"services-img\" src=\"http://remediation.aiamigos.org/wp-content/uploads/2023/10/DALL·E-2023-11-08-12.13.57-Create-a-colorful-and-engaging-illustration-suitable-for-a-childrens-book-cover-titled-AI-for-Kids.-The-scene-should-include-a-friendly-robot-sitt.png\" alt=\"AI for Kids post thumbnail\"/>\n                          </div>\n                          <h5 class=\"services_name\">\n                            <a href=\"https://remediation.aiamigos.org/services/ai-for-kids/\">AI for Kids</a>\n                          </h5>\n                          <div class=\"services-text\">AI for Kids (Junior) We make learning about Artificial Intelligence (AI) fun and easy for&hellip;</div>\n                          <a href=\"https://remediation.aiamigos.org/services/ai-for-kids/\">\n                            <i class=\"fas fa-arrow-circle-right\"></i><span class=\"screen-reader-text\">Service Url</span>\n                          </a>\n                        </div>\n                      </div><div class=\"col-lg-3 col-md-6 col-sm-6\">\n                        <div class=\"our-services-box\">\n                          <div class=\"services-icon\">\n                            <img decoding=\"async\" class=\"services-img\" src=\"https://remediation.aiamigos.org/wp-content/themes/sirat-pro/assets/images/services/Service1.webp\" alt=\"AI Amigos Academy post thumbnail\"/>\n                          </div>\n                          <h5 class=\"services_name\">\n                            <a href=\"https://remediation.aiamigos.org/services/ai-amigos-academy/\">AI Amigos Academy</a>\n                          </h5>\n                          <div class=\"services-text\">At AI Amigos Academy, we&#8217;re dedicated to making the world of Artificial Intelligence (AI) engaging&hellip;</div>\n                          <a href=\"https://remediation.aiamigos.org/services/ai-amigos-academy/\">\n                            <i class=\"fas fa-arrow-circle-right\"></i><span class=\"screen-reader-text\">Service Url</span>\n                          </a>\n                        </div>\n                      </div><div class=\"clearfix\"></div><div class=\"col-lg-3 col-md-6 col-sm-6\">\n                        <div class=\"our-services-box\">\n                          <div class=\"services-icon\">\n                            <img decoding=\"async\" class=\"services-img\" src=\"https://remediation.aiamigos.org/wp-content/themes/sirat-pro/assets/images/services/Service2.webp\" alt=\"AI Amigos Business post thumbnail\"/>\n                          </div>\n                          <h5 class=\"services_name\">\n                            <a href=\"https://remediation.aiamigos.org/services/ai-amigos-pro/\">AI Amigos Business</a>\n                          </h5>\n                          <div class=\"services-text\">At AI Amigos Business, we&#8217;re at the forefront of Artificial Intelligence (AI) advancements, offering insights&hellip;</div>\n                          <a href=\"https://remediation.aiamigos.org/services/ai-amigos-pro/\">\n                            <i class=\"fas fa-arrow-circle-right\"></i><span class=\"screen-reader-text\">Service Url</span>\n                          </a>\n                        </div>\n                      </div><div class=\"col-lg-3 col-md-6 col-sm-6\">\n                        <div class=\"our-services-box\">\n                          <div class=\"services-icon\">\n                            <img decoding=\"async\" class=\"services-img\" src=\"https://remediation.aiamigos.org/wp-content/themes/sirat-pro/assets/images/services/Service3.webp\" alt=\"AI by Job Role post thumbnail\"/>\n                          </div>\n                          <h5 class=\"services_name\">\n                            <a href=\"https://remediation.aiamigos.org/services/ai-by-job-role/\">AI by Job Role</a>\n                          </h5>\n                          <div class=\"services-text\">At AI Amigos for Every Role, we recognize the diverse applications of AI across various&hellip;</div>\n                          <a href=\"https://remediation.aiamigos.org/services/ai-by-job-role/\">\n                            <i class=\"fas fa-arrow-circle-right\"></i><span class=\"screen-reader-text\">Service Url</span>\n                          </a>\n                        </div>\n                      </div><div class=\"clearfix\"></div></div>\n",
+    "protected": false,
+    "block_version": 0
+  },
+  "excerpt": {
+    "raw": "",
+    "rendered": "",
+    "protected": false
+  },
+  "author": 1,
+  "featured_media": 0,
+  "parent": 0,
+  "menu_order": 0,
+  "comment_status": "closed",
+  "ping_status": "closed",
+  "template": "",
+  "meta": {
+    "footnotes": ""
+  },
+  "permalink_template": "https://remediation.aiamigos.org/%pagename%/",
+  "generated_slug": "services",
+  "class_list": [
+    "post-21",
+    "page",
+    "type-page",
+    "status-publish",
+    "hentry"
+  ],
+  "_links": {
+    "self": [
+      {
+        "href": "https://remediation.aiamigos.org/wp-json/wp/v2/pages/21",
+        "targetHints": {
+          "allow": [
+            "GET",
+            "POST",
+            "PUT",
+            "PATCH",
+            "DELETE"
+          ]
+        }
+      }
+    ],
+    "collection": [
+      {
+        "href": "https://remediation.aiamigos.org/wp-json/wp/v2/pages"
+      }
+    ],
+    "about": [
+      {
+        "href": "https://remediation.aiamigos.org/wp-json/wp/v2/types/page"
+      }
+    ],
+    "author": [
+      {
+        "embeddable": true,
+        "href": "https://remediation.aiamigos.org/wp-json/wp/v2/users/1"
+      }
+    ],
+    "replies": [
+      {
+        "embeddable": true,
+        "href": "https://remediation.aiamigos.org/wp-json/wp/v2/comments?post=21"
+      }
+    ],
+    "version-history": [
+      {
+        "count": 0,
+        "href": "https://remediation.aiamigos.org/wp-json/wp/v2/pages/21/revisions"
+      }
+    ],
+    "wp:attachment": [
+      {
+        "href": "https://remediation.aiamigos.org/wp-json/wp/v2/media?parent=21"
+      }
+    ],
+    "wp:action-publish": [
+      {
+        "href": "https://remediation.aiamigos.org/wp-json/wp/v2/pages/21"
+      }
+    ],
+    "wp:action-unfiltered-html": [
+      {
+        "href": "https://remediation.aiamigos.org/wp-json/wp/v2/pages/21"
+      }
+    ],
+    "wp:action-assign-author": [
+      {
+        "href": "https://remediation.aiamigos.org/wp-json/wp/v2/pages/21"
+      }
+    ],
+    "curies": [
+      {
+        "name": "wp",
+        "href": "https://api.w.org/{rel}",
+        "templated": true
+      }
+    ]
+  }
+}

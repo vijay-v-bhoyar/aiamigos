@@ -1,0 +1,674 @@
+[
+  {
+    "from": "/hello-world/",
+    "status": "retire",
+    "disposition": "retire",
+    "to": null
+  },
+  {
+    "from": "/ai-app-development/",
+    "status": "published",
+    "disposition": "retain",
+    "to": "/articles/ai-app-development/"
+  },
+  {
+    "from": "/blog-2/",
+    "status": "retire",
+    "disposition": "retire",
+    "to": null
+  },
+  {
+    "from": "/artificial-intelligence-ai/",
+    "status": "published",
+    "disposition": "retain",
+    "to": "/articles/artificial-intelligence-ai/"
+  },
+  {
+    "from": "/blog-4/",
+    "status": "retire",
+    "disposition": "retire",
+    "to": null
+  },
+  {
+    "from": "/latest-blog-title-01/",
+    "status": "retire",
+    "disposition": "retire",
+    "to": null
+  },
+  {
+    "from": "/ai-jobs-whats-the-real-deal-%f0%9f%8c%8d/",
+    "status": "draft",
+    "disposition": "draft",
+    "to": null
+  },
+  {
+    "from": "/ai-ethics-for-everyday-folks-the-stuff-you-gotta-know-%f0%9f%a4%96%f0%9f%94%8d/",
+    "status": "published",
+    "disposition": "retain",
+    "to": "/articles/ai-ethics-for-everyday-folks-the-stuff-you-gotta-know-%f0%9f%a4%96%f0%9f%94%8d/"
+  },
+  {
+    "from": "/ai-in-healthcare/",
+    "status": "draft",
+    "disposition": "draft",
+    "to": null
+  },
+  {
+    "from": "/ai-in-finance/",
+    "status": "draft",
+    "disposition": "draft",
+    "to": null
+  },
+  {
+    "from": "/unboxing-ai-the-retail-revolution-behind-your-shopping-spree/",
+    "status": "published",
+    "disposition": "retain",
+    "to": "/articles/unboxing-ai-the-retail-revolution-behind-your-shopping-spree/"
+  },
+  {
+    "from": "/the-future-farm-ais-role-in-our-fields-and-beyond/",
+    "status": "published",
+    "disposition": "retain",
+    "to": "/articles/the-future-farm-ais-role-in-our-fields-and-beyond/"
+  },
+  {
+    "from": "/crafting-the-future-ais-role-in-modern-manufacturing/",
+    "status": "published",
+    "disposition": "retain",
+    "to": "/articles/crafting-the-future-ais-role-in-modern-manufacturing/"
+  },
+  {
+    "from": "/the-blog-publishing-checklist-ensuring-your-content-doesnt-go-oops/",
+    "status": "published",
+    "disposition": "retain",
+    "to": "/articles/the-blog-publishing-checklist-ensuring-your-content-doesnt-go-oops/"
+  },
+  {
+    "from": "/unlocking-ai-magic-in-entertainment-a-light-hearted-guide/",
+    "status": "published",
+    "disposition": "retain",
+    "to": "/articles/unlocking-ai-magic-in-entertainment-a-light-hearted-guide/"
+  },
+  {
+    "from": "/the-future-on-wheels-how-ai-is-steering-the-world-of-transportation-%f0%9f%9a%97%f0%9f%92%a8/",
+    "status": "published",
+    "disposition": "retain",
+    "to": "/articles/the-future-on-wheels-how-ai-is-steering-the-world-of-transportation-%f0%9f%9a%97%f0%9f%92%a8/"
+  },
+  {
+    "from": "/ai-evolution/",
+    "status": "published",
+    "disposition": "retain",
+    "to": "/articles/ai-evolution/"
+  },
+  {
+    "from": "/ai-rule-based-systems/",
+    "status": "published",
+    "disposition": "retain",
+    "to": "/articles/ai-rule-based-systems/"
+  },
+  {
+    "from": "/machine-learning/",
+    "status": "published",
+    "disposition": "retain",
+    "to": "/articles/machine-learning/"
+  },
+  {
+    "from": "/deep-learning-ai/",
+    "status": "published",
+    "disposition": "retain",
+    "to": "/articles/deep-learning-ai/"
+  },
+  {
+    "from": "/general-ai/",
+    "status": "published",
+    "disposition": "retain",
+    "to": "/articles/general-ai/"
+  },
+  {
+    "from": "/superintelligent-ai/",
+    "status": "published",
+    "disposition": "retain",
+    "to": "/articles/superintelligent-ai/"
+  },
+  {
+    "from": "/adaptive-ai/",
+    "status": "published",
+    "disposition": "retain",
+    "to": "/articles/adaptive-ai/"
+  },
+  {
+    "from": "/emotional-ai/",
+    "status": "published",
+    "disposition": "retain",
+    "to": "/articles/emotional-ai/"
+  },
+  {
+    "from": "/creative-ai/",
+    "status": "published",
+    "disposition": "retain",
+    "to": "/articles/creative-ai/"
+  },
+  {
+    "from": "/self-aware-ai/",
+    "status": "published",
+    "disposition": "retain",
+    "to": "/articles/self-aware-ai/"
+  },
+  {
+    "from": "/co-evolving-ai/",
+    "status": "published",
+    "disposition": "retain",
+    "to": "/articles/co-evolving-ai/"
+  },
+  {
+    "from": "/decentralized-ai/",
+    "status": "published",
+    "disposition": "retain",
+    "to": "/articles/decentralized-ai/"
+  },
+  {
+    "from": "/ethical-ai/",
+    "status": "published",
+    "disposition": "retain",
+    "to": "/articles/ethical-ai/"
+  },
+  {
+    "from": "/quantum-ai/",
+    "status": "published",
+    "disposition": "retain",
+    "to": "/articles/quantum-ai/"
+  },
+  {
+    "from": "/gpt-models/",
+    "status": "draft",
+    "disposition": "draft",
+    "to": null
+  },
+  {
+    "from": "/ais-dawn-revolutionizing-the-digital-realm/",
+    "status": "published",
+    "disposition": "retain",
+    "to": "/articles/ais-dawn-revolutionizing-the-digital-realm/"
+  },
+  {
+    "from": "/prompt-engineering/",
+    "status": "published",
+    "disposition": "retain",
+    "to": "/articles/prompt-engineering/"
+  },
+  {
+    "from": "/text-to-video-software/",
+    "status": "published",
+    "disposition": "retain",
+    "to": "/articles/text-to-video-software/"
+  },
+  {
+    "from": "/data-gen-ai/",
+    "status": "published",
+    "disposition": "retain",
+    "to": "/articles/data-gen-ai/"
+  },
+  {
+    "from": "/ai-data-types-models/",
+    "status": "published",
+    "disposition": "retain",
+    "to": "/articles/ai-data-types-models/"
+  },
+  {
+    "from": "/generative-ai-solutions/",
+    "status": "published",
+    "disposition": "retain",
+    "to": "/articles/generative-ai-solutions/"
+  },
+  {
+    "from": "/large-language-model/",
+    "status": "published",
+    "disposition": "retain",
+    "to": "/articles/large-language-model/"
+  },
+  {
+    "from": "/grokai/",
+    "status": "draft",
+    "disposition": "draft",
+    "to": null
+  },
+  {
+    "from": "/ai-companies-top-100/",
+    "status": "published",
+    "disposition": "retain",
+    "to": "/articles/ai-companies-top-100/"
+  },
+  {
+    "from": "/prompt-design-and-engineering/",
+    "status": "published",
+    "disposition": "retain",
+    "to": "/articles/prompt-design-and-engineering/"
+  },
+  {
+    "from": "/ai-pin-technology-and-its-5-main-benefits/",
+    "status": "published",
+    "disposition": "retain",
+    "to": "/articles/ai-pin-technology-and-its-5-main-benefits/"
+  },
+  {
+    "from": "/custom-gpt-models/",
+    "status": "draft",
+    "disposition": "draft",
+    "to": null
+  },
+  {
+    "from": "/ai-and-robotics/",
+    "status": "published",
+    "disposition": "retain",
+    "to": "/articles/ai-and-robotics/"
+  },
+  {
+    "from": "/algorithms-in-artificial-intelligence/",
+    "status": "published",
+    "disposition": "retain",
+    "to": "/articles/algorithms-in-artificial-intelligence/"
+  },
+  {
+    "from": "/local-llm-on-your-laptop/",
+    "status": "published",
+    "disposition": "retain",
+    "to": "/articles/local-llm-on-your-laptop/"
+  },
+  {
+    "from": "/generative-and-discriminative-models/",
+    "status": "published",
+    "disposition": "retain",
+    "to": "/articles/generative-and-discriminative-models/"
+  },
+  {
+    "from": "/building-features-faster-and-better-with-ai/",
+    "status": "published",
+    "disposition": "retain",
+    "to": "/articles/building-features-faster-and-better-with-ai/"
+  },
+  {
+    "from": "/how-ai-is-transforming-software-engineering/",
+    "status": "published",
+    "disposition": "retain",
+    "to": "/articles/how-ai-is-transforming-software-engineering/"
+  },
+  {
+    "from": "/top-20-generative-ai-tools-for-creative-exploration/",
+    "status": "published",
+    "disposition": "retain",
+    "to": "/articles/top-20-generative-ai-tools-for-creative-exploration/"
+  },
+  {
+    "from": "/applications-of-generative-ai/",
+    "status": "published",
+    "disposition": "retain",
+    "to": "/articles/applications-of-generative-ai/"
+  },
+  {
+    "from": "/limitations-of-generative-ai/",
+    "status": "published",
+    "disposition": "retain",
+    "to": "/articles/limitations-of-generative-ai/"
+  },
+  {
+    "from": "/the-future-of-generative-ai/",
+    "status": "published",
+    "disposition": "retain",
+    "to": "/articles/the-future-of-generative-ai/"
+  },
+  {
+    "from": "/generative-ai-vs-traditional-ai/",
+    "status": "published",
+    "disposition": "retain",
+    "to": "/articles/generative-ai-vs-traditional-ai/"
+  },
+  {
+    "from": "/the-explainability-of-generative-ai-models/",
+    "status": "published",
+    "disposition": "retain",
+    "to": "/articles/the-explainability-of-generative-ai-models/"
+  },
+  {
+    "from": "/open-source-generative-ai-projects/",
+    "status": "published",
+    "disposition": "retain",
+    "to": "/articles/open-source-generative-ai-projects/"
+  },
+  {
+    "from": "/the-role-of-generative-ai-in-creative-industries/",
+    "status": "published",
+    "disposition": "retain",
+    "to": "/articles/the-role-of-generative-ai-in-creative-industries/"
+  },
+  {
+    "from": "/training-data-for-generative-ai-models/",
+    "status": "published",
+    "disposition": "retain",
+    "to": "/articles/training-data-for-generative-ai-models/"
+  },
+  {
+    "from": "/ai-leader-with-no-code/",
+    "status": "published",
+    "disposition": "retain",
+    "to": "/articles/ai-leader-with-no-code/"
+  },
+  {
+    "from": "/nvidias-chat-with-rtx-the-key-to-next-generation-chatbots-on-your-pc/",
+    "status": "published",
+    "disposition": "retain",
+    "to": "/articles/nvidias-chat-with-rtx-the-key-to-next-generation-chatbots-on-your-pc/"
+  },
+  {
+    "from": "/python-deployment-best-practices-a-comprehensive-guide/",
+    "status": "published",
+    "disposition": "retain",
+    "to": "/articles/python-deployment-best-practices-a-comprehensive-guide/"
+  },
+  {
+    "from": "/ai-healthcare-interoperability/",
+    "status": "draft",
+    "disposition": "draft",
+    "to": null
+  },
+  {
+    "from": "/tesseract-an-ocr-optical-character-recognition-tool-for-image-reading-from-excel/",
+    "status": "published",
+    "disposition": "retain",
+    "to": "/articles/tesseract-an-ocr-optical-character-recognition-tool-for-image-reading-from-excel/"
+  },
+  {
+    "from": "/a-comprehensive-guide-to-nvidia-monai-unlocking-ai-in-medical-imaging/",
+    "status": "draft",
+    "disposition": "draft",
+    "to": null
+  },
+  {
+    "from": "/choosing-the-right-vector-database-with-caching-a-comprehensive-guide-for-genai-applications/",
+    "status": "published",
+    "disposition": "retain",
+    "to": "/articles/choosing-the-right-vector-database-with-caching-a-comprehensive-guide-for-genai-applications/"
+  },
+  {
+    "from": "/fine-tuning-your-generative-ai-application-a-comprehensive-guide-to-parameters-and-configurations/",
+    "status": "published",
+    "disposition": "retain",
+    "to": "/articles/fine-tuning-your-generative-ai-application-a-comprehensive-guide-to-parameters-and-configurations/"
+  },
+  {
+    "from": "/rag-architecture-types-with-implementation-details-and-their-use-cases/",
+    "status": "published",
+    "disposition": "retain",
+    "to": "/articles/rag-architecture-types-with-implementation-details-and-their-use-cases/"
+  },
+  {
+    "from": "/ai-model-benchmarks-a-comprehensive-guide/",
+    "status": "draft",
+    "disposition": "draft",
+    "to": null
+  },
+  {
+    "from": "/ways-to-test-a-rag-architecture-based-generative-ai-application/",
+    "status": "draft",
+    "disposition": "draft",
+    "to": null
+  },
+  {
+    "from": "/langgraph-5-stunning-secrets-for-building-a-generative-ai-application/",
+    "status": "draft",
+    "disposition": "draft",
+    "to": null
+  },
+  {
+    "from": "/building-agentic-ai-saas-a-strategic-roadmap-using-google-gemini-enterprise/",
+    "status": "draft",
+    "disposition": "draft",
+    "to": null
+  },
+  {
+    "from": "/newsletter-2/",
+    "status": "draft",
+    "disposition": "draft",
+    "to": "/newsletter/"
+  },
+  {
+    "from": "/classes/",
+    "status": "draft",
+    "disposition": "draft",
+    "to": null
+  },
+  {
+    "from": "/academy/",
+    "status": "retire",
+    "disposition": "retire",
+    "to": null
+  },
+  {
+    "from": "/ai-books-for-kids/",
+    "status": "draft",
+    "disposition": "draft",
+    "to": null
+  },
+  {
+    "from": "/ai-career-faq/",
+    "status": "draft",
+    "disposition": "draft",
+    "to": null
+  },
+  {
+    "from": "/ai-career-paths/",
+    "status": "draft",
+    "disposition": "draft",
+    "to": null
+  },
+  {
+    "from": "/machine-learning-engineer/",
+    "status": "published",
+    "disposition": "retain",
+    "to": "/articles/machine-learning-engineer/"
+  },
+  {
+    "from": "/ai-certifications/",
+    "status": "draft",
+    "disposition": "draft",
+    "to": null
+  },
+  {
+    "from": "/ai-career/",
+    "status": "draft",
+    "disposition": "draft",
+    "to": null
+  },
+  {
+    "from": "/career-in-ai/",
+    "status": "draft",
+    "disposition": "draft",
+    "to": null
+  },
+  {
+    "from": "/ai-tools-for-kids/",
+    "status": "draft",
+    "disposition": "draft",
+    "to": null
+  },
+  {
+    "from": "/newsletter/",
+    "status": "retire",
+    "disposition": "retire",
+    "to": null
+  },
+  {
+    "from": "/others/",
+    "status": "draft",
+    "disposition": "draft",
+    "to": null
+  },
+  {
+    "from": "/about-us/",
+    "status": "published",
+    "disposition": "merge",
+    "to": "/about/"
+  },
+  {
+    "from": "/contact/",
+    "status": "retire",
+    "disposition": "retire",
+    "to": null
+  },
+  {
+    "from": "/privacy-policy-2/",
+    "status": "retire",
+    "disposition": "retire",
+    "to": "/privacy/"
+  },
+  {
+    "from": "/faq/",
+    "status": "published",
+    "disposition": "retain",
+    "to": "/articles/faq/"
+  },
+  {
+    "from": "/page/",
+    "status": "published",
+    "disposition": "merge",
+    "to": "/about/"
+  },
+  {
+    "from": "/services/",
+    "status": "draft",
+    "disposition": "draft",
+    "to": null
+  },
+  {
+    "from": "/shop/",
+    "status": "draft",
+    "disposition": "draft",
+    "to": null
+  },
+  {
+    "from": "/services/ai-for-kids/",
+    "status": "retire",
+    "disposition": "retire",
+    "to": null
+  },
+  {
+    "from": "/services/ai-amigos-pro/",
+    "status": "retire",
+    "disposition": "retire",
+    "to": null
+  },
+  {
+    "from": "/services/ai-by-job-role/",
+    "status": "retire",
+    "disposition": "retire",
+    "to": null
+  },
+  {
+    "from": "/services/ai-amigos-academy/",
+    "status": "retire",
+    "disposition": "retire",
+    "to": null
+  },
+  {
+    "from": "/classes/recent-case-title-01/",
+    "status": "retire",
+    "disposition": "retire",
+    "to": null
+  },
+  {
+    "from": "/classes/recent-case-title-02/",
+    "status": "retire",
+    "disposition": "retire",
+    "to": null
+  },
+  {
+    "from": "/testimonials/client-name-01/",
+    "status": "retire",
+    "disposition": "retire",
+    "to": null
+  },
+  {
+    "from": "/testimonials/client-name-02/",
+    "status": "retire",
+    "disposition": "retire",
+    "to": null
+  },
+  {
+    "from": "/testimonials/client-name-03/",
+    "status": "retire",
+    "disposition": "retire",
+    "to": null
+  },
+  {
+    "from": "/team/member-name-01/",
+    "status": "retire",
+    "disposition": "retire",
+    "to": null
+  },
+  {
+    "from": "/team/member-name-02/",
+    "status": "retire",
+    "disposition": "retire",
+    "to": null
+  },
+  {
+    "from": "/team/member-name-03/",
+    "status": "retire",
+    "disposition": "retire",
+    "to": null
+  },
+  {
+    "from": "/team/member-name-04/",
+    "status": "retire",
+    "disposition": "retire",
+    "to": null
+  },
+  {
+    "from": "/category/blog/",
+    "status": "retire",
+    "disposition": "retire",
+    "to": null
+  },
+  {
+    "from": "/category/blog/professional/",
+    "status": "retire",
+    "disposition": "retire",
+    "to": null
+  },
+  {
+    "from": "/category/blog/video/",
+    "status": "retire",
+    "disposition": "retire",
+    "to": null
+  },
+  {
+    "from": "/category/blog/everyone/",
+    "status": "retire",
+    "disposition": "retire",
+    "to": null
+  },
+  {
+    "from": "/category/technology/",
+    "status": "retire",
+    "disposition": "retire",
+    "to": null
+  },
+  {
+    "from": "/category/ai-algorithms/",
+    "status": "retire",
+    "disposition": "retire",
+    "to": null
+  },
+  {
+    "from": "/category/artificial-intelligence/",
+    "status": "retire",
+    "disposition": "retire",
+    "to": null
+  },
+  {
+    "from": "/category/ai-tools/",
+    "status": "retire",
+    "disposition": "retire",
+    "to": null
+  }
+]

@@ -1,0 +1,30 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import ArticleCard from '../../../components/ArticleCard.astro';
+import { site, topicBySlug } from '../../../data/site';
+
+export function getStaticPaths() {
+  return site.topics.map((topic) => ({ params: { slug: topic.slug } }));
+}
+
+const { slug } = Astro.params;
+const topic = topicBySlug[slug];
+const articles = (await getCollection('articles', ({ data }) => data.status === 'published' && data.category === slug))
+  .sort((a, b) => b.data.publishedAt.localeCompare(a.data.publishedAt));
+---
+<BaseLayout title={topic.label} description={topic.description} canonical={`https://www.aiamigos.org/topics/${slug}/`}>
+  <div class="shell">
+    <div class="reading">
+      <p class="eyebrow">Topic path</p>
+      <h1>{topic.label}</h1>
+      <p class="lede">{topic.description}</p>
+      <h2>Use this topic to decide</h2>
+      <ul><li>What problem is actually suitable for AI?</li><li>What evidence would make the output trustworthy enough?</li><li>Where must a person review, approve, or stop the workflow?</li></ul>
+      <p><a class="button secondary" href="/tracks/">Connect this knowledge to a practical track</a></p>
+    </div>
+    <div class="article-grid" style="margin-top: 2.5rem;">
+      {articles.length ? articles.map((article) => <ArticleCard article={article} />) : <p class="notice">This topic is being rebuilt from the source review queue. New reviewed resources will appear here.</p>}
+    </div>
+  </div>
+</BaseLayout>

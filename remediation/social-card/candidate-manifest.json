@@ -1,0 +1,28 @@
+{
+    "schema_version":  1,
+    "status":  "rejected_not_deployable",
+    "generated_at":  "2026-08-13",
+    "source":  {
+                   "path":  "remediation/social-card/source/ai-amigos-logo.png",
+                   "width":  240,
+                   "height":  213,
+                   "bytes":  11156,
+                   "sha256":  "F8FB05EA4E358A9ED92449EF46B3EDAD60DEFDE270CC282E4F619DB52B60A957"
+               },
+    "candidate":  {
+                      "path":  "remediation/social-card/candidates/ai-amigos-social-card-review-candidate-02.png",
+                      "width":  1200,
+                      "height":  630,
+                      "bytes":  26402,
+                      "sha256":  "7722C5A54A0F93AA35A901C3F61A46A774A7BE955D529D375B710ECEE16CBD2A"
+                  },
+    "rejection_reasons":  [
+                              "No accountable brand reviewer approved the visual or its wording.",
+                              "No Facebook, LinkedIn, or X preview validation exists."
+                          ],
+    "deployment":  {
+                       "wired_into_wordpress":  false,
+                       "uploaded_to_media_library":  false,
+                       "approved":  false
+                   }
+}

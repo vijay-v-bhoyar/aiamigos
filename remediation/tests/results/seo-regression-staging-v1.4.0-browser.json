@@ -1,0 +1,805 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-13T18:45:50.282Z",
+  "mode": "live",
+  "baseUrl": "https://remediation.aiamigos.org/",
+  "cacheBypass": "query",
+  "snapshotRoot": null,
+  "durationMs": 155144,
+  "result": "fail",
+  "summary": {
+    "checks": 16,
+    "pass": 15,
+    "fail": 1,
+    "skip": 0,
+    "sitemapUrls": 75,
+    "uniqueInternalTargets": 99
+  },
+  "checks": [
+    {
+      "id": "routing.root_home_blog",
+      "title": "Root, legacy home, and blog routing",
+      "severity": "critical",
+      "status": "pass",
+      "summary": "Primary routes are consolidated.",
+      "metrics": {
+        "rootStatus": 200,
+        "oldHomeInitialStatus": 301,
+        "oldHomeFinalStatus": 200,
+        "blogStatus": 200
+      },
+      "failures": [],
+      "notes": []
+    },
+    {
+      "id": "routing.quarantine",
+      "title": "Quarantine, redirect, and preserved-route policy",
+      "severity": "critical",
+      "status": "pass",
+      "summary": "Exact demo, quarantine, redirect, and preservation policy passes.",
+      "metrics": {
+        "configuredGone": 12,
+        "configuredQuarantined": 10,
+        "configuredPermanentRedirects": 1,
+        "configuredPreserved": 1,
+        "observed": 24,
+        "gone410": 12,
+        "healthyPermanentRedirects": 1
+      },
+      "failures": [],
+      "notes": []
+    },
+    {
+      "id": "feeds.quarantine",
+      "title": "Bare and cache-busted feed quarantine",
+      "severity": "critical",
+      "status": "pass",
+      "summary": "Bare and cache-busted feeds exclude all quarantined records.",
+      "metrics": {
+        "configuredFeeds": 5,
+        "expectedVariants": 10,
+        "observedVariants": 10,
+        "bareVariants": 5,
+        "cacheBustedVariants": 5,
+        "forbiddenHits": 0,
+        "feeds": [
+          {
+            "pathname": "/feed/",
+            "variant": "bare",
+            "status": 200,
+            "finalUrl": "https://remediation.aiamigos.org/feed/",
+            "networkRequestedUrl": "https://remediation.aiamigos.org/feed/",
+            "itemCount": 20,
+            "forbiddenHits": []
+          },
+          {
+            "pathname": "/feed/",
+            "variant": "cache-busted",
+            "status": 200,
+            "finalUrl": "https://remediation.aiamigos.org/feed/",
+            "networkRequestedUrl": "https://remediation.aiamigos.org/feed/?_aiamigos_cache_bust=msrv9d1b-30",
+            "itemCount": 20,
+            "forbiddenHits": []
+          },
+          {
+            "pathname": "/?feed=rss2&post_type=services",
+            "variant": "bare",
+            "status": 200,
+            "finalUrl": "https://remediation.aiamigos.org/feed/?post_type=services",
+            "networkRequestedUrl": "https://remediation.aiamigos.org/?feed=rss2&post_type=services",
+            "itemCount": 0,
+            "forbiddenHits": []
+          },
+          {
+            "pathname": "/?feed=rss2&post_type=services",
+            "variant": "cache-busted",
+            "status": 200,
+            "finalUrl": "https://remediation.aiamigos.org/feed/?post_type=services",
+            "networkRequestedUrl": "https://remediation.aiamigos.org/?feed=rss2&post_type=services&_aiamigos_cache_bust=msrv9d1c-32",
+            "itemCount": 0,
+            "forbiddenHits": []
+          },
+          {
+            "pathname": "/?feed=rss2&post_type=classes",
+            "variant": "bare",
+            "status": 200,
+            "finalUrl": "https://remediation.aiamigos.org/feed/?post_type=classes",
+            "networkRequestedUrl": "https://remediation.aiamigos.org/?feed=rss2&post_type=classes",
+            "itemCount": 0,
+            "forbiddenHits": []
+          },
+          {
+            "pathname": "/?feed=rss2&post_type=classes",
+            "variant": "cache-busted",
+            "status": 200,
+            "finalUrl": "https://remediation.aiamigos.org/feed/?post_type=classes",
+            "networkRequestedUrl": "https://remediation.aiamigos.org/?feed=rss2&post_type=classes&_aiamigos_cache_bust=msrv9d1c-34",
+            "itemCount": 0,
+            "forbiddenHits": []
+          },
+          {
+            "pathname": "/?feed=rss2&post_type=testimonials",
+            "variant": "bare",
+            "status": 200,
+            "finalUrl": "https://remediation.aiamigos.org/feed/?post_type=testimonials",
+            "networkRequestedUrl": "https://remediation.aiamigos.org/?feed=rss2&post_type=testimonials",
+            "itemCount": 0,
+            "forbiddenHits": []
+          },
+          {
+            "pathname": "/?feed=rss2&post_type=testimonials",
+            "variant": "cache-busted",
+            "status": 200,
+            "finalUrl": "https://remediation.aiamigos.org/feed/?post_type=testimonials",
+            "networkRequestedUrl": "https://remediation.aiamigos.org/?feed=rss2&post_type=testimonials&_aiamigos_cache_bust=msrv9dgg-36",
+            "itemCount": 0,
+            "forbiddenHits": []
+          },
+          {
+            "pathname": "/?feed=rss2&post_type=team",
+            "variant": "bare",
+            "status": 200,
+            "finalUrl": "https://remediation.aiamigos.org/feed/?post_type=team",
+            "networkRequestedUrl": "https://remediation.aiamigos.org/?feed=rss2&post_type=team",
+            "itemCount": 1,
+            "forbiddenHits": []
+          },
+          {
+            "pathname": "/?feed=rss2&post_type=team",
+            "variant": "cache-busted",
+            "status": 200,
+            "finalUrl": "https://remediation.aiamigos.org/feed/?post_type=team",
+            "networkRequestedUrl": "https://remediation.aiamigos.org/?feed=rss2&post_type=team&_aiamigos_cache_bust=msrv9dh3-38",
+            "itemCount": 1,
+            "forbiddenHits": []
+          }
+        ]
+      },
+      "failures": [],
+      "notes": []
+    },
+    {
+      "id": "security.registration_closed",
+      "title": "Public account registration is closed",
+      "severity": "critical",
+      "status": "pass",
+      "summary": "Anonymous registration is closed.",
+      "metrics": {
+        "observed": true,
+        "status": 200,
+        "finalUrl": "https://remediation.aiamigos.org/wp-login.php?registration=disabled"
+      },
+      "failures": [],
+      "notes": []
+    },
+    {
+      "id": "inventory.sitemaps",
+      "title": "Sitemap and indexable inventory",
+      "severity": "critical",
+      "status": "pass",
+      "summary": "75 sitemap URLs are clean.",
+      "metrics": {
+        "sitemapFiles": 4,
+        "sitemapUrls": 75,
+        "observedPages": 75,
+        "non200": 0,
+        "redirects": 0,
+        "noindex": 0,
+        "canonicalMismatch": 0
+      },
+      "failures": [],
+      "notes": []
+    },
+    {
+      "id": "archives.pagination",
+      "title": "Blog pager uniqueness and completeness",
+      "severity": "critical",
+      "status": "pass",
+      "summary": "Pager content is unique and complete.",
+      "metrics": {
+        "postsExposed": 65,
+        "postsMissing": 0,
+        "pagerPages": 7,
+        "discoveredPagerNumbers": [
+          1,
+          2,
+          7,
+          3,
+          6,
+          4,
+          5
+        ],
+        "postSitemapUrls": 65,
+        "expectedPagerPages": 6,
+        "legacyPagerProbeThrough": 7,
+        "legacyPagerUrlsObserved": 6
+      },
+      "failures": [],
+      "notes": []
+    },
+    {
+      "id": "links.internal_integrity",
+      "title": "Internal broken links and redirect waste",
+      "severity": "critical",
+      "status": "pass",
+      "summary": "No broken or redirecting internal targets were found.",
+      "metrics": {
+        "sourcePages": 76,
+        "uniqueInternalTargets": 99,
+        "discoveredArchivePagerTargets": 11,
+        "testedTargets": 110,
+        "unobservedTargets": 0,
+        "requestErrors": 0,
+        "brokenTargets": 0,
+        "redirectingTargets": 0,
+        "directNoncanonicalTargets": 0
+      },
+      "failures": [],
+      "notes": []
+    },
+    {
+      "id": "inventory.discovered_indexables",
+      "title": "Discovered indexable routes outside canonical inventory",
+      "severity": "high",
+      "status": "pass",
+      "summary": "No configured legacy/archive indexability leak was found.",
+      "metrics": {
+        "discoveredHtmlPages": 113,
+        "indexableOutsideSitemap": 6,
+        "disallowedIndexables": 0
+      },
+      "failures": [],
+      "notes": [
+        "Indexable pagination may legitimately sit outside XML sitemaps; only configured disallowed path classes fail this check."
+      ]
+    },
+    {
+      "id": "pages.metadata",
+      "title": "Metadata, canonicals, and social cards",
+      "severity": "high",
+      "status": "pass",
+      "summary": "Indexable pages meet metadata invariants.",
+      "metrics": {
+        "pages": 75,
+        "missingTitles": 0,
+        "missingDescriptions": 0,
+        "invalidDescriptionTagCounts": 0,
+        "invalidOpenGraphDescriptionTagCounts": 0,
+        "invalidTwitterDescriptionTagCounts": 0,
+        "longTitles": 0,
+        "longDescriptions": 0,
+        "incompleteOpenGraph": 0,
+        "incompleteTwitter": 0
+      },
+      "failures": [],
+      "notes": []
+    },
+    {
+      "id": "pages.headings",
+      "title": "Heading structure",
+      "severity": "high",
+      "status": "pass",
+      "summary": "Heading structure passes.",
+      "metrics": {
+        "pages": 75,
+        "missingOrMultipleH1": 0,
+        "pagesWithBlankHeadings": 0,
+        "pagesWithLevelSkips": 0
+      },
+      "failures": [],
+      "notes": []
+    },
+    {
+      "id": "pages.jsonld",
+      "title": "JSON-LD syntax and identity hygiene",
+      "severity": "high",
+      "status": "pass",
+      "summary": "JSON-LD is parseable and avoids placeholder people.",
+      "metrics": {
+        "pages": 75,
+        "missingJsonLd": 0,
+        "parseErrorPages": 0,
+        "placeholderPersonPages": 0
+      },
+      "failures": [],
+      "notes": []
+    },
+    {
+      "id": "content.leaks",
+      "title": "Shortcode, demo-copy, and placeholder leaks",
+      "severity": "critical",
+      "status": "pass",
+      "summary": "No configured content leak was found.",
+      "metrics": {
+        "pages": 75,
+        "hits": 0,
+        "affectedPages": 0,
+        "knownDemoPaths": 0,
+        "pagesWithoutMainLandmark": 2,
+        "countsByPattern": {
+          "raw_mailpoet_shortcode": 0,
+          "theme_latin_demo_copy": 0,
+          "placeholder_client_name": 0,
+          "placeholder_member_name": 0,
+          "placeholder_case_title": 0,
+          "placeholder_company_token": 0,
+          "placeholder_service_url": 0,
+          "misspelled_linkedin": 0
+        }
+      },
+      "failures": [],
+      "notes": []
+    },
+    {
+      "id": "resources.http_references",
+      "title": "Explicit HTTP references",
+      "severity": "medium",
+      "status": "pass",
+      "summary": "All captured references use HTTPS or relative URLs.",
+      "metrics": {
+        "pages": 75,
+        "affectedPages": 0,
+        "references": 0,
+        "uniqueReferences": 0
+      },
+      "failures": [],
+      "notes": []
+    },
+    {
+      "id": "responses.headers",
+      "title": "Response security and cache headers",
+      "severity": "medium",
+      "status": "pass",
+      "summary": "Configured response-header baseline passes.",
+      "metrics": {
+        "pages": 75,
+        "missingByHeader": {
+          "strict-transport-security": 0,
+          "x-content-type-options": 0,
+          "referrer-policy": 0,
+          "permissions-policy": 0
+        },
+        "missingFrameProtection": 0,
+        "missingCacheControl": 0,
+        "poweredByExposed": 0
+      },
+      "failures": [],
+      "notes": []
+    },
+    {
+      "id": "browser.runtime",
+      "title": "Rendered console and runtime health",
+      "severity": "high",
+      "status": "fail",
+      "summary": "Rendered runtime errors remain.",
+      "metrics": {
+        "pages": 4,
+        "wafBlocked403": 0,
+        "exceptions": 0,
+        "consoleErrors": 0,
+        "logErrors": 1,
+        "networkFailures": 1
+      },
+      "failures": [
+        {
+          "message": "Browser log error.",
+          "url": "https://remediation.aiamigos.org/",
+          "entry": {
+            "level": "error",
+            "text": "Failed to load resource: net::ERR_QUIC_PROTOCOL_ERROR",
+            "url": "https://remediation.aiamigos.org/wp-content/themes/sirat-pro/assets/js/bootstrap.min.js?ver=7.0.4"
+          }
+        },
+        {
+          "message": "Browser resource load failed.",
+          "url": "https://remediation.aiamigos.org/",
+          "failure": {
+            "url": "https://remediation.aiamigos.org/wp-content/themes/sirat-pro/assets/js/bootstrap.min.js?ver=7.0.4",
+            "type": "Script",
+            "errorText": "net::ERR_QUIC_PROTOCOL_ERROR",
+            "blockedReason": null
+          }
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "performance.budgets",
+      "title": "HTML and rendered transfer budgets",
+      "severity": "high",
+      "status": "pass",
+      "summary": "Configured performance budgets pass.",
+      "metrics": {
+        "staticPages": [
+          {
+            "url": "https://remediation.aiamigos.org/",
+            "status": 200,
+            "htmlBytes": 139513,
+            "scripts": 18,
+            "elements": 527
+          },
+          {
+            "url": "https://remediation.aiamigos.org/blog/",
+            "status": 200,
+            "htmlBytes": 120758,
+            "scripts": 18,
+            "elements": 411
+          },
+          {
+            "url": "https://remediation.aiamigos.org/blog/page/2/",
+            "status": 200,
+            "htmlBytes": 128296,
+            "scripts": 18,
+            "elements": 415
+          }
+        ],
+        "rejectedStaticPages": [],
+        "browserPages": [
+          {
+            "url": "https://remediation.aiamigos.org/",
+            "documentStatus": 200,
+            "totalTransferBytes": 837528,
+            "imageTransferBytes": 413511,
+            "scriptTransferBytes": 90975,
+            "resourceCount": 38,
+            "domNodes": 916,
+            "scriptCount": 19,
+            "imageCount": 41,
+            "horizontalOverflowPx": 0,
+            "loadMs": 9515
+          },
+          {
+            "url": "https://remediation.aiamigos.org/blog/",
+            "documentStatus": 200,
+            "totalTransferBytes": 732234,
+            "imageTransferBytes": 261727,
+            "scriptTransferBytes": 105711,
+            "resourceCount": 39,
+            "domNodes": 410,
+            "scriptCount": 19,
+            "imageCount": 15,
+            "horizontalOverflowPx": 0,
+            "loadMs": 2014
+          },
+          {
+            "url": "https://remediation.aiamigos.org/newsletter/",
+            "documentStatus": 200,
+            "totalTransferBytes": 445712,
+            "imageTransferBytes": 9078,
+            "scriptTransferBytes": 105700,
+            "resourceCount": 34,
+            "domNodes": 240,
+            "scriptCount": 19,
+            "imageCount": 1,
+            "horizontalOverflowPx": 0,
+            "loadMs": 1681
+          },
+          {
+            "url": "https://remediation.aiamigos.org/team/member-name-01/",
+            "documentStatus": 200,
+            "totalTransferBytes": 716650,
+            "imageTransferBytes": 279590,
+            "scriptTransferBytes": 105710,
+            "resourceCount": 39,
+            "domNodes": 328,
+            "scriptCount": 19,
+            "imageCount": 6,
+            "horizontalOverflowPx": 0,
+            "loadMs": 1869
+          }
+        ],
+        "budgets": {
+          "htmlBytes": 250000,
+          "totalTransferBytes": 3000000,
+          "imageTransferBytes": 1500000,
+          "scriptTransferBytes": 750000,
+          "resourceCount": 80,
+          "scriptCount": 20,
+          "domNodes": 1500,
+          "horizontalOverflowPx": 0
+        }
+      },
+      "failures": [],
+      "notes": []
+    }
+  ],
+  "evidence": {
+    "robots": {
+      "url": "https://remediation.aiamigos.org/robots.txt",
+      "status": 200,
+      "observed": true
+    },
+    "sitemaps": [
+      {
+        "url": "https://remediation.aiamigos.org/sitemap_index.xml",
+        "status": 200,
+        "locationCount": 6,
+        "kind": "index"
+      },
+      {
+        "url": "https://remediation.aiamigos.org/post-sitemap.xml",
+        "status": 200,
+        "locationCount": 65,
+        "kind": "urlset"
+      },
+      {
+        "url": "https://remediation.aiamigos.org/page-sitemap.xml",
+        "status": 200,
+        "locationCount": 9,
+        "kind": "urlset"
+      },
+      {
+        "url": "https://remediation.aiamigos.org/team-sitemap.xml",
+        "status": 200,
+        "locationCount": 1,
+        "kind": "urlset"
+      }
+    ],
+    "browser": {
+      "skipped": false,
+      "executablePath": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36 Edg/151.0.0.0",
+      "pages": [
+        {
+          "requestedUrl": "https://remediation.aiamigos.org/",
+          "finalUrl": "https://remediation.aiamigos.org/",
+          "title": "AI Amigos - Simplifying AI for Everyone",
+          "documentStatus": 200,
+          "consoleErrors": [],
+          "exceptions": [],
+          "logEntries": [
+            {
+              "level": "error",
+              "text": "Failed to load resource: net::ERR_QUIC_PROTOCOL_ERROR",
+              "url": "https://remediation.aiamigos.org/wp-content/themes/sirat-pro/assets/js/bootstrap.min.js?ver=7.0.4"
+            }
+          ],
+          "networkFailures": [
+            {
+              "url": "https://remediation.aiamigos.org/wp-content/themes/sirat-pro/assets/js/bootstrap.min.js?ver=7.0.4",
+              "type": "Script",
+              "errorText": "net::ERR_QUIC_PROTOCOL_ERROR",
+              "blockedReason": null
+            }
+          ],
+          "metrics": {
+            "totalTransferBytes": 837528,
+            "imageTransferBytes": 413511,
+            "scriptTransferBytes": 90975,
+            "resourceCount": 38,
+            "domNodes": 916,
+            "scriptCount": 19,
+            "imageCount": 41,
+            "horizontalOverflowPx": 0,
+            "loadMs": 9515
+          }
+        },
+        {
+          "requestedUrl": "https://remediation.aiamigos.org/blog/",
+          "finalUrl": "https://remediation.aiamigos.org/blog/",
+          "title": "AI Amigos Blog",
+          "documentStatus": 200,
+          "consoleErrors": [],
+          "exceptions": [],
+          "logEntries": [],
+          "networkFailures": [],
+          "metrics": {
+            "totalTransferBytes": 732234,
+            "imageTransferBytes": 261727,
+            "scriptTransferBytes": 105711,
+            "resourceCount": 39,
+            "domNodes": 410,
+            "scriptCount": 19,
+            "imageCount": 15,
+            "horizontalOverflowPx": 0,
+            "loadMs": 2014
+          }
+        },
+        {
+          "requestedUrl": "https://remediation.aiamigos.org/newsletter/",
+          "finalUrl": "https://remediation.aiamigos.org/newsletter/",
+          "title": "Newsletter",
+          "documentStatus": 200,
+          "consoleErrors": [],
+          "exceptions": [],
+          "logEntries": [],
+          "networkFailures": [],
+          "metrics": {
+            "totalTransferBytes": 445712,
+            "imageTransferBytes": 9078,
+            "scriptTransferBytes": 105700,
+            "resourceCount": 34,
+            "domNodes": 240,
+            "scriptCount": 19,
+            "imageCount": 1,
+            "horizontalOverflowPx": 0,
+            "loadMs": 1681
+          }
+        },
+        {
+          "requestedUrl": "https://remediation.aiamigos.org/team/member-name-01/",
+          "finalUrl": "https://remediation.aiamigos.org/team/member-name-01/",
+          "title": "Vijay Bhoyar",
+          "documentStatus": 200,
+          "consoleErrors": [],
+          "exceptions": [],
+          "logEntries": [],
+          "networkFailures": [],
+          "metrics": {
+            "totalTransferBytes": 716650,
+            "imageTransferBytes": 279590,
+            "scriptTransferBytes": 105710,
+            "resourceCount": 39,
+            "domNodes": 328,
+            "scriptCount": 19,
+            "imageCount": 6,
+            "horizontalOverflowPx": 0,
+            "loadMs": 1869
+          }
+        }
+      ]
+    },
+    "cacheBypass": {
+      "mode": "query",
+      "reservedQueryParameter": "_aiamigos_cache_bust"
+    },
+    "limitations": [
+      "This is a deterministic lab crawl, not Search Console, field Core Web Vitals, analytics, or legal validation."
+    ]
+  },
+  "config": {
+    "routes": {
+      "root": "/",
+      "oldHome": "/home/",
+      "blog": "/blog/",
+      "legacyPageTwo": "/page/2/"
+    },
+    "routePolicies": {
+      "gonePaths": [
+        "/classes/recent-case-title-01/",
+        "/classes/recent-case-title-02/",
+        "/testimonials/client-name-01/",
+        "/testimonials/client-name-02/",
+        "/testimonials/client-name-03/",
+        "/team/member-name-02/",
+        "/team/member-name-03/",
+        "/team/member-name-04/",
+        "/services/ai-amigos-academy/",
+        "/services/ai-amigos-pro/",
+        "/services/ai-by-job-role/",
+        "/services/ai-for-kids/"
+      ],
+      "quarantinedPaths": [
+        "/ai-certifications/",
+        "/gpt-models/",
+        "/grokai/",
+        "/ai-model-benchmarks-a-comprehensive-guide/",
+        "/others/",
+        "/shop/",
+        "/privacy-policy-2/",
+        "/page/",
+        "/academy/",
+        "/ai-career/"
+      ],
+      "permanentRedirects": {
+        "/newsletter-2/": "/newsletter/"
+      },
+      "preservedPaths": [
+        "/team/member-name-01/"
+      ],
+      "registrationPath": "/wp-login.php?action=register"
+    },
+    "feedPaths": [
+      "/feed/",
+      "/?feed=rss2&post_type=services",
+      "/?feed=rss2&post_type=classes",
+      "/?feed=rss2&post_type=testimonials",
+      "/?feed=rss2&post_type=team"
+    ],
+    "concurrency": 8,
+    "timeoutMs": 45000,
+    "maxSitemaps": 50,
+    "maxSitemapUrls": 1000,
+    "maxInternalTargets": 500,
+    "internalProbeSeedLimit": 30,
+    "maxPagerPages": 50,
+    "detailLimit": 50,
+    "expectedBrandPattern": "AI\\s*Amigos",
+    "genericRootTitlePattern": "^(?:blog|home|welcome)$",
+    "metadata": {
+      "titleMin": 10,
+      "titleMax": 60,
+      "descriptionMin": 50,
+      "descriptionMax": 160,
+      "requireSocialImages": true
+    },
+    "headings": {
+      "maxHeadingWords": 60,
+      "disallowLevelSkips": true
+    },
+    "performance": {
+      "htmlBytes": 250000,
+      "totalTransferBytes": 3000000,
+      "imageTransferBytes": 1500000,
+      "scriptTransferBytes": 750000,
+      "resourceCount": 80,
+      "scriptCount": 20,
+      "domNodes": 1500,
+      "horizontalOverflowPx": 0
+    },
+    "browser": {
+      "settleMs": 2000,
+      "width": 390,
+      "height": 844,
+      "deviceScaleFactor": 1,
+      "mobile": true,
+      "maxPages": 4,
+      "paths": [
+        "/",
+        "/blog/",
+        "/newsletter/",
+        "/team/member-name-01/"
+      ]
+    },
+    "requiredHeaders": [
+      "strict-transport-security",
+      "x-content-type-options",
+      "referrer-policy",
+      "permissions-policy"
+    ],
+    "requireFrameProtection": true,
+    "requireHtmlCachePolicy": true,
+    "forbidPoweredBy": true,
+    "disallowedIndexablePathPatterns": [
+      "^/author/",
+      "^/page/[2-9][0-9]*/?$",
+      "^/category/blog(?:/page/[2-9][0-9]*)?/?$"
+    ],
+    "placeholderPatterns": [
+      {
+        "id": "raw_mailpoet_shortcode",
+        "pattern": "\\[mailpoet_form\\b[^\\]]*\\]",
+        "flags": "i",
+        "scope": "body"
+      },
+      {
+        "id": "theme_latin_demo_copy",
+        "pattern": "Te obtinuit ut adepto satis somno",
+        "flags": "i"
+      },
+      {
+        "id": "placeholder_client_name",
+        "pattern": "\\bClient Name \\d{1,2}\\b",
+        "flags": "i",
+        "scope": "body"
+      },
+      {
+        "id": "placeholder_member_name",
+        "pattern": "\\bMember Name \\d{1,2}\\b",
+        "flags": "i",
+        "scope": "body"
+      },
+      {
+        "id": "placeholder_case_title",
+        "pattern": "\\bRecent Case Title \\d{1,2}\\b",
+        "flags": "i",
+        "scope": "body"
+      },
+      {
+        "id": "placeholder_company_token",
+        "pattern": "\\[Your Company Name(?:/AIAmigos\\.org)?\\]",
+        "flags": "i"
+      },
+      {
+        "id": "placeholder_service_url",
+        "pattern": "\\bService Url\\b",
+        "flags": "i"
+      },
+      {
+        "id": "misspelled_linkedin",
+        "pattern": "\\bLinkden\\b",
+        "flags": "i"
+      }
+    ]
+  }
+}

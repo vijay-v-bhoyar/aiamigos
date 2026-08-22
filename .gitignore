@@ -1,0 +1,11 @@
+node_modules/
+dist/
+deploy/
+.astro/
+.playwright-cli/
+.playwright-mcp/
+output/
+*.png
+/([{]title
+/[[]x.name
+i.hasAttribute(alt)

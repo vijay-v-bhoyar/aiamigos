@@ -1,0 +1,67 @@
+{
+  "aiamigos-remediation.php": {
+    "mtime": 1786648999.408486,
+    "ast_hash": "feaef93d7c10f1dd2b99b3270e9580fa",
+    "semantic_hash": ""
+  },
+  "includes/class-aiamigos-remediation-plugin.php": {
+    "mtime": 1786658586.2453923,
+    "ast_hash": "3e6b255781f26aa8fc009164eec81a01",
+    "semantic_hash": ""
+  },
+  "includes/class-aiamigos-remediation-policy.php": {
+    "mtime": 1786638438.201776,
+    "ast_hash": "129a99197c7584189ea167df9f1be98f",
+    "semantic_hash": "129a99197c7584189ea167df9f1be98f"
+  },
+  "tests/static-check.mjs": {
+    "mtime": 1786658760.831458,
+    "ast_hash": "b302c229c6f35a7ca0752474e63c52b0",
+    "semantic_hash": ""
+  },
+  "tests/test-policy.php": {
+    "mtime": 1786650029.5779512,
+    "ast_hash": "c320291ad5e443d7e82a2f912aff919c",
+    "semantic_hash": ""
+  },
+  "uninstall.php": {
+    "mtime": 1786636598.812338,
+    "ast_hash": "c40d196e08d15667e4e1aff0f4072350",
+    "semantic_hash": "c40d196e08d15667e4e1aff0f4072350"
+  },
+  "README.md": {
+    "mtime": 1786658763.7663968,
+    "ast_hash": "0b46c468bb9429678f2ab79089b6de14",
+    "semantic_hash": ""
+  },
+  "assets/js/aiamigos-accessibility-remediation.js": {
+    "mtime": 1786646956.3904757,
+    "ast_hash": "ffadad478d684dc0b56151f312f3dde0",
+    "semantic_hash": ""
+  },
+  "includes/class-aiamigos-accessibility-remediation.php": {
+    "mtime": 1786646957.1415932,
+    "ast_hash": "b54b682c60fc8d8f2ff69d201c30e2b4",
+    "semantic_hash": ""
+  },
+  "docs/ACCESSIBILITY-MODULE.md": {
+    "mtime": 1786648476.3285346,
+    "ast_hash": "89e5a5b885a0ab70db3348b492904bee",
+    "semantic_hash": ""
+  },
+  "tests/static-accessibility-module-check.mjs": {
+    "mtime": 1786647862.840846,
+    "ast_hash": "77a6020dc7ec2c99f12af81262e0ca3f",
+    "semantic_hash": ""
+  },
+  "tests/dom-accessibility-module-fixture.mjs": {
+    "mtime": 1786646977.0600698,
+    "ast_hash": "98c0bf01391b0463ae22f68ac1cffbb1",
+    "semantic_hash": ""
+  },
+  "tests/test-schema-author.php": {
+    "mtime": 1786650545.0062652,
+    "ast_hash": "3b35b787e842dcdc0b4d9c5df8210b57",
+    "semantic_hash": ""
+  }
+}

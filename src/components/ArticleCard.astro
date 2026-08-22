@@ -1,0 +1,9 @@
+---
+const { article } = Astro.props;
+---
+<article class="article-card">
+  <span class="tag">{article.data.category}</span>
+  <h3><a href={`/articles/${article.data.routeSlug}/`}>{article.data.title}</a></h3>
+  <p>{article.data.description}</p>
+  <p class="meta">Published {article.data.publishedAt}{article.data.updatedAt ? ` · Updated ${article.data.updatedAt}` : ''}</p>
+</article>

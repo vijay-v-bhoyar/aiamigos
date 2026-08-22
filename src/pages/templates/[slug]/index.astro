@@ -1,0 +1,11 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import { templates, templateMarkdown } from '../../../data/templates.mjs';
+export function getStaticPaths(){ return templates.map((item)=>({params:{slug:item.slug},props:{item}})); }
+const { item } = Astro.props; const markdown = templateMarkdown(item);
+const schema = {'@context':'https://schema.org','@type':'HowTo',name:item.title,description:item.purpose,step:item.sections.map((name,position)=>({'@type':'HowToStep',position:position+1,name,text:`Complete the ${name} section with evidence from your own context.`}))};
+---
+<BaseLayout title={item.title} description={item.purpose} schema={schema}><div class="shell"><Breadcrumbs items={[{href:'/templates/',label:'Templates'}]} /><article class="reading" data-pagefind-body data-pagefind-filter={`track:${item.track}`}><span class="tag">{item.track}</span><h1>{item.title}</h1><p class="lede">{item.purpose}</p><p class="meta">Reviewed structure · Updated 2026-08-22 · Inputs are not collected</p><div class="button-row"><button id="copy-template" class="button" type="button">Copy template</button><button class="button secondary" onclick="window.print()" type="button">Print</button></div><p id="copy-status" class="meta" role="status"></p><div class="template-sheet">{item.sections.map((section,index)=><section><h2>{index+1}. {section}</h2><div class="writing-lines" aria-label={`Space to complete ${section}`}></div></section>)}</div><h2>How to use this template</h2><ol><li>Complete only the sections supported by evidence you have.</li><li>Mark assumptions and owners explicitly.</li><li>Review the result with the people affected before acting.</li></ol><h2>Limits</h2><p>This general-purpose worksheet does not determine legal compliance or replace domain review.</p></article></div><script define:vars={{markdown,slug:item.slug}}>
+const button=document.querySelector('#copy-template'); const status=document.querySelector('#copy-status'); button.addEventListener('click',async()=>{await navigator.clipboard.writeText(markdown);status.textContent='Template copied as Markdown.';if(window.umami)window.umami.track('template_use',{resource_id:slug});});
+</script></BaseLayout>

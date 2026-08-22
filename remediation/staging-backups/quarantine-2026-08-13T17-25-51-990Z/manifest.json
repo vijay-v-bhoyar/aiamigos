@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "action": "staging_quarantine_to_draft",
+  "origin": "https://remediation.aiamigos.org",
+  "appliedAt": "2026-08-13T17:25:55.689Z",
+  "targets": [
+    {
+      "apiType": "posts",
+      "id": 1411,
+      "slug": "langgraph-5-stunning-secrets-for-building-a-generative-ai-application",
+      "plan": "CP-004",
+      "priorStatus": "publish",
+      "finalStatus": "draft",
+      "modified": "2026-08-13T17:25:52"
+    },
+    {
+      "apiType": "posts",
+      "id": 1407,
+      "slug": "ways-to-test-a-rag-architecture-based-generative-ai-application",
+      "plan": "CP-004",
+      "priorStatus": "publish",
+      "finalStatus": "draft",
+      "modified": "2026-08-13T17:25:52"
+    },
+    {
+      "apiType": "posts",
+      "id": 1421,
+      "slug": "building-agentic-ai-saas-a-strategic-roadmap-using-google-gemini-enterprise",
+      "plan": "CP-004",
+      "priorStatus": "publish",
+      "finalStatus": "draft",
+      "modified": "2026-08-13T17:25:53"
+    },
+    {
+      "apiType": "posts",
+      "id": 926,
+      "slug": "custom-gpt-models",
+      "plan": "CP-004",
+      "priorStatus": "publish",
+      "finalStatus": "draft",
+      "modified": "2026-08-13T17:25:53"
+    },
+    {
+      "apiType": "pages",
+      "id": 21,
+      "slug": "services",
+      "plan": "CP-011",
+      "priorStatus": "publish",
+      "finalStatus": "draft",
+      "modified": "2026-08-13T17:25:54"
+    },
+    {
+      "apiType": "pages",
+      "id": 22,
+      "slug": "classes",
+      "plan": "CP-011",
+      "priorStatus": "publish",
+      "finalStatus": "draft",
+      "modified": "2026-08-13T17:25:54"
+    },
+    {
+      "apiType": "pages",
+      "id": 877,
+      "slug": "ai-tools-for-kids",
+      "plan": "CP-014",
+      "priorStatus": "publish",
+      "finalStatus": "draft",
+      "modified": "2026-08-13T17:25:55"
+    },
+    {
+      "apiType": "pages",
+      "id": 149,
+      "slug": "ai-books-for-kids",
+      "plan": "CP-014",
+      "priorStatus": "publish",
+      "finalStatus": "draft",
+      "modified": "2026-08-13T17:25:55"
+    }
+  ],
+  "backupFiles": [
+    {
+      "file": "posts-1411.before.json",
+      "sha256": "1986f4b91e6fa3a1a09d26303b38c8fd2ff57cf6d0bea8d13861cb82b477c0a5"
+    },
+    {
+      "file": "posts-1407.before.json",
+      "sha256": "d5adaf60aa9ca789219e6ba587314e435f6e3d4c7c06f6674893ad7a55d1d89c"
+    },
+    {
+      "file": "posts-1421.before.json",
+      "sha256": "dbe5b37c63241c4e5b45964d5ea76a5f328f8453dcd604d6b6cf6344dd235564"
+    },
+    {
+      "file": "posts-926.before.json",
+      "sha256": "eed34fb030d669aab8c88d86f67de2bdaecf5a690a483f370d87dff11bafa712"
+    },
+    {
+      "file": "pages-21.before.json",
+      "sha256": "e9eb2cde8aad26b666d84b03213935e09adedb909178b576b32be1fa5f2171ae"
+    },
+    {
+      "file": "pages-22.before.json",
+      "sha256": "a503d44a31868b9d7d25ddbbf4e58ae6cec836bad2142ee82578c9eb49bb10e2"
+    },
+    {
+      "file": "pages-877.before.json",
+      "sha256": "72c8671d73688beaade4836341fb03ab6b6d65685e300177c3e420c186e35328"
+    },
+    {
+      "file": "pages-149.before.json",
+      "sha256": "6a3391b6e94adce5dedede53b80392dc6e2a73e47295a48d56f82e073f186d75"
+    }
+  ]
+}

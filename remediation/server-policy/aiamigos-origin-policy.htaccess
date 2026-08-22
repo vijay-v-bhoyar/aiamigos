@@ -1,0 +1,77 @@
+# BEGIN AIAMIGOS ORIGIN POLICY v1
+# Dormant candidate. Insert this complete block only through the reviewed staging
+# procedure in README.md. It is intentionally outside WordPress-managed markers.
+
+<IfModule mod_setenvif.c>
+    # Public caching is an explicit allowlist. Every unclassified dynamic response
+    # starts private/no-store and remains so.
+    SetEnvIfNoCase Request_URI "^/(?:$|(?:blog|about-us|contact|privacy-policy-2|team/member-name-01)/?$)" AIAMIGOS_PUBLIC_HTML=1
+    SetEnvIfNoCase Request_URI "^/(?:robots\.txt|(?:[a-z0-9_-]+-)?sitemap(?:_index)?\.xml)$" AIAMIGOS_PUBLIC_DISCOVERY=1
+    SetEnvIfNoCase Request_URI "\.(?:css|js|mjs|map)$" AIAMIGOS_PUBLIC_CODE=1
+    SetEnvIfNoCase Request_URI "\.(?:avif|bmp|gif|ico|jpe?g|png|svg|webp|woff2?|ttf|otf|eot)$" AIAMIGOS_PUBLIC_MEDIA=1
+
+    # Any state-bearing signal wins over every public classification below.
+    SetEnvIfExpr "%{REQUEST_METHOD} != 'GET' && %{REQUEST_METHOD} != 'HEAD'" AIAMIGOS_PRIVATE=1
+    SetEnvIfExpr "-n %{QUERY_STRING}" AIAMIGOS_PRIVATE=1
+    SetEnvIfNoCase Cookie ".+" AIAMIGOS_PRIVATE=1
+    SetEnvIfNoCase Authorization ".+" AIAMIGOS_PRIVATE=1
+    SetEnvIfNoCase Request_URI "^/(?:wp-admin(?:/|$)|wp-login\.php(?:/|$)|wp-json(?:/|$)|xmlrpc\.php(?:/|$)|wp-cron\.php(?:/|$)|wp-comments-post\.php(?:/|$)|wp-signup\.php(?:/|$)|wp-activate\.php(?:/|$))" AIAMIGOS_PRIVATE=1
+</IfModule>
+
+<IfModule LiteSpeed>
+    # Fail closed at the LiteSpeed store. Browser/CDN freshness is still expressed
+    # by the bounded response headers below, but origin public caching stays off
+    # until authenticated, cookie-separated and purge behavior is proven.
+    CacheDisable public /
+</IfModule>
+
+<IfModule mod_headers.c>
+    # One origin owner: remove both Apache header tables before setting policy.
+    Header unset X-Powered-By
+    Header always unset X-Powered-By
+
+    Header unset Strict-Transport-Security
+    Header always unset Strict-Transport-Security
+    Header always set Strict-Transport-Security "max-age=15552000" "expr=%{HTTPS} == 'on' || tolower(req('X-Forwarded-Proto')) == 'https'"
+
+    Header unset X-Content-Type-Options
+    Header always unset X-Content-Type-Options
+    Header always set X-Content-Type-Options "nosniff"
+
+    Header unset X-Frame-Options
+    Header always unset X-Frame-Options
+    Header always set X-Frame-Options "SAMEORIGIN"
+
+    Header unset Referrer-Policy
+    Header always unset Referrer-Policy
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+    Header unset Permissions-Policy
+    Header always unset Permissions-Policy
+    Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
+
+    # Remove the current upgrade-only enforcing header. Observation comes first;
+    # this candidate must never emit an enforcing Content-Security-Policy value.
+    Header unset Content-Security-Policy
+    Header always unset Content-Security-Policy
+    Header unset Content-Security-Policy-Report-Only
+    Header always unset Content-Security-Policy-Report-Only
+    Header always set Content-Security-Policy-Report-Only "default-src 'self' https: data: blob:; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; form-action 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https:; script-src-attr 'unsafe-inline'; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: blob: https:; font-src 'self' data: https:; connect-src 'self' https:; frame-src 'self' https:; media-src 'self' https: blob:; worker-src 'self' blob:; manifest-src 'self'; upgrade-insecure-requests"
+
+    # Dynamic default: private and non-storable. Public policies below are exact
+    # request classes, never a wildcard. Private/error/Set-Cookie overrides run last.
+    Header unset Cache-Control
+    Header always unset Cache-Control
+    Header always set Cache-Control "private, no-store, max-age=0, must-revalidate"
+    Header always set Cache-Control "public, max-age=300, stale-while-revalidate=30" env=AIAMIGOS_PUBLIC_HTML
+    Header always set Cache-Control "public, max-age=300, must-revalidate" env=AIAMIGOS_PUBLIC_DISCOVERY
+    Header always set Cache-Control "public, max-age=86400, stale-while-revalidate=600" env=AIAMIGOS_PUBLIC_CODE
+    Header always set Cache-Control "public, max-age=604800, stale-while-revalidate=86400" env=AIAMIGOS_PUBLIC_MEDIA
+    Header always merge Vary "Cookie" env=AIAMIGOS_PUBLIC_HTML
+    Header always merge Vary "Authorization" env=AIAMIGOS_PUBLIC_HTML
+    Header always set Cache-Control "private, no-store, max-age=0, must-revalidate" env=AIAMIGOS_PRIVATE
+    Header always set Cache-Control "private, no-store, max-age=0, must-revalidate" "expr=-n resp('Set-Cookie')"
+    Header always set Cache-Control "private, no-store, max-age=0, must-revalidate" "expr=%{REQUEST_STATUS} >= 400"
+</IfModule>
+
+# END AIAMIGOS ORIGIN POLICY v1

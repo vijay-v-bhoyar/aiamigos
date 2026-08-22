@@ -1,0 +1,4756 @@
+{
+  "generatedAt": "2026-08-13T18:03:39.499Z",
+  "evidenceBoundary": "HTML and attributes come from the 2026-08-13 public snapshot. Response metadata is present only when generated with --probe and is a read-only live HEAD observation. Optional derivative metadata comes from a caller-supplied public WordPress REST media collection.",
+  "probeEnabled": true,
+  "mediaMetadataInput": "C:\\Users\\vijay\\AppData\\Local\\Temp\\aiamigos-media-page1.json",
+  "mediaMetadataRecordCount": 93,
+  "pages": [
+    {
+      "requestedUrl": "https://www.aiamigos.org/",
+      "snapshotFile": "pages/home-7df9c6845f.html",
+      "htmlBytes": 100649,
+      "imageCount": 11,
+      "uniqueNonEmptyImageSources": 9,
+      "originalUploadTags": 11,
+      "rawOriginalTagsWithoutSrcset": 9,
+      "rawOriginalTagsWithoutDimensions": 8,
+      "rawOriginalTagsWithoutLazyLoading": 9,
+      "images": [
+        {
+          "ordinal": 1,
+          "src": "https://www.aiamigos.org/wp-content/uploads/2023/10/cropped-logo-5.png",
+          "source": "wordpress-media",
+          "alt": "AIAmigos.org",
+          "width": 240,
+          "height": 213,
+          "loading": null,
+          "decoding": "async",
+          "fetchpriority": "high",
+          "classes": "custom-logo",
+          "hasDimensions": true,
+          "hasSrcset": false,
+          "sizes": null,
+          "srcset": [],
+          "originalUploadInSrc": true,
+          "ancestorContext": [
+            {
+              "tag": "a",
+              "id": null,
+              "class": "custom-logo-link"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "logo m-0"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "col-lg-3 col-md-10 col-sm-10 col-9 logo-info"
+            },
+            {
+              "tag": "div",
+              "id": "sticky-menu",
+              "class": "row bg-media"
+            }
+          ],
+          "sameSrcOccurrencesOnPage": 1,
+          "response": {
+            "status": 200,
+            "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2023/10/cropped-logo-5.png",
+            "contentLength": 11156,
+            "contentType": "image/png",
+            "cacheControl": "public, max-age=604800",
+            "lastModified": "Fri, 13 Oct 2023 02:47:19 GMT",
+            "etag": "\"2b94-6528afb7-bf4e5a9b27252193;;;\""
+          }
+        },
+        {
+          "ordinal": 2,
+          "src": "https://www.aiamigos.org/wp-content/uploads/2025/11/Gemini_Generated_Image_lru09slru09slru0.png",
+          "source": "wordpress-media",
+          "alt": "Building Agentic AI SaaS: A Strategic Roadmap Using Google Gemini Enterprise post thumbnail",
+          "width": null,
+          "height": null,
+          "loading": null,
+          "decoding": null,
+          "fetchpriority": null,
+          "classes": null,
+          "hasDimensions": false,
+          "hasSrcset": false,
+          "sizes": null,
+          "srcset": [],
+          "originalUploadInSrc": true,
+          "ancestorContext": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "post_pic_inner"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "postpic"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "postbox wow animated slideInUp delay-1000"
+            },
+            {
+              "tag": "div",
+              "id": "single_post",
+              "class": "col-lg-4 col-md-4 col-sm-12"
+            }
+          ],
+          "sameSrcOccurrencesOnPage": 2,
+          "response": {
+            "status": 200,
+            "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2025/11/Gemini_Generated_Image_lru09slru09slru0.png",
+            "contentLength": 5888851,
+            "contentType": "image/png",
+            "cacheControl": "public, max-age=604800",
+            "lastModified": "Wed, 26 Nov 2025 14:14:15 GMT",
+            "etag": "\"59db53-69270b37-98e4ac39af346c50;;;\""
+          }
+        },
+        {
+          "ordinal": 3,
+          "src": "https://www.aiamigos.org/wp-content/uploads/2025/02/LangGraph.png",
+          "source": "wordpress-media",
+          "alt": "LangGraph: 5 Stunning Secrets for Building a Generative AI Application post thumbnail",
+          "width": null,
+          "height": null,
+          "loading": null,
+          "decoding": null,
+          "fetchpriority": null,
+          "classes": null,
+          "hasDimensions": false,
+          "hasSrcset": false,
+          "sizes": null,
+          "srcset": [],
+          "originalUploadInSrc": true,
+          "ancestorContext": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "post_pic_inner"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "postpic"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "postbox wow animated slideInUp delay-1000"
+            },
+            {
+              "tag": "div",
+              "id": "single_post",
+              "class": "col-lg-4 col-md-4 col-sm-12"
+            }
+          ],
+          "sameSrcOccurrencesOnPage": 2,
+          "response": {
+            "status": 200,
+            "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2025/02/LangGraph.png",
+            "contentLength": 16459,
+            "contentType": "image/png",
+            "cacheControl": "public, max-age=604800",
+            "lastModified": "Sat, 22 Feb 2025 22:53:38 GMT",
+            "etag": "\"404b-67ba5572-45b052a350016b3f;;;\""
+          }
+        },
+        {
+          "ordinal": 4,
+          "src": "https://www.aiamigos.org/wp-content/uploads/2024/10/NVIDIA-MONAI.webp",
+          "source": "wordpress-media",
+          "alt": "A Comprehensive Guide to NVIDIA MONAI: Unlocking AI in Medical Imaging post thumbnail",
+          "width": null,
+          "height": null,
+          "loading": null,
+          "decoding": null,
+          "fetchpriority": null,
+          "classes": null,
+          "hasDimensions": false,
+          "hasSrcset": false,
+          "sizes": null,
+          "srcset": [],
+          "originalUploadInSrc": true,
+          "ancestorContext": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "post_pic_inner"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "postpic"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "postbox wow animated slideInUp delay-1000"
+            },
+            {
+              "tag": "div",
+              "id": "single_post",
+              "class": "col-lg-4 col-md-4 col-sm-12"
+            }
+          ],
+          "sameSrcOccurrencesOnPage": 1,
+          "response": {
+            "status": 200,
+            "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2024/10/NVIDIA-MONAI.webp",
+            "contentLength": 739364,
+            "contentType": "image/webp",
+            "cacheControl": "public, max-age=604800",
+            "lastModified": "Tue, 15 Oct 2024 13:45:17 GMT",
+            "etag": "\"b4824-670e71ed-e93a83edc5191c98;;;\""
+          }
+        },
+        {
+          "ordinal": 5,
+          "src": "https://www.aiamigos.org/wp-content/uploads/2024/10/fine-tuning.webp",
+          "source": "wordpress-media",
+          "alt": "Fine-Tuning Your Generative AI Application: A Comprehensive Guide to Parameters and Configurations post thumbnail",
+          "width": null,
+          "height": null,
+          "loading": null,
+          "decoding": null,
+          "fetchpriority": null,
+          "classes": null,
+          "hasDimensions": false,
+          "hasSrcset": false,
+          "sizes": null,
+          "srcset": [],
+          "originalUploadInSrc": true,
+          "ancestorContext": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "post_pic_inner"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "postpic"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "postbox wow animated slideInUp delay-1000"
+            },
+            {
+              "tag": "div",
+              "id": "single_post",
+              "class": "col-lg-4 col-md-4 col-sm-12"
+            }
+          ],
+          "sameSrcOccurrencesOnPage": 1,
+          "response": {
+            "status": 200,
+            "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2024/10/fine-tuning.webp",
+            "contentLength": 674118,
+            "contentType": "image/webp",
+            "cacheControl": "public, max-age=604800",
+            "lastModified": "Fri, 25 Oct 2024 01:35:52 GMT",
+            "etag": "\"a4946-671af5f8-da2e68d585fb2b6;;;\""
+          }
+        },
+        {
+          "ordinal": 6,
+          "src": "https://www.aiamigos.org/wp-content/uploads/2024/10/vectordb.png",
+          "source": "wordpress-media",
+          "alt": "Choosing the Right Vector Database with Caching: A Comprehensive Guide for GenAI Applications post thumbnail",
+          "width": null,
+          "height": null,
+          "loading": null,
+          "decoding": null,
+          "fetchpriority": null,
+          "classes": null,
+          "hasDimensions": false,
+          "hasSrcset": false,
+          "sizes": null,
+          "srcset": [],
+          "originalUploadInSrc": true,
+          "ancestorContext": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "post_pic_inner"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "postpic"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "postbox wow animated slideInUp delay-1000"
+            },
+            {
+              "tag": "div",
+              "id": "single_post",
+              "class": "col-lg-4 col-md-4 col-sm-12"
+            }
+          ],
+          "sameSrcOccurrencesOnPage": 1,
+          "response": {
+            "status": 200,
+            "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2024/10/vectordb.png",
+            "contentLength": 724094,
+            "contentType": "image/png",
+            "cacheControl": "public, max-age=604800",
+            "lastModified": "Wed, 23 Oct 2024 21:51:20 GMT",
+            "etag": "\"b0c7e-67196fd8-1af16a6a2cc33dbd;;;\""
+          }
+        },
+        {
+          "ordinal": 7,
+          "src": "https://www.aiamigos.org/wp-content/uploads/2024/09/tesseract-ocr.png",
+          "source": "wordpress-media",
+          "alt": "Tesseract, an OCR (Optical Character Recognition) tool for Image Reading from Excel post thumbnail",
+          "width": null,
+          "height": null,
+          "loading": null,
+          "decoding": null,
+          "fetchpriority": null,
+          "classes": null,
+          "hasDimensions": false,
+          "hasSrcset": false,
+          "sizes": null,
+          "srcset": [],
+          "originalUploadInSrc": true,
+          "ancestorContext": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "post_pic_inner"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "postpic"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "postbox wow animated slideInUp delay-1000"
+            },
+            {
+              "tag": "div",
+              "id": "single_post",
+              "class": "col-lg-4 col-md-4 col-sm-12"
+            }
+          ],
+          "sameSrcOccurrencesOnPage": 1,
+          "response": {
+            "status": 200,
+            "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2024/09/tesseract-ocr.png",
+            "contentLength": 77022,
+            "contentType": "image/png",
+            "cacheControl": "public, max-age=604800",
+            "lastModified": "Thu, 05 Sep 2024 03:44:31 GMT",
+            "etag": "\"12cde-66d9291f-61da108bbc5f2d05;;;\""
+          }
+        },
+        {
+          "ordinal": 8,
+          "src": "https://www.aiamigos.org/wp-content/uploads/2024/10/RAG-1.png",
+          "source": "wordpress-media",
+          "alt": "RAG Architecture Types with Implementation Details and Use Cases post thumbnail",
+          "width": null,
+          "height": null,
+          "loading": null,
+          "decoding": null,
+          "fetchpriority": null,
+          "classes": null,
+          "hasDimensions": false,
+          "hasSrcset": false,
+          "sizes": null,
+          "srcset": [],
+          "originalUploadInSrc": true,
+          "ancestorContext": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "post_pic_inner"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "postpic"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "postbox wow animated slideInUp delay-1000"
+            },
+            {
+              "tag": "div",
+              "id": "single_post",
+              "class": "col-lg-4 col-md-4 col-sm-12"
+            }
+          ],
+          "sameSrcOccurrencesOnPage": 1,
+          "response": {
+            "status": 200,
+            "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2024/10/RAG-1.png",
+            "contentLength": 889784,
+            "contentType": "image/png",
+            "cacheControl": "public, max-age=604800",
+            "lastModified": "Wed, 30 Oct 2024 13:00:53 GMT",
+            "etag": "\"d93b8-67222e05-7a83945f27f7e811;;;\""
+          }
+        },
+        {
+          "ordinal": 9,
+          "src": "https://www.aiamigos.org/wp-content/uploads/2024/06/Interoperability.jpg",
+          "source": "wordpress-media",
+          "alt": "Healthcare Interoperability: AI Breaking Down the Wall post thumbnail",
+          "width": null,
+          "height": null,
+          "loading": null,
+          "decoding": null,
+          "fetchpriority": null,
+          "classes": null,
+          "hasDimensions": false,
+          "hasSrcset": false,
+          "sizes": null,
+          "srcset": [],
+          "originalUploadInSrc": true,
+          "ancestorContext": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "post_pic_inner"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "postpic"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "postbox wow animated slideInUp delay-1000"
+            },
+            {
+              "tag": "div",
+              "id": "single_post",
+              "class": "col-lg-4 col-md-4 col-sm-12"
+            }
+          ],
+          "sameSrcOccurrencesOnPage": 1,
+          "response": {
+            "status": 200,
+            "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2024/06/Interoperability.jpg",
+            "contentLength": 525952,
+            "contentType": "image/jpeg",
+            "cacheControl": "public, max-age=604800",
+            "lastModified": "Sun, 09 Jun 2024 00:25:23 GMT",
+            "etag": "\"80680-6664f673-ab4cf56475633db3;;;\""
+          }
+        },
+        {
+          "ordinal": 10,
+          "src": "https://www.aiamigos.org/wp-content/uploads/2025/11/Gemini_Generated_Image_lru09slru09slru0.png",
+          "source": "wordpress-media",
+          "alt": "Google Enterprise UI UX",
+          "width": 2816,
+          "height": 1536,
+          "loading": "lazy",
+          "decoding": "async",
+          "fetchpriority": null,
+          "classes": "attachment-post-thumbnail size-post-thumbnail wp-post-image",
+          "hasDimensions": true,
+          "hasSrcset": true,
+          "sizes": "(max-width: 2816px) 100vw, 2816px",
+          "srcset": [
+            {
+              "url": "https://www.aiamigos.org/wp-content/uploads/2025/11/Gemini_Generated_Image_lru09slru09slru0.png",
+              "descriptor": "2816w"
+            },
+            {
+              "url": "https://www.aiamigos.org/wp-content/uploads/2025/11/Gemini_Generated_Image_lru09slru09slru0-300x164.png",
+              "descriptor": "300w"
+            },
+            {
+              "url": "https://www.aiamigos.org/wp-content/uploads/2025/11/Gemini_Generated_Image_lru09slru09slru0-1024x559.png",
+              "descriptor": "1024w"
+            },
+            {
+              "url": "https://www.aiamigos.org/wp-content/uploads/2025/11/Gemini_Generated_Image_lru09slru09slru0-768x419.png",
+              "descriptor": "768w"
+            },
+            {
+              "url": "https://www.aiamigos.org/wp-content/uploads/2025/11/Gemini_Generated_Image_lru09slru09slru0-1536x838.png",
+              "descriptor": "1536w"
+            },
+            {
+              "url": "https://www.aiamigos.org/wp-content/uploads/2025/11/Gemini_Generated_Image_lru09slru09slru0-2048x1117.png",
+              "descriptor": "2048w"
+            }
+          ],
+          "originalUploadInSrc": true,
+          "ancestorContext": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "post-thumb col-md-4 col-sm-4 col-4 "
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "row recent-post-box"
+            },
+            {
+              "tag": "aside",
+              "id": "recent-posts-5",
+              "class": "widget widget_recent_entries"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "col-lg-3 col-sm-6"
+            }
+          ],
+          "sameSrcOccurrencesOnPage": 2,
+          "response": {
+            "status": 200,
+            "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2025/11/Gemini_Generated_Image_lru09slru09slru0.png",
+            "contentLength": 5888851,
+            "contentType": "image/png",
+            "cacheControl": "public, max-age=604800",
+            "lastModified": "Wed, 26 Nov 2025 14:14:15 GMT",
+            "etag": "\"59db53-69270b37-98e4ac39af346c50;;;\""
+          }
+        },
+        {
+          "ordinal": 11,
+          "src": "https://www.aiamigos.org/wp-content/uploads/2025/02/LangGraph.png",
+          "source": "wordpress-media",
+          "alt": "LangGraph",
+          "width": 324,
+          "height": 68,
+          "loading": "lazy",
+          "decoding": "async",
+          "fetchpriority": null,
+          "classes": "attachment-post-thumbnail size-post-thumbnail wp-post-image",
+          "hasDimensions": true,
+          "hasSrcset": true,
+          "sizes": "(max-width: 324px) 100vw, 324px",
+          "srcset": [
+            {
+              "url": "https://www.aiamigos.org/wp-content/uploads/2025/02/LangGraph.png",
+              "descriptor": "324w"
+            },
+            {
+              "url": "https://www.aiamigos.org/wp-content/uploads/2025/02/LangGraph-300x63.png",
+              "descriptor": "300w"
+            }
+          ],
+          "originalUploadInSrc": true,
+          "ancestorContext": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "post-thumb col-md-4 col-sm-4 col-4 "
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "row recent-post-box"
+            },
+            {
+              "tag": "aside",
+              "id": "recent-posts-5",
+              "class": "widget widget_recent_entries"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "col-lg-3 col-sm-6"
+            }
+          ],
+          "sameSrcOccurrencesOnPage": 2,
+          "response": {
+            "status": 200,
+            "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2025/02/LangGraph.png",
+            "contentLength": 16459,
+            "contentType": "image/png",
+            "cacheControl": "public, max-age=604800",
+            "lastModified": "Sat, 22 Feb 2025 22:53:38 GMT",
+            "etag": "\"404b-67ba5572-45b052a350016b3f;;;\""
+          }
+        }
+      ],
+      "scripts": [
+        "https://www.aiamigos.org/wp-includes/js/jquery/jquery.min.js?ver=3.7.1",
+        "https://www.aiamigos.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1",
+        "https://www.googletagmanager.com/gtag/js?id=GT-WFFD82N",
+        "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9542453824778388&host=ca-host-pub-2644536267352236",
+        "https://www.aiamigos.org/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2",
+        "https://www.aiamigos.org/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.14.0",
+        "https://www.aiamigos.org/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0",
+        "https://www.aiamigos.org/wp-includes/js/dist/hooks.min.js?ver=c6aec9a8d4e5a5d543a1",
+        "https://www.aiamigos.org/wp-includes/js/dist/i18n.min.js?ver=7701b0c3857f914212ef",
+        "https://www.aiamigos.org/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.9.8",
+        "https://www.aiamigos.org/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.9.8",
+        "https://www.aiamigos.org/wp-content/themes/sirat-pro/assets/js/tether.js?ver=6.4.10",
+        "https://www.aiamigos.org/wp-content/themes/sirat-pro/assets/js/bootstrap.min.js?ver=6.4.10",
+        "https://www.aiamigos.org/wp-content/themes/sirat-pro/assets/js/owl.carousel.js?ver=6.4.10",
+        "https://www.aiamigos.org/wp-content/themes/sirat-pro/assets/js/jquery.appear.js?ver=6.4.10",
+        "https://www.aiamigos.org/wp-content/themes/sirat-pro/assets/js/SmoothScroll.js?ver=6.4.10",
+        "https://www.aiamigos.org/wp-content/themes/sirat-pro/assets/js/jquery-progressbar.js?ver=6.4.10",
+        "https://www.aiamigos.org/wp-content/themes/sirat-pro/assets/js/custom.js?ver=6.4.10",
+        "https://www.aiamigos.org/wp-content/themes/sirat-pro/assets/js/wow.min.js?ver=6.4.10",
+        "https://www.aiamigos.org/wp-includes/js/comment-reply.min.js?ver=6.4.10",
+        "https://www.aiamigos.org/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-consent-mode-86cb52dcb9f2b27ed244.js",
+        "https://www.aiamigos.org/wp-content/plugins/wp-consent-api/assets/js/wp-consent-api.min.js?ver=1.0.7"
+      ],
+      "directSourceBytes": 15452110,
+      "uniqueDirectSourceBytes": 9546800
+    },
+    {
+      "requestedUrl": "https://www.aiamigos.org/home/",
+      "snapshotFile": "pages/home-d4c4647786.html",
+      "htmlBytes": 134730,
+      "imageCount": 27,
+      "uniqueNonEmptyImageSources": 23,
+      "originalUploadTags": 25,
+      "rawOriginalTagsWithoutSrcset": 19,
+      "rawOriginalTagsWithoutDimensions": 18,
+      "rawOriginalTagsWithoutLazyLoading": 23,
+      "images": [
+        {
+          "ordinal": 1,
+          "src": "https://www.aiamigos.org/wp-content/uploads/2023/10/cropped-logo-5.png",
+          "source": "wordpress-media",
+          "alt": "AIAmigos.org",
+          "width": 240,
+          "height": 213,
+          "loading": null,
+          "decoding": "async",
+          "fetchpriority": "high",
+          "classes": "custom-logo",
+          "hasDimensions": true,
+          "hasSrcset": false,
+          "sizes": null,
+          "srcset": [],
+          "originalUploadInSrc": true,
+          "ancestorContext": [
+            {
+              "tag": "a",
+              "id": null,
+              "class": "custom-logo-link"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "logo m-0"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "col-lg-3 col-md-10 col-sm-10 col-9 logo-info"
+            },
+            {
+              "tag": "div",
+              "id": "sticky-menu",
+              "class": "row bg-media"
+            }
+          ],
+          "sameSrcOccurrencesOnPage": 1,
+          "response": {
+            "status": 200,
+            "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2023/10/cropped-logo-5.png",
+            "contentLength": 11156,
+            "contentType": "image/png",
+            "cacheControl": "public, max-age=604800",
+            "lastModified": "Fri, 13 Oct 2023 02:47:19 GMT",
+            "etag": "\"2b94-6528afb7-bf4e5a9b27252193;;;\""
+          }
+        },
+        {
+          "ordinal": 2,
+          "src": "https://www.aiamigos.org/wp-content/uploads/2023/10/DALL%C2%B7E-2023-10-23-00.10.13-Illustration-of-a-school-hallway-bustling-with-diverse-middle-and-high-school-students-of-various-genders-and-descents.-They-are-chatting-opening-loc.png",
+          "source": "wordpress-media",
+          "alt": "AI Amigos Academy",
+          "width": 1024,
+          "height": 1024,
+          "loading": null,
+          "decoding": "async",
+          "fetchpriority": null,
+          "classes": "attachment-post-thumbnail size-post-thumbnail wp-post-image",
+          "hasDimensions": true,
+          "hasSrcset": true,
+          "sizes": "(max-width: 1024px) 100vw, 1024px",
+          "srcset": [
+            {
+              "url": "https://www.aiamigos.org/wp-content/uploads/2023/10/DALL%C2%B7E-2023-10-23-00.10.13-Illustration-of-a-school-hallway-bustling-with-diverse-middle-and-high-school-students-of-various-genders-and-descents.-They-are-chatting-opening-loc.png",
+              "descriptor": "1024w"
+            },
+            {
+              "url": "https://www.aiamigos.org/wp-content/uploads/2023/10/DALL%C2%B7E-2023-10-23-00.10.13-Illustration-of-a-school-hallway-bustling-with-diverse-middle-and-high-school-students-of-various-genders-and-descents.-They-are-chatting-opening-loc-300x300.png",
+              "descriptor": "300w"
+            },
+            {
+              "url": "https://www.aiamigos.org/wp-content/uploads/2023/10/DALL%C2%B7E-2023-10-23-00.10.13-Illustration-of-a-school-hallway-bustling-with-diverse-middle-and-high-school-students-of-various-genders-and-descents.-They-are-chatting-opening-loc-150x150.png",
+              "descriptor": "150w"
+            },
+            {
+              "url": "https://www.aiamigos.org/wp-content/uploads/2023/10/DALL%C2%B7E-2023-10-23-00.10.13-Illustration-of-a-school-hallway-bustling-with-diverse-middle-and-high-school-students-of-various-genders-and-descents.-They-are-chatting-opening-loc-768x768.png",
+              "descriptor": "768w"
+            },
+            {
+              "url": "https://www.aiamigos.org/wp-content/uploads/2023/10/DALL%C2%B7E-2023-10-23-00.10.13-Illustration-of-a-school-hallway-bustling-with-diverse-middle-and-high-school-students-of-various-genders-and-descents.-They-are-chatting-opening-loc-600x600.png",
+              "descriptor": "600w"
+            }
+          ],
+          "originalUploadInSrc": true,
+          "ancestorContext": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "services-icon py-3 px-3 mb-2"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "our-services-box mb-3 p-4"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "col-lg-6 col-md-6 col-sm-6"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "row service-title-boxes"
+            }
+          ],
+          "sameSrcOccurrencesOnPage": 1,
+          "response": {
+            "status": 200,
+            "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2023/10/DALL%C2%B7E-2023-10-23-00.10.13-Illustration-of-a-school-hallway-bustling-with-diverse-middle-and-high-school-students-of-various-genders-and-descents.-They-are-chatting-opening-loc.png",
+            "contentLength": 1555215,
+            "contentType": "image/png",
+            "cacheControl": "public, max-age=604800",
+            "lastModified": "Mon, 23 Oct 2023 17:20:17 GMT",
+            "etag": "\"17bb0f-6536ab51-503b45a135fda7a4;;;\""
+          }
+        },
+        {
+          "ordinal": 3,
+          "src": "https://www.aiamigos.org/wp-content/uploads/2023/10/DALL%C2%B7E-2023-10-23-00.09.55-Illustration-of-a-modern-office-setting-with-diverse-professionals-of-various-genders-and-descents.-They-are-engaged-in-activities-like-meetings-pres.png",
+          "source": "wordpress-media",
+          "alt": "AI by Job Role",
+          "width": 1024,
+          "height": 1024,
+          "loading": null,
+          "decoding": "async",
+          "fetchpriority": null,
+          "classes": "attachment-post-thumbnail size-post-thumbnail wp-post-image",
+          "hasDimensions": true,
+          "hasSrcset": true,
+          "sizes": "(max-width: 1024px) 100vw, 1024px",
+          "srcset": [
+            {
+              "url": "https://www.aiamigos.org/wp-content/uploads/2023/10/DALL%C2%B7E-2023-10-23-00.09.55-Illustration-of-a-modern-office-setting-with-diverse-professionals-of-various-genders-and-descents.-They-are-engaged-in-activities-like-meetings-pres.png",
+              "descriptor": "1024w"
+            },
+            {
+              "url": "https://www.aiamigos.org/wp-content/uploads/2023/10/DALL%C2%B7E-2023-10-23-00.09.55-Illustration-of-a-modern-office-setting-with-diverse-professionals-of-various-genders-and-descents.-They-are-engaged-in-activities-like-meetings-pres-300x300.png",
+              "descriptor": "300w"
+            },
+            {
+              "url": "https://www.aiamigos.org/wp-content/uploads/2023/10/DALL%C2%B7E-2023-10-23-00.09.55-Illustration-of-a-modern-office-setting-with-diverse-professionals-of-various-genders-and-descents.-They-are-engaged-in-activities-like-meetings-pres-150x150.png",
+              "descriptor": "150w"
+            },
+            {
+              "url": "https://www.aiamigos.org/wp-content/uploads/2023/10/DALL%C2%B7E-2023-10-23-00.09.55-Illustration-of-a-modern-office-setting-with-diverse-professionals-of-various-genders-and-descents.-They-are-engaged-in-activities-like-meetings-pres-768x768.png",
+              "descriptor": "768w"
+            },
+            {
+              "url": "https://www.aiamigos.org/wp-content/uploads/2023/10/DALL%C2%B7E-2023-10-23-00.09.55-Illustration-of-a-modern-office-setting-with-diverse-professionals-of-various-genders-and-descents.-They-are-engaged-in-activities-like-meetings-pres-600x600.png",
+              "descriptor": "600w"
+            }
+          ],
+          "originalUploadInSrc": true,
+          "ancestorContext": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "services-icon py-3 px-3 mb-2"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "our-services-box mb-3 p-4"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "col-lg-6 col-md-6 col-sm-6"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "row service-title-boxes"
+            }
+          ],
+          "sameSrcOccurrencesOnPage": 1,
+          "response": {
+            "status": 200,
+            "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2023/10/DALL%C2%B7E-2023-10-23-00.09.55-Illustration-of-a-modern-office-setting-with-diverse-professionals-of-various-genders-and-descents.-They-are-engaged-in-activities-like-meetings-pres.png",
+            "contentLength": 1414310,
+            "contentType": "image/png",
+            "cacheControl": "public, max-age=604800",
+            "lastModified": "Mon, 23 Oct 2023 17:20:37 GMT",
+            "etag": "\"1594a6-6536ab65-9244c30d7ca08aa2;;;\""
+          }
+        },
+        {
+          "ordinal": 4,
+          "src": "https://www.aiamigos.org/wp-content/uploads/2023/10/DALL%C2%B7E-2023-10-23-14.42.24-Futuristic-design-showcasing-AI-Amigos-Pro-at-the-center.-Radiating-out-are-icons-for-various-professions-each-seamlessly-integrated-with-AI_-A-pen.png",
+          "source": "wordpress-media",
+          "alt": "Ai by Job Role",
+          "width": 1024,
+          "height": 1024,
+          "loading": null,
+          "decoding": "async",
+          "fetchpriority": null,
+          "classes": "attachment-post-thumbnail size-post-thumbnail wp-post-image",
+          "hasDimensions": true,
+          "hasSrcset": true,
+          "sizes": "(max-width: 1024px) 100vw, 1024px",
+          "srcset": [
+            {
+              "url": "https://www.aiamigos.org/wp-content/uploads/2023/10/DALL%C2%B7E-2023-10-23-14.42.24-Futuristic-design-showcasing-AI-Amigos-Pro-at-the-center.-Radiating-out-are-icons-for-various-professions-each-seamlessly-integrated-with-AI_-A-pen.png",
+              "descriptor": "1024w"
+            },
+            {
+              "url": "https://www.aiamigos.org/wp-content/uploads/2023/10/DALL%C2%B7E-2023-10-23-14.42.24-Futuristic-design-showcasing-AI-Amigos-Pro-at-the-center.-Radiating-out-are-icons-for-various-professions-each-seamlessly-integrated-with-AI_-A-pen-300x300.png",
+              "descriptor": "300w"
+            },
+            {
+              "url": "https://www.aiamigos.org/wp-content/uploads/2023/10/DALL%C2%B7E-2023-10-23-14.42.24-Futuristic-design-showcasing-AI-Amigos-Pro-at-the-center.-Radiating-out-are-icons-for-various-professions-each-seamlessly-integrated-with-AI_-A-pen-150x150.png",
+              "descriptor": "150w"
+            },
+            {
+              "url": "https://www.aiamigos.org/wp-content/uploads/2023/10/DALL%C2%B7E-2023-10-23-14.42.24-Futuristic-design-showcasing-AI-Amigos-Pro-at-the-center.-Radiating-out-are-icons-for-various-professions-each-seamlessly-integrated-with-AI_-A-pen-768x768.png",
+              "descriptor": "768w"
+            },
+            {
+              "url": "https://www.aiamigos.org/wp-content/uploads/2023/10/DALL%C2%B7E-2023-10-23-14.42.24-Futuristic-design-showcasing-AI-Amigos-Pro-at-the-center.-Radiating-out-are-icons-for-various-professions-each-seamlessly-integrated-with-AI_-A-pen-600x600.png",
+              "descriptor": "600w"
+            }
+          ],
+          "originalUploadInSrc": true,
+          "ancestorContext": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "services-icon py-3 px-3 mb-2"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "our-services-box mb-3 p-4"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "col-lg-6 col-md-6 col-sm-6"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "row service-title-boxes"
+            }
+          ],
+          "sameSrcOccurrencesOnPage": 1,
+          "response": {
+            "status": 200,
+            "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2023/10/DALL%C2%B7E-2023-10-23-14.42.24-Futuristic-design-showcasing-AI-Amigos-Pro-at-the-center.-Radiating-out-are-icons-for-various-professions-each-seamlessly-integrated-with-AI_-A-pen.png",
+            "contentLength": 2283599,
+            "contentType": "image/png",
+            "cacheControl": "public, max-age=604800",
+            "lastModified": "Mon, 23 Oct 2023 18:45:31 GMT",
+            "etag": "\"22d84f-6536bf4b-511693c05b288ec4;;;\""
+          }
+        },
+        {
+          "ordinal": 5,
+          "src": "https://www.aiamigos.org/wp-content/uploads/2023/10/DALL%C2%B7E-2023-10-23-00.10.19-Illustration-of-a-colorful-classroom-setting-with-diverse-elementary-school-kids-of-different-genders-and-descents.-They-are-joyfully-engaged-in-vario.png",
+          "source": "wordpress-media",
+          "alt": "AI for K to 8 Student",
+          "width": 1024,
+          "height": 1024,
+          "loading": null,
+          "decoding": "async",
+          "fetchpriority": null,
+          "classes": "attachment-post-thumbnail size-post-thumbnail wp-post-image",
+          "hasDimensions": true,
+          "hasSrcset": true,
+          "sizes": "(max-width: 1024px) 100vw, 1024px",
+          "srcset": [
+            {
+              "url": "https://www.aiamigos.org/wp-content/uploads/2023/10/DALL%C2%B7E-2023-10-23-00.10.19-Illustration-of-a-colorful-classroom-setting-with-diverse-elementary-school-kids-of-different-genders-and-descents.-They-are-joyfully-engaged-in-vario.png",
+              "descriptor": "1024w"
+            },
+            {
+              "url": "https://www.aiamigos.org/wp-content/uploads/2023/10/DALL%C2%B7E-2023-10-23-00.10.19-Illustration-of-a-colorful-classroom-setting-with-diverse-elementary-school-kids-of-different-genders-and-descents.-They-are-joyfully-engaged-in-vario-300x300.png",
+              "descriptor": "300w"
+            },
+            {
+              "url": "https://www.aiamigos.org/wp-content/uploads/2023/10/DALL%C2%B7E-2023-10-23-00.10.19-Illustration-of-a-colorful-classroom-setting-with-diverse-elementary-school-kids-of-different-genders-and-descents.-They-are-joyfully-engaged-in-vario-150x150.png",
+              "descriptor": "150w"
+            },
+            {
+              "url": "https://www.aiamigos.org/wp-content/uploads/2023/10/DALL%C2%B7E-2023-10-23-00.10.19-Illustration-of-a-colorful-classroom-setting-with-diverse-elementary-school-kids-of-different-genders-and-descents.-They-are-joyfully-engaged-in-vario-768x768.png",
+              "descriptor": "768w"
+            },
+            {
+              "url": "https://www.aiamigos.org/wp-content/uploads/2023/10/DALL%C2%B7E-2023-10-23-00.10.19-Illustration-of-a-colorful-classroom-setting-with-diverse-elementary-school-kids-of-different-genders-and-descents.-They-are-joyfully-engaged-in-vario-600x600.png",
+              "descriptor": "600w"
+            }
+          ],
+          "originalUploadInSrc": true,
+          "ancestorContext": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "services-icon py-3 px-3 mb-2"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "our-services-box mb-3 p-4"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "col-lg-6 col-md-6 col-sm-6"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "row service-title-boxes"
+            }
+          ],
+          "sameSrcOccurrencesOnPage": 1,
+          "response": {
+            "status": 200,
+            "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2023/10/DALL%C2%B7E-2023-10-23-00.10.19-Illustration-of-a-colorful-classroom-setting-with-diverse-elementary-school-kids-of-different-genders-and-descents.-They-are-joyfully-engaged-in-vario.png",
+            "contentLength": 1455501,
+            "contentType": "image/png",
+            "cacheControl": "public, max-age=604800",
+            "lastModified": "Mon, 23 Oct 2023 17:20:10 GMT",
+            "etag": "\"16358d-6536ab4a-dca1b7fb5aa58991;;;\""
+          }
+        },
+        {
+          "ordinal": 6,
+          "src": "https://www.aiamigos.org/wp-content/uploads/2025/11/Gemini_Generated_Image_lru09slru09slru0.png",
+          "source": "wordpress-media",
+          "alt": "blog image1",
+          "width": null,
+          "height": null,
+          "loading": null,
+          "decoding": null,
+          "fetchpriority": null,
+          "classes": null,
+          "hasDimensions": false,
+          "hasSrcset": false,
+          "sizes": null,
+          "srcset": [],
+          "originalUploadInSrc": true,
+          "ancestorContext": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "latest-blog-image"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "col-lg-6 col-md-6 col-sm-6"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "row our-blogs-box"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "our-blogs-content"
+            }
+          ],
+          "sameSrcOccurrencesOnPage": 2,
+          "response": {
+            "status": 200,
+            "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2025/11/Gemini_Generated_Image_lru09slru09slru0.png",
+            "contentLength": 5888851,
+            "contentType": "image/png",
+            "cacheControl": "public, max-age=604800",
+            "lastModified": "Wed, 26 Nov 2025 14:14:15 GMT",
+            "etag": "\"59db53-69270b37-98e4ac39af346c50;;;\""
+          }
+        },
+        {
+          "ordinal": 7,
+          "src": "https://www.aiamigos.org/wp-content/uploads/2025/02/LangGraph.png",
+          "source": "wordpress-media",
+          "alt": "blog image2",
+          "width": null,
+          "height": null,
+          "loading": null,
+          "decoding": null,
+          "fetchpriority": null,
+          "classes": null,
+          "hasDimensions": false,
+          "hasSrcset": false,
+          "sizes": null,
+          "srcset": [],
+          "originalUploadInSrc": true,
+          "ancestorContext": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "latest-blog-image"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "col-lg-6 col-md-6 col-sm-6"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "row our-blogs-box"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "our-blogs-content"
+            }
+          ],
+          "sameSrcOccurrencesOnPage": 2,
+          "response": {
+            "status": 200,
+            "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2025/02/LangGraph.png",
+            "contentLength": 16459,
+            "contentType": "image/png",
+            "cacheControl": "public, max-age=604800",
+            "lastModified": "Sat, 22 Feb 2025 22:53:38 GMT",
+            "etag": "\"404b-67ba5572-45b052a350016b3f;;;\""
+          }
+        },
+        {
+          "ordinal": 8,
+          "src": null,
+          "source": "empty",
+          "alt": "",
+          "width": null,
+          "height": null,
+          "loading": null,
+          "decoding": null,
+          "fetchpriority": null,
+          "classes": null,
+          "hasDimensions": false,
+          "hasSrcset": false,
+          "sizes": null,
+          "srcset": [],
+          "originalUploadInSrc": false,
+          "ancestorContext": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "latest-blog-image"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "col-lg-6 col-md-6 col-sm-6"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "row our-blogs-box"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "our-blogs-content"
+            }
+          ],
+          "sameSrcOccurrencesOnPage": 0,
+          "response": null
+        },
+        {
+          "ordinal": 9,
+          "src": null,
+          "source": "empty",
+          "alt": "",
+          "width": null,
+          "height": null,
+          "loading": null,
+          "decoding": null,
+          "fetchpriority": null,
+          "classes": null,
+          "hasDimensions": false,
+          "hasSrcset": false,
+          "sizes": null,
+          "srcset": [],
+          "originalUploadInSrc": false,
+          "ancestorContext": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "latest-blog-image"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "col-lg-6 col-md-6 col-sm-6"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "row our-blogs-box"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "our-blogs-content"
+            }
+          ],
+          "sameSrcOccurrencesOnPage": 0,
+          "response": null
+        },
+        {
+          "ordinal": 10,
+          "src": "https://www.aiamigos.org/wp-content/uploads/2024/10/NVIDIA-MONAI.webp",
+          "source": "wordpress-media",
+          "alt": "",
+          "width": null,
+          "height": null,
+          "loading": null,
+          "decoding": null,
+          "fetchpriority": null,
+          "classes": null,
+          "hasDimensions": false,
+          "hasSrcset": false,
+          "sizes": null,
+          "srcset": [],
+          "originalUploadInSrc": true,
+          "ancestorContext": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "latest-blog-image"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "col-lg-6 col-md-6 col-sm-6"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "row our-blogs-box"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "our-blogs-content"
+            }
+          ],
+          "sameSrcOccurrencesOnPage": 1,
+          "response": {
+            "status": 200,
+            "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2024/10/NVIDIA-MONAI.webp",
+            "contentLength": 739364,
+            "contentType": "image/webp",
+            "cacheControl": "public, max-age=604800",
+            "lastModified": "Tue, 15 Oct 2024 13:45:17 GMT",
+            "etag": "\"b4824-670e71ed-e93a83edc5191c98;;;\""
+          }
+        },
+        {
+          "ordinal": 11,
+          "src": "https://www.aiamigos.org/wp-content/uploads/2024/10/fine-tuning.webp",
+          "source": "wordpress-media",
+          "alt": "",
+          "width": null,
+          "height": null,
+          "loading": null,
+          "decoding": null,
+          "fetchpriority": null,
+          "classes": null,
+          "hasDimensions": false,
+          "hasSrcset": false,
+          "sizes": null,
+          "srcset": [],
+          "originalUploadInSrc": true,
+          "ancestorContext": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "latest-blog-image"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "col-lg-6 col-md-6 col-sm-6"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "row our-blogs-box"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "our-blogs-content"
+            }
+          ],
+          "sameSrcOccurrencesOnPage": 1,
+          "response": {
+            "status": 200,
+            "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2024/10/fine-tuning.webp",
+            "contentLength": 674118,
+            "contentType": "image/webp",
+            "cacheControl": "public, max-age=604800",
+            "lastModified": "Fri, 25 Oct 2024 01:35:52 GMT",
+            "etag": "\"a4946-671af5f8-da2e68d585fb2b6;;;\""
+          }
+        },
+        {
+          "ordinal": 12,
+          "src": "https://www.aiamigos.org/wp-content/uploads/2024/10/vectordb.png",
+          "source": "wordpress-media",
+          "alt": "",
+          "width": null,
+          "height": null,
+          "loading": null,
+          "decoding": null,
+          "fetchpriority": null,
+          "classes": null,
+          "hasDimensions": false,
+          "hasSrcset": false,
+          "sizes": null,
+          "srcset": [],
+          "originalUploadInSrc": true,
+          "ancestorContext": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "latest-blog-image"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "col-lg-6 col-md-6 col-sm-6"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "row our-blogs-box"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "our-blogs-content"
+            }
+          ],
+          "sameSrcOccurrencesOnPage": 1,
+          "response": {
+            "status": 200,
+            "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2024/10/vectordb.png",
+            "contentLength": 724094,
+            "contentType": "image/png",
+            "cacheControl": "public, max-age=604800",
+            "lastModified": "Wed, 23 Oct 2024 21:51:20 GMT",
+            "etag": "\"b0c7e-67196fd8-1af16a6a2cc33dbd;;;\""
+          }
+        },
+        {
+          "ordinal": 13,
+          "src": "https://www.aiamigos.org/wp-content/uploads/2024/09/tesseract-ocr.png",
+          "source": "wordpress-media",
+          "alt": "",
+          "width": null,
+          "height": null,
+          "loading": null,
+          "decoding": null,
+          "fetchpriority": null,
+          "classes": null,
+          "hasDimensions": false,
+          "hasSrcset": false,
+          "sizes": null,
+          "srcset": [],
+          "originalUploadInSrc": true,
+          "ancestorContext": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "latest-blog-image"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "col-lg-6 col-md-6 col-sm-6"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "row our-blogs-box"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "our-blogs-content"
+            }
+          ],
+          "sameSrcOccurrencesOnPage": 1,
+          "response": {
+            "status": 200,
+            "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2024/09/tesseract-ocr.png",
+            "contentLength": 77022,
+            "contentType": "image/png",
+            "cacheControl": "public, max-age=604800",
+            "lastModified": "Thu, 05 Sep 2024 03:44:31 GMT",
+            "etag": "\"12cde-66d9291f-61da108bbc5f2d05;;;\""
+          }
+        },
+        {
+          "ordinal": 14,
+          "src": "https://www.aiamigos.org/wp-content/uploads/2024/10/RAG-1.png",
+          "source": "wordpress-media",
+          "alt": "",
+          "width": null,
+          "height": null,
+          "loading": null,
+          "decoding": null,
+          "fetchpriority": null,
+          "classes": null,
+          "hasDimensions": false,
+          "hasSrcset": false,
+          "sizes": null,
+          "srcset": [],
+          "originalUploadInSrc": true,
+          "ancestorContext": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "latest-blog-image"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "col-lg-6 col-md-6 col-sm-6"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "row our-blogs-box"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "our-blogs-content"
+            }
+          ],
+          "sameSrcOccurrencesOnPage": 1,
+          "response": {
+            "status": 200,
+            "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2024/10/RAG-1.png",
+            "contentLength": 889784,
+            "contentType": "image/png",
+            "cacheControl": "public, max-age=604800",
+            "lastModified": "Wed, 30 Oct 2024 13:00:53 GMT",
+            "etag": "\"d93b8-67222e05-7a83945f27f7e811;;;\""
+          }
+        },
+        {
+          "ordinal": 15,
+          "src": "https://www.aiamigos.org/wp-content/uploads/2024/06/Interoperability.jpg",
+          "source": "wordpress-media",
+          "alt": "",
+          "width": null,
+          "height": null,
+          "loading": null,
+          "decoding": null,
+          "fetchpriority": null,
+          "classes": null,
+          "hasDimensions": false,
+          "hasSrcset": false,
+          "sizes": null,
+          "srcset": [],
+          "originalUploadInSrc": true,
+          "ancestorContext": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "latest-blog-image"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "col-lg-6 col-md-6 col-sm-6"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "row our-blogs-box"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "our-blogs-content"
+            }
+          ],
+          "sameSrcOccurrencesOnPage": 1,
+          "response": {
+            "status": 200,
+            "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2024/06/Interoperability.jpg",
+            "contentLength": 525952,
+            "contentType": "image/jpeg",
+            "cacheControl": "public, max-age=604800",
+            "lastModified": "Sun, 09 Jun 2024 00:25:23 GMT",
+            "etag": "\"80680-6664f673-ab4cf56475633db3;;;\""
+          }
+        },
+        {
+          "ordinal": 16,
+          "src": "https://www.aiamigos.org/wp-content/uploads/2024/02/DALL%C2%B7E-2024-02-24-20.03.54-Imagine-a-sleek-futuristic-desktop-environment-illuminated-by-the-soft-glow-of-neon-lights-reflecting-the-cutting-edge-technology-of-NVIDIAs-RTX-gr.webp",
+          "source": "wordpress-media",
+          "alt": "",
+          "width": null,
+          "height": null,
+          "loading": null,
+          "decoding": null,
+          "fetchpriority": null,
+          "classes": null,
+          "hasDimensions": false,
+          "hasSrcset": false,
+          "sizes": null,
+          "srcset": [],
+          "originalUploadInSrc": true,
+          "ancestorContext": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "latest-blog-image"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "col-lg-6 col-md-6 col-sm-6"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "row our-blogs-box"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "our-blogs-content"
+            }
+          ],
+          "sameSrcOccurrencesOnPage": 1,
+          "response": {
+            "status": 200,
+            "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2024/02/DALL%C2%B7E-2024-02-24-20.03.54-Imagine-a-sleek-futuristic-desktop-environment-illuminated-by-the-soft-glow-of-neon-lights-reflecting-the-cutting-edge-technology-of-NVIDIAs-RTX-gr.webp",
+            "contentLength": 289022,
+            "contentType": "image/webp",
+            "cacheControl": "public, max-age=604800",
+            "lastModified": "Sun, 25 Feb 2024 01:05:56 GMT",
+            "etag": "\"468fe-65da9274-bf20a4feda261006;;;\""
+          }
+        },
+        {
+          "ordinal": 17,
+          "src": "https://www.aiamigos.org/wp-content/uploads/2024/03/Python-Dep-Practices-1.jpg",
+          "source": "wordpress-media",
+          "alt": "",
+          "width": null,
+          "height": null,
+          "loading": null,
+          "decoding": null,
+          "fetchpriority": null,
+          "classes": null,
+          "hasDimensions": false,
+          "hasSrcset": false,
+          "sizes": null,
+          "srcset": [],
+          "originalUploadInSrc": true,
+          "ancestorContext": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "latest-blog-image"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "col-lg-6 col-md-6 col-sm-6"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "row our-blogs-box"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "our-blogs-content"
+            }
+          ],
+          "sameSrcOccurrencesOnPage": 1,
+          "response": {
+            "status": 200,
+            "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2024/03/Python-Dep-Practices-1.jpg",
+            "contentLength": 28015,
+            "contentType": "image/jpeg",
+            "cacheControl": "public, max-age=604800",
+            "lastModified": "Thu, 21 Mar 2024 14:31:40 GMT",
+            "etag": "\"6d6f-65fc44cc-16f795f7745451ab;;;\""
+          }
+        },
+        {
+          "ordinal": 18,
+          "src": "https://www.aiamigos.org/wp-content/uploads/2024/01/AI-Leader-with-No-Code.png",
+          "source": "wordpress-media",
+          "alt": "",
+          "width": null,
+          "height": null,
+          "loading": null,
+          "decoding": null,
+          "fetchpriority": null,
+          "classes": null,
+          "hasDimensions": false,
+          "hasSrcset": false,
+          "sizes": null,
+          "srcset": [],
+          "originalUploadInSrc": true,
+          "ancestorContext": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "latest-blog-image"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "col-lg-6 col-md-6 col-sm-6"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "row our-blogs-box"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "our-blogs-content"
+            }
+          ],
+          "sameSrcOccurrencesOnPage": 1,
+          "response": {
+            "status": 200,
+            "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2024/01/AI-Leader-with-No-Code.png",
+            "contentLength": 2130615,
+            "contentType": "image/png",
+            "cacheControl": "public, max-age=604800",
+            "lastModified": "Sat, 06 Jan 2024 03:44:54 GMT",
+            "etag": "\"2082b7-6598ccb6-47c3768074cae3b3;;;\""
+          }
+        },
+        {
+          "ordinal": 19,
+          "src": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.08.06-Create-a-realistic-image-symbolizing-Training-data-for-generative-AI-models.-The-image-should-depict-a-diverse-array-of-information-sources-like-bo.png",
+          "source": "wordpress-media",
+          "alt": "",
+          "width": null,
+          "height": null,
+          "loading": null,
+          "decoding": null,
+          "fetchpriority": null,
+          "classes": null,
+          "hasDimensions": false,
+          "hasSrcset": false,
+          "sizes": null,
+          "srcset": [],
+          "originalUploadInSrc": true,
+          "ancestorContext": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "latest-blog-image"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "col-lg-6 col-md-6 col-sm-6"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "row our-blogs-box"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "our-blogs-content"
+            }
+          ],
+          "sameSrcOccurrencesOnPage": 1,
+          "response": {
+            "status": 200,
+            "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.08.06-Create-a-realistic-image-symbolizing-Training-data-for-generative-AI-models.-The-image-should-depict-a-diverse-array-of-information-sources-like-bo.png",
+            "contentLength": 2280620,
+            "contentType": "image/png",
+            "cacheControl": "public, max-age=604800",
+            "lastModified": "Wed, 20 Dec 2023 04:08:24 GMT",
+            "etag": "\"22ccac-658268b8-a4a9798e0bced53a;;;\""
+          }
+        },
+        {
+          "ordinal": 20,
+          "src": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.15.01-Create-a-realistic-image-symbolizing-The-Role-of-Generative-AI-in-Creative-Industries.-The-image-should-depict-a-modern-well-lit-artists-studio-wi.png",
+          "source": "wordpress-media",
+          "alt": "",
+          "width": null,
+          "height": null,
+          "loading": null,
+          "decoding": null,
+          "fetchpriority": null,
+          "classes": null,
+          "hasDimensions": false,
+          "hasSrcset": false,
+          "sizes": null,
+          "srcset": [],
+          "originalUploadInSrc": true,
+          "ancestorContext": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "latest-blog-image"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "col-lg-6 col-md-6 col-sm-6"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "row our-blogs-box"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "our-blogs-content"
+            }
+          ],
+          "sameSrcOccurrencesOnPage": 1,
+          "response": {
+            "status": 200,
+            "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.15.01-Create-a-realistic-image-symbolizing-The-Role-of-Generative-AI-in-Creative-Industries.-The-image-should-depict-a-modern-well-lit-artists-studio-wi.png",
+            "contentLength": 2022378,
+            "contentType": "image/png",
+            "cacheControl": "public, max-age=604800",
+            "lastModified": "Wed, 20 Dec 2023 04:15:36 GMT",
+            "etag": "\"1edbea-65826a68-a0e91c256221d351;;;\""
+          }
+        },
+        {
+          "ordinal": 21,
+          "src": "https://www.aiamigos.org/wp-content/uploads/2023/12/OpenSource.jpg",
+          "source": "wordpress-media",
+          "alt": "",
+          "width": null,
+          "height": null,
+          "loading": null,
+          "decoding": null,
+          "fetchpriority": null,
+          "classes": null,
+          "hasDimensions": false,
+          "hasSrcset": false,
+          "sizes": null,
+          "srcset": [],
+          "originalUploadInSrc": true,
+          "ancestorContext": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "latest-blog-image"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "col-lg-6 col-md-6 col-sm-6"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "row our-blogs-box"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "our-blogs-content"
+            }
+          ],
+          "sameSrcOccurrencesOnPage": 1,
+          "response": {
+            "status": 200,
+            "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/OpenSource.jpg",
+            "contentLength": 798031,
+            "contentType": "image/jpeg",
+            "cacheControl": "public, max-age=604800",
+            "lastModified": "Sun, 09 Jun 2024 00:36:07 GMT",
+            "etag": "\"c2d4f-6664f8f7-21e98a9c7e9c930a;;;\""
+          }
+        },
+        {
+          "ordinal": 22,
+          "src": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.22.02-Create-a-realistic-image-representing-The-Explainability-of-Generative-AI-Models.-The-scene-should-depict-a-human-figure-symbolic-of-a-scientist-or.png",
+          "source": "wordpress-media",
+          "alt": "",
+          "width": null,
+          "height": null,
+          "loading": null,
+          "decoding": null,
+          "fetchpriority": null,
+          "classes": null,
+          "hasDimensions": false,
+          "hasSrcset": false,
+          "sizes": null,
+          "srcset": [],
+          "originalUploadInSrc": true,
+          "ancestorContext": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "latest-blog-image"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "col-lg-6 col-md-6 col-sm-6"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "row our-blogs-box"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "our-blogs-content"
+            }
+          ],
+          "sameSrcOccurrencesOnPage": 1,
+          "response": {
+            "status": 200,
+            "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.22.02-Create-a-realistic-image-representing-The-Explainability-of-Generative-AI-Models.-The-scene-should-depict-a-human-figure-symbolic-of-a-scientist-or.png",
+            "contentLength": 2203712,
+            "contentType": "image/png",
+            "cacheControl": "public, max-age=604800",
+            "lastModified": "Wed, 20 Dec 2023 04:22:12 GMT",
+            "etag": "\"21a040-65826bf4-68b607c05a5cd303;;;\""
+          }
+        },
+        {
+          "ordinal": 23,
+          "src": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.29.33-Create-a-realistic-image-illustrating-the-concept-Generative-AI-vs.-Traditional-AI.-On-one-side-show-a-modern-sleek-and-advanced-AI-system-with-v.png",
+          "source": "wordpress-media",
+          "alt": "",
+          "width": null,
+          "height": null,
+          "loading": null,
+          "decoding": null,
+          "fetchpriority": null,
+          "classes": null,
+          "hasDimensions": false,
+          "hasSrcset": false,
+          "sizes": null,
+          "srcset": [],
+          "originalUploadInSrc": true,
+          "ancestorContext": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "latest-blog-image"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "col-lg-6 col-md-6 col-sm-6"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "row our-blogs-box"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "our-blogs-content"
+            }
+          ],
+          "sameSrcOccurrencesOnPage": 1,
+          "response": {
+            "status": 200,
+            "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.29.33-Create-a-realistic-image-illustrating-the-concept-Generative-AI-vs.-Traditional-AI.-On-one-side-show-a-modern-sleek-and-advanced-AI-system-with-v.png",
+            "contentLength": 1757988,
+            "contentType": "image/png",
+            "cacheControl": "public, max-age=604800",
+            "lastModified": "Wed, 20 Dec 2023 04:43:08 GMT",
+            "etag": "\"1ad324-658270dc-bdd4bc11bdf35ced;;;\""
+          }
+        },
+        {
+          "ordinal": 24,
+          "src": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.45.28-Create-a-realistic-image-representing-The-Future-of-Generative-AI.-The-scene-should-depict-a-modern-high-tech-laboratory-with-sleek-futuristic-des.png",
+          "source": "wordpress-media",
+          "alt": "",
+          "width": null,
+          "height": null,
+          "loading": null,
+          "decoding": null,
+          "fetchpriority": null,
+          "classes": null,
+          "hasDimensions": false,
+          "hasSrcset": false,
+          "sizes": null,
+          "srcset": [],
+          "originalUploadInSrc": true,
+          "ancestorContext": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "latest-blog-image"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "col-lg-6 col-md-6 col-sm-6"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "row our-blogs-box"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "our-blogs-content"
+            }
+          ],
+          "sameSrcOccurrencesOnPage": 1,
+          "response": {
+            "status": 200,
+            "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.45.28-Create-a-realistic-image-representing-The-Future-of-Generative-AI.-The-scene-should-depict-a-modern-high-tech-laboratory-with-sleek-futuristic-des.png",
+            "contentLength": 2170362,
+            "contentType": "image/png",
+            "cacheControl": "public, max-age=604800",
+            "lastModified": "Wed, 20 Dec 2023 04:45:54 GMT",
+            "etag": "\"211dfa-65827182-2012efb480bdf9aa;;;\""
+          }
+        },
+        {
+          "ordinal": 25,
+          "src": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.48.18-Create-a-realistic-image-illustrating-Limitations-of-Generative-AI.-The-image-should-depict-a-large-modern-digital-canvas-displaying-an-incomplete.png",
+          "source": "wordpress-media",
+          "alt": "",
+          "width": null,
+          "height": null,
+          "loading": null,
+          "decoding": null,
+          "fetchpriority": null,
+          "classes": null,
+          "hasDimensions": false,
+          "hasSrcset": false,
+          "sizes": null,
+          "srcset": [],
+          "originalUploadInSrc": true,
+          "ancestorContext": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "latest-blog-image"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "col-lg-6 col-md-6 col-sm-6"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "row our-blogs-box"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "our-blogs-content"
+            }
+          ],
+          "sameSrcOccurrencesOnPage": 1,
+          "response": {
+            "status": 200,
+            "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.48.18-Create-a-realistic-image-illustrating-Limitations-of-Generative-AI.-The-image-should-depict-a-large-modern-digital-canvas-displaying-an-incomplete.png",
+            "contentLength": 2130315,
+            "contentType": "image/png",
+            "cacheControl": "public, max-age=604800",
+            "lastModified": "Wed, 20 Dec 2023 04:48:40 GMT",
+            "etag": "\"20818b-65827228-a1c2b418f303b4ec;;;\""
+          }
+        },
+        {
+          "ordinal": 26,
+          "src": "https://www.aiamigos.org/wp-content/uploads/2025/11/Gemini_Generated_Image_lru09slru09slru0.png",
+          "source": "wordpress-media",
+          "alt": "Google Enterprise UI UX",
+          "width": 2816,
+          "height": 1536,
+          "loading": "lazy",
+          "decoding": "async",
+          "fetchpriority": null,
+          "classes": "attachment-post-thumbnail size-post-thumbnail wp-post-image",
+          "hasDimensions": true,
+          "hasSrcset": true,
+          "sizes": "(max-width: 2816px) 100vw, 2816px",
+          "srcset": [
+            {
+              "url": "https://www.aiamigos.org/wp-content/uploads/2025/11/Gemini_Generated_Image_lru09slru09slru0.png",
+              "descriptor": "2816w"
+            },
+            {
+              "url": "https://www.aiamigos.org/wp-content/uploads/2025/11/Gemini_Generated_Image_lru09slru09slru0-300x164.png",
+              "descriptor": "300w"
+            },
+            {
+              "url": "https://www.aiamigos.org/wp-content/uploads/2025/11/Gemini_Generated_Image_lru09slru09slru0-1024x559.png",
+              "descriptor": "1024w"
+            },
+            {
+              "url": "https://www.aiamigos.org/wp-content/uploads/2025/11/Gemini_Generated_Image_lru09slru09slru0-768x419.png",
+              "descriptor": "768w"
+            },
+            {
+              "url": "https://www.aiamigos.org/wp-content/uploads/2025/11/Gemini_Generated_Image_lru09slru09slru0-1536x838.png",
+              "descriptor": "1536w"
+            },
+            {
+              "url": "https://www.aiamigos.org/wp-content/uploads/2025/11/Gemini_Generated_Image_lru09slru09slru0-2048x1117.png",
+              "descriptor": "2048w"
+            }
+          ],
+          "originalUploadInSrc": true,
+          "ancestorContext": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "post-thumb col-md-4 col-sm-4 col-4 "
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "row recent-post-box"
+            },
+            {
+              "tag": "aside",
+              "id": "recent-posts-5",
+              "class": "widget widget_recent_entries"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "col-lg-3 col-sm-6"
+            }
+          ],
+          "sameSrcOccurrencesOnPage": 2,
+          "response": {
+            "status": 200,
+            "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2025/11/Gemini_Generated_Image_lru09slru09slru0.png",
+            "contentLength": 5888851,
+            "contentType": "image/png",
+            "cacheControl": "public, max-age=604800",
+            "lastModified": "Wed, 26 Nov 2025 14:14:15 GMT",
+            "etag": "\"59db53-69270b37-98e4ac39af346c50;;;\""
+          }
+        },
+        {
+          "ordinal": 27,
+          "src": "https://www.aiamigos.org/wp-content/uploads/2025/02/LangGraph.png",
+          "source": "wordpress-media",
+          "alt": "LangGraph",
+          "width": 324,
+          "height": 68,
+          "loading": "lazy",
+          "decoding": "async",
+          "fetchpriority": null,
+          "classes": "attachment-post-thumbnail size-post-thumbnail wp-post-image",
+          "hasDimensions": true,
+          "hasSrcset": true,
+          "sizes": "(max-width: 324px) 100vw, 324px",
+          "srcset": [
+            {
+              "url": "https://www.aiamigos.org/wp-content/uploads/2025/02/LangGraph.png",
+              "descriptor": "324w"
+            },
+            {
+              "url": "https://www.aiamigos.org/wp-content/uploads/2025/02/LangGraph-300x63.png",
+              "descriptor": "300w"
+            }
+          ],
+          "originalUploadInSrc": true,
+          "ancestorContext": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "post-thumb col-md-4 col-sm-4 col-4 "
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "row recent-post-box"
+            },
+            {
+              "tag": "aside",
+              "id": "recent-posts-5",
+              "class": "widget widget_recent_entries"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "col-lg-3 col-sm-6"
+            }
+          ],
+          "sameSrcOccurrencesOnPage": 2,
+          "response": {
+            "status": 200,
+            "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2025/02/LangGraph.png",
+            "contentLength": 16459,
+            "contentType": "image/png",
+            "cacheControl": "public, max-age=604800",
+            "lastModified": "Sat, 22 Feb 2025 22:53:38 GMT",
+            "etag": "\"404b-67ba5572-45b052a350016b3f;;;\""
+          }
+        }
+      ],
+      "scripts": [
+        "https://www.aiamigos.org/wp-includes/js/jquery/jquery.min.js?ver=3.7.1",
+        "https://www.aiamigos.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1",
+        "https://www.googletagmanager.com/gtag/js?id=GT-WFFD82N",
+        "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9542453824778388&host=ca-host-pub-2644536267352236",
+        "https://www.aiamigos.org/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2",
+        "https://www.aiamigos.org/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.14.0",
+        "https://www.aiamigos.org/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0",
+        "https://www.aiamigos.org/wp-includes/js/dist/hooks.min.js?ver=c6aec9a8d4e5a5d543a1",
+        "https://www.aiamigos.org/wp-includes/js/dist/i18n.min.js?ver=7701b0c3857f914212ef",
+        "https://www.aiamigos.org/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.9.8",
+        "https://www.aiamigos.org/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.9.8",
+        "https://www.aiamigos.org/wp-content/themes/sirat-pro/assets/js/tether.js?ver=6.4.10",
+        "https://www.aiamigos.org/wp-content/themes/sirat-pro/assets/js/bootstrap.min.js?ver=6.4.10",
+        "https://www.aiamigos.org/wp-content/themes/sirat-pro/assets/js/owl.carousel.js?ver=6.4.10",
+        "https://www.aiamigos.org/wp-content/themes/sirat-pro/assets/js/jquery.appear.js?ver=6.4.10",
+        "https://www.aiamigos.org/wp-content/themes/sirat-pro/assets/js/SmoothScroll.js?ver=6.4.10",
+        "https://www.aiamigos.org/wp-content/themes/sirat-pro/assets/js/jquery-progressbar.js?ver=6.4.10",
+        "https://www.aiamigos.org/wp-content/themes/sirat-pro/assets/js/custom.js?ver=6.4.10",
+        "https://www.aiamigos.org/wp-content/themes/sirat-pro/assets/js/wow.min.js?ver=6.4.10",
+        "https://www.aiamigos.org/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-consent-mode-86cb52dcb9f2b27ed244.js",
+        "https://www.aiamigos.org/wp-content/plugins/wp-consent-api/assets/js/wp-consent-api.min.js?ver=1.0.7"
+      ],
+      "directSourceBytes": 37971793,
+      "uniqueDirectSourceBytes": 32066483
+    }
+  ],
+  "heavyImages": [
+    {
+      "url": "https://www.aiamigos.org/wp-content/uploads/2025/11/Gemini_Generated_Image_lru09slru09slru0.png",
+      "response": {
+        "status": 200,
+        "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2025/11/Gemini_Generated_Image_lru09slru09slru0.png",
+        "contentLength": 5888851,
+        "contentType": "image/png",
+        "cacheControl": "public, max-age=604800",
+        "lastModified": "Wed, 26 Nov 2025 14:14:15 GMT",
+        "etag": "\"59db53-69270b37-98e4ac39af346c50;;;\""
+      },
+      "occurrences": [
+        {
+          "page": "https://www.aiamigos.org/",
+          "ordinal": 2,
+          "context": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "post_pic_inner"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "postpic"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "postbox wow animated slideInUp delay-1000"
+            },
+            {
+              "tag": "div",
+              "id": "single_post",
+              "class": "col-lg-4 col-md-4 col-sm-12"
+            }
+          ],
+          "hasSrcset": false
+        },
+        {
+          "page": "https://www.aiamigos.org/",
+          "ordinal": 10,
+          "context": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "post-thumb col-md-4 col-sm-4 col-4 "
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "row recent-post-box"
+            },
+            {
+              "tag": "aside",
+              "id": "recent-posts-5",
+              "class": "widget widget_recent_entries"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "col-lg-3 col-sm-6"
+            }
+          ],
+          "hasSrcset": true
+        },
+        {
+          "page": "https://www.aiamigos.org/home/",
+          "ordinal": 6,
+          "context": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "latest-blog-image"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "col-lg-6 col-md-6 col-sm-6"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "row our-blogs-box"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "our-blogs-content"
+            }
+          ],
+          "hasSrcset": false
+        },
+        {
+          "page": "https://www.aiamigos.org/home/",
+          "ordinal": 26,
+          "context": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "post-thumb col-md-4 col-sm-4 col-4 "
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "row recent-post-box"
+            },
+            {
+              "tag": "aside",
+              "id": "recent-posts-5",
+              "class": "widget widget_recent_entries"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "col-lg-3 col-sm-6"
+            }
+          ],
+          "hasSrcset": true
+        }
+      ],
+      "media": {
+        "id": 1427,
+        "width": 2816,
+        "height": 1536,
+        "sizes": {
+          "medium": {
+            "width": 300,
+            "height": 164,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2025/11/Gemini_Generated_Image_lru09slru09slru0-300x164.png"
+          },
+          "large": {
+            "width": 1024,
+            "height": 559,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2025/11/Gemini_Generated_Image_lru09slru09slru0-1024x559.png"
+          },
+          "thumbnail": {
+            "width": 150,
+            "height": 150,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2025/11/Gemini_Generated_Image_lru09slru09slru0-150x150.png"
+          },
+          "medium_large": {
+            "width": 768,
+            "height": 419,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2025/11/Gemini_Generated_Image_lru09slru09slru0-768x419.png"
+          },
+          "1536x1536": {
+            "width": 1536,
+            "height": 838,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2025/11/Gemini_Generated_Image_lru09slru09slru0-1536x838.png"
+          },
+          "2048x2048": {
+            "width": 2048,
+            "height": 1117,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2025/11/Gemini_Generated_Image_lru09slru09slru0-2048x1117.png"
+          },
+          "vw-sirat-pro-homepage-thumb": {
+            "width": 240,
+            "height": 145,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2025/11/Gemini_Generated_Image_lru09slru09slru0-240x145.png"
+          },
+          "full": {
+            "width": 2816,
+            "height": 1536,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2025/11/Gemini_Generated_Image_lru09slru09slru0.png"
+          }
+        }
+      },
+      "recommendedCandidate": {
+        "size": "medium_large",
+        "url": "https://www.aiamigos.org/wp-content/uploads/2025/11/Gemini_Generated_Image_lru09slru09slru0-768x419.png",
+        "response": {
+          "status": 200,
+          "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2025/11/Gemini_Generated_Image_lru09slru09slru0-768x419.png",
+          "contentLength": 438996,
+          "contentType": "image/png",
+          "cacheControl": "public, max-age=604800",
+          "lastModified": "Wed, 26 Nov 2025 14:14:18 GMT",
+          "etag": "\"6b2d4-69270b3a-ede7996da26b4d00;;;\""
+        }
+      }
+    },
+    {
+      "url": "https://www.aiamigos.org/wp-content/uploads/2023/10/DALL%C2%B7E-2023-10-23-14.42.24-Futuristic-design-showcasing-AI-Amigos-Pro-at-the-center.-Radiating-out-are-icons-for-various-professions-each-seamlessly-integrated-with-AI_-A-pen.png",
+      "response": {
+        "status": 200,
+        "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2023/10/DALL%C2%B7E-2023-10-23-14.42.24-Futuristic-design-showcasing-AI-Amigos-Pro-at-the-center.-Radiating-out-are-icons-for-various-professions-each-seamlessly-integrated-with-AI_-A-pen.png",
+        "contentLength": 2283599,
+        "contentType": "image/png",
+        "cacheControl": "public, max-age=604800",
+        "lastModified": "Mon, 23 Oct 2023 18:45:31 GMT",
+        "etag": "\"22d84f-6536bf4b-511693c05b288ec4;;;\""
+      },
+      "occurrences": [
+        {
+          "page": "https://www.aiamigos.org/home/",
+          "ordinal": 4,
+          "context": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "services-icon py-3 px-3 mb-2"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "our-services-box mb-3 p-4"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "col-lg-6 col-md-6 col-sm-6"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "row service-title-boxes"
+            }
+          ],
+          "hasSrcset": true
+        }
+      ],
+      "media": null,
+      "recommendedCandidate": {
+        "size": "original-fallback",
+        "url": "https://www.aiamigos.org/wp-content/uploads/2023/10/DALL%C2%B7E-2023-10-23-14.42.24-Futuristic-design-showcasing-AI-Amigos-Pro-at-the-center.-Radiating-out-are-icons-for-various-professions-each-seamlessly-integrated-with-AI_-A-pen.png",
+        "response": {
+          "status": 200,
+          "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2023/10/DALL%C2%B7E-2023-10-23-14.42.24-Futuristic-design-showcasing-AI-Amigos-Pro-at-the-center.-Radiating-out-are-icons-for-various-professions-each-seamlessly-integrated-with-AI_-A-pen.png",
+          "contentLength": 2283599,
+          "contentType": "image/png",
+          "cacheControl": "public, max-age=604800",
+          "lastModified": "Mon, 23 Oct 2023 18:45:31 GMT",
+          "etag": "\"22d84f-6536bf4b-511693c05b288ec4;;;\""
+        }
+      }
+    },
+    {
+      "url": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.08.06-Create-a-realistic-image-symbolizing-Training-data-for-generative-AI-models.-The-image-should-depict-a-diverse-array-of-information-sources-like-bo.png",
+      "response": {
+        "status": 200,
+        "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.08.06-Create-a-realistic-image-symbolizing-Training-data-for-generative-AI-models.-The-image-should-depict-a-diverse-array-of-information-sources-like-bo.png",
+        "contentLength": 2280620,
+        "contentType": "image/png",
+        "cacheControl": "public, max-age=604800",
+        "lastModified": "Wed, 20 Dec 2023 04:08:24 GMT",
+        "etag": "\"22ccac-658268b8-a4a9798e0bced53a;;;\""
+      },
+      "occurrences": [
+        {
+          "page": "https://www.aiamigos.org/home/",
+          "ordinal": 19,
+          "context": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "latest-blog-image"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "col-lg-6 col-md-6 col-sm-6"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "row our-blogs-box"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "our-blogs-content"
+            }
+          ],
+          "hasSrcset": false
+        }
+      ],
+      "media": {
+        "id": 1225,
+        "width": 1024,
+        "height": 1024,
+        "sizes": {
+          "medium": {
+            "width": 300,
+            "height": 300,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.08.06-Create-a-realistic-image-symbolizing-Training-data-for-generative-AI-models.-The-image-should-depict-a-diverse-array-of-information-sources-like-bo-300x300.png"
+          },
+          "thumbnail": {
+            "width": 150,
+            "height": 150,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.08.06-Create-a-realistic-image-symbolizing-Training-data-for-generative-AI-models.-The-image-should-depict-a-diverse-array-of-information-sources-like-bo-150x150.png"
+          },
+          "medium_large": {
+            "width": 768,
+            "height": 768,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.08.06-Create-a-realistic-image-symbolizing-Training-data-for-generative-AI-models.-The-image-should-depict-a-diverse-array-of-information-sources-like-bo-768x768.png"
+          },
+          "post_slider_layout_landscape_large": {
+            "width": 1024,
+            "height": 800,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.08.06-Create-a-realistic-image-symbolizing-Training-data-for-generative-AI-models.-The-image-should-depict-a-diverse-array-of-information-sources-like-bo-1024x800.png"
+          },
+          "post_slider_layout_landscape": {
+            "width": 600,
+            "height": 400,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.08.06-Create-a-realistic-image-symbolizing-Training-data-for-generative-AI-models.-The-image-should-depict-a-diverse-array-of-information-sources-like-bo-600x400.png"
+          },
+          "post_slider_layout_portrait": {
+            "width": 600,
+            "height": 900,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.08.06-Create-a-realistic-image-symbolizing-Training-data-for-generative-AI-models.-The-image-should-depict-a-diverse-array-of-information-sources-like-bo-600x900.png"
+          },
+          "post_slider_layout_square": {
+            "width": 600,
+            "height": 600,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.08.06-Create-a-realistic-image-symbolizing-Training-data-for-generative-AI-models.-The-image-should-depict-a-diverse-array-of-information-sources-like-bo-600x600.png"
+          },
+          "vw-sirat-pro-homepage-thumb": {
+            "width": 240,
+            "height": 145,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.08.06-Create-a-realistic-image-symbolizing-Training-data-for-generative-AI-models.-The-image-should-depict-a-diverse-array-of-information-sources-like-bo-240x145.png"
+          },
+          "full": {
+            "width": 1024,
+            "height": 1024,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.08.06-Create-a-realistic-image-symbolizing-Training-data-for-generative-AI-models.-The-image-should-depict-a-diverse-array-of-information-sources-like-bo.png"
+          }
+        }
+      },
+      "recommendedCandidate": {
+        "size": "medium_large",
+        "url": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.08.06-Create-a-realistic-image-symbolizing-Training-data-for-generative-AI-models.-The-image-should-depict-a-diverse-array-of-information-sources-like-bo-768x768.png",
+        "response": {
+          "status": 200,
+          "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.08.06-Create-a-realistic-image-symbolizing-Training-data-for-generative-AI-models.-The-image-should-depict-a-diverse-array-of-information-sources-like-bo-768x768.png",
+          "contentLength": 1185377,
+          "contentType": "image/png",
+          "cacheControl": "public, max-age=604800",
+          "lastModified": "Wed, 20 Dec 2023 04:08:25 GMT",
+          "etag": "\"121661-658268b9-10c6f701f587a2f8;;;\""
+        }
+      }
+    },
+    {
+      "url": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.22.02-Create-a-realistic-image-representing-The-Explainability-of-Generative-AI-Models.-The-scene-should-depict-a-human-figure-symbolic-of-a-scientist-or.png",
+      "response": {
+        "status": 200,
+        "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.22.02-Create-a-realistic-image-representing-The-Explainability-of-Generative-AI-Models.-The-scene-should-depict-a-human-figure-symbolic-of-a-scientist-or.png",
+        "contentLength": 2203712,
+        "contentType": "image/png",
+        "cacheControl": "public, max-age=604800",
+        "lastModified": "Wed, 20 Dec 2023 04:22:12 GMT",
+        "etag": "\"21a040-65826bf4-68b607c05a5cd303;;;\""
+      },
+      "occurrences": [
+        {
+          "page": "https://www.aiamigos.org/home/",
+          "ordinal": 22,
+          "context": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "latest-blog-image"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "col-lg-6 col-md-6 col-sm-6"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "row our-blogs-box"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "our-blogs-content"
+            }
+          ],
+          "hasSrcset": false
+        }
+      ],
+      "media": {
+        "id": 1231,
+        "width": 1024,
+        "height": 1024,
+        "sizes": {
+          "medium": {
+            "width": 300,
+            "height": 300,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.22.02-Create-a-realistic-image-representing-The-Explainability-of-Generative-AI-Models.-The-scene-should-depict-a-human-figure-symbolic-of-a-scientist-or-300x300.png"
+          },
+          "thumbnail": {
+            "width": 150,
+            "height": 150,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.22.02-Create-a-realistic-image-representing-The-Explainability-of-Generative-AI-Models.-The-scene-should-depict-a-human-figure-symbolic-of-a-scientist-or-150x150.png"
+          },
+          "medium_large": {
+            "width": 768,
+            "height": 768,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.22.02-Create-a-realistic-image-representing-The-Explainability-of-Generative-AI-Models.-The-scene-should-depict-a-human-figure-symbolic-of-a-scientist-or-768x768.png"
+          },
+          "post_slider_layout_landscape_large": {
+            "width": 1024,
+            "height": 800,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.22.02-Create-a-realistic-image-representing-The-Explainability-of-Generative-AI-Models.-The-scene-should-depict-a-human-figure-symbolic-of-a-scientist-or-1024x800.png"
+          },
+          "post_slider_layout_landscape": {
+            "width": 600,
+            "height": 400,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.22.02-Create-a-realistic-image-representing-The-Explainability-of-Generative-AI-Models.-The-scene-should-depict-a-human-figure-symbolic-of-a-scientist-or-600x400.png"
+          },
+          "post_slider_layout_portrait": {
+            "width": 600,
+            "height": 900,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.22.02-Create-a-realistic-image-representing-The-Explainability-of-Generative-AI-Models.-The-scene-should-depict-a-human-figure-symbolic-of-a-scientist-or-600x900.png"
+          },
+          "post_slider_layout_square": {
+            "width": 600,
+            "height": 600,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.22.02-Create-a-realistic-image-representing-The-Explainability-of-Generative-AI-Models.-The-scene-should-depict-a-human-figure-symbolic-of-a-scientist-or-600x600.png"
+          },
+          "vw-sirat-pro-homepage-thumb": {
+            "width": 240,
+            "height": 145,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.22.02-Create-a-realistic-image-representing-The-Explainability-of-Generative-AI-Models.-The-scene-should-depict-a-human-figure-symbolic-of-a-scientist-or-240x145.png"
+          },
+          "full": {
+            "width": 1024,
+            "height": 1024,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.22.02-Create-a-realistic-image-representing-The-Explainability-of-Generative-AI-Models.-The-scene-should-depict-a-human-figure-symbolic-of-a-scientist-or.png"
+          }
+        }
+      },
+      "recommendedCandidate": {
+        "size": "medium_large",
+        "url": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.22.02-Create-a-realistic-image-representing-The-Explainability-of-Generative-AI-Models.-The-scene-should-depict-a-human-figure-symbolic-of-a-scientist-or-768x768.png",
+        "response": {
+          "status": 200,
+          "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.22.02-Create-a-realistic-image-representing-The-Explainability-of-Generative-AI-Models.-The-scene-should-depict-a-human-figure-symbolic-of-a-scientist-or-768x768.png",
+          "contentLength": 1094247,
+          "contentType": "image/png",
+          "cacheControl": "public, max-age=604800",
+          "lastModified": "Wed, 20 Dec 2023 04:22:14 GMT",
+          "etag": "\"10b267-65826bf6-c2c3a7ca893077ce;;;\""
+        }
+      }
+    },
+    {
+      "url": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.45.28-Create-a-realistic-image-representing-The-Future-of-Generative-AI.-The-scene-should-depict-a-modern-high-tech-laboratory-with-sleek-futuristic-des.png",
+      "response": {
+        "status": 200,
+        "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.45.28-Create-a-realistic-image-representing-The-Future-of-Generative-AI.-The-scene-should-depict-a-modern-high-tech-laboratory-with-sleek-futuristic-des.png",
+        "contentLength": 2170362,
+        "contentType": "image/png",
+        "cacheControl": "public, max-age=604800",
+        "lastModified": "Wed, 20 Dec 2023 04:45:54 GMT",
+        "etag": "\"211dfa-65827182-2012efb480bdf9aa;;;\""
+      },
+      "occurrences": [
+        {
+          "page": "https://www.aiamigos.org/home/",
+          "ordinal": 24,
+          "context": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "latest-blog-image"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "col-lg-6 col-md-6 col-sm-6"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "row our-blogs-box"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "our-blogs-content"
+            }
+          ],
+          "hasSrcset": false
+        }
+      ],
+      "media": {
+        "id": 1235,
+        "width": 1024,
+        "height": 1024,
+        "sizes": {
+          "medium": {
+            "width": 300,
+            "height": 300,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.45.28-Create-a-realistic-image-representing-The-Future-of-Generative-AI.-The-scene-should-depict-a-modern-high-tech-laboratory-with-sleek-futuristic-des-300x300.png"
+          },
+          "thumbnail": {
+            "width": 150,
+            "height": 150,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.45.28-Create-a-realistic-image-representing-The-Future-of-Generative-AI.-The-scene-should-depict-a-modern-high-tech-laboratory-with-sleek-futuristic-des-150x150.png"
+          },
+          "medium_large": {
+            "width": 768,
+            "height": 768,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.45.28-Create-a-realistic-image-representing-The-Future-of-Generative-AI.-The-scene-should-depict-a-modern-high-tech-laboratory-with-sleek-futuristic-des-768x768.png"
+          },
+          "post_slider_layout_landscape_large": {
+            "width": 1024,
+            "height": 800,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.45.28-Create-a-realistic-image-representing-The-Future-of-Generative-AI.-The-scene-should-depict-a-modern-high-tech-laboratory-with-sleek-futuristic-des-1024x800.png"
+          },
+          "post_slider_layout_landscape": {
+            "width": 600,
+            "height": 400,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.45.28-Create-a-realistic-image-representing-The-Future-of-Generative-AI.-The-scene-should-depict-a-modern-high-tech-laboratory-with-sleek-futuristic-des-600x400.png"
+          },
+          "post_slider_layout_portrait": {
+            "width": 600,
+            "height": 900,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.45.28-Create-a-realistic-image-representing-The-Future-of-Generative-AI.-The-scene-should-depict-a-modern-high-tech-laboratory-with-sleek-futuristic-des-600x900.png"
+          },
+          "post_slider_layout_square": {
+            "width": 600,
+            "height": 600,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.45.28-Create-a-realistic-image-representing-The-Future-of-Generative-AI.-The-scene-should-depict-a-modern-high-tech-laboratory-with-sleek-futuristic-des-600x600.png"
+          },
+          "vw-sirat-pro-homepage-thumb": {
+            "width": 240,
+            "height": 145,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.45.28-Create-a-realistic-image-representing-The-Future-of-Generative-AI.-The-scene-should-depict-a-modern-high-tech-laboratory-with-sleek-futuristic-des-240x145.png"
+          },
+          "full": {
+            "width": 1024,
+            "height": 1024,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.45.28-Create-a-realistic-image-representing-The-Future-of-Generative-AI.-The-scene-should-depict-a-modern-high-tech-laboratory-with-sleek-futuristic-des.png"
+          }
+        }
+      },
+      "recommendedCandidate": {
+        "size": "medium_large",
+        "url": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.45.28-Create-a-realistic-image-representing-The-Future-of-Generative-AI.-The-scene-should-depict-a-modern-high-tech-laboratory-with-sleek-futuristic-des-768x768.png",
+        "response": {
+          "status": 200,
+          "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.45.28-Create-a-realistic-image-representing-The-Future-of-Generative-AI.-The-scene-should-depict-a-modern-high-tech-laboratory-with-sleek-futuristic-des-768x768.png",
+          "contentLength": 1095899,
+          "contentType": "image/png",
+          "cacheControl": "public, max-age=604800",
+          "lastModified": "Wed, 20 Dec 2023 04:45:55 GMT",
+          "etag": "\"10b8db-65827183-f043ab1767e1d466;;;\""
+        }
+      }
+    },
+    {
+      "url": "https://www.aiamigos.org/wp-content/uploads/2024/01/AI-Leader-with-No-Code.png",
+      "response": {
+        "status": 200,
+        "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2024/01/AI-Leader-with-No-Code.png",
+        "contentLength": 2130615,
+        "contentType": "image/png",
+        "cacheControl": "public, max-age=604800",
+        "lastModified": "Sat, 06 Jan 2024 03:44:54 GMT",
+        "etag": "\"2082b7-6598ccb6-47c3768074cae3b3;;;\""
+      },
+      "occurrences": [
+        {
+          "page": "https://www.aiamigos.org/home/",
+          "ordinal": 18,
+          "context": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "latest-blog-image"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "col-lg-6 col-md-6 col-sm-6"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "row our-blogs-box"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "our-blogs-content"
+            }
+          ],
+          "hasSrcset": false
+        }
+      ],
+      "media": {
+        "id": 1253,
+        "width": 1024,
+        "height": 1024,
+        "sizes": {
+          "medium": {
+            "width": 300,
+            "height": 300,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2024/01/AI-Leader-with-No-Code-300x300.png"
+          },
+          "thumbnail": {
+            "width": 150,
+            "height": 150,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2024/01/AI-Leader-with-No-Code-150x150.png"
+          },
+          "medium_large": {
+            "width": 768,
+            "height": 768,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2024/01/AI-Leader-with-No-Code-768x768.png"
+          },
+          "post_slider_layout_landscape_large": {
+            "width": 1024,
+            "height": 800,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2024/01/AI-Leader-with-No-Code-1024x800.png"
+          },
+          "post_slider_layout_landscape": {
+            "width": 600,
+            "height": 400,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2024/01/AI-Leader-with-No-Code-600x400.png"
+          },
+          "post_slider_layout_portrait": {
+            "width": 600,
+            "height": 900,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2024/01/AI-Leader-with-No-Code-600x900.png"
+          },
+          "post_slider_layout_square": {
+            "width": 600,
+            "height": 600,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2024/01/AI-Leader-with-No-Code-600x600.png"
+          },
+          "vw-sirat-pro-homepage-thumb": {
+            "width": 240,
+            "height": 145,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2024/01/AI-Leader-with-No-Code-240x145.png"
+          },
+          "full": {
+            "width": 1024,
+            "height": 1024,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2024/01/AI-Leader-with-No-Code.png"
+          }
+        }
+      },
+      "recommendedCandidate": {
+        "size": "medium_large",
+        "url": "https://www.aiamigos.org/wp-content/uploads/2024/01/AI-Leader-with-No-Code-768x768.png",
+        "response": {
+          "status": 200,
+          "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2024/01/AI-Leader-with-No-Code-768x768.png",
+          "contentLength": 1099285,
+          "contentType": "image/png",
+          "cacheControl": "public, max-age=604800",
+          "lastModified": "Sat, 06 Jan 2024 03:44:56 GMT",
+          "etag": "\"10c615-6598ccb8-fb6c916c6822a29;;;\""
+        }
+      }
+    },
+    {
+      "url": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.48.18-Create-a-realistic-image-illustrating-Limitations-of-Generative-AI.-The-image-should-depict-a-large-modern-digital-canvas-displaying-an-incomplete.png",
+      "response": {
+        "status": 200,
+        "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.48.18-Create-a-realistic-image-illustrating-Limitations-of-Generative-AI.-The-image-should-depict-a-large-modern-digital-canvas-displaying-an-incomplete.png",
+        "contentLength": 2130315,
+        "contentType": "image/png",
+        "cacheControl": "public, max-age=604800",
+        "lastModified": "Wed, 20 Dec 2023 04:48:40 GMT",
+        "etag": "\"20818b-65827228-a1c2b418f303b4ec;;;\""
+      },
+      "occurrences": [
+        {
+          "page": "https://www.aiamigos.org/home/",
+          "ordinal": 25,
+          "context": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "latest-blog-image"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "col-lg-6 col-md-6 col-sm-6"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "row our-blogs-box"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "our-blogs-content"
+            }
+          ],
+          "hasSrcset": false
+        }
+      ],
+      "media": {
+        "id": 1238,
+        "width": 1024,
+        "height": 1024,
+        "sizes": {
+          "medium": {
+            "width": 300,
+            "height": 300,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.48.18-Create-a-realistic-image-illustrating-Limitations-of-Generative-AI.-The-image-should-depict-a-large-modern-digital-canvas-displaying-an-incomplete-300x300.png"
+          },
+          "thumbnail": {
+            "width": 150,
+            "height": 150,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.48.18-Create-a-realistic-image-illustrating-Limitations-of-Generative-AI.-The-image-should-depict-a-large-modern-digital-canvas-displaying-an-incomplete-150x150.png"
+          },
+          "medium_large": {
+            "width": 768,
+            "height": 768,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.48.18-Create-a-realistic-image-illustrating-Limitations-of-Generative-AI.-The-image-should-depict-a-large-modern-digital-canvas-displaying-an-incomplete-768x768.png"
+          },
+          "post_slider_layout_landscape_large": {
+            "width": 1024,
+            "height": 800,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.48.18-Create-a-realistic-image-illustrating-Limitations-of-Generative-AI.-The-image-should-depict-a-large-modern-digital-canvas-displaying-an-incomplete-1024x800.png"
+          },
+          "post_slider_layout_landscape": {
+            "width": 600,
+            "height": 400,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.48.18-Create-a-realistic-image-illustrating-Limitations-of-Generative-AI.-The-image-should-depict-a-large-modern-digital-canvas-displaying-an-incomplete-600x400.png"
+          },
+          "post_slider_layout_portrait": {
+            "width": 600,
+            "height": 900,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.48.18-Create-a-realistic-image-illustrating-Limitations-of-Generative-AI.-The-image-should-depict-a-large-modern-digital-canvas-displaying-an-incomplete-600x900.png"
+          },
+          "post_slider_layout_square": {
+            "width": 600,
+            "height": 600,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.48.18-Create-a-realistic-image-illustrating-Limitations-of-Generative-AI.-The-image-should-depict-a-large-modern-digital-canvas-displaying-an-incomplete-600x600.png"
+          },
+          "vw-sirat-pro-homepage-thumb": {
+            "width": 240,
+            "height": 145,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.48.18-Create-a-realistic-image-illustrating-Limitations-of-Generative-AI.-The-image-should-depict-a-large-modern-digital-canvas-displaying-an-incomplete-240x145.png"
+          },
+          "full": {
+            "width": 1024,
+            "height": 1024,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.48.18-Create-a-realistic-image-illustrating-Limitations-of-Generative-AI.-The-image-should-depict-a-large-modern-digital-canvas-displaying-an-incomplete.png"
+          }
+        }
+      },
+      "recommendedCandidate": {
+        "size": "medium_large",
+        "url": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.48.18-Create-a-realistic-image-illustrating-Limitations-of-Generative-AI.-The-image-should-depict-a-large-modern-digital-canvas-displaying-an-incomplete-768x768.png",
+        "response": {
+          "status": 200,
+          "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.48.18-Create-a-realistic-image-illustrating-Limitations-of-Generative-AI.-The-image-should-depict-a-large-modern-digital-canvas-displaying-an-incomplete-768x768.png",
+          "contentLength": 1009578,
+          "contentType": "image/png",
+          "cacheControl": "public, max-age=604800",
+          "lastModified": "Wed, 20 Dec 2023 04:48:41 GMT",
+          "etag": "\"f67aa-65827229-bae5061fe7fcebec;;;\""
+        }
+      }
+    },
+    {
+      "url": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.15.01-Create-a-realistic-image-symbolizing-The-Role-of-Generative-AI-in-Creative-Industries.-The-image-should-depict-a-modern-well-lit-artists-studio-wi.png",
+      "response": {
+        "status": 200,
+        "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.15.01-Create-a-realistic-image-symbolizing-The-Role-of-Generative-AI-in-Creative-Industries.-The-image-should-depict-a-modern-well-lit-artists-studio-wi.png",
+        "contentLength": 2022378,
+        "contentType": "image/png",
+        "cacheControl": "public, max-age=604800",
+        "lastModified": "Wed, 20 Dec 2023 04:15:36 GMT",
+        "etag": "\"1edbea-65826a68-a0e91c256221d351;;;\""
+      },
+      "occurrences": [
+        {
+          "page": "https://www.aiamigos.org/home/",
+          "ordinal": 20,
+          "context": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "latest-blog-image"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "col-lg-6 col-md-6 col-sm-6"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "row our-blogs-box"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "our-blogs-content"
+            }
+          ],
+          "hasSrcset": false
+        }
+      ],
+      "media": {
+        "id": 1227,
+        "width": 1024,
+        "height": 1024,
+        "sizes": {
+          "medium": {
+            "width": 300,
+            "height": 300,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.15.01-Create-a-realistic-image-symbolizing-The-Role-of-Generative-AI-in-Creative-Industries.-The-image-should-depict-a-modern-well-lit-artists-studio-wi-300x300.png"
+          },
+          "thumbnail": {
+            "width": 150,
+            "height": 150,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.15.01-Create-a-realistic-image-symbolizing-The-Role-of-Generative-AI-in-Creative-Industries.-The-image-should-depict-a-modern-well-lit-artists-studio-wi-150x150.png"
+          },
+          "medium_large": {
+            "width": 768,
+            "height": 768,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.15.01-Create-a-realistic-image-symbolizing-The-Role-of-Generative-AI-in-Creative-Industries.-The-image-should-depict-a-modern-well-lit-artists-studio-wi-768x768.png"
+          },
+          "post_slider_layout_landscape_large": {
+            "width": 1024,
+            "height": 800,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.15.01-Create-a-realistic-image-symbolizing-The-Role-of-Generative-AI-in-Creative-Industries.-The-image-should-depict-a-modern-well-lit-artists-studio-wi-1024x800.png"
+          },
+          "post_slider_layout_landscape": {
+            "width": 600,
+            "height": 400,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.15.01-Create-a-realistic-image-symbolizing-The-Role-of-Generative-AI-in-Creative-Industries.-The-image-should-depict-a-modern-well-lit-artists-studio-wi-600x400.png"
+          },
+          "post_slider_layout_portrait": {
+            "width": 600,
+            "height": 900,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.15.01-Create-a-realistic-image-symbolizing-The-Role-of-Generative-AI-in-Creative-Industries.-The-image-should-depict-a-modern-well-lit-artists-studio-wi-600x900.png"
+          },
+          "post_slider_layout_square": {
+            "width": 600,
+            "height": 600,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.15.01-Create-a-realistic-image-symbolizing-The-Role-of-Generative-AI-in-Creative-Industries.-The-image-should-depict-a-modern-well-lit-artists-studio-wi-600x600.png"
+          },
+          "vw-sirat-pro-homepage-thumb": {
+            "width": 240,
+            "height": 145,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.15.01-Create-a-realistic-image-symbolizing-The-Role-of-Generative-AI-in-Creative-Industries.-The-image-should-depict-a-modern-well-lit-artists-studio-wi-240x145.png"
+          },
+          "full": {
+            "width": 1024,
+            "height": 1024,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.15.01-Create-a-realistic-image-symbolizing-The-Role-of-Generative-AI-in-Creative-Industries.-The-image-should-depict-a-modern-well-lit-artists-studio-wi.png"
+          }
+        }
+      },
+      "recommendedCandidate": {
+        "size": "medium_large",
+        "url": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.15.01-Create-a-realistic-image-symbolizing-The-Role-of-Generative-AI-in-Creative-Industries.-The-image-should-depict-a-modern-well-lit-artists-studio-wi-768x768.png",
+        "response": {
+          "status": 200,
+          "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.15.01-Create-a-realistic-image-symbolizing-The-Role-of-Generative-AI-in-Creative-Industries.-The-image-should-depict-a-modern-well-lit-artists-studio-wi-768x768.png",
+          "contentLength": 992354,
+          "contentType": "image/png",
+          "cacheControl": "public, max-age=604800",
+          "lastModified": "Wed, 20 Dec 2023 04:15:37 GMT",
+          "etag": "\"f2462-65826a69-6f7dc9ee7c9d0a7d;;;\""
+        }
+      }
+    },
+    {
+      "url": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.29.33-Create-a-realistic-image-illustrating-the-concept-Generative-AI-vs.-Traditional-AI.-On-one-side-show-a-modern-sleek-and-advanced-AI-system-with-v.png",
+      "response": {
+        "status": 200,
+        "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.29.33-Create-a-realistic-image-illustrating-the-concept-Generative-AI-vs.-Traditional-AI.-On-one-side-show-a-modern-sleek-and-advanced-AI-system-with-v.png",
+        "contentLength": 1757988,
+        "contentType": "image/png",
+        "cacheControl": "public, max-age=604800",
+        "lastModified": "Wed, 20 Dec 2023 04:43:08 GMT",
+        "etag": "\"1ad324-658270dc-bdd4bc11bdf35ced;;;\""
+      },
+      "occurrences": [
+        {
+          "page": "https://www.aiamigos.org/home/",
+          "ordinal": 23,
+          "context": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "latest-blog-image"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "col-lg-6 col-md-6 col-sm-6"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "row our-blogs-box"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "our-blogs-content"
+            }
+          ],
+          "hasSrcset": false
+        }
+      ],
+      "media": {
+        "id": 1233,
+        "width": 1024,
+        "height": 1024,
+        "sizes": {
+          "medium": {
+            "width": 300,
+            "height": 300,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.29.33-Create-a-realistic-image-illustrating-the-concept-Generative-AI-vs.-Traditional-AI.-On-one-side-show-a-modern-sleek-and-advanced-AI-system-with-v-300x300.png"
+          },
+          "thumbnail": {
+            "width": 150,
+            "height": 150,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.29.33-Create-a-realistic-image-illustrating-the-concept-Generative-AI-vs.-Traditional-AI.-On-one-side-show-a-modern-sleek-and-advanced-AI-system-with-v-150x150.png"
+          },
+          "medium_large": {
+            "width": 768,
+            "height": 768,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.29.33-Create-a-realistic-image-illustrating-the-concept-Generative-AI-vs.-Traditional-AI.-On-one-side-show-a-modern-sleek-and-advanced-AI-system-with-v-768x768.png"
+          },
+          "post_slider_layout_landscape_large": {
+            "width": 1024,
+            "height": 800,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.29.33-Create-a-realistic-image-illustrating-the-concept-Generative-AI-vs.-Traditional-AI.-On-one-side-show-a-modern-sleek-and-advanced-AI-system-with-v-1024x800.png"
+          },
+          "post_slider_layout_landscape": {
+            "width": 600,
+            "height": 400,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.29.33-Create-a-realistic-image-illustrating-the-concept-Generative-AI-vs.-Traditional-AI.-On-one-side-show-a-modern-sleek-and-advanced-AI-system-with-v-600x400.png"
+          },
+          "post_slider_layout_portrait": {
+            "width": 600,
+            "height": 900,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.29.33-Create-a-realistic-image-illustrating-the-concept-Generative-AI-vs.-Traditional-AI.-On-one-side-show-a-modern-sleek-and-advanced-AI-system-with-v-600x900.png"
+          },
+          "post_slider_layout_square": {
+            "width": 600,
+            "height": 600,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.29.33-Create-a-realistic-image-illustrating-the-concept-Generative-AI-vs.-Traditional-AI.-On-one-side-show-a-modern-sleek-and-advanced-AI-system-with-v-600x600.png"
+          },
+          "vw-sirat-pro-homepage-thumb": {
+            "width": 240,
+            "height": 145,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.29.33-Create-a-realistic-image-illustrating-the-concept-Generative-AI-vs.-Traditional-AI.-On-one-side-show-a-modern-sleek-and-advanced-AI-system-with-v-240x145.png"
+          },
+          "full": {
+            "width": 1024,
+            "height": 1024,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.29.33-Create-a-realistic-image-illustrating-the-concept-Generative-AI-vs.-Traditional-AI.-On-one-side-show-a-modern-sleek-and-advanced-AI-system-with-v.png"
+          }
+        }
+      },
+      "recommendedCandidate": {
+        "size": "medium_large",
+        "url": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.29.33-Create-a-realistic-image-illustrating-the-concept-Generative-AI-vs.-Traditional-AI.-On-one-side-show-a-modern-sleek-and-advanced-AI-system-with-v-768x768.png",
+        "response": {
+          "status": 200,
+          "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.29.33-Create-a-realistic-image-illustrating-the-concept-Generative-AI-vs.-Traditional-AI.-On-one-side-show-a-modern-sleek-and-advanced-AI-system-with-v-768x768.png",
+          "contentLength": 884263,
+          "contentType": "image/png",
+          "cacheControl": "public, max-age=604800",
+          "lastModified": "Wed, 20 Dec 2023 04:43:10 GMT",
+          "etag": "\"d7e27-658270de-803e622a1e2e5e65;;;\""
+        }
+      }
+    },
+    {
+      "url": "https://www.aiamigos.org/wp-content/uploads/2023/10/DALL%C2%B7E-2023-10-23-00.10.13-Illustration-of-a-school-hallway-bustling-with-diverse-middle-and-high-school-students-of-various-genders-and-descents.-They-are-chatting-opening-loc.png",
+      "response": {
+        "status": 200,
+        "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2023/10/DALL%C2%B7E-2023-10-23-00.10.13-Illustration-of-a-school-hallway-bustling-with-diverse-middle-and-high-school-students-of-various-genders-and-descents.-They-are-chatting-opening-loc.png",
+        "contentLength": 1555215,
+        "contentType": "image/png",
+        "cacheControl": "public, max-age=604800",
+        "lastModified": "Mon, 23 Oct 2023 17:20:17 GMT",
+        "etag": "\"17bb0f-6536ab51-503b45a135fda7a4;;;\""
+      },
+      "occurrences": [
+        {
+          "page": "https://www.aiamigos.org/home/",
+          "ordinal": 2,
+          "context": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "services-icon py-3 px-3 mb-2"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "our-services-box mb-3 p-4"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "col-lg-6 col-md-6 col-sm-6"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "row service-title-boxes"
+            }
+          ],
+          "hasSrcset": true
+        }
+      ],
+      "media": null,
+      "recommendedCandidate": {
+        "size": "original-fallback",
+        "url": "https://www.aiamigos.org/wp-content/uploads/2023/10/DALL%C2%B7E-2023-10-23-00.10.13-Illustration-of-a-school-hallway-bustling-with-diverse-middle-and-high-school-students-of-various-genders-and-descents.-They-are-chatting-opening-loc.png",
+        "response": {
+          "status": 200,
+          "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2023/10/DALL%C2%B7E-2023-10-23-00.10.13-Illustration-of-a-school-hallway-bustling-with-diverse-middle-and-high-school-students-of-various-genders-and-descents.-They-are-chatting-opening-loc.png",
+          "contentLength": 1555215,
+          "contentType": "image/png",
+          "cacheControl": "public, max-age=604800",
+          "lastModified": "Mon, 23 Oct 2023 17:20:17 GMT",
+          "etag": "\"17bb0f-6536ab51-503b45a135fda7a4;;;\""
+        }
+      }
+    },
+    {
+      "url": "https://www.aiamigos.org/wp-content/uploads/2023/10/DALL%C2%B7E-2023-10-23-00.10.19-Illustration-of-a-colorful-classroom-setting-with-diverse-elementary-school-kids-of-different-genders-and-descents.-They-are-joyfully-engaged-in-vario.png",
+      "response": {
+        "status": 200,
+        "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2023/10/DALL%C2%B7E-2023-10-23-00.10.19-Illustration-of-a-colorful-classroom-setting-with-diverse-elementary-school-kids-of-different-genders-and-descents.-They-are-joyfully-engaged-in-vario.png",
+        "contentLength": 1455501,
+        "contentType": "image/png",
+        "cacheControl": "public, max-age=604800",
+        "lastModified": "Mon, 23 Oct 2023 17:20:10 GMT",
+        "etag": "\"16358d-6536ab4a-dca1b7fb5aa58991;;;\""
+      },
+      "occurrences": [
+        {
+          "page": "https://www.aiamigos.org/home/",
+          "ordinal": 5,
+          "context": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "services-icon py-3 px-3 mb-2"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "our-services-box mb-3 p-4"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "col-lg-6 col-md-6 col-sm-6"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "row service-title-boxes"
+            }
+          ],
+          "hasSrcset": true
+        }
+      ],
+      "media": null,
+      "recommendedCandidate": {
+        "size": "original-fallback",
+        "url": "https://www.aiamigos.org/wp-content/uploads/2023/10/DALL%C2%B7E-2023-10-23-00.10.19-Illustration-of-a-colorful-classroom-setting-with-diverse-elementary-school-kids-of-different-genders-and-descents.-They-are-joyfully-engaged-in-vario.png",
+        "response": {
+          "status": 200,
+          "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2023/10/DALL%C2%B7E-2023-10-23-00.10.19-Illustration-of-a-colorful-classroom-setting-with-diverse-elementary-school-kids-of-different-genders-and-descents.-They-are-joyfully-engaged-in-vario.png",
+          "contentLength": 1455501,
+          "contentType": "image/png",
+          "cacheControl": "public, max-age=604800",
+          "lastModified": "Mon, 23 Oct 2023 17:20:10 GMT",
+          "etag": "\"16358d-6536ab4a-dca1b7fb5aa58991;;;\""
+        }
+      }
+    },
+    {
+      "url": "https://www.aiamigos.org/wp-content/uploads/2023/10/DALL%C2%B7E-2023-10-23-00.09.55-Illustration-of-a-modern-office-setting-with-diverse-professionals-of-various-genders-and-descents.-They-are-engaged-in-activities-like-meetings-pres.png",
+      "response": {
+        "status": 200,
+        "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2023/10/DALL%C2%B7E-2023-10-23-00.09.55-Illustration-of-a-modern-office-setting-with-diverse-professionals-of-various-genders-and-descents.-They-are-engaged-in-activities-like-meetings-pres.png",
+        "contentLength": 1414310,
+        "contentType": "image/png",
+        "cacheControl": "public, max-age=604800",
+        "lastModified": "Mon, 23 Oct 2023 17:20:37 GMT",
+        "etag": "\"1594a6-6536ab65-9244c30d7ca08aa2;;;\""
+      },
+      "occurrences": [
+        {
+          "page": "https://www.aiamigos.org/home/",
+          "ordinal": 3,
+          "context": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "services-icon py-3 px-3 mb-2"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "our-services-box mb-3 p-4"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "col-lg-6 col-md-6 col-sm-6"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "row service-title-boxes"
+            }
+          ],
+          "hasSrcset": true
+        }
+      ],
+      "media": null,
+      "recommendedCandidate": {
+        "size": "original-fallback",
+        "url": "https://www.aiamigos.org/wp-content/uploads/2023/10/DALL%C2%B7E-2023-10-23-00.09.55-Illustration-of-a-modern-office-setting-with-diverse-professionals-of-various-genders-and-descents.-They-are-engaged-in-activities-like-meetings-pres.png",
+        "response": {
+          "status": 200,
+          "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2023/10/DALL%C2%B7E-2023-10-23-00.09.55-Illustration-of-a-modern-office-setting-with-diverse-professionals-of-various-genders-and-descents.-They-are-engaged-in-activities-like-meetings-pres.png",
+          "contentLength": 1414310,
+          "contentType": "image/png",
+          "cacheControl": "public, max-age=604800",
+          "lastModified": "Mon, 23 Oct 2023 17:20:37 GMT",
+          "etag": "\"1594a6-6536ab65-9244c30d7ca08aa2;;;\""
+        }
+      }
+    },
+    {
+      "url": "https://www.aiamigos.org/wp-content/uploads/2024/10/RAG-1.png",
+      "response": {
+        "status": 200,
+        "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2024/10/RAG-1.png",
+        "contentLength": 889784,
+        "contentType": "image/png",
+        "cacheControl": "public, max-age=604800",
+        "lastModified": "Wed, 30 Oct 2024 13:00:53 GMT",
+        "etag": "\"d93b8-67222e05-7a83945f27f7e811;;;\""
+      },
+      "occurrences": [
+        {
+          "page": "https://www.aiamigos.org/",
+          "ordinal": 8,
+          "context": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "post_pic_inner"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "postpic"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "postbox wow animated slideInUp delay-1000"
+            },
+            {
+              "tag": "div",
+              "id": "single_post",
+              "class": "col-lg-4 col-md-4 col-sm-12"
+            }
+          ],
+          "hasSrcset": false
+        },
+        {
+          "page": "https://www.aiamigos.org/home/",
+          "ordinal": 14,
+          "context": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "latest-blog-image"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "col-lg-6 col-md-6 col-sm-6"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "row our-blogs-box"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "our-blogs-content"
+            }
+          ],
+          "hasSrcset": false
+        }
+      ],
+      "media": {
+        "id": 1402,
+        "width": 1024,
+        "height": 647,
+        "sizes": {
+          "medium": {
+            "width": 300,
+            "height": 190,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2024/10/RAG-1-300x190.png"
+          },
+          "thumbnail": {
+            "width": 150,
+            "height": 150,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2024/10/RAG-1-150x150.png"
+          },
+          "medium_large": {
+            "width": 768,
+            "height": 485,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2024/10/RAG-1-768x485.png"
+          },
+          "vw-sirat-pro-homepage-thumb": {
+            "width": 240,
+            "height": 145,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2024/10/RAG-1-240x145.png"
+          },
+          "full": {
+            "width": 1024,
+            "height": 647,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2024/10/RAG-1.png"
+          }
+        }
+      },
+      "recommendedCandidate": {
+        "size": "medium_large",
+        "url": "https://www.aiamigos.org/wp-content/uploads/2024/10/RAG-1-768x485.png",
+        "response": {
+          "status": 200,
+          "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2024/10/RAG-1-768x485.png",
+          "contentLength": 434873,
+          "contentType": "image/png",
+          "cacheControl": "public, max-age=604800",
+          "lastModified": "Wed, 30 Oct 2024 13:00:55 GMT",
+          "etag": "\"6a2b9-67222e07-50f45b2570bfa494;;;\""
+        }
+      }
+    },
+    {
+      "url": "https://www.aiamigos.org/wp-content/uploads/2023/12/OpenSource.jpg",
+      "response": {
+        "status": 200,
+        "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/OpenSource.jpg",
+        "contentLength": 798031,
+        "contentType": "image/jpeg",
+        "cacheControl": "public, max-age=604800",
+        "lastModified": "Sun, 09 Jun 2024 00:36:07 GMT",
+        "etag": "\"c2d4f-6664f8f7-21e98a9c7e9c930a;;;\""
+      },
+      "occurrences": [
+        {
+          "page": "https://www.aiamigos.org/home/",
+          "ordinal": 21,
+          "context": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "latest-blog-image"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "col-lg-6 col-md-6 col-sm-6"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "row our-blogs-box"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "our-blogs-content"
+            }
+          ],
+          "hasSrcset": false
+        }
+      ],
+      "media": {
+        "id": 1338,
+        "width": 1792,
+        "height": 1024,
+        "sizes": {
+          "medium": {
+            "width": 300,
+            "height": 171,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/OpenSource-300x171.jpg"
+          },
+          "large": {
+            "width": 1024,
+            "height": 585,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/OpenSource-1024x585.jpg"
+          },
+          "thumbnail": {
+            "width": 150,
+            "height": 150,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/OpenSource-150x150.jpg"
+          },
+          "medium_large": {
+            "width": 768,
+            "height": 439,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/OpenSource-768x439.jpg"
+          },
+          "1536x1536": {
+            "width": 1536,
+            "height": 878,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/OpenSource-1536x878.jpg"
+          },
+          "vw-sirat-pro-homepage-thumb": {
+            "width": 240,
+            "height": 145,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/OpenSource-240x145.jpg"
+          },
+          "full": {
+            "width": 1792,
+            "height": 1024,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/OpenSource.jpg"
+          }
+        }
+      },
+      "recommendedCandidate": {
+        "size": "medium_large",
+        "url": "https://www.aiamigos.org/wp-content/uploads/2023/12/OpenSource-768x439.jpg",
+        "response": {
+          "status": 200,
+          "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2023/12/OpenSource-768x439.jpg",
+          "contentLength": 92266,
+          "contentType": "image/jpeg",
+          "cacheControl": "public, max-age=604800",
+          "lastModified": "Sun, 09 Jun 2024 00:36:08 GMT",
+          "etag": "\"1686a-6664f8f8-57bbd794a351e388;;;\""
+        }
+      }
+    },
+    {
+      "url": "https://www.aiamigos.org/wp-content/uploads/2024/10/NVIDIA-MONAI.webp",
+      "response": {
+        "status": 200,
+        "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2024/10/NVIDIA-MONAI.webp",
+        "contentLength": 739364,
+        "contentType": "image/webp",
+        "cacheControl": "public, max-age=604800",
+        "lastModified": "Tue, 15 Oct 2024 13:45:17 GMT",
+        "etag": "\"b4824-670e71ed-e93a83edc5191c98;;;\""
+      },
+      "occurrences": [
+        {
+          "page": "https://www.aiamigos.org/",
+          "ordinal": 4,
+          "context": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "post_pic_inner"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "postpic"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "postbox wow animated slideInUp delay-1000"
+            },
+            {
+              "tag": "div",
+              "id": "single_post",
+              "class": "col-lg-4 col-md-4 col-sm-12"
+            }
+          ],
+          "hasSrcset": false
+        },
+        {
+          "page": "https://www.aiamigos.org/home/",
+          "ordinal": 10,
+          "context": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "latest-blog-image"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "col-lg-6 col-md-6 col-sm-6"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "row our-blogs-box"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "our-blogs-content"
+            }
+          ],
+          "hasSrcset": false
+        }
+      ],
+      "media": {
+        "id": 1363,
+        "width": 1792,
+        "height": 1024,
+        "sizes": {
+          "medium": {
+            "width": 300,
+            "height": 171,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2024/10/NVIDIA-MONAI-300x171.webp"
+          },
+          "large": {
+            "width": 1024,
+            "height": 585,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2024/10/NVIDIA-MONAI-1024x585.webp"
+          },
+          "thumbnail": {
+            "width": 150,
+            "height": 150,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2024/10/NVIDIA-MONAI-150x150.webp"
+          },
+          "medium_large": {
+            "width": 768,
+            "height": 439,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2024/10/NVIDIA-MONAI-768x439.webp"
+          },
+          "1536x1536": {
+            "width": 1536,
+            "height": 878,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2024/10/NVIDIA-MONAI-1536x878.webp"
+          },
+          "vw-sirat-pro-homepage-thumb": {
+            "width": 240,
+            "height": 145,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2024/10/NVIDIA-MONAI-240x145.webp"
+          },
+          "full": {
+            "width": 1792,
+            "height": 1024,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2024/10/NVIDIA-MONAI.webp"
+          }
+        }
+      },
+      "recommendedCandidate": {
+        "size": "medium_large",
+        "url": "https://www.aiamigos.org/wp-content/uploads/2024/10/NVIDIA-MONAI-768x439.webp",
+        "response": {
+          "status": 200,
+          "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2024/10/NVIDIA-MONAI-768x439.webp",
+          "contentLength": 107616,
+          "contentType": "image/webp",
+          "cacheControl": "public, max-age=604800",
+          "lastModified": "Tue, 15 Oct 2024 13:45:19 GMT",
+          "etag": "\"1a460-670e71ef-2b9f82d3a7e30582;;;\""
+        }
+      }
+    },
+    {
+      "url": "https://www.aiamigos.org/wp-content/uploads/2024/10/vectordb.png",
+      "response": {
+        "status": 200,
+        "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2024/10/vectordb.png",
+        "contentLength": 724094,
+        "contentType": "image/png",
+        "cacheControl": "public, max-age=604800",
+        "lastModified": "Wed, 23 Oct 2024 21:51:20 GMT",
+        "etag": "\"b0c7e-67196fd8-1af16a6a2cc33dbd;;;\""
+      },
+      "occurrences": [
+        {
+          "page": "https://www.aiamigos.org/",
+          "ordinal": 6,
+          "context": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "post_pic_inner"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "postpic"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "postbox wow animated slideInUp delay-1000"
+            },
+            {
+              "tag": "div",
+              "id": "single_post",
+              "class": "col-lg-4 col-md-4 col-sm-12"
+            }
+          ],
+          "hasSrcset": false
+        },
+        {
+          "page": "https://www.aiamigos.org/home/",
+          "ordinal": 12,
+          "context": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "latest-blog-image"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "col-lg-6 col-md-6 col-sm-6"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "row our-blogs-box"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "our-blogs-content"
+            }
+          ],
+          "hasSrcset": false
+        }
+      ],
+      "media": {
+        "id": 1381,
+        "width": 1024,
+        "height": 1024,
+        "sizes": {
+          "medium": {
+            "width": 300,
+            "height": 300,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2024/10/vectordb-300x300.png"
+          },
+          "thumbnail": {
+            "width": 150,
+            "height": 150,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2024/10/vectordb-150x150.png"
+          },
+          "medium_large": {
+            "width": 768,
+            "height": 768,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2024/10/vectordb-768x768.png"
+          },
+          "vw-sirat-pro-homepage-thumb": {
+            "width": 240,
+            "height": 145,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2024/10/vectordb-240x145.png"
+          },
+          "full": {
+            "width": 1024,
+            "height": 1024,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2024/10/vectordb.png"
+          }
+        }
+      },
+      "recommendedCandidate": {
+        "size": "medium_large",
+        "url": "https://www.aiamigos.org/wp-content/uploads/2024/10/vectordb-768x768.png",
+        "response": {
+          "status": 200,
+          "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2024/10/vectordb-768x768.png",
+          "contentLength": 369538,
+          "contentType": "image/png",
+          "cacheControl": "public, max-age=604800",
+          "lastModified": "Wed, 23 Oct 2024 21:51:21 GMT",
+          "etag": "\"5a382-67196fd9-2b25abf4d3f9f020;;;\""
+        }
+      }
+    },
+    {
+      "url": "https://www.aiamigos.org/wp-content/uploads/2024/10/fine-tuning.webp",
+      "response": {
+        "status": 200,
+        "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2024/10/fine-tuning.webp",
+        "contentLength": 674118,
+        "contentType": "image/webp",
+        "cacheControl": "public, max-age=604800",
+        "lastModified": "Fri, 25 Oct 2024 01:35:52 GMT",
+        "etag": "\"a4946-671af5f8-da2e68d585fb2b6;;;\""
+      },
+      "occurrences": [
+        {
+          "page": "https://www.aiamigos.org/",
+          "ordinal": 5,
+          "context": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "post_pic_inner"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "postpic"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "postbox wow animated slideInUp delay-1000"
+            },
+            {
+              "tag": "div",
+              "id": "single_post",
+              "class": "col-lg-4 col-md-4 col-sm-12"
+            }
+          ],
+          "hasSrcset": false
+        },
+        {
+          "page": "https://www.aiamigos.org/home/",
+          "ordinal": 11,
+          "context": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "latest-blog-image"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "col-lg-6 col-md-6 col-sm-6"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "row our-blogs-box"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "our-blogs-content"
+            }
+          ],
+          "hasSrcset": false
+        }
+      ],
+      "media": {
+        "id": 1393,
+        "width": 1792,
+        "height": 1024,
+        "sizes": {
+          "medium": {
+            "width": 300,
+            "height": 171,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2024/10/fine-tuning-300x171.webp"
+          },
+          "large": {
+            "width": 1024,
+            "height": 585,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2024/10/fine-tuning-1024x585.webp"
+          },
+          "thumbnail": {
+            "width": 150,
+            "height": 150,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2024/10/fine-tuning-150x150.webp"
+          },
+          "medium_large": {
+            "width": 768,
+            "height": 439,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2024/10/fine-tuning-768x439.webp"
+          },
+          "1536x1536": {
+            "width": 1536,
+            "height": 878,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2024/10/fine-tuning-1536x878.webp"
+          },
+          "vw-sirat-pro-homepage-thumb": {
+            "width": 240,
+            "height": 145,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2024/10/fine-tuning-240x145.webp"
+          },
+          "full": {
+            "width": 1792,
+            "height": 1024,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2024/10/fine-tuning.webp"
+          }
+        }
+      },
+      "recommendedCandidate": {
+        "size": "medium_large",
+        "url": "https://www.aiamigos.org/wp-content/uploads/2024/10/fine-tuning-768x439.webp",
+        "response": {
+          "status": 200,
+          "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2024/10/fine-tuning-768x439.webp",
+          "contentLength": 91760,
+          "contentType": "image/webp",
+          "cacheControl": "public, max-age=604800",
+          "lastModified": "Fri, 25 Oct 2024 01:35:53 GMT",
+          "etag": "\"16670-671af5f9-d58f04df57785384;;;\""
+        }
+      }
+    },
+    {
+      "url": "https://www.aiamigos.org/wp-content/uploads/2024/06/Interoperability.jpg",
+      "response": {
+        "status": 200,
+        "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2024/06/Interoperability.jpg",
+        "contentLength": 525952,
+        "contentType": "image/jpeg",
+        "cacheControl": "public, max-age=604800",
+        "lastModified": "Sun, 09 Jun 2024 00:25:23 GMT",
+        "etag": "\"80680-6664f673-ab4cf56475633db3;;;\""
+      },
+      "occurrences": [
+        {
+          "page": "https://www.aiamigos.org/",
+          "ordinal": 9,
+          "context": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "post_pic_inner"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "postpic"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "postbox wow animated slideInUp delay-1000"
+            },
+            {
+              "tag": "div",
+              "id": "single_post",
+              "class": "col-lg-4 col-md-4 col-sm-12"
+            }
+          ],
+          "hasSrcset": false
+        },
+        {
+          "page": "https://www.aiamigos.org/home/",
+          "ordinal": 15,
+          "context": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "latest-blog-image"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "col-lg-6 col-md-6 col-sm-6"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "row our-blogs-box"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "our-blogs-content"
+            }
+          ],
+          "hasSrcset": false
+        }
+      ],
+      "media": {
+        "id": 1335,
+        "width": 1792,
+        "height": 1024,
+        "sizes": {
+          "medium": {
+            "width": 300,
+            "height": 171,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2024/06/Interoperability-300x171.jpg"
+          },
+          "large": {
+            "width": 1024,
+            "height": 585,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2024/06/Interoperability-1024x585.jpg"
+          },
+          "thumbnail": {
+            "width": 150,
+            "height": 150,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2024/06/Interoperability-150x150.jpg"
+          },
+          "medium_large": {
+            "width": 768,
+            "height": 439,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2024/06/Interoperability-768x439.jpg"
+          },
+          "1536x1536": {
+            "width": 1536,
+            "height": 878,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2024/06/Interoperability-1536x878.jpg"
+          },
+          "vw-sirat-pro-homepage-thumb": {
+            "width": 240,
+            "height": 145,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2024/06/Interoperability-240x145.jpg"
+          },
+          "full": {
+            "width": 1792,
+            "height": 1024,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2024/06/Interoperability.jpg"
+          }
+        }
+      },
+      "recommendedCandidate": {
+        "size": "medium_large",
+        "url": "https://www.aiamigos.org/wp-content/uploads/2024/06/Interoperability-768x439.jpg",
+        "response": {
+          "status": 200,
+          "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2024/06/Interoperability-768x439.jpg",
+          "contentLength": 67948,
+          "contentType": "image/jpeg",
+          "cacheControl": "public, max-age=604800",
+          "lastModified": "Sun, 09 Jun 2024 00:25:24 GMT",
+          "etag": "\"1096c-6664f674-a592ee8fd359a278;;;\""
+        }
+      }
+    },
+    {
+      "url": "https://www.aiamigos.org/wp-content/uploads/2024/02/DALL%C2%B7E-2024-02-24-20.03.54-Imagine-a-sleek-futuristic-desktop-environment-illuminated-by-the-soft-glow-of-neon-lights-reflecting-the-cutting-edge-technology-of-NVIDIAs-RTX-gr.webp",
+      "response": {
+        "status": 200,
+        "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2024/02/DALL%C2%B7E-2024-02-24-20.03.54-Imagine-a-sleek-futuristic-desktop-environment-illuminated-by-the-soft-glow-of-neon-lights-reflecting-the-cutting-edge-technology-of-NVIDIAs-RTX-gr.webp",
+        "contentLength": 289022,
+        "contentType": "image/webp",
+        "cacheControl": "public, max-age=604800",
+        "lastModified": "Sun, 25 Feb 2024 01:05:56 GMT",
+        "etag": "\"468fe-65da9274-bf20a4feda261006;;;\""
+      },
+      "occurrences": [
+        {
+          "page": "https://www.aiamigos.org/home/",
+          "ordinal": 16,
+          "context": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "latest-blog-image"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "col-lg-6 col-md-6 col-sm-6"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "row our-blogs-box"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "our-blogs-content"
+            }
+          ],
+          "hasSrcset": false
+        }
+      ],
+      "media": {
+        "id": 1267,
+        "width": 1024,
+        "height": 1024,
+        "sizes": {
+          "medium": {
+            "width": 300,
+            "height": 300,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2024/02/DALL%C2%B7E-2024-02-24-20.03.54-Imagine-a-sleek-futuristic-desktop-environment-illuminated-by-the-soft-glow-of-neon-lights-reflecting-the-cutting-edge-technology-of-NVIDIAs-RTX-gr-300x300.webp"
+          },
+          "thumbnail": {
+            "width": 150,
+            "height": 150,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2024/02/DALL%C2%B7E-2024-02-24-20.03.54-Imagine-a-sleek-futuristic-desktop-environment-illuminated-by-the-soft-glow-of-neon-lights-reflecting-the-cutting-edge-technology-of-NVIDIAs-RTX-gr-150x150.webp"
+          },
+          "medium_large": {
+            "width": 768,
+            "height": 768,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2024/02/DALL%C2%B7E-2024-02-24-20.03.54-Imagine-a-sleek-futuristic-desktop-environment-illuminated-by-the-soft-glow-of-neon-lights-reflecting-the-cutting-edge-technology-of-NVIDIAs-RTX-gr-768x768.webp"
+          },
+          "vw-sirat-pro-homepage-thumb": {
+            "width": 240,
+            "height": 145,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2024/02/DALL%C2%B7E-2024-02-24-20.03.54-Imagine-a-sleek-futuristic-desktop-environment-illuminated-by-the-soft-glow-of-neon-lights-reflecting-the-cutting-edge-technology-of-NVIDIAs-RTX-gr-240x145.webp"
+          },
+          "full": {
+            "width": 1024,
+            "height": 1024,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2024/02/DALL%C2%B7E-2024-02-24-20.03.54-Imagine-a-sleek-futuristic-desktop-environment-illuminated-by-the-soft-glow-of-neon-lights-reflecting-the-cutting-edge-technology-of-NVIDIAs-RTX-gr.webp"
+          }
+        }
+      },
+      "recommendedCandidate": {
+        "size": "medium_large",
+        "url": "https://www.aiamigos.org/wp-content/uploads/2024/02/DALL%C2%B7E-2024-02-24-20.03.54-Imagine-a-sleek-futuristic-desktop-environment-illuminated-by-the-soft-glow-of-neon-lights-reflecting-the-cutting-edge-technology-of-NVIDIAs-RTX-gr-768x768.webp",
+        "response": {
+          "status": 200,
+          "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2024/02/DALL%C2%B7E-2024-02-24-20.03.54-Imagine-a-sleek-futuristic-desktop-environment-illuminated-by-the-soft-glow-of-neon-lights-reflecting-the-cutting-edge-technology-of-NVIDIAs-RTX-gr-768x768.webp",
+          "contentLength": 80484,
+          "contentType": "image/webp",
+          "cacheControl": "public, max-age=604800",
+          "lastModified": "Sun, 25 Feb 2024 01:05:57 GMT",
+          "etag": "\"13a64-65da9275-f927ce6c8085ea53;;;\""
+        }
+      }
+    },
+    {
+      "url": "https://www.aiamigos.org/wp-content/uploads/2024/09/tesseract-ocr.png",
+      "response": {
+        "status": 200,
+        "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2024/09/tesseract-ocr.png",
+        "contentLength": 77022,
+        "contentType": "image/png",
+        "cacheControl": "public, max-age=604800",
+        "lastModified": "Thu, 05 Sep 2024 03:44:31 GMT",
+        "etag": "\"12cde-66d9291f-61da108bbc5f2d05;;;\""
+      },
+      "occurrences": [
+        {
+          "page": "https://www.aiamigos.org/",
+          "ordinal": 7,
+          "context": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "post_pic_inner"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "postpic"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "postbox wow animated slideInUp delay-1000"
+            },
+            {
+              "tag": "div",
+              "id": "single_post",
+              "class": "col-lg-4 col-md-4 col-sm-12"
+            }
+          ],
+          "hasSrcset": false
+        },
+        {
+          "page": "https://www.aiamigos.org/home/",
+          "ordinal": 13,
+          "context": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "latest-blog-image"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "col-lg-6 col-md-6 col-sm-6"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "row our-blogs-box"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "our-blogs-content"
+            }
+          ],
+          "hasSrcset": false
+        }
+      ],
+      "media": {
+        "id": 1358,
+        "width": 483,
+        "height": 311,
+        "sizes": {
+          "medium": {
+            "width": 300,
+            "height": 193,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2024/09/tesseract-ocr-300x193.png"
+          },
+          "thumbnail": {
+            "width": 150,
+            "height": 150,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2024/09/tesseract-ocr-150x150.png"
+          },
+          "vw-sirat-pro-homepage-thumb": {
+            "width": 240,
+            "height": 145,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2024/09/tesseract-ocr-240x145.png"
+          },
+          "full": {
+            "width": 483,
+            "height": 311,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2024/09/tesseract-ocr.png"
+          }
+        }
+      },
+      "recommendedCandidate": {
+        "size": "medium",
+        "url": "https://www.aiamigos.org/wp-content/uploads/2024/09/tesseract-ocr-300x193.png",
+        "response": {
+          "status": 200,
+          "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2024/09/tesseract-ocr-300x193.png",
+          "contentLength": 30841,
+          "contentType": "image/png",
+          "cacheControl": "public, max-age=604800",
+          "lastModified": "Thu, 05 Sep 2024 03:44:31 GMT",
+          "etag": "\"7879-66d9291f-bbd4e691d22e136a;;;\""
+        }
+      }
+    },
+    {
+      "url": "https://www.aiamigos.org/wp-content/uploads/2024/03/Python-Dep-Practices-1.jpg",
+      "response": {
+        "status": 200,
+        "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2024/03/Python-Dep-Practices-1.jpg",
+        "contentLength": 28015,
+        "contentType": "image/jpeg",
+        "cacheControl": "public, max-age=604800",
+        "lastModified": "Thu, 21 Mar 2024 14:31:40 GMT",
+        "etag": "\"6d6f-65fc44cc-16f795f7745451ab;;;\""
+      },
+      "occurrences": [
+        {
+          "page": "https://www.aiamigos.org/home/",
+          "ordinal": 17,
+          "context": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "latest-blog-image"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "col-lg-6 col-md-6 col-sm-6"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "row our-blogs-box"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "our-blogs-content"
+            }
+          ],
+          "hasSrcset": false
+        }
+      ],
+      "media": {
+        "id": 1317,
+        "width": 254,
+        "height": 229,
+        "sizes": {
+          "thumbnail": {
+            "width": 150,
+            "height": 150,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2024/03/Python-Dep-Practices-1-150x150.jpg"
+          },
+          "vw-sirat-pro-homepage-thumb": {
+            "width": 240,
+            "height": 145,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2024/03/Python-Dep-Practices-1-240x145.jpg"
+          },
+          "full": {
+            "width": 254,
+            "height": 229,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2024/03/Python-Dep-Practices-1.jpg"
+          }
+        }
+      },
+      "recommendedCandidate": {
+        "size": "original-fallback",
+        "url": "https://www.aiamigos.org/wp-content/uploads/2024/03/Python-Dep-Practices-1.jpg",
+        "response": {
+          "status": 200,
+          "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2024/03/Python-Dep-Practices-1.jpg",
+          "contentLength": 28015,
+          "contentType": "image/jpeg",
+          "cacheControl": "public, max-age=604800",
+          "lastModified": "Thu, 21 Mar 2024 14:31:40 GMT",
+          "etag": "\"6d6f-65fc44cc-16f795f7745451ab;;;\""
+        }
+      }
+    },
+    {
+      "url": "https://www.aiamigos.org/wp-content/uploads/2025/02/LangGraph.png",
+      "response": {
+        "status": 200,
+        "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2025/02/LangGraph.png",
+        "contentLength": 16459,
+        "contentType": "image/png",
+        "cacheControl": "public, max-age=604800",
+        "lastModified": "Sat, 22 Feb 2025 22:53:38 GMT",
+        "etag": "\"404b-67ba5572-45b052a350016b3f;;;\""
+      },
+      "occurrences": [
+        {
+          "page": "https://www.aiamigos.org/",
+          "ordinal": 3,
+          "context": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "post_pic_inner"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "postpic"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "postbox wow animated slideInUp delay-1000"
+            },
+            {
+              "tag": "div",
+              "id": "single_post",
+              "class": "col-lg-4 col-md-4 col-sm-12"
+            }
+          ],
+          "hasSrcset": false
+        },
+        {
+          "page": "https://www.aiamigos.org/",
+          "ordinal": 11,
+          "context": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "post-thumb col-md-4 col-sm-4 col-4 "
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "row recent-post-box"
+            },
+            {
+              "tag": "aside",
+              "id": "recent-posts-5",
+              "class": "widget widget_recent_entries"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "col-lg-3 col-sm-6"
+            }
+          ],
+          "hasSrcset": true
+        },
+        {
+          "page": "https://www.aiamigos.org/home/",
+          "ordinal": 7,
+          "context": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "latest-blog-image"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "col-lg-6 col-md-6 col-sm-6"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "row our-blogs-box"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "our-blogs-content"
+            }
+          ],
+          "hasSrcset": false
+        },
+        {
+          "page": "https://www.aiamigos.org/home/",
+          "ordinal": 27,
+          "context": [
+            {
+              "tag": "div",
+              "id": null,
+              "class": "post-thumb col-md-4 col-sm-4 col-4 "
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "row recent-post-box"
+            },
+            {
+              "tag": "aside",
+              "id": "recent-posts-5",
+              "class": "widget widget_recent_entries"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "col-lg-3 col-sm-6"
+            }
+          ],
+          "hasSrcset": true
+        }
+      ],
+      "media": {
+        "id": 1414,
+        "width": 324,
+        "height": 68,
+        "sizes": {
+          "medium": {
+            "width": 300,
+            "height": 63,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2025/02/LangGraph-300x63.png"
+          },
+          "thumbnail": {
+            "width": 150,
+            "height": 68,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2025/02/LangGraph-150x68.png"
+          },
+          "vw-sirat-pro-homepage-thumb": {
+            "width": 240,
+            "height": 68,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2025/02/LangGraph-240x68.png"
+          },
+          "full": {
+            "width": 324,
+            "height": 68,
+            "sourceUrl": "https://www.aiamigos.org/wp-content/uploads/2025/02/LangGraph.png"
+          }
+        }
+      },
+      "recommendedCandidate": {
+        "size": "medium",
+        "url": "https://www.aiamigos.org/wp-content/uploads/2025/02/LangGraph-300x63.png",
+        "response": {
+          "status": 200,
+          "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2025/02/LangGraph-300x63.png",
+          "contentLength": 15288,
+          "contentType": "image/png",
+          "cacheControl": "public, max-age=604800",
+          "lastModified": "Sat, 22 Feb 2025 22:53:39 GMT",
+          "etag": "\"3bb8-67ba5573-465cd6a8facfda8c;;;\""
+        }
+      }
+    },
+    {
+      "url": "https://www.aiamigos.org/wp-content/uploads/2023/10/cropped-logo-5.png",
+      "response": {
+        "status": 200,
+        "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2023/10/cropped-logo-5.png",
+        "contentLength": 11156,
+        "contentType": "image/png",
+        "cacheControl": "public, max-age=604800",
+        "lastModified": "Fri, 13 Oct 2023 02:47:19 GMT",
+        "etag": "\"2b94-6528afb7-bf4e5a9b27252193;;;\""
+      },
+      "occurrences": [
+        {
+          "page": "https://www.aiamigos.org/",
+          "ordinal": 1,
+          "context": [
+            {
+              "tag": "a",
+              "id": null,
+              "class": "custom-logo-link"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "logo m-0"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "col-lg-3 col-md-10 col-sm-10 col-9 logo-info"
+            },
+            {
+              "tag": "div",
+              "id": "sticky-menu",
+              "class": "row bg-media"
+            }
+          ],
+          "hasSrcset": false
+        },
+        {
+          "page": "https://www.aiamigos.org/home/",
+          "ordinal": 1,
+          "context": [
+            {
+              "tag": "a",
+              "id": null,
+              "class": "custom-logo-link"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "logo m-0"
+            },
+            {
+              "tag": "div",
+              "id": null,
+              "class": "col-lg-3 col-md-10 col-sm-10 col-9 logo-info"
+            },
+            {
+              "tag": "div",
+              "id": "sticky-menu",
+              "class": "row bg-media"
+            }
+          ],
+          "hasSrcset": false
+        }
+      ],
+      "media": null,
+      "recommendedCandidate": {
+        "size": "original-fallback",
+        "url": "https://www.aiamigos.org/wp-content/uploads/2023/10/cropped-logo-5.png",
+        "response": {
+          "status": 200,
+          "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2023/10/cropped-logo-5.png",
+          "contentLength": 11156,
+          "contentType": "image/png",
+          "cacheControl": "public, max-age=604800",
+          "lastModified": "Fri, 13 Oct 2023 02:47:19 GMT",
+          "etag": "\"2b94-6528afb7-bf4e5a9b27252193;;;\""
+        }
+      }
+    }
+  ],
+  "scripts": [
+    {
+      "url": "https://www.aiamigos.org/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0",
+      "source": {
+        "owner": "wordpress-core",
+        "package": "wordpress"
+      },
+      "status": 200,
+      "snapshotBodyBytes": 115127,
+      "observedContentLength": 34096,
+      "contentEncoding": "br",
+      "cacheControl": "public, max-age=604800",
+      "referencedByTargetPages": [
+        "https://www.aiamigos.org/",
+        "https://www.aiamigos.org/home/"
+      ]
+    },
+    {
+      "url": "https://www.aiamigos.org/wp-content/themes/sirat-pro/assets/js/owl.carousel.js?ver=6.4.10",
+      "source": {
+        "owner": "theme",
+        "package": "sirat-pro"
+      },
+      "status": 200,
+      "snapshotBodyBytes": 89990,
+      "observedContentLength": 18937,
+      "contentEncoding": "br",
+      "cacheControl": "public, max-age=604800",
+      "referencedByTargetPages": [
+        "https://www.aiamigos.org/",
+        "https://www.aiamigos.org/home/"
+      ]
+    },
+    {
+      "url": "https://www.aiamigos.org/wp-includes/js/jquery/jquery.min.js?ver=3.7.1",
+      "source": {
+        "owner": "wordpress-core",
+        "package": "wordpress"
+      },
+      "status": 200,
+      "snapshotBodyBytes": 87553,
+      "observedContentLength": 29531,
+      "contentEncoding": "br",
+      "cacheControl": "public, max-age=604800",
+      "referencedByTargetPages": [
+        "https://www.aiamigos.org/",
+        "https://www.aiamigos.org/home/"
+      ]
+    },
+    {
+      "url": "https://www.aiamigos.org/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-consent-mode-86cb52dcb9f2b27ed244.js",
+      "source": {
+        "owner": "plugin",
+        "package": "google-site-kit"
+      },
+      "status": 200,
+      "snapshotBodyBytes": 72972,
+      "observedContentLength": 24961,
+      "contentEncoding": "br",
+      "cacheControl": "public, max-age=604800",
+      "referencedByTargetPages": [
+        "https://www.aiamigos.org/",
+        "https://www.aiamigos.org/home/"
+      ]
+    },
+    {
+      "url": "https://www.aiamigos.org/wp-content/themes/sirat-pro/assets/js/bootstrap.min.js?ver=6.4.10",
+      "source": {
+        "owner": "theme",
+        "package": "sirat-pro"
+      },
+      "status": 200,
+      "snapshotBodyBytes": 58072,
+      "observedContentLength": 14557,
+      "contentEncoding": "br",
+      "cacheControl": "public, max-age=604800",
+      "referencedByTargetPages": [
+        "https://www.aiamigos.org/",
+        "https://www.aiamigos.org/home/"
+      ]
+    },
+    {
+      "url": "https://www.aiamigos.org/wp-content/themes/sirat-pro/assets/js/tether.js?ver=6.4.10",
+      "source": {
+        "owner": "theme",
+        "package": "sirat-pro"
+      },
+      "status": 200,
+      "snapshotBodyBytes": 55635,
+      "observedContentLength": 11609,
+      "contentEncoding": "br",
+      "cacheControl": "public, max-age=604800",
+      "referencedByTargetPages": [
+        "https://www.aiamigos.org/",
+        "https://www.aiamigos.org/home/"
+      ]
+    },
+    {
+      "url": "https://www.aiamigos.org/wp-content/themes/sirat-pro/assets/js/SmoothScroll.js?ver=6.4.10",
+      "source": {
+        "owner": "theme",
+        "package": "sirat-pro"
+      },
+      "status": 200,
+      "snapshotBodyBytes": 23210,
+      "observedContentLength": 5674,
+      "contentEncoding": "br",
+      "cacheControl": "public, max-age=604800",
+      "referencedByTargetPages": [
+        "https://www.aiamigos.org/",
+        "https://www.aiamigos.org/home/"
+      ]
+    },
+    {
+      "url": "https://www.aiamigos.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1",
+      "source": {
+        "owner": "wordpress-core",
+        "package": "wordpress"
+      },
+      "status": 200,
+      "snapshotBodyBytes": 13577,
+      "observedContentLength": 4671,
+      "contentEncoding": "br",
+      "cacheControl": "public, max-age=604800",
+      "referencedByTargetPages": [
+        "https://www.aiamigos.org/",
+        "https://www.aiamigos.org/home/"
+      ]
+    },
+    {
+      "url": "https://www.aiamigos.org/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.9.8",
+      "source": {
+        "owner": "plugin",
+        "package": "contact-form-7"
+      },
+      "status": 200,
+      "snapshotBodyBytes": 13423,
+      "observedContentLength": 3991,
+      "contentEncoding": "br",
+      "cacheControl": "public, max-age=604800",
+      "referencedByTargetPages": [
+        "https://www.aiamigos.org/",
+        "https://www.aiamigos.org/home/"
+      ]
+    },
+    {
+      "url": "https://www.aiamigos.org/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.9.8",
+      "source": {
+        "owner": "plugin",
+        "package": "contact-form-7"
+      },
+      "status": 200,
+      "snapshotBodyBytes": 11513,
+      "observedContentLength": 3211,
+      "contentEncoding": "br",
+      "cacheControl": "public, max-age=604800",
+      "referencedByTargetPages": [
+        "https://www.aiamigos.org/",
+        "https://www.aiamigos.org/home/"
+      ]
+    },
+    {
+      "url": "https://www.aiamigos.org/wp-content/themes/sirat-pro/assets/js/custom.js?ver=6.4.10",
+      "source": {
+        "owner": "theme",
+        "package": "sirat-pro"
+      },
+      "status": 200,
+      "snapshotBodyBytes": 9666,
+      "observedContentLength": 1851,
+      "contentEncoding": "br",
+      "cacheControl": "public, max-age=604800",
+      "referencedByTargetPages": [
+        "https://www.aiamigos.org/",
+        "https://www.aiamigos.org/home/"
+      ]
+    },
+    {
+      "url": "https://www.aiamigos.org/wp-includes/js/dist/i18n.min.js?ver=7701b0c3857f914212ef",
+      "source": {
+        "owner": "wordpress-core",
+        "package": "wordpress"
+      },
+      "status": 200,
+      "snapshotBodyBytes": 9445,
+      "observedContentLength": 3560,
+      "contentEncoding": "br",
+      "cacheControl": "public, max-age=604800",
+      "referencedByTargetPages": [
+        "https://www.aiamigos.org/",
+        "https://www.aiamigos.org/home/"
+      ]
+    },
+    {
+      "url": "https://www.aiamigos.org/wp-content/themes/sirat-pro/assets/js/wow.min.js?ver=6.4.10",
+      "source": {
+        "owner": "theme",
+        "package": "sirat-pro"
+      },
+      "status": 200,
+      "snapshotBodyBytes": 8415,
+      "observedContentLength": 2555,
+      "contentEncoding": "br",
+      "cacheControl": "public, max-age=604800",
+      "referencedByTargetPages": [
+        "https://www.aiamigos.org/",
+        "https://www.aiamigos.org/home/"
+      ]
+    },
+    {
+      "url": "https://www.aiamigos.org/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2",
+      "source": {
+        "owner": "wordpress-core",
+        "package": "wordpress"
+      },
+      "status": 200,
+      "snapshotBodyBytes": 8171,
+      "observedContentLength": 2301,
+      "contentEncoding": "br",
+      "cacheControl": "public, max-age=604800",
+      "referencedByTargetPages": [
+        "https://www.aiamigos.org/",
+        "https://www.aiamigos.org/home/"
+      ]
+    },
+    {
+      "url": "https://www.aiamigos.org/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.14.0",
+      "source": {
+        "owner": "wordpress-core",
+        "package": "wordpress"
+      },
+      "status": 200,
+      "snapshotBodyBytes": 6625,
+      "observedContentLength": 2396,
+      "contentEncoding": "br",
+      "cacheControl": "public, max-age=604800",
+      "referencedByTargetPages": [
+        "https://www.aiamigos.org/",
+        "https://www.aiamigos.org/home/"
+      ]
+    },
+    {
+      "url": "https://www.aiamigos.org/wp-includes/js/dist/hooks.min.js?ver=c6aec9a8d4e5a5d543a1",
+      "source": {
+        "owner": "wordpress-core",
+        "package": "wordpress"
+      },
+      "status": 200,
+      "snapshotBodyBytes": 4627,
+      "observedContentLength": 1484,
+      "contentEncoding": "br",
+      "cacheControl": "public, max-age=604800",
+      "referencedByTargetPages": [
+        "https://www.aiamigos.org/",
+        "https://www.aiamigos.org/home/"
+      ]
+    },
+    {
+      "url": "https://www.aiamigos.org/wp-includes/js/comment-reply.min.js?ver=6.4.10",
+      "source": {
+        "owner": "wordpress-core",
+        "package": "wordpress"
+      },
+      "status": 200,
+      "snapshotBodyBytes": 2981,
+      "observedContentLength": 1229,
+      "contentEncoding": "br",
+      "cacheControl": "public, max-age=604800",
+      "referencedByTargetPages": [
+        "https://www.aiamigos.org/"
+      ]
+    },
+    {
+      "url": "https://www.aiamigos.org/wp-content/themes/sirat-pro/assets/js/jquery.appear.js?ver=6.4.10",
+      "source": {
+        "owner": "theme",
+        "package": "sirat-pro"
+      },
+      "status": 200,
+      "snapshotBodyBytes": 2417,
+      "observedContentLength": 767,
+      "contentEncoding": "br",
+      "cacheControl": "public, max-age=604800",
+      "referencedByTargetPages": [
+        "https://www.aiamigos.org/",
+        "https://www.aiamigos.org/home/"
+      ]
+    },
+    {
+      "url": "https://www.aiamigos.org/wp-content/plugins/wp-consent-api/assets/js/wp-consent-api.min.js?ver=1.0.7",
+      "source": {
+        "owner": "plugin",
+        "package": "wp-consent-api"
+      },
+      "status": 200,
+      "snapshotBodyBytes": 1794,
+      "observedContentLength": 600,
+      "contentEncoding": "br",
+      "cacheControl": "public, max-age=604800",
+      "referencedByTargetPages": [
+        "https://www.aiamigos.org/",
+        "https://www.aiamigos.org/home/"
+      ]
+    },
+    {
+      "url": "https://www.aiamigos.org/wp-content/themes/sirat-pro/assets/js/jquery-progressbar.js?ver=6.4.10",
+      "source": {
+        "owner": "theme",
+        "package": "sirat-pro"
+      },
+      "status": 200,
+      "snapshotBodyBytes": 1777,
+      "observedContentLength": 512,
+      "contentEncoding": "br",
+      "cacheControl": "public, max-age=604800",
+      "referencedByTargetPages": [
+        "https://www.aiamigos.org/",
+        "https://www.aiamigos.org/home/"
+      ]
+    }
+  ]
+}

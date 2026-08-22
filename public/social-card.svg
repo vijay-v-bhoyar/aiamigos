@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">AI Amigos</title>
+  <desc id="desc">Practical, sourced guidance for people building and working with AI.</desc>
+  <rect width="1200" height="630" fill="#f8f7f3"/>
+  <circle cx="1030" cy="80" r="260" fill="#e6f2f3"/>
+  <circle cx="1100" cy="520" r="190" fill="#fff0df"/>
+  <text x="90" y="270" fill="#17202a" font-family="Arial, sans-serif" font-size="92" font-weight="700">AI Amigos</text>
+  <text x="94" y="350" fill="#0e6274" font-family="Arial, sans-serif" font-size="34">Practical AI, with sources and limits.</text>
+</svg>

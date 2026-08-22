@@ -1,0 +1,4 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro'; import { tracks } from '../../data/tracks.mjs';
+---
+<BaseLayout title="Practical AI tracks" description="Four task-focused paths for business, careers and students 15+, teaching, and AI builders."><div class="shell"><div class="reading"><p class="eyebrow">Choose by goal</p><h1>Four ways to turn AI interest into useful work.</h1><p class="lede">Each track connects decisions, a private tool, templates, and supporting guides in a recommended order.</p></div><div class="track-grid section-space">{tracks.map((track)=><a class="work-card" href={`/tracks/${track.slug}/`}><span class="tag">Practical track</span><h2>{track.label}</h2><p>{track.description}</p><span class="text-link">Open track →</span></a>)}</div></div></BaseLayout>

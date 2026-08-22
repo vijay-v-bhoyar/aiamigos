@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0.0",
+  "inventory_id": "aiamigos-media-accessibility-2026-08-13",
+  "allowed_dispositions": [
+    "decorative",
+    "informative",
+    "functional",
+    "remove"
+  ],
+  "decisions": {
+    "ALT-162": {
+      "disposition": "remove",
+      "reviewer": "Codex deterministic structural rule",
+      "reviewed_at": "2026-08-13",
+      "rendered_context_evidence": "public-site-snapshot/pages/home-d4c4647786.html:725; empty src, empty lazy_src, empty srcset, no link, and the exact runtime module removes only this source-less structural pattern",
+      "decision_basis": "machine-safe structural removal; no image pixels or semantic alt meaning exist to review",
+      "implementation": "remediation/wp-plugin/aiamigos-remediation/assets/js/aiamigos-accessibility-remediation.js removeSourceLessCarouselImages()"
+    },
+    "ALT-163": {
+      "disposition": "remove",
+      "reviewer": "Codex deterministic structural rule",
+      "reviewed_at": "2026-08-13",
+      "rendered_context_evidence": "public-site-snapshot/pages/home-d4c4647786.html:749; empty src, empty lazy_src, empty srcset, no link, and the exact runtime module removes only this source-less structural pattern",
+      "decision_basis": "machine-safe structural removal; no image pixels or semantic alt meaning exist to review",
+      "implementation": "remediation/wp-plugin/aiamigos-remediation/assets/js/aiamigos-accessibility-remediation.js removeSourceLessCarouselImages()"
+    }
+  }
+}

@@ -1,0 +1,379 @@
+:root{
+  --white:#ffffff;
+  --black00:#000000;
+  --black22:#222222;
+  --black12:#121212;
+  --yellowfe:#febe00;
+  --gray6c:#6c6c6c;
+}
+/* --------------- Services Shortcode ------------- */
+.services-short{
+  background-color: transparent !important;
+}
+.services-short .our-services-box{
+  -webkit-box-shadow: 0px 0px 57px 0px rgba(0, 0, 0, 0.11);
+  box-shadow: 0px 0px 57px 0px rgba(0, 0, 0, 0.11);
+  padding: 1rem;
+}
+#our-services .services-icon{
+  padding: 1rem;
+}
+
+/* --------- Our Classes ------------- */
+.short-classes .our-classes-box{
+  position: unset !important;
+  max-width: 100% !important;
+}
+/* -------------- Testimonial Shortcode ----------- */
+.our_testimonial_outer{
+  text-align: center;
+}
+.our_testimonial_outer h5 a{
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: var(--black22);
+  font-weight: 700;
+}
+.our_testimonial_outer .short_text{
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 27px;
+  color: var(--gray6c);
+  font-weight: 500;
+}
+.our_testimonial_outer .tdesig{
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  color: var(--black12);
+  font-weight: 600;
+}
+.our_testimonial_outer .testimonial_inner{
+  border:2px solid var(--black12);
+}
+.our_testimonial_outer img{
+  border-radius: 50%;
+}
+/* -------------- Our Team --------------- */
+.all-team .social i{
+  margin-left: 10px;
+}
+.all-team .social a{
+  margin-top: 10px;
+  display: inline-block;
+}
+/* ----------- Single Pages -------------- */
+.services-image{
+  background-color: var(--black12);
+  width: 70px;
+  height: 70px;
+  border-radius: 5px;
+}
+.single-page-content p{
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 26px;
+  color: var(--black12);
+  font-weight: 500;
+}
+#single-team .inner-page-feature-box p{
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: var(--black12);
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+#single-team .inner-page-feature-box img{
+  padding-bottom: 20px;
+}
+#single-team .social-profiles i{
+  color:var(--white);
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 12px 13px;
+  background-color: var(--black12);
+}
+#testimonial_single .student-desig{
+  font-size: 17px;
+  letter-spacing: 0px;
+  color: var(--black12);
+  font-weight: 500;
+}
+#testimonial_single .social-profiles i{
+  width: 40px;
+  height: 40px;
+  color: var(--white);
+  padding: 13px 13px;
+  background-color: var(--yellowfe);
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+#testimonial_single .team_feature-box img{
+  border-radius: 50%;
+}
+.post_ctg ul li {
+  list-style: none;
+}
+/* ------------------Single Post ----------------- */
+#single_post .postbox .postbox-content {
+  position: static;
+}
+.posttitle a{
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: var(--black22);
+  font-weight: 600;
+}
+.page-header h1,.entry-title{
+  color: var(--black00);
+  font-weight: 600;
+}
+.single-post-content table td{
+  text-align: center;
+}
+.single-post-content .wp-audio-shortcode{
+  margin-bottom: 50px;
+}
+.author_links a{
+  color: var(--black12);
+}
+#sidebar .widget_recent_entries a{
+  font-size: 13px;
+}
+/*------------------ Contact Page -----------------*/
+.contac_form input[type='text'],.contac_form input[type='email'],.contac_form input[type='url'],.contac_form input[type='password'],.contac_form input[type='search'],.contac_form input[type='number'],.contac_form input[type='tel'],.contac_form input[type='range'],.contac_form input[type='date'],.contac_form input[type='month'],.contac_form input[type='week'],.contac_form input[type='time'],.contac_form input[type='datetime'],.contac_form input[type='datetime-local'],.contac_form input[type='color'],.contac_form select,.contac_form textarea,.contac_form .wpcf7 .wpcf7-form-control-wrap[class*="file-"] {
+  background-color:transparent;
+  border-color: var(--black12);
+  color: var(--gray6c);
+  border-radius: 0px;
+  box-shadow: none;
+  border:1px solid var(--black12);
+  background-color: transparent;
+}
+.contact-box .wpcf7 input[type="text"], .contact-box .wpcf7 input[type="email"] {
+  font-size: 16px;
+  padding: 10px 18px;
+  margin: 0 12px 13px 0;
+  height: auto;
+  border:1px solid var(--black12);
+  background-color: transparent;
+  border-radius: 5px;
+}
+.contact-box .contac_form input[type="submit"]{
+  border-radius: 5px;
+  padding: 12px 20px;
+  margin-top: 20px;
+}
+.contac_form h3 {
+  text-align: center;
+}
+.c_content p{
+  font-size: 16px;
+}
+.contac_form label{
+  width: 100%;
+}
+.c_content {
+  color: var(--white);
+}
+.contact-page-details {
+  text-align: left;
+}
+.contact-page-details span{
+  font-size: 17px;
+  letter-spacing: 0px;
+  color: var(--black22);
+  font-weight:600;
+}
+.contact-page-details .inner-cont i{
+  font-size: 27px;
+  color:var(--white);
+  padding: 14px 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+  background-color: var(--black12);
+}
+.contact-page-details .inner-cont p{
+  color: var(--gray6c);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.contact-color-bg form textarea{
+  margin-right: 10px;
+  border-radius: 5px;
+  padding-left: 20px;
+  padding-top: 23px;
+}
+.contact-box .contact-icon{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.contact-box .contact-head{
+  text-align: center;
+}
+.contact-box .contact-head p{
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 28px;
+  color: var(--gray6c);
+  font-weight: 500;
+  max-width: 80%;
+  margin: 0 auto;
+}
+.contact-box .contact-head h3{
+  font-size: 32px;
+  color: var(--black22);
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+.contact-box .contact-info-box{
+  border-radius: 5px;
+}
+/*---------------- Banner ----------------------*/
+.inner_banner img, .title-box img {
+  width: 100%;
+}
+.main_title h1{
+  padding: 0;
+  margin-bottom: 22px;
+  font-size: 36px;
+  color: var(--black00);
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.widget_recent_entries img {
+  width: 60px;
+}
+.about_me table, .about_me td, .about_me th{
+  border: none;
+}
+.about_me p.message {
+  margin-bottom: 20px !important;
+}
+/* --------- Social Icon Widget ------- */
+.social_widget a {
+  color: var(--gray6c);
+  padding: 7px 7px;
+  margin-right: 7px;
+  display: inline-block;
+  margin-bottom: 5px;
+  border-radius: 50%;
+}
+.social_widget a i {
+  font-size: 13px;
+  letter-spacing: 3px;
+  width: 20px;
+  text-align: center;
+}
+/* --------- search Page ------- */
+.postbox h6 {
+  font-weight: bold;
+}
+/* --------- Blog Page ------- */
+.postbox-content .post-text{
+  font-size: 18px;
+  color: var(--gray6c);
+  line-height: 28px;
+}
+.postbox h3{
+  font-weight:normal;
+  font-size:35px;
+  text-align: center;
+}
+.metabox img {
+  border-radius: 50%;
+  margin-left: 30%;
+}
+.postbox {
+   margin-bottom: 39px;
+   border: none;
+   border-radius: 6px;
+   -webkit-box-shadow: 0px 0px 57px 0px rgba(0, 0, 0, 0.11);
+  box-shadow: 0px 0px 57px 0px rgba(0, 0, 0, 0.11);
+  padding: 20px;
+}
+.postbox h2{
+  margin:0 0 5px; 
+  font-weight:bold;
+}
+.widget_recent_entries li {
+  padding: 10px 0;
+}
+.metabox {
+  color: var(--black00);
+  padding: 5px 0;
+  clear: both;
+  margin: 10px 0;
+}
+.metabox .entry-date{
+  margin:0 13px 0 0;
+}
+.metabox .entry-author{
+  padding: 0 0 0 20px;
+  margin:0 20px 0 0;
+}
+.metabox .entry-author a,.logged-in-as a{
+  color: var(--black00);
+}
+.metabox .entry-comments{
+  padding: 0 0 0 20px;
+}
+#comment-nav-above .nav-links {
+  width: 100%;
+  float: left;
+  margin-bottom: 17px;
+}
+#sidebar span.comment-author-link {
+  margin-left: 14px;
+}
+.post-featured img {
+  width: 100%;
+}
+.authordetails .author_links{
+  padding-left: 17%;
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+.authordetails .b-content {
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 27px;
+  color: var(--gray6c);
+  font-style: italic;
+}
+.authordetails ul {
+  list-style-type: none;
+  margin-left: 18%;
+  margin-top: 10px;
+  position: relative;
+}
+.authordetails ul li {
+  display: inline;
+}
+.authordetails ul li a i {
+  background-color: var(--black00);
+  padding:15px 15px 9px 15px;
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.authordetails img{
+  border-radius: 50%;
+}
+#our-classes .our-classes-box {
+    background-color: var(--black12);
+    max-width: 58% !important;
+    position: absolute !important;
+    bottom: -48px;
+    left: 0;
+    padding: 1rem;
+}

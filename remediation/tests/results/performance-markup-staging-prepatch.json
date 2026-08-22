@@ -1,0 +1,1576 @@
+{
+  "generatedAt": "2026-08-13T18:05:45.603Z",
+  "baseUrl": "https://remediation.aiamigos.org/",
+  "cacheBust": true,
+  "pass": false,
+  "failures": [
+    {
+      "route": "/",
+      "ordinal": 1,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/NVIDIA-MONAI.webp",
+      "message": "Missing .aiamigos-home-blog-image"
+    },
+    {
+      "route": "/",
+      "ordinal": 1,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/NVIDIA-MONAI.webp",
+      "message": "Intrinsic width/height are missing"
+    },
+    {
+      "route": "/",
+      "ordinal": 1,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/NVIDIA-MONAI.webp",
+      "message": "srcset is missing on an image larger than 100 KiB",
+      "bytes": 739364
+    },
+    {
+      "route": "/",
+      "ordinal": 1,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/NVIDIA-MONAI.webp",
+      "message": "sizes is missing"
+    },
+    {
+      "route": "/",
+      "ordinal": 1,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/NVIDIA-MONAI.webp",
+      "message": "decoding=async is missing",
+      "actual": null
+    },
+    {
+      "route": "/",
+      "ordinal": 1,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/NVIDIA-MONAI.webp",
+      "message": "Large original remains in the direct src attribute",
+      "bytes": 739364
+    },
+    {
+      "route": "/",
+      "ordinal": 2,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/fine-tuning.webp",
+      "message": "Missing .aiamigos-home-blog-image"
+    },
+    {
+      "route": "/",
+      "ordinal": 2,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/fine-tuning.webp",
+      "message": "Intrinsic width/height are missing"
+    },
+    {
+      "route": "/",
+      "ordinal": 2,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/fine-tuning.webp",
+      "message": "srcset is missing on an image larger than 100 KiB",
+      "bytes": 674118
+    },
+    {
+      "route": "/",
+      "ordinal": 2,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/fine-tuning.webp",
+      "message": "sizes is missing"
+    },
+    {
+      "route": "/",
+      "ordinal": 2,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/fine-tuning.webp",
+      "message": "decoding=async is missing",
+      "actual": null
+    },
+    {
+      "route": "/",
+      "ordinal": 2,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/fine-tuning.webp",
+      "message": "Large original remains in the direct src attribute",
+      "bytes": 674118
+    },
+    {
+      "route": "/",
+      "ordinal": 3,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/vectordb.png",
+      "message": "Missing .aiamigos-home-blog-image"
+    },
+    {
+      "route": "/",
+      "ordinal": 3,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/vectordb.png",
+      "message": "Intrinsic width/height are missing"
+    },
+    {
+      "route": "/",
+      "ordinal": 3,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/vectordb.png",
+      "message": "srcset is missing on an image larger than 100 KiB",
+      "bytes": 566042
+    },
+    {
+      "route": "/",
+      "ordinal": 3,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/vectordb.png",
+      "message": "sizes is missing"
+    },
+    {
+      "route": "/",
+      "ordinal": 3,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/vectordb.png",
+      "message": "decoding=async is missing",
+      "actual": null
+    },
+    {
+      "route": "/",
+      "ordinal": 3,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/vectordb.png",
+      "message": "Large original remains in the direct src attribute",
+      "bytes": 566042
+    },
+    {
+      "route": "/",
+      "ordinal": 4,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/09/tesseract-ocr.png",
+      "message": "Missing .aiamigos-home-blog-image"
+    },
+    {
+      "route": "/",
+      "ordinal": 4,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/09/tesseract-ocr.png",
+      "message": "Intrinsic width/height are missing"
+    },
+    {
+      "route": "/",
+      "ordinal": 4,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/09/tesseract-ocr.png",
+      "message": "sizes is missing"
+    },
+    {
+      "route": "/",
+      "ordinal": 4,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/09/tesseract-ocr.png",
+      "message": "decoding=async is missing",
+      "actual": null
+    },
+    {
+      "route": "/",
+      "ordinal": 5,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/RAG-1.png",
+      "message": "Missing .aiamigos-home-blog-image"
+    },
+    {
+      "route": "/",
+      "ordinal": 5,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/RAG-1.png",
+      "message": "Intrinsic width/height are missing"
+    },
+    {
+      "route": "/",
+      "ordinal": 5,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/RAG-1.png",
+      "message": "srcset is missing on an image larger than 100 KiB",
+      "bytes": 825557
+    },
+    {
+      "route": "/",
+      "ordinal": 5,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/RAG-1.png",
+      "message": "sizes is missing"
+    },
+    {
+      "route": "/",
+      "ordinal": 5,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/RAG-1.png",
+      "message": "decoding=async is missing",
+      "actual": null
+    },
+    {
+      "route": "/",
+      "ordinal": 5,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/RAG-1.png",
+      "message": "Large original remains in the direct src attribute",
+      "bytes": 825557
+    },
+    {
+      "route": "/",
+      "ordinal": 6,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/06/Interoperability.jpg",
+      "message": "Missing .aiamigos-home-blog-image"
+    },
+    {
+      "route": "/",
+      "ordinal": 6,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/06/Interoperability.jpg",
+      "message": "Intrinsic width/height are missing"
+    },
+    {
+      "route": "/",
+      "ordinal": 6,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/06/Interoperability.jpg",
+      "message": "srcset is missing on an image larger than 100 KiB",
+      "bytes": 268842
+    },
+    {
+      "route": "/",
+      "ordinal": 6,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/06/Interoperability.jpg",
+      "message": "sizes is missing"
+    },
+    {
+      "route": "/",
+      "ordinal": 6,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/06/Interoperability.jpg",
+      "message": "decoding=async is missing",
+      "actual": null
+    },
+    {
+      "route": "/",
+      "ordinal": 6,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/06/Interoperability.jpg",
+      "message": "Large original remains in the direct src attribute",
+      "bytes": 268842
+    },
+    {
+      "route": "/",
+      "ordinal": 7,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/02/DALL%C2%B7E-2024-02-24-20.03.54-Imagine-a-sleek-futuristic-desktop-environment-illuminated-by-the-soft-glow-of-neon-lights-reflecting-the-cutting-edge-technology-of-NVIDIAs-RTX-gr.webp",
+      "message": "Missing .aiamigos-home-blog-image"
+    },
+    {
+      "route": "/",
+      "ordinal": 7,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/02/DALL%C2%B7E-2024-02-24-20.03.54-Imagine-a-sleek-futuristic-desktop-environment-illuminated-by-the-soft-glow-of-neon-lights-reflecting-the-cutting-edge-technology-of-NVIDIAs-RTX-gr.webp",
+      "message": "Intrinsic width/height are missing"
+    },
+    {
+      "route": "/",
+      "ordinal": 7,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/02/DALL%C2%B7E-2024-02-24-20.03.54-Imagine-a-sleek-futuristic-desktop-environment-illuminated-by-the-soft-glow-of-neon-lights-reflecting-the-cutting-edge-technology-of-NVIDIAs-RTX-gr.webp",
+      "message": "srcset is missing on an image larger than 100 KiB",
+      "bytes": 289022
+    },
+    {
+      "route": "/",
+      "ordinal": 7,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/02/DALL%C2%B7E-2024-02-24-20.03.54-Imagine-a-sleek-futuristic-desktop-environment-illuminated-by-the-soft-glow-of-neon-lights-reflecting-the-cutting-edge-technology-of-NVIDIAs-RTX-gr.webp",
+      "message": "sizes is missing"
+    },
+    {
+      "route": "/",
+      "ordinal": 7,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/02/DALL%C2%B7E-2024-02-24-20.03.54-Imagine-a-sleek-futuristic-desktop-environment-illuminated-by-the-soft-glow-of-neon-lights-reflecting-the-cutting-edge-technology-of-NVIDIAs-RTX-gr.webp",
+      "message": "decoding=async is missing",
+      "actual": null
+    },
+    {
+      "route": "/",
+      "ordinal": 7,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/02/DALL%C2%B7E-2024-02-24-20.03.54-Imagine-a-sleek-futuristic-desktop-environment-illuminated-by-the-soft-glow-of-neon-lights-reflecting-the-cutting-edge-technology-of-NVIDIAs-RTX-gr.webp",
+      "message": "Large original remains in the direct src attribute",
+      "bytes": 289022
+    },
+    {
+      "route": "/",
+      "ordinal": 8,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/03/Python-Dep-Practices-1.jpg",
+      "message": "Missing .aiamigos-home-blog-image"
+    },
+    {
+      "route": "/",
+      "ordinal": 8,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/03/Python-Dep-Practices-1.jpg",
+      "message": "Intrinsic width/height are missing"
+    },
+    {
+      "route": "/",
+      "ordinal": 8,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/03/Python-Dep-Practices-1.jpg",
+      "message": "sizes is missing"
+    },
+    {
+      "route": "/",
+      "ordinal": 8,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/03/Python-Dep-Practices-1.jpg",
+      "message": "decoding=async is missing",
+      "actual": null
+    },
+    {
+      "route": "/",
+      "ordinal": 9,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/01/AI-Leader-with-No-Code.png",
+      "message": "Missing .aiamigos-home-blog-image"
+    },
+    {
+      "route": "/",
+      "ordinal": 9,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/01/AI-Leader-with-No-Code.png",
+      "message": "Intrinsic width/height are missing"
+    },
+    {
+      "route": "/",
+      "ordinal": 9,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/01/AI-Leader-with-No-Code.png",
+      "message": "srcset is missing on an image larger than 100 KiB",
+      "bytes": 1960184
+    },
+    {
+      "route": "/",
+      "ordinal": 9,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/01/AI-Leader-with-No-Code.png",
+      "message": "sizes is missing"
+    },
+    {
+      "route": "/",
+      "ordinal": 9,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/01/AI-Leader-with-No-Code.png",
+      "message": "decoding=async is missing",
+      "actual": null
+    },
+    {
+      "route": "/",
+      "ordinal": 9,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/01/AI-Leader-with-No-Code.png",
+      "message": "Large original remains in the direct src attribute",
+      "bytes": 1960184
+    },
+    {
+      "route": "/",
+      "ordinal": 10,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.08.06-Create-a-realistic-image-symbolizing-Training-data-for-generative-AI-models.-The-image-should-depict-a-diverse-array-of-information-sources-like-bo.png",
+      "message": "Missing .aiamigos-home-blog-image"
+    },
+    {
+      "route": "/",
+      "ordinal": 10,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.08.06-Create-a-realistic-image-symbolizing-Training-data-for-generative-AI-models.-The-image-should-depict-a-diverse-array-of-information-sources-like-bo.png",
+      "message": "Intrinsic width/height are missing"
+    },
+    {
+      "route": "/",
+      "ordinal": 10,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.08.06-Create-a-realistic-image-symbolizing-Training-data-for-generative-AI-models.-The-image-should-depict-a-diverse-array-of-information-sources-like-bo.png",
+      "message": "srcset is missing on an image larger than 100 KiB",
+      "bytes": 2283544
+    },
+    {
+      "route": "/",
+      "ordinal": 10,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.08.06-Create-a-realistic-image-symbolizing-Training-data-for-generative-AI-models.-The-image-should-depict-a-diverse-array-of-information-sources-like-bo.png",
+      "message": "sizes is missing"
+    },
+    {
+      "route": "/",
+      "ordinal": 10,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.08.06-Create-a-realistic-image-symbolizing-Training-data-for-generative-AI-models.-The-image-should-depict-a-diverse-array-of-information-sources-like-bo.png",
+      "message": "decoding=async is missing",
+      "actual": null
+    },
+    {
+      "route": "/",
+      "ordinal": 10,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.08.06-Create-a-realistic-image-symbolizing-Training-data-for-generative-AI-models.-The-image-should-depict-a-diverse-array-of-information-sources-like-bo.png",
+      "message": "Large original remains in the direct src attribute",
+      "bytes": 2283544
+    },
+    {
+      "route": "/",
+      "ordinal": 11,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.15.01-Create-a-realistic-image-symbolizing-The-Role-of-Generative-AI-in-Creative-Industries.-The-image-should-depict-a-modern-well-lit-artists-studio-wi.png",
+      "message": "Missing .aiamigos-home-blog-image"
+    },
+    {
+      "route": "/",
+      "ordinal": 11,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.15.01-Create-a-realistic-image-symbolizing-The-Role-of-Generative-AI-in-Creative-Industries.-The-image-should-depict-a-modern-well-lit-artists-studio-wi.png",
+      "message": "Intrinsic width/height are missing"
+    },
+    {
+      "route": "/",
+      "ordinal": 11,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.15.01-Create-a-realistic-image-symbolizing-The-Role-of-Generative-AI-in-Creative-Industries.-The-image-should-depict-a-modern-well-lit-artists-studio-wi.png",
+      "message": "srcset is missing on an image larger than 100 KiB",
+      "bytes": 1820296
+    },
+    {
+      "route": "/",
+      "ordinal": 11,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.15.01-Create-a-realistic-image-symbolizing-The-Role-of-Generative-AI-in-Creative-Industries.-The-image-should-depict-a-modern-well-lit-artists-studio-wi.png",
+      "message": "sizes is missing"
+    },
+    {
+      "route": "/",
+      "ordinal": 11,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.15.01-Create-a-realistic-image-symbolizing-The-Role-of-Generative-AI-in-Creative-Industries.-The-image-should-depict-a-modern-well-lit-artists-studio-wi.png",
+      "message": "decoding=async is missing",
+      "actual": null
+    },
+    {
+      "route": "/",
+      "ordinal": 11,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.15.01-Create-a-realistic-image-symbolizing-The-Role-of-Generative-AI-in-Creative-Industries.-The-image-should-depict-a-modern-well-lit-artists-studio-wi.png",
+      "message": "Large original remains in the direct src attribute",
+      "bytes": 1820296
+    },
+    {
+      "route": "/",
+      "ordinal": 12,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/OpenSource.jpg",
+      "message": "Missing .aiamigos-home-blog-image"
+    },
+    {
+      "route": "/",
+      "ordinal": 12,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/OpenSource.jpg",
+      "message": "Intrinsic width/height are missing"
+    },
+    {
+      "route": "/",
+      "ordinal": 12,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/OpenSource.jpg",
+      "message": "srcset is missing on an image larger than 100 KiB",
+      "bytes": 392157
+    },
+    {
+      "route": "/",
+      "ordinal": 12,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/OpenSource.jpg",
+      "message": "sizes is missing"
+    },
+    {
+      "route": "/",
+      "ordinal": 12,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/OpenSource.jpg",
+      "message": "decoding=async is missing",
+      "actual": null
+    },
+    {
+      "route": "/",
+      "ordinal": 12,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/OpenSource.jpg",
+      "message": "Large original remains in the direct src attribute",
+      "bytes": 392157
+    },
+    {
+      "route": "/",
+      "ordinal": 13,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.22.02-Create-a-realistic-image-representing-The-Explainability-of-Generative-AI-Models.-The-scene-should-depict-a-human-figure-symbolic-of-a-scientist-or.png",
+      "message": "Missing .aiamigos-home-blog-image"
+    },
+    {
+      "route": "/",
+      "ordinal": 13,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.22.02-Create-a-realistic-image-representing-The-Explainability-of-Generative-AI-Models.-The-scene-should-depict-a-human-figure-symbolic-of-a-scientist-or.png",
+      "message": "Intrinsic width/height are missing"
+    },
+    {
+      "route": "/",
+      "ordinal": 13,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.22.02-Create-a-realistic-image-representing-The-Explainability-of-Generative-AI-Models.-The-scene-should-depict-a-human-figure-symbolic-of-a-scientist-or.png",
+      "message": "srcset is missing on an image larger than 100 KiB",
+      "bytes": 2077889
+    },
+    {
+      "route": "/",
+      "ordinal": 13,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.22.02-Create-a-realistic-image-representing-The-Explainability-of-Generative-AI-Models.-The-scene-should-depict-a-human-figure-symbolic-of-a-scientist-or.png",
+      "message": "sizes is missing"
+    },
+    {
+      "route": "/",
+      "ordinal": 13,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.22.02-Create-a-realistic-image-representing-The-Explainability-of-Generative-AI-Models.-The-scene-should-depict-a-human-figure-symbolic-of-a-scientist-or.png",
+      "message": "decoding=async is missing",
+      "actual": null
+    },
+    {
+      "route": "/",
+      "ordinal": 13,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.22.02-Create-a-realistic-image-representing-The-Explainability-of-Generative-AI-Models.-The-scene-should-depict-a-human-figure-symbolic-of-a-scientist-or.png",
+      "message": "Large original remains in the direct src attribute",
+      "bytes": 2077889
+    },
+    {
+      "route": "/",
+      "ordinal": 14,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.29.33-Create-a-realistic-image-illustrating-the-concept-Generative-AI-vs.-Traditional-AI.-On-one-side-show-a-modern-sleek-and-advanced-AI-system-with-v.png",
+      "message": "Missing .aiamigos-home-blog-image"
+    },
+    {
+      "route": "/",
+      "ordinal": 14,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.29.33-Create-a-realistic-image-illustrating-the-concept-Generative-AI-vs.-Traditional-AI.-On-one-side-show-a-modern-sleek-and-advanced-AI-system-with-v.png",
+      "message": "Intrinsic width/height are missing"
+    },
+    {
+      "route": "/",
+      "ordinal": 14,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.29.33-Create-a-realistic-image-illustrating-the-concept-Generative-AI-vs.-Traditional-AI.-On-one-side-show-a-modern-sleek-and-advanced-AI-system-with-v.png",
+      "message": "srcset is missing on an image larger than 100 KiB",
+      "bytes": 1595752
+    },
+    {
+      "route": "/",
+      "ordinal": 14,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.29.33-Create-a-realistic-image-illustrating-the-concept-Generative-AI-vs.-Traditional-AI.-On-one-side-show-a-modern-sleek-and-advanced-AI-system-with-v.png",
+      "message": "sizes is missing"
+    },
+    {
+      "route": "/",
+      "ordinal": 14,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.29.33-Create-a-realistic-image-illustrating-the-concept-Generative-AI-vs.-Traditional-AI.-On-one-side-show-a-modern-sleek-and-advanced-AI-system-with-v.png",
+      "message": "decoding=async is missing",
+      "actual": null
+    },
+    {
+      "route": "/",
+      "ordinal": 14,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.29.33-Create-a-realistic-image-illustrating-the-concept-Generative-AI-vs.-Traditional-AI.-On-one-side-show-a-modern-sleek-and-advanced-AI-system-with-v.png",
+      "message": "Large original remains in the direct src attribute",
+      "bytes": 1595752
+    },
+    {
+      "route": "/",
+      "ordinal": 15,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.45.28-Create-a-realistic-image-representing-The-Future-of-Generative-AI.-The-scene-should-depict-a-modern-high-tech-laboratory-with-sleek-futuristic-des.png",
+      "message": "Missing .aiamigos-home-blog-image"
+    },
+    {
+      "route": "/",
+      "ordinal": 15,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.45.28-Create-a-realistic-image-representing-The-Future-of-Generative-AI.-The-scene-should-depict-a-modern-high-tech-laboratory-with-sleek-futuristic-des.png",
+      "message": "Intrinsic width/height are missing"
+    },
+    {
+      "route": "/",
+      "ordinal": 15,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.45.28-Create-a-realistic-image-representing-The-Future-of-Generative-AI.-The-scene-should-depict-a-modern-high-tech-laboratory-with-sleek-futuristic-des.png",
+      "message": "srcset is missing on an image larger than 100 KiB",
+      "bytes": 2059824
+    },
+    {
+      "route": "/",
+      "ordinal": 15,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.45.28-Create-a-realistic-image-representing-The-Future-of-Generative-AI.-The-scene-should-depict-a-modern-high-tech-laboratory-with-sleek-futuristic-des.png",
+      "message": "sizes is missing"
+    },
+    {
+      "route": "/",
+      "ordinal": 15,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.45.28-Create-a-realistic-image-representing-The-Future-of-Generative-AI.-The-scene-should-depict-a-modern-high-tech-laboratory-with-sleek-futuristic-des.png",
+      "message": "decoding=async is missing",
+      "actual": null
+    },
+    {
+      "route": "/",
+      "ordinal": 15,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.45.28-Create-a-realistic-image-representing-The-Future-of-Generative-AI.-The-scene-should-depict-a-modern-high-tech-laboratory-with-sleek-futuristic-des.png",
+      "message": "Large original remains in the direct src attribute",
+      "bytes": 2059824
+    },
+    {
+      "route": "/",
+      "ordinal": 16,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.48.18-Create-a-realistic-image-illustrating-Limitations-of-Generative-AI.-The-image-should-depict-a-large-modern-digital-canvas-displaying-an-incomplete.png",
+      "message": "Missing .aiamigos-home-blog-image"
+    },
+    {
+      "route": "/",
+      "ordinal": 16,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.48.18-Create-a-realistic-image-illustrating-Limitations-of-Generative-AI.-The-image-should-depict-a-large-modern-digital-canvas-displaying-an-incomplete.png",
+      "message": "Intrinsic width/height are missing"
+    },
+    {
+      "route": "/",
+      "ordinal": 16,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.48.18-Create-a-realistic-image-illustrating-Limitations-of-Generative-AI.-The-image-should-depict-a-large-modern-digital-canvas-displaying-an-incomplete.png",
+      "message": "srcset is missing on an image larger than 100 KiB",
+      "bytes": 1942530
+    },
+    {
+      "route": "/",
+      "ordinal": 16,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.48.18-Create-a-realistic-image-illustrating-Limitations-of-Generative-AI.-The-image-should-depict-a-large-modern-digital-canvas-displaying-an-incomplete.png",
+      "message": "sizes is missing"
+    },
+    {
+      "route": "/",
+      "ordinal": 16,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.48.18-Create-a-realistic-image-illustrating-Limitations-of-Generative-AI.-The-image-should-depict-a-large-modern-digital-canvas-displaying-an-incomplete.png",
+      "message": "decoding=async is missing",
+      "actual": null
+    },
+    {
+      "route": "/",
+      "ordinal": 16,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.48.18-Create-a-realistic-image-illustrating-Limitations-of-Generative-AI.-The-image-should-depict-a-large-modern-digital-canvas-displaying-an-incomplete.png",
+      "message": "Large original remains in the direct src attribute",
+      "bytes": 1942530
+    },
+    {
+      "route": "/",
+      "ordinal": 17,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.51.16-Create-a-realistic-image-depicting-Applications-of-Generative-AI.-The-image-should-show-a-diverse-range-of-applications-in-different-sectors.-Includ.png",
+      "message": "Missing .aiamigos-home-blog-image"
+    },
+    {
+      "route": "/",
+      "ordinal": 17,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.51.16-Create-a-realistic-image-depicting-Applications-of-Generative-AI.-The-image-should-show-a-diverse-range-of-applications-in-different-sectors.-Includ.png",
+      "message": "Intrinsic width/height are missing"
+    },
+    {
+      "route": "/",
+      "ordinal": 17,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.51.16-Create-a-realistic-image-depicting-Applications-of-Generative-AI.-The-image-should-show-a-diverse-range-of-applications-in-different-sectors.-Includ.png",
+      "message": "srcset is missing on an image larger than 100 KiB",
+      "bytes": 2293576
+    },
+    {
+      "route": "/",
+      "ordinal": 17,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.51.16-Create-a-realistic-image-depicting-Applications-of-Generative-AI.-The-image-should-show-a-diverse-range-of-applications-in-different-sectors.-Includ.png",
+      "message": "sizes is missing"
+    },
+    {
+      "route": "/",
+      "ordinal": 17,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.51.16-Create-a-realistic-image-depicting-Applications-of-Generative-AI.-The-image-should-show-a-diverse-range-of-applications-in-different-sectors.-Includ.png",
+      "message": "decoding=async is missing",
+      "actual": null
+    },
+    {
+      "route": "/",
+      "ordinal": 17,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.51.16-Create-a-realistic-image-depicting-Applications-of-Generative-AI.-The-image-should-show-a-diverse-range-of-applications-in-different-sectors.-Includ.png",
+      "message": "Large original remains in the direct src attribute",
+      "bytes": 2293576
+    },
+    {
+      "route": "/",
+      "ordinal": 18,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.53.24-Create-a-realistic-image-representing-Top-20-Generative-AI-Tools-for-Creative-Exploration.-The-image-should-feature-a-modern-sleek-digital-workspac.png",
+      "message": "Missing .aiamigos-home-blog-image"
+    },
+    {
+      "route": "/",
+      "ordinal": 18,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.53.24-Create-a-realistic-image-representing-Top-20-Generative-AI-Tools-for-Creative-Exploration.-The-image-should-feature-a-modern-sleek-digital-workspac.png",
+      "message": "Intrinsic width/height are missing"
+    },
+    {
+      "route": "/",
+      "ordinal": 18,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.53.24-Create-a-realistic-image-representing-Top-20-Generative-AI-Tools-for-Creative-Exploration.-The-image-should-feature-a-modern-sleek-digital-workspac.png",
+      "message": "srcset is missing on an image larger than 100 KiB",
+      "bytes": 2115766
+    },
+    {
+      "route": "/",
+      "ordinal": 18,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.53.24-Create-a-realistic-image-representing-Top-20-Generative-AI-Tools-for-Creative-Exploration.-The-image-should-feature-a-modern-sleek-digital-workspac.png",
+      "message": "sizes is missing"
+    },
+    {
+      "route": "/",
+      "ordinal": 18,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.53.24-Create-a-realistic-image-representing-Top-20-Generative-AI-Tools-for-Creative-Exploration.-The-image-should-feature-a-modern-sleek-digital-workspac.png",
+      "message": "decoding=async is missing",
+      "actual": null
+    },
+    {
+      "route": "/",
+      "ordinal": 18,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.53.24-Create-a-realistic-image-representing-Top-20-Generative-AI-Tools-for-Creative-Exploration.-The-image-should-feature-a-modern-sleek-digital-workspac.png",
+      "message": "Large original remains in the direct src attribute",
+      "bytes": 2115766
+    },
+    {
+      "route": "/",
+      "ordinal": 19,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-12-23.42.49-Create-an-image-representing-the-theme-_AI-to-the-Rescue_-Building-Features-Faster-and-Better_.-The-artwork-should-depict-a-futuristic-AI-entity-char.png",
+      "message": "Missing .aiamigos-home-blog-image"
+    },
+    {
+      "route": "/",
+      "ordinal": 19,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-12-23.42.49-Create-an-image-representing-the-theme-_AI-to-the-Rescue_-Building-Features-Faster-and-Better_.-The-artwork-should-depict-a-futuristic-AI-entity-char.png",
+      "message": "Intrinsic width/height are missing"
+    },
+    {
+      "route": "/",
+      "ordinal": 19,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-12-23.42.49-Create-an-image-representing-the-theme-_AI-to-the-Rescue_-Building-Features-Faster-and-Better_.-The-artwork-should-depict-a-futuristic-AI-entity-char.png",
+      "message": "srcset is missing on an image larger than 100 KiB",
+      "bytes": 1827799
+    },
+    {
+      "route": "/",
+      "ordinal": 19,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-12-23.42.49-Create-an-image-representing-the-theme-_AI-to-the-Rescue_-Building-Features-Faster-and-Better_.-The-artwork-should-depict-a-futuristic-AI-entity-char.png",
+      "message": "sizes is missing"
+    },
+    {
+      "route": "/",
+      "ordinal": 19,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-12-23.42.49-Create-an-image-representing-the-theme-_AI-to-the-Rescue_-Building-Features-Faster-and-Better_.-The-artwork-should-depict-a-futuristic-AI-entity-char.png",
+      "message": "decoding=async is missing",
+      "actual": null
+    },
+    {
+      "route": "/",
+      "ordinal": 19,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-12-23.42.49-Create-an-image-representing-the-theme-_AI-to-the-Rescue_-Building-Features-Faster-and-Better_.-The-artwork-should-depict-a-futuristic-AI-entity-char.png",
+      "message": "Large original remains in the direct src attribute",
+      "bytes": 1827799
+    },
+    {
+      "route": "/",
+      "ordinal": 20,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-12-23.42.52-Create-an-image-representing-the-theme-_AI-to-the-Rescue_-Building-Features-Faster-and-Better_.-The-artwork-should-depict-a-futuristic-AI-entity-char.png",
+      "message": "Missing .aiamigos-home-blog-image"
+    },
+    {
+      "route": "/",
+      "ordinal": 20,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-12-23.42.52-Create-an-image-representing-the-theme-_AI-to-the-Rescue_-Building-Features-Faster-and-Better_.-The-artwork-should-depict-a-futuristic-AI-entity-char.png",
+      "message": "Intrinsic width/height are missing"
+    },
+    {
+      "route": "/",
+      "ordinal": 20,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-12-23.42.52-Create-an-image-representing-the-theme-_AI-to-the-Rescue_-Building-Features-Faster-and-Better_.-The-artwork-should-depict-a-futuristic-AI-entity-char.png",
+      "message": "srcset is missing on an image larger than 100 KiB",
+      "bytes": 1930857
+    },
+    {
+      "route": "/",
+      "ordinal": 20,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-12-23.42.52-Create-an-image-representing-the-theme-_AI-to-the-Rescue_-Building-Features-Faster-and-Better_.-The-artwork-should-depict-a-futuristic-AI-entity-char.png",
+      "message": "sizes is missing"
+    },
+    {
+      "route": "/",
+      "ordinal": 20,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-12-23.42.52-Create-an-image-representing-the-theme-_AI-to-the-Rescue_-Building-Features-Faster-and-Better_.-The-artwork-should-depict-a-futuristic-AI-entity-char.png",
+      "message": "decoding=async is missing",
+      "actual": null
+    },
+    {
+      "route": "/",
+      "ordinal": 20,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-12-23.42.52-Create-an-image-representing-the-theme-_AI-to-the-Rescue_-Building-Features-Faster-and-Better_.-The-artwork-should-depict-a-futuristic-AI-entity-char.png",
+      "message": "Large original remains in the direct src attribute",
+      "bytes": 1930857
+    },
+    {
+      "route": "/",
+      "message": "Too many target images are not lazy-loaded",
+      "actual": 20,
+      "maximum": 0
+    },
+    {
+      "route": "/blog/",
+      "ordinal": 1,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/NVIDIA-MONAI.webp",
+      "message": "Missing .aiamigos-archive-card-image"
+    },
+    {
+      "route": "/blog/",
+      "ordinal": 1,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/NVIDIA-MONAI.webp",
+      "message": "Intrinsic width/height are missing"
+    },
+    {
+      "route": "/blog/",
+      "ordinal": 1,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/NVIDIA-MONAI.webp",
+      "message": "srcset is missing on an image larger than 100 KiB",
+      "bytes": 739364
+    },
+    {
+      "route": "/blog/",
+      "ordinal": 1,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/NVIDIA-MONAI.webp",
+      "message": "sizes is missing"
+    },
+    {
+      "route": "/blog/",
+      "ordinal": 1,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/NVIDIA-MONAI.webp",
+      "message": "decoding=async is missing",
+      "actual": null
+    },
+    {
+      "route": "/blog/",
+      "ordinal": 1,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/NVIDIA-MONAI.webp",
+      "message": "Large original remains in the direct src attribute",
+      "bytes": 739364
+    },
+    {
+      "route": "/blog/",
+      "ordinal": 2,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/fine-tuning.webp",
+      "message": "Missing .aiamigos-archive-card-image"
+    },
+    {
+      "route": "/blog/",
+      "ordinal": 2,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/fine-tuning.webp",
+      "message": "Intrinsic width/height are missing"
+    },
+    {
+      "route": "/blog/",
+      "ordinal": 2,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/fine-tuning.webp",
+      "message": "srcset is missing on an image larger than 100 KiB",
+      "bytes": 674118
+    },
+    {
+      "route": "/blog/",
+      "ordinal": 2,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/fine-tuning.webp",
+      "message": "sizes is missing"
+    },
+    {
+      "route": "/blog/",
+      "ordinal": 2,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/fine-tuning.webp",
+      "message": "decoding=async is missing",
+      "actual": null
+    },
+    {
+      "route": "/blog/",
+      "ordinal": 2,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/fine-tuning.webp",
+      "message": "Large original remains in the direct src attribute",
+      "bytes": 674118
+    },
+    {
+      "route": "/blog/",
+      "ordinal": 3,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/vectordb.png",
+      "message": "Missing .aiamigos-archive-card-image"
+    },
+    {
+      "route": "/blog/",
+      "ordinal": 3,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/vectordb.png",
+      "message": "Intrinsic width/height are missing"
+    },
+    {
+      "route": "/blog/",
+      "ordinal": 3,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/vectordb.png",
+      "message": "srcset is missing on an image larger than 100 KiB",
+      "bytes": 566042
+    },
+    {
+      "route": "/blog/",
+      "ordinal": 3,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/vectordb.png",
+      "message": "sizes is missing"
+    },
+    {
+      "route": "/blog/",
+      "ordinal": 3,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/vectordb.png",
+      "message": "decoding=async is missing",
+      "actual": null
+    },
+    {
+      "route": "/blog/",
+      "ordinal": 3,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/vectordb.png",
+      "message": "Large original remains in the direct src attribute",
+      "bytes": 566042
+    },
+    {
+      "route": "/blog/",
+      "ordinal": 4,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/09/tesseract-ocr.png",
+      "message": "Missing .aiamigos-archive-card-image"
+    },
+    {
+      "route": "/blog/",
+      "ordinal": 4,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/09/tesseract-ocr.png",
+      "message": "Intrinsic width/height are missing"
+    },
+    {
+      "route": "/blog/",
+      "ordinal": 4,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/09/tesseract-ocr.png",
+      "message": "sizes is missing"
+    },
+    {
+      "route": "/blog/",
+      "ordinal": 4,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/09/tesseract-ocr.png",
+      "message": "decoding=async is missing",
+      "actual": null
+    },
+    {
+      "route": "/blog/",
+      "ordinal": 5,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/RAG-1.png",
+      "message": "Missing .aiamigos-archive-card-image"
+    },
+    {
+      "route": "/blog/",
+      "ordinal": 5,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/RAG-1.png",
+      "message": "Intrinsic width/height are missing"
+    },
+    {
+      "route": "/blog/",
+      "ordinal": 5,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/RAG-1.png",
+      "message": "srcset is missing on an image larger than 100 KiB",
+      "bytes": 825557
+    },
+    {
+      "route": "/blog/",
+      "ordinal": 5,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/RAG-1.png",
+      "message": "sizes is missing"
+    },
+    {
+      "route": "/blog/",
+      "ordinal": 5,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/RAG-1.png",
+      "message": "decoding=async is missing",
+      "actual": null
+    },
+    {
+      "route": "/blog/",
+      "ordinal": 5,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/RAG-1.png",
+      "message": "Large original remains in the direct src attribute",
+      "bytes": 825557
+    },
+    {
+      "route": "/blog/",
+      "ordinal": 6,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/06/Interoperability.jpg",
+      "message": "Missing .aiamigos-archive-card-image"
+    },
+    {
+      "route": "/blog/",
+      "ordinal": 6,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/06/Interoperability.jpg",
+      "message": "Intrinsic width/height are missing"
+    },
+    {
+      "route": "/blog/",
+      "ordinal": 6,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/06/Interoperability.jpg",
+      "message": "srcset is missing on an image larger than 100 KiB",
+      "bytes": 268842
+    },
+    {
+      "route": "/blog/",
+      "ordinal": 6,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/06/Interoperability.jpg",
+      "message": "sizes is missing"
+    },
+    {
+      "route": "/blog/",
+      "ordinal": 6,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/06/Interoperability.jpg",
+      "message": "decoding=async is missing",
+      "actual": null
+    },
+    {
+      "route": "/blog/",
+      "ordinal": 6,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/06/Interoperability.jpg",
+      "message": "Large original remains in the direct src attribute",
+      "bytes": 268842
+    },
+    {
+      "route": "/blog/",
+      "ordinal": 7,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/02/DALL%C2%B7E-2024-02-24-20.03.54-Imagine-a-sleek-futuristic-desktop-environment-illuminated-by-the-soft-glow-of-neon-lights-reflecting-the-cutting-edge-technology-of-NVIDIAs-RTX-gr.webp",
+      "message": "Missing .aiamigos-archive-card-image"
+    },
+    {
+      "route": "/blog/",
+      "ordinal": 7,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/02/DALL%C2%B7E-2024-02-24-20.03.54-Imagine-a-sleek-futuristic-desktop-environment-illuminated-by-the-soft-glow-of-neon-lights-reflecting-the-cutting-edge-technology-of-NVIDIAs-RTX-gr.webp",
+      "message": "Intrinsic width/height are missing"
+    },
+    {
+      "route": "/blog/",
+      "ordinal": 7,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/02/DALL%C2%B7E-2024-02-24-20.03.54-Imagine-a-sleek-futuristic-desktop-environment-illuminated-by-the-soft-glow-of-neon-lights-reflecting-the-cutting-edge-technology-of-NVIDIAs-RTX-gr.webp",
+      "message": "srcset is missing on an image larger than 100 KiB",
+      "bytes": 289022
+    },
+    {
+      "route": "/blog/",
+      "ordinal": 7,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/02/DALL%C2%B7E-2024-02-24-20.03.54-Imagine-a-sleek-futuristic-desktop-environment-illuminated-by-the-soft-glow-of-neon-lights-reflecting-the-cutting-edge-technology-of-NVIDIAs-RTX-gr.webp",
+      "message": "sizes is missing"
+    },
+    {
+      "route": "/blog/",
+      "ordinal": 7,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/02/DALL%C2%B7E-2024-02-24-20.03.54-Imagine-a-sleek-futuristic-desktop-environment-illuminated-by-the-soft-glow-of-neon-lights-reflecting-the-cutting-edge-technology-of-NVIDIAs-RTX-gr.webp",
+      "message": "decoding=async is missing",
+      "actual": null
+    },
+    {
+      "route": "/blog/",
+      "ordinal": 7,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/02/DALL%C2%B7E-2024-02-24-20.03.54-Imagine-a-sleek-futuristic-desktop-environment-illuminated-by-the-soft-glow-of-neon-lights-reflecting-the-cutting-edge-technology-of-NVIDIAs-RTX-gr.webp",
+      "message": "Large original remains in the direct src attribute",
+      "bytes": 289022
+    },
+    {
+      "route": "/blog/",
+      "ordinal": 8,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/03/Python-Dep-Practices-1.jpg",
+      "message": "Missing .aiamigos-archive-card-image"
+    },
+    {
+      "route": "/blog/",
+      "ordinal": 8,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/03/Python-Dep-Practices-1.jpg",
+      "message": "Intrinsic width/height are missing"
+    },
+    {
+      "route": "/blog/",
+      "ordinal": 8,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/03/Python-Dep-Practices-1.jpg",
+      "message": "sizes is missing"
+    },
+    {
+      "route": "/blog/",
+      "ordinal": 8,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/03/Python-Dep-Practices-1.jpg",
+      "message": "decoding=async is missing",
+      "actual": null
+    },
+    {
+      "route": "/blog/",
+      "ordinal": 9,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/01/AI-Leader-with-No-Code.png",
+      "message": "Missing .aiamigos-archive-card-image"
+    },
+    {
+      "route": "/blog/",
+      "ordinal": 9,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/01/AI-Leader-with-No-Code.png",
+      "message": "Intrinsic width/height are missing"
+    },
+    {
+      "route": "/blog/",
+      "ordinal": 9,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/01/AI-Leader-with-No-Code.png",
+      "message": "srcset is missing on an image larger than 100 KiB",
+      "bytes": 1960184
+    },
+    {
+      "route": "/blog/",
+      "ordinal": 9,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/01/AI-Leader-with-No-Code.png",
+      "message": "sizes is missing"
+    },
+    {
+      "route": "/blog/",
+      "ordinal": 9,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/01/AI-Leader-with-No-Code.png",
+      "message": "decoding=async is missing",
+      "actual": null
+    },
+    {
+      "route": "/blog/",
+      "ordinal": 9,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/01/AI-Leader-with-No-Code.png",
+      "message": "Large original remains in the direct src attribute",
+      "bytes": 1960184
+    },
+    {
+      "route": "/blog/",
+      "ordinal": 10,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.08.06-Create-a-realistic-image-symbolizing-Training-data-for-generative-AI-models.-The-image-should-depict-a-diverse-array-of-information-sources-like-bo.png",
+      "message": "Missing .aiamigos-archive-card-image"
+    },
+    {
+      "route": "/blog/",
+      "ordinal": 10,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.08.06-Create-a-realistic-image-symbolizing-Training-data-for-generative-AI-models.-The-image-should-depict-a-diverse-array-of-information-sources-like-bo.png",
+      "message": "Intrinsic width/height are missing"
+    },
+    {
+      "route": "/blog/",
+      "ordinal": 10,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.08.06-Create-a-realistic-image-symbolizing-Training-data-for-generative-AI-models.-The-image-should-depict-a-diverse-array-of-information-sources-like-bo.png",
+      "message": "srcset is missing on an image larger than 100 KiB",
+      "bytes": 2283544
+    },
+    {
+      "route": "/blog/",
+      "ordinal": 10,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.08.06-Create-a-realistic-image-symbolizing-Training-data-for-generative-AI-models.-The-image-should-depict-a-diverse-array-of-information-sources-like-bo.png",
+      "message": "sizes is missing"
+    },
+    {
+      "route": "/blog/",
+      "ordinal": 10,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.08.06-Create-a-realistic-image-symbolizing-Training-data-for-generative-AI-models.-The-image-should-depict-a-diverse-array-of-information-sources-like-bo.png",
+      "message": "decoding=async is missing",
+      "actual": null
+    },
+    {
+      "route": "/blog/",
+      "ordinal": 10,
+      "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.08.06-Create-a-realistic-image-symbolizing-Training-data-for-generative-AI-models.-The-image-should-depict-a-diverse-array-of-information-sources-like-bo.png",
+      "message": "Large original remains in the direct src attribute",
+      "bytes": 2283544
+    },
+    {
+      "route": "/blog/",
+      "message": "Too many target images are not lazy-loaded",
+      "actual": 10,
+      "maximum": 3
+    }
+  ],
+  "pages": [
+    {
+      "route": "/",
+      "requestedUrl": "https://remediation.aiamigos.org/?aiamigos-performance-gate=1786644340261",
+      "finalUrl": "https://remediation.aiamigos.org/?aiamigos-performance-gate=1786644340261",
+      "status": 200,
+      "targetImageCount": 20,
+      "nonLazyTargetImages": 20,
+      "images": [
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/NVIDIA-MONAI.webp",
+          "width": null,
+          "height": null,
+          "loading": null,
+          "decoding": null,
+          "hasSrcset": false,
+          "sizes": null,
+          "response": {
+            "status": 200,
+            "contentLength": 739364,
+            "contentType": "image/webp"
+          }
+        },
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/fine-tuning.webp",
+          "width": null,
+          "height": null,
+          "loading": null,
+          "decoding": null,
+          "hasSrcset": false,
+          "sizes": null,
+          "response": {
+            "status": 200,
+            "contentLength": 674118,
+            "contentType": "image/webp"
+          }
+        },
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/vectordb.png",
+          "width": null,
+          "height": null,
+          "loading": null,
+          "decoding": null,
+          "hasSrcset": false,
+          "sizes": null,
+          "response": {
+            "status": 200,
+            "contentLength": 566042,
+            "contentType": "image/png"
+          }
+        },
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/09/tesseract-ocr.png",
+          "width": null,
+          "height": null,
+          "loading": null,
+          "decoding": null,
+          "hasSrcset": false,
+          "sizes": null,
+          "response": {
+            "status": 200,
+            "contentLength": 68575,
+            "contentType": "image/png"
+          }
+        },
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/RAG-1.png",
+          "width": null,
+          "height": null,
+          "loading": null,
+          "decoding": null,
+          "hasSrcset": false,
+          "sizes": null,
+          "response": {
+            "status": 200,
+            "contentLength": 825557,
+            "contentType": "image/png"
+          }
+        },
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/06/Interoperability.jpg",
+          "width": null,
+          "height": null,
+          "loading": null,
+          "decoding": null,
+          "hasSrcset": false,
+          "sizes": null,
+          "response": {
+            "status": 200,
+            "contentLength": 268842,
+            "contentType": "image/jpeg"
+          }
+        },
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/02/DALL%C2%B7E-2024-02-24-20.03.54-Imagine-a-sleek-futuristic-desktop-environment-illuminated-by-the-soft-glow-of-neon-lights-reflecting-the-cutting-edge-technology-of-NVIDIAs-RTX-gr.webp",
+          "width": null,
+          "height": null,
+          "loading": null,
+          "decoding": null,
+          "hasSrcset": false,
+          "sizes": null,
+          "response": {
+            "status": 200,
+            "contentLength": 289022,
+            "contentType": "image/webp"
+          }
+        },
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/03/Python-Dep-Practices-1.jpg",
+          "width": null,
+          "height": null,
+          "loading": null,
+          "decoding": null,
+          "hasSrcset": false,
+          "sizes": null,
+          "response": {
+            "status": 200,
+            "contentLength": 16625,
+            "contentType": "image/jpeg"
+          }
+        },
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/01/AI-Leader-with-No-Code.png",
+          "width": null,
+          "height": null,
+          "loading": null,
+          "decoding": null,
+          "hasSrcset": false,
+          "sizes": null,
+          "response": {
+            "status": 200,
+            "contentLength": 1960184,
+            "contentType": "image/png"
+          }
+        },
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.08.06-Create-a-realistic-image-symbolizing-Training-data-for-generative-AI-models.-The-image-should-depict-a-diverse-array-of-information-sources-like-bo.png",
+          "width": null,
+          "height": null,
+          "loading": null,
+          "decoding": null,
+          "hasSrcset": false,
+          "sizes": null,
+          "response": {
+            "status": 200,
+            "contentLength": 2283544,
+            "contentType": "image/png"
+          }
+        },
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.15.01-Create-a-realistic-image-symbolizing-The-Role-of-Generative-AI-in-Creative-Industries.-The-image-should-depict-a-modern-well-lit-artists-studio-wi.png",
+          "width": null,
+          "height": null,
+          "loading": null,
+          "decoding": null,
+          "hasSrcset": false,
+          "sizes": null,
+          "response": {
+            "status": 200,
+            "contentLength": 1820296,
+            "contentType": "image/png"
+          }
+        },
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/OpenSource.jpg",
+          "width": null,
+          "height": null,
+          "loading": null,
+          "decoding": null,
+          "hasSrcset": false,
+          "sizes": null,
+          "response": {
+            "status": 200,
+            "contentLength": 392157,
+            "contentType": "image/jpeg"
+          }
+        },
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.22.02-Create-a-realistic-image-representing-The-Explainability-of-Generative-AI-Models.-The-scene-should-depict-a-human-figure-symbolic-of-a-scientist-or.png",
+          "width": null,
+          "height": null,
+          "loading": null,
+          "decoding": null,
+          "hasSrcset": false,
+          "sizes": null,
+          "response": {
+            "status": 200,
+            "contentLength": 2077889,
+            "contentType": "image/png"
+          }
+        },
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.29.33-Create-a-realistic-image-illustrating-the-concept-Generative-AI-vs.-Traditional-AI.-On-one-side-show-a-modern-sleek-and-advanced-AI-system-with-v.png",
+          "width": null,
+          "height": null,
+          "loading": null,
+          "decoding": null,
+          "hasSrcset": false,
+          "sizes": null,
+          "response": {
+            "status": 200,
+            "contentLength": 1595752,
+            "contentType": "image/png"
+          }
+        },
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.45.28-Create-a-realistic-image-representing-The-Future-of-Generative-AI.-The-scene-should-depict-a-modern-high-tech-laboratory-with-sleek-futuristic-des.png",
+          "width": null,
+          "height": null,
+          "loading": null,
+          "decoding": null,
+          "hasSrcset": false,
+          "sizes": null,
+          "response": {
+            "status": 200,
+            "contentLength": 2059824,
+            "contentType": "image/png"
+          }
+        },
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.48.18-Create-a-realistic-image-illustrating-Limitations-of-Generative-AI.-The-image-should-depict-a-large-modern-digital-canvas-displaying-an-incomplete.png",
+          "width": null,
+          "height": null,
+          "loading": null,
+          "decoding": null,
+          "hasSrcset": false,
+          "sizes": null,
+          "response": {
+            "status": 200,
+            "contentLength": 1942530,
+            "contentType": "image/png"
+          }
+        },
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.51.16-Create-a-realistic-image-depicting-Applications-of-Generative-AI.-The-image-should-show-a-diverse-range-of-applications-in-different-sectors.-Includ.png",
+          "width": null,
+          "height": null,
+          "loading": null,
+          "decoding": null,
+          "hasSrcset": false,
+          "sizes": null,
+          "response": {
+            "status": 200,
+            "contentLength": 2293576,
+            "contentType": "image/png"
+          }
+        },
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.53.24-Create-a-realistic-image-representing-Top-20-Generative-AI-Tools-for-Creative-Exploration.-The-image-should-feature-a-modern-sleek-digital-workspac.png",
+          "width": null,
+          "height": null,
+          "loading": null,
+          "decoding": null,
+          "hasSrcset": false,
+          "sizes": null,
+          "response": {
+            "status": 200,
+            "contentLength": 2115766,
+            "contentType": "image/png"
+          }
+        },
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-12-23.42.49-Create-an-image-representing-the-theme-_AI-to-the-Rescue_-Building-Features-Faster-and-Better_.-The-artwork-should-depict-a-futuristic-AI-entity-char.png",
+          "width": null,
+          "height": null,
+          "loading": null,
+          "decoding": null,
+          "hasSrcset": false,
+          "sizes": null,
+          "response": {
+            "status": 200,
+            "contentLength": 1827799,
+            "contentType": "image/png"
+          }
+        },
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-12-23.42.52-Create-an-image-representing-the-theme-_AI-to-the-Rescue_-Building-Features-Faster-and-Better_.-The-artwork-should-depict-a-futuristic-AI-entity-char.png",
+          "width": null,
+          "height": null,
+          "loading": null,
+          "decoding": null,
+          "hasSrcset": false,
+          "sizes": null,
+          "response": {
+            "status": 200,
+            "contentLength": 1930857,
+            "contentType": "image/png"
+          }
+        }
+      ]
+    },
+    {
+      "route": "/blog/",
+      "requestedUrl": "https://remediation.aiamigos.org/blog/?aiamigos-performance-gate=1786644343858",
+      "finalUrl": "https://remediation.aiamigos.org/blog/?aiamigos-performance-gate=1786644343858",
+      "status": 200,
+      "targetImageCount": 10,
+      "nonLazyTargetImages": 10,
+      "images": [
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/NVIDIA-MONAI.webp",
+          "width": null,
+          "height": null,
+          "loading": null,
+          "decoding": null,
+          "hasSrcset": false,
+          "sizes": null,
+          "response": {
+            "status": 200,
+            "contentLength": 739364,
+            "contentType": "image/webp"
+          }
+        },
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/fine-tuning.webp",
+          "width": null,
+          "height": null,
+          "loading": null,
+          "decoding": null,
+          "hasSrcset": false,
+          "sizes": null,
+          "response": {
+            "status": 200,
+            "contentLength": 674118,
+            "contentType": "image/webp"
+          }
+        },
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/vectordb.png",
+          "width": null,
+          "height": null,
+          "loading": null,
+          "decoding": null,
+          "hasSrcset": false,
+          "sizes": null,
+          "response": {
+            "status": 200,
+            "contentLength": 566042,
+            "contentType": "image/png"
+          }
+        },
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/09/tesseract-ocr.png",
+          "width": null,
+          "height": null,
+          "loading": null,
+          "decoding": null,
+          "hasSrcset": false,
+          "sizes": null,
+          "response": {
+            "status": 200,
+            "contentLength": 68575,
+            "contentType": "image/png"
+          }
+        },
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/RAG-1.png",
+          "width": null,
+          "height": null,
+          "loading": null,
+          "decoding": null,
+          "hasSrcset": false,
+          "sizes": null,
+          "response": {
+            "status": 200,
+            "contentLength": 825557,
+            "contentType": "image/png"
+          }
+        },
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/06/Interoperability.jpg",
+          "width": null,
+          "height": null,
+          "loading": null,
+          "decoding": null,
+          "hasSrcset": false,
+          "sizes": null,
+          "response": {
+            "status": 200,
+            "contentLength": 268842,
+            "contentType": "image/jpeg"
+          }
+        },
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/02/DALL%C2%B7E-2024-02-24-20.03.54-Imagine-a-sleek-futuristic-desktop-environment-illuminated-by-the-soft-glow-of-neon-lights-reflecting-the-cutting-edge-technology-of-NVIDIAs-RTX-gr.webp",
+          "width": null,
+          "height": null,
+          "loading": null,
+          "decoding": null,
+          "hasSrcset": false,
+          "sizes": null,
+          "response": {
+            "status": 200,
+            "contentLength": 289022,
+            "contentType": "image/webp"
+          }
+        },
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/03/Python-Dep-Practices-1.jpg",
+          "width": null,
+          "height": null,
+          "loading": null,
+          "decoding": null,
+          "hasSrcset": false,
+          "sizes": null,
+          "response": {
+            "status": 200,
+            "contentLength": 16625,
+            "contentType": "image/jpeg"
+          }
+        },
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/01/AI-Leader-with-No-Code.png",
+          "width": null,
+          "height": null,
+          "loading": null,
+          "decoding": null,
+          "hasSrcset": false,
+          "sizes": null,
+          "response": {
+            "status": 200,
+            "contentLength": 1960184,
+            "contentType": "image/png"
+          }
+        },
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.08.06-Create-a-realistic-image-symbolizing-Training-data-for-generative-AI-models.-The-image-should-depict-a-diverse-array-of-information-sources-like-bo.png",
+          "width": null,
+          "height": null,
+          "loading": null,
+          "decoding": null,
+          "hasSrcset": false,
+          "sizes": null,
+          "response": {
+            "status": 200,
+            "contentLength": 2283544,
+            "contentType": "image/png"
+          }
+        }
+      ]
+    }
+  ]
+}

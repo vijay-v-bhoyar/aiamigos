@@ -1,0 +1,2994 @@
+[
+  {
+    "id": "pages/home-7df9c6845f",
+    "slug": "home",
+    "title": "Blog",
+    "description": "Illustration for “Blog” will be reattached from the authenticated media export. Building Agentic AI SaaS: A Strategic Roadmap Using Google Gemini Enterprise Building Agentic AI Saa",
+    "canonical": "https://www.aiamigos.org/",
+    "originalUrl": "https://www.aiamigos.org/",
+    "publishedAt": "2023-10-08",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "retire",
+    "disposition": "retire",
+    "redirectTo": null,
+    "sources": [
+      "https://www.aiamigos.org/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [],
+    "articleLike": false,
+    "wordCount": 295,
+    "importedFrom": "pages/home-7df9c6845f.html"
+  },
+  {
+    "id": "pages/hello-world-9763be3ae2",
+    "slug": "hello-world",
+    "title": "AI: Friend or Foe? Let's Find Out!",
+    "description": "Hey there, Tech Lovers! 🚀",
+    "canonical": "https://www.aiamigos.org/hello-world/",
+    "originalUrl": "https://www.aiamigos.org/hello-world/",
+    "publishedAt": "2023-09-19",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "retire",
+    "disposition": "retire",
+    "redirectTo": null,
+    "sources": [
+      "https://www.aiamigos.org/hello-world/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": false,
+    "wordCount": 409,
+    "importedFrom": "pages/hello-world-9763be3ae2.html"
+  },
+  {
+    "id": "pages/ai-app-development-3b936de0e1",
+    "slug": "ai-app-development",
+    "title": "Unraveling the Code: Your Journey to Becoming an AI App Maestro with Prompts",
+    "description": "\"Dive into the booming world of AI app development! From voice assistants to augmented reality, discover the magic behind AI-driven apps. Whether you're a newbie or pro, explore the future of AI and transform user experi",
+    "canonical": "https://www.aiamigos.org/ai-app-development/",
+    "originalUrl": "https://www.aiamigos.org/ai-app-development/",
+    "publishedAt": "2023-09-04",
+    "category": "ai-engineering",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "published",
+    "disposition": "retain",
+    "redirectTo": "/articles/ai-app-development/",
+    "sources": [
+      "https://www.aiamigos.org/ai-app-development/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": true,
+    "wordCount": 705,
+    "importedFrom": "pages/ai-app-development-3b936de0e1.html"
+  },
+  {
+    "id": "pages/blog-2-9c98344e82",
+    "slug": "blog-2",
+    "title": "Diving into the Deep: How Deep Learning Powers Up AI!",
+    "description": "Intro: Ever watched a baby learn to recognize faces? That's kinda how deep learning works, but for machines! Let's take a funny and deep (pun intended) dive",
+    "canonical": "https://www.aiamigos.org/blog-2/",
+    "originalUrl": "https://www.aiamigos.org/blog-2/",
+    "publishedAt": "2023-09-02",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "retire",
+    "disposition": "retire",
+    "redirectTo": null,
+    "sources": [
+      "https://www.aiamigos.org/blog-2/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": false,
+    "wordCount": 738,
+    "importedFrom": "pages/blog-2-9c98344e82.html"
+  },
+  {
+    "id": "pages/artificial-intelligence-ai-f8b7ef136f",
+    "slug": "artificial-intelligence-ai",
+    "title": "Artificial Intelligence (AI): 5 Essential Insights to Easily Grasp its Wonders",
+    "description": "\"Discover Artificial Intelligence (AI): Learn how AI mimics human thought, the role of machine learning, and the ethics shaping its future in our guide.\"",
+    "canonical": "https://www.aiamigos.org/artificial-intelligence-ai/",
+    "originalUrl": "https://www.aiamigos.org/artificial-intelligence-ai/",
+    "publishedAt": "2023-10-08",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "published",
+    "disposition": "retain",
+    "redirectTo": "/articles/artificial-intelligence-ai/",
+    "sources": [
+      "https://www.aiamigos.org/artificial-intelligence-ai/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": true,
+    "wordCount": 2200,
+    "importedFrom": "pages/artificial-intelligence-ai-f8b7ef136f.html"
+  },
+  {
+    "id": "pages/blog-4-4d7315dc1f",
+    "slug": "blog-4",
+    "title": "\"Understanding AI: Machines That Think Like Us!\" 🎩🤖",
+    "description": "Greetings, tech enthusiasts, and inquisitive minds! Have you ever pondered the magic that makes voice assistants respond, or the secret sauce behind",
+    "canonical": "https://www.aiamigos.org/blog-4/",
+    "originalUrl": "https://www.aiamigos.org/blog-4/",
+    "publishedAt": "2023-10-08",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "retire",
+    "disposition": "retire",
+    "redirectTo": null,
+    "sources": [
+      "https://www.aiamigos.org/blog-4/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": false,
+    "wordCount": 501,
+    "importedFrom": "pages/blog-4-4d7315dc1f.html"
+  },
+  {
+    "id": "pages/latest-blog-title-01-e452e4138f",
+    "slug": "latest-blog-title-01",
+    "title": "Demystifying Artificial Intelligence (AI): How Does It Shape Our World?\"",
+    "description": "Ever marvel at Siri's replies or how self-driving cars dodge those squirrels? Welcome to the world of AI – the genius behind today’s tech marvels!",
+    "canonical": "https://www.aiamigos.org/latest-blog-title-01/",
+    "originalUrl": "https://www.aiamigos.org/latest-blog-title-01/",
+    "publishedAt": "2023-09-28",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "retire",
+    "disposition": "retire",
+    "redirectTo": null,
+    "sources": [
+      "https://www.aiamigos.org/latest-blog-title-01/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": false,
+    "wordCount": 340,
+    "importedFrom": "pages/latest-blog-title-01-e452e4138f.html"
+  },
+  {
+    "id": "pages/ai-jobs-whats-the-real-deal--f0-9f-8c-8d-f2c9400ce9",
+    "slug": "ai-jobs-whats-the-real-deal-%f0%9f%8c%8d",
+    "title": "AI & Jobs: What's the Real Deal? 🌍",
+    "description": "Hey, tech buddies! Have you ever wondered if robots will take over all jobs? Or thought, \"Will my coffee machine start asking for a day off?\" Let's break down",
+    "canonical": "https://www.aiamigos.org/ai-jobs-whats-the-real-deal-%f0%9f%8c%8d/",
+    "originalUrl": "https://www.aiamigos.org/ai-jobs-whats-the-real-deal-%f0%9f%8c%8d/",
+    "publishedAt": "2023-09-11",
+    "category": "careers",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "draft",
+    "disposition": "draft",
+    "redirectTo": null,
+    "sources": [
+      "https://www.aiamigos.org/ai-jobs-whats-the-real-deal-%f0%9f%8c%8d/"
+    ],
+    "limitations": [
+      "Quarantined until a named subject-matter reviewer, dated primary sources, scope, and limitations are recorded."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": true,
+    "wordCount": 291,
+    "importedFrom": "pages/ai-jobs-whats-the-real-deal--f0-9f-8c-8d-f2c9400ce9.html"
+  },
+  {
+    "id": "pages/ai-ethics-for-everyday-folks-the-stuff-you-gotta-know--f0-9f-a4-96-f0-9f-94-8d-bff75776a0",
+    "slug": "ai-ethics-for-everyday-folks-the-stuff-you-gotta-know-%f0%9f%a4%96%f0%9f%94%8d",
+    "title": "AI Ethics for Everyday Folks: The Stuff You Gotta Know! 🤖🔍",
+    "description": "Hey there, pals! Ever shouted \"Hey Siri!\" and wondered if she's playing fair? Dive into the ethical twists and turns of AI with me, but buckle up—it’s a fun",
+    "canonical": "https://www.aiamigos.org/ai-ethics-for-everyday-folks-the-stuff-you-gotta-know-%f0%9f%a4%96%f0%9f%94%8d/",
+    "originalUrl": "https://www.aiamigos.org/ai-ethics-for-everyday-folks-the-stuff-you-gotta-know-%f0%9f%a4%96%f0%9f%94%8d/",
+    "publishedAt": "2023-09-08",
+    "category": "responsible-ai",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "published",
+    "disposition": "retain",
+    "redirectTo": "/articles/ai-ethics-for-everyday-folks-the-stuff-you-gotta-know-%f0%9f%a4%96%f0%9f%94%8d/",
+    "sources": [
+      "https://www.aiamigos.org/ai-ethics-for-everyday-folks-the-stuff-you-gotta-know-%f0%9f%a4%96%f0%9f%94%8d/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": true,
+    "wordCount": 397,
+    "importedFrom": "pages/ai-ethics-for-everyday-folks-the-stuff-you-gotta-know--f0-9f-a4-96-f0-9f-94-8d-bff75776a0.html"
+  },
+  {
+    "id": "pages/ai-in-healthcare-a18ddd8b16",
+    "slug": "ai-in-healthcare",
+    "title": "AI in Healthcare: 14 Inspiring Stories Fueling the Positive Medical Revolution",
+    "description": "Unveil the impact of AI in Healthcare through 3 inspiring stories that highlight the technology's revolutionary role in advancing medical care.",
+    "canonical": "https://www.aiamigos.org/ai-in-healthcare/",
+    "originalUrl": "https://www.aiamigos.org/ai-in-healthcare/",
+    "publishedAt": "2023-11-01",
+    "category": "industry-applications",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "draft",
+    "disposition": "draft",
+    "redirectTo": null,
+    "sources": [
+      "https://www.aiamigos.org/ai-in-healthcare/"
+    ],
+    "limitations": [
+      "Quarantined until a named subject-matter reviewer, dated primary sources, scope, and limitations are recorded."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": true,
+    "wordCount": 3002,
+    "importedFrom": "pages/ai-in-healthcare-a18ddd8b16.html"
+  },
+  {
+    "id": "pages/ai-in-finance-3926dcb68c",
+    "slug": "ai-in-finance",
+    "title": "AI in Finance: 11 Revolutionary Changes Reshaping Banking & Investments",
+    "description": "\"Explore how AI transforms modern finance, from personalized banking to smart investments. Dive into the future of fintech with AI-driven insights & solutions.\" AI in Finance. this blog will help understand following que",
+    "canonical": "https://www.aiamigos.org/ai-in-finance/",
+    "originalUrl": "https://www.aiamigos.org/ai-in-finance/",
+    "publishedAt": "2023-11-02",
+    "category": "industry-applications",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "draft",
+    "disposition": "draft",
+    "redirectTo": null,
+    "sources": [
+      "https://www.aiamigos.org/ai-in-finance/"
+    ],
+    "limitations": [
+      "Quarantined until a named subject-matter reviewer, dated primary sources, scope, and limitations are recorded."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": true,
+    "wordCount": 4092,
+    "importedFrom": "pages/ai-in-finance-3926dcb68c.html"
+  },
+  {
+    "id": "pages/unboxing-ai-the-retail-revolution-behind-your-shopping-spree-73508110f7",
+    "slug": "unboxing-ai-the-retail-revolution-behind-your-shopping-spree",
+    "title": "Unboxing AI: The Retail Revolution Behind Your Shopping Spree!",
+    "description": "#AI & Shopping: A Match Made in Tech Heaven!",
+    "canonical": "https://www.aiamigos.org/unboxing-ai-the-retail-revolution-behind-your-shopping-spree/",
+    "originalUrl": "https://www.aiamigos.org/unboxing-ai-the-retail-revolution-behind-your-shopping-spree/",
+    "publishedAt": "2023-10-10",
+    "category": "industry-applications",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "published",
+    "disposition": "retain",
+    "redirectTo": "/articles/unboxing-ai-the-retail-revolution-behind-your-shopping-spree/",
+    "sources": [
+      "https://www.aiamigos.org/unboxing-ai-the-retail-revolution-behind-your-shopping-spree/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": true,
+    "wordCount": 403,
+    "importedFrom": "pages/unboxing-ai-the-retail-revolution-behind-your-shopping-spree-73508110f7.html"
+  },
+  {
+    "id": "pages/the-future-farm-ais-role-in-our-fields-and-beyond-232d1e4e8e",
+    "slug": "the-future-farm-ais-role-in-our-fields-and-beyond",
+    "title": "The Future Farm: AI's Role in Our Fields and Beyond!",
+    "description": "🌾 Hey, friends! Ever think about how your food gets to your plate? Thanks to cool tech changes, farming's taking a leap into the future. AI is pitching in,",
+    "canonical": "https://www.aiamigos.org/the-future-farm-ais-role-in-our-fields-and-beyond/",
+    "originalUrl": "https://www.aiamigos.org/the-future-farm-ais-role-in-our-fields-and-beyond/",
+    "publishedAt": "2023-09-30",
+    "category": "industry-applications",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "published",
+    "disposition": "retain",
+    "redirectTo": "/articles/the-future-farm-ais-role-in-our-fields-and-beyond/",
+    "sources": [
+      "https://www.aiamigos.org/the-future-farm-ais-role-in-our-fields-and-beyond/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": true,
+    "wordCount": 455,
+    "importedFrom": "pages/the-future-farm-ais-role-in-our-fields-and-beyond-232d1e4e8e.html"
+  },
+  {
+    "id": "pages/crafting-the-future-ais-role-in-modern-manufacturing-9da8ca6d3f",
+    "slug": "crafting-the-future-ais-role-in-modern-manufacturing",
+    "title": "Crafting the Future: AI's Role in Modern Manufacturing",
+    "description": "AI in Making Stuff: The Behind-the-Scenes Magic",
+    "canonical": "https://www.aiamigos.org/crafting-the-future-ais-role-in-modern-manufacturing/",
+    "originalUrl": "https://www.aiamigos.org/crafting-the-future-ais-role-in-modern-manufacturing/",
+    "publishedAt": "2023-09-24",
+    "category": "industry-applications",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "published",
+    "disposition": "retain",
+    "redirectTo": "/articles/crafting-the-future-ais-role-in-modern-manufacturing/",
+    "sources": [
+      "https://www.aiamigos.org/crafting-the-future-ais-role-in-modern-manufacturing/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": true,
+    "wordCount": 394,
+    "importedFrom": "pages/crafting-the-future-ais-role-in-modern-manufacturing-9da8ca6d3f.html"
+  },
+  {
+    "id": "pages/the-blog-publishing-checklist-ensuring-your-content-doesnt-go-oops-b2bf3911a7",
+    "slug": "the-blog-publishing-checklist-ensuring-your-content-doesnt-go-oops",
+    "title": "\"The Blog Publishing Checklist: Ensuring Your Content Doesn't Go 'Oops!'\"",
+    "description": "Introduction:",
+    "canonical": "https://www.aiamigos.org/the-blog-publishing-checklist-ensuring-your-content-doesnt-go-oops/",
+    "originalUrl": "https://www.aiamigos.org/the-blog-publishing-checklist-ensuring-your-content-doesnt-go-oops/",
+    "publishedAt": "2023-10-10",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "published",
+    "disposition": "retain",
+    "redirectTo": "/articles/the-blog-publishing-checklist-ensuring-your-content-doesnt-go-oops/",
+    "sources": [
+      "https://www.aiamigos.org/the-blog-publishing-checklist-ensuring-your-content-doesnt-go-oops/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": true,
+    "wordCount": 719,
+    "importedFrom": "pages/the-blog-publishing-checklist-ensuring-your-content-doesnt-go-oops-b2bf3911a7.html"
+  },
+  {
+    "id": "pages/unlocking-ai-magic-in-entertainment-a-light-hearted-guide-b6781ba9fd",
+    "slug": "unlocking-ai-magic-in-entertainment-a-light-hearted-guide",
+    "title": "Unlocking AI Magic in Entertainment – A Light-Hearted Guide",
+    "description": "AI in Your Fun Time: Making Movies & Music Pop!",
+    "canonical": "https://www.aiamigos.org/unlocking-ai-magic-in-entertainment-a-light-hearted-guide/",
+    "originalUrl": "https://www.aiamigos.org/unlocking-ai-magic-in-entertainment-a-light-hearted-guide/",
+    "publishedAt": "2023-10-10",
+    "category": "industry-applications",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "published",
+    "disposition": "retain",
+    "redirectTo": "/articles/unlocking-ai-magic-in-entertainment-a-light-hearted-guide/",
+    "sources": [
+      "https://www.aiamigos.org/unlocking-ai-magic-in-entertainment-a-light-hearted-guide/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": true,
+    "wordCount": 324,
+    "importedFrom": "pages/unlocking-ai-magic-in-entertainment-a-light-hearted-guide-b6781ba9fd.html"
+  },
+  {
+    "id": "pages/the-future-on-wheels-how-ai-is-steering-the-world-of-transportation--f0-9f-9a-97-f0-9f-92-a8-98e8a03d09",
+    "slug": "the-future-on-wheels-how-ai-is-steering-the-world-of-transportation-%f0%9f%9a%97%f0%9f%92%a8",
+    "title": "How AI is Steering the World of Transportation!",
+    "description": "AI on the Move: Changing How We Travel! 🚗💨",
+    "canonical": "https://www.aiamigos.org/the-future-on-wheels-how-ai-is-steering-the-world-of-transportation-%f0%9f%9a%97%f0%9f%92%a8/",
+    "originalUrl": "https://www.aiamigos.org/the-future-on-wheels-how-ai-is-steering-the-world-of-transportation-%f0%9f%9a%97%f0%9f%92%a8/",
+    "publishedAt": "2023-10-11",
+    "category": "industry-applications",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "published",
+    "disposition": "retain",
+    "redirectTo": "/articles/the-future-on-wheels-how-ai-is-steering-the-world-of-transportation-%f0%9f%9a%97%f0%9f%92%a8/",
+    "sources": [
+      "https://www.aiamigos.org/the-future-on-wheels-how-ai-is-steering-the-world-of-transportation-%f0%9f%9a%97%f0%9f%92%a8/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": true,
+    "wordCount": 400,
+    "importedFrom": "pages/the-future-on-wheels-how-ai-is-steering-the-world-of-transportation--f0-9f-9a-97-f0-9f-92-a8-98e8a03d09.html"
+  },
+  {
+    "id": "pages/ai-evolution-faa2ece8cb",
+    "slug": "ai-evolution",
+    "title": "AI Evolution: 13 Breakthrough Stages from Rule-Based Systems to Quantum Wonders",
+    "description": "Explore AI Evolution's top stages: from rule-based systems to quantum leaps in AI. Uncover the journey of artificial intelligence's growth and future.",
+    "canonical": "https://www.aiamigos.org/ai-evolution/",
+    "originalUrl": "https://www.aiamigos.org/ai-evolution/",
+    "publishedAt": "2023-11-06",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "published",
+    "disposition": "retain",
+    "redirectTo": "/articles/ai-evolution/",
+    "sources": [
+      "https://www.aiamigos.org/ai-evolution/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": true,
+    "wordCount": 2106,
+    "importedFrom": "pages/ai-evolution-faa2ece8cb.html"
+  },
+  {
+    "id": "pages/ai-rule-based-systems-8cff0914fc",
+    "slug": "ai-rule-based-systems",
+    "title": "\"Demystifying AI Rule-Based Systems: A Deep Dive into the Heart of Classic AI\"",
+    "description": "Dive into the world of AI Rule-Based Systems! Explore Expert Systems, Decision Trees, Knowledge Bases, and more. Uncover the magic behind AI's logical thinking. Perfect for tech enthusiasts! 🌟",
+    "canonical": "https://www.aiamigos.org/ai-rule-based-systems/",
+    "originalUrl": "https://www.aiamigos.org/ai-rule-based-systems/",
+    "publishedAt": "2023-10-15",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "published",
+    "disposition": "retain",
+    "redirectTo": "/articles/ai-rule-based-systems/",
+    "sources": [
+      "https://www.aiamigos.org/ai-rule-based-systems/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": true,
+    "wordCount": 632,
+    "importedFrom": "pages/ai-rule-based-systems-8cff0914fc.html"
+  },
+  {
+    "id": "pages/machine-learning-62cfb192bb",
+    "slug": "machine-learning",
+    "title": "Machine Learning (ML) Explored: An Adventure into Tech's Cutting-Edge",
+    "description": "\"Dive into the captivating journey of machine learning, unraveling its tech wonders and celebrating groundbreaking achievements. Discover ML's transformative tales!\"",
+    "canonical": "https://www.aiamigos.org/machine-learning/",
+    "originalUrl": "https://www.aiamigos.org/machine-learning/",
+    "publishedAt": "2023-10-15",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "published",
+    "disposition": "retain",
+    "redirectTo": "/articles/machine-learning/",
+    "sources": [
+      "https://www.aiamigos.org/machine-learning/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": true,
+    "wordCount": 665,
+    "importedFrom": "pages/machine-learning-62cfb192bb.html"
+  },
+  {
+    "id": "pages/deep-learning-ai-14c471d997",
+    "slug": "deep-learning-ai",
+    "title": "Deep Learning (DL): Deep Dive into AI's Unraveling Tech Wonders in Everyday Moments",
+    "description": "Explore the fascinating world of deep learning in this insightful blog post. From easy-to-understand examples for kids to professional applications in healthcare, learn how AI's deep learning transforms industries and da",
+    "canonical": "https://www.aiamigos.org/deep-learning-ai/",
+    "originalUrl": "https://www.aiamigos.org/deep-learning-ai/",
+    "publishedAt": "2023-10-15",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "published",
+    "disposition": "retain",
+    "redirectTo": "/articles/deep-learning-ai/",
+    "sources": [
+      "https://www.aiamigos.org/deep-learning-ai/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": true,
+    "wordCount": 808,
+    "importedFrom": "pages/deep-learning-ai-14c471d997.html"
+  },
+  {
+    "id": "pages/general-ai-7863a26c7e",
+    "slug": "general-ai",
+    "title": "General AI Unveiled: Embracing the Dance of Digital Dreams & Intelligence",
+    "description": "\"Explore the captivating realm of General AI: Discover the future possibilities of Artificial General Intelligence (AGI) in our latest article. Explore hypothetical applications of AGI, from versatile personal assistants",
+    "canonical": "https://www.aiamigos.org/general-ai/",
+    "originalUrl": "https://www.aiamigos.org/general-ai/",
+    "publishedAt": "2023-10-15",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "published",
+    "disposition": "retain",
+    "redirectTo": "/articles/general-ai/",
+    "sources": [
+      "https://www.aiamigos.org/general-ai/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": true,
+    "wordCount": 697,
+    "importedFrom": "pages/general-ai-7863a26c7e.html"
+  },
+  {
+    "id": "pages/superintelligent-ai-1b4c04c3e7",
+    "slug": "superintelligent-ai",
+    "title": "\"Navigating the Neural Nebula of Superintelligent AI: Beyond Imagination\"",
+    "description": "Have you ever pondered a future where computers outthink and outpace human intellect, where machines evolve and dream? Grab your virtual telescope; we're setting sail across the vast ocean of Superintelligent AI.",
+    "canonical": "https://www.aiamigos.org/superintelligent-ai/",
+    "originalUrl": "https://www.aiamigos.org/superintelligent-ai/",
+    "publishedAt": "2023-10-10",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "published",
+    "disposition": "retain",
+    "redirectTo": "/articles/superintelligent-ai/",
+    "sources": [
+      "https://www.aiamigos.org/superintelligent-ai/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": true,
+    "wordCount": 598,
+    "importedFrom": "pages/superintelligent-ai-1b4c04c3e7.html"
+  },
+  {
+    "id": "pages/adaptive-ai-ef3cd84d1a",
+    "slug": "adaptive-ai",
+    "title": "Adaptive AI: The Dynamic Evolution of Intelligent Systems",
+    "description": "\"Explore the world of Adaptive AI and discover how dynamic intelligence reshapes technology, enhancing flexibility and responsiveness in ever-evolving scenarios.\"",
+    "canonical": "https://www.aiamigos.org/adaptive-ai/",
+    "originalUrl": "https://www.aiamigos.org/adaptive-ai/",
+    "publishedAt": "2023-10-15",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "published",
+    "disposition": "retain",
+    "redirectTo": "/articles/adaptive-ai/",
+    "sources": [
+      "https://www.aiamigos.org/adaptive-ai/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": true,
+    "wordCount": 630,
+    "importedFrom": "pages/adaptive-ai-ef3cd84d1a.html"
+  },
+  {
+    "id": "pages/emotional-ai-5732eddd6c",
+    "slug": "emotional-ai",
+    "title": "Emotional AI: Tapping into Tech's Tender Side.",
+    "description": "\"Delve into the realm of Emotional AI: from mood-responsive devices to empathic robots. Explore the groundbreaking journey of technology intertwined with human emotion.\"",
+    "canonical": "https://www.aiamigos.org/emotional-ai/",
+    "originalUrl": "https://www.aiamigos.org/emotional-ai/",
+    "publishedAt": "2023-10-15",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "published",
+    "disposition": "retain",
+    "redirectTo": "/articles/emotional-ai/",
+    "sources": [
+      "https://www.aiamigos.org/emotional-ai/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": true,
+    "wordCount": 683,
+    "importedFrom": "pages/emotional-ai-5732eddd6c.html"
+  },
+  {
+    "id": "pages/creative-ai-89a1af6693",
+    "slug": "creative-ai",
+    "title": "Creative AI: The Digital Da Vinci, Artistic Awakening",
+    "description": "Creative AI world. Explore the unlimited possibilities in the creative world.",
+    "canonical": "https://www.aiamigos.org/creative-ai/",
+    "originalUrl": "https://www.aiamigos.org/creative-ai/",
+    "publishedAt": "2023-10-15",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "published",
+    "disposition": "retain",
+    "redirectTo": "/articles/creative-ai/",
+    "sources": [
+      "https://www.aiamigos.org/creative-ai/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": true,
+    "wordCount": 666,
+    "importedFrom": "pages/creative-ai-89a1af6693.html"
+  },
+  {
+    "id": "pages/self-aware-ai-1eefc7678f",
+    "slug": "self-aware-ai",
+    "title": "Self-Aware AI: The Next Evolutionary Leap in Artificial Intelligence",
+    "description": "Explore the groundbreaking realm of Self-Aware AI. Delve into its potential, challenges, and the transformative impact on technology's future landscape. Artificial consciousness (AC), also known as machine consciousness ",
+    "canonical": "https://www.aiamigos.org/self-aware-ai/",
+    "originalUrl": "https://www.aiamigos.org/self-aware-ai/",
+    "publishedAt": "2023-10-15",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "published",
+    "disposition": "retain",
+    "redirectTo": "/articles/self-aware-ai/",
+    "sources": [
+      "https://www.aiamigos.org/self-aware-ai/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": true,
+    "wordCount": 839,
+    "importedFrom": "pages/self-aware-ai-1eefc7678f.html"
+  },
+  {
+    "id": "pages/co-evolving-ai-e42ce3e54e",
+    "slug": "co-evolving-ai",
+    "title": "Co-evolving AI: The Future of Harmonious Human-Machine Partnerships",
+    "description": "\"Discover the synergy of Co-evolving AI! Explore how humans and machines collaboratively shape the future, fostering mutual growth and groundbreaking innovations.\"",
+    "canonical": "https://www.aiamigos.org/co-evolving-ai/",
+    "originalUrl": "https://www.aiamigos.org/co-evolving-ai/",
+    "publishedAt": "2023-10-15",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "published",
+    "disposition": "retain",
+    "redirectTo": "/articles/co-evolving-ai/",
+    "sources": [
+      "https://www.aiamigos.org/co-evolving-ai/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": true,
+    "wordCount": 693,
+    "importedFrom": "pages/co-evolving-ai-e42ce3e54e.html"
+  },
+  {
+    "id": "pages/decentralized-ai-7550461b1c",
+    "slug": "decentralized-ai",
+    "title": "Decentralized AI: Revolutionizing Data Privacy on the Blockchain",
+    "description": "Distributed Artificial Intelligence (DAI) also called Decentralized AI (Artificial Intelligences) a subfield of artificial intelligence research dedicated to the development of distributed solutions for problems. DAI is ",
+    "canonical": "https://www.aiamigos.org/decentralized-ai/",
+    "originalUrl": "https://www.aiamigos.org/decentralized-ai/",
+    "publishedAt": "2023-10-15",
+    "category": "responsible-ai",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "published",
+    "disposition": "retain",
+    "redirectTo": "/articles/decentralized-ai/",
+    "sources": [
+      "https://www.aiamigos.org/decentralized-ai/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": true,
+    "wordCount": 779,
+    "importedFrom": "pages/decentralized-ai-7550461b1c.html"
+  },
+  {
+    "id": "pages/ethical-ai-7c1c06c7b1",
+    "slug": "ethical-ai",
+    "title": "Ethical AI: How to use it in good and fair ways",
+    "description": "Ethical AI companies, applications, frameworks, principles, guidelines. | ethical ai in healthcare | | ethical ai in finance | | ethical ai in marketing | | ethical ai in education | | ethical ai in government | | ethica",
+    "canonical": "https://www.aiamigos.org/ethical-ai/",
+    "originalUrl": "https://www.aiamigos.org/ethical-ai/",
+    "publishedAt": "2023-11-06",
+    "category": "responsible-ai",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "published",
+    "disposition": "retain",
+    "redirectTo": "/articles/ethical-ai/",
+    "sources": [
+      "https://www.aiamigos.org/ethical-ai/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": true,
+    "wordCount": 2283,
+    "importedFrom": "pages/ethical-ai-7c1c06c7b1.html"
+  },
+  {
+    "id": "pages/quantum-ai-23bd2ba6c7",
+    "slug": "quantum-ai",
+    "title": "Quantum AI: 13 Breakthrough Moments Where Physics Fuels Smart Innovation!",
+    "description": "Power of quantum tech in everyday solutions! From drug discoveries to unhackable banks and efficient traffic management, quantum's making waves. Dive in!\" Quantum AI",
+    "canonical": "https://www.aiamigos.org/quantum-ai/",
+    "originalUrl": "https://www.aiamigos.org/quantum-ai/",
+    "publishedAt": "2023-10-15",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "published",
+    "disposition": "retain",
+    "redirectTo": "/articles/quantum-ai/",
+    "sources": [
+      "https://www.aiamigos.org/quantum-ai/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": true,
+    "wordCount": 1248,
+    "importedFrom": "pages/quantum-ai-23bd2ba6c7.html"
+  },
+  {
+    "id": "pages/gpt-models-08a9c96f9d",
+    "slug": "gpt-models",
+    "title": "GPT Models: 7 Groundbreaking Applications Transforming the Text Generation Landscape",
+    "description": "GPT models, workings, applications, Providers, Benefits, Risks, Transformation and future. Discover how they're revolutionizing fields like education, entertainment, and healthcare. Join us on this AI journey!\"",
+    "canonical": "https://www.aiamigos.org/gpt-models/",
+    "originalUrl": "https://www.aiamigos.org/gpt-models/",
+    "publishedAt": "2023-10-15",
+    "category": "tools-and-models",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "draft",
+    "disposition": "draft",
+    "redirectTo": null,
+    "sources": [
+      "https://www.aiamigos.org/gpt-models/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": true,
+    "wordCount": 1999,
+    "importedFrom": "pages/gpt-models-08a9c96f9d.html"
+  },
+  {
+    "id": "pages/ais-dawn-revolutionizing-the-digital-realm-d0f0a1484f",
+    "slug": "ais-dawn-revolutionizing-the-digital-realm",
+    "title": "AI's Digital Transformation: Shaping Daily Realms with Unique Zeal and Empowering Change",
+    "description": "In the vast landscape of the digital cosmos, Artificial Intelligence (AI) shines brightly, guiding our path. From OpenAI's breakthroughs to Elon Musk's",
+    "canonical": "https://www.aiamigos.org/ais-dawn-revolutionizing-the-digital-realm/",
+    "originalUrl": "https://www.aiamigos.org/ais-dawn-revolutionizing-the-digital-realm/",
+    "publishedAt": "2023-09-01",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "published",
+    "disposition": "retain",
+    "redirectTo": "/articles/ais-dawn-revolutionizing-the-digital-realm/",
+    "sources": [
+      "https://www.aiamigos.org/ais-dawn-revolutionizing-the-digital-realm/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": true,
+    "wordCount": 563,
+    "importedFrom": "pages/ais-dawn-revolutionizing-the-digital-realm-d0f0a1484f.html"
+  },
+  {
+    "id": "pages/prompt-engineering-92c4e736a4",
+    "slug": "prompt-engineering",
+    "title": "Prompt Engineering: 5 Key Strategies to Unlock AI's Powerful Potential",
+    "description": "\"Dive into the art of Prompt Engineering and discover how it shapes our interactions with AI. From voice assistants to chatbots, learn the secrets behind seamless AI conversations. Explore the future of intuitive AI inte",
+    "canonical": "https://www.aiamigos.org/prompt-engineering/",
+    "originalUrl": "https://www.aiamigos.org/prompt-engineering/",
+    "publishedAt": "2023-11-03",
+    "category": "ai-engineering",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "published",
+    "disposition": "retain",
+    "redirectTo": "/articles/prompt-engineering/",
+    "sources": [
+      "https://www.aiamigos.org/prompt-engineering/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": true,
+    "wordCount": 1276,
+    "importedFrom": "pages/prompt-engineering-92c4e736a4.html"
+  },
+  {
+    "id": "pages/text-to-video-software-1c6dc34043",
+    "slug": "text-to-video-software",
+    "title": "🎥 \"Turn Your Text into Video/Movies with 13+1 AI tools!\" 🎥",
+    "description": "\"Explore the wonders of AI in video creation! Dive into automated storytelling, dynamic visuals, and next-gen video tools. Turn text into captivating visuals! explore Text-to-video software\"",
+    "canonical": "https://www.aiamigos.org/text-to-video-software/",
+    "originalUrl": "https://www.aiamigos.org/text-to-video-software/",
+    "publishedAt": "2023-09-23",
+    "category": "tools-and-models",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "published",
+    "disposition": "retain",
+    "redirectTo": "/articles/text-to-video-software/",
+    "sources": [
+      "https://www.aiamigos.org/text-to-video-software/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Professional"
+    ],
+    "articleLike": true,
+    "wordCount": 1100,
+    "importedFrom": "pages/text-to-video-software-1c6dc34043.html"
+  },
+  {
+    "id": "pages/data-gen-ai-fd6e6489ef",
+    "slug": "data-gen-ai",
+    "title": "Why Data is Key to Mastering AI Tricks: An Inside Look",
+    "description": "\"Explore the key role of data in powering Generative AI. Dive into a light-hearted guide that breaks down complex concepts for all tech enthusiasts!\"",
+    "canonical": "https://www.aiamigos.org/data-gen-ai/",
+    "originalUrl": "https://www.aiamigos.org/data-gen-ai/",
+    "publishedAt": "2023-08-28",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "published",
+    "disposition": "retain",
+    "redirectTo": "/articles/data-gen-ai/",
+    "sources": [
+      "https://www.aiamigos.org/data-gen-ai/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": true,
+    "wordCount": 1026,
+    "importedFrom": "pages/data-gen-ai-fd6e6489ef.html"
+  },
+  {
+    "id": "pages/ai-data-types-models-4cc865709e",
+    "slug": "ai-data-types-models",
+    "title": "AI's Recipe: Mixing Data Types & Models",
+    "description": "\"Explore the art of AI in the kitchen of data, blending diverse data types & models to cook up innovative solutions and insights.\"",
+    "canonical": "https://www.aiamigos.org/ai-data-types-models/",
+    "originalUrl": "https://www.aiamigos.org/ai-data-types-models/",
+    "publishedAt": "2023-08-29",
+    "category": "tools-and-models",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "published",
+    "disposition": "retain",
+    "redirectTo": "/articles/ai-data-types-models/",
+    "sources": [
+      "https://www.aiamigos.org/ai-data-types-models/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": true,
+    "wordCount": 346,
+    "importedFrom": "pages/ai-data-types-models-4cc865709e.html"
+  },
+  {
+    "id": "pages/generative-ai-solutions-d2db5df852",
+    "slug": "generative-ai-solutions",
+    "title": "Generative AI Solutions: 12 Steps to Unleash Powerful, Innovative Tech",
+    "description": "\"Explore Generative AI Solutions with our 12-step guide to unlocking the full potential of cutting-edge, innovative AI technology in your business.\"",
+    "canonical": "https://www.aiamigos.org/generative-ai-solutions/",
+    "originalUrl": "https://www.aiamigos.org/generative-ai-solutions/",
+    "publishedAt": "2023-11-04",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "published",
+    "disposition": "retain",
+    "redirectTo": "/articles/generative-ai-solutions/",
+    "sources": [
+      "https://www.aiamigos.org/generative-ai-solutions/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": true,
+    "wordCount": 984,
+    "importedFrom": "pages/generative-ai-solutions-d2db5df852.html"
+  },
+  {
+    "id": "pages/large-language-model-f89b996920",
+    "slug": "large-language-model",
+    "title": "Large Language Model (LLM) Secrets: 10 Astonishing Ways AI Enhances Work",
+    "description": "large language model applications, advancements, and societal impact. Discover how LLMs shape our world and what the future holds in AI.\" This blog will answer some of main questions related to LLM. What are large langua",
+    "canonical": "https://www.aiamigos.org/large-language-model/",
+    "originalUrl": "https://www.aiamigos.org/large-language-model/",
+    "publishedAt": "2023-11-05",
+    "category": "tools-and-models",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "published",
+    "disposition": "retain",
+    "redirectTo": "/articles/large-language-model/",
+    "sources": [
+      "https://www.aiamigos.org/large-language-model/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": true,
+    "wordCount": 1561,
+    "importedFrom": "pages/large-language-model-f89b996920.html"
+  },
+  {
+    "id": "pages/grokai-9e6b515015",
+    "slug": "grokai",
+    "title": "GrokAI Unveiled: 5 Revolutionary Benefits of Custom AI for Your Business Growth",
+    "description": "Everything about GrokAI (Custom AI). GrokAI Vs OpenAI, Core Features, Understanding GrokAI: GrokAI is a relatively new entrant in the AI domain, aiming to revolutionize the way businesses and developers engage with machi",
+    "canonical": "https://www.aiamigos.org/grokai/",
+    "originalUrl": "https://www.aiamigos.org/grokai/",
+    "publishedAt": "2023-11-06",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "draft",
+    "disposition": "draft",
+    "redirectTo": null,
+    "sources": [
+      "https://www.aiamigos.org/grokai/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": true,
+    "wordCount": 1142,
+    "importedFrom": "pages/grokai-9e6b515015.html"
+  },
+  {
+    "id": "pages/ai-companies-top-100-94cef03ae9",
+    "slug": "ai-companies-top-100",
+    "title": "AI Companies: Top 100 and Their Flagship Products",
+    "description": "The world of artificial intelligence is evolving at a breakneck pace, with innovative AI companies leading the charge. Here's a look at 100 AI companies",
+    "canonical": "https://www.aiamigos.org/ai-companies-top-100/",
+    "originalUrl": "https://www.aiamigos.org/ai-companies-top-100/",
+    "publishedAt": "2023-10-06",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "published",
+    "disposition": "retain",
+    "redirectTo": "/articles/ai-companies-top-100/",
+    "sources": [
+      "https://www.aiamigos.org/ai-companies-top-100/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": true,
+    "wordCount": 2635,
+    "importedFrom": "pages/ai-companies-top-100-94cef03ae9.html"
+  },
+  {
+    "id": "pages/prompt-design-and-engineering-1f3b96a18c",
+    "slug": "prompt-design-and-engineering",
+    "title": "Prompt Design and Engineering: 3 Essential Distinctions for Effective AI Development",
+    "description": "Dive into the world of AI and software development as we explore the crucial differences between prompt design and engineering. Learn how each plays a unique role in creating seamless user experiences and robust systems.",
+    "canonical": "https://www.aiamigos.org/prompt-design-and-engineering/",
+    "originalUrl": "https://www.aiamigos.org/prompt-design-and-engineering/",
+    "publishedAt": "2023-11-07",
+    "category": "ai-engineering",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "published",
+    "disposition": "retain",
+    "redirectTo": "/articles/prompt-design-and-engineering/",
+    "sources": [
+      "https://www.aiamigos.org/prompt-design-and-engineering/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": true,
+    "wordCount": 1150,
+    "importedFrom": "pages/prompt-design-and-engineering-1f3b96a18c.html"
+  },
+  {
+    "id": "pages/ai-pin-technology-and-its-5-main-benefits-b1d582602d",
+    "slug": "ai-pin-technology-and-its-5-main-benefits",
+    "title": "AI PIN Technology and its 5 Main Benefits",
+    "description": "In recent years, artificial intelligence (AI) has made significant advancements, transforming various industries and revolutionizing the way we live and work.",
+    "canonical": "https://www.aiamigos.org/ai-pin-technology-and-its-5-main-benefits/",
+    "originalUrl": "https://www.aiamigos.org/ai-pin-technology-and-its-5-main-benefits/",
+    "publishedAt": "2023-11-13",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "published",
+    "disposition": "retain",
+    "redirectTo": "/articles/ai-pin-technology-and-its-5-main-benefits/",
+    "sources": [
+      "https://www.aiamigos.org/ai-pin-technology-and-its-5-main-benefits/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": true,
+    "wordCount": 721,
+    "importedFrom": "pages/ai-pin-technology-and-its-5-main-benefits-b1d582602d.html"
+  },
+  {
+    "id": "pages/custom-gpt-models-481f082a8b",
+    "slug": "custom-gpt-models",
+    "title": "A Comprehensive Guide to Creating Custom GPT Models with OpenAI and GrokAI",
+    "description": "A Comprehensive Guide to Creating Custom GPT Models with OpenAI and GrokAI",
+    "canonical": "https://www.aiamigos.org/custom-gpt-models/",
+    "originalUrl": "https://www.aiamigos.org/custom-gpt-models/",
+    "publishedAt": "2023-11-13",
+    "category": "tools-and-models",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "draft",
+    "disposition": "draft",
+    "redirectTo": null,
+    "sources": [
+      "https://www.aiamigos.org/custom-gpt-models/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": true,
+    "wordCount": 1190,
+    "importedFrom": "pages/custom-gpt-models-481f082a8b.html"
+  },
+  {
+    "id": "pages/ai-and-robotics-fe5a50afca",
+    "slug": "ai-and-robotics",
+    "title": "AI and Robotics: Transforming Manufacturing into a Data-Driven Enterprise",
+    "description": "AI Revolutionizing Manufacturing: The Convergence of AI and Robotics",
+    "canonical": "https://www.aiamigos.org/ai-and-robotics/",
+    "originalUrl": "https://www.aiamigos.org/ai-and-robotics/",
+    "publishedAt": "2023-10-25",
+    "category": "industry-applications",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "published",
+    "disposition": "retain",
+    "redirectTo": "/articles/ai-and-robotics/",
+    "sources": [
+      "https://www.aiamigos.org/ai-and-robotics/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": true,
+    "wordCount": 1532,
+    "importedFrom": "pages/ai-and-robotics-fe5a50afca.html"
+  },
+  {
+    "id": "pages/algorithms-in-artificial-intelligence-8056666b17",
+    "slug": "algorithms-in-artificial-intelligence",
+    "title": "A Guide to Different Algorithms in Artificial Intelligence",
+    "description": "Learn about the different Algorithms in Artificial Intelligence (AI) and their significance. Explore supervised learning algorithms like Linear Regression and Logistic Regression, unsupervised learning algorithms like K-",
+    "canonical": "https://www.aiamigos.org/algorithms-in-artificial-intelligence/",
+    "originalUrl": "https://www.aiamigos.org/algorithms-in-artificial-intelligence/",
+    "publishedAt": "2023-11-23",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "published",
+    "disposition": "retain",
+    "redirectTo": "/articles/algorithms-in-artificial-intelligence/",
+    "sources": [
+      "https://www.aiamigos.org/algorithms-in-artificial-intelligence/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "AI Algorithms"
+    ],
+    "articleLike": true,
+    "wordCount": 919,
+    "importedFrom": "pages/algorithms-in-artificial-intelligence-8056666b17.html"
+  },
+  {
+    "id": "pages/local-llm-on-your-laptop-3320797b26",
+    "slug": "local-llm-on-your-laptop",
+    "title": "Run Your Own Mini-AI: Local LLM on Your Laptop (Free, DIY, & Fun!)",
+    "description": "Run your own mini Large Language Model, Local LLM on your laptop for FREE! No cloud costs, just endless possibilities: chat with your AI, write poems, translate languages, and more. Easy setup with Ollama (your DIY AI tr",
+    "canonical": "https://www.aiamigos.org/local-llm-on-your-laptop/",
+    "originalUrl": "https://www.aiamigos.org/local-llm-on-your-laptop/",
+    "publishedAt": "2023-12-06",
+    "category": "tools-and-models",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "published",
+    "disposition": "retain",
+    "redirectTo": "/articles/local-llm-on-your-laptop/",
+    "sources": [
+      "https://www.aiamigos.org/local-llm-on-your-laptop/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": true,
+    "wordCount": 991,
+    "importedFrom": "pages/local-llm-on-your-laptop-3320797b26.html"
+  },
+  {
+    "id": "pages/generative-and-discriminative-models-f6a5b4eb5e",
+    "slug": "generative-and-discriminative-models",
+    "title": "How Generative and Discriminative Models Transform AI",
+    "description": "Dive into the world of AI with our comprehensive guide on Generative and Discriminative Models. Understand their roles, applications, and future trends. Click to explore AI's potential!",
+    "canonical": "https://www.aiamigos.org/generative-and-discriminative-models/",
+    "originalUrl": "https://www.aiamigos.org/generative-and-discriminative-models/",
+    "publishedAt": "2023-12-10",
+    "category": "tools-and-models",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "published",
+    "disposition": "retain",
+    "redirectTo": "/articles/generative-and-discriminative-models/",
+    "sources": [
+      "https://www.aiamigos.org/generative-and-discriminative-models/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": true,
+    "wordCount": 520,
+    "importedFrom": "pages/generative-and-discriminative-models-f6a5b4eb5e.html"
+  },
+  {
+    "id": "pages/building-features-faster-and-better-with-ai-6dc3c178fa",
+    "slug": "building-features-faster-and-better-with-ai",
+    "title": "AI to the Rescue: Building Features Faster and Better with AI.",
+    "description": "In today's fast-paced world, software development teams are constantly under pressure to deliver new features quickly and efficiently. This is where Artificial Intelligence (AI) comes to the rescue, offering a revolution",
+    "canonical": "https://www.aiamigos.org/building-features-faster-and-better-with-ai/",
+    "originalUrl": "https://www.aiamigos.org/building-features-faster-and-better-with-ai/",
+    "publishedAt": "2023-12-12",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "published",
+    "disposition": "retain",
+    "redirectTo": "/articles/building-features-faster-and-better-with-ai/",
+    "sources": [
+      "https://www.aiamigos.org/building-features-faster-and-better-with-ai/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": true,
+    "wordCount": 662,
+    "importedFrom": "pages/building-features-faster-and-better-with-ai-6dc3c178fa.html"
+  },
+  {
+    "id": "pages/how-ai-is-transforming-software-engineering-481fa09a5e",
+    "slug": "how-ai-is-transforming-software-engineering",
+    "title": "How AI is Transforming Software Engineering: Future Trends and Tools",
+    "description": "How AI is Transforming Software Engineering. In the rapidly evolving software landscape, the ability to deliver innovative features swiftly and efficiently is crucial. Artificial Intelligence (AI) stands at the forefront",
+    "canonical": "https://www.aiamigos.org/how-ai-is-transforming-software-engineering/",
+    "originalUrl": "https://www.aiamigos.org/how-ai-is-transforming-software-engineering/",
+    "publishedAt": "2023-12-13",
+    "category": "ai-engineering",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "published",
+    "disposition": "retain",
+    "redirectTo": "/articles/how-ai-is-transforming-software-engineering/",
+    "sources": [
+      "https://www.aiamigos.org/how-ai-is-transforming-software-engineering/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": true,
+    "wordCount": 612,
+    "importedFrom": "pages/how-ai-is-transforming-software-engineering-481fa09a5e.html"
+  },
+  {
+    "id": "pages/top-20-generative-ai-tools-for-creative-exploration-5355c42d3f",
+    "slug": "top-20-generative-ai-tools-for-creative-exploration",
+    "title": "Top 20 Generative AI Tools for Creative Exploration",
+    "description": "Discover the top 20 generative AI tools that have revolutionized creative exploration. These tools use artificial intelligence algorithms to generate unique and original content, from images and music to text and designs",
+    "canonical": "https://www.aiamigos.org/top-20-generative-ai-tools-for-creative-exploration/",
+    "originalUrl": "https://www.aiamigos.org/top-20-generative-ai-tools-for-creative-exploration/",
+    "publishedAt": "2023-12-19",
+    "category": "tools-and-models",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "published",
+    "disposition": "retain",
+    "redirectTo": "/articles/top-20-generative-ai-tools-for-creative-exploration/",
+    "sources": [
+      "https://www.aiamigos.org/top-20-generative-ai-tools-for-creative-exploration/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "AI Tools"
+    ],
+    "articleLike": true,
+    "wordCount": 420,
+    "importedFrom": "pages/top-20-generative-ai-tools-for-creative-exploration-5355c42d3f.html"
+  },
+  {
+    "id": "pages/applications-of-generative-ai-76713f6eaa",
+    "slug": "applications-of-generative-ai",
+    "title": "Applications of Generative AI",
+    "description": "Generative Artificial Intelligence (AI) is a branch of AI that focuses on creating models capable of generating new content, such as images, music, text, and even videos. This article explores the exciting applications o",
+    "canonical": "https://www.aiamigos.org/applications-of-generative-ai/",
+    "originalUrl": "https://www.aiamigos.org/applications-of-generative-ai/",
+    "publishedAt": "2023-12-19",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "published",
+    "disposition": "retain",
+    "redirectTo": "/articles/applications-of-generative-ai/",
+    "sources": [
+      "https://www.aiamigos.org/applications-of-generative-ai/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "articleLike": true,
+    "wordCount": 468,
+    "importedFrom": "pages/applications-of-generative-ai-76713f6eaa.html"
+  },
+  {
+    "id": "pages/limitations-of-generative-ai-71ad206f25",
+    "slug": "limitations-of-generative-ai",
+    "title": "Limitations of Generative AI",
+    "description": "Generative Artificial Intelligence (AI) has made significant advancements in recent years, but it also has limitations. This blog post explores the limitations of generative AI, including lack of contextual understanding",
+    "canonical": "https://www.aiamigos.org/limitations-of-generative-ai/",
+    "originalUrl": "https://www.aiamigos.org/limitations-of-generative-ai/",
+    "publishedAt": "2023-12-19",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "published",
+    "disposition": "retain",
+    "redirectTo": "/articles/limitations-of-generative-ai/",
+    "sources": [
+      "https://www.aiamigos.org/limitations-of-generative-ai/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "articleLike": true,
+    "wordCount": 580,
+    "importedFrom": "pages/limitations-of-generative-ai-71ad206f25.html"
+  },
+  {
+    "id": "pages/the-future-of-generative-ai-a992f0cf93",
+    "slug": "the-future-of-generative-ai",
+    "title": "The Future of Generative AI",
+    "description": "Generative Artificial Intelligence (AI) has been making waves in recent years, revolutionizing various industries and transforming the way we interact with technology. This blog post explores the exciting future of gener",
+    "canonical": "https://www.aiamigos.org/the-future-of-generative-ai/",
+    "originalUrl": "https://www.aiamigos.org/the-future-of-generative-ai/",
+    "publishedAt": "2023-12-19",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "published",
+    "disposition": "retain",
+    "redirectTo": "/articles/the-future-of-generative-ai/",
+    "sources": [
+      "https://www.aiamigos.org/the-future-of-generative-ai/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Technology"
+    ],
+    "articleLike": true,
+    "wordCount": 512,
+    "importedFrom": "pages/the-future-of-generative-ai-a992f0cf93.html"
+  },
+  {
+    "id": "pages/generative-ai-vs-traditional-ai-dc9af6f90e",
+    "slug": "generative-ai-vs-traditional-ai",
+    "title": "Generative AI vs. Traditional AI",
+    "description": "Learn about the differences between Generative AI and Traditional AI, their strengths and weaknesses, and the potential applications of Generative AI. Discover how Generative AI is revolutionizing various industries and ",
+    "canonical": "https://www.aiamigos.org/generative-ai-vs-traditional-ai/",
+    "originalUrl": "https://www.aiamigos.org/generative-ai-vs-traditional-ai/",
+    "publishedAt": "2023-12-19",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "published",
+    "disposition": "retain",
+    "redirectTo": "/articles/generative-ai-vs-traditional-ai/",
+    "sources": [
+      "https://www.aiamigos.org/generative-ai-vs-traditional-ai/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Technology"
+    ],
+    "articleLike": true,
+    "wordCount": 655,
+    "importedFrom": "pages/generative-ai-vs-traditional-ai-dc9af6f90e.html"
+  },
+  {
+    "id": "pages/the-explainability-of-generative-ai-models-2bd920e91b",
+    "slug": "the-explainability-of-generative-ai-models",
+    "title": "The Explainability of Generative AI Models",
+    "description": "Learn about the importance of explainability in generative AI models and the challenges associated with achieving it. Discover promising solutions such as interpretable architectures and post-hoc explanation techniques. ",
+    "canonical": "https://www.aiamigos.org/the-explainability-of-generative-ai-models/",
+    "originalUrl": "https://www.aiamigos.org/the-explainability-of-generative-ai-models/",
+    "publishedAt": "2023-12-19",
+    "category": "tools-and-models",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "published",
+    "disposition": "retain",
+    "redirectTo": "/articles/the-explainability-of-generative-ai-models/",
+    "sources": [
+      "https://www.aiamigos.org/the-explainability-of-generative-ai-models/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "articleLike": true,
+    "wordCount": 599,
+    "importedFrom": "pages/the-explainability-of-generative-ai-models-2bd920e91b.html"
+  },
+  {
+    "id": "pages/open-source-generative-ai-projects-057441509e",
+    "slug": "open-source-generative-ai-projects",
+    "title": "Open-source Generative AI Projects",
+    "description": "Generative Artificial Intelligence (AI) is an exciting field that focuses on creating algorithms and models capable of generating new and original content. Open-source projects in this domain have gained significant popu",
+    "canonical": "https://www.aiamigos.org/open-source-generative-ai-projects/",
+    "originalUrl": "https://www.aiamigos.org/open-source-generative-ai-projects/",
+    "publishedAt": "2023-12-19",
+    "category": "tools-and-models",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "published",
+    "disposition": "retain",
+    "redirectTo": "/articles/open-source-generative-ai-projects/",
+    "sources": [
+      "https://www.aiamigos.org/open-source-generative-ai-projects/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "articleLike": true,
+    "wordCount": 548,
+    "importedFrom": "pages/open-source-generative-ai-projects-057441509e.html"
+  },
+  {
+    "id": "pages/the-role-of-generative-ai-in-creative-industries-76de7ca193",
+    "slug": "the-role-of-generative-ai-in-creative-industries",
+    "title": "The Role of Generative AI in Creative Industries",
+    "description": "Artificial Intelligence (AI) has revolutionized various industries, and the creative sector is no exception. This article explores the role of generative AI in creative industries and its impact on the creative process. ",
+    "canonical": "https://www.aiamigos.org/the-role-of-generative-ai-in-creative-industries/",
+    "originalUrl": "https://www.aiamigos.org/the-role-of-generative-ai-in-creative-industries/",
+    "publishedAt": "2023-12-19",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "published",
+    "disposition": "retain",
+    "redirectTo": "/articles/the-role-of-generative-ai-in-creative-industries/",
+    "sources": [
+      "https://www.aiamigos.org/the-role-of-generative-ai-in-creative-industries/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Technology"
+    ],
+    "articleLike": true,
+    "wordCount": 695,
+    "importedFrom": "pages/the-role-of-generative-ai-in-creative-industries-76de7ca193.html"
+  },
+  {
+    "id": "pages/training-data-for-generative-ai-models-a6204b411f",
+    "slug": "training-data-for-generative-ai-models",
+    "title": "Training Data for Generative AI Models",
+    "description": "Learn about the importance of training data in generative AI models and how it affects the quality and diversity of the generated content. Understand the role of data preprocessing and the ethical considerations in using",
+    "canonical": "https://www.aiamigos.org/training-data-for-generative-ai-models/",
+    "originalUrl": "https://www.aiamigos.org/training-data-for-generative-ai-models/",
+    "publishedAt": "2023-12-19",
+    "category": "tools-and-models",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "published",
+    "disposition": "retain",
+    "redirectTo": "/articles/training-data-for-generative-ai-models/",
+    "sources": [
+      "https://www.aiamigos.org/training-data-for-generative-ai-models/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Artificial Intelligence"
+    ],
+    "articleLike": true,
+    "wordCount": 576,
+    "importedFrom": "pages/training-data-for-generative-ai-models-a6204b411f.html"
+  },
+  {
+    "id": "pages/ai-leader-with-no-code-378d2d7b1d",
+    "slug": "ai-leader-with-no-code",
+    "title": "7 Key Steps: How to Be an AI Leader with No Code",
+    "description": "Explore becoming AI leader with no-code with our guide. Learn key steps like understanding AI basics, using no-code tools, managing AI projects, and ethical practices. Gain insights on effective leadership, collaboration",
+    "canonical": "https://www.aiamigos.org/ai-leader-with-no-code/",
+    "originalUrl": "https://www.aiamigos.org/ai-leader-with-no-code/",
+    "publishedAt": "2024-01-05",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "published",
+    "disposition": "retain",
+    "redirectTo": "/articles/ai-leader-with-no-code/",
+    "sources": [
+      "https://www.aiamigos.org/ai-leader-with-no-code/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": true,
+    "wordCount": 2172,
+    "importedFrom": "pages/ai-leader-with-no-code-378d2d7b1d.html"
+  },
+  {
+    "id": "pages/nvidias-chat-with-rtx-the-key-to-next-generation-chatbots-on-your-pc-cf9add243f",
+    "slug": "nvidias-chat-with-rtx-the-key-to-next-generation-chatbots-on-your-pc",
+    "title": "NVIDIA's Chat with RTX: The Key to Next-Generation Chatbots on Your PC",
+    "description": "Guide on setting up NVIDIA's Chat with RTX, detailed insights from NVIDIA's official sources and technical documentation.",
+    "canonical": "https://www.aiamigos.org/nvidias-chat-with-rtx-the-key-to-next-generation-chatbots-on-your-pc/",
+    "originalUrl": "https://www.aiamigos.org/nvidias-chat-with-rtx-the-key-to-next-generation-chatbots-on-your-pc/",
+    "publishedAt": "2024-02-24",
+    "category": "tools-and-models",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "published",
+    "disposition": "retain",
+    "redirectTo": "/articles/nvidias-chat-with-rtx-the-key-to-next-generation-chatbots-on-your-pc/",
+    "sources": [
+      "https://www.aiamigos.org/nvidias-chat-with-rtx-the-key-to-next-generation-chatbots-on-your-pc/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": true,
+    "wordCount": 901,
+    "importedFrom": "pages/nvidias-chat-with-rtx-the-key-to-next-generation-chatbots-on-your-pc-cf9add243f.html"
+  },
+  {
+    "id": "pages/python-deployment-best-practices-a-comprehensive-guide-5d8c8ff810",
+    "slug": "python-deployment-best-practices-a-comprehensive-guide",
+    "title": "Python Deployment Best Practices: A Comprehensive Guide",
+    "description": "Python Deployment Best Practices: Deploying Python applications can be a complex process, but with the right practices, you can ensure a smooth and efficient workflow. This guide will walk you through the best practices ",
+    "canonical": "https://www.aiamigos.org/python-deployment-best-practices-a-comprehensive-guide/",
+    "originalUrl": "https://www.aiamigos.org/python-deployment-best-practices-a-comprehensive-guide/",
+    "publishedAt": "2024-02-21",
+    "category": "ai-engineering",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "published",
+    "disposition": "retain",
+    "redirectTo": "/articles/python-deployment-best-practices-a-comprehensive-guide/",
+    "sources": [
+      "https://www.aiamigos.org/python-deployment-best-practices-a-comprehensive-guide/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": true,
+    "wordCount": 551,
+    "importedFrom": "pages/python-deployment-best-practices-a-comprehensive-guide-5d8c8ff810.html"
+  },
+  {
+    "id": "pages/ai-healthcare-interoperability-ceea6f4484",
+    "slug": "ai-healthcare-interoperability",
+    "title": "Healthcare Interoperability: AI Breaking Down the Wall",
+    "description": "Healthcare Interoperability refers to the ability of different information systems, devices, and applications to access, exchange, integrate, and cooperatively use data in a coordinated manner, within and across organiza",
+    "canonical": "https://www.aiamigos.org/ai-healthcare-interoperability/",
+    "originalUrl": "https://www.aiamigos.org/ai-healthcare-interoperability/",
+    "publishedAt": "2024-06-08",
+    "category": "industry-applications",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "draft",
+    "disposition": "draft",
+    "redirectTo": null,
+    "sources": [
+      "https://www.aiamigos.org/ai-healthcare-interoperability/"
+    ],
+    "limitations": [
+      "Quarantined until a named subject-matter reviewer, dated primary sources, scope, and limitations are recorded."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": true,
+    "wordCount": 2041,
+    "importedFrom": "pages/ai-healthcare-interoperability-ceea6f4484.html"
+  },
+  {
+    "id": "pages/tesseract-an-ocr-optical-character-recognition-tool-for-image-reading-from-excel-cbfdaae91c",
+    "slug": "tesseract-an-ocr-optical-character-recognition-tool-for-image-reading-from-excel",
+    "title": "Tesseract, an OCR (Optical Character Recognition) tool for Image Reading from Excel",
+    "description": "Here is a detailed, step-by-step guide on how to extract text from images in an Excel sheet using Tesseract, an OCR (Optical Character Recognition) tool,",
+    "canonical": "https://www.aiamigos.org/tesseract-an-ocr-optical-character-recognition-tool-for-image-reading-from-excel/",
+    "originalUrl": "https://www.aiamigos.org/tesseract-an-ocr-optical-character-recognition-tool-for-image-reading-from-excel/",
+    "publishedAt": "2024-08-04",
+    "category": "tools-and-models",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "published",
+    "disposition": "retain",
+    "redirectTo": "/articles/tesseract-an-ocr-optical-character-recognition-tool-for-image-reading-from-excel/",
+    "sources": [
+      "https://www.aiamigos.org/tesseract-an-ocr-optical-character-recognition-tool-for-image-reading-from-excel/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": true,
+    "wordCount": 1330,
+    "importedFrom": "pages/tesseract-an-ocr-optical-character-recognition-tool-for-image-reading-from-excel-cbfdaae91c.html"
+  },
+  {
+    "id": "pages/a-comprehensive-guide-to-nvidia-monai-unlocking-ai-in-medical-imaging-d4306e85d4",
+    "slug": "a-comprehensive-guide-to-nvidia-monai-unlocking-ai-in-medical-imaging",
+    "title": "A Comprehensive Guide to NVIDIA MONAI: Unlocking AI in Medical Imaging",
+    "description": "NVIDIA MONAI (Medical Open Network for AI) stands out as a powerful, open-source platform specifically designed for developing and deploying AI models in medical imaging.",
+    "canonical": "https://www.aiamigos.org/a-comprehensive-guide-to-nvidia-monai-unlocking-ai-in-medical-imaging/",
+    "originalUrl": "https://www.aiamigos.org/a-comprehensive-guide-to-nvidia-monai-unlocking-ai-in-medical-imaging/",
+    "publishedAt": "2024-09-15",
+    "category": "tools-and-models",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "draft",
+    "disposition": "draft",
+    "redirectTo": null,
+    "sources": [
+      "https://www.aiamigos.org/a-comprehensive-guide-to-nvidia-monai-unlocking-ai-in-medical-imaging/"
+    ],
+    "limitations": [
+      "Quarantined until a named subject-matter reviewer, dated primary sources, scope, and limitations are recorded."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": true,
+    "wordCount": 2944,
+    "importedFrom": "pages/a-comprehensive-guide-to-nvidia-monai-unlocking-ai-in-medical-imaging-d4306e85d4.html"
+  },
+  {
+    "id": "pages/choosing-the-right-vector-database-with-caching-a-comprehensive-guide-for-genai-applications-e7fc77b15d",
+    "slug": "choosing-the-right-vector-database-with-caching-a-comprehensive-guide-for-genai-applications",
+    "title": "Choosing the Right Vector Database with Caching: A Comprehensive Guide for GenAI Applications",
+    "description": "Choosing the Right Vector Database with Caching for your GEN AI Application",
+    "canonical": "https://www.aiamigos.org/choosing-the-right-vector-database-with-caching-a-comprehensive-guide-for-genai-applications/",
+    "originalUrl": "https://www.aiamigos.org/choosing-the-right-vector-database-with-caching-a-comprehensive-guide-for-genai-applications/",
+    "publishedAt": "2024-08-23",
+    "category": "ai-engineering",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "published",
+    "disposition": "retain",
+    "redirectTo": "/articles/choosing-the-right-vector-database-with-caching-a-comprehensive-guide-for-genai-applications/",
+    "sources": [
+      "https://www.aiamigos.org/choosing-the-right-vector-database-with-caching-a-comprehensive-guide-for-genai-applications/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": true,
+    "wordCount": 3030,
+    "importedFrom": "pages/choosing-the-right-vector-database-with-caching-a-comprehensive-guide-for-genai-applications-e7fc77b15d.html"
+  },
+  {
+    "id": "pages/fine-tuning-your-generative-ai-application-a-comprehensive-guide-to-parameters-and-configurations-60a04e77e3",
+    "slug": "fine-tuning-your-generative-ai-application-a-comprehensive-guide-to-parameters-and-configurations",
+    "title": "Fine-Tuning Your Generative AI Application: A Comprehensive Guide to Parameters and Configurations",
+    "description": "Fine-tuning delve deep into each parameter—such as temperature, top-k, top-p, chunk size, and more—providing simple examples and additional use cases to help you optimize your application's performance",
+    "canonical": "https://www.aiamigos.org/fine-tuning-your-generative-ai-application-a-comprehensive-guide-to-parameters-and-configurations/",
+    "originalUrl": "https://www.aiamigos.org/fine-tuning-your-generative-ai-application-a-comprehensive-guide-to-parameters-and-configurations/",
+    "publishedAt": "2024-09-10",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "published",
+    "disposition": "retain",
+    "redirectTo": "/articles/fine-tuning-your-generative-ai-application-a-comprehensive-guide-to-parameters-and-configurations/",
+    "sources": [
+      "https://www.aiamigos.org/fine-tuning-your-generative-ai-application-a-comprehensive-guide-to-parameters-and-configurations/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": true,
+    "wordCount": 2141,
+    "importedFrom": "pages/fine-tuning-your-generative-ai-application-a-comprehensive-guide-to-parameters-and-configurations-60a04e77e3.html"
+  },
+  {
+    "id": "pages/rag-architecture-types-with-implementation-details-and-their-use-cases-8596395945",
+    "slug": "rag-architecture-types-with-implementation-details-and-their-use-cases",
+    "title": "RAG Architecture Types with Implementation Details and Use Cases",
+    "description": "Retrieval-Augmented Generation (RAG) combines the strengths of retrieval systems and generative models to produce accurate and context-aware responses. Various RAG architectures have been developed to address different c",
+    "canonical": "https://www.aiamigos.org/rag-architecture-types-with-implementation-details-and-their-use-cases/",
+    "originalUrl": "https://www.aiamigos.org/rag-architecture-types-with-implementation-details-and-their-use-cases/",
+    "publishedAt": "2024-07-29",
+    "category": "ai-engineering",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "published",
+    "disposition": "retain",
+    "redirectTo": "/articles/rag-architecture-types-with-implementation-details-and-their-use-cases/",
+    "sources": [
+      "https://www.aiamigos.org/rag-architecture-types-with-implementation-details-and-their-use-cases/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": true,
+    "wordCount": 3698,
+    "importedFrom": "pages/rag-architecture-types-with-implementation-details-and-their-use-cases-8596395945.html"
+  },
+  {
+    "id": "pages/ai-model-benchmarks-a-comprehensive-guide-83f128c39f",
+    "slug": "ai-model-benchmarks-a-comprehensive-guide",
+    "title": "AI Model Benchmarks: A Comprehensive Guide",
+    "description": "In the rapidly evolving field of artificial intelligence, benchmark tests are essential tools for evaluating the performance and capabilities of AI models.",
+    "canonical": "https://www.aiamigos.org/ai-model-benchmarks-a-comprehensive-guide/",
+    "originalUrl": "https://www.aiamigos.org/ai-model-benchmarks-a-comprehensive-guide/",
+    "publishedAt": "2024-10-31",
+    "category": "tools-and-models",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "draft",
+    "disposition": "draft",
+    "redirectTo": null,
+    "sources": [
+      "https://www.aiamigos.org/ai-model-benchmarks-a-comprehensive-guide/"
+    ],
+    "limitations": [
+      "Quarantined until a named subject-matter reviewer, dated primary sources, scope, and limitations are recorded."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": true,
+    "wordCount": 1061,
+    "importedFrom": "pages/ai-model-benchmarks-a-comprehensive-guide-83f128c39f.html"
+  },
+  {
+    "id": "pages/ways-to-test-a-rag-architecture-based-generative-ai-application-422e6f577b",
+    "slug": "ways-to-test-a-rag-architecture-based-generative-ai-application",
+    "title": "Ways to Test a RAG Architecture-Based Generative AI Application",
+    "description": "Testing a Retrieval-Augmented Generation (RAG) architecture-based generative AI application is crucial to ensure it performs effectively, efficiently, and",
+    "canonical": "https://www.aiamigos.org/ways-to-test-a-rag-architecture-based-generative-ai-application/",
+    "originalUrl": "https://www.aiamigos.org/ways-to-test-a-rag-architecture-based-generative-ai-application/",
+    "publishedAt": "2024-11-05",
+    "category": "ai-engineering",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "draft",
+    "disposition": "draft",
+    "redirectTo": null,
+    "sources": [
+      "https://www.aiamigos.org/ways-to-test-a-rag-architecture-based-generative-ai-application/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": true,
+    "wordCount": 2326,
+    "importedFrom": "pages/ways-to-test-a-rag-architecture-based-generative-ai-application-422e6f577b.html"
+  },
+  {
+    "id": "pages/langgraph-5-stunning-secrets-for-building-a-generative-ai-application-641802efc2",
+    "slug": "langgraph-5-stunning-secrets-for-building-a-generative-ai-application",
+    "title": "LangGraph: 5 Stunning Secrets for Building a Generative AI Application",
+    "description": "LangGraph Building robust, enterprise-grade AI applications often means juggling multiple data sources—internal databases, intranet systems, web searches, and third-party APIs. Traditional approaches can quickly become u",
+    "canonical": "https://www.aiamigos.org/langgraph-5-stunning-secrets-for-building-a-generative-ai-application/",
+    "originalUrl": "https://www.aiamigos.org/langgraph-5-stunning-secrets-for-building-a-generative-ai-application/",
+    "publishedAt": "2025-02-22",
+    "category": "ai-engineering",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "draft",
+    "disposition": "draft",
+    "redirectTo": null,
+    "sources": [
+      "https://www.aiamigos.org/langgraph-5-stunning-secrets-for-building-a-generative-ai-application/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": true,
+    "wordCount": 1401,
+    "importedFrom": "pages/langgraph-5-stunning-secrets-for-building-a-generative-ai-application-641802efc2.html"
+  },
+  {
+    "id": "pages/building-agentic-ai-saas-a-strategic-roadmap-using-google-gemini-enterprise-92daae424d",
+    "slug": "building-agentic-ai-saas-a-strategic-roadmap-using-google-gemini-enterprise",
+    "title": "Building Agentic AI SaaS: A Strategic Roadmap Using Google Gemini Enterprise",
+    "description": "In the insurance and financial sectors, the conversation has shifted. We are no longer just talking about \"chatbots\" or simple text generation. We are talking",
+    "canonical": "https://www.aiamigos.org/building-agentic-ai-saas-a-strategic-roadmap-using-google-gemini-enterprise/",
+    "originalUrl": "https://www.aiamigos.org/building-agentic-ai-saas-a-strategic-roadmap-using-google-gemini-enterprise/",
+    "publishedAt": "2025-10-26",
+    "category": "ai-engineering",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "draft",
+    "disposition": "draft",
+    "redirectTo": null,
+    "sources": [
+      "https://www.aiamigos.org/building-agentic-ai-saas-a-strategic-roadmap-using-google-gemini-enterprise/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [
+      "Blog"
+    ],
+    "articleLike": true,
+    "wordCount": 596,
+    "importedFrom": "pages/building-agentic-ai-saas-a-strategic-roadmap-using-google-gemini-enterprise-92daae424d.html"
+  },
+  {
+    "id": "pages/newsletter-2-9ec1b062c9",
+    "slug": "newsletter-2",
+    "title": "Newsletter",
+    "description": "Welcome to Byte-Sized Chaos. By subscribing to, reading, or acting upon the content of this newsletter, you acknowledge and agree to the terms outlined below.",
+    "canonical": "https://www.aiamigos.org/newsletter-2/",
+    "originalUrl": "https://www.aiamigos.org/newsletter-2/",
+    "publishedAt": "2025-11-24",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "draft",
+    "disposition": "draft",
+    "redirectTo": "/newsletter/",
+    "sources": [
+      "https://www.aiamigos.org/newsletter-2/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [],
+    "articleLike": false,
+    "wordCount": 468,
+    "importedFrom": "pages/newsletter-2-9ec1b062c9.html"
+  },
+  {
+    "id": "pages/classes-14c49e5e53",
+    "slug": "classes",
+    "title": "Courses",
+    "description": "YouTube link for all AI courses for Kids",
+    "canonical": "https://www.aiamigos.org/classes/",
+    "originalUrl": "https://www.aiamigos.org/classes/",
+    "publishedAt": "2023-10-08",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "draft",
+    "disposition": "draft",
+    "redirectTo": null,
+    "sources": [
+      "https://www.aiamigos.org/classes/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [],
+    "articleLike": true,
+    "wordCount": 8,
+    "importedFrom": "pages/classes-14c49e5e53.html"
+  },
+  {
+    "id": "pages/academy-6e3a34d9ea",
+    "slug": "academy",
+    "title": "Academy",
+    "description": "AI Books for Kids",
+    "canonical": "https://www.aiamigos.org/academy/",
+    "originalUrl": "https://www.aiamigos.org/academy/",
+    "publishedAt": "2023-10-09",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "retire",
+    "disposition": "retire",
+    "redirectTo": null,
+    "sources": [
+      "https://www.aiamigos.org/academy/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [],
+    "articleLike": false,
+    "wordCount": 30,
+    "importedFrom": "pages/academy-6e3a34d9ea.html"
+  },
+  {
+    "id": "pages/ai-books-for-kids-434f077877",
+    "slug": "ai-books-for-kids",
+    "title": "AI Books for Kids",
+    "description": "Explore the best AI books for kids! Engage young minds with exciting, age-appropriate books on artificial intelligence. Perfect for nurturing curiosity and understanding of AI in a fun, accessible way",
+    "canonical": "https://www.aiamigos.org/ai-books-for-kids/",
+    "originalUrl": "https://www.aiamigos.org/ai-books-for-kids/",
+    "publishedAt": "2023-11-11",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "draft",
+    "disposition": "draft",
+    "redirectTo": null,
+    "sources": [
+      "https://www.aiamigos.org/ai-books-for-kids/"
+    ],
+    "limitations": [
+      "Quarantined until a named subject-matter reviewer, dated primary sources, scope, and limitations are recorded."
+    ],
+    "tags": [],
+    "articleLike": true,
+    "wordCount": 159,
+    "importedFrom": "pages/ai-books-for-kids-434f077877.html"
+  },
+  {
+    "id": "pages/ai-career-faq-880d8964b6",
+    "slug": "ai-career-faq",
+    "title": "AI Career FAQ",
+    "description": "Here is the comprehensive list of AI Career FAQ (Frequently Asked Questions)",
+    "canonical": "https://www.aiamigos.org/ai-career-faq/",
+    "originalUrl": "https://www.aiamigos.org/ai-career-faq/",
+    "publishedAt": "2023-11-14",
+    "category": "careers",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "draft",
+    "disposition": "draft",
+    "redirectTo": null,
+    "sources": [
+      "https://www.aiamigos.org/ai-career-faq/"
+    ],
+    "limitations": [
+      "Quarantined until a named subject-matter reviewer, dated primary sources, scope, and limitations are recorded."
+    ],
+    "tags": [],
+    "articleLike": true,
+    "wordCount": 907,
+    "importedFrom": "pages/ai-career-faq-880d8964b6.html"
+  },
+  {
+    "id": "pages/home-d4c4647786",
+    "slug": "home",
+    "title": "AI Amigos - Simplifying AI for Everyone",
+    "description": "Dive into the world of AI with AI Amigos! From beginners to tech enthusiasts, explore the latest AI blogs, insights, and trends. Join our community for hands-on AI experience and stay updated with our informative newslet",
+    "canonical": "https://www.aiamigos.org/home/",
+    "originalUrl": "https://www.aiamigos.org/home/",
+    "publishedAt": "2023-10-08",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "retire",
+    "disposition": "retire",
+    "redirectTo": null,
+    "sources": [
+      "https://www.aiamigos.org/home/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [],
+    "articleLike": false,
+    "wordCount": 7,
+    "importedFrom": "pages/home-d4c4647786.html"
+  },
+  {
+    "id": "pages/ai-career-paths-9a56a41949",
+    "slug": "ai-career-paths",
+    "title": "AI Career Paths",
+    "description": "A career in the field of Artificial Intelligence (AI) can take many forms, as AI is a rapidly evolving and diverse field. Here are some of the key AI career paths within AI. Each of these career paths requires a unique s",
+    "canonical": "https://www.aiamigos.org/ai-career-paths/",
+    "originalUrl": "https://www.aiamigos.org/ai-career-paths/",
+    "publishedAt": "2023-11-14",
+    "category": "careers",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "draft",
+    "disposition": "draft",
+    "redirectTo": null,
+    "sources": [
+      "https://www.aiamigos.org/ai-career-paths/"
+    ],
+    "limitations": [
+      "Quarantined until a named subject-matter reviewer, dated primary sources, scope, and limitations are recorded."
+    ],
+    "tags": [],
+    "articleLike": true,
+    "wordCount": 450,
+    "importedFrom": "pages/ai-career-paths-9a56a41949.html"
+  },
+  {
+    "id": "pages/machine-learning-engineer-14e01ce9f7",
+    "slug": "machine-learning-engineer",
+    "title": "Roadmap: Machine Learning Engineer",
+    "description": "Roadmap to Becoming a Machine Learning Engineer Machine learning (ML) is a rapidly growing field that is transforming the way we interact with technology. ML engineers are in high demand, and with good reason. ML enginee",
+    "canonical": "https://www.aiamigos.org/machine-learning-engineer/",
+    "originalUrl": "https://www.aiamigos.org/machine-learning-engineer/",
+    "publishedAt": "2023-11-15",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "published",
+    "disposition": "retain",
+    "redirectTo": "/articles/machine-learning-engineer/",
+    "sources": [
+      "https://www.aiamigos.org/machine-learning-engineer/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [],
+    "articleLike": true,
+    "wordCount": 813,
+    "importedFrom": "pages/machine-learning-engineer-14e01ce9f7.html"
+  },
+  {
+    "id": "pages/ai-certifications-22e68e8ff1",
+    "slug": "ai-certifications",
+    "title": "AI Certifications",
+    "description": "These AI certifications are valued by employers in the AI industry and can help you to advance your career. The certifications listed above are just a few of",
+    "canonical": "https://www.aiamigos.org/ai-certifications/",
+    "originalUrl": "https://www.aiamigos.org/ai-certifications/",
+    "publishedAt": "2023-11-14",
+    "category": "careers",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "draft",
+    "disposition": "draft",
+    "redirectTo": null,
+    "sources": [
+      "https://www.aiamigos.org/ai-certifications/"
+    ],
+    "limitations": [
+      "Quarantined until a named subject-matter reviewer, dated primary sources, scope, and limitations are recorded."
+    ],
+    "tags": [],
+    "articleLike": false,
+    "wordCount": 233,
+    "importedFrom": "pages/ai-certifications-22e68e8ff1.html"
+  },
+  {
+    "id": "pages/ai-career-018e268ffa",
+    "slug": "ai-career",
+    "title": "AI Career",
+    "description": "AI Career Path",
+    "canonical": "https://www.aiamigos.org/ai-career/",
+    "originalUrl": "https://www.aiamigos.org/ai-career/",
+    "publishedAt": "2023-11-14",
+    "category": "careers",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "draft",
+    "disposition": "draft",
+    "redirectTo": null,
+    "sources": [
+      "https://www.aiamigos.org/ai-career/"
+    ],
+    "limitations": [
+      "Quarantined until a named subject-matter reviewer, dated primary sources, scope, and limitations are recorded."
+    ],
+    "tags": [],
+    "articleLike": true,
+    "wordCount": 59,
+    "importedFrom": "pages/ai-career-018e268ffa.html"
+  },
+  {
+    "id": "pages/career-in-ai-5314d88df7",
+    "slug": "career-in-ai",
+    "title": "AI Career Guide",
+    "description": "AI career Guide, Tips, Job Sites, FAQ for Making right move to build Career in AI",
+    "canonical": "https://www.aiamigos.org/career-in-ai/",
+    "originalUrl": "https://www.aiamigos.org/career-in-ai/",
+    "publishedAt": "2023-10-09",
+    "category": "careers",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "draft",
+    "disposition": "draft",
+    "redirectTo": null,
+    "sources": [
+      "https://www.aiamigos.org/career-in-ai/"
+    ],
+    "limitations": [
+      "Quarantined until a named subject-matter reviewer, dated primary sources, scope, and limitations are recorded."
+    ],
+    "tags": [],
+    "articleLike": true,
+    "wordCount": 1004,
+    "importedFrom": "pages/career-in-ai-5314d88df7.html"
+  },
+  {
+    "id": "pages/ai-tools-for-kids-77048aad96",
+    "slug": "ai-tools-for-kids",
+    "title": "AI Tools for Kids",
+    "description": "AI Tools for Kids. Deep dive into examples of AI tools that kids can use. There are many other great AI tools available, so be sure to explore and find the ones that work best for your child.",
+    "canonical": "https://www.aiamigos.org/ai-tools-for-kids/",
+    "originalUrl": "https://www.aiamigos.org/ai-tools-for-kids/",
+    "publishedAt": "2023-11-09",
+    "category": "tools-and-models",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "draft",
+    "disposition": "draft",
+    "redirectTo": null,
+    "sources": [
+      "https://www.aiamigos.org/ai-tools-for-kids/"
+    ],
+    "limitations": [
+      "Quarantined until a named subject-matter reviewer, dated primary sources, scope, and limitations are recorded."
+    ],
+    "tags": [],
+    "articleLike": true,
+    "wordCount": 835,
+    "importedFrom": "pages/ai-tools-for-kids-77048aad96.html"
+  },
+  {
+    "id": "pages/newsletter-9f7cb4526c",
+    "slug": "newsletter",
+    "title": "Newsletter",
+    "description": "[mailpoet_form id=”2″]",
+    "canonical": "https://www.aiamigos.org/newsletter/",
+    "originalUrl": "https://www.aiamigos.org/newsletter/",
+    "publishedAt": "2023-10-09",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "retire",
+    "disposition": "retire",
+    "redirectTo": null,
+    "sources": [
+      "https://www.aiamigos.org/newsletter/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [],
+    "articleLike": false,
+    "wordCount": 2,
+    "importedFrom": "pages/newsletter-9f7cb4526c.html"
+  },
+  {
+    "id": "pages/others-2df65989d4",
+    "slug": "others",
+    "title": "Others",
+    "description": "Practical AI guidance from the AI Amigos editorial desk.",
+    "canonical": "https://www.aiamigos.org/others/",
+    "originalUrl": "https://www.aiamigos.org/others/",
+    "publishedAt": "2023-10-23",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "draft",
+    "disposition": "draft",
+    "redirectTo": null,
+    "sources": [
+      "https://www.aiamigos.org/others/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [],
+    "articleLike": false,
+    "wordCount": 0,
+    "importedFrom": "pages/others-2df65989d4.html"
+  },
+  {
+    "id": "pages/about-us-7b24d71848",
+    "slug": "about-us",
+    "title": "About us",
+    "description": "Our MissionOur mission is clear: to make AI accessible to everyone, regardless of their background or level of expertise. We believe that knowledge should be",
+    "canonical": "https://www.aiamigos.org/about-us/",
+    "originalUrl": "https://www.aiamigos.org/about-us/",
+    "publishedAt": "2023-10-20",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "published",
+    "disposition": "merge",
+    "redirectTo": "/about/",
+    "sources": [
+      "https://www.aiamigos.org/about-us/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [],
+    "articleLike": false,
+    "wordCount": 365,
+    "importedFrom": "pages/about-us-7b24d71848.html"
+  },
+  {
+    "id": "pages/contact-f69a4923b1",
+    "slug": "contact",
+    "title": "Contact",
+    "description": "Don't miss out on this opportunity to stay ahead of the curve in the AI revolution in our world! Sign up today and be part of the future. Your journey into",
+    "canonical": "https://www.aiamigos.org/contact/",
+    "originalUrl": "https://www.aiamigos.org/contact/",
+    "publishedAt": "2023-10-08",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "retire",
+    "disposition": "retire",
+    "redirectTo": null,
+    "sources": [
+      "https://www.aiamigos.org/contact/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [],
+    "articleLike": false,
+    "wordCount": 49,
+    "importedFrom": "pages/contact-f69a4923b1.html"
+  },
+  {
+    "id": "pages/privacy-policy-2-edffa8eca5",
+    "slug": "privacy-policy-2",
+    "title": "Privacy Policy",
+    "description": "Our website address is: https://aiamigos.org.",
+    "canonical": "https://www.aiamigos.org/privacy-policy-2/",
+    "originalUrl": "https://www.aiamigos.org/privacy-policy-2/",
+    "publishedAt": "2023-10-13",
+    "category": "responsible-ai",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "retire",
+    "disposition": "retire",
+    "redirectTo": "/privacy/",
+    "sources": [
+      "https://www.aiamigos.org/privacy-policy-2/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [],
+    "articleLike": false,
+    "wordCount": 592,
+    "importedFrom": "pages/privacy-policy-2-edffa8eca5.html"
+  },
+  {
+    "id": "pages/faq-9cf9b64ec9",
+    "slug": "faq",
+    "title": "FAQ",
+    "description": "What is Artificial Intelligence (AI)?Artificial Intelligence, or AI, refers to the simulation of human intelligence in machines programmed to think and act",
+    "canonical": "https://www.aiamigos.org/faq/",
+    "originalUrl": "https://www.aiamigos.org/faq/",
+    "publishedAt": "2023-10-08",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "published",
+    "disposition": "retain",
+    "redirectTo": "/articles/faq/",
+    "sources": [
+      "https://www.aiamigos.org/faq/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [],
+    "articleLike": true,
+    "wordCount": 310,
+    "importedFrom": "pages/faq-9cf9b64ec9.html"
+  },
+  {
+    "id": "pages/page-9b27428a40",
+    "slug": "page",
+    "title": "Mission",
+    "description": "At AI Amigo, our mission is to be your trusted guide and premier destination for everything AI. We are dedicated to fostering a thriving community of AI",
+    "canonical": "https://www.aiamigos.org/page/",
+    "originalUrl": "https://www.aiamigos.org/page/",
+    "publishedAt": "2023-10-08",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "published",
+    "disposition": "merge",
+    "redirectTo": "/about/",
+    "sources": [
+      "https://www.aiamigos.org/page/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [],
+    "articleLike": false,
+    "wordCount": 205,
+    "importedFrom": "pages/page-9b27428a40.html"
+  },
+  {
+    "id": "pages/services-7f2795f6d3",
+    "slug": "services",
+    "title": "Services",
+    "description": "Illustration for “Services” will be reattached from the authenticated media export. AI for Kids AI for Kids (Junior) We make learning about Artificial Intelligence (AI) fun and eas",
+    "canonical": "https://www.aiamigos.org/services/",
+    "originalUrl": "https://www.aiamigos.org/services/",
+    "publishedAt": "2023-10-08",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "draft",
+    "disposition": "draft",
+    "redirectTo": null,
+    "sources": [
+      "https://www.aiamigos.org/services/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [],
+    "articleLike": false,
+    "wordCount": 130,
+    "importedFrom": "pages/services-7f2795f6d3.html"
+  },
+  {
+    "id": "pages/shop-d1aa1283a6",
+    "slug": "shop",
+    "title": "Shop",
+    "description": "Practical AI guidance from the AI Amigos editorial desk.",
+    "canonical": "https://www.aiamigos.org/shop/",
+    "originalUrl": "https://www.aiamigos.org/shop/",
+    "publishedAt": "2023-10-08",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "draft",
+    "disposition": "draft",
+    "redirectTo": null,
+    "sources": [
+      "https://www.aiamigos.org/shop/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [],
+    "articleLike": false,
+    "wordCount": 0,
+    "importedFrom": "pages/shop-d1aa1283a6.html"
+  },
+  {
+    "id": "pages/services-ai-for-kids-74148dc2ae",
+    "slug": "services/ai-for-kids",
+    "title": "AI for Kids",
+    "description": "Discover AI with AI Amigos Jr.! Tailored for kids, we make AI learning fun. From cool lessons to real-life AI stories, dive into an exciting world of tech. Join the AI adventure now! 🚀🌟",
+    "canonical": "https://www.aiamigos.org/services/ai-for-kids/",
+    "originalUrl": "https://www.aiamigos.org/services/ai-for-kids/",
+    "publishedAt": "2023-10-08",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "retire",
+    "disposition": "retire",
+    "redirectTo": null,
+    "sources": [
+      "https://www.aiamigos.org/services/ai-for-kids/"
+    ],
+    "limitations": [
+      "Quarantined until a named subject-matter reviewer, dated primary sources, scope, and limitations are recorded."
+    ],
+    "tags": [],
+    "articleLike": false,
+    "wordCount": 428,
+    "importedFrom": "pages/services-ai-for-kids-74148dc2ae.html"
+  },
+  {
+    "id": "pages/services-ai-amigos-pro-0c53021bc9",
+    "slug": "services/ai-amigos-pro",
+    "title": "AI Amigos Business",
+    "description": "AI Amigos Pro: Leading in AI insights for professionals. Stay updated with advanced modules, industry impacts, expert articles, and hands-on workshops. Join us and thrive in the AI revolution! 🚀🌟",
+    "canonical": "https://www.aiamigos.org/services/ai-amigos-pro/",
+    "originalUrl": "https://www.aiamigos.org/services/ai-amigos-pro/",
+    "publishedAt": "2023-10-08",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "retire",
+    "disposition": "retire",
+    "redirectTo": null,
+    "sources": [
+      "https://www.aiamigos.org/services/ai-amigos-pro/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [],
+    "articleLike": false,
+    "wordCount": 373,
+    "importedFrom": "pages/services-ai-amigos-pro-0c53021bc9.html"
+  },
+  {
+    "id": "pages/services-ai-by-job-role-292a02aa06",
+    "slug": "services/ai-by-job-role",
+    "title": "AI by Job Role",
+    "description": "AI by Job Role: Tailored AI insights for every profession! From content editors to engineers, discover AI's impact in your field. Join our community, harness AI's potential, and lead in your domain. 🚀🌟",
+    "canonical": "https://www.aiamigos.org/services/ai-by-job-role/",
+    "originalUrl": "https://www.aiamigos.org/services/ai-by-job-role/",
+    "publishedAt": "2023-10-08",
+    "category": "careers",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "retire",
+    "disposition": "retire",
+    "redirectTo": null,
+    "sources": [
+      "https://www.aiamigos.org/services/ai-by-job-role/"
+    ],
+    "limitations": [
+      "Quarantined until a named subject-matter reviewer, dated primary sources, scope, and limitations are recorded."
+    ],
+    "tags": [],
+    "articleLike": false,
+    "wordCount": 453,
+    "importedFrom": "pages/services-ai-by-job-role-292a02aa06.html"
+  },
+  {
+    "id": "pages/services-ai-amigos-academy-13c06bbf36",
+    "slug": "services/ai-amigos-academy",
+    "title": "AI Amigos Academy",
+    "description": "\"AI Amigos Academy: Dive into AI with tailored lessons for high school & college students. Explore real-world applications, hands-on labs, and stay updated with AI trends.\"",
+    "canonical": "https://www.aiamigos.org/services/ai-amigos-academy/",
+    "originalUrl": "https://www.aiamigos.org/services/ai-amigos-academy/",
+    "publishedAt": "2023-10-08",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "retire",
+    "disposition": "retire",
+    "redirectTo": null,
+    "sources": [
+      "https://www.aiamigos.org/services/ai-amigos-academy/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [],
+    "articleLike": false,
+    "wordCount": 389,
+    "importedFrom": "pages/services-ai-amigos-academy-13c06bbf36.html"
+  },
+  {
+    "id": "pages/classes-recent-case-title-01-9b98cb91e2",
+    "slug": "classes/recent-case-title-01",
+    "title": "Recent Case Title 01",
+    "description": "Te obtinuit ut adepto satis somno. Aliisque institoribus iter deliciae vivet vita. Nam exempli gratia, quotiens ego vadam ad diversorum peregrinorum in mane",
+    "canonical": "https://www.aiamigos.org/classes/recent-case-title-01/",
+    "originalUrl": "https://www.aiamigos.org/classes/recent-case-title-01/",
+    "publishedAt": "2023-01-01",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "retire",
+    "disposition": "retire",
+    "redirectTo": null,
+    "sources": [
+      "https://www.aiamigos.org/classes/recent-case-title-01/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [],
+    "articleLike": false,
+    "wordCount": 173,
+    "importedFrom": "pages/classes-recent-case-title-01-9b98cb91e2.html"
+  },
+  {
+    "id": "pages/classes-recent-case-title-02-b111c94815",
+    "slug": "classes/recent-case-title-02",
+    "title": "Recent Case Title 02",
+    "description": "Te obtinuit ut adepto satis somno. Aliisque institoribus iter deliciae vivet vita. Nam exempli gratia, quotiens ego vadam ad diversorum peregrinorum in mane",
+    "canonical": "https://www.aiamigos.org/classes/recent-case-title-02/",
+    "originalUrl": "https://www.aiamigos.org/classes/recent-case-title-02/",
+    "publishedAt": "2023-01-01",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "retire",
+    "disposition": "retire",
+    "redirectTo": null,
+    "sources": [
+      "https://www.aiamigos.org/classes/recent-case-title-02/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [],
+    "articleLike": false,
+    "wordCount": 173,
+    "importedFrom": "pages/classes-recent-case-title-02-b111c94815.html"
+  },
+  {
+    "id": "pages/testimonials-client-name-01-0bc8ffe278",
+    "slug": "testimonials/client-name-01",
+    "title": "Client Name 01",
+    "description": "Te obtinuit ut adepto satis somno. Aliisque institoribus iter deliciae vivet vita. Nam exempli gratia, quotiens ego vadam ad diversorum peregrinorum in mane",
+    "canonical": "https://www.aiamigos.org/testimonials/client-name-01/",
+    "originalUrl": "https://www.aiamigos.org/testimonials/client-name-01/",
+    "publishedAt": "2023-01-01",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "retire",
+    "disposition": "retire",
+    "redirectTo": null,
+    "sources": [
+      "https://www.aiamigos.org/testimonials/client-name-01/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [],
+    "articleLike": false,
+    "wordCount": 156,
+    "importedFrom": "pages/testimonials-client-name-01-0bc8ffe278.html"
+  },
+  {
+    "id": "pages/testimonials-client-name-02-457cb3d884",
+    "slug": "testimonials/client-name-02",
+    "title": "Client Name 02",
+    "description": "Te obtinuit ut adepto satis somno. Aliisque institoribus iter deliciae vivet vita. Nam exempli gratia, quotiens ego vadam ad diversorum peregrinorum in mane",
+    "canonical": "https://www.aiamigos.org/testimonials/client-name-02/",
+    "originalUrl": "https://www.aiamigos.org/testimonials/client-name-02/",
+    "publishedAt": "2023-01-01",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "retire",
+    "disposition": "retire",
+    "redirectTo": null,
+    "sources": [
+      "https://www.aiamigos.org/testimonials/client-name-02/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [],
+    "articleLike": false,
+    "wordCount": 156,
+    "importedFrom": "pages/testimonials-client-name-02-457cb3d884.html"
+  },
+  {
+    "id": "pages/testimonials-client-name-03-a6fcb03eba",
+    "slug": "testimonials/client-name-03",
+    "title": "Client Name 03",
+    "description": "Te obtinuit ut adepto satis somno. Aliisque institoribus iter deliciae vivet vita. Nam exempli gratia, quotiens ego vadam ad diversorum peregrinorum in mane",
+    "canonical": "https://www.aiamigos.org/testimonials/client-name-03/",
+    "originalUrl": "https://www.aiamigos.org/testimonials/client-name-03/",
+    "publishedAt": "2023-01-01",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "retire",
+    "disposition": "retire",
+    "redirectTo": null,
+    "sources": [
+      "https://www.aiamigos.org/testimonials/client-name-03/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [],
+    "articleLike": false,
+    "wordCount": 156,
+    "importedFrom": "pages/testimonials-client-name-03-a6fcb03eba.html"
+  },
+  {
+    "id": "pages/team-member-name-01-95b84657c8",
+    "slug": "team/member-name-01",
+    "title": "Vijay Bhoyar",
+    "description": "AI Research Analyst & Content Generator",
+    "canonical": "https://www.aiamigos.org/team/member-name-01/",
+    "originalUrl": "https://www.aiamigos.org/team/member-name-01/",
+    "publishedAt": "2023-01-01",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "retire",
+    "disposition": "retire",
+    "redirectTo": null,
+    "sources": [
+      "https://www.aiamigos.org/team/member-name-01/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [],
+    "articleLike": false,
+    "wordCount": 129,
+    "importedFrom": "pages/team-member-name-01-95b84657c8.html"
+  },
+  {
+    "id": "pages/team-member-name-02-dde22a9cb2",
+    "slug": "team/member-name-02",
+    "title": "Member Name 02",
+    "description": "Te obtinuit ut adepto satis somno. Aliisque institoribus iter deliciae vivet vita. Nam exempli gratia, quotiens ego vadam ad diversorum peregrinorum in mane",
+    "canonical": "https://www.aiamigos.org/team/member-name-02/",
+    "originalUrl": "https://www.aiamigos.org/team/member-name-02/",
+    "publishedAt": "2023-01-01",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "retire",
+    "disposition": "retire",
+    "redirectTo": null,
+    "sources": [
+      "https://www.aiamigos.org/team/member-name-02/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [],
+    "articleLike": false,
+    "wordCount": 181,
+    "importedFrom": "pages/team-member-name-02-dde22a9cb2.html"
+  },
+  {
+    "id": "pages/team-member-name-03-33f364e973",
+    "slug": "team/member-name-03",
+    "title": "Member Name 03",
+    "description": "Te obtinuit ut adepto satis somno. Aliisque institoribus iter deliciae vivet vita. Nam exempli gratia, quotiens ego vadam ad diversorum peregrinorum in mane",
+    "canonical": "https://www.aiamigos.org/team/member-name-03/",
+    "originalUrl": "https://www.aiamigos.org/team/member-name-03/",
+    "publishedAt": "2023-01-01",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "retire",
+    "disposition": "retire",
+    "redirectTo": null,
+    "sources": [
+      "https://www.aiamigos.org/team/member-name-03/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [],
+    "articleLike": false,
+    "wordCount": 181,
+    "importedFrom": "pages/team-member-name-03-33f364e973.html"
+  },
+  {
+    "id": "pages/team-member-name-04-fb23e4b2a8",
+    "slug": "team/member-name-04",
+    "title": "Member Name 04",
+    "description": "Te obtinuit ut adepto satis somno. Aliisque institoribus iter deliciae vivet vita. Nam exempli gratia, quotiens ego vadam ad diversorum peregrinorum in mane",
+    "canonical": "https://www.aiamigos.org/team/member-name-04/",
+    "originalUrl": "https://www.aiamigos.org/team/member-name-04/",
+    "publishedAt": "2023-01-01",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "retire",
+    "disposition": "retire",
+    "redirectTo": null,
+    "sources": [
+      "https://www.aiamigos.org/team/member-name-04/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [],
+    "articleLike": false,
+    "wordCount": 181,
+    "importedFrom": "pages/team-member-name-04-fb23e4b2a8.html"
+  },
+  {
+    "id": "pages/category-blog-2ed5d207d4",
+    "slug": "category/blog",
+    "title": "Blog",
+    "description": "Your blog category",
+    "canonical": "https://www.aiamigos.org/category/blog/",
+    "originalUrl": "https://www.aiamigos.org/category/blog/",
+    "publishedAt": "2023-01-01",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "retire",
+    "disposition": "retire",
+    "redirectTo": null,
+    "sources": [
+      "https://www.aiamigos.org/category/blog/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [],
+    "articleLike": false,
+    "wordCount": 3,
+    "importedFrom": "pages/category-blog-2ed5d207d4.html"
+  },
+  {
+    "id": "pages/category-blog-professional-fb0204920b",
+    "slug": "category/blog/professional",
+    "title": "Professional",
+    "description": "Blogs for Professionals",
+    "canonical": "https://www.aiamigos.org/category/blog/professional/",
+    "originalUrl": "https://www.aiamigos.org/category/blog/professional/",
+    "publishedAt": "2023-01-01",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "retire",
+    "disposition": "retire",
+    "redirectTo": null,
+    "sources": [
+      "https://www.aiamigos.org/category/blog/professional/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [],
+    "articleLike": false,
+    "wordCount": 3,
+    "importedFrom": "pages/category-blog-professional-fb0204920b.html"
+  },
+  {
+    "id": "pages/category-blog-video-23edaf74f1",
+    "slug": "category/blog/video",
+    "title": "Video",
+    "description": "Professional , Blog , Video",
+    "canonical": "https://www.aiamigos.org/category/blog/video/",
+    "originalUrl": "https://www.aiamigos.org/category/blog/video/",
+    "publishedAt": "2023-01-01",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "retire",
+    "disposition": "retire",
+    "redirectTo": null,
+    "sources": [
+      "https://www.aiamigos.org/category/blog/video/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [],
+    "articleLike": false,
+    "wordCount": 5,
+    "importedFrom": "pages/category-blog-video-23edaf74f1.html"
+  },
+  {
+    "id": "pages/category-blog-everyone-1b96939567",
+    "slug": "category/blog/everyone",
+    "title": "Everyone",
+    "description": "Blog , Everyone",
+    "canonical": "https://www.aiamigos.org/category/blog/everyone/",
+    "originalUrl": "https://www.aiamigos.org/category/blog/everyone/",
+    "publishedAt": "2023-01-01",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "retire",
+    "disposition": "retire",
+    "redirectTo": null,
+    "sources": [
+      "https://www.aiamigos.org/category/blog/everyone/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [],
+    "articleLike": false,
+    "wordCount": 3,
+    "importedFrom": "pages/category-blog-everyone-1b96939567.html"
+  },
+  {
+    "id": "pages/category-technology-b70ab668b9",
+    "slug": "category/technology",
+    "title": "Technology",
+    "description": "Technology",
+    "canonical": "https://www.aiamigos.org/category/technology/",
+    "originalUrl": "https://www.aiamigos.org/category/technology/",
+    "publishedAt": "2023-01-01",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "retire",
+    "disposition": "retire",
+    "redirectTo": null,
+    "sources": [
+      "https://www.aiamigos.org/category/technology/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [],
+    "articleLike": false,
+    "wordCount": 1,
+    "importedFrom": "pages/category-technology-b70ab668b9.html"
+  },
+  {
+    "id": "pages/category-ai-algorithms-4a2df4d6c8",
+    "slug": "category/ai-algorithms",
+    "title": "AI Algorithms",
+    "description": "AI Algorithms",
+    "canonical": "https://www.aiamigos.org/category/ai-algorithms/",
+    "originalUrl": "https://www.aiamigos.org/category/ai-algorithms/",
+    "publishedAt": "2023-01-01",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "retire",
+    "disposition": "retire",
+    "redirectTo": null,
+    "sources": [
+      "https://www.aiamigos.org/category/ai-algorithms/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [],
+    "articleLike": false,
+    "wordCount": 2,
+    "importedFrom": "pages/category-ai-algorithms-4a2df4d6c8.html"
+  },
+  {
+    "id": "pages/category-artificial-intelligence-5ecfb7a6b6",
+    "slug": "category/artificial-intelligence",
+    "title": "Artificial Intelligence",
+    "description": "Artificial Intelligence",
+    "canonical": "https://www.aiamigos.org/category/artificial-intelligence/",
+    "originalUrl": "https://www.aiamigos.org/category/artificial-intelligence/",
+    "publishedAt": "2023-01-01",
+    "category": "foundations",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "retire",
+    "disposition": "retire",
+    "redirectTo": null,
+    "sources": [
+      "https://www.aiamigos.org/category/artificial-intelligence/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [],
+    "articleLike": false,
+    "wordCount": 2,
+    "importedFrom": "pages/category-artificial-intelligence-5ecfb7a6b6.html"
+  },
+  {
+    "id": "pages/category-ai-tools-e9ebd221df",
+    "slug": "category/ai-tools",
+    "title": "AI Tools",
+    "description": "AI Tools",
+    "canonical": "https://www.aiamigos.org/category/ai-tools/",
+    "originalUrl": "https://www.aiamigos.org/category/ai-tools/",
+    "publishedAt": "2023-01-01",
+    "category": "tools-and-models",
+    "audience": "professional",
+    "author": "AI Amigos Editorial Desk",
+    "status": "retire",
+    "disposition": "retire",
+    "redirectTo": null,
+    "sources": [
+      "https://www.aiamigos.org/category/ai-tools/"
+    ],
+    "limitations": [
+      "Imported from a public snapshot; claims require editorial verification before substantive update."
+    ],
+    "tags": [],
+    "articleLike": false,
+    "wordCount": 2,
+    "importedFrom": "pages/category-ai-tools-e9ebd221df.html"
+  }
+]

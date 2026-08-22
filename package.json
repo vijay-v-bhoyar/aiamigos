@@ -1,0 +1,24 @@
+{
+  "name": "aiamigos-static",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "content:check": "node scripts/check-content.mjs",
+    "content:import:legacy": "node scripts/import-snapshot.mjs",
+    "build": "astro build && pagefind --site dist",
+    "preview": "astro preview",
+    "test:unit": "node --test tests/*.test.mjs",
+    "test": "npm run test:unit && node scripts/verify-static-site.mjs",
+    "feeds:sync": "node scripts/sync-feeds.mjs",
+    "graph:update": "graphify update .",
+    "deploy:hostinger:prepare": "node scripts/prepare-hostinger-deploy.mjs",
+    "deploy:hostinger": "node scripts/deploy-hostinger.mjs"
+  },
+  "dependencies": {
+    "astro": "^7.2.4",
+    "pagefind": "^1.4.0",
+    "ssh2-sftp-client": "^12.0.1"
+  }
+}

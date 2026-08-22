@@ -1,0 +1,401 @@
+:root{
+  --white:#ffffff;
+  --black12:#121212;
+}
+/*-------------- media section ---------------*/
+@media screen and (max-width: 480px) and (min-width: 0px){
+  #slider h1{
+    display:none;
+  }
+  span.vw-sirat-slider-box-smallheading{
+    font-size:12px !important;
+    word-wrap: break-word;
+  }
+  #slider .slider-button-1, #slider .slider-button-2{
+    padding: 5px !important;
+    margin: 10px 0  !important;
+  }
+  .slider-box {
+    top: 12% !important;
+  }
+}
+@media screen and (max-width:575px){
+  #footer .recent-post-box{
+    display: inline-flex;
+  }
+/*#footer .recent-post-box .post-thumb{
+    position: relative;
+    left: 31%;
+  }*/
+.recent-post-box .post-content {
+    text-align: center;
+    margin: 5px 0 0 0!important;
+}
+#video .video-img1-box p {
+    width: 100%;
+}
+  .recent-post-box .col-8 {
+
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    /*left: 28px;*/
+}
+.team-btn a{
+  margin: 0 auto!important;
+    display: table!important;
+}
+#our-skills .skills-icon {
+ margin-bottom: 5px;
+}
+.email-cons {
+   float: none!important;
+}
+/*#footer .recent-post-box .post-thumb {
+    position: relative;
+    left: 0!important;
+}*/
+#footer .recent-post-box .post-content a {
+    position: relative;
+  /*  left: 0%!important; */
+}
+.recent-post-box .col-8{
+    width: 100%;
+}
+#footer .about_me table p {
+    font-size: 15px;
+}
+.sticky {
+    margin-top: -2px;
+}
+#our-services .our-services-box {
+ margin-bottom: 12px!important;
+}
+.contact-page-details .media-small{
+   margin-top: 15px;
+        text-align: center;
+ }
+ #footer .widget p {
+    margin: 0 0 0 10px;
+}
+
+#video .video-img2-box {
+    max-width: 91%!important;
+    }
+#our-team .our-team-head .section-button {
+    padding: 0 20px;
+}
+#our-team .our-team-head h2 {
+    font-size: 14px!important;
+}
+#video .video-text {
+    margin-top: 19px!important;
+}
+#pricing-plans .pricing-plans-head h2 {
+    font-size: 20px;
+    }
+    .slider-box {
+    margin: 0 25px!important;
+}
+#footer .widget_nav_menu ul {
+    /* margin-left: 0; */
+    margin: 0 auto;
+    display: inline-table;
+}
+}
+
+@media screen and (max-width:425px){
+#footer .recent-post-box{
+   display: inline-flex;
+  }
+  #video .video-img1-box p {
+    width: 100%;
+}
+.team-btn a{
+  margin: 0 auto;
+    display: table;
+}
+#our-skills .skills-icon {
+ margin-bottom: 5px;
+}
+.email-cons {
+   float: none!important;
+}
+#footer .recent-post-box .post-thumb{
+     /*   position: relative;
+    left: 9%;*/
+    margin: 0 auto;
+  }
+.recent-post-box .post-content{
+    text-align: center;
+  }
+  .recent-post-box .col-8 {
+    /* width: 100%; */
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    /*left: 28px;*/
+}
+/*******nnew*********/
+#footer .recent-post-box .post-content a {
+    position: relative;
+  /*  left: 0%!important; */
+}
+.recent-post-box .col-8{
+    width: 100%;
+}
+#footer .about_me table p {
+    font-size: 15px;
+}
+.sticky {
+    margin-top: -2px;
+}
+#our-services .our-services-box {
+     margin-top: 10px;
+}
+.contact-page-details .media-small{
+   margin-top: 15px;
+        text-align: center;
+ }
+ #footer .widget p {
+    margin: 0 0 0 10px;
+}
+#video .video-img2-box {
+    max-width: 91%!important;
+    }
+#our-team .our-team-head .section-button {
+    padding: 0 20px;
+}
+#our-team .our-team-head h2 {
+    font-size: 14px!important;
+}
+#video .video-text {
+    margin-top: 19px!important;
+}
+#pricing-plans .pricing-plans-head h2 {
+    font-size: 20px;
+    }
+    .slider-box {
+    margin: 0 25px!important;
+}
+#footer .widget_nav_menu ul {
+    /* margin-left: 0; */
+    margin: 0 auto;
+    display: inline-table;
+}
+
+}
+
+@media screen and (max-width:768px){
+#footer .widget_nav_menu ul {
+    margin-left: 0;
+    display: inline-table;
+}
+
+}
+
+
+@media screen and (max-width: 1024px) and (min-width: 768px){
+
+  .slider-box{
+    top:43% !important;
+    left: 34px !important;
+  }
+  #video .video-img2-box a{
+  margin: none!important;
+left: 322px;
+    right: 1px;
+}
+.email-cons {
+    float: none!important;
+}
+#contact-details .offset-md-3 {
+    margin-left: 13%;
+}
+
+}
+@media screen and (max-width: 575px) and (min-width: 768px){
+.email-cons {
+    float: none!important;
+}
+}
+
+@media screen and (max-width: 991px) and (min-width: 0px){
+  #site_top{
+    padding:12px 0 !important
+  }
+  #contact-details{
+    padding-top: 10px !important;
+    padding-bottom: 5px !important;
+  }
+  ul.left-side-content li{
+    display: block;
+  }
+  .blog-top,.testimonials-top-head,li.wrap-call,.aboutus-title,.our-service-title,.our-classes-title,.team-header,#our-skills .our-skills-head{
+    border:none;
+  }
+  #slider p,#slider ol.carousel-indicators{
+    display: none;
+  }
+  #our-team .our-team-head h2,#slider h1,#slider .slider-button-1, #slider .slider-button-2,.vw-sirat-slider-box-smallheading,p.getcontact, #contact-details h5{
+    font-size: 12px;
+  }
+  #slider .slider-button-1, #slider .slider-button-2,#testimonials .testimonials-box{
+    padding: 10px;
+    margin: 0;
+  }
+  .slider-box,#slider h1,#our-classes .our-classes-box,#testimonials .testimonials-box{
+    width: 100%;
+    max-width: 100%;
+  }
+  #about-us,#contact-details i, #contact-details span,p.getcontact,#about-us .about-us-img1-box,.box-text,#footer,#footer ul li,#newsletter,#our-blogs,#testimonials,#video .video-img1-box,#our-skills-and-video,#contact-details,.about-us-info,#our-services,#our-classes,#get-quote p,#get-quote .section-button,#our-team .our-team-head{
+    top:0;
+    text-align: center;
+  }
+  .slider-box{
+    top:27%;
+    border:none;
+  }
+  #video .video-img1-box{
+    display: block;
+  }
+  #testimonials .testimonials-content img,#about-us .about-us-img1-box span,#about-us .about-us-img2-box,#video .video-img1-box p,#video .video-img2-box{
+    position: unset;
+  }
+  #about-us .box-text span,#video .video-img1-box p{
+    writing-mode: horizontal-tb;
+    transform: unset;
+  }
+  .box-text {
+    margin-bottom: 3%;
+  }
+  section#about-us,#pricing-plans .pricing-plans-head{
+    padding-bottom: 0;
+  }
+  #footer .widget td,#video .video-text,#video .video-img2-box,#about-us .our-features .feature-icon,#about-us .about-us-img2-box,#our-blogs .section-button a,#our-services .services-icon,#our-classes .section-button a{
+    margin: 0 auto;
+  }
+  #testimonials .owl-stage-outer,#pricing-plans .plan-icon p{
+    padding:0;
+  }
+  #return-to-top.right{
+    right: 15%;
+  }
+  #contact-details:after,#partners-details:after{
+    content: none;
+  }
+  #site_top ul.left-side-content li{
+    padding: 0 !important;
+  }
+  #contact-details i, #contact-details span,#footer .widget td{
+    display: block;
+  }
+  .section-button{
+    margin-bottom: 2%;
+  }
+  #site_top .socialbox{
+    text-align: left;
+  }
+
+}
+@media screen and (max-width: 1024px){
+   #header .logo{
+    text-align:left !important;
+  }
+  .home .main-navigation ul{
+    border:none;
+  }
+  .headerbar {
+      display: block;
+      margin: 0;
+  }
+  .hamburger {
+      padding: 10px;
+  }
+  .main-header .side-navigation {
+      display: none
+  }
+  .side-navigation,.side-navigation li {
+      padding: 0;
+      display: block
+  }
+  .side-navigation ul li a {
+      padding: 10px;
+      display: block;
+      color: var(--white);
+      border-bottom: 1px solid var(--white);
+      background: 0 0!important;
+      text-align: left
+      font-size:14px;
+  }
+  amp-sidebar#sidebar1 {
+      background: var(--black12);
+      width: 250px
+  }
+  #sidebar1 {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 9999999;
+      top: 0;
+      left: 0;
+      overflow-x: hidden;
+      transition: .5s
+  }
+  .side-navigation ul li ul, .side-navigation ul li ul ul {
+      display: block !important;
+  }
+  .side-navigation ul ul {
+      background: transparent !important;
+  }
+  .side-navigation ul ul {
+      position: static;
+      width: 100%;
+      box-shadow: none;
+  }
+  .side-navigation ul ul li {
+      background: transparent !important;
+  }
+  .side-navigation ul ul li{
+      display: block;
+      padding-left: 5px;
+  }
+  .side-navigation ul.sub-menu li a:before{
+    content: none;
+  }
+  iframe {
+    width: 100%;
+    height: auto;
+  }
+  #site_top .socialbox a i{
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+  .side-navigation li {
+     padding: 15px 7px;
+  }
+  #slider h1{
+    font-size: 20px;
+  }
+  #slider .slider-button-1, #slider .slider-button-2{
+    margin-top: 0;
+  }
+  p.getcontact{
+    font-size: 15px;
+  }
+  #newsletter .socialbox i{
+    width: 32px;
+    height: 32px;
+    font-size: 12px;
+  }
+}
+/* ------------- Mozilla Style -------------- */
+@-moz-document url-prefix() {
+  .main-navigation ul{
+    text-align: left;
+  }
+  .main-navigation a{
+    font-size: 18px;
+  }
+}

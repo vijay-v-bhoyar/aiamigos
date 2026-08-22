@@ -1,0 +1,632 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-13T17:39:57.690Z",
+  "mode": "live",
+  "baseUrl": "https://remediation.aiamigos.org/",
+  "snapshotRoot": null,
+  "durationMs": 108252,
+  "result": "fail",
+  "summary": {
+    "checks": 15,
+    "pass": 9,
+    "fail": 4,
+    "skip": 2,
+    "sitemapUrls": 79,
+    "uniqueInternalTargets": 106
+  },
+  "checks": [
+    {
+      "id": "routing.root_home_blog",
+      "title": "Root, legacy home, and blog routing",
+      "severity": "critical",
+      "status": "pass",
+      "summary": "Primary routes are consolidated.",
+      "metrics": {
+        "rootStatus": 200,
+        "oldHomeInitialStatus": 301,
+        "oldHomeFinalStatus": 200,
+        "blogStatus": 200
+      },
+      "failures": [],
+      "notes": []
+    },
+    {
+      "id": "routing.quarantine",
+      "title": "Quarantine, redirect, and preserved-route policy",
+      "severity": "critical",
+      "status": "pass",
+      "summary": "Exact demo, quarantine, redirect, and preservation policy passes.",
+      "metrics": {
+        "configuredGone": 8,
+        "configuredQuarantined": 6,
+        "configuredPermanentRedirects": 1,
+        "configuredPreserved": 1,
+        "observed": 16,
+        "gone410": 8,
+        "healthyPermanentRedirects": 1
+      },
+      "failures": [],
+      "notes": []
+    },
+    {
+      "id": "security.registration_closed",
+      "title": "Public account registration is closed",
+      "severity": "critical",
+      "status": "pass",
+      "summary": "Anonymous registration is closed.",
+      "metrics": {
+        "observed": true,
+        "status": 200,
+        "finalUrl": "https://remediation.aiamigos.org/wp-login.php?registration=disabled"
+      },
+      "failures": [],
+      "notes": []
+    },
+    {
+      "id": "inventory.sitemaps",
+      "title": "Sitemap and indexable inventory",
+      "severity": "critical",
+      "status": "pass",
+      "summary": "79 sitemap URLs are clean.",
+      "metrics": {
+        "sitemapFiles": 6,
+        "sitemapUrls": 79,
+        "observedPages": 79,
+        "non200": 0,
+        "redirects": 0,
+        "noindex": 0,
+        "canonicalMismatch": 0
+      },
+      "failures": [],
+      "notes": []
+    },
+    {
+      "id": "archives.pagination",
+      "title": "Blog pager uniqueness and completeness",
+      "severity": "critical",
+      "status": "pass",
+      "summary": "Pager content is unique and complete.",
+      "metrics": {
+        "postsExposed": 65,
+        "postsMissing": 0,
+        "pagerPages": 7,
+        "postSitemapUrls": 65,
+        "expectedPagerPages": 6,
+        "legacyPagerUrlsObserved": 5
+      },
+      "failures": [],
+      "notes": []
+    },
+    {
+      "id": "links.internal_integrity",
+      "title": "Internal broken links and redirect waste",
+      "severity": "critical",
+      "status": "fail",
+      "summary": "Broken links or redirect waste remain.",
+      "metrics": {
+        "sourcePages": 80,
+        "uniqueInternalTargets": 106,
+        "discoveredArchivePagerTargets": 11,
+        "testedTargets": 117,
+        "unobservedTargets": 0,
+        "requestErrors": 0,
+        "brokenTargets": 4,
+        "redirectingTargets": 0,
+        "directNoncanonicalTargets": 0
+      },
+      "failures": [
+        {
+          "message": "Internal destination returned 404.",
+          "url": "https://remediation.aiamigos.org/services/",
+          "sourcePages": [
+            "https://remediation.aiamigos.org/"
+          ]
+        },
+        {
+          "message": "Internal destination returned 404.",
+          "url": "https://remediation.aiamigos.org/ai-books-for-kids/",
+          "sourcePages": [
+            "https://remediation.aiamigos.org/academy/"
+          ]
+        },
+        {
+          "message": "Internal destination returned 404.",
+          "url": "https://remediation.aiamigos.org/ai-tools-for-kids/",
+          "sourcePages": [
+            "https://remediation.aiamigos.org/academy/"
+          ]
+        },
+        {
+          "message": "Internal destination returned 404.",
+          "url": "https://remediation.aiamigos.org/classes/",
+          "sourcePages": [
+            "https://remediation.aiamigos.org/academy/"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "inventory.discovered_indexables",
+      "title": "Discovered indexable routes outside canonical inventory",
+      "severity": "high",
+      "status": "pass",
+      "summary": "No configured legacy/archive indexability leak was found.",
+      "metrics": {
+        "discoveredHtmlPages": 116,
+        "indexableOutsideSitemap": 6,
+        "disallowedIndexables": 0
+      },
+      "failures": [],
+      "notes": [
+        "Indexable pagination may legitimately sit outside XML sitemaps; only configured disallowed path classes fail this check."
+      ]
+    },
+    {
+      "id": "pages.metadata",
+      "title": "Metadata, canonicals, and social cards",
+      "severity": "high",
+      "status": "fail",
+      "summary": "Metadata remediation remains incomplete.",
+      "metrics": {
+        "pages": 79,
+        "missingTitles": 0,
+        "missingDescriptions": 1,
+        "longTitles": 0,
+        "longDescriptions": 0,
+        "incompleteOpenGraph": 1,
+        "incompleteTwitter": 1
+      },
+      "failures": [
+        {
+          "message": "Title is shorter than 10 characters.",
+          "url": "https://remediation.aiamigos.org/academy/",
+          "title": "Academy",
+          "length": 7
+        },
+        {
+          "message": "Title is shorter than 10 characters.",
+          "url": "https://remediation.aiamigos.org/ai-career/",
+          "title": "AI Career",
+          "length": 9
+        },
+        {
+          "message": "Meta description is shorter than 50 characters.",
+          "url": "https://remediation.aiamigos.org/newsletter/",
+          "length": 22
+        },
+        {
+          "message": "Title is shorter than 10 characters.",
+          "url": "https://remediation.aiamigos.org/about-us/",
+          "title": "About us",
+          "length": 8
+        },
+        {
+          "message": "Title is shorter than 10 characters.",
+          "url": "https://remediation.aiamigos.org/contact/",
+          "title": "Contact",
+          "length": 7
+        },
+        {
+          "message": "Title is shorter than 10 characters.",
+          "url": "https://remediation.aiamigos.org/faq/",
+          "title": "FAQ",
+          "length": 3
+        },
+        {
+          "message": "Title is shorter than 10 characters.",
+          "url": "https://remediation.aiamigos.org/page/",
+          "title": "Mission",
+          "length": 7
+        },
+        {
+          "message": "Missing meta description.",
+          "url": "https://remediation.aiamigos.org/team/member-name-01/"
+        },
+        {
+          "message": "Core Open Graph fields are incomplete.",
+          "url": "https://remediation.aiamigos.org/team/member-name-01/",
+          "og": {
+            "title": "Vijay Bhoyar",
+            "description": null,
+            "image": "https://remediation.aiamigos.org/wp-content/uploads/2023/10/logo.png",
+            "url": "https://remediation.aiamigos.org/team/member-name-01/"
+          }
+        },
+        {
+          "message": "Core Twitter card fields are incomplete.",
+          "url": "https://remediation.aiamigos.org/team/member-name-01/",
+          "twitter": {
+            "title": "Vijay Bhoyar",
+            "description": null,
+            "image": "https://remediation.aiamigos.org/wp-content/uploads/2023/10/logo.png",
+            "card": "summary_large_image"
+          }
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "pages.headings",
+      "title": "Heading structure",
+      "severity": "high",
+      "status": "fail",
+      "summary": "Heading defects remain.",
+      "metrics": {
+        "pages": 79,
+        "missingOrMultipleH1": 0,
+        "pagesWithBlankHeadings": 0,
+        "pagesWithLevelSkips": 1
+      },
+      "failures": [
+        {
+          "message": "Heading levels skip hierarchy.",
+          "url": "https://remediation.aiamigos.org/",
+          "skips": [
+            {
+              "from": 3,
+              "to": 5,
+              "text": "A Comprehensive Guide to NVIDIA MONAI: Unlocking AI in Medical Imaging A Comprehensive Guide to NVIDIA MONAI: Unlocking AI in Medical Imaging"
+            }
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "pages.jsonld",
+      "title": "JSON-LD syntax and identity hygiene",
+      "severity": "high",
+      "status": "pass",
+      "summary": "JSON-LD is parseable and avoids placeholder people.",
+      "metrics": {
+        "pages": 79,
+        "missingJsonLd": 0,
+        "parseErrorPages": 0,
+        "placeholderPersonPages": 0
+      },
+      "failures": [],
+      "notes": []
+    },
+    {
+      "id": "content.leaks",
+      "title": "Shortcode, demo-copy, and placeholder leaks",
+      "severity": "critical",
+      "status": "pass",
+      "summary": "No configured content leak was found.",
+      "metrics": {
+        "pages": 79,
+        "hits": 0,
+        "affectedPages": 0,
+        "knownDemoPaths": 0,
+        "pagesWithoutMainLandmark": 2,
+        "countsByPattern": {
+          "raw_mailpoet_shortcode": 0,
+          "theme_latin_demo_copy": 0,
+          "placeholder_client_name": 0,
+          "placeholder_member_name": 0,
+          "placeholder_case_title": 0,
+          "placeholder_company_token": 0,
+          "placeholder_service_url": 0,
+          "misspelled_linkedin": 0
+        }
+      },
+      "failures": [],
+      "notes": []
+    },
+    {
+      "id": "resources.http_references",
+      "title": "Explicit HTTP references",
+      "severity": "medium",
+      "status": "fail",
+      "summary": "Mixed-scheme references remain.",
+      "metrics": {
+        "pages": 79,
+        "affectedPages": 1,
+        "references": 5,
+        "uniqueReferences": 5
+      },
+      "failures": [
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://remediation.aiamigos.org/text-to-video-software/",
+          "reference": "http://Designs.ai"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://remediation.aiamigos.org/text-to-video-software/",
+          "reference": "http://Elai.io"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://remediation.aiamigos.org/text-to-video-software/",
+          "reference": "http://Kaiber.ai"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://remediation.aiamigos.org/text-to-video-software/",
+          "reference": "http://Rephrase.ai"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://remediation.aiamigos.org/text-to-video-software/",
+          "reference": "http://VEED.IO"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "responses.headers",
+      "title": "Response security and cache headers",
+      "severity": "medium",
+      "status": "pass",
+      "summary": "Configured response-header baseline passes.",
+      "metrics": {
+        "pages": 79,
+        "missingByHeader": {
+          "strict-transport-security": 0,
+          "x-content-type-options": 0,
+          "referrer-policy": 0,
+          "permissions-policy": 0
+        },
+        "missingFrameProtection": 0,
+        "missingCacheControl": 0,
+        "poweredByExposed": 0
+      },
+      "failures": [],
+      "notes": []
+    },
+    {
+      "id": "browser.runtime",
+      "title": "Rendered console and runtime health",
+      "severity": "high",
+      "status": "skip",
+      "summary": "Rendered runtime was not observed.",
+      "metrics": {
+        "pages": 0,
+        "exceptions": 0,
+        "consoleErrors": 0,
+        "logErrors": 0,
+        "networkFailures": 0
+      },
+      "failures": [],
+      "notes": [
+        "Browser probing disabled by CLI."
+      ]
+    },
+    {
+      "id": "performance.budgets",
+      "title": "HTML and rendered transfer budgets",
+      "severity": "high",
+      "status": "skip",
+      "summary": "Only static performance budgets were observable.",
+      "metrics": {
+        "staticPages": [
+          {
+            "url": "https://remediation.aiamigos.org/",
+            "status": 200,
+            "htmlBytes": 130997,
+            "scripts": 17,
+            "elements": 641
+          },
+          {
+            "url": "https://remediation.aiamigos.org/blog/",
+            "status": 200,
+            "htmlBytes": 121335,
+            "scripts": 17,
+            "elements": 492
+          },
+          {
+            "url": "https://remediation.aiamigos.org/blog/page/2/",
+            "status": 200,
+            "htmlBytes": 121893,
+            "scripts": 17,
+            "elements": 496
+          }
+        ],
+        "rejectedStaticPages": [],
+        "browserPages": [],
+        "budgets": {
+          "htmlBytes": 250000,
+          "totalTransferBytes": 3000000,
+          "imageTransferBytes": 1500000,
+          "scriptTransferBytes": 750000,
+          "resourceCount": 80,
+          "scriptCount": 20,
+          "domNodes": 1500,
+          "horizontalOverflowPx": 0
+        }
+      },
+      "failures": [],
+      "notes": [
+        "Transfer-byte and rendered-DOM budgets require live browser observation; static HTML checks still ran."
+      ]
+    }
+  ],
+  "evidence": {
+    "robots": {
+      "url": "https://remediation.aiamigos.org/robots.txt",
+      "status": 200,
+      "observed": true
+    },
+    "sitemaps": [
+      {
+        "url": "https://remediation.aiamigos.org/sitemap_index.xml",
+        "status": 200,
+        "locationCount": 6,
+        "kind": "index"
+      },
+      {
+        "url": "https://remediation.aiamigos.org/sitemap.xml",
+        "status": 200,
+        "locationCount": 6,
+        "kind": "index"
+      },
+      {
+        "url": "https://remediation.aiamigos.org/wp-sitemap.xml",
+        "status": 200,
+        "locationCount": 6,
+        "kind": "index"
+      },
+      {
+        "url": "https://remediation.aiamigos.org/post-sitemap.xml",
+        "status": 200,
+        "locationCount": 65,
+        "kind": "urlset"
+      },
+      {
+        "url": "https://remediation.aiamigos.org/page-sitemap.xml",
+        "status": 200,
+        "locationCount": 13,
+        "kind": "urlset"
+      },
+      {
+        "url": "https://remediation.aiamigos.org/team-sitemap.xml",
+        "status": 200,
+        "locationCount": 1,
+        "kind": "urlset"
+      }
+    ],
+    "browser": {
+      "skipped": true,
+      "reason": "Browser probing disabled by CLI."
+    },
+    "limitations": [
+      "This is a deterministic lab crawl, not Search Console, field Core Web Vitals, analytics, or legal validation."
+    ]
+  },
+  "config": {
+    "routes": {
+      "root": "/",
+      "oldHome": "/home/",
+      "blog": "/blog/",
+      "legacyPageTwo": "/page/2/"
+    },
+    "routePolicies": {
+      "gonePaths": [
+        "/classes/recent-case-title-01/",
+        "/classes/recent-case-title-02/",
+        "/testimonials/client-name-01/",
+        "/testimonials/client-name-02/",
+        "/testimonials/client-name-03/",
+        "/team/member-name-02/",
+        "/team/member-name-03/",
+        "/team/member-name-04/"
+      ],
+      "quarantinedPaths": [
+        "/ai-certifications/",
+        "/gpt-models/",
+        "/grokai/",
+        "/ai-model-benchmarks-a-comprehensive-guide/",
+        "/others/",
+        "/shop/"
+      ],
+      "permanentRedirects": {
+        "/newsletter-2/": "/newsletter/"
+      },
+      "preservedPaths": [
+        "/team/member-name-01/"
+      ],
+      "registrationPath": "/wp-login.php?action=register"
+    },
+    "concurrency": 10,
+    "timeoutMs": 20000,
+    "maxSitemaps": 50,
+    "maxSitemapUrls": 1000,
+    "maxInternalTargets": 500,
+    "internalProbeSeedLimit": 30,
+    "maxPagerPages": 50,
+    "detailLimit": 50,
+    "expectedBrandPattern": "AI\\s*Amigos",
+    "genericRootTitlePattern": "^(?:blog|home|welcome)$",
+    "metadata": {
+      "titleMin": 10,
+      "titleMax": 60,
+      "descriptionMin": 50,
+      "descriptionMax": 160,
+      "requireSocialImages": true
+    },
+    "headings": {
+      "maxHeadingWords": 60,
+      "disallowLevelSkips": true
+    },
+    "performance": {
+      "htmlBytes": 250000,
+      "totalTransferBytes": 3000000,
+      "imageTransferBytes": 1500000,
+      "scriptTransferBytes": 750000,
+      "resourceCount": 80,
+      "scriptCount": 20,
+      "domNodes": 1500,
+      "horizontalOverflowPx": 0
+    },
+    "browser": {
+      "settleMs": 2000,
+      "width": 390,
+      "height": 844,
+      "deviceScaleFactor": 1,
+      "mobile": true,
+      "maxPages": 3
+    },
+    "requiredHeaders": [
+      "strict-transport-security",
+      "x-content-type-options",
+      "referrer-policy",
+      "permissions-policy"
+    ],
+    "requireFrameProtection": true,
+    "requireHtmlCachePolicy": true,
+    "forbidPoweredBy": true,
+    "disallowedIndexablePathPatterns": [
+      "^/author/",
+      "^/page/[2-9][0-9]*/?$",
+      "^/category/blog(?:/page/[2-9][0-9]*)?/?$"
+    ],
+    "placeholderPatterns": [
+      {
+        "id": "raw_mailpoet_shortcode",
+        "pattern": "\\[mailpoet_form\\b[^\\]]*\\]",
+        "flags": "i",
+        "scope": "body"
+      },
+      {
+        "id": "theme_latin_demo_copy",
+        "pattern": "Te obtinuit ut adepto satis somno",
+        "flags": "i"
+      },
+      {
+        "id": "placeholder_client_name",
+        "pattern": "\\bClient Name \\d{1,2}\\b",
+        "flags": "i",
+        "scope": "body"
+      },
+      {
+        "id": "placeholder_member_name",
+        "pattern": "\\bMember Name \\d{1,2}\\b",
+        "flags": "i",
+        "scope": "body"
+      },
+      {
+        "id": "placeholder_case_title",
+        "pattern": "\\bRecent Case Title \\d{1,2}\\b",
+        "flags": "i",
+        "scope": "body"
+      },
+      {
+        "id": "placeholder_company_token",
+        "pattern": "\\[Your Company Name(?:/AIAmigos\\.org)?\\]",
+        "flags": "i"
+      },
+      {
+        "id": "placeholder_service_url",
+        "pattern": "\\bService Url\\b",
+        "flags": "i"
+      },
+      {
+        "id": "misspelled_linkedin",
+        "pattern": "\\bLinkden\\b",
+        "flags": "i"
+      }
+    ]
+  }
+}

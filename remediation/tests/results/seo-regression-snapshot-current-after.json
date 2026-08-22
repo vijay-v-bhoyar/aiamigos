@@ -1,0 +1,4164 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-13T22:45:34.021Z",
+  "mode": "snapshot",
+  "baseUrl": "https://www.aiamigos.org/",
+  "cacheBypass": "not-applicable",
+  "snapshotRoot": "C:\\Users\\vijay\\OneDrive\\EB1A Evidence\\aiamigos\\public-site-snapshot",
+  "durationMs": 751,
+  "result": "fail",
+  "summary": {
+    "checks": 21,
+    "pass": 1,
+    "fail": 16,
+    "skip": 4,
+    "sitemapUrls": 114,
+    "uniqueInternalTargets": 173
+  },
+  "checks": [
+    {
+      "id": "routing.root_home_blog",
+      "title": "Root, legacy home, and blog routing",
+      "severity": "critical",
+      "status": "fail",
+      "summary": "Primary route consolidation is incomplete.",
+      "metrics": {
+        "rootStatus": 200,
+        "oldHomeInitialStatus": 200,
+        "oldHomeFinalStatus": 200,
+        "blogStatus": null
+      },
+      "failures": [
+        {
+          "message": "Root still uses generic title 'Blog'.",
+          "url": "https://www.aiamigos.org/"
+        },
+        {
+          "message": "Root metadata/headings do not expose the configured brand pattern.",
+          "url": "https://www.aiamigos.org/"
+        },
+        {
+          "message": "Legacy home redirect failed: Initial response is not a permanent 301/308 redirect.",
+          "url": "https://www.aiamigos.org/home/",
+          "expectedFinal": "https://www.aiamigos.org/",
+          "finalUrl": "https://www.aiamigos.org/home/",
+          "finalStatus": 200,
+          "chain": [
+            {
+              "url": "https://www.aiamigos.org/home/",
+              "status": 200,
+              "location": null
+            }
+          ],
+          "code": "not_permanent"
+        },
+        {
+          "message": "Legacy home redirect failed: Redirect resolved to the wrong final URL.",
+          "url": "https://www.aiamigos.org/home/",
+          "expectedFinal": "https://www.aiamigos.org/",
+          "finalUrl": "https://www.aiamigos.org/home/",
+          "finalStatus": 200,
+          "chain": [
+            {
+              "url": "https://www.aiamigos.org/home/",
+              "status": 200,
+              "location": null
+            }
+          ],
+          "code": "wrong_destination"
+        },
+        {
+          "message": "Configured /blog/ archive is missing or not 200.",
+          "url": "https://www.aiamigos.org/blog/",
+          "status": null
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "routing.quarantine",
+      "title": "Quarantine, redirect, and preserved-route policy",
+      "severity": "critical",
+      "status": "fail",
+      "summary": "Exact gone, quarantine, unpublished, redirect, or preservation rules failed.",
+      "metrics": {
+        "configuredGone": 28,
+        "configuredQuarantined": 4,
+        "configuredUnpublished": 0,
+        "configuredPermanentRedirects": 0,
+        "configuredPreserved": 1,
+        "observed": 33,
+        "gone410": 0,
+        "unpublished404Or410": 0,
+        "healthyPermanentRedirects": 0
+      },
+      "failures": [
+        {
+          "message": "Known gone route must return a direct 410 without redirecting.",
+          "url": "https://www.aiamigos.org/classes/recent-case-title-01/",
+          "status": 200,
+          "finalUrl": "https://www.aiamigos.org/classes/recent-case-title-01/",
+          "redirectCount": 0
+        },
+        {
+          "message": "Known gone route must return a direct 410 without redirecting.",
+          "url": "https://www.aiamigos.org/classes/recent-case-title-02/",
+          "status": 200,
+          "finalUrl": "https://www.aiamigos.org/classes/recent-case-title-02/",
+          "redirectCount": 0
+        },
+        {
+          "message": "Known gone route must return a direct 410 without redirecting.",
+          "url": "https://www.aiamigos.org/testimonials/client-name-01/",
+          "status": 200,
+          "finalUrl": "https://www.aiamigos.org/testimonials/client-name-01/",
+          "redirectCount": 0
+        },
+        {
+          "message": "Known gone route must return a direct 410 without redirecting.",
+          "url": "https://www.aiamigos.org/testimonials/client-name-02/",
+          "status": 200,
+          "finalUrl": "https://www.aiamigos.org/testimonials/client-name-02/",
+          "redirectCount": 0
+        },
+        {
+          "message": "Known gone route must return a direct 410 without redirecting.",
+          "url": "https://www.aiamigos.org/testimonials/client-name-03/",
+          "status": 200,
+          "finalUrl": "https://www.aiamigos.org/testimonials/client-name-03/",
+          "redirectCount": 0
+        },
+        {
+          "message": "Known gone route must return a direct 410 without redirecting.",
+          "url": "https://www.aiamigos.org/team/member-name-02/",
+          "status": 200,
+          "finalUrl": "https://www.aiamigos.org/team/member-name-02/",
+          "redirectCount": 0
+        },
+        {
+          "message": "Known gone route must return a direct 410 without redirecting.",
+          "url": "https://www.aiamigos.org/team/member-name-03/",
+          "status": 200,
+          "finalUrl": "https://www.aiamigos.org/team/member-name-03/",
+          "redirectCount": 0
+        },
+        {
+          "message": "Known gone route must return a direct 410 without redirecting.",
+          "url": "https://www.aiamigos.org/team/member-name-04/",
+          "status": 200,
+          "finalUrl": "https://www.aiamigos.org/team/member-name-04/",
+          "redirectCount": 0
+        },
+        {
+          "message": "Known gone route must return a direct 410 without redirecting.",
+          "url": "https://www.aiamigos.org/services/ai-amigos-academy/",
+          "status": 200,
+          "finalUrl": "https://www.aiamigos.org/services/ai-amigos-academy/",
+          "redirectCount": 0
+        },
+        {
+          "message": "Known gone route must return a direct 410 without redirecting.",
+          "url": "https://www.aiamigos.org/services/ai-amigos-pro/",
+          "status": 200,
+          "finalUrl": "https://www.aiamigos.org/services/ai-amigos-pro/",
+          "redirectCount": 0
+        },
+        {
+          "message": "Known gone route must return a direct 410 without redirecting.",
+          "url": "https://www.aiamigos.org/services/ai-by-job-role/",
+          "status": 200,
+          "finalUrl": "https://www.aiamigos.org/services/ai-by-job-role/",
+          "redirectCount": 0
+        },
+        {
+          "message": "Known gone route must return a direct 410 without redirecting.",
+          "url": "https://www.aiamigos.org/services/ai-for-kids/",
+          "status": 200,
+          "finalUrl": "https://www.aiamigos.org/services/ai-for-kids/",
+          "redirectCount": 0
+        },
+        {
+          "message": "Known gone route must return a direct 410 without redirecting.",
+          "url": "https://www.aiamigos.org/ai-certifications/",
+          "status": 200,
+          "finalUrl": "https://www.aiamigos.org/ai-certifications/",
+          "redirectCount": 0
+        },
+        {
+          "message": "Known gone route must return a direct 410 without redirecting.",
+          "url": "https://www.aiamigos.org/gpt-models/",
+          "status": 200,
+          "finalUrl": "https://www.aiamigos.org/gpt-models/",
+          "redirectCount": 0
+        },
+        {
+          "message": "Known gone route must return a direct 410 without redirecting.",
+          "url": "https://www.aiamigos.org/grokai/",
+          "status": 200,
+          "finalUrl": "https://www.aiamigos.org/grokai/",
+          "redirectCount": 0
+        },
+        {
+          "message": "Known gone route must return a direct 410 without redirecting.",
+          "url": "https://www.aiamigos.org/ai-model-benchmarks-a-comprehensive-guide/",
+          "status": 200,
+          "finalUrl": "https://www.aiamigos.org/ai-model-benchmarks-a-comprehensive-guide/",
+          "redirectCount": 0
+        },
+        {
+          "message": "Known gone route must return a direct 410 without redirecting.",
+          "url": "https://www.aiamigos.org/others/",
+          "status": 200,
+          "finalUrl": "https://www.aiamigos.org/others/",
+          "redirectCount": 0
+        },
+        {
+          "message": "Known gone route must return a direct 410 without redirecting.",
+          "url": "https://www.aiamigos.org/shop/",
+          "status": 200,
+          "finalUrl": "https://www.aiamigos.org/shop/",
+          "redirectCount": 0
+        },
+        {
+          "message": "Known gone route must return a direct 410 without redirecting.",
+          "url": "https://www.aiamigos.org/langgraph-5-stunning-secrets-for-building-a-generative-ai-application/",
+          "status": 200,
+          "finalUrl": "https://www.aiamigos.org/langgraph-5-stunning-secrets-for-building-a-generative-ai-application/",
+          "redirectCount": 0
+        },
+        {
+          "message": "Known gone route must return a direct 410 without redirecting.",
+          "url": "https://www.aiamigos.org/ways-to-test-a-rag-architecture-based-generative-ai-application/",
+          "status": 200,
+          "finalUrl": "https://www.aiamigos.org/ways-to-test-a-rag-architecture-based-generative-ai-application/",
+          "redirectCount": 0
+        },
+        {
+          "message": "Known gone route must return a direct 410 without redirecting.",
+          "url": "https://www.aiamigos.org/building-agentic-ai-saas-a-strategic-roadmap-using-google-gemini-enterprise/",
+          "status": 200,
+          "finalUrl": "https://www.aiamigos.org/building-agentic-ai-saas-a-strategic-roadmap-using-google-gemini-enterprise/",
+          "redirectCount": 0
+        },
+        {
+          "message": "Known gone route must return a direct 410 without redirecting.",
+          "url": "https://www.aiamigos.org/custom-gpt-models/",
+          "status": 200,
+          "finalUrl": "https://www.aiamigos.org/custom-gpt-models/",
+          "redirectCount": 0
+        },
+        {
+          "message": "Known gone route must return a direct 410 without redirecting.",
+          "url": "https://www.aiamigos.org/services/",
+          "status": 200,
+          "finalUrl": "https://www.aiamigos.org/services/",
+          "redirectCount": 0
+        },
+        {
+          "message": "Known gone route must return a direct 410 without redirecting.",
+          "url": "https://www.aiamigos.org/classes/",
+          "status": 200,
+          "finalUrl": "https://www.aiamigos.org/classes/",
+          "redirectCount": 0
+        },
+        {
+          "message": "Known gone route must return a direct 410 without redirecting.",
+          "url": "https://www.aiamigos.org/ai-tools-for-kids/",
+          "status": 200,
+          "finalUrl": "https://www.aiamigos.org/ai-tools-for-kids/",
+          "redirectCount": 0
+        },
+        {
+          "message": "Known gone route must return a direct 410 without redirecting.",
+          "url": "https://www.aiamigos.org/ai-books-for-kids/",
+          "status": 200,
+          "finalUrl": "https://www.aiamigos.org/ai-books-for-kids/",
+          "redirectCount": 0
+        },
+        {
+          "message": "Known gone route must return a direct 410 without redirecting.",
+          "url": "https://www.aiamigos.org/newsletter/",
+          "status": 200,
+          "finalUrl": "https://www.aiamigos.org/newsletter/",
+          "redirectCount": 0
+        },
+        {
+          "message": "Known gone route must return a direct 410 without redirecting.",
+          "url": "https://www.aiamigos.org/newsletter-2/",
+          "status": 200,
+          "finalUrl": "https://www.aiamigos.org/newsletter-2/",
+          "redirectCount": 0
+        },
+        {
+          "message": "Readable quarantined route remains indexable or its noindex state could not be proven.",
+          "url": "https://www.aiamigos.org/privacy-policy-2/",
+          "status": 200,
+          "finalUrl": "https://www.aiamigos.org/privacy-policy-2/",
+          "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+          "code": "missing_noindex"
+        },
+        {
+          "message": "Readable quarantined route remains indexable or its noindex state could not be proven.",
+          "url": "https://www.aiamigos.org/page/",
+          "status": 200,
+          "finalUrl": "https://www.aiamigos.org/page/",
+          "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+          "code": "missing_noindex"
+        },
+        {
+          "message": "Readable quarantined route remains indexable or its noindex state could not be proven.",
+          "url": "https://www.aiamigos.org/academy/",
+          "status": 200,
+          "finalUrl": "https://www.aiamigos.org/academy/",
+          "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+          "code": "missing_noindex"
+        },
+        {
+          "message": "Readable quarantined route remains indexable or its noindex state could not be proven.",
+          "url": "https://www.aiamigos.org/ai-career/",
+          "status": 200,
+          "finalUrl": "https://www.aiamigos.org/ai-career/",
+          "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+          "code": "missing_noindex"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "feeds.quarantine",
+      "title": "Bare and cache-busted feed quarantine",
+      "severity": "critical",
+      "status": "skip",
+      "summary": "Feed quarantine was not observable in this evidence source.",
+      "metrics": {
+        "configuredFeeds": 5,
+        "expectedVariants": 10,
+        "observedVariants": 0,
+        "bareVariants": 0,
+        "cacheBustedVariants": 0,
+        "forbiddenHits": 0,
+        "feeds": []
+      },
+      "failures": [],
+      "notes": [
+        "Feed variants require live responses and are not inferred from an HTML snapshot."
+      ]
+    },
+    {
+      "id": "security.registration_closed",
+      "title": "Public account registration is closed",
+      "severity": "critical",
+      "status": "skip",
+      "summary": "Registration was not observable.",
+      "metrics": {
+        "observed": false,
+        "status": null,
+        "finalUrl": "https://www.aiamigos.org/wp-login.php?action=register"
+      },
+      "failures": [],
+      "notes": [
+        "The registration endpoint is not present in the selected snapshot."
+      ]
+    },
+    {
+      "id": "inventory.sitemaps",
+      "title": "Sitemap and indexable inventory",
+      "severity": "critical",
+      "status": "pass",
+      "summary": "114 sitemap URLs are clean.",
+      "metrics": {
+        "sitemapFiles": 8,
+        "sitemapUrls": 114,
+        "observedPages": 114,
+        "non200": 0,
+        "redirects": 0,
+        "noindex": 0,
+        "canonicalMismatch": 0
+      },
+      "failures": [],
+      "notes": []
+    },
+    {
+      "id": "archives.pagination",
+      "title": "Blog pager uniqueness and completeness",
+      "severity": "critical",
+      "status": "fail",
+      "summary": "Pager routing, uniqueness, or completeness failed.",
+      "metrics": {
+        "pagerPages": 0,
+        "discoveredPagerNumbers": [],
+        "postSitemapUrls": 71,
+        "expectedPagerPages": 2,
+        "legacyPagerProbeThrough": 2,
+        "legacyPagerUrlsObserved": 0
+      },
+      "failures": [
+        {
+          "message": "Discovered blog pager has a numeric gap.",
+          "missingPages": [
+            1
+          ]
+        }
+      ],
+      "notes": [
+        "The configured /blog/ route and its pager were not captured in this pre-remediation snapshot; pager uniqueness/completeness is unproven offline.",
+        "Legacy root pager behavior is not present in the offline snapshot."
+      ]
+    },
+    {
+      "id": "links.internal_integrity",
+      "title": "Internal broken links and redirect waste",
+      "severity": "critical",
+      "status": "fail",
+      "summary": "Broken links or redirect waste remain.",
+      "metrics": {
+        "sourcePages": 114,
+        "uniqueInternalTargets": 173,
+        "discoveredArchivePagerTargets": 0,
+        "testedTargets": 114,
+        "unobservedTargets": 59,
+        "requestErrors": 0,
+        "brokenTargets": 0,
+        "redirectingTargets": 0,
+        "directNoncanonicalTargets": 36
+      },
+      "failures": [
+        {
+          "message": "Internal link points at a noncanonical scheme, host, or /index.php/ route.",
+          "url": "https://aiamigos.org/",
+          "sourcePages": [
+            "https://www.aiamigos.org/hello-world/",
+            "https://www.aiamigos.org/ai-app-development/",
+            "https://www.aiamigos.org/blog-2/",
+            "https://www.aiamigos.org/artificial-intelligence-ai/",
+            "https://www.aiamigos.org/blog-4/",
+            "https://www.aiamigos.org/latest-blog-title-01/",
+            "https://www.aiamigos.org/ai-jobs-whats-the-real-deal-%f0%9f%8c%8d/",
+            "https://www.aiamigos.org/ai-ethics-for-everyday-folks-the-stuff-you-gotta-know-%f0%9f%a4%96%f0%9f%94%8d/",
+            "https://www.aiamigos.org/ai-in-healthcare/",
+            "https://www.aiamigos.org/ai-in-finance/"
+          ],
+          "rawHrefs": [
+            "https://aiamigos.org/"
+          ]
+        },
+        {
+          "message": "Internal link points at a noncanonical scheme, host, or /index.php/ route.",
+          "url": "https://aiamigos.org/index.php/blog/",
+          "sourcePages": [
+            "https://www.aiamigos.org/hello-world/",
+            "https://www.aiamigos.org/ai-app-development/",
+            "https://www.aiamigos.org/blog-2/",
+            "https://www.aiamigos.org/artificial-intelligence-ai/",
+            "https://www.aiamigos.org/blog-4/",
+            "https://www.aiamigos.org/latest-blog-title-01/",
+            "https://www.aiamigos.org/ai-jobs-whats-the-real-deal-%f0%9f%8c%8d/",
+            "https://www.aiamigos.org/ai-ethics-for-everyday-folks-the-stuff-you-gotta-know-%f0%9f%a4%96%f0%9f%94%8d/",
+            "https://www.aiamigos.org/ai-in-healthcare/",
+            "https://www.aiamigos.org/ai-in-finance/"
+          ],
+          "rawHrefs": [
+            "https://aiamigos.org/index.php/blog/"
+          ]
+        },
+        {
+          "message": "Internal link points at a noncanonical scheme, host, or /index.php/ route.",
+          "url": "https://aiamigos.org/index.php/contact/",
+          "sourcePages": [
+            "https://www.aiamigos.org/hello-world/",
+            "https://www.aiamigos.org/ai-app-development/",
+            "https://www.aiamigos.org/blog-2/",
+            "https://www.aiamigos.org/artificial-intelligence-ai/",
+            "https://www.aiamigos.org/blog-4/",
+            "https://www.aiamigos.org/latest-blog-title-01/",
+            "https://www.aiamigos.org/ai-jobs-whats-the-real-deal-%f0%9f%8c%8d/",
+            "https://www.aiamigos.org/ai-ethics-for-everyday-folks-the-stuff-you-gotta-know-%f0%9f%a4%96%f0%9f%94%8d/",
+            "https://www.aiamigos.org/ai-in-healthcare/",
+            "https://www.aiamigos.org/ai-in-finance/"
+          ],
+          "rawHrefs": [
+            "https://aiamigos.org/index.php/contact/"
+          ]
+        },
+        {
+          "message": "Internal link points at a noncanonical scheme, host, or /index.php/ route.",
+          "url": "https://aiamigos.org/machine-learning/",
+          "sourcePages": [
+            "https://www.aiamigos.org/artificial-intelligence-ai/",
+            "https://www.aiamigos.org/ai-evolution/",
+            "https://www.aiamigos.org/generative-ai-solutions/"
+          ],
+          "rawHrefs": [
+            "https://aiamigos.org/machine-learning/"
+          ]
+        },
+        {
+          "message": "Internal link points at a noncanonical scheme, host, or /index.php/ route.",
+          "url": "https://aiamigos.org/the-magical-world-of-ai-from-baby-steps-to-quantum-leaps/",
+          "sourcePages": [
+            "https://www.aiamigos.org/artificial-intelligence-ai/",
+            "https://www.aiamigos.org/ai-in-healthcare/",
+            "https://www.aiamigos.org/ai-in-finance/",
+            "https://www.aiamigos.org/co-evolving-ai/",
+            "https://www.aiamigos.org/gpt-models/",
+            "https://www.aiamigos.org/ais-dawn-revolutionizing-the-digital-realm/",
+            "https://www.aiamigos.org/text-to-video-software/",
+            "https://www.aiamigos.org/ai-data-types-models/",
+            "https://www.aiamigos.org/generative-ai-solutions/",
+            "https://www.aiamigos.org/large-language-model/"
+          ],
+          "rawHrefs": [
+            "https://aiamigos.org/the-magical-world-of-ai-from-baby-steps-to-quantum-leaps/"
+          ]
+        },
+        {
+          "message": "Internal link points at a noncanonical scheme, host, or /index.php/ route.",
+          "url": "https://aiamigos.org/large-language-model/",
+          "sourcePages": [
+            "https://www.aiamigos.org/artificial-intelligence-ai/",
+            "https://www.aiamigos.org/quantum-ai/",
+            "https://www.aiamigos.org/gpt-models/",
+            "https://www.aiamigos.org/prompt-engineering/"
+          ],
+          "rawHrefs": [
+            "https://aiamigos.org/large-language-model/"
+          ]
+        },
+        {
+          "message": "Internal link points at a noncanonical scheme, host, or /index.php/ route.",
+          "url": "https://aiamigos.org/prompt-engineering/",
+          "sourcePages": [
+            "https://www.aiamigos.org/artificial-intelligence-ai/",
+            "https://www.aiamigos.org/prompt-design-and-engineering/"
+          ],
+          "rawHrefs": [
+            "https://aiamigos.org/prompt-engineering/"
+          ]
+        },
+        {
+          "message": "Internal link points at a noncanonical scheme, host, or /index.php/ route.",
+          "url": "https://aiamigos.org/ai-rule-based-systems/",
+          "sourcePages": [
+            "https://www.aiamigos.org/ai-evolution/"
+          ],
+          "rawHrefs": [
+            "https://aiamigos.org/ai-rule-based-systems/"
+          ]
+        },
+        {
+          "message": "Internal link points at a noncanonical scheme, host, or /index.php/ route.",
+          "url": "https://aiamigos.org/deep-learning-ai/",
+          "sourcePages": [
+            "https://www.aiamigos.org/ai-evolution/",
+            "https://www.aiamigos.org/generative-ai-solutions/"
+          ],
+          "rawHrefs": [
+            "https://aiamigos.org/deep-learning-ai/"
+          ]
+        },
+        {
+          "message": "Internal link points at a noncanonical scheme, host, or /index.php/ route.",
+          "url": "https://aiamigos.org/general-ai/",
+          "sourcePages": [
+            "https://www.aiamigos.org/ai-evolution/"
+          ],
+          "rawHrefs": [
+            "https://aiamigos.org/general-ai/"
+          ]
+        },
+        {
+          "message": "Internal link points at a noncanonical scheme, host, or /index.php/ route.",
+          "url": "https://aiamigos.org/superintelligent-ai/",
+          "sourcePages": [
+            "https://www.aiamigos.org/ai-evolution/"
+          ],
+          "rawHrefs": [
+            "https://aiamigos.org/superintelligent-ai/"
+          ]
+        },
+        {
+          "message": "Internal link points at a noncanonical scheme, host, or /index.php/ route.",
+          "url": "https://aiamigos.org/adaptive-ai/",
+          "sourcePages": [
+            "https://www.aiamigos.org/ai-evolution/"
+          ],
+          "rawHrefs": [
+            "https://aiamigos.org/adaptive-ai/"
+          ]
+        },
+        {
+          "message": "Internal link points at a noncanonical scheme, host, or /index.php/ route.",
+          "url": "https://aiamigos.org/emotional-ai/",
+          "sourcePages": [
+            "https://www.aiamigos.org/ai-evolution/"
+          ],
+          "rawHrefs": [
+            "https://aiamigos.org/emotional-ai/"
+          ]
+        },
+        {
+          "message": "Internal link points at a noncanonical scheme, host, or /index.php/ route.",
+          "url": "https://aiamigos.org/creative-ai/",
+          "sourcePages": [
+            "https://www.aiamigos.org/ai-evolution/"
+          ],
+          "rawHrefs": [
+            "https://aiamigos.org/creative-ai/"
+          ]
+        },
+        {
+          "message": "Internal link points at a noncanonical scheme, host, or /index.php/ route.",
+          "url": "https://aiamigos.org/self-aware-ai/",
+          "sourcePages": [
+            "https://www.aiamigos.org/ai-evolution/"
+          ],
+          "rawHrefs": [
+            "https://aiamigos.org/self-aware-ai/"
+          ]
+        },
+        {
+          "message": "Internal link points at a noncanonical scheme, host, or /index.php/ route.",
+          "url": "https://aiamigos.org/co-evolving-ai/",
+          "sourcePages": [
+            "https://www.aiamigos.org/ai-evolution/"
+          ],
+          "rawHrefs": [
+            "https://aiamigos.org/co-evolving-ai/"
+          ]
+        },
+        {
+          "message": "Internal link points at a noncanonical scheme, host, or /index.php/ route.",
+          "url": "https://aiamigos.org/decentralized-ai/",
+          "sourcePages": [
+            "https://www.aiamigos.org/ai-evolution/"
+          ],
+          "rawHrefs": [
+            "https://aiamigos.org/decentralized-ai/"
+          ]
+        },
+        {
+          "message": "Internal link points at a noncanonical scheme, host, or /index.php/ route.",
+          "url": "https://aiamigos.org/ethical-ai/",
+          "sourcePages": [
+            "https://www.aiamigos.org/ai-evolution/"
+          ],
+          "rawHrefs": [
+            "https://aiamigos.org/ethical-ai/"
+          ]
+        },
+        {
+          "message": "Internal link points at a noncanonical scheme, host, or /index.php/ route.",
+          "url": "https://aiamigos.org/quantum-ai/",
+          "sourcePages": [
+            "https://www.aiamigos.org/ai-evolution/"
+          ],
+          "rawHrefs": [
+            "https://aiamigos.org/quantum-ai/"
+          ]
+        },
+        {
+          "message": "Internal link points at a noncanonical scheme, host, or /index.php/ route.",
+          "url": "https://aiamigos.org/blog-4/",
+          "sourcePages": [
+            "https://www.aiamigos.org/ai-rule-based-systems/"
+          ],
+          "rawHrefs": [
+            "https://aiamigos.org/blog-4/"
+          ]
+        },
+        {
+          "message": "Internal link points at a noncanonical scheme, host, or /index.php/ route.",
+          "url": "https://aiamigos.org/machine-learning-engineer/",
+          "sourcePages": [
+            "https://www.aiamigos.org/machine-learning/",
+            "https://www.aiamigos.org/ai-career-paths/"
+          ],
+          "rawHrefs": [
+            "https://aiamigos.org/machine-learning-engineer/"
+          ]
+        },
+        {
+          "message": "Internal link points at a noncanonical scheme, host, or /index.php/ route.",
+          "url": "https://aiamigos.org/generative-ai-solutions/",
+          "sourcePages": [
+            "https://www.aiamigos.org/deep-learning-ai/",
+            "https://www.aiamigos.org/general-ai/",
+            "https://www.aiamigos.org/superintelligent-ai/",
+            "https://www.aiamigos.org/adaptive-ai/",
+            "https://www.aiamigos.org/emotional-ai/",
+            "https://www.aiamigos.org/creative-ai/",
+            "https://www.aiamigos.org/self-aware-ai/",
+            "https://www.aiamigos.org/co-evolving-ai/",
+            "https://www.aiamigos.org/decentralized-ai/",
+            "https://www.aiamigos.org/data-gen-ai/"
+          ],
+          "rawHrefs": [
+            "https://aiamigos.org/generative-ai-solutions/"
+          ]
+        },
+        {
+          "message": "Internal link points at a noncanonical scheme, host, or /index.php/ route.",
+          "url": "https://aiamigos.org/ai-evolution/",
+          "sourcePages": [
+            "https://www.aiamigos.org/ethical-ai/",
+            "https://www.aiamigos.org/quantum-ai/",
+            "https://www.aiamigos.org/ai-companies-top-100/",
+            "https://www.aiamigos.org/ai-pin-technology-and-its-5-main-benefits/",
+            "https://www.aiamigos.org/custom-gpt-models/",
+            "https://www.aiamigos.org/career-in-ai/"
+          ],
+          "rawHrefs": [
+            "https://aiamigos.org/ai-evolution/"
+          ]
+        },
+        {
+          "message": "Internal link points at a noncanonical scheme, host, or /index.php/ route.",
+          "url": "https://aiamigos.org/latest-blog-title-01/",
+          "sourcePages": [
+            "https://www.aiamigos.org/ais-dawn-revolutionizing-the-digital-realm/"
+          ],
+          "rawHrefs": [
+            "https://aiamigos.org/latest-blog-title-01/"
+          ]
+        },
+        {
+          "message": "Internal link points at a noncanonical scheme, host, or /index.php/ route.",
+          "url": "https://aiamigos.org/AI-app-development",
+          "sourcePages": [
+            "https://www.aiamigos.org/prompt-engineering/"
+          ],
+          "rawHrefs": [
+            "https://aiamigos.org/AI-app-development"
+          ]
+        },
+        {
+          "message": "Internal link points at a noncanonical scheme, host, or /index.php/ route.",
+          "url": "https://aiamigos.org/data-gen-ai/",
+          "sourcePages": [
+            "https://www.aiamigos.org/ai-data-types-models/"
+          ],
+          "rawHrefs": [
+            "https://aiamigos.org/data-gen-ai/"
+          ]
+        },
+        {
+          "message": "Internal link points at a noncanonical scheme, host, or /index.php/ route.",
+          "url": "https://aiamigos.org/gpt-models/",
+          "sourcePages": [
+            "https://www.aiamigos.org/grokai/"
+          ],
+          "rawHrefs": [
+            "https://aiamigos.org/gpt-models/"
+          ]
+        },
+        {
+          "message": "Internal link points at a noncanonical scheme, host, or /index.php/ route.",
+          "url": "https://aiamigos.org/artificial-intelligence-ai/",
+          "sourcePages": [
+            "https://www.aiamigos.org/ai-companies-top-100/"
+          ],
+          "rawHrefs": [
+            "https://aiamigos.org/artificial-intelligence-ai/"
+          ]
+        },
+        {
+          "message": "Internal link points at a noncanonical scheme, host, or /index.php/ route.",
+          "url": "https://aiamigos.org/grokai/",
+          "sourcePages": [
+            "https://www.aiamigos.org/custom-gpt-models/"
+          ],
+          "rawHrefs": [
+            "https://aiamigos.org/grokai/"
+          ]
+        },
+        {
+          "message": "Internal link points at a noncanonical scheme, host, or /index.php/ route.",
+          "url": "https://aiamigos.org/ai-tools-for-kids/",
+          "sourcePages": [
+            "https://www.aiamigos.org/ai-books-for-kids/"
+          ],
+          "rawHrefs": [
+            "https://aiamigos.org/ai-tools-for-kids/"
+          ]
+        },
+        {
+          "message": "Internal link points at a noncanonical scheme, host, or /index.php/ route.",
+          "url": "https://aiamigos.org/services/",
+          "sourcePages": [
+            "https://www.aiamigos.org/home/"
+          ],
+          "rawHrefs": [
+            "https://aiamigos.org/services/"
+          ]
+        },
+        {
+          "message": "Internal link points at a noncanonical scheme, host, or /index.php/ route.",
+          "url": "https://aiamigos.org/ai-career-path/",
+          "sourcePages": [
+            "https://www.aiamigos.org/ai-career/"
+          ],
+          "rawHrefs": [
+            "https://aiamigos.org/ai-career-path/"
+          ]
+        },
+        {
+          "message": "Internal link points at a noncanonical scheme, host, or /index.php/ route.",
+          "url": "https://aiamigos.org/ai-certifications/",
+          "sourcePages": [
+            "https://www.aiamigos.org/ai-career/"
+          ],
+          "rawHrefs": [
+            "https://aiamigos.org/ai-certifications/"
+          ]
+        },
+        {
+          "message": "Internal link points at a noncanonical scheme, host, or /index.php/ route.",
+          "url": "https://aiamigos.org/ai-career-faq/",
+          "sourcePages": [
+            "https://www.aiamigos.org/ai-career/"
+          ],
+          "rawHrefs": [
+            "https://aiamigos.org/ai-career-faq/"
+          ]
+        },
+        {
+          "message": "Internal link points at a noncanonical scheme, host, or /index.php/ route.",
+          "url": "https://aiamigos.org/career-in-ai/",
+          "sourcePages": [
+            "https://www.aiamigos.org/ai-career/"
+          ],
+          "rawHrefs": [
+            "https://aiamigos.org/career-in-ai/"
+          ]
+        },
+        {
+          "message": "Internal link points at a noncanonical scheme, host, or /index.php/ route.",
+          "url": "https://aiamigos.org/ai-books-for-kids/",
+          "sourcePages": [
+            "https://www.aiamigos.org/ai-tools-for-kids/"
+          ],
+          "rawHrefs": [
+            "https://aiamigos.org/ai-books-for-kids/"
+          ]
+        }
+      ],
+      "notes": [
+        "59 internal destination(s) were not captured in the offline snapshot; their status/redirect behavior remains unproven."
+      ]
+    },
+    {
+      "id": "inventory.discovered_indexables",
+      "title": "Discovered indexable routes outside canonical inventory",
+      "severity": "high",
+      "status": "fail",
+      "summary": "Legacy or redundant archives remain indexable.",
+      "metrics": {
+        "discoveredHtmlPages": 114,
+        "indexableOutsideSitemap": 0,
+        "disallowedIndexables": 8
+      },
+      "failures": [
+        {
+          "message": "Disallowed archive/legacy path is indexable.",
+          "url": "https://www.aiamigos.org/category/blog/",
+          "canonical": "https://www.aiamigos.org/category/blog/",
+          "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+        },
+        {
+          "message": "Disallowed archive/legacy path is indexable.",
+          "url": "https://www.aiamigos.org/category/blog/professional/",
+          "canonical": "https://www.aiamigos.org/category/blog/professional/",
+          "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+        },
+        {
+          "message": "Disallowed archive/legacy path is indexable.",
+          "url": "https://www.aiamigos.org/category/blog/video/",
+          "canonical": "https://www.aiamigos.org/category/blog/video/",
+          "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+        },
+        {
+          "message": "Disallowed archive/legacy path is indexable.",
+          "url": "https://www.aiamigos.org/category/blog/everyone/",
+          "canonical": "https://www.aiamigos.org/category/blog/everyone/",
+          "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+        },
+        {
+          "message": "Disallowed archive/legacy path is indexable.",
+          "url": "https://www.aiamigos.org/category/technology/",
+          "canonical": "https://www.aiamigos.org/category/technology/",
+          "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+        },
+        {
+          "message": "Disallowed archive/legacy path is indexable.",
+          "url": "https://www.aiamigos.org/category/ai-algorithms/",
+          "canonical": "https://www.aiamigos.org/category/ai-algorithms/",
+          "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+        },
+        {
+          "message": "Disallowed archive/legacy path is indexable.",
+          "url": "https://www.aiamigos.org/category/artificial-intelligence/",
+          "canonical": "https://www.aiamigos.org/category/artificial-intelligence/",
+          "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+        },
+        {
+          "message": "Disallowed archive/legacy path is indexable.",
+          "url": "https://www.aiamigos.org/category/ai-tools/",
+          "canonical": "https://www.aiamigos.org/category/ai-tools/",
+          "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+        }
+      ],
+      "notes": [
+        "Indexable pagination may legitimately sit outside XML sitemaps; only configured disallowed path classes fail this check."
+      ]
+    },
+    {
+      "id": "pages.metadata",
+      "title": "Metadata, canonicals, and social cards",
+      "severity": "high",
+      "status": "fail",
+      "summary": "Metadata remediation remains incomplete.",
+      "metrics": {
+        "pages": 114,
+        "missingTitles": 0,
+        "missingDescriptions": 12,
+        "invalidDescriptionTagCounts": 12,
+        "invalidOpenGraphDescriptionTagCounts": 11,
+        "invalidTwitterDescriptionTagCounts": 11,
+        "longTitles": 38,
+        "longDescriptions": 50,
+        "incompleteOpenGraph": 26,
+        "incompleteTwitter": 27
+      },
+      "failures": [
+        {
+          "message": "Meta description is shorter than 50 characters.",
+          "url": "https://www.aiamigos.org/hello-world/",
+          "length": 26
+        },
+        {
+          "message": "Title exceeds 60 characters.",
+          "url": "https://www.aiamigos.org/ai-app-development/",
+          "title": "Unraveling the Code: Your Journey to Becoming an AI App Maestro with Prompts",
+          "length": 76
+        },
+        {
+          "message": "Meta description exceeds 160 characters.",
+          "url": "https://www.aiamigos.org/ai-app-development/",
+          "length": 257
+        },
+        {
+          "message": "Title exceeds 60 characters.",
+          "url": "https://www.aiamigos.org/artificial-intelligence-ai/",
+          "title": "Artificial Intelligence (AI): 5 Essential Insights to Easily Grasp its Wonders",
+          "length": 78
+        },
+        {
+          "message": "Title exceeds 60 characters.",
+          "url": "https://www.aiamigos.org/latest-blog-title-01/",
+          "title": "Demystifying Artificial Intelligence (AI): How Does It Shape Our World?\"",
+          "length": 72
+        },
+        {
+          "message": "Title exceeds 60 characters.",
+          "url": "https://www.aiamigos.org/ai-in-healthcare/",
+          "title": "AI in Healthcare: 14 Inspiring Stories Fueling the Positive Medical Revolution",
+          "length": 78
+        },
+        {
+          "message": "Title exceeds 60 characters.",
+          "url": "https://www.aiamigos.org/ai-in-finance/",
+          "title": "AI in Finance: 11 Revolutionary Changes Reshaping Banking & Investments",
+          "length": 71
+        },
+        {
+          "message": "Meta description exceeds 160 characters.",
+          "url": "https://www.aiamigos.org/ai-in-finance/",
+          "length": 1084
+        },
+        {
+          "message": "Title exceeds 60 characters.",
+          "url": "https://www.aiamigos.org/unboxing-ai-the-retail-revolution-behind-your-shopping-spree/",
+          "title": "Unboxing AI: The Retail Revolution Behind Your Shopping Spree!",
+          "length": 62
+        },
+        {
+          "message": "Meta description is shorter than 50 characters.",
+          "url": "https://www.aiamigos.org/unboxing-ai-the-retail-revolution-behind-your-shopping-spree/",
+          "length": 44
+        },
+        {
+          "message": "Meta description is shorter than 50 characters.",
+          "url": "https://www.aiamigos.org/crafting-the-future-ais-role-in-modern-manufacturing/",
+          "length": 47
+        },
+        {
+          "message": "Title exceeds 60 characters.",
+          "url": "https://www.aiamigos.org/the-blog-publishing-checklist-ensuring-your-content-doesnt-go-oops/",
+          "title": "\"The Blog Publishing Checklist: Ensuring Your Content Doesn't Go 'Oops!'\"",
+          "length": 73
+        },
+        {
+          "message": "Meta description is shorter than 50 characters.",
+          "url": "https://www.aiamigos.org/the-blog-publishing-checklist-ensuring-your-content-doesnt-go-oops/",
+          "length": 13
+        },
+        {
+          "message": "Meta description is shorter than 50 characters.",
+          "url": "https://www.aiamigos.org/unlocking-ai-magic-in-entertainment-a-light-hearted-guide/",
+          "length": 47
+        },
+        {
+          "message": "Meta description is shorter than 50 characters.",
+          "url": "https://www.aiamigos.org/the-future-on-wheels-how-ai-is-steering-the-world-of-transportation-%f0%9f%9a%97%f0%9f%92%a8/",
+          "length": 44
+        },
+        {
+          "message": "Title exceeds 60 characters.",
+          "url": "https://www.aiamigos.org/ai-evolution/",
+          "title": "AI Evolution: 13 Breakthrough Stages from Rule-Based Systems to Quantum Wonders",
+          "length": 79
+        },
+        {
+          "message": "Title exceeds 60 characters.",
+          "url": "https://www.aiamigos.org/ai-rule-based-systems/",
+          "title": "\"Demystifying AI Rule-Based Systems: A Deep Dive into the Heart of Classic AI\"",
+          "length": 78
+        },
+        {
+          "message": "Meta description exceeds 160 characters.",
+          "url": "https://www.aiamigos.org/ai-rule-based-systems/",
+          "length": 193
+        },
+        {
+          "message": "Title exceeds 60 characters.",
+          "url": "https://www.aiamigos.org/machine-learning/",
+          "title": "Machine Learning (ML) Explored: An Adventure into Tech's Cutting-Edge",
+          "length": 69
+        },
+        {
+          "message": "Meta description exceeds 160 characters.",
+          "url": "https://www.aiamigos.org/machine-learning/",
+          "length": 165
+        },
+        {
+          "message": "Title exceeds 60 characters.",
+          "url": "https://www.aiamigos.org/deep-learning-ai/",
+          "title": "Deep Learning (DL): Deep Dive into AI's Unraveling Tech Wonders in Everyday Moments",
+          "length": 83
+        },
+        {
+          "message": "Meta description exceeds 160 characters.",
+          "url": "https://www.aiamigos.org/deep-learning-ai/",
+          "length": 242
+        },
+        {
+          "message": "Title exceeds 60 characters.",
+          "url": "https://www.aiamigos.org/general-ai/",
+          "title": "General AI Unveiled: Embracing the Dance of Digital Dreams & Intelligence",
+          "length": 73
+        },
+        {
+          "message": "Meta description exceeds 160 characters.",
+          "url": "https://www.aiamigos.org/general-ai/",
+          "length": 352
+        },
+        {
+          "message": "Title exceeds 60 characters.",
+          "url": "https://www.aiamigos.org/superintelligent-ai/",
+          "title": "\"Navigating the Neural Nebula of Superintelligent AI: Beyond Imagination\"",
+          "length": 73
+        },
+        {
+          "message": "Meta description exceeds 160 characters.",
+          "url": "https://www.aiamigos.org/superintelligent-ai/",
+          "length": 212
+        },
+        {
+          "message": "Meta description exceeds 160 characters.",
+          "url": "https://www.aiamigos.org/adaptive-ai/",
+          "length": 162
+        },
+        {
+          "message": "Meta description exceeds 160 characters.",
+          "url": "https://www.aiamigos.org/emotional-ai/",
+          "length": 169
+        },
+        {
+          "message": "Title exceeds 60 characters.",
+          "url": "https://www.aiamigos.org/self-aware-ai/",
+          "title": "Self-Aware AI: The Next Evolutionary Leap in Artificial Intelligence",
+          "length": 68
+        },
+        {
+          "message": "Meta description exceeds 160 characters.",
+          "url": "https://www.aiamigos.org/self-aware-ai/",
+          "length": 351
+        },
+        {
+          "message": "Title exceeds 60 characters.",
+          "url": "https://www.aiamigos.org/co-evolving-ai/",
+          "title": "Co-evolving AI: The Future of Harmonious Human-Machine Partnerships",
+          "length": 67
+        },
+        {
+          "message": "Meta description exceeds 160 characters.",
+          "url": "https://www.aiamigos.org/co-evolving-ai/",
+          "length": 163
+        },
+        {
+          "message": "Title exceeds 60 characters.",
+          "url": "https://www.aiamigos.org/decentralized-ai/",
+          "title": "Decentralized AI: Revolutionizing Data Privacy on the Blockchain",
+          "length": 64
+        },
+        {
+          "message": "Meta description exceeds 160 characters.",
+          "url": "https://www.aiamigos.org/decentralized-ai/",
+          "length": 293
+        },
+        {
+          "message": "Meta description exceeds 160 characters.",
+          "url": "https://www.aiamigos.org/ethical-ai/",
+          "length": 478
+        },
+        {
+          "message": "Title exceeds 60 characters.",
+          "url": "https://www.aiamigos.org/quantum-ai/",
+          "title": "Quantum AI: 13 Breakthrough Moments Where Physics Fuels Smart Innovation!",
+          "length": 73
+        },
+        {
+          "message": "Meta description exceeds 160 characters.",
+          "url": "https://www.aiamigos.org/quantum-ai/",
+          "length": 165
+        },
+        {
+          "message": "Title exceeds 60 characters.",
+          "url": "https://www.aiamigos.org/gpt-models/",
+          "title": "GPT Models: 7 Groundbreaking Applications Transforming the Text Generation Landscape",
+          "length": 84
+        },
+        {
+          "message": "Meta description exceeds 160 characters.",
+          "url": "https://www.aiamigos.org/gpt-models/",
+          "length": 210
+        },
+        {
+          "message": "Title exceeds 60 characters.",
+          "url": "https://www.aiamigos.org/ais-dawn-revolutionizing-the-digital-realm/",
+          "title": "AI's Digital Transformation: Shaping Daily Realms with Unique Zeal and Empowering Change",
+          "length": 88
+        },
+        {
+          "message": "Title exceeds 60 characters.",
+          "url": "https://www.aiamigos.org/prompt-engineering/",
+          "title": "Prompt Engineering: 5 Key Strategies to Unlock AI's Powerful Potential",
+          "length": 70
+        },
+        {
+          "message": "Meta description exceeds 160 characters.",
+          "url": "https://www.aiamigos.org/prompt-engineering/",
+          "length": 286
+        },
+        {
+          "message": "Meta description exceeds 160 characters.",
+          "url": "https://www.aiamigos.org/text-to-video-software/",
+          "length": 190
+        },
+        {
+          "message": "Title exceeds 60 characters.",
+          "url": "https://www.aiamigos.org/generative-ai-solutions/",
+          "title": "Generative AI Solutions: 12 Steps to Unleash Powerful, Innovative Tech",
+          "length": 70
+        },
+        {
+          "message": "Title exceeds 60 characters.",
+          "url": "https://www.aiamigos.org/large-language-model/",
+          "title": "Large Language Model (LLM) Secrets: 10 Astonishing Ways AI Enhances Work",
+          "length": 72
+        },
+        {
+          "message": "Meta description exceeds 160 characters.",
+          "url": "https://www.aiamigos.org/large-language-model/",
+          "length": 774
+        },
+        {
+          "message": "Title exceeds 60 characters.",
+          "url": "https://www.aiamigos.org/grokai/",
+          "title": "GrokAI Unveiled: 5 Revolutionary Benefits of Custom AI for Your Business Growth",
+          "length": 79
+        },
+        {
+          "message": "Meta description exceeds 160 characters.",
+          "url": "https://www.aiamigos.org/grokai/",
+          "length": 327
+        },
+        {
+          "message": "Title exceeds 60 characters.",
+          "url": "https://www.aiamigos.org/prompt-design-and-engineering/",
+          "title": "Prompt Design and Engineering: 3 Essential Distinctions for Effective AI Development",
+          "length": 84
+        },
+        {
+          "message": "Meta description exceeds 160 characters.",
+          "url": "https://www.aiamigos.org/prompt-design-and-engineering/",
+          "length": 481
+        }
+      ],
+      "notes": [
+        "167 additional failure detail(s) omitted; see metrics for totals."
+      ]
+    },
+    {
+      "id": "pages.social_images",
+      "title": "Social image resources and approved 1200x630 fallback",
+      "severity": "high",
+      "status": "fail",
+      "summary": "Social image delivery or fallback approval remains incomplete.",
+      "metrics": {
+        "pages": 114,
+        "references": 177,
+        "uniqueReferencedImages": 88,
+        "invalidHttpsReferences": 0,
+        "fetchedImages": 0,
+        "sharedAcrossPages": 1,
+        "fallback": {
+          "url": "https://www.aiamigos.org/wp-content/uploads/2023/10/cropped-logo-5.png",
+          "observed": false,
+          "approvalStatus": "pending"
+        },
+        "images": []
+      },
+      "failures": [
+        {
+          "message": "The 1200x630 fallback social card has no explicit approved status.",
+          "url": "https://www.aiamigos.org/wp-content/uploads/2023/10/cropped-logo-5.png",
+          "code": "not_approved",
+          "actual": null,
+          "expected": null
+        },
+        {
+          "message": "Fallback approval is missing sha256.",
+          "url": "https://www.aiamigos.org/wp-content/uploads/2023/10/cropped-logo-5.png",
+          "code": "missing_sha256",
+          "actual": null,
+          "expected": null
+        },
+        {
+          "message": "Fallback approval is missing approvedBy.",
+          "url": "https://www.aiamigos.org/wp-content/uploads/2023/10/cropped-logo-5.png",
+          "code": "missing_approvedBy",
+          "actual": null,
+          "expected": null
+        },
+        {
+          "message": "Fallback approval is missing approvedAt.",
+          "url": "https://www.aiamigos.org/wp-content/uploads/2023/10/cropped-logo-5.png",
+          "code": "missing_approvedAt",
+          "actual": null,
+          "expected": null
+        },
+        {
+          "message": "Fallback approval is missing evidenceId.",
+          "url": "https://www.aiamigos.org/wp-content/uploads/2023/10/cropped-logo-5.png",
+          "code": "missing_evidenceId",
+          "actual": null,
+          "expected": null
+        }
+      ],
+      "notes": [
+        "Social image status, Content-Type, bytes, hash, and intrinsic dimensions require live binary responses and are not inferred from HTML snapshots.",
+        "A single approved fallback may be shared by many pages; this gate does not require page-specific or unique imagery.",
+        "Approval requires an exact 1200x630 asset, pinned SHA-256, named approver, date, and evidence ID; HTTP success alone is not brand approval or platform-preview proof."
+      ]
+    },
+    {
+      "id": "pages.headings",
+      "title": "Heading structure",
+      "severity": "high",
+      "status": "fail",
+      "summary": "Heading defects remain.",
+      "metrics": {
+        "pages": 114,
+        "missingOrMultipleH1": 4,
+        "pagesWithBlankHeadings": 8,
+        "pagesWithLevelSkips": 24
+      },
+      "failures": [
+        {
+          "message": "Heading levels skip hierarchy.",
+          "url": "https://www.aiamigos.org/latest-blog-title-01/",
+          "skips": [
+            {
+              "from": 3,
+              "to": 5,
+              "text": "Why This Matters?"
+            }
+          ]
+        },
+        {
+          "message": "Blank heading elements remain.",
+          "url": "https://www.aiamigos.org/creative-ai/",
+          "count": 1
+        },
+        {
+          "message": "Blank heading elements remain.",
+          "url": "https://www.aiamigos.org/ais-dawn-revolutionizing-the-digital-realm/",
+          "count": 1
+        },
+        {
+          "message": "Blank heading elements remain.",
+          "url": "https://www.aiamigos.org/large-language-model/",
+          "count": 1
+        },
+        {
+          "message": "Blank heading elements remain.",
+          "url": "https://www.aiamigos.org/grokai/",
+          "count": 1
+        },
+        {
+          "message": "Blank heading elements remain.",
+          "url": "https://www.aiamigos.org/open-source-generative-ai-projects/",
+          "count": 1
+        },
+        {
+          "message": "Expected exactly one nonempty H1; found 2.",
+          "url": "https://www.aiamigos.org/python-deployment-best-practices-a-comprehensive-guide/",
+          "h1": [
+            {
+              "level": 1,
+              "text": "Python Deployment Best Practices: A Comprehensive Guide"
+            },
+            {
+              "level": 1,
+              "text": "Introduction"
+            }
+          ]
+        },
+        {
+          "message": "Expected exactly one nonempty H1; found 3.",
+          "url": "https://www.aiamigos.org/a-comprehensive-guide-to-nvidia-monai-unlocking-ai-in-medical-imaging/",
+          "h1": [
+            {
+              "level": 1,
+              "text": "A Comprehensive Guide to NVIDIA MONAI: Unlocking AI in Medical Imaging"
+            },
+            {
+              "level": 1,
+              "text": ""
+            },
+            {
+              "level": 1,
+              "text": "Introduction"
+            }
+          ]
+        },
+        {
+          "message": "Blank heading elements remain.",
+          "url": "https://www.aiamigos.org/a-comprehensive-guide-to-nvidia-monai-unlocking-ai-in-medical-imaging/",
+          "count": 1
+        },
+        {
+          "message": "Expected exactly one nonempty H1; found 2.",
+          "url": "https://www.aiamigos.org/langgraph-5-stunning-secrets-for-building-a-generative-ai-application/",
+          "h1": [
+            {
+              "level": 1,
+              "text": "LangGraph: 5 Stunning Secrets for Building a Generative AI Application"
+            },
+            {
+              "level": 1,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "message": "Blank heading elements remain.",
+          "url": "https://www.aiamigos.org/langgraph-5-stunning-secrets-for-building-a-generative-ai-application/",
+          "count": 1
+        },
+        {
+          "message": "Heading levels skip hierarchy.",
+          "url": "https://www.aiamigos.org/newsletter-2/",
+          "skips": [
+            {
+              "from": 1,
+              "to": 3,
+              "text": "NEWSLETTER CONTENT DISCLAIMER & TERMS OF USE"
+            }
+          ]
+        },
+        {
+          "message": "Heading levels skip hierarchy.",
+          "url": "https://www.aiamigos.org/classes/",
+          "skips": [
+            {
+              "from": 1,
+              "to": 3,
+              "text": "Subscribe to Newsletter"
+            }
+          ]
+        },
+        {
+          "message": "Heading levels skip hierarchy.",
+          "url": "https://www.aiamigos.org/academy/",
+          "skips": [
+            {
+              "from": 1,
+              "to": 3,
+              "text": "Subscribe to Newsletter"
+            }
+          ]
+        },
+        {
+          "message": "Expected exactly one nonempty H1; found 0.",
+          "url": "https://www.aiamigos.org/home/",
+          "h1": []
+        },
+        {
+          "message": "Heading levels skip hierarchy.",
+          "url": "https://www.aiamigos.org/home/",
+          "skips": [
+            {
+              "from": 3,
+              "to": 5,
+              "text": "Building Agentic AI SaaS: A Strategic Roadmap Using Google Gemini Enterprise Building Agentic AI SaaS: A Strategic Roadmap Using Google Gemini Enterprise"
+            }
+          ]
+        },
+        {
+          "message": "Heading levels skip hierarchy.",
+          "url": "https://www.aiamigos.org/ai-career-paths/",
+          "skips": [
+            {
+              "from": 1,
+              "to": 3,
+              "text": "Subscribe to Newsletter"
+            }
+          ]
+        },
+        {
+          "message": "Heading levels skip hierarchy.",
+          "url": "https://www.aiamigos.org/machine-learning-engineer/",
+          "skips": [
+            {
+              "from": 1,
+              "to": 3,
+              "text": "Subscribe to Newsletter"
+            }
+          ]
+        },
+        {
+          "message": "Blank heading elements remain.",
+          "url": "https://www.aiamigos.org/ai-career/",
+          "count": 1
+        },
+        {
+          "message": "Heading levels skip hierarchy.",
+          "url": "https://www.aiamigos.org/ai-career/",
+          "skips": [
+            {
+              "from": 1,
+              "to": 3,
+              "text": "Subscribe to Newsletter"
+            }
+          ]
+        },
+        {
+          "message": "Heading levels skip hierarchy.",
+          "url": "https://www.aiamigos.org/newsletter/",
+          "skips": [
+            {
+              "from": 1,
+              "to": 3,
+              "text": "Subscribe to Newsletter"
+            }
+          ]
+        },
+        {
+          "message": "Heading levels skip hierarchy.",
+          "url": "https://www.aiamigos.org/others/",
+          "skips": [
+            {
+              "from": 1,
+              "to": 3,
+              "text": "Subscribe to Newsletter"
+            }
+          ]
+        },
+        {
+          "message": "A heading exceeds 60 words.",
+          "url": "https://www.aiamigos.org/about-us/",
+          "maximumWords": 353
+        },
+        {
+          "message": "Heading levels skip hierarchy.",
+          "url": "https://www.aiamigos.org/contact/",
+          "skips": [
+            {
+              "from": 1,
+              "to": 3,
+              "text": "Subscribe to Newsletter"
+            }
+          ]
+        },
+        {
+          "message": "Heading levels skip hierarchy.",
+          "url": "https://www.aiamigos.org/faq/",
+          "skips": [
+            {
+              "from": 1,
+              "to": 3,
+              "text": "Subscribe to Newsletter"
+            }
+          ]
+        },
+        {
+          "message": "Heading levels skip hierarchy.",
+          "url": "https://www.aiamigos.org/page/",
+          "skips": [
+            {
+              "from": 1,
+              "to": 3,
+              "text": "Subscribe to Newsletter"
+            }
+          ]
+        },
+        {
+          "message": "Heading levels skip hierarchy.",
+          "url": "https://www.aiamigos.org/services/",
+          "skips": [
+            {
+              "from": 3,
+              "to": 5,
+              "text": "AI for Kids"
+            }
+          ]
+        },
+        {
+          "message": "Heading levels skip hierarchy.",
+          "url": "https://www.aiamigos.org/shop/",
+          "skips": [
+            {
+              "from": 1,
+              "to": 3,
+              "text": "Subscribe to Newsletter"
+            }
+          ]
+        },
+        {
+          "message": "Heading levels skip hierarchy.",
+          "url": "https://www.aiamigos.org/classes/recent-case-title-01/",
+          "skips": [
+            {
+              "from": 1,
+              "to": 3,
+              "text": "Recent Posts"
+            }
+          ]
+        },
+        {
+          "message": "Heading levels skip hierarchy.",
+          "url": "https://www.aiamigos.org/classes/recent-case-title-02/",
+          "skips": [
+            {
+              "from": 1,
+              "to": 3,
+              "text": "Recent Posts"
+            }
+          ]
+        },
+        {
+          "message": "Heading levels skip hierarchy.",
+          "url": "https://www.aiamigos.org/testimonials/client-name-01/",
+          "skips": [
+            {
+              "from": 1,
+              "to": 3,
+              "text": "Recent Posts"
+            }
+          ]
+        },
+        {
+          "message": "Heading levels skip hierarchy.",
+          "url": "https://www.aiamigos.org/testimonials/client-name-02/",
+          "skips": [
+            {
+              "from": 1,
+              "to": 3,
+              "text": "Recent Posts"
+            }
+          ]
+        },
+        {
+          "message": "Heading levels skip hierarchy.",
+          "url": "https://www.aiamigos.org/testimonials/client-name-03/",
+          "skips": [
+            {
+              "from": 1,
+              "to": 3,
+              "text": "Recent Posts"
+            }
+          ]
+        },
+        {
+          "message": "Heading levels skip hierarchy.",
+          "url": "https://www.aiamigos.org/team/member-name-01/",
+          "skips": [
+            {
+              "from": 1,
+              "to": 3,
+              "text": "Recent Posts"
+            }
+          ]
+        },
+        {
+          "message": "Heading levels skip hierarchy.",
+          "url": "https://www.aiamigos.org/team/member-name-02/",
+          "skips": [
+            {
+              "from": 1,
+              "to": 3,
+              "text": "Recent Posts"
+            }
+          ]
+        },
+        {
+          "message": "Heading levels skip hierarchy.",
+          "url": "https://www.aiamigos.org/team/member-name-03/",
+          "skips": [
+            {
+              "from": 1,
+              "to": 3,
+              "text": "Recent Posts"
+            }
+          ]
+        },
+        {
+          "message": "Heading levels skip hierarchy.",
+          "url": "https://www.aiamigos.org/team/member-name-04/",
+          "skips": [
+            {
+              "from": 1,
+              "to": 3,
+              "text": "Recent Posts"
+            }
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "pages.jsonld",
+      "title": "JSON-LD syntax and identity hygiene",
+      "severity": "high",
+      "status": "fail",
+      "summary": "JSON-LD syntax or identity semantics failed.",
+      "metrics": {
+        "pages": 114,
+        "missingJsonLd": 0,
+        "parseErrorPages": 0,
+        "placeholderPersonPages": 97
+      },
+      "failures": [
+        {
+          "message": "Person schema uses a blank, domain, or placeholder identity.",
+          "url": "https://www.aiamigos.org/hello-world/",
+          "people": [
+            {
+              "name": "aiamigos.org",
+              "url": "https://www.aiamigos.org/author/aiamigos-org/"
+            }
+          ]
+        },
+        {
+          "message": "Person schema uses a blank, domain, or placeholder identity.",
+          "url": "https://www.aiamigos.org/ai-app-development/",
+          "people": [
+            {
+              "name": "aiamigos.org",
+              "url": "https://www.aiamigos.org/author/aiamigos-org/"
+            }
+          ]
+        },
+        {
+          "message": "Person schema uses a blank, domain, or placeholder identity.",
+          "url": "https://www.aiamigos.org/blog-2/",
+          "people": [
+            {
+              "name": "aiamigos.org",
+              "url": "https://www.aiamigos.org/author/aiamigos-org/"
+            }
+          ]
+        },
+        {
+          "message": "Person schema uses a blank, domain, or placeholder identity.",
+          "url": "https://www.aiamigos.org/artificial-intelligence-ai/",
+          "people": [
+            {
+              "name": "aiamigos.org",
+              "url": "https://www.aiamigos.org/author/aiamigos-org/"
+            }
+          ]
+        },
+        {
+          "message": "Person schema uses a blank, domain, or placeholder identity.",
+          "url": "https://www.aiamigos.org/blog-4/",
+          "people": [
+            {
+              "name": "aiamigos.org",
+              "url": "https://www.aiamigos.org/author/aiamigos-org/"
+            }
+          ]
+        },
+        {
+          "message": "Person schema uses a blank, domain, or placeholder identity.",
+          "url": "https://www.aiamigos.org/latest-blog-title-01/",
+          "people": [
+            {
+              "name": "aiamigos.org",
+              "url": "https://www.aiamigos.org/author/aiamigos-org/"
+            }
+          ]
+        },
+        {
+          "message": "Person schema uses a blank, domain, or placeholder identity.",
+          "url": "https://www.aiamigos.org/ai-jobs-whats-the-real-deal-%f0%9f%8c%8d/",
+          "people": [
+            {
+              "name": "aiamigos.org",
+              "url": "https://www.aiamigos.org/author/aiamigos-org/"
+            }
+          ]
+        },
+        {
+          "message": "Person schema uses a blank, domain, or placeholder identity.",
+          "url": "https://www.aiamigos.org/ai-ethics-for-everyday-folks-the-stuff-you-gotta-know-%f0%9f%a4%96%f0%9f%94%8d/",
+          "people": [
+            {
+              "name": "aiamigos.org",
+              "url": "https://www.aiamigos.org/author/aiamigos-org/"
+            }
+          ]
+        },
+        {
+          "message": "Person schema uses a blank, domain, or placeholder identity.",
+          "url": "https://www.aiamigos.org/ai-in-healthcare/",
+          "people": [
+            {
+              "name": "aiamigos.org",
+              "url": "https://www.aiamigos.org/author/aiamigos-org/"
+            }
+          ]
+        },
+        {
+          "message": "Person schema uses a blank, domain, or placeholder identity.",
+          "url": "https://www.aiamigos.org/ai-in-finance/",
+          "people": [
+            {
+              "name": "aiamigos.org",
+              "url": "https://www.aiamigos.org/author/aiamigos-org/"
+            }
+          ]
+        },
+        {
+          "message": "Person schema uses a blank, domain, or placeholder identity.",
+          "url": "https://www.aiamigos.org/unboxing-ai-the-retail-revolution-behind-your-shopping-spree/",
+          "people": [
+            {
+              "name": "aiamigos.org",
+              "url": "https://www.aiamigos.org/author/aiamigos-org/"
+            }
+          ]
+        },
+        {
+          "message": "Person schema uses a blank, domain, or placeholder identity.",
+          "url": "https://www.aiamigos.org/the-future-farm-ais-role-in-our-fields-and-beyond/",
+          "people": [
+            {
+              "name": "aiamigos.org",
+              "url": "https://www.aiamigos.org/author/aiamigos-org/"
+            }
+          ]
+        },
+        {
+          "message": "Person schema uses a blank, domain, or placeholder identity.",
+          "url": "https://www.aiamigos.org/crafting-the-future-ais-role-in-modern-manufacturing/",
+          "people": [
+            {
+              "name": "aiamigos.org",
+              "url": "https://www.aiamigos.org/author/aiamigos-org/"
+            }
+          ]
+        },
+        {
+          "message": "Person schema uses a blank, domain, or placeholder identity.",
+          "url": "https://www.aiamigos.org/the-blog-publishing-checklist-ensuring-your-content-doesnt-go-oops/",
+          "people": [
+            {
+              "name": "aiamigos.org",
+              "url": "https://www.aiamigos.org/author/aiamigos-org/"
+            }
+          ]
+        },
+        {
+          "message": "Person schema uses a blank, domain, or placeholder identity.",
+          "url": "https://www.aiamigos.org/unlocking-ai-magic-in-entertainment-a-light-hearted-guide/",
+          "people": [
+            {
+              "name": "aiamigos.org",
+              "url": "https://www.aiamigos.org/author/aiamigos-org/"
+            }
+          ]
+        },
+        {
+          "message": "Person schema uses a blank, domain, or placeholder identity.",
+          "url": "https://www.aiamigos.org/the-future-on-wheels-how-ai-is-steering-the-world-of-transportation-%f0%9f%9a%97%f0%9f%92%a8/",
+          "people": [
+            {
+              "name": "aiamigos.org",
+              "url": "https://www.aiamigos.org/author/aiamigos-org/"
+            }
+          ]
+        },
+        {
+          "message": "Person schema uses a blank, domain, or placeholder identity.",
+          "url": "https://www.aiamigos.org/ai-evolution/",
+          "people": [
+            {
+              "name": "aiamigos.org",
+              "url": "https://www.aiamigos.org/author/aiamigos-org/"
+            }
+          ]
+        },
+        {
+          "message": "Person schema uses a blank, domain, or placeholder identity.",
+          "url": "https://www.aiamigos.org/ai-rule-based-systems/",
+          "people": [
+            {
+              "name": "aiamigos.org",
+              "url": "https://www.aiamigos.org/author/aiamigos-org/"
+            }
+          ]
+        },
+        {
+          "message": "Person schema uses a blank, domain, or placeholder identity.",
+          "url": "https://www.aiamigos.org/machine-learning/",
+          "people": [
+            {
+              "name": "aiamigos.org",
+              "url": "https://www.aiamigos.org/author/aiamigos-org/"
+            }
+          ]
+        },
+        {
+          "message": "Person schema uses a blank, domain, or placeholder identity.",
+          "url": "https://www.aiamigos.org/deep-learning-ai/",
+          "people": [
+            {
+              "name": "aiamigos.org",
+              "url": "https://www.aiamigos.org/author/aiamigos-org/"
+            }
+          ]
+        },
+        {
+          "message": "Person schema uses a blank, domain, or placeholder identity.",
+          "url": "https://www.aiamigos.org/general-ai/",
+          "people": [
+            {
+              "name": "aiamigos.org",
+              "url": "https://www.aiamigos.org/author/aiamigos-org/"
+            }
+          ]
+        },
+        {
+          "message": "Person schema uses a blank, domain, or placeholder identity.",
+          "url": "https://www.aiamigos.org/superintelligent-ai/",
+          "people": [
+            {
+              "name": "aiamigos.org",
+              "url": "https://www.aiamigos.org/author/aiamigos-org/"
+            }
+          ]
+        },
+        {
+          "message": "Person schema uses a blank, domain, or placeholder identity.",
+          "url": "https://www.aiamigos.org/adaptive-ai/",
+          "people": [
+            {
+              "name": "aiamigos.org",
+              "url": "https://www.aiamigos.org/author/aiamigos-org/"
+            }
+          ]
+        },
+        {
+          "message": "Person schema uses a blank, domain, or placeholder identity.",
+          "url": "https://www.aiamigos.org/emotional-ai/",
+          "people": [
+            {
+              "name": "aiamigos.org",
+              "url": "https://www.aiamigos.org/author/aiamigos-org/"
+            }
+          ]
+        },
+        {
+          "message": "Person schema uses a blank, domain, or placeholder identity.",
+          "url": "https://www.aiamigos.org/creative-ai/",
+          "people": [
+            {
+              "name": "aiamigos.org",
+              "url": "https://www.aiamigos.org/author/aiamigos-org/"
+            }
+          ]
+        },
+        {
+          "message": "Person schema uses a blank, domain, or placeholder identity.",
+          "url": "https://www.aiamigos.org/self-aware-ai/",
+          "people": [
+            {
+              "name": "aiamigos.org",
+              "url": "https://www.aiamigos.org/author/aiamigos-org/"
+            }
+          ]
+        },
+        {
+          "message": "Person schema uses a blank, domain, or placeholder identity.",
+          "url": "https://www.aiamigos.org/co-evolving-ai/",
+          "people": [
+            {
+              "name": "aiamigos.org",
+              "url": "https://www.aiamigos.org/author/aiamigos-org/"
+            }
+          ]
+        },
+        {
+          "message": "Person schema uses a blank, domain, or placeholder identity.",
+          "url": "https://www.aiamigos.org/decentralized-ai/",
+          "people": [
+            {
+              "name": "aiamigos.org",
+              "url": "https://www.aiamigos.org/author/aiamigos-org/"
+            }
+          ]
+        },
+        {
+          "message": "Person schema uses a blank, domain, or placeholder identity.",
+          "url": "https://www.aiamigos.org/ethical-ai/",
+          "people": [
+            {
+              "name": "aiamigos.org",
+              "url": "https://www.aiamigos.org/author/aiamigos-org/"
+            }
+          ]
+        },
+        {
+          "message": "Person schema uses a blank, domain, or placeholder identity.",
+          "url": "https://www.aiamigos.org/quantum-ai/",
+          "people": [
+            {
+              "name": "aiamigos.org",
+              "url": "https://www.aiamigos.org/author/aiamigos-org/"
+            }
+          ]
+        },
+        {
+          "message": "Person schema uses a blank, domain, or placeholder identity.",
+          "url": "https://www.aiamigos.org/gpt-models/",
+          "people": [
+            {
+              "name": "aiamigos.org",
+              "url": "https://www.aiamigos.org/author/aiamigos-org/"
+            }
+          ]
+        },
+        {
+          "message": "Person schema uses a blank, domain, or placeholder identity.",
+          "url": "https://www.aiamigos.org/ais-dawn-revolutionizing-the-digital-realm/",
+          "people": [
+            {
+              "name": "aiamigos.org",
+              "url": "https://www.aiamigos.org/author/aiamigos-org/"
+            }
+          ]
+        },
+        {
+          "message": "Person schema uses a blank, domain, or placeholder identity.",
+          "url": "https://www.aiamigos.org/prompt-engineering/",
+          "people": [
+            {
+              "name": "aiamigos.org",
+              "url": "https://www.aiamigos.org/author/aiamigos-org/"
+            }
+          ]
+        },
+        {
+          "message": "Person schema uses a blank, domain, or placeholder identity.",
+          "url": "https://www.aiamigos.org/text-to-video-software/",
+          "people": [
+            {
+              "name": "aiamigos.org",
+              "url": "https://www.aiamigos.org/author/aiamigos-org/"
+            }
+          ]
+        },
+        {
+          "message": "Person schema uses a blank, domain, or placeholder identity.",
+          "url": "https://www.aiamigos.org/data-gen-ai/",
+          "people": [
+            {
+              "name": "aiamigos.org",
+              "url": "https://www.aiamigos.org/author/aiamigos-org/"
+            }
+          ]
+        },
+        {
+          "message": "Person schema uses a blank, domain, or placeholder identity.",
+          "url": "https://www.aiamigos.org/ai-data-types-models/",
+          "people": [
+            {
+              "name": "aiamigos.org",
+              "url": "https://www.aiamigos.org/author/aiamigos-org/"
+            }
+          ]
+        },
+        {
+          "message": "Person schema uses a blank, domain, or placeholder identity.",
+          "url": "https://www.aiamigos.org/generative-ai-solutions/",
+          "people": [
+            {
+              "name": "aiamigos.org",
+              "url": "https://www.aiamigos.org/author/aiamigos-org/"
+            }
+          ]
+        },
+        {
+          "message": "Person schema uses a blank, domain, or placeholder identity.",
+          "url": "https://www.aiamigos.org/large-language-model/",
+          "people": [
+            {
+              "name": "aiamigos.org",
+              "url": "https://www.aiamigos.org/author/aiamigos-org/"
+            }
+          ]
+        },
+        {
+          "message": "Person schema uses a blank, domain, or placeholder identity.",
+          "url": "https://www.aiamigos.org/grokai/",
+          "people": [
+            {
+              "name": "aiamigos.org",
+              "url": "https://www.aiamigos.org/author/aiamigos-org/"
+            }
+          ]
+        },
+        {
+          "message": "Person schema uses a blank, domain, or placeholder identity.",
+          "url": "https://www.aiamigos.org/ai-companies-top-100/",
+          "people": [
+            {
+              "name": "aiamigos.org",
+              "url": "https://www.aiamigos.org/author/aiamigos-org/"
+            }
+          ]
+        },
+        {
+          "message": "Person schema uses a blank, domain, or placeholder identity.",
+          "url": "https://www.aiamigos.org/prompt-design-and-engineering/",
+          "people": [
+            {
+              "name": "aiamigos.org",
+              "url": "https://www.aiamigos.org/author/aiamigos-org/"
+            }
+          ]
+        },
+        {
+          "message": "Person schema uses a blank, domain, or placeholder identity.",
+          "url": "https://www.aiamigos.org/ai-pin-technology-and-its-5-main-benefits/",
+          "people": [
+            {
+              "name": "aiamigos.org",
+              "url": "https://www.aiamigos.org/author/aiamigos-org/"
+            }
+          ]
+        },
+        {
+          "message": "Person schema uses a blank, domain, or placeholder identity.",
+          "url": "https://www.aiamigos.org/custom-gpt-models/",
+          "people": [
+            {
+              "name": "aiamigos.org",
+              "url": "https://www.aiamigos.org/author/aiamigos-org/"
+            }
+          ]
+        },
+        {
+          "message": "Person schema uses a blank, domain, or placeholder identity.",
+          "url": "https://www.aiamigos.org/ai-and-robotics/",
+          "people": [
+            {
+              "name": "aiamigos.org",
+              "url": "https://www.aiamigos.org/author/aiamigos-org/"
+            }
+          ]
+        },
+        {
+          "message": "Person schema uses a blank, domain, or placeholder identity.",
+          "url": "https://www.aiamigos.org/algorithms-in-artificial-intelligence/",
+          "people": [
+            {
+              "name": "aiamigos.org",
+              "url": "https://www.aiamigos.org/author/aiamigos-org/"
+            }
+          ]
+        },
+        {
+          "message": "Person schema uses a blank, domain, or placeholder identity.",
+          "url": "https://www.aiamigos.org/local-llm-on-your-laptop/",
+          "people": [
+            {
+              "name": "aiamigos.org",
+              "url": "https://www.aiamigos.org/author/aiamigos-org/"
+            }
+          ]
+        },
+        {
+          "message": "Person schema uses a blank, domain, or placeholder identity.",
+          "url": "https://www.aiamigos.org/generative-and-discriminative-models/",
+          "people": [
+            {
+              "name": "aiamigos.org",
+              "url": "https://www.aiamigos.org/author/aiamigos-org/"
+            }
+          ]
+        },
+        {
+          "message": "Person schema uses a blank, domain, or placeholder identity.",
+          "url": "https://www.aiamigos.org/building-features-faster-and-better-with-ai/",
+          "people": [
+            {
+              "name": "aiamigos.org",
+              "url": "https://www.aiamigos.org/author/aiamigos-org/"
+            }
+          ]
+        },
+        {
+          "message": "Person schema uses a blank, domain, or placeholder identity.",
+          "url": "https://www.aiamigos.org/how-ai-is-transforming-software-engineering/",
+          "people": [
+            {
+              "name": "aiamigos.org",
+              "url": "https://www.aiamigos.org/author/aiamigos-org/"
+            }
+          ]
+        },
+        {
+          "message": "Person schema uses a blank, domain, or placeholder identity.",
+          "url": "https://www.aiamigos.org/top-20-generative-ai-tools-for-creative-exploration/",
+          "people": [
+            {
+              "name": "aiamigos.org",
+              "url": "https://www.aiamigos.org/author/aiamigos-org/"
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "47 additional failure detail(s) omitted; see metrics for totals."
+      ]
+    },
+    {
+      "id": "pages.jsonld_semantics",
+      "title": "JSON-LD claim allowlist and DOM/template consistency",
+      "severity": "high",
+      "status": "fail",
+      "summary": "Unapproved or DOM/template-inconsistent JSON-LD claims remain.",
+      "metrics": {
+        "pages": 114,
+        "configuredAllowedTypes": [
+          "Article",
+          "BlogPosting",
+          "BreadcrumbList",
+          "CollectionPage",
+          "EducationalOrganization",
+          "ImageObject",
+          "ListItem",
+          "Organization",
+          "Person",
+          "Review",
+          "SearchAction",
+          "SiteNavigationElement",
+          "WebPage",
+          "WebSite"
+        ],
+        "approvalPackets": 0,
+        "failures": 740,
+        "failuresByCode": {
+          "article_dom_missing": 7,
+          "article_wrong_template": 1,
+          "claim_not_approved": 299,
+          "collection_h1_mismatch": 8,
+          "collection_wrong_template": 8,
+          "headline_h1_mismatch": 21,
+          "relationship_not_approved": 396
+        },
+        "affectedPages": 105
+      },
+      "failures": [
+        {
+          "message": "Identity/review schema claim has no matching complete approval packet.",
+          "code": "claim_not_approved",
+          "type": "EducationalOrganization",
+          "name": "aiamigos.org",
+          "url": "https://www.aiamigos.org/hello-world/",
+          "claimUrl": "https://www.aiamigos.org"
+        },
+        {
+          "message": "Identity/review schema claim has no matching complete approval packet.",
+          "code": "claim_not_approved",
+          "type": "Organization",
+          "name": "aiamigos.org",
+          "url": "https://www.aiamigos.org/hello-world/",
+          "claimUrl": "https://www.aiamigos.org"
+        },
+        {
+          "message": "Identity/review schema claim has no matching complete approval packet.",
+          "code": "claim_not_approved",
+          "type": "Person",
+          "name": "aiamigos.org",
+          "url": "https://www.aiamigos.org/hello-world/",
+          "claimUrl": "https://www.aiamigos.org/author/aiamigos-org/"
+        },
+        {
+          "message": "Article/BlogPosting headline does not exactly match a visible H1.",
+          "code": "headline_h1_mismatch",
+          "type": "BlogPosting",
+          "headline": "AI: Friend or Foe? Let&#039;s Find Out!",
+          "h1": [
+            "AI: Friend or Foe? Let’s Find Out!"
+          ],
+          "claimUrl": null,
+          "url": "https://www.aiamigos.org/hello-world/"
+        },
+        {
+          "message": "Author, publisher, reviewer, or works-for relationship has no matching complete approval packet.",
+          "code": "relationship_not_approved",
+          "relationship": "publisher",
+          "ownerTypes": [
+            "WebSite"
+          ],
+          "targetTypes": [],
+          "name": null,
+          "url": "https://www.aiamigos.org/hello-world/",
+          "claimUrl": "https://www.aiamigos.org/#organization"
+        },
+        {
+          "message": "Author, publisher, reviewer, or works-for relationship has no matching complete approval packet.",
+          "code": "relationship_not_approved",
+          "relationship": "worksFor",
+          "ownerTypes": [
+            "Person"
+          ],
+          "targetTypes": [],
+          "name": null,
+          "url": "https://www.aiamigos.org/hello-world/",
+          "claimUrl": "https://www.aiamigos.org/#organization"
+        },
+        {
+          "message": "Author, publisher, reviewer, or works-for relationship has no matching complete approval packet.",
+          "code": "relationship_not_approved",
+          "relationship": "author",
+          "ownerTypes": [
+            "BlogPosting"
+          ],
+          "targetTypes": [],
+          "name": "aiamigos.org",
+          "url": "https://www.aiamigos.org/hello-world/",
+          "claimUrl": "https://www.aiamigos.org/author/aiamigos-org/"
+        },
+        {
+          "message": "Author, publisher, reviewer, or works-for relationship has no matching complete approval packet.",
+          "code": "relationship_not_approved",
+          "relationship": "publisher",
+          "ownerTypes": [
+            "BlogPosting"
+          ],
+          "targetTypes": [],
+          "name": null,
+          "url": "https://www.aiamigos.org/hello-world/",
+          "claimUrl": "https://www.aiamigos.org/#organization"
+        },
+        {
+          "message": "Identity/review schema claim has no matching complete approval packet.",
+          "code": "claim_not_approved",
+          "type": "EducationalOrganization",
+          "name": "aiamigos.org",
+          "url": "https://www.aiamigos.org/ai-app-development/",
+          "claimUrl": "https://www.aiamigos.org"
+        },
+        {
+          "message": "Identity/review schema claim has no matching complete approval packet.",
+          "code": "claim_not_approved",
+          "type": "Organization",
+          "name": "aiamigos.org",
+          "url": "https://www.aiamigos.org/ai-app-development/",
+          "claimUrl": "https://www.aiamigos.org"
+        },
+        {
+          "message": "Identity/review schema claim has no matching complete approval packet.",
+          "code": "claim_not_approved",
+          "type": "Person",
+          "name": "aiamigos.org",
+          "url": "https://www.aiamigos.org/ai-app-development/",
+          "claimUrl": "https://www.aiamigos.org/author/aiamigos-org/"
+        },
+        {
+          "message": "Author, publisher, reviewer, or works-for relationship has no matching complete approval packet.",
+          "code": "relationship_not_approved",
+          "relationship": "publisher",
+          "ownerTypes": [
+            "WebSite"
+          ],
+          "targetTypes": [],
+          "name": null,
+          "url": "https://www.aiamigos.org/ai-app-development/",
+          "claimUrl": "https://www.aiamigos.org/#organization"
+        },
+        {
+          "message": "Author, publisher, reviewer, or works-for relationship has no matching complete approval packet.",
+          "code": "relationship_not_approved",
+          "relationship": "worksFor",
+          "ownerTypes": [
+            "Person"
+          ],
+          "targetTypes": [],
+          "name": null,
+          "url": "https://www.aiamigos.org/ai-app-development/",
+          "claimUrl": "https://www.aiamigos.org/#organization"
+        },
+        {
+          "message": "Author, publisher, reviewer, or works-for relationship has no matching complete approval packet.",
+          "code": "relationship_not_approved",
+          "relationship": "author",
+          "ownerTypes": [
+            "BlogPosting"
+          ],
+          "targetTypes": [],
+          "name": "aiamigos.org",
+          "url": "https://www.aiamigos.org/ai-app-development/",
+          "claimUrl": "https://www.aiamigos.org/author/aiamigos-org/"
+        },
+        {
+          "message": "Author, publisher, reviewer, or works-for relationship has no matching complete approval packet.",
+          "code": "relationship_not_approved",
+          "relationship": "publisher",
+          "ownerTypes": [
+            "BlogPosting"
+          ],
+          "targetTypes": [],
+          "name": null,
+          "url": "https://www.aiamigos.org/ai-app-development/",
+          "claimUrl": "https://www.aiamigos.org/#organization"
+        },
+        {
+          "message": "Identity/review schema claim has no matching complete approval packet.",
+          "code": "claim_not_approved",
+          "type": "EducationalOrganization",
+          "name": "aiamigos.org",
+          "url": "https://www.aiamigos.org/blog-2/",
+          "claimUrl": "https://www.aiamigos.org"
+        },
+        {
+          "message": "Identity/review schema claim has no matching complete approval packet.",
+          "code": "claim_not_approved",
+          "type": "Organization",
+          "name": "aiamigos.org",
+          "url": "https://www.aiamigos.org/blog-2/",
+          "claimUrl": "https://www.aiamigos.org"
+        },
+        {
+          "message": "Identity/review schema claim has no matching complete approval packet.",
+          "code": "claim_not_approved",
+          "type": "Person",
+          "name": "aiamigos.org",
+          "url": "https://www.aiamigos.org/blog-2/",
+          "claimUrl": "https://www.aiamigos.org/author/aiamigos-org/"
+        },
+        {
+          "message": "Author, publisher, reviewer, or works-for relationship has no matching complete approval packet.",
+          "code": "relationship_not_approved",
+          "relationship": "publisher",
+          "ownerTypes": [
+            "WebSite"
+          ],
+          "targetTypes": [],
+          "name": null,
+          "url": "https://www.aiamigos.org/blog-2/",
+          "claimUrl": "https://www.aiamigos.org/#organization"
+        },
+        {
+          "message": "Author, publisher, reviewer, or works-for relationship has no matching complete approval packet.",
+          "code": "relationship_not_approved",
+          "relationship": "worksFor",
+          "ownerTypes": [
+            "Person"
+          ],
+          "targetTypes": [],
+          "name": null,
+          "url": "https://www.aiamigos.org/blog-2/",
+          "claimUrl": "https://www.aiamigos.org/#organization"
+        },
+        {
+          "message": "Author, publisher, reviewer, or works-for relationship has no matching complete approval packet.",
+          "code": "relationship_not_approved",
+          "relationship": "author",
+          "ownerTypes": [
+            "BlogPosting"
+          ],
+          "targetTypes": [],
+          "name": "aiamigos.org",
+          "url": "https://www.aiamigos.org/blog-2/",
+          "claimUrl": "https://www.aiamigos.org/author/aiamigos-org/"
+        },
+        {
+          "message": "Author, publisher, reviewer, or works-for relationship has no matching complete approval packet.",
+          "code": "relationship_not_approved",
+          "relationship": "publisher",
+          "ownerTypes": [
+            "BlogPosting"
+          ],
+          "targetTypes": [],
+          "name": null,
+          "url": "https://www.aiamigos.org/blog-2/",
+          "claimUrl": "https://www.aiamigos.org/#organization"
+        },
+        {
+          "message": "Identity/review schema claim has no matching complete approval packet.",
+          "code": "claim_not_approved",
+          "type": "EducationalOrganization",
+          "name": "aiamigos.org",
+          "url": "https://www.aiamigos.org/artificial-intelligence-ai/",
+          "claimUrl": "https://www.aiamigos.org"
+        },
+        {
+          "message": "Identity/review schema claim has no matching complete approval packet.",
+          "code": "claim_not_approved",
+          "type": "Organization",
+          "name": "aiamigos.org",
+          "url": "https://www.aiamigos.org/artificial-intelligence-ai/",
+          "claimUrl": "https://www.aiamigos.org"
+        },
+        {
+          "message": "Identity/review schema claim has no matching complete approval packet.",
+          "code": "claim_not_approved",
+          "type": "Person",
+          "name": "aiamigos.org",
+          "url": "https://www.aiamigos.org/artificial-intelligence-ai/",
+          "claimUrl": "https://www.aiamigos.org/author/aiamigos-org/"
+        },
+        {
+          "message": "Author, publisher, reviewer, or works-for relationship has no matching complete approval packet.",
+          "code": "relationship_not_approved",
+          "relationship": "publisher",
+          "ownerTypes": [
+            "WebSite"
+          ],
+          "targetTypes": [],
+          "name": null,
+          "url": "https://www.aiamigos.org/artificial-intelligence-ai/",
+          "claimUrl": "https://www.aiamigos.org/#organization"
+        },
+        {
+          "message": "Author, publisher, reviewer, or works-for relationship has no matching complete approval packet.",
+          "code": "relationship_not_approved",
+          "relationship": "worksFor",
+          "ownerTypes": [
+            "Person"
+          ],
+          "targetTypes": [],
+          "name": null,
+          "url": "https://www.aiamigos.org/artificial-intelligence-ai/",
+          "claimUrl": "https://www.aiamigos.org/#organization"
+        },
+        {
+          "message": "Author, publisher, reviewer, or works-for relationship has no matching complete approval packet.",
+          "code": "relationship_not_approved",
+          "relationship": "author",
+          "ownerTypes": [
+            "BlogPosting"
+          ],
+          "targetTypes": [],
+          "name": "aiamigos.org",
+          "url": "https://www.aiamigos.org/artificial-intelligence-ai/",
+          "claimUrl": "https://www.aiamigos.org/author/aiamigos-org/"
+        },
+        {
+          "message": "Author, publisher, reviewer, or works-for relationship has no matching complete approval packet.",
+          "code": "relationship_not_approved",
+          "relationship": "publisher",
+          "ownerTypes": [
+            "BlogPosting"
+          ],
+          "targetTypes": [],
+          "name": null,
+          "url": "https://www.aiamigos.org/artificial-intelligence-ai/",
+          "claimUrl": "https://www.aiamigos.org/#organization"
+        },
+        {
+          "message": "Identity/review schema claim has no matching complete approval packet.",
+          "code": "claim_not_approved",
+          "type": "EducationalOrganization",
+          "name": "aiamigos.org",
+          "url": "https://www.aiamigos.org/blog-4/",
+          "claimUrl": "https://www.aiamigos.org"
+        },
+        {
+          "message": "Identity/review schema claim has no matching complete approval packet.",
+          "code": "claim_not_approved",
+          "type": "Organization",
+          "name": "aiamigos.org",
+          "url": "https://www.aiamigos.org/blog-4/",
+          "claimUrl": "https://www.aiamigos.org"
+        },
+        {
+          "message": "Identity/review schema claim has no matching complete approval packet.",
+          "code": "claim_not_approved",
+          "type": "Person",
+          "name": "aiamigos.org",
+          "url": "https://www.aiamigos.org/blog-4/",
+          "claimUrl": "https://www.aiamigos.org/author/aiamigos-org/"
+        },
+        {
+          "message": "Article/BlogPosting headline does not exactly match a visible H1.",
+          "code": "headline_h1_mismatch",
+          "type": "BlogPosting",
+          "headline": "&quot;Understanding AI: Machines That Think Like Us!&quot; 🎩🤖",
+          "h1": [
+            "“Understanding AI: Machines That Think Like Us!” 🎩🤖"
+          ],
+          "claimUrl": null,
+          "url": "https://www.aiamigos.org/blog-4/"
+        },
+        {
+          "message": "Author, publisher, reviewer, or works-for relationship has no matching complete approval packet.",
+          "code": "relationship_not_approved",
+          "relationship": "publisher",
+          "ownerTypes": [
+            "WebSite"
+          ],
+          "targetTypes": [],
+          "name": null,
+          "url": "https://www.aiamigos.org/blog-4/",
+          "claimUrl": "https://www.aiamigos.org/#organization"
+        },
+        {
+          "message": "Author, publisher, reviewer, or works-for relationship has no matching complete approval packet.",
+          "code": "relationship_not_approved",
+          "relationship": "worksFor",
+          "ownerTypes": [
+            "Person"
+          ],
+          "targetTypes": [],
+          "name": null,
+          "url": "https://www.aiamigos.org/blog-4/",
+          "claimUrl": "https://www.aiamigos.org/#organization"
+        },
+        {
+          "message": "Author, publisher, reviewer, or works-for relationship has no matching complete approval packet.",
+          "code": "relationship_not_approved",
+          "relationship": "author",
+          "ownerTypes": [
+            "BlogPosting"
+          ],
+          "targetTypes": [],
+          "name": "aiamigos.org",
+          "url": "https://www.aiamigos.org/blog-4/",
+          "claimUrl": "https://www.aiamigos.org/author/aiamigos-org/"
+        },
+        {
+          "message": "Author, publisher, reviewer, or works-for relationship has no matching complete approval packet.",
+          "code": "relationship_not_approved",
+          "relationship": "publisher",
+          "ownerTypes": [
+            "BlogPosting"
+          ],
+          "targetTypes": [],
+          "name": null,
+          "url": "https://www.aiamigos.org/blog-4/",
+          "claimUrl": "https://www.aiamigos.org/#organization"
+        },
+        {
+          "message": "Identity/review schema claim has no matching complete approval packet.",
+          "code": "claim_not_approved",
+          "type": "EducationalOrganization",
+          "name": "aiamigos.org",
+          "url": "https://www.aiamigos.org/latest-blog-title-01/",
+          "claimUrl": "https://www.aiamigos.org"
+        },
+        {
+          "message": "Identity/review schema claim has no matching complete approval packet.",
+          "code": "claim_not_approved",
+          "type": "Organization",
+          "name": "aiamigos.org",
+          "url": "https://www.aiamigos.org/latest-blog-title-01/",
+          "claimUrl": "https://www.aiamigos.org"
+        },
+        {
+          "message": "Identity/review schema claim has no matching complete approval packet.",
+          "code": "claim_not_approved",
+          "type": "Person",
+          "name": "aiamigos.org",
+          "url": "https://www.aiamigos.org/latest-blog-title-01/",
+          "claimUrl": "https://www.aiamigos.org/author/aiamigos-org/"
+        },
+        {
+          "message": "Article/BlogPosting headline does not exactly match a visible H1.",
+          "code": "headline_h1_mismatch",
+          "type": "BlogPosting",
+          "headline": "Demystifying Artificial Intelligence (AI): How Does It Shape Our World?&quot;",
+          "h1": [
+            "Demystifying Artificial Intelligence (AI): How Does It Shape Our World?”"
+          ],
+          "claimUrl": null,
+          "url": "https://www.aiamigos.org/latest-blog-title-01/"
+        },
+        {
+          "message": "Author, publisher, reviewer, or works-for relationship has no matching complete approval packet.",
+          "code": "relationship_not_approved",
+          "relationship": "publisher",
+          "ownerTypes": [
+            "WebSite"
+          ],
+          "targetTypes": [],
+          "name": null,
+          "url": "https://www.aiamigos.org/latest-blog-title-01/",
+          "claimUrl": "https://www.aiamigos.org/#organization"
+        },
+        {
+          "message": "Author, publisher, reviewer, or works-for relationship has no matching complete approval packet.",
+          "code": "relationship_not_approved",
+          "relationship": "worksFor",
+          "ownerTypes": [
+            "Person"
+          ],
+          "targetTypes": [],
+          "name": null,
+          "url": "https://www.aiamigos.org/latest-blog-title-01/",
+          "claimUrl": "https://www.aiamigos.org/#organization"
+        },
+        {
+          "message": "Author, publisher, reviewer, or works-for relationship has no matching complete approval packet.",
+          "code": "relationship_not_approved",
+          "relationship": "author",
+          "ownerTypes": [
+            "BlogPosting"
+          ],
+          "targetTypes": [],
+          "name": "aiamigos.org",
+          "url": "https://www.aiamigos.org/latest-blog-title-01/",
+          "claimUrl": "https://www.aiamigos.org/author/aiamigos-org/"
+        },
+        {
+          "message": "Author, publisher, reviewer, or works-for relationship has no matching complete approval packet.",
+          "code": "relationship_not_approved",
+          "relationship": "publisher",
+          "ownerTypes": [
+            "BlogPosting"
+          ],
+          "targetTypes": [],
+          "name": null,
+          "url": "https://www.aiamigos.org/latest-blog-title-01/",
+          "claimUrl": "https://www.aiamigos.org/#organization"
+        },
+        {
+          "message": "Identity/review schema claim has no matching complete approval packet.",
+          "code": "claim_not_approved",
+          "type": "EducationalOrganization",
+          "name": "aiamigos.org",
+          "url": "https://www.aiamigos.org/ai-jobs-whats-the-real-deal-%f0%9f%8c%8d/",
+          "claimUrl": "https://www.aiamigos.org"
+        },
+        {
+          "message": "Identity/review schema claim has no matching complete approval packet.",
+          "code": "claim_not_approved",
+          "type": "Organization",
+          "name": "aiamigos.org",
+          "url": "https://www.aiamigos.org/ai-jobs-whats-the-real-deal-%f0%9f%8c%8d/",
+          "claimUrl": "https://www.aiamigos.org"
+        },
+        {
+          "message": "Identity/review schema claim has no matching complete approval packet.",
+          "code": "claim_not_approved",
+          "type": "Person",
+          "name": "aiamigos.org",
+          "url": "https://www.aiamigos.org/ai-jobs-whats-the-real-deal-%f0%9f%8c%8d/",
+          "claimUrl": "https://www.aiamigos.org/author/aiamigos-org/"
+        },
+        {
+          "message": "Article/BlogPosting headline does not exactly match a visible H1.",
+          "code": "headline_h1_mismatch",
+          "type": "BlogPosting",
+          "headline": "AI &amp; Jobs: What&#039;s the Real Deal? 🌍",
+          "h1": [
+            "AI & Jobs: What’s the Real Deal? 🌍"
+          ],
+          "claimUrl": null,
+          "url": "https://www.aiamigos.org/ai-jobs-whats-the-real-deal-%f0%9f%8c%8d/"
+        },
+        {
+          "message": "Author, publisher, reviewer, or works-for relationship has no matching complete approval packet.",
+          "code": "relationship_not_approved",
+          "relationship": "publisher",
+          "ownerTypes": [
+            "WebSite"
+          ],
+          "targetTypes": [],
+          "name": null,
+          "url": "https://www.aiamigos.org/ai-jobs-whats-the-real-deal-%f0%9f%8c%8d/",
+          "claimUrl": "https://www.aiamigos.org/#organization"
+        }
+      ],
+      "notes": [
+        "Parseability is reported separately. This check rejects unreviewed types, identity/review claims without complete approval packets, and configured DOM/template mismatches.",
+        "A green result records configured evidence consistency; it does not replace Schema Markup Validator/Rich Results output or establish that a real-world claim is true.",
+        "690 additional failure detail(s) omitted; see metrics for totals."
+      ]
+    },
+    {
+      "id": "content.leaks",
+      "title": "Shortcode, demo-copy, and placeholder leaks",
+      "severity": "critical",
+      "status": "fail",
+      "summary": "Public placeholder or shortcode leakage remains.",
+      "metrics": {
+        "pages": 114,
+        "hits": 136,
+        "affectedPages": 114,
+        "knownDemoPaths": 8,
+        "pagesWithoutMainLandmark": 1,
+        "countsByPattern": {
+          "raw_mailpoet_shortcode": 114,
+          "theme_latin_demo_copy": 8,
+          "placeholder_client_name": 3,
+          "placeholder_member_name": 3,
+          "placeholder_case_title": 2,
+          "placeholder_company_token": 1,
+          "placeholder_service_url": 1,
+          "misspelled_linkedin": 4
+        }
+      },
+      "failures": [
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://www.aiamigos.org/hello-world/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://www.aiamigos.org/ai-app-development/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://www.aiamigos.org/blog-2/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://www.aiamigos.org/artificial-intelligence-ai/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://www.aiamigos.org/blog-4/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://www.aiamigos.org/latest-blog-title-01/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://www.aiamigos.org/ai-jobs-whats-the-real-deal-%f0%9f%8c%8d/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://www.aiamigos.org/ai-ethics-for-everyday-folks-the-stuff-you-gotta-know-%f0%9f%a4%96%f0%9f%94%8d/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://www.aiamigos.org/ai-in-healthcare/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://www.aiamigos.org/ai-in-finance/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://www.aiamigos.org/unboxing-ai-the-retail-revolution-behind-your-shopping-spree/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://www.aiamigos.org/the-future-farm-ais-role-in-our-fields-and-beyond/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://www.aiamigos.org/crafting-the-future-ais-role-in-modern-manufacturing/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://www.aiamigos.org/the-blog-publishing-checklist-ensuring-your-content-doesnt-go-oops/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://www.aiamigos.org/unlocking-ai-magic-in-entertainment-a-light-hearted-guide/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://www.aiamigos.org/the-future-on-wheels-how-ai-is-steering-the-world-of-transportation-%f0%9f%9a%97%f0%9f%92%a8/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://www.aiamigos.org/ai-evolution/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://www.aiamigos.org/ai-rule-based-systems/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://www.aiamigos.org/machine-learning/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://www.aiamigos.org/deep-learning-ai/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://www.aiamigos.org/general-ai/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://www.aiamigos.org/superintelligent-ai/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://www.aiamigos.org/adaptive-ai/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://www.aiamigos.org/emotional-ai/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://www.aiamigos.org/creative-ai/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://www.aiamigos.org/self-aware-ai/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://www.aiamigos.org/co-evolving-ai/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://www.aiamigos.org/decentralized-ai/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://www.aiamigos.org/ethical-ai/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://www.aiamigos.org/quantum-ai/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://www.aiamigos.org/gpt-models/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://www.aiamigos.org/ais-dawn-revolutionizing-the-digital-realm/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://www.aiamigos.org/prompt-engineering/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://www.aiamigos.org/text-to-video-software/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://www.aiamigos.org/data-gen-ai/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://www.aiamigos.org/ai-data-types-models/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://www.aiamigos.org/generative-ai-solutions/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://www.aiamigos.org/large-language-model/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://www.aiamigos.org/grokai/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://www.aiamigos.org/ai-companies-top-100/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://www.aiamigos.org/prompt-design-and-engineering/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://www.aiamigos.org/ai-pin-technology-and-its-5-main-benefits/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://www.aiamigos.org/custom-gpt-models/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://www.aiamigos.org/ai-and-robotics/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://www.aiamigos.org/algorithms-in-artificial-intelligence/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://www.aiamigos.org/local-llm-on-your-laptop/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://www.aiamigos.org/generative-and-discriminative-models/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://www.aiamigos.org/building-features-faster-and-better-with-ai/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://www.aiamigos.org/how-ai-is-transforming-software-engineering/",
+          "sample": "[mailpoet_form id=”3″]"
+        },
+        {
+          "message": "Visible content matches 'raw_mailpoet_shortcode'.",
+          "url": "https://www.aiamigos.org/top-20-generative-ai-tools-for-creative-exploration/",
+          "sample": "[mailpoet_form id=”3″]"
+        }
+      ],
+      "notes": [
+        "94 additional failure detail(s) omitted; see metrics for totals."
+      ]
+    },
+    {
+      "id": "content.production_defects",
+      "title": "Known grammar and production defects",
+      "severity": "high",
+      "status": "fail",
+      "summary": "Known grammar or production defects remain visible.",
+      "metrics": {
+        "pages": 114,
+        "hits": 156,
+        "affectedPages": 114,
+        "countsByDefect": {
+          "availability_24_star_7": 114,
+          "empty_list_item": 32,
+          "malformed_punctuation_comma": 1,
+          "misspelled_linkedin": 4,
+          "placeholder_service_url": 4,
+          "showing_up_everywhere_punctuation": 1
+        }
+      },
+      "failures": [
+        {
+          "message": "Visible content matches deterministic production defect 'availability_24_star_7'.",
+          "url": "https://www.aiamigos.org/hello-world/",
+          "id": "availability_24_star_7",
+          "sample": "24*7"
+        },
+        {
+          "message": "Visible content matches deterministic production defect 'availability_24_star_7'.",
+          "url": "https://www.aiamigos.org/ai-app-development/",
+          "id": "availability_24_star_7",
+          "sample": "24*7"
+        },
+        {
+          "message": "Visible content matches deterministic production defect 'availability_24_star_7'.",
+          "url": "https://www.aiamigos.org/blog-2/",
+          "id": "availability_24_star_7",
+          "sample": "24*7"
+        },
+        {
+          "message": "Visible content matches deterministic production defect 'availability_24_star_7'.",
+          "url": "https://www.aiamigos.org/artificial-intelligence-ai/",
+          "id": "availability_24_star_7",
+          "sample": "24*7"
+        },
+        {
+          "message": "Visible content matches deterministic production defect 'empty_list_item'.",
+          "url": "https://www.aiamigos.org/artificial-intelligence-ai/",
+          "id": "empty_list_item",
+          "sample": "<li></li>"
+        },
+        {
+          "message": "Visible content matches deterministic production defect 'availability_24_star_7'.",
+          "url": "https://www.aiamigos.org/blog-4/",
+          "id": "availability_24_star_7",
+          "sample": "24*7"
+        },
+        {
+          "message": "Visible content matches deterministic production defect 'availability_24_star_7'.",
+          "url": "https://www.aiamigos.org/latest-blog-title-01/",
+          "id": "availability_24_star_7",
+          "sample": "24*7"
+        },
+        {
+          "message": "Visible content matches deterministic production defect 'availability_24_star_7'.",
+          "url": "https://www.aiamigos.org/ai-jobs-whats-the-real-deal-%f0%9f%8c%8d/",
+          "id": "availability_24_star_7",
+          "sample": "24*7"
+        },
+        {
+          "message": "Visible content matches deterministic production defect 'availability_24_star_7'.",
+          "url": "https://www.aiamigos.org/ai-ethics-for-everyday-folks-the-stuff-you-gotta-know-%f0%9f%a4%96%f0%9f%94%8d/",
+          "id": "availability_24_star_7",
+          "sample": "24*7"
+        },
+        {
+          "message": "Visible content matches deterministic production defect 'empty_list_item'.",
+          "url": "https://www.aiamigos.org/ai-ethics-for-everyday-folks-the-stuff-you-gotta-know-%f0%9f%a4%96%f0%9f%94%8d/",
+          "id": "empty_list_item",
+          "sample": "<li></li>"
+        },
+        {
+          "message": "Visible content matches deterministic production defect 'empty_list_item'.",
+          "url": "https://www.aiamigos.org/ai-ethics-for-everyday-folks-the-stuff-you-gotta-know-%f0%9f%a4%96%f0%9f%94%8d/",
+          "id": "empty_list_item",
+          "sample": "<li></li>"
+        },
+        {
+          "message": "Visible content matches deterministic production defect 'empty_list_item'.",
+          "url": "https://www.aiamigos.org/ai-ethics-for-everyday-folks-the-stuff-you-gotta-know-%f0%9f%a4%96%f0%9f%94%8d/",
+          "id": "empty_list_item",
+          "sample": "<li></li>"
+        },
+        {
+          "message": "Visible content matches deterministic production defect 'empty_list_item'.",
+          "url": "https://www.aiamigos.org/ai-ethics-for-everyday-folks-the-stuff-you-gotta-know-%f0%9f%a4%96%f0%9f%94%8d/",
+          "id": "empty_list_item",
+          "sample": "<li></li>"
+        },
+        {
+          "message": "Visible content matches deterministic production defect 'empty_list_item'.",
+          "url": "https://www.aiamigos.org/ai-ethics-for-everyday-folks-the-stuff-you-gotta-know-%f0%9f%a4%96%f0%9f%94%8d/",
+          "id": "empty_list_item",
+          "sample": "<li></li>"
+        },
+        {
+          "message": "Visible content matches deterministic production defect 'empty_list_item'.",
+          "url": "https://www.aiamigos.org/ai-ethics-for-everyday-folks-the-stuff-you-gotta-know-%f0%9f%a4%96%f0%9f%94%8d/",
+          "id": "empty_list_item",
+          "sample": "<li></li>"
+        },
+        {
+          "message": "Visible content matches deterministic production defect 'empty_list_item'.",
+          "url": "https://www.aiamigos.org/ai-ethics-for-everyday-folks-the-stuff-you-gotta-know-%f0%9f%a4%96%f0%9f%94%8d/",
+          "id": "empty_list_item",
+          "sample": "<li></li>"
+        },
+        {
+          "message": "Visible content matches deterministic production defect 'empty_list_item'.",
+          "url": "https://www.aiamigos.org/ai-ethics-for-everyday-folks-the-stuff-you-gotta-know-%f0%9f%a4%96%f0%9f%94%8d/",
+          "id": "empty_list_item",
+          "sample": "<li></li>"
+        },
+        {
+          "message": "Visible content matches deterministic production defect 'empty_list_item'.",
+          "url": "https://www.aiamigos.org/ai-ethics-for-everyday-folks-the-stuff-you-gotta-know-%f0%9f%a4%96%f0%9f%94%8d/",
+          "id": "empty_list_item",
+          "sample": "<li></li>"
+        },
+        {
+          "message": "Visible content matches deterministic production defect 'empty_list_item'.",
+          "url": "https://www.aiamigos.org/ai-ethics-for-everyday-folks-the-stuff-you-gotta-know-%f0%9f%a4%96%f0%9f%94%8d/",
+          "id": "empty_list_item",
+          "sample": "<li></li>"
+        },
+        {
+          "message": "Visible content matches deterministic production defect 'empty_list_item'.",
+          "url": "https://www.aiamigos.org/ai-ethics-for-everyday-folks-the-stuff-you-gotta-know-%f0%9f%a4%96%f0%9f%94%8d/",
+          "id": "empty_list_item",
+          "sample": "<li></li>"
+        },
+        {
+          "message": "Visible content matches deterministic production defect 'empty_list_item'.",
+          "url": "https://www.aiamigos.org/ai-ethics-for-everyday-folks-the-stuff-you-gotta-know-%f0%9f%a4%96%f0%9f%94%8d/",
+          "id": "empty_list_item",
+          "sample": "<li></li>"
+        },
+        {
+          "message": "Visible content matches deterministic production defect 'availability_24_star_7'.",
+          "url": "https://www.aiamigos.org/ai-in-healthcare/",
+          "id": "availability_24_star_7",
+          "sample": "24*7"
+        },
+        {
+          "message": "Visible content matches deterministic production defect 'availability_24_star_7'.",
+          "url": "https://www.aiamigos.org/ai-in-finance/",
+          "id": "availability_24_star_7",
+          "sample": "24*7"
+        },
+        {
+          "message": "Visible content matches deterministic production defect 'empty_list_item'.",
+          "url": "https://www.aiamigos.org/ai-in-finance/",
+          "id": "empty_list_item",
+          "sample": "<li></li>"
+        },
+        {
+          "message": "Visible content matches deterministic production defect 'empty_list_item'.",
+          "url": "https://www.aiamigos.org/ai-in-finance/",
+          "id": "empty_list_item",
+          "sample": "<li></li>"
+        },
+        {
+          "message": "Visible content matches deterministic production defect 'availability_24_star_7'.",
+          "url": "https://www.aiamigos.org/unboxing-ai-the-retail-revolution-behind-your-shopping-spree/",
+          "id": "availability_24_star_7",
+          "sample": "24*7"
+        },
+        {
+          "message": "Visible content matches deterministic production defect 'availability_24_star_7'.",
+          "url": "https://www.aiamigos.org/the-future-farm-ais-role-in-our-fields-and-beyond/",
+          "id": "availability_24_star_7",
+          "sample": "24*7"
+        },
+        {
+          "message": "Visible content matches deterministic production defect 'availability_24_star_7'.",
+          "url": "https://www.aiamigos.org/crafting-the-future-ais-role-in-modern-manufacturing/",
+          "id": "availability_24_star_7",
+          "sample": "24*7"
+        },
+        {
+          "message": "Visible content matches deterministic production defect 'availability_24_star_7'.",
+          "url": "https://www.aiamigos.org/the-blog-publishing-checklist-ensuring-your-content-doesnt-go-oops/",
+          "id": "availability_24_star_7",
+          "sample": "24*7"
+        },
+        {
+          "message": "Visible content matches deterministic production defect 'availability_24_star_7'.",
+          "url": "https://www.aiamigos.org/unlocking-ai-magic-in-entertainment-a-light-hearted-guide/",
+          "id": "availability_24_star_7",
+          "sample": "24*7"
+        },
+        {
+          "message": "Visible content matches deterministic production defect 'availability_24_star_7'.",
+          "url": "https://www.aiamigos.org/the-future-on-wheels-how-ai-is-steering-the-world-of-transportation-%f0%9f%9a%97%f0%9f%92%a8/",
+          "id": "availability_24_star_7",
+          "sample": "24*7"
+        },
+        {
+          "message": "Visible content matches deterministic production defect 'availability_24_star_7'.",
+          "url": "https://www.aiamigos.org/ai-evolution/",
+          "id": "availability_24_star_7",
+          "sample": "24*7"
+        },
+        {
+          "message": "Visible content matches deterministic production defect 'availability_24_star_7'.",
+          "url": "https://www.aiamigos.org/ai-rule-based-systems/",
+          "id": "availability_24_star_7",
+          "sample": "24*7"
+        },
+        {
+          "message": "Visible content matches deterministic production defect 'availability_24_star_7'.",
+          "url": "https://www.aiamigos.org/machine-learning/",
+          "id": "availability_24_star_7",
+          "sample": "24*7"
+        },
+        {
+          "message": "Visible content matches deterministic production defect 'availability_24_star_7'.",
+          "url": "https://www.aiamigos.org/deep-learning-ai/",
+          "id": "availability_24_star_7",
+          "sample": "24*7"
+        },
+        {
+          "message": "Visible content matches deterministic production defect 'availability_24_star_7'.",
+          "url": "https://www.aiamigos.org/general-ai/",
+          "id": "availability_24_star_7",
+          "sample": "24*7"
+        },
+        {
+          "message": "Visible content matches deterministic production defect 'availability_24_star_7'.",
+          "url": "https://www.aiamigos.org/superintelligent-ai/",
+          "id": "availability_24_star_7",
+          "sample": "24*7"
+        },
+        {
+          "message": "Visible content matches deterministic production defect 'availability_24_star_7'.",
+          "url": "https://www.aiamigos.org/adaptive-ai/",
+          "id": "availability_24_star_7",
+          "sample": "24*7"
+        },
+        {
+          "message": "Visible content matches deterministic production defect 'availability_24_star_7'.",
+          "url": "https://www.aiamigos.org/emotional-ai/",
+          "id": "availability_24_star_7",
+          "sample": "24*7"
+        },
+        {
+          "message": "Visible content matches deterministic production defect 'availability_24_star_7'.",
+          "url": "https://www.aiamigos.org/creative-ai/",
+          "id": "availability_24_star_7",
+          "sample": "24*7"
+        },
+        {
+          "message": "Visible content matches deterministic production defect 'availability_24_star_7'.",
+          "url": "https://www.aiamigos.org/self-aware-ai/",
+          "id": "availability_24_star_7",
+          "sample": "24*7"
+        },
+        {
+          "message": "Visible content matches deterministic production defect 'availability_24_star_7'.",
+          "url": "https://www.aiamigos.org/co-evolving-ai/",
+          "id": "availability_24_star_7",
+          "sample": "24*7"
+        },
+        {
+          "message": "Visible content matches deterministic production defect 'availability_24_star_7'.",
+          "url": "https://www.aiamigos.org/decentralized-ai/",
+          "id": "availability_24_star_7",
+          "sample": "24*7"
+        },
+        {
+          "message": "Visible content matches deterministic production defect 'showing_up_everywhere_punctuation'.",
+          "url": "https://www.aiamigos.org/ethical-ai/",
+          "id": "showing_up_everywhere_punctuation",
+          "sample": "showing up everywhere!,"
+        },
+        {
+          "message": "Visible content matches deterministic production defect 'malformed_punctuation_comma'.",
+          "url": "https://www.aiamigos.org/ethical-ai/",
+          "id": "malformed_punctuation_comma",
+          "sample": "!,"
+        },
+        {
+          "message": "Visible content matches deterministic production defect 'availability_24_star_7'.",
+          "url": "https://www.aiamigos.org/ethical-ai/",
+          "id": "availability_24_star_7",
+          "sample": "24*7"
+        },
+        {
+          "message": "Visible content matches deterministic production defect 'availability_24_star_7'.",
+          "url": "https://www.aiamigos.org/quantum-ai/",
+          "id": "availability_24_star_7",
+          "sample": "24*7"
+        },
+        {
+          "message": "Visible content matches deterministic production defect 'empty_list_item'.",
+          "url": "https://www.aiamigos.org/quantum-ai/",
+          "id": "empty_list_item",
+          "sample": "<li></li>"
+        },
+        {
+          "message": "Visible content matches deterministic production defect 'availability_24_star_7'.",
+          "url": "https://www.aiamigos.org/gpt-models/",
+          "id": "availability_24_star_7",
+          "sample": "24*7"
+        },
+        {
+          "message": "Visible content matches deterministic production defect 'empty_list_item'.",
+          "url": "https://www.aiamigos.org/gpt-models/",
+          "id": "empty_list_item",
+          "sample": "<li></li>"
+        }
+      ],
+      "notes": [
+        "Empty list items and explicit numbering sequences are checked only in main content and only for deterministic structural shapes.",
+        "106 additional failure detail(s) omitted; see metrics for totals."
+      ]
+    },
+    {
+      "id": "content.contact_exchange",
+      "title": "Contact exchange privacy and response expectation",
+      "severity": "high",
+      "status": "fail",
+      "summary": "The Contact exchange remains incomplete for M10.",
+      "metrics": {
+        "status": 200,
+        "exchangeCount": 1,
+        "adjacentPrivacyContext": false,
+        "explicitResponseExpectation": false,
+        "completeExchangeContext": false
+      },
+      "failures": [
+        {
+          "message": "The Contact exchange has no adjacent privacy or data-handling context.",
+          "url": "https://www.aiamigos.org/contact/",
+          "code": "privacy_context_missing"
+        },
+        {
+          "message": "The Contact exchange has no explicit time-bounded response expectation.",
+          "url": "https://www.aiamigos.org/contact/",
+          "code": "response_expectation_missing"
+        }
+      ],
+      "notes": [
+        "A statement that response timing is unpublished is honest interim copy, but it is not a time-bounded response expectation and cannot close M10."
+      ]
+    },
+    {
+      "id": "resources.http_references",
+      "title": "Explicit HTTP references",
+      "severity": "medium",
+      "status": "fail",
+      "summary": "Mixed-scheme references remain.",
+      "metrics": {
+        "pages": 114,
+        "affectedPages": 114,
+        "references": 364,
+        "uniqueReferences": 51
+      },
+      "failures": [
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://www.aiamigos.org/hello-world/",
+          "reference": "http://aiamigos.org"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://www.aiamigos.org/hello-world/",
+          "reference": "http://www.aiamigos.org/wp-content/uploads/2023/10/cropped-logo-5.png"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://www.aiamigos.org/hello-world/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://www.aiamigos.org/ai-app-development/",
+          "reference": "http://aiamigos.org"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://www.aiamigos.org/ai-app-development/",
+          "reference": "http://www.aiamigos.org/wp-content/uploads/2023/10/cropped-logo-5.png"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://www.aiamigos.org/ai-app-development/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://www.aiamigos.org/blog-2/",
+          "reference": "http://aiamigos.org"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://www.aiamigos.org/blog-2/",
+          "reference": "http://aiamigos.org/wp-content/uploads/2023/10/0_1-3-300x300.png"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://www.aiamigos.org/blog-2/",
+          "reference": "http://aiamigos.org/wp-content/uploads/2023/10/A-crystal-ball-with-futuristic-city-and-AI-robots-inside-1-300x236.jpg"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://www.aiamigos.org/blog-2/",
+          "reference": "http://www.aiamigos.org/wp-content/uploads/2023/10/cropped-logo-5.png"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://www.aiamigos.org/blog-2/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://www.aiamigos.org/artificial-intelligence-ai/",
+          "reference": "http://aiamigos.org"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://www.aiamigos.org/artificial-intelligence-ai/",
+          "reference": "http://www.aiamigos.org/wp-content/uploads/2023/10/cropped-logo-5.png"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://www.aiamigos.org/artificial-intelligence-ai/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://www.aiamigos.org/blog-4/",
+          "reference": "http://aiamigos.org"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://www.aiamigos.org/blog-4/",
+          "reference": "http://www.aiamigos.org/wp-content/uploads/2023/10/cropped-logo-5.png"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://www.aiamigos.org/blog-4/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://www.aiamigos.org/latest-blog-title-01/",
+          "reference": "http://aiamigos.org"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://www.aiamigos.org/latest-blog-title-01/",
+          "reference": "http://www.aiamigos.org/wp-content/uploads/2023/10/cropped-logo-5.png"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://www.aiamigos.org/latest-blog-title-01/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://www.aiamigos.org/ai-jobs-whats-the-real-deal-%f0%9f%8c%8d/",
+          "reference": "http://aiamigos.org"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://www.aiamigos.org/ai-jobs-whats-the-real-deal-%f0%9f%8c%8d/",
+          "reference": "http://www.aiamigos.org/wp-content/uploads/2023/10/cropped-logo-5.png"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://www.aiamigos.org/ai-jobs-whats-the-real-deal-%f0%9f%8c%8d/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://www.aiamigos.org/ai-ethics-for-everyday-folks-the-stuff-you-gotta-know-%f0%9f%a4%96%f0%9f%94%8d/",
+          "reference": "http://aiamigos.org"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://www.aiamigos.org/ai-ethics-for-everyday-folks-the-stuff-you-gotta-know-%f0%9f%a4%96%f0%9f%94%8d/",
+          "reference": "http://www.aiamigos.org/wp-content/uploads/2023/10/cropped-logo-5.png"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://www.aiamigos.org/ai-ethics-for-everyday-folks-the-stuff-you-gotta-know-%f0%9f%a4%96%f0%9f%94%8d/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://www.aiamigos.org/ai-in-healthcare/",
+          "reference": "http://aiamigos.org"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://www.aiamigos.org/ai-in-healthcare/",
+          "reference": "http://aiamigos.org/wp-content/uploads/2023/11/DALL·E-2023-11-03-01.53.32-Photo_-A-joyful-scene-at-a-dance-floor-with-various-individuals-including-a-war-veteran-named-Max-who-is-wearing-smart-prosthetic-leg-that-has-a-sle.png"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://www.aiamigos.org/ai-in-healthcare/",
+          "reference": "http://aiamigos.org/wp-content/uploads/2023/11/DALL·E-2023-11-03-08.49.58-Illustration_-A-fitness-tracker-on-Toms-wrist-glowing-with-an-alert-symbol-amidst-a-background-of-a-morning-jog-setting.-Surrounding-the-tracker-vi.png"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://www.aiamigos.org/ai-in-healthcare/",
+          "reference": "http://www.aiamigos.org/wp-content/uploads/2023/10/cropped-logo-5.png"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://www.aiamigos.org/ai-in-healthcare/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://www.aiamigos.org/ai-in-finance/",
+          "reference": "http://aiamigos.org"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://www.aiamigos.org/ai-in-finance/",
+          "reference": "http://www.aiamigos.org/wp-content/uploads/2023/10/cropped-logo-5.png"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://www.aiamigos.org/ai-in-finance/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://www.aiamigos.org/unboxing-ai-the-retail-revolution-behind-your-shopping-spree/",
+          "reference": "http://aiamigos.org"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://www.aiamigos.org/unboxing-ai-the-retail-revolution-behind-your-shopping-spree/",
+          "reference": "http://www.aiamigos.org/wp-content/uploads/2023/10/cropped-logo-5.png"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://www.aiamigos.org/unboxing-ai-the-retail-revolution-behind-your-shopping-spree/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://www.aiamigos.org/the-future-farm-ais-role-in-our-fields-and-beyond/",
+          "reference": "http://aiamigos.org"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://www.aiamigos.org/the-future-farm-ais-role-in-our-fields-and-beyond/",
+          "reference": "http://www.aiamigos.org/wp-content/uploads/2023/10/cropped-logo-5.png"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://www.aiamigos.org/the-future-farm-ais-role-in-our-fields-and-beyond/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://www.aiamigos.org/crafting-the-future-ais-role-in-modern-manufacturing/",
+          "reference": "http://aiamigos.org"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://www.aiamigos.org/crafting-the-future-ais-role-in-modern-manufacturing/",
+          "reference": "http://www.aiamigos.org/wp-content/uploads/2023/10/cropped-logo-5.png"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://www.aiamigos.org/crafting-the-future-ais-role-in-modern-manufacturing/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://www.aiamigos.org/the-blog-publishing-checklist-ensuring-your-content-doesnt-go-oops/",
+          "reference": "http://aiamigos.org"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://www.aiamigos.org/the-blog-publishing-checklist-ensuring-your-content-doesnt-go-oops/",
+          "reference": "http://www.aiamigos.org/wp-content/uploads/2023/10/cropped-logo-5.png"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://www.aiamigos.org/the-blog-publishing-checklist-ensuring-your-content-doesnt-go-oops/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://www.aiamigos.org/unlocking-ai-magic-in-entertainment-a-light-hearted-guide/",
+          "reference": "http://aiamigos.org"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://www.aiamigos.org/unlocking-ai-magic-in-entertainment-a-light-hearted-guide/",
+          "reference": "http://www.aiamigos.org/wp-content/uploads/2023/10/cropped-logo-5.png"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://www.aiamigos.org/unlocking-ai-magic-in-entertainment-a-light-hearted-guide/",
+          "reference": "http://www.youtube.com/@AIamigos-sn8uf"
+        },
+        {
+          "message": "Explicit HTTP reference remains in HTML.",
+          "url": "https://www.aiamigos.org/the-future-on-wheels-how-ai-is-steering-the-world-of-transportation-%f0%9f%9a%97%f0%9f%92%a8/",
+          "reference": "http://aiamigos.org"
+        }
+      ],
+      "notes": [
+        "314 additional failure detail(s) omitted; see metrics for totals."
+      ]
+    },
+    {
+      "id": "responses.headers",
+      "title": "Response security and cache headers",
+      "severity": "medium",
+      "status": "fail",
+      "summary": "Response hardening/caching headers remain incomplete.",
+      "metrics": {
+        "pages": 114,
+        "missingByHeader": {
+          "strict-transport-security": 114,
+          "x-content-type-options": 114,
+          "referrer-policy": 114,
+          "permissions-policy": 114
+        },
+        "missingFrameProtection": 114,
+        "missingCacheControl": 114,
+        "poweredByExposed": 114
+      },
+      "failures": [
+        {
+          "message": "strict-transport-security is missing on 114/114 HTML responses.",
+          "header": "strict-transport-security",
+          "sampleUrls": [
+            "https://www.aiamigos.org/hello-world/",
+            "https://www.aiamigos.org/ai-app-development/",
+            "https://www.aiamigos.org/blog-2/",
+            "https://www.aiamigos.org/artificial-intelligence-ai/",
+            "https://www.aiamigos.org/blog-4/",
+            "https://www.aiamigos.org/latest-blog-title-01/",
+            "https://www.aiamigos.org/ai-jobs-whats-the-real-deal-%f0%9f%8c%8d/",
+            "https://www.aiamigos.org/ai-ethics-for-everyday-folks-the-stuff-you-gotta-know-%f0%9f%a4%96%f0%9f%94%8d/",
+            "https://www.aiamigos.org/ai-in-healthcare/",
+            "https://www.aiamigos.org/ai-in-finance/"
+          ]
+        },
+        {
+          "message": "x-content-type-options is missing on 114/114 HTML responses.",
+          "header": "x-content-type-options",
+          "sampleUrls": [
+            "https://www.aiamigos.org/hello-world/",
+            "https://www.aiamigos.org/ai-app-development/",
+            "https://www.aiamigos.org/blog-2/",
+            "https://www.aiamigos.org/artificial-intelligence-ai/",
+            "https://www.aiamigos.org/blog-4/",
+            "https://www.aiamigos.org/latest-blog-title-01/",
+            "https://www.aiamigos.org/ai-jobs-whats-the-real-deal-%f0%9f%8c%8d/",
+            "https://www.aiamigos.org/ai-ethics-for-everyday-folks-the-stuff-you-gotta-know-%f0%9f%a4%96%f0%9f%94%8d/",
+            "https://www.aiamigos.org/ai-in-healthcare/",
+            "https://www.aiamigos.org/ai-in-finance/"
+          ]
+        },
+        {
+          "message": "referrer-policy is missing on 114/114 HTML responses.",
+          "header": "referrer-policy",
+          "sampleUrls": [
+            "https://www.aiamigos.org/hello-world/",
+            "https://www.aiamigos.org/ai-app-development/",
+            "https://www.aiamigos.org/blog-2/",
+            "https://www.aiamigos.org/artificial-intelligence-ai/",
+            "https://www.aiamigos.org/blog-4/",
+            "https://www.aiamigos.org/latest-blog-title-01/",
+            "https://www.aiamigos.org/ai-jobs-whats-the-real-deal-%f0%9f%8c%8d/",
+            "https://www.aiamigos.org/ai-ethics-for-everyday-folks-the-stuff-you-gotta-know-%f0%9f%a4%96%f0%9f%94%8d/",
+            "https://www.aiamigos.org/ai-in-healthcare/",
+            "https://www.aiamigos.org/ai-in-finance/"
+          ]
+        },
+        {
+          "message": "permissions-policy is missing on 114/114 HTML responses.",
+          "header": "permissions-policy",
+          "sampleUrls": [
+            "https://www.aiamigos.org/hello-world/",
+            "https://www.aiamigos.org/ai-app-development/",
+            "https://www.aiamigos.org/blog-2/",
+            "https://www.aiamigos.org/artificial-intelligence-ai/",
+            "https://www.aiamigos.org/blog-4/",
+            "https://www.aiamigos.org/latest-blog-title-01/",
+            "https://www.aiamigos.org/ai-jobs-whats-the-real-deal-%f0%9f%8c%8d/",
+            "https://www.aiamigos.org/ai-ethics-for-everyday-folks-the-stuff-you-gotta-know-%f0%9f%a4%96%f0%9f%94%8d/",
+            "https://www.aiamigos.org/ai-in-healthcare/",
+            "https://www.aiamigos.org/ai-in-finance/"
+          ]
+        },
+        {
+          "message": "Frame protection is missing on 114/114 HTML responses.",
+          "sampleUrls": [
+            "https://www.aiamigos.org/hello-world/",
+            "https://www.aiamigos.org/ai-app-development/",
+            "https://www.aiamigos.org/blog-2/",
+            "https://www.aiamigos.org/artificial-intelligence-ai/",
+            "https://www.aiamigos.org/blog-4/",
+            "https://www.aiamigos.org/latest-blog-title-01/",
+            "https://www.aiamigos.org/ai-jobs-whats-the-real-deal-%f0%9f%8c%8d/",
+            "https://www.aiamigos.org/ai-ethics-for-everyday-folks-the-stuff-you-gotta-know-%f0%9f%a4%96%f0%9f%94%8d/",
+            "https://www.aiamigos.org/ai-in-healthcare/",
+            "https://www.aiamigos.org/ai-in-finance/"
+          ]
+        },
+        {
+          "message": "Explicit HTML Cache-Control is missing on 114/114 responses.",
+          "sampleUrls": [
+            "https://www.aiamigos.org/hello-world/",
+            "https://www.aiamigos.org/ai-app-development/",
+            "https://www.aiamigos.org/blog-2/",
+            "https://www.aiamigos.org/artificial-intelligence-ai/",
+            "https://www.aiamigos.org/blog-4/",
+            "https://www.aiamigos.org/latest-blog-title-01/",
+            "https://www.aiamigos.org/ai-jobs-whats-the-real-deal-%f0%9f%8c%8d/",
+            "https://www.aiamigos.org/ai-ethics-for-everyday-folks-the-stuff-you-gotta-know-%f0%9f%a4%96%f0%9f%94%8d/",
+            "https://www.aiamigos.org/ai-in-healthcare/",
+            "https://www.aiamigos.org/ai-in-finance/"
+          ]
+        },
+        {
+          "message": "X-Powered-By is exposed on 114/114 responses.",
+          "values": [
+            "PHP/8.1.34"
+          ],
+          "sampleUrls": [
+            "https://www.aiamigos.org/hello-world/",
+            "https://www.aiamigos.org/ai-app-development/",
+            "https://www.aiamigos.org/blog-2/",
+            "https://www.aiamigos.org/artificial-intelligence-ai/",
+            "https://www.aiamigos.org/blog-4/",
+            "https://www.aiamigos.org/latest-blog-title-01/",
+            "https://www.aiamigos.org/ai-jobs-whats-the-real-deal-%f0%9f%8c%8d/",
+            "https://www.aiamigos.org/ai-ethics-for-everyday-folks-the-stuff-you-gotta-know-%f0%9f%a4%96%f0%9f%94%8d/",
+            "https://www.aiamigos.org/ai-in-healthcare/",
+            "https://www.aiamigos.org/ai-in-finance/"
+          ]
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "browser.runtime",
+      "title": "Rendered console and runtime health",
+      "severity": "high",
+      "status": "skip",
+      "summary": "Rendered runtime was not observed.",
+      "metrics": {
+        "pages": 0,
+        "wafBlocked403": 0,
+        "exceptions": 0,
+        "consoleErrors": 0,
+        "logErrors": 0,
+        "networkFailures": 0
+      },
+      "failures": [],
+      "notes": [
+        "Browser probing is disabled in offline snapshot mode."
+      ]
+    },
+    {
+      "id": "browser.accessibility",
+      "title": "Structured mobile control accessibility evidence",
+      "severity": "high",
+      "status": "skip",
+      "summary": "Structured rendered accessibility evidence was not collected.",
+      "metrics": {
+        "configuredRootUrl": "https://www.aiamigos.org/",
+        "observedPageUrl": null,
+        "violationCount": 0,
+        "violationCodes": [],
+        "evidence": null
+      },
+      "failures": [],
+      "notes": [
+        "Rendered DOM, bounding boxes, focus, keyboard handlers, and autoplay state were not observed."
+      ]
+    },
+    {
+      "id": "performance.budgets",
+      "title": "HTML and rendered transfer budgets",
+      "severity": "high",
+      "status": "fail",
+      "summary": "One or more performance budgets failed.",
+      "metrics": {
+        "staticPages": [
+          {
+            "url": "https://www.aiamigos.org/",
+            "status": 200,
+            "htmlBytes": 100649,
+            "scripts": 29,
+            "elements": 469
+          },
+          {
+            "url": "https://www.aiamigos.org/home/",
+            "status": 200,
+            "htmlBytes": 134730,
+            "scripts": 28,
+            "elements": 730
+          },
+          {
+            "url": "https://www.aiamigos.org/contact/",
+            "status": 200,
+            "htmlBytes": 111015,
+            "scripts": 28,
+            "elements": 429
+          }
+        ],
+        "rejectedStaticPages": [],
+        "browserPages": [],
+        "budgets": {
+          "htmlBytes": 250000,
+          "totalTransferBytes": 3000000,
+          "imageTransferBytes": 1500000,
+          "scriptTransferBytes": 750000,
+          "resourceCount": 80,
+          "scriptCount": 20,
+          "domNodes": 1500,
+          "horizontalOverflowPx": 0
+        }
+      },
+      "failures": [
+        {
+          "message": "Static script count exceeds budget.",
+          "url": "https://www.aiamigos.org/",
+          "actual": 29,
+          "budget": 20
+        },
+        {
+          "message": "Static script count exceeds budget.",
+          "url": "https://www.aiamigos.org/home/",
+          "actual": 28,
+          "budget": 20
+        },
+        {
+          "message": "Static script count exceeds budget.",
+          "url": "https://www.aiamigos.org/contact/",
+          "actual": 28,
+          "budget": 20
+        }
+      ],
+      "notes": [
+        "Transfer-byte and rendered-DOM budgets require live browser observation; static HTML checks still ran."
+      ]
+    }
+  ],
+  "evidence": {
+    "robots": {
+      "url": "https://www.aiamigos.org/robots.txt",
+      "status": 200,
+      "observed": true
+    },
+    "sitemaps": [
+      {
+        "url": "https://www.aiamigos.org/sitemap_index.xml",
+        "status": 200,
+        "locationCount": 7,
+        "kind": "index"
+      },
+      {
+        "url": "https://www.aiamigos.org/post-sitemap.xml",
+        "status": 200,
+        "locationCount": 71,
+        "kind": "urlset"
+      },
+      {
+        "url": "https://www.aiamigos.org/page-sitemap.xml",
+        "status": 200,
+        "locationCount": 22,
+        "kind": "urlset"
+      },
+      {
+        "url": "https://www.aiamigos.org/services-sitemap.xml",
+        "status": 200,
+        "locationCount": 4,
+        "kind": "urlset"
+      },
+      {
+        "url": "https://www.aiamigos.org/classes-sitemap.xml",
+        "status": 200,
+        "locationCount": 2,
+        "kind": "urlset"
+      },
+      {
+        "url": "https://www.aiamigos.org/testimonials-sitemap.xml",
+        "status": 200,
+        "locationCount": 3,
+        "kind": "urlset"
+      },
+      {
+        "url": "https://www.aiamigos.org/team-sitemap.xml",
+        "status": 200,
+        "locationCount": 4,
+        "kind": "urlset"
+      },
+      {
+        "url": "https://www.aiamigos.org/category-sitemap.xml",
+        "status": 200,
+        "locationCount": 8,
+        "kind": "urlset"
+      }
+    ],
+    "browser": {
+      "skipped": true,
+      "failed": false,
+      "reason": "Browser probing is disabled in offline snapshot mode.",
+      "pagesCompleted": 0
+    },
+    "cacheBypass": {
+      "mode": "not-applicable"
+    },
+    "limitations": [
+      "No network requests were made.",
+      "Redirect chains, uncaptured routes, external destinations, console events, and transfer bytes cannot be proven from this snapshot."
+    ]
+  },
+  "config": {
+    "routes": {
+      "root": "/",
+      "oldHome": "/home/",
+      "blog": "/blog/",
+      "legacyPageTwo": "/page/2/",
+      "contact": "/contact/"
+    },
+    "routePolicies": {
+      "gonePaths": [
+        "/classes/recent-case-title-01/",
+        "/classes/recent-case-title-02/",
+        "/testimonials/client-name-01/",
+        "/testimonials/client-name-02/",
+        "/testimonials/client-name-03/",
+        "/team/member-name-02/",
+        "/team/member-name-03/",
+        "/team/member-name-04/",
+        "/services/ai-amigos-academy/",
+        "/services/ai-amigos-pro/",
+        "/services/ai-by-job-role/",
+        "/services/ai-for-kids/",
+        "/ai-certifications/",
+        "/gpt-models/",
+        "/grokai/",
+        "/ai-model-benchmarks-a-comprehensive-guide/",
+        "/others/",
+        "/shop/",
+        "/langgraph-5-stunning-secrets-for-building-a-generative-ai-application/",
+        "/ways-to-test-a-rag-architecture-based-generative-ai-application/",
+        "/building-agentic-ai-saas-a-strategic-roadmap-using-google-gemini-enterprise/",
+        "/custom-gpt-models/",
+        "/services/",
+        "/classes/",
+        "/ai-tools-for-kids/",
+        "/ai-books-for-kids/",
+        "/newsletter/",
+        "/newsletter-2/"
+      ],
+      "quarantinedPaths": [
+        "/privacy-policy-2/",
+        "/page/",
+        "/academy/",
+        "/ai-career/"
+      ],
+      "unpublishedPaths": [],
+      "permanentRedirects": {},
+      "preservedPaths": [
+        "/team/member-name-01/"
+      ],
+      "registrationPath": "/wp-login.php?action=register"
+    },
+    "feedPaths": [
+      "/feed/",
+      "/?feed=rss2&post_type=services",
+      "/?feed=rss2&post_type=classes",
+      "/?feed=rss2&post_type=testimonials",
+      "/?feed=rss2&post_type=team"
+    ],
+    "concurrency": 10,
+    "timeoutMs": 20000,
+    "maxSitemaps": 50,
+    "maxSitemapUrls": 1000,
+    "maxInternalTargets": 500,
+    "internalProbeSeedLimit": 30,
+    "maxPagerPages": 50,
+    "detailLimit": 50,
+    "expectedBrandPattern": "AI\\s*Amigos",
+    "genericRootTitlePattern": "^(?:blog|home|welcome)$",
+    "metadata": {
+      "titleMin": 10,
+      "titleMax": 60,
+      "descriptionMin": 50,
+      "descriptionMax": 160,
+      "requireSocialImages": true
+    },
+    "socialImages": {
+      "allowedContentTypes": [
+        "image/png",
+        "image/jpeg",
+        "image/webp"
+      ],
+      "maxBytes": 5000000,
+      "fallbackApproval": {
+        "status": "pending",
+        "url": "/wp-content/uploads/2023/10/cropped-logo-5.png",
+        "width": 1200,
+        "height": 630,
+        "sha256": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "evidenceId": null
+      }
+    },
+    "schemaGovernance": {
+      "allowedTypes": [
+        "Article",
+        "BlogPosting",
+        "BreadcrumbList",
+        "CollectionPage",
+        "EducationalOrganization",
+        "ImageObject",
+        "ListItem",
+        "Organization",
+        "Person",
+        "Review",
+        "SearchAction",
+        "SiteNavigationElement",
+        "WebPage",
+        "WebSite"
+      ],
+      "approvalRequiredTypes": [
+        "Person",
+        "Organization",
+        "EducationalOrganization",
+        "Review"
+      ],
+      "claimAllowlist": [],
+      "collectionPagePathPatterns": [
+        "^/blog/?$"
+      ],
+      "articleDeniedPathPatterns": [
+        "^/$",
+        "^/blog/?$"
+      ],
+      "articleBodyClassPatterns": [
+        "\\bsingle-post\\b"
+      ]
+    },
+    "headings": {
+      "maxHeadingWords": 60,
+      "disallowLevelSkips": true
+    },
+    "performance": {
+      "htmlBytes": 250000,
+      "totalTransferBytes": 3000000,
+      "imageTransferBytes": 1500000,
+      "scriptTransferBytes": 750000,
+      "resourceCount": 80,
+      "scriptCount": 20,
+      "domNodes": 1500,
+      "horizontalOverflowPx": 0
+    },
+    "browser": {
+      "settleMs": 2000,
+      "width": 390,
+      "height": 844,
+      "deviceScaleFactor": 1,
+      "mobile": true,
+      "maxPages": 4,
+      "paths": [
+        "/",
+        "/blog/",
+        "/contact/",
+        "/team/member-name-01/"
+      ],
+      "accessibility": {
+        "enabled": true,
+        "rootPath": "/",
+        "expectedCarouselDots": 20,
+        "minTargetPx": 44,
+        "autoplayObservationMs": 6250,
+        "minAutoplayObservationMs": 6000,
+        "interactionSettleMs": 650
+      }
+    },
+    "requiredHeaders": [
+      "strict-transport-security",
+      "x-content-type-options",
+      "referrer-policy",
+      "permissions-policy"
+    ],
+    "requireFrameProtection": true,
+    "requireHtmlCachePolicy": true,
+    "forbidPoweredBy": true,
+    "disallowedIndexablePathPatterns": [
+      "^/author/",
+      "^/page/[2-9][0-9]*/?$",
+      "^/category/"
+    ],
+    "placeholderPatterns": [
+      {
+        "id": "raw_mailpoet_shortcode",
+        "pattern": "\\[mailpoet_form\\b[^\\]]*\\]",
+        "flags": "i",
+        "scope": "body"
+      },
+      {
+        "id": "theme_latin_demo_copy",
+        "pattern": "Te obtinuit ut adepto satis somno",
+        "flags": "i"
+      },
+      {
+        "id": "placeholder_client_name",
+        "pattern": "\\bClient Name \\d{1,2}\\b",
+        "flags": "i",
+        "scope": "body"
+      },
+      {
+        "id": "placeholder_member_name",
+        "pattern": "\\bMember Name \\d{1,2}\\b",
+        "flags": "i",
+        "scope": "body"
+      },
+      {
+        "id": "placeholder_case_title",
+        "pattern": "\\bRecent Case Title \\d{1,2}\\b",
+        "flags": "i",
+        "scope": "body"
+      },
+      {
+        "id": "placeholder_company_token",
+        "pattern": "\\[Your Company Name(?:/AIAmigos\\.org)?\\]",
+        "flags": "i"
+      },
+      {
+        "id": "placeholder_service_url",
+        "pattern": "\\bService Url\\b",
+        "flags": "i"
+      },
+      {
+        "id": "misspelled_linkedin",
+        "pattern": "\\bLinkden\\b",
+        "flags": "i"
+      }
+    ]
+  }
+}

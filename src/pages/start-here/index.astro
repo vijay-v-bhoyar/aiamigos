@@ -1,0 +1,20 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+<BaseLayout title="Find your practical AI path" description="A private five-question pathfinder that recommends an AI Amigos track, browser tool, templates, and supporting guides.">
+  <div class="shell"><div class="reading"><p class="eyebrow">Private five-question pathfinder</p><h1>Start with your outcome, not a product name.</h1><p class="lede">Answer five short questions. The recommendation is calculated on this page and is never submitted.</p></div>
+  <form id="pathfinder" class="form-shell section-space">
+    <label>1. Where will you use AI?<select name="area"><option value="business">Business or operations</option><option value="careers">Career or study (age 15+)</option><option value="teaching">Teaching or training</option><option value="builders">Building an AI system</option></select></label>
+    <label>2. What do you need to produce?<input name="goal" required placeholder="A pilot plan, lesson, portfolio, or evaluation" /></label>
+    <label>3. How much AI experience do you have?<select name="experience"><option>Starting out</option><option>Some practical use</option><option>Building or leading</option></select></label>
+    <label>4. What is the highest data sensitivity?<select name="sensitivity"><option>Public</option><option>Internal</option><option>Confidential</option></select></label>
+    <label>5. What would be most useful today?<select name="mode"><option value="tool">An interactive workbench</option><option value="template">A copyable template</option><option value="guide">A supporting guide</option></select></label>
+    <button class="button" type="submit">Show my path</button>
+  </form>
+  <section id="path-result" class="feature-panel section-space" hidden tabindex="-1" aria-live="polite"></section></div>
+  <script>
+    const paths={business:{label:'Business and operations',tool:['Business AI Use-Case Scorecard','/tools/business-use-case-scorecard/'],template:['AI pilot charter','/templates/ai-pilot-charter/'],guide:'/tracks/business/'},careers:{label:'Careers and students 15+',tool:['Career Roadmap Builder','/tools/career-roadmap-builder/'],template:['Portfolio project brief','/templates/portfolio-project-brief/'],guide:'/tracks/careers/'},teaching:{label:'Teaching and training',tool:['Teaching and Training Planner','/tools/teaching-training-planner/'],template:['AI-supported lesson plan','/templates/ai-lesson-plan/'],guide:'/tracks/teaching/'},builders:{label:'AI builders',tool:['Builder Evaluation Workbench','/tools/builder-evaluation-workbench/'],template:['RAG test matrix','/templates/rag-test-matrix/'],guide:'/tracks/builders/'}};
+    const form=document.querySelector('#pathfinder');const result=document.querySelector('#path-result');
+    form.addEventListener('submit',(event)=>{event.preventDefault();if(!form.reportValidity())return;const values=Object.fromEntries(new FormData(form));const path=paths[values.area];result.innerHTML=`<div><p class="eyebrow">Recommended track</p><h2>${path.label}</h2><p>Begin with <strong>${path.tool[0]}</strong>, then preserve the decision in the ${path.template[0].toLowerCase()}. For ${values.sensitivity.toLowerCase()} data, minimize inputs and confirm the tool is approved before entering real records.</p><div class="button-row"><a class="button" href="${path.tool[1]}">Open recommended tool</a><a class="button secondary" href="${path.template[1]}">Open template</a><a class="button secondary" href="${path.guide}">View the full track</a></div></div>`;result.hidden=false;result.focus();});
+  </script>
+</BaseLayout>

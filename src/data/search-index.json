@@ -1,0 +1,401 @@
+[
+  {
+    "title": "Unraveling the Code: Your Journey to Becoming an AI App Maestro with Prompts",
+    "description": "\"Dive into the booming world of AI app development! From voice assistants to augmented reality, discover the magic behind AI-driven apps. Whether you're a newbie or pro, explore the future of AI and transform user experi",
+    "slug": "ai-app-development",
+    "category": "ai-engineering",
+    "publishedAt": "2023-09-04"
+  },
+  {
+    "title": "Artificial Intelligence (AI): 5 Essential Insights to Easily Grasp its Wonders",
+    "description": "\"Discover Artificial Intelligence (AI): Learn how AI mimics human thought, the role of machine learning, and the ethics shaping its future in our guide.\"",
+    "slug": "artificial-intelligence-ai",
+    "category": "foundations",
+    "publishedAt": "2023-10-08"
+  },
+  {
+    "title": "AI Ethics for Everyday Folks: The Stuff You Gotta Know! 🤖🔍",
+    "description": "Hey there, pals! Ever shouted \"Hey Siri!\" and wondered if she's playing fair? Dive into the ethical twists and turns of AI with me, but buckle up—it’s a fun",
+    "slug": "ai-ethics-for-everyday-folks-the-stuff-you-gotta-know-%f0%9f%a4%96%f0%9f%94%8d",
+    "category": "responsible-ai",
+    "publishedAt": "2023-09-08"
+  },
+  {
+    "title": "Unboxing AI: The Retail Revolution Behind Your Shopping Spree!",
+    "description": "#AI & Shopping: A Match Made in Tech Heaven!",
+    "slug": "unboxing-ai-the-retail-revolution-behind-your-shopping-spree",
+    "category": "industry-applications",
+    "publishedAt": "2023-10-10"
+  },
+  {
+    "title": "The Future Farm: AI's Role in Our Fields and Beyond!",
+    "description": "🌾 Hey, friends! Ever think about how your food gets to your plate? Thanks to cool tech changes, farming's taking a leap into the future. AI is pitching in,",
+    "slug": "the-future-farm-ais-role-in-our-fields-and-beyond",
+    "category": "industry-applications",
+    "publishedAt": "2023-09-30"
+  },
+  {
+    "title": "Crafting the Future: AI's Role in Modern Manufacturing",
+    "description": "AI in Making Stuff: The Behind-the-Scenes Magic",
+    "slug": "crafting-the-future-ais-role-in-modern-manufacturing",
+    "category": "industry-applications",
+    "publishedAt": "2023-09-24"
+  },
+  {
+    "title": "\"The Blog Publishing Checklist: Ensuring Your Content Doesn't Go 'Oops!'\"",
+    "description": "Introduction:",
+    "slug": "the-blog-publishing-checklist-ensuring-your-content-doesnt-go-oops",
+    "category": "foundations",
+    "publishedAt": "2023-10-10"
+  },
+  {
+    "title": "Unlocking AI Magic in Entertainment – A Light-Hearted Guide",
+    "description": "AI in Your Fun Time: Making Movies & Music Pop!",
+    "slug": "unlocking-ai-magic-in-entertainment-a-light-hearted-guide",
+    "category": "industry-applications",
+    "publishedAt": "2023-10-10"
+  },
+  {
+    "title": "How AI is Steering the World of Transportation!",
+    "description": "AI on the Move: Changing How We Travel! 🚗💨",
+    "slug": "the-future-on-wheels-how-ai-is-steering-the-world-of-transportation-%f0%9f%9a%97%f0%9f%92%a8",
+    "category": "industry-applications",
+    "publishedAt": "2023-10-11"
+  },
+  {
+    "title": "AI Evolution: 13 Breakthrough Stages from Rule-Based Systems to Quantum Wonders",
+    "description": "Explore AI Evolution's top stages: from rule-based systems to quantum leaps in AI. Uncover the journey of artificial intelligence's growth and future.",
+    "slug": "ai-evolution",
+    "category": "foundations",
+    "publishedAt": "2023-11-06"
+  },
+  {
+    "title": "\"Demystifying AI Rule-Based Systems: A Deep Dive into the Heart of Classic AI\"",
+    "description": "Dive into the world of AI Rule-Based Systems! Explore Expert Systems, Decision Trees, Knowledge Bases, and more. Uncover the magic behind AI's logical thinking. Perfect for tech enthusiasts! 🌟",
+    "slug": "ai-rule-based-systems",
+    "category": "foundations",
+    "publishedAt": "2023-10-15"
+  },
+  {
+    "title": "Machine Learning (ML) Explored: An Adventure into Tech's Cutting-Edge",
+    "description": "\"Dive into the captivating journey of machine learning, unraveling its tech wonders and celebrating groundbreaking achievements. Discover ML's transformative tales!\"",
+    "slug": "machine-learning",
+    "category": "foundations",
+    "publishedAt": "2023-10-15"
+  },
+  {
+    "title": "Deep Learning (DL): Deep Dive into AI's Unraveling Tech Wonders in Everyday Moments",
+    "description": "Explore the fascinating world of deep learning in this insightful blog post. From easy-to-understand examples for kids to professional applications in healthcare, learn how AI's deep learning transforms industries and da",
+    "slug": "deep-learning-ai",
+    "category": "foundations",
+    "publishedAt": "2023-10-15"
+  },
+  {
+    "title": "General AI Unveiled: Embracing the Dance of Digital Dreams & Intelligence",
+    "description": "\"Explore the captivating realm of General AI: Discover the future possibilities of Artificial General Intelligence (AGI) in our latest article. Explore hypothetical applications of AGI, from versatile personal assistants",
+    "slug": "general-ai",
+    "category": "foundations",
+    "publishedAt": "2023-10-15"
+  },
+  {
+    "title": "\"Navigating the Neural Nebula of Superintelligent AI: Beyond Imagination\"",
+    "description": "Have you ever pondered a future where computers outthink and outpace human intellect, where machines evolve and dream? Grab your virtual telescope; we're setting sail across the vast ocean of Superintelligent AI.",
+    "slug": "superintelligent-ai",
+    "category": "foundations",
+    "publishedAt": "2023-10-10"
+  },
+  {
+    "title": "Adaptive AI: The Dynamic Evolution of Intelligent Systems",
+    "description": "\"Explore the world of Adaptive AI and discover how dynamic intelligence reshapes technology, enhancing flexibility and responsiveness in ever-evolving scenarios.\"",
+    "slug": "adaptive-ai",
+    "category": "foundations",
+    "publishedAt": "2023-10-15"
+  },
+  {
+    "title": "Emotional AI: Tapping into Tech's Tender Side.",
+    "description": "\"Delve into the realm of Emotional AI: from mood-responsive devices to empathic robots. Explore the groundbreaking journey of technology intertwined with human emotion.\"",
+    "slug": "emotional-ai",
+    "category": "foundations",
+    "publishedAt": "2023-10-15"
+  },
+  {
+    "title": "Creative AI: The Digital Da Vinci, Artistic Awakening",
+    "description": "Creative AI world. Explore the unlimited possibilities in the creative world.",
+    "slug": "creative-ai",
+    "category": "foundations",
+    "publishedAt": "2023-10-15"
+  },
+  {
+    "title": "Self-Aware AI: The Next Evolutionary Leap in Artificial Intelligence",
+    "description": "Explore the groundbreaking realm of Self-Aware AI. Delve into its potential, challenges, and the transformative impact on technology's future landscape. Artificial consciousness (AC), also known as machine consciousness ",
+    "slug": "self-aware-ai",
+    "category": "foundations",
+    "publishedAt": "2023-10-15"
+  },
+  {
+    "title": "Co-evolving AI: The Future of Harmonious Human-Machine Partnerships",
+    "description": "\"Discover the synergy of Co-evolving AI! Explore how humans and machines collaboratively shape the future, fostering mutual growth and groundbreaking innovations.\"",
+    "slug": "co-evolving-ai",
+    "category": "foundations",
+    "publishedAt": "2023-10-15"
+  },
+  {
+    "title": "Decentralized AI: Revolutionizing Data Privacy on the Blockchain",
+    "description": "Distributed Artificial Intelligence (DAI) also called Decentralized AI (Artificial Intelligences) a subfield of artificial intelligence research dedicated to the development of distributed solutions for problems. DAI is ",
+    "slug": "decentralized-ai",
+    "category": "responsible-ai",
+    "publishedAt": "2023-10-15"
+  },
+  {
+    "title": "Ethical AI: How to use it in good and fair ways",
+    "description": "Ethical AI companies, applications, frameworks, principles, guidelines. | ethical ai in healthcare | | ethical ai in finance | | ethical ai in marketing | | ethical ai in education | | ethical ai in government | | ethica",
+    "slug": "ethical-ai",
+    "category": "responsible-ai",
+    "publishedAt": "2023-11-06"
+  },
+  {
+    "title": "Quantum AI: 13 Breakthrough Moments Where Physics Fuels Smart Innovation!",
+    "description": "Power of quantum tech in everyday solutions! From drug discoveries to unhackable banks and efficient traffic management, quantum's making waves. Dive in!\" Quantum AI",
+    "slug": "quantum-ai",
+    "category": "foundations",
+    "publishedAt": "2023-10-15"
+  },
+  {
+    "title": "AI's Digital Transformation: Shaping Daily Realms with Unique Zeal and Empowering Change",
+    "description": "In the vast landscape of the digital cosmos, Artificial Intelligence (AI) shines brightly, guiding our path. From OpenAI's breakthroughs to Elon Musk's",
+    "slug": "ais-dawn-revolutionizing-the-digital-realm",
+    "category": "foundations",
+    "publishedAt": "2023-09-01"
+  },
+  {
+    "title": "Prompt Engineering: 5 Key Strategies to Unlock AI's Powerful Potential",
+    "description": "\"Dive into the art of Prompt Engineering and discover how it shapes our interactions with AI. From voice assistants to chatbots, learn the secrets behind seamless AI conversations. Explore the future of intuitive AI inte",
+    "slug": "prompt-engineering",
+    "category": "ai-engineering",
+    "publishedAt": "2023-11-03"
+  },
+  {
+    "title": "🎥 \"Turn Your Text into Video/Movies with 13+1 AI tools!\" 🎥",
+    "description": "\"Explore the wonders of AI in video creation! Dive into automated storytelling, dynamic visuals, and next-gen video tools. Turn text into captivating visuals! explore Text-to-video software\"",
+    "slug": "text-to-video-software",
+    "category": "tools-and-models",
+    "publishedAt": "2023-09-23"
+  },
+  {
+    "title": "Why Data is Key to Mastering AI Tricks: An Inside Look",
+    "description": "\"Explore the key role of data in powering Generative AI. Dive into a light-hearted guide that breaks down complex concepts for all tech enthusiasts!\"",
+    "slug": "data-gen-ai",
+    "category": "foundations",
+    "publishedAt": "2023-08-28"
+  },
+  {
+    "title": "AI's Recipe: Mixing Data Types & Models",
+    "description": "\"Explore the art of AI in the kitchen of data, blending diverse data types & models to cook up innovative solutions and insights.\"",
+    "slug": "ai-data-types-models",
+    "category": "tools-and-models",
+    "publishedAt": "2023-08-29"
+  },
+  {
+    "title": "Generative AI Solutions: 12 Steps to Unleash Powerful, Innovative Tech",
+    "description": "\"Explore Generative AI Solutions with our 12-step guide to unlocking the full potential of cutting-edge, innovative AI technology in your business.\"",
+    "slug": "generative-ai-solutions",
+    "category": "foundations",
+    "publishedAt": "2023-11-04"
+  },
+  {
+    "title": "Large Language Model (LLM) Secrets: 10 Astonishing Ways AI Enhances Work",
+    "description": "large language model applications, advancements, and societal impact. Discover how LLMs shape our world and what the future holds in AI.\" This blog will answer some of main questions related to LLM. What are large langua",
+    "slug": "large-language-model",
+    "category": "tools-and-models",
+    "publishedAt": "2023-11-05"
+  },
+  {
+    "title": "AI Companies: Top 100 and Their Flagship Products",
+    "description": "The world of artificial intelligence is evolving at a breakneck pace, with innovative AI companies leading the charge. Here's a look at 100 AI companies",
+    "slug": "ai-companies-top-100",
+    "category": "foundations",
+    "publishedAt": "2023-10-06"
+  },
+  {
+    "title": "Prompt Design and Engineering: 3 Essential Distinctions for Effective AI Development",
+    "description": "Dive into the world of AI and software development as we explore the crucial differences between prompt design and engineering. Learn how each plays a unique role in creating seamless user experiences and robust systems.",
+    "slug": "prompt-design-and-engineering",
+    "category": "ai-engineering",
+    "publishedAt": "2023-11-07"
+  },
+  {
+    "title": "AI PIN Technology and its 5 Main Benefits",
+    "description": "In recent years, artificial intelligence (AI) has made significant advancements, transforming various industries and revolutionizing the way we live and work.",
+    "slug": "ai-pin-technology-and-its-5-main-benefits",
+    "category": "foundations",
+    "publishedAt": "2023-11-13"
+  },
+  {
+    "title": "AI and Robotics: Transforming Manufacturing into a Data-Driven Enterprise",
+    "description": "AI Revolutionizing Manufacturing: The Convergence of AI and Robotics",
+    "slug": "ai-and-robotics",
+    "category": "industry-applications",
+    "publishedAt": "2023-10-25"
+  },
+  {
+    "title": "A Guide to Different Algorithms in Artificial Intelligence",
+    "description": "Learn about the different Algorithms in Artificial Intelligence (AI) and their significance. Explore supervised learning algorithms like Linear Regression and Logistic Regression, unsupervised learning algorithms like K-",
+    "slug": "algorithms-in-artificial-intelligence",
+    "category": "foundations",
+    "publishedAt": "2023-11-23"
+  },
+  {
+    "title": "Run Your Own Mini-AI: Local LLM on Your Laptop (Free, DIY, & Fun!)",
+    "description": "Run your own mini Large Language Model, Local LLM on your laptop for FREE! No cloud costs, just endless possibilities: chat with your AI, write poems, translate languages, and more. Easy setup with Ollama (your DIY AI tr",
+    "slug": "local-llm-on-your-laptop",
+    "category": "tools-and-models",
+    "publishedAt": "2023-12-06"
+  },
+  {
+    "title": "How Generative and Discriminative Models Transform AI",
+    "description": "Dive into the world of AI with our comprehensive guide on Generative and Discriminative Models. Understand their roles, applications, and future trends. Click to explore AI's potential!",
+    "slug": "generative-and-discriminative-models",
+    "category": "tools-and-models",
+    "publishedAt": "2023-12-10"
+  },
+  {
+    "title": "AI to the Rescue: Building Features Faster and Better with AI.",
+    "description": "In today's fast-paced world, software development teams are constantly under pressure to deliver new features quickly and efficiently. This is where Artificial Intelligence (AI) comes to the rescue, offering a revolution",
+    "slug": "building-features-faster-and-better-with-ai",
+    "category": "foundations",
+    "publishedAt": "2023-12-12"
+  },
+  {
+    "title": "How AI is Transforming Software Engineering: Future Trends and Tools",
+    "description": "How AI is Transforming Software Engineering. In the rapidly evolving software landscape, the ability to deliver innovative features swiftly and efficiently is crucial. Artificial Intelligence (AI) stands at the forefront",
+    "slug": "how-ai-is-transforming-software-engineering",
+    "category": "ai-engineering",
+    "publishedAt": "2023-12-13"
+  },
+  {
+    "title": "Top 20 Generative AI Tools for Creative Exploration",
+    "description": "Discover the top 20 generative AI tools that have revolutionized creative exploration. These tools use artificial intelligence algorithms to generate unique and original content, from images and music to text and designs",
+    "slug": "top-20-generative-ai-tools-for-creative-exploration",
+    "category": "tools-and-models",
+    "publishedAt": "2023-12-19"
+  },
+  {
+    "title": "Applications of Generative AI",
+    "description": "Generative Artificial Intelligence (AI) is a branch of AI that focuses on creating models capable of generating new content, such as images, music, text, and even videos. This article explores the exciting applications o",
+    "slug": "applications-of-generative-ai",
+    "category": "foundations",
+    "publishedAt": "2023-12-19"
+  },
+  {
+    "title": "Limitations of Generative AI",
+    "description": "Generative Artificial Intelligence (AI) has made significant advancements in recent years, but it also has limitations. This blog post explores the limitations of generative AI, including lack of contextual understanding",
+    "slug": "limitations-of-generative-ai",
+    "category": "foundations",
+    "publishedAt": "2023-12-19"
+  },
+  {
+    "title": "The Future of Generative AI",
+    "description": "Generative Artificial Intelligence (AI) has been making waves in recent years, revolutionizing various industries and transforming the way we interact with technology. This blog post explores the exciting future of gener",
+    "slug": "the-future-of-generative-ai",
+    "category": "foundations",
+    "publishedAt": "2023-12-19"
+  },
+  {
+    "title": "Generative AI vs. Traditional AI",
+    "description": "Learn about the differences between Generative AI and Traditional AI, their strengths and weaknesses, and the potential applications of Generative AI. Discover how Generative AI is revolutionizing various industries and ",
+    "slug": "generative-ai-vs-traditional-ai",
+    "category": "foundations",
+    "publishedAt": "2023-12-19"
+  },
+  {
+    "title": "The Explainability of Generative AI Models",
+    "description": "Learn about the importance of explainability in generative AI models and the challenges associated with achieving it. Discover promising solutions such as interpretable architectures and post-hoc explanation techniques. ",
+    "slug": "the-explainability-of-generative-ai-models",
+    "category": "tools-and-models",
+    "publishedAt": "2023-12-19"
+  },
+  {
+    "title": "Open-source Generative AI Projects",
+    "description": "Generative Artificial Intelligence (AI) is an exciting field that focuses on creating algorithms and models capable of generating new and original content. Open-source projects in this domain have gained significant popu",
+    "slug": "open-source-generative-ai-projects",
+    "category": "tools-and-models",
+    "publishedAt": "2023-12-19"
+  },
+  {
+    "title": "The Role of Generative AI in Creative Industries",
+    "description": "Artificial Intelligence (AI) has revolutionized various industries, and the creative sector is no exception. This article explores the role of generative AI in creative industries and its impact on the creative process. ",
+    "slug": "the-role-of-generative-ai-in-creative-industries",
+    "category": "foundations",
+    "publishedAt": "2023-12-19"
+  },
+  {
+    "title": "Training Data for Generative AI Models",
+    "description": "Learn about the importance of training data in generative AI models and how it affects the quality and diversity of the generated content. Understand the role of data preprocessing and the ethical considerations in using",
+    "slug": "training-data-for-generative-ai-models",
+    "category": "tools-and-models",
+    "publishedAt": "2023-12-19"
+  },
+  {
+    "title": "7 Key Steps: How to Be an AI Leader with No Code",
+    "description": "Explore becoming AI leader with no-code with our guide. Learn key steps like understanding AI basics, using no-code tools, managing AI projects, and ethical practices. Gain insights on effective leadership, collaboration",
+    "slug": "ai-leader-with-no-code",
+    "category": "foundations",
+    "publishedAt": "2024-01-05"
+  },
+  {
+    "title": "NVIDIA's Chat with RTX: The Key to Next-Generation Chatbots on Your PC",
+    "description": "Guide on setting up NVIDIA's Chat with RTX, detailed insights from NVIDIA's official sources and technical documentation.",
+    "slug": "nvidias-chat-with-rtx-the-key-to-next-generation-chatbots-on-your-pc",
+    "category": "tools-and-models",
+    "publishedAt": "2024-02-24"
+  },
+  {
+    "title": "Python Deployment Best Practices: A Comprehensive Guide",
+    "description": "Python Deployment Best Practices: Deploying Python applications can be a complex process, but with the right practices, you can ensure a smooth and efficient workflow. This guide will walk you through the best practices ",
+    "slug": "python-deployment-best-practices-a-comprehensive-guide",
+    "category": "ai-engineering",
+    "publishedAt": "2024-02-21"
+  },
+  {
+    "title": "Tesseract, an OCR (Optical Character Recognition) tool for Image Reading from Excel",
+    "description": "Here is a detailed, step-by-step guide on how to extract text from images in an Excel sheet using Tesseract, an OCR (Optical Character Recognition) tool,",
+    "slug": "tesseract-an-ocr-optical-character-recognition-tool-for-image-reading-from-excel",
+    "category": "tools-and-models",
+    "publishedAt": "2024-08-04"
+  },
+  {
+    "title": "Choosing the Right Vector Database with Caching: A Comprehensive Guide for GenAI Applications",
+    "description": "Choosing the Right Vector Database with Caching for your GEN AI Application",
+    "slug": "choosing-the-right-vector-database-with-caching-a-comprehensive-guide-for-genai-applications",
+    "category": "ai-engineering",
+    "publishedAt": "2024-08-23"
+  },
+  {
+    "title": "Fine-Tuning Your Generative AI Application: A Comprehensive Guide to Parameters and Configurations",
+    "description": "Fine-tuning delve deep into each parameter—such as temperature, top-k, top-p, chunk size, and more—providing simple examples and additional use cases to help you optimize your application's performance",
+    "slug": "fine-tuning-your-generative-ai-application-a-comprehensive-guide-to-parameters-and-configurations",
+    "category": "foundations",
+    "publishedAt": "2024-09-10"
+  },
+  {
+    "title": "RAG Architecture Types with Implementation Details and Use Cases",
+    "description": "Retrieval-Augmented Generation (RAG) combines the strengths of retrieval systems and generative models to produce accurate and context-aware responses. Various RAG architectures have been developed to address different c",
+    "slug": "rag-architecture-types-with-implementation-details-and-their-use-cases",
+    "category": "ai-engineering",
+    "publishedAt": "2024-07-29"
+  },
+  {
+    "title": "Roadmap: Machine Learning Engineer",
+    "description": "Roadmap to Becoming a Machine Learning Engineer Machine learning (ML) is a rapidly growing field that is transforming the way we interact with technology. ML engineers are in high demand, and with good reason. ML enginee",
+    "slug": "machine-learning-engineer",
+    "category": "foundations",
+    "publishedAt": "2023-11-15"
+  },
+  {
+    "title": "FAQ",
+    "description": "What is Artificial Intelligence (AI)?Artificial Intelligence, or AI, refers to the simulation of human intelligence in machines programmed to think and act",
+    "slug": "faq",
+    "category": "foundations",
+    "publishedAt": "2023-10-08"
+  }
+]

@@ -1,0 +1,739 @@
+{
+  "schemaVersion": "2.0.0",
+  "ledgerId": "aiamigos-hostile-audit-completion-v2-2026-08-13",
+  "asOf": "2026-08-13",
+  "authority": "current-worktree status ledger; the 2026-08-13 closure matrix is retained as historical evidence only",
+  "truthBoundary": {
+    "productionClosedCount": 0,
+    "productionState": "no finding has production closure evidence",
+    "releasePosture": "NO-GO/PREPARED_NOT_DEPLOY_READY",
+    "onlyObservedProductionMutation": "Public WordPress registration was disabled; this is not closure of any hostile-audit finding.",
+    "historicalStagingCandidate": {
+      "version": "1.4.0",
+      "evidenceState": "historical_not_current",
+      "retainedBrowserResult": "16 pass, 0 fail, 0 skip across 75 sitemap URLs and 99 internal targets",
+      "artifact": "remediation/tests/results/seo-regression-staging-v1.4.0-a11y2-browser.json"
+    },
+    "latestHardenedPolicyAttempt": {
+      "candidateVersion": "1.4.0",
+      "result": "fail",
+      "reason": "Six unpublished 404 routes were still classified as readable quarantine routes in that run.",
+      "correctionState": "configuration corrected locally; corrected network rerun blocked by network quota",
+      "artifact": "remediation/tests/results/seo-regression-staging-v1.4.0-policy-hardened.json"
+    },
+    "localCandidate": {
+      "version": "1.4.1",
+      "status": "PREPARED_NOT_DEPLOY_READY",
+      "artifact": "remediation/releases/aiamigos-remediation-1.4.1-candidate.zip",
+      "sha256": "EAE265DCE613022C0BFDE1EFCAA9EE14387963BACC5C1DD9D6D8CB39260E7FCA",
+      "deployedToStaging": false,
+      "deployedToProduction": false,
+      "releaseZipCurrent": true,
+      "releaseZipState": "The v1.4.1 candidate ZIP contains eight runtime files source-equivalent to the settled local source; the separate retained v1.4.0 ZIP remains historical.",
+      "runtimeFiles": 8,
+      "sourceEquivalentFiles": 8,
+      "sourceEquivalenceMismatches": 0,
+      "extractedRuntimeFiles": 8,
+      "phpLintAfterCandidateChanges": true,
+      "currentSourcePhpLint": { "passed": 7, "total": 7 },
+      "policyAssertions": { "passed": 29, "total": 29 },
+      "schemaAuthorAssertions": { "passed": 36, "total": 36 },
+      "packagedPhpLint": { "passed": 5, "total": 5 },
+      "graphify": {
+        "scope": "current_v1.4.1_source",
+        "nodes": 257,
+        "edges": 389,
+        "missingEdges": 0,
+        "danglingEdges": 0,
+        "selfLoops": 0,
+        "duplicateEdges": 0,
+        "collapsedEdges": 0
+      },
+      "fullStagingCrawlAfterCandidateChanges": false,
+      "currentStagingBrowserEvidence": false,
+      "currentStagingLogEvidence": false,
+      "hostingerWebSapiCompatibility": false
+    },
+    "networkBoundary": "No corrected live rerun is inferred from local test configuration or historical staging output.",
+    "currentProductionSpotcheck": {
+      "date": "2026-08-21",
+      "artifact": "remediation/tests/results/PRODUCTION_BROWSER_SPOTCHECK_2026-08-21.md",
+      "scope": "Playwright spot-check of the deployed public root, /home/, /page/2/, /newsletter/, and /ai-certifications/ plus root response headers and console.",
+      "observed": "The deployed production bytes still expose the pre-remediation defects, including Blog at root, broken repeated pagination, raw MailPoet shortcodes, HTTP YouTube, PHP/8.1.34 disclosure, and wp is not defined.",
+      "notDeploymentProof": true,
+      "hostingerPanelAuthenticated": false,
+      "wordpressAdminAuthenticated": false
+    }
+  },
+  "statusDefinitions": {
+    "historical_staging_mechanical_evidence": "A mechanical behavior passed on staging version 1.4.0, but no current 1.4.1 staging or production proof exists.",
+    "historical_staging_containment_evidence": "Risky material was hidden, drafted, or tombstoned on staging version 1.4.0; the underlying claim was not substantively corrected.",
+    "partial": "A bounded local or historical staging control exists, but one or more material acceptance gates remain.",
+    "human_or_legal_gate": "Automation supplied an inventory or fail-closed control, but accountable human, operator, editorial, or legal approval is still required.",
+    "open_runtime": "The core runtime condition remains present on the deployed environment."
+  },
+  "summary": {
+    "totalFindings": 32,
+    "productionComplete": 0,
+    "stagingCurrentCandidateComplete": 0,
+    "localReleaseReady": 0,
+    "byStatus": {
+      "historical_staging_mechanical_evidence": 6,
+      "historical_staging_containment_evidence": 7,
+      "partial": 12,
+      "human_or_legal_gate": 6,
+      "open_runtime": 1
+    }
+  },
+  "findings": [
+    {
+      "id": "C1",
+      "severity": "critical",
+      "title": "The root and real homepage are split across two indexable URLs",
+      "status": "historical_staging_mechanical_evidence",
+      "completion": { "production": false, "stagingCurrentCandidate": false, "localReleaseReady": false },
+      "progress": [
+        "Historical staging v1.4.0 served the branded page at /, the native archive at /blog/, and a one-hop permanent redirect from /home/.",
+        "The retained v1.4.0 browser crawl passed the root, Home, Blog, canonical, and sitemap assertions."
+      ],
+      "remainingGates": [
+        "Deploy the hash-verified v1.4.1 candidate to isolated staging and pass the corrected no-skip route/canonical/sitemap/browser crawl plus web-SAPI smoke and log review.",
+        "Deploy through an approved production manifest and retain equivalent production routing evidence."
+      ],
+      "evidenceRefs": [
+        "remediation/tests/results/seo-regression-staging-v1.4.0-a11y2-browser.json",
+        "remediation/STAGING_CHANGELOG_2026-08-13.md",
+        "remediation/wp-plugin/aiamigos-remediation/README.md"
+      ]
+    },
+    {
+      "id": "C2",
+      "severity": "critical",
+      "title": "Blog pagination is broken and repeats page one",
+      "status": "historical_staging_mechanical_evidence",
+      "completion": { "production": false, "stagingCurrentCandidate": false, "localReleaseReady": false },
+      "progress": [
+        "Historical staging v1.4.0 exposed 65 sitemap posts through /blog/ pagination with no missing post in the retained pager assertion.",
+        "Legacy /page/N/ requests redirected to the corresponding /blog/page/N/ route in that historical candidate."
+      ],
+      "remainingGates": [
+        "Repeat complete pagination, differentiated metadata, self-canonical, and post-coverage proof after v1.4.1 is deployed to staging.",
+        "Repeat the same proof after approved production deployment."
+      ],
+      "evidenceRefs": [
+        "remediation/tests/results/seo-regression-staging-v1.4.0-a11y2-browser.json",
+        "remediation/wp-plugin/aiamigos-remediation/README.md"
+      ]
+    },
+    {
+      "id": "C3",
+      "severity": "critical",
+      "title": "Eight demo records are indexed as real people, testimonials, and cases",
+      "status": "historical_staging_containment_evidence",
+      "completion": { "production": false, "stagingCurrentCandidate": false, "localReleaseReady": false },
+      "progress": [
+        "Historical staging v1.4.0 returned exact 410 responses for the eight demo records and excluded the corresponding records from discovery surfaces.",
+        "The hardened v1.4.0 attempt observed all 12 configured gone routes at 410, including the eight demo routes, even though the overall route-policy check failed for a different classification error."
+      ],
+      "remainingGates": [
+        "Deploy v1.4.1 and pass exact route, feed, sitemap, query, link, and preserved-record tests using the corrected policy configuration.",
+        "Apply the same reversible tombstones in production and retain live evidence; do not imply any testimonial or identity was substantiated."
+      ],
+      "evidenceRefs": [
+        "remediation/tests/results/seo-regression-staging-v1.4.0-policy-hardened.json",
+        "remediation/tests/results/seo-regression-staging-v1.4.0-a11y2-browser.json",
+        "remediation/STAGING_CHANGELOG_2026-08-13.md"
+      ]
+    },
+    {
+      "id": "C4",
+      "severity": "critical",
+      "title": "The newsletter conversion system is visibly broken",
+      "status": "partial",
+      "completion": { "production": false, "stagingCurrentCandidate": false, "localReleaseReady": false },
+      "progress": [
+        "Historical staging v1.4.0 removed raw MailPoet tokens and used an email-only update-request fallback; it did not prove a subscription workflow.",
+        "Local v1.4.1 instead proposes reversible 410 tombstones for both newsletter routes and permanently disables collection forms, but those bytes are undeployed and untested on staging."
+      ],
+      "remainingGates": [
+        "An accountable owner must choose either a retired newsletter or a real provider-backed subscribe, confirmation, delivery, unsubscribe, consent, privacy, and cadence workflow.",
+        "After that decision, rebuild if required, deploy, and test v1.4.1 or its approved successor on staging and then production."
+      ],
+      "evidenceRefs": [
+        "remediation/STAGING_CHANGELOG_2026-08-13.md",
+        "remediation/wp-plugin/aiamigos-remediation/README.md",
+        "remediation/editorial-trust-governance-plan.md"
+      ]
+    },
+    {
+      "id": "C5",
+      "severity": "critical",
+      "title": "High-stakes career guidance contains mislabeled, retired, or unsupported credentials",
+      "status": "historical_staging_containment_evidence",
+      "completion": { "production": false, "stagingCurrentCandidate": false, "localReleaseReady": false },
+      "progress": [
+        "The certifications page was draft/non-public on historical staging and returned 404 in the hardened v1.4.0 observation.",
+        "Local v1.4.1 proposes an exact reversible 410 tombstone; no credential content was corrected or issuer-verified."
+      ],
+      "remainingGates": [
+        "Keep the route retired or rebuild it from current primary issuer sources with exact credential names, codes, status, prerequisites, fees, renewal, role fit, method, and verified-on date under accountable review.",
+        "Pass current-candidate staging and production containment or publication tests."
+      ],
+      "evidenceRefs": [
+        "remediation/tests/results/seo-regression-staging-v1.4.0-policy-hardened.json",
+        "remediation/editorial-trust-governance-plan.md",
+        "remediation/wp-plugin/aiamigos-remediation/README.md"
+      ]
+    },
+    {
+      "id": "C6",
+      "severity": "critical",
+      "title": "Foundational AI explainers contain basic factual errors",
+      "status": "historical_staging_containment_evidence",
+      "completion": { "production": false, "stagingCurrentCandidate": false, "localReleaseReady": false },
+      "progress": [
+        "The GPT Models post was draft/non-public on historical staging and returned 404 in the hardened v1.4.0 observation.",
+        "Local v1.4.1 proposes an exact reversible 410 tombstone; the known errors and full article remain uncorrected."
+      ],
+      "remainingGates": [
+        "Keep the route retired or complete a primary-source technical rewrite and named technical review covering the full article, not only the four known defects.",
+        "Pass current-candidate staging and production containment or publication tests."
+      ],
+      "evidenceRefs": [
+        "remediation/tests/results/seo-regression-staging-v1.4.0-policy-hardened.json",
+        "remediation/content-governance/content-intent-freshness-inventory.json",
+        "remediation/editorial-trust-governance-plan.md"
+      ]
+    },
+    {
+      "id": "C7",
+      "severity": "critical",
+      "title": "The Grok article appears to invent or conflate a business platform",
+      "status": "historical_staging_containment_evidence",
+      "completion": { "production": false, "stagingCurrentCandidate": false, "localReleaseReady": false },
+      "progress": [
+        "The GrokAI post was draft/non-public on historical staging and returned 404 in the hardened v1.4.0 observation.",
+        "Local v1.4.1 proposes an exact reversible 410 tombstone; no vendor identity or enterprise capability was verified."
+      ],
+      "remainingGates": [
+        "Keep the route retired or identify the real product and rewrite from dated primary product, pricing, security, and support evidence under accountable review.",
+        "Pass current-candidate staging and production containment or publication tests."
+      ],
+      "evidenceRefs": [
+        "remediation/tests/results/seo-regression-staging-v1.4.0-policy-hardened.json",
+        "remediation/content-governance/content-intent-freshness-inventory.json",
+        "remediation/editorial-trust-governance-plan.md"
+      ]
+    },
+    {
+      "id": "C8",
+      "severity": "critical",
+      "title": "There is no accountable author behind 71 posts",
+      "status": "human_or_legal_gate",
+      "completion": { "production": false, "stagingCurrentCandidate": false, "localReleaseReady": false },
+      "progress": [
+        "The new 71-post inventory records a missing visible author signal for all 71 frozen audit posts and supplies per-post review queues without assigning authorship.",
+        "Local v1.4.1 removes the earlier unattested sitewide Vijay authorship/editorial-responsibility statement, renders dates without inventing a byline, and proposes structural-only schema filtering; it is undeployed."
+      ],
+      "remainingGates": [
+        "The legal operator must attest author or editorial responsibility page by page, and every named person must approve a qualification-specific profile.",
+        "Approve and publish truthful sourcing, correction, AI-use, conflict, affiliate, reviewer, and publisher policies; then deploy and validate corresponding visible and schema output."
+      ],
+      "evidenceRefs": [
+        "remediation/content-governance/content-intent-freshness-inventory.json",
+        "remediation/content-governance/CONTENT_INTENT_FRESHNESS_REVIEW.md",
+        "remediation/wp-plugin/aiamigos-remediation/README.md",
+        "remediation/editorial-trust-governance-plan.md"
+      ]
+    },
+    {
+      "id": "H1",
+      "severity": "high",
+      "title": "Public runtime is obsolete and version details are exposed",
+      "status": "open_runtime",
+      "completion": { "production": false, "stagingCurrentCandidate": false, "localReleaseReady": false },
+      "progress": [
+        "Under a hash-verified official PHP 8.4.24 CLI, all seven current v1.4.1 source/test PHP files passed syntax lint, the policy fixture passed 29/29, and the schema/author fixture passed 36/36.",
+        "The ZIP SHA-256 candidate extracted all 8 expected runtime files, matched all 8 settled-source files, and all 5 packaged PHP files passed lint.",
+        "The final current-source Graphify refresh records 257 nodes and 389 edges with zero missing, dangling, self-loop, duplicate, or collapsed edges; the deployed staging runtime still historically reported PHP 8.1.34 and no current v1.4.1 web-SAPI or log proof exists."
+      ],
+      "remainingGates": [
+        "Deploy the verified v1.4.1 candidate to isolated staging on a supported PHP patch, prove extension parity and WordPress/theme/plugin interoperability, resolve Sirat Pro provenance, and retain clean web/runtime logs.",
+        "Remove disclosure origin-wide, prove package integrity and web compatibility, then repeat on production after approved deployment."
+      ],
+      "evidenceRefs": [
+        "remediation/runtime-evidence/PHP_8_4_24_V1_4_1_VALIDATION_2026-08-13.md",
+        "remediation/releases/aiamigos-remediation-1.4.1-candidate-manifest.json",
+        "remediation/releases/aiamigos-remediation-1.4.1-candidate/RELEASE_STATUS.md",
+        "remediation/wp-plugin/aiamigos-remediation/graphify-out/GRAPH_REPORT.md",
+        "remediation/runtime-security-plan.md",
+        "remediation/wp-plugin/aiamigos-remediation/README.md"
+      ]
+    },
+    {
+      "id": "H2",
+      "severity": "high",
+      "title": "Internal links contain two 404s and sitewide redirect waste",
+      "status": "historical_staging_mechanical_evidence",
+      "completion": { "production": false, "stagingCurrentCandidate": false, "localReleaseReady": false },
+      "progress": [
+        "The historical v1.4.0 crawl tested 110 internal destinations derived from 76 source pages and found no broken, redirecting, unobserved, or directly noncanonical targets.",
+        "Local v1.4.1 additionally proposes unlinking every exact tombstoned path, but the changed link surface has no new staging crawl."
+      ],
+      "remainingGates": [
+        "Run the complete link-integrity gate against deployed v1.4.1 with all changed tombstones and sitemap URLs.",
+        "Repeat after production deployment and retain a future editorial broken-link gate."
+      ],
+      "evidenceRefs": [
+        "remediation/tests/results/seo-regression-staging-v1.4.0-a11y2-browser.json",
+        "remediation/wp-plugin/aiamigos-remediation/README.md"
+      ]
+    },
+    {
+      "id": "H3",
+      "severity": "high",
+      "title": "Mobile payloads are excessive",
+      "status": "partial",
+      "completion": { "production": false, "stagingCurrentCandidate": false, "localReleaseReady": false },
+      "progress": [
+        "Historical staging v1.4.0 passed the retained 390x844 transfer and DOM budgets on four sampled routes; the largest tested transfer was below 0.9 MB and images below 0.42 MB.",
+        "Responsive image markup patches are hash-addressed locally, but the result is a bounded lab sample and predates v1.4.1."
+      ],
+      "remainingGates": [
+        "Complete controlled AVIF/WebP conversion, visual diffs, identified-LCP work, and cold/warm mobile Lighthouse on the final staging candidate.",
+        "After production deployment, retain production Lighthouse plus Search Console or CrUX field evidence."
+      ],
+      "evidenceRefs": [
+        "remediation/performance/PERFORMANCE_REMEDIATION.md",
+        "remediation/tests/results/seo-regression-staging-v1.4.0-a11y2-browser.json",
+        "remediation/theme-patch/theme-performance-manifest.json"
+      ]
+    },
+    {
+      "id": "H4",
+      "severity": "high",
+      "title": "Metadata control is poor across the entire indexable inventory",
+      "status": "historical_staging_mechanical_evidence",
+      "completion": { "production": false, "stagingCurrentCandidate": false, "localReleaseReady": false },
+      "progress": [
+        "The historical v1.4.0 crawl found no missing or overlong titles/descriptions and complete Open Graph/Twitter field sets across 75 staging sitemap URLs.",
+        "Local v1.4.1 materially changes the public/tombstoned inventory, so the historical 75-URL result cannot certify its current metadata surface."
+      ],
+      "remainingGates": [
+        "Deploy v1.4.1 and rerun complete sitemap, canonical, uniqueness, length, tag-count, and social-field tests on the resulting inventory.",
+        "Repeat on production and keep future editorial metadata gates active."
+      ],
+      "evidenceRefs": [
+        "remediation/tests/results/seo-regression-staging-v1.4.0-a11y2-browser.json",
+        "remediation/wp-plugin/aiamigos-remediation/README.md"
+      ]
+    },
+    {
+      "id": "H5",
+      "severity": "high",
+      "title": "Headings and thin hubs fail page intent",
+      "status": "partial",
+      "completion": { "production": false, "stagingCurrentCandidate": false, "localReleaseReady": false },
+      "progress": [
+        "Historical staging v1.4.0 found no missing, multiple, blank, or skipped heading levels across 75 sitemap URLs and suppressed several empty or unsupported hubs.",
+        "The 71-post inventory now supplies machine-draft retain, update, merge, retire, or review recommendations; none is human approval."
+      ],
+      "remainingGates": [
+        "An accountable editor must decide whether every surviving thin page satisfies a distinct user intent and then enrich, merge, or retire it.",
+        "Rerun heading and content-intent gates on deployed v1.4.1 and on production."
+      ],
+      "evidenceRefs": [
+        "remediation/tests/results/seo-regression-staging-v1.4.0-a11y2-browser.json",
+        "remediation/content-governance/content-intent-freshness-inventory.json",
+        "remediation/content-governance/CONTENT_INTENT_FRESHNESS_REVIEW.md"
+      ]
+    },
+    {
+      "id": "H6",
+      "severity": "high",
+      "title": "Front-end errors and broken components occur sitewide",
+      "status": "historical_staging_mechanical_evidence",
+      "completion": { "production": false, "stagingCurrentCandidate": false, "localReleaseReady": false },
+      "progress": [
+        "The historical v1.4.0 crawl found no known placeholder leak across 75 sitemap pages and no exceptions, console/log errors, network failures, WAF blocks, or overflow on four rendered routes.",
+        "The local v1.4.1 candidate changes routing, collection, schema, links, and output copy; no post-change browser run exists."
+      ],
+      "remainingGates": [
+        "Run a browser-required, cache-bypassed, no-skip crawl after deploying v1.4.1, including representative interactive routes and all known component signatures.",
+        "Repeat on production with monitoring and server-log review."
+      ],
+      "evidenceRefs": [
+        "remediation/tests/results/seo-regression-staging-v1.4.0-a11y2-browser.json",
+        "remediation/STAGING_CHANGELOG_2026-08-13.md",
+        "remediation/wp-plugin/aiamigos-remediation/README.md"
+      ]
+    },
+    {
+      "id": "H7",
+      "severity": "high",
+      "title": "Brand and audience are incoherent",
+      "status": "human_or_legal_gate",
+      "completion": { "production": false, "stagingCurrentCandidate": false, "localReleaseReady": false },
+      "progress": [
+        "Historical staging suppressed or drafted several unsupported child, course, service, and enterprise propositions.",
+        "Local v1.4.1 proposes broader reversible tombstones, reducing exposure without choosing a brand strategy."
+      ],
+      "remainingGates": [
+        "The executive/product owner must approve one primary audience, promise, commercial model, allowed brand vocabulary, off-domain boundaries, and an accountable owner for each remaining journey.",
+        "Implement the decision in navigation, content, metadata, and schema, then validate staging and production."
+      ],
+      "evidenceRefs": [
+        "remediation/editorial-trust-governance-plan.md",
+        "remediation/wp-plugin/aiamigos-remediation/README.md",
+        "remediation/STAGING_CHANGELOG_2026-08-13.md"
+      ]
+    },
+    {
+      "id": "H8",
+      "severity": "high",
+      "title": "Children's content makes unsupported safety promises",
+      "status": "historical_staging_containment_evidence",
+      "completion": { "production": false, "stagingCurrentCandidate": false, "localReleaseReady": false },
+      "progress": [
+        "Historical staging drafted /ai-tools-for-kids/ and returned 410 for the exact /services/ai-for-kids/ route.",
+        "The hardened v1.4.0 attempt observed the drafted page at 404, and local v1.4.1 proposes exact 410 tombstones for both routes."
+      ],
+      "remainingGates": [
+        "Pass corrected v1.4.1 route, discovery, feed, sitemap, and link containment tests.",
+        "Do not republish without documented age/supervision, privacy, advertising, moderation, accessibility, learning-goal, parent/educator, and child/privacy legal review; repeat proof on production."
+      ],
+      "evidenceRefs": [
+        "remediation/tests/results/seo-regression-staging-v1.4.0-policy-hardened.json",
+        "remediation/editorial-trust-governance-plan.md",
+        "remediation/wp-plugin/aiamigos-remediation/README.md"
+      ]
+    },
+    {
+      "id": "H9",
+      "severity": "high",
+      "title": "Affiliate-style book recommendations lack disclosure and method",
+      "status": "historical_staging_containment_evidence",
+      "completion": { "production": false, "stagingCurrentCandidate": false, "localReleaseReady": false },
+      "progress": [
+        "Historical staging drafted /ai-books-for-kids/, and the hardened v1.4.0 attempt observed the route at 404.",
+        "Local v1.4.1 proposes an exact reversible 410 tombstone; compensation status and recommendation quality remain unreviewed."
+      ],
+      "remainingGates": [
+        "Pass corrected v1.4.1 containment tests on staging and production.",
+        "Do not republish until compensation is determined and prominently disclosed, exact editions/ISBNs and age method are documented, and an accountable editor approves selection evidence and limitations."
+      ],
+      "evidenceRefs": [
+        "remediation/tests/results/seo-regression-staging-v1.4.0-policy-hardened.json",
+        "remediation/MEDIA_ACCESSIBILITY_REMEDIATION.md",
+        "remediation/editorial-trust-governance-plan.md"
+      ]
+    },
+    {
+      "id": "H10",
+      "severity": "high",
+      "title": "About, mission, and service claims lack evidence",
+      "status": "partial",
+      "completion": { "production": false, "stagingCurrentCandidate": false, "localReleaseReady": false },
+      "progress": [
+        "Historical staging used bounded About copy and suppressed unsupported service and footer claims.",
+        "Local v1.4.1 further removes unattested founder/editor responsibility language and proposes structural-only schema, but it is undeployed."
+      ],
+      "remainingGates": [
+        "The operator must substantiate legal publisher identity, qualifications, methods, metrics, events, customers, services, and curricula before any such claim returns.",
+        "Deploy and validate the approved bounded copy and schema on current staging and production."
+      ],
+      "evidenceRefs": [
+        "remediation/editorial-trust-governance-plan.md",
+        "remediation/wp-plugin/aiamigos-remediation/README.md",
+        "remediation/STAGING_CHANGELOG_2026-08-13.md"
+      ]
+    },
+    {
+      "id": "H11",
+      "severity": "high",
+      "title": "Privacy copy does not match site activities",
+      "status": "human_or_legal_gate",
+      "completion": { "production": false, "stagingCurrentCandidate": false, "localReleaseReady": false },
+      "progress": [
+        "Historical staging suppressed optional measurement/chatbot/form collection and kept the legacy privacy route noindex and out of the sitemap.",
+        "Local v1.4.1 permanently disables collection forms and proposes retiring newsletter routes, but no legal privacy notice has been approved and the candidate is undeployed."
+      ],
+      "remainingGates": [
+        "The legal operator and privacy reviewer must approve the actual controller, vendors, cookies/analytics, collection, children, affiliates, retention, rights, security, and collection-point notices.",
+        "Validate real data flows against the notice before staging and production publication."
+      ],
+      "evidenceRefs": [
+        "remediation/editorial-trust-governance-plan.md",
+        "remediation/wp-plugin/aiamigos-remediation/README.md",
+        "remediation/STAGING_CHANGELOG_2026-08-13.md"
+      ]
+    },
+    {
+      "id": "H12",
+      "severity": "high",
+      "title": "Content and archive clusters overlap without an intent map",
+      "status": "partial",
+      "completion": { "production": false, "stagingCurrentCandidate": false, "localReleaseReady": false },
+      "progress": [
+        "Historical staging noindexed archive/search surfaces, excluded categories from XML sitemaps, and passed Blog canonical pagination.",
+        "The new machine-draft inventory maps 71 posts into 7 topic clusters and 59 canonical intents, flags 21 probable-overlap posts, and explicitly leaves one staging aggregate reconciliation delta unresolved.",
+        "The regression configuration now bans every /category/ path class, but the corrected live rerun was blocked by network quota."
+      ],
+      "remainingGates": [
+        "Retain the exact final staging sitemap URL list, reconcile the unexplained one-post delta, and obtain human/search-data approval for one canonical page per job and all merge/redirect decisions.",
+        "Pass the corrected all-category/current-candidate crawl and then repeat on production with Search Console evidence."
+      ],
+      "evidenceRefs": [
+        "remediation/content-governance/content-intent-freshness-inventory.json",
+        "remediation/content-governance/CONTENT_INTENT_FRESHNESS_REVIEW.md",
+        "remediation/tests/regression.config.example.json",
+        "remediation/tests/results/seo-regression-staging-v1.4.0-policy-hardened.json"
+      ]
+    },
+    {
+      "id": "H13",
+      "severity": "high",
+      "title": "Roadmap, test, and benchmark headlines do not deliver reproducible artifacts",
+      "status": "historical_staging_containment_evidence",
+      "completion": { "production": false, "stagingCurrentCandidate": false, "localReleaseReady": false },
+      "progress": [
+        "Historical staging drafted four unfulfilled technical-artifact posts and the benchmark page; retained pre-change records support rollback and review.",
+        "The hardened v1.4.0 attempt observed the four newly enumerated post routes at 404 and the benchmark route at 404, although the benchmark was misclassified in that failed run; local v1.4.1 proposes exact 410 tombstones for all five."
+      ],
+      "remainingGates": [
+        "Deploy v1.4.1 and pass the corrected exact 410/discovery/link/feed/sitemap contract for all five routes.",
+        "Keep retired or publish only after the promised repository, fixtures, data, versions, method, limitations, and reproducible result are independently checked; repeat on production."
+      ],
+      "evidenceRefs": [
+        "remediation/staging-backups/quarantine-2026-08-13T17-25-51-990Z/manifest.json",
+        "remediation/tests/results/seo-regression-staging-v1.4.0-policy-hardened.json",
+        "remediation/wp-plugin/aiamigos-remediation/README.md",
+        "remediation/editorial-trust-governance-plan.md"
+      ]
+    },
+    {
+      "id": "M1",
+      "severity": "moderate",
+      "title": "Social cards are incomplete",
+      "status": "partial",
+      "completion": { "production": false, "stagingCurrentCandidate": false, "localReleaseReady": false },
+      "progress": [
+        "Historical staging v1.4.0 emitted complete Open Graph and Twitter field sets, using a small logo fallback where page media was absent.",
+        "A generated local review candidate now exists at 1200x630, preserves the supplied logo, and passes dimension requirements; it remains non-approvable pending brand signoff plus Facebook/LinkedIn/X preview proof, and is not wired into WordPress."
+      ],
+      "remainingGates": [
+        "Create and approve an exact 1200x630 branded asset system that preserves the mark, then validate crops, readability, file properties, and Facebook, LinkedIn, and X previews.",
+        "Wire only the approved asset, deploy the current candidate, and rerun staging and production social-image resource checks."
+      ],
+      "evidenceRefs": [
+        "remediation/social-card/candidate-manifest.json",
+        "remediation/social-card/README.md",
+        "remediation/tests/results/seo-regression-staging-v1.4.0-a11y2-browser.json"
+      ]
+    },
+    {
+      "id": "M2",
+      "severity": "moderate",
+      "title": "Image alt text requires a human relevance review",
+      "status": "human_or_legal_gate",
+      "completion": { "production": false, "stagingCurrentCandidate": false, "localReleaseReady": false },
+      "progress": [
+        "The complete inventory records 974 images and 184 empty-alt instances across 77 pages.",
+        "Exactly two machine-safe source-less carousel images, ALT-162 and ALT-163, now have deterministic remove decisions; 182 image-purpose decisions remain human-owned."
+      ],
+      "remainingGates": [
+        "A human must inspect pixels, adjacent content, and link purpose and record an approved decorative, informative, functional, or remove disposition for the remaining 182 instances.",
+        "Implement 184/184 decisions, recapture the candidate, run screen-reader and control checks, and repeat validation on production."
+      ],
+      "evidenceRefs": [
+        "remediation/media-accessibility-inventory.json",
+        "remediation/media-accessibility-decisions.json",
+        "remediation/MEDIA_ACCESSIBILITY_REMEDIATION.md"
+      ]
+    },
+    {
+      "id": "M3",
+      "severity": "moderate",
+      "title": "Schema is syntactically healthy but semantically uneven",
+      "status": "partial",
+      "completion": { "production": false, "stagingCurrentCandidate": false, "localReleaseReady": false },
+      "progress": [
+        "Historical staging v1.4.0 had parseable JSON-LD on 75 sitemap pages and removed selected unverified homepage entities.",
+        "Local v1.4.1 proposes globally retaining only structural WebSite, WebPage, BreadcrumbList, ListItem, and ImageObject types until claims are approved; its source and packaged PHP lint pass, and the schema/author fixture passes 36/36, but the filter is undeployed and lacks current staging/browser proof."
+      ],
+      "remainingGates": [
+        "Deploy and crawl the verified v1.4.1 schema filter on isolated staging, proving valid relationships, web-SAPI behavior, and no accidental loss of required structural data.",
+        "Obtain human-attested publisher/person/article decisions and external Schema Markup Validator or Rich Results evidence before restoring claim-bearing entities; repeat on production."
+      ],
+      "evidenceRefs": [
+        "remediation/tests/results/seo-regression-staging-v1.4.0-a11y2-browser.json",
+        "remediation/runtime-evidence/PHP_8_4_24_V1_4_1_VALIDATION_2026-08-13.md",
+        "remediation/releases/aiamigos-remediation-1.4.1-candidate-manifest.json",
+        "remediation/wp-plugin/aiamigos-remediation/README.md",
+        "remediation/editorial-trust-governance-plan.md"
+      ]
+    },
+    {
+      "id": "M4",
+      "severity": "moderate",
+      "title": "Mixed-scheme references remain",
+      "status": "historical_staging_mechanical_evidence",
+      "completion": { "production": false, "stagingCurrentCandidate": false, "localReleaseReady": false },
+      "progress": [
+        "The historical v1.4.0 crawl found zero HTTP references across all 75 staging sitemap pages and normalized known same-site schema/content/footer targets.",
+        "No equivalent crawl exists for the changed v1.4.1 public inventory or for production."
+      ],
+      "remainingGates": [
+        "Run complete HTML, JSON-LD, CSS/resource, and redirect mixed-scheme checks on deployed v1.4.1.",
+        "Repeat the same checks on production and retain the gate for future publishing."
+      ],
+      "evidenceRefs": [
+        "remediation/tests/results/seo-regression-staging-v1.4.0-a11y2-browser.json",
+        "remediation/wp-plugin/aiamigos-remediation/README.md"
+      ]
+    },
+    {
+      "id": "M5",
+      "severity": "moderate",
+      "title": "Mobile has no basic horizontal overflow, but controls are weak",
+      "status": "partial",
+      "completion": { "production": false, "stagingCurrentCandidate": false, "localReleaseReady": false },
+      "progress": [
+        "Direct historical staging checks at 390x844 recorded named 44x44 carousel dots, one current state, hidden clones, menu/search keyboard and Escape behavior, focus return, paused autoplay while focused, and no horizontal overflow.",
+        "The retained full-crawl JSON proves general browser health but does not retain a control-level accessibility result, and the local v1.4.1 candidate has no new browser run."
+      ],
+      "remainingGates": [
+        "Retain structured machine-readable control-level evidence for names, roles, states, keyboard paths, focus, clone hiding, target size/spacing, reduced motion, and overflow on the current staging candidate.",
+        "Complete screen-reader/editorial sampling and M2 decisions, then repeat the evidence on production."
+      ],
+      "evidenceRefs": [
+        "remediation/STAGING_CHANGELOG_2026-08-13.md",
+        "remediation/MEDIA_ACCESSIBILITY_REMEDIATION.md",
+        "remediation/wp-plugin/aiamigos-remediation/docs/ACCESSIBILITY-MODULE.md",
+        "remediation/tests/results/seo-regression-staging-v1.4.0-a11y2-browser.json"
+      ]
+    },
+    {
+      "id": "M6",
+      "severity": "moderate",
+      "title": "Response hardening and caching headers are weak",
+      "status": "partial",
+      "completion": { "production": false, "stagingCurrentCandidate": false, "localReleaseReady": false },
+      "progress": [
+        "Historical staging v1.4.0 passed required security/cache header assertions on 75 canonical HTML pages.",
+        "A fail-closed origin .htaccess package and manifest now exist with CSP report-only, but their status is dormant-not-deployed and productionAuthorized is false."
+      ],
+      "remainingGates": [
+        "Deploy the origin policy only through an approved staging insertion/rollback procedure and test anonymous/authenticated HTML, REST, login, admin redirect, error, sitemap, CSS, image, and private-cache behavior.",
+        "Review CSP reports before enforcement, remove PHP disclosure host-wide, then repeat the full matrix on production."
+      ],
+      "evidenceRefs": [
+        "remediation/server-policy/policy-manifest.json",
+        "remediation/server-policy/README.md",
+        "remediation/runtime-security-plan.md",
+        "remediation/tests/results/seo-regression-staging-v1.4.0-a11y2-browser.json"
+      ]
+    },
+    {
+      "id": "M7",
+      "severity": "moderate",
+      "title": "Formulaic AI content language weakens authority",
+      "status": "human_or_legal_gate",
+      "completion": { "production": false, "stagingCurrentCandidate": false, "localReleaseReady": false },
+      "progress": [
+        "The 71-post machine inventory flags formulaic body-language signals on 63 posts and formulaic title-language signals on 19 posts, with exact phrase baselines.",
+        "No synonym rewrite or claim of AI authorship was made; the inventory is a triage queue, not editorial approval."
+      ],
+      "remainingGates": [
+        "An accountable editor must rewrite, substantively improve, merge, or retire priority articles based on evidence, distinct reader value, and site scope.",
+        "Approve and enforce a pre-publication style/evidence standard, then validate the surviving staging and production corpus."
+      ],
+      "evidenceRefs": [
+        "remediation/content-governance/content-intent-freshness-inventory.json",
+        "remediation/content-governance/CONTENT_INTENT_FRESHNESS_REVIEW.md",
+        "remediation/editorial-trust-governance-plan.md"
+      ]
+    },
+    {
+      "id": "M8",
+      "severity": "moderate",
+      "title": "Grammar and production defects are recurrent",
+      "status": "partial",
+      "completion": { "production": false, "stagingCurrentCandidate": false, "localReleaseReady": false },
+      "progress": [
+        "Historical staging v1.4.0 removed the known deterministic tokens and defects from the clean 75-page crawl, including Linkden, Service Url, raw shortcode, bad email scheme, stale copyright, and captured placeholder strings.",
+        "The surviving corpus has not received a complete human line edit, and local v1.4.1 changes output copy without a new staging crawl."
+      ],
+      "remainingGates": [
+        "Complete accountable line editing of every retained page and adopt a mandatory pre-publication production checklist.",
+        "Rerun deterministic pattern and rendered checks on deployed v1.4.1 and production."
+      ],
+      "evidenceRefs": [
+        "remediation/tests/results/seo-regression-staging-v1.4.0-a11y2-browser.json",
+        "remediation/content-governance/content-intent-freshness-inventory.json",
+        "remediation/STAGING_CHANGELOG_2026-08-13.md"
+      ]
+    },
+    {
+      "id": "M9",
+      "severity": "moderate",
+      "title": "Taxonomy has no visible editorial strategy",
+      "status": "partial",
+      "completion": { "production": false, "stagingCurrentCandidate": false, "localReleaseReady": false },
+      "progress": [
+        "Historical staging noindexed category/archive/search surfaces and excluded category taxonomies from XML sitemaps.",
+        "The current regression configuration prohibits every /category/ path class rather than only /category/blog/, but the corrected network rerun was blocked by quota.",
+        "The 71-post inventory supplies 7 machine-draft topic clusters; it is not an approved taxonomy."
+      ],
+      "remainingGates": [
+        "Pass the corrected all-category sitemap, indexability, canonical, and discovery checks on deployed v1.4.1.",
+        "Obtain human approval for taxonomy names, archive introductions, merge strategy, and user journeys, then repeat on production."
+      ],
+      "evidenceRefs": [
+        "remediation/tests/regression.config.example.json",
+        "remediation/content-governance/content-intent-freshness-inventory.json",
+        "remediation/tests/results/seo-regression-staging-v1.4.0-policy-hardened.json"
+      ]
+    },
+    {
+      "id": "M10",
+      "severity": "moderate",
+      "title": "Contact conversion asks for data without explaining the exchange",
+      "status": "partial",
+      "completion": { "production": false, "stagingCurrentCandidate": false, "localReleaseReady": false },
+      "progress": [
+        "Historical staging v1.4.0 minimized collection to an explicit email path, removed phone/file inputs, warned against sensitive submissions, and linked a pending privacy route.",
+        "Local v1.4.1 hard-disables collection forms and keeps an email-only fallback, but it is undeployed and still cannot establish retention, response, or legally approved privacy expectations."
+      ],
+      "remainingGates": [
+        "The accountable operator/privacy reviewer must approve the collection purpose, data handling, retention/deletion, response expectation, security boundary, and collection-point notice.",
+        "Test the complete exchange and privacy context on current staging, then deploy and repeat on production."
+      ],
+      "evidenceRefs": [
+        "remediation/wp-plugin/aiamigos-remediation/README.md",
+        "remediation/editorial-trust-governance-plan.md",
+        "remediation/STAGING_CHANGELOG_2026-08-13.md"
+      ]
+    },
+    {
+      "id": "M11",
+      "severity": "moderate",
+      "title": "Publication freshness is weak for a fast-moving AI site",
+      "status": "human_or_legal_gate",
+      "completion": { "production": false, "stagingCurrentCandidate": false, "localReleaseReady": false },
+      "progress": [
+        "The new inventory covers all 71 frozen audit posts, flags 70 as stale over 365 days, and creates machine-draft freshness priorities of 12 critical, 32 high, and 27 medium.",
+        "Its 71 recommendations and due dates are explicitly unapproved; seven exact known drafts do not reconcile the retained 65-post staging aggregate, leaving one unexplained delta."
+      ],
+      "remainingGates": [
+        "Assign a named owner and approve a retain, update, merge, retire, or specialist-review disposition for all 71 posts, with primary-source review and truthful reviewed-on/correction records.",
+        "Resolve the one-post staging reconciliation delta, approve a sustainable cadence, implement decisions, and validate staging and production without treating timestamp changes as review."
+      ],
+      "evidenceRefs": [
+        "remediation/content-governance/content-intent-freshness-inventory.json",
+        "remediation/content-governance/CONTENT_INTENT_FRESHNESS_REVIEW.md",
+        "remediation/editorial-trust-governance-plan.md"
+      ]
+    }
+  ]
+}

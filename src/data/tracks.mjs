@@ -1,0 +1,8 @@
+export const tracks = [
+  { slug: 'business', label: 'Business and operations', short: 'Choose, test, and govern useful AI workflows.', description: 'Turn a recurring process into a measurable, human-approved pilot without exposing sensitive data.', toolSlug: 'business-use-case-scorecard', templateSlugs: ['ai-pilot-charter', 'vendor-scorecard', 'workplace-ai-policy', 'workflow-risk-register', 'ai-roi-assumptions'] },
+  { slug: 'careers', label: 'Careers and students 15+', short: 'Build durable skills and credible evidence of work.', description: 'Plan skills, portfolio projects, and a responsible job search for an AI-shaped workplace.', toolSlug: 'career-roadmap-builder', templateSlugs: ['career-skill-gap-map', 'portfolio-project-brief', 'ai-case-study', 'responsible-job-search', 'learning-sprint-plan'] },
+  { slug: 'teaching', label: 'Teaching and training', short: 'Design learning that uses AI without surrendering learning.', description: 'Create lessons, rubrics, disclosures, and privacy checks for secondary, higher-education, and workforce learners.', toolSlug: 'teaching-training-planner', templateSlugs: ['ai-lesson-plan', 'assessment-rubric', 'learner-ai-disclosure', 'course-ai-policy', 'training-evaluation'] },
+  { slug: 'builders', label: 'AI builders', short: 'Evaluate prompts, RAG, agents, and local models.', description: 'Create repeatable test sets, failure taxonomies, human gates, and rollback plans.', toolSlug: 'builder-evaluation-workbench', templateSlugs: ['prompt-experiment-log', 'rag-test-matrix', 'agent-human-gates', 'deployment-checklist', 'ai-incident-review'] },
+];
+
+export const trackBySlug = Object.fromEntries(tracks.map((track) => [track.slug, track]));

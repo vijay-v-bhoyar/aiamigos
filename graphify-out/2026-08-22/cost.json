@@ -1,0 +1,13 @@
+{
+  "runs": [
+    {
+      "date": "2026-08-13T14:40:13.649915+00:00",
+      "input_tokens": null,
+      "output_tokens": null,
+      "token_telemetry": "not captured from collaboration-agent extraction",
+      "files": 137
+    }
+  ],
+  "total_input_tokens": null,
+  "total_output_tokens": null
+}

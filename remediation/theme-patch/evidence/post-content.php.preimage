@@ -1,0 +1,160 @@
+<?php
+$theme_blog="";
+if(get_theme_mod('vw_sirat_pro_blog_layout_option')=='Center'){
+    $theme_blog='text-align:center;';
+}else if(get_theme_mod('vw_sirat_pro_blog_layout_option')=='Left')
+{
+    $theme_blog='text-align:left;';
+}else if(get_theme_mod('vw_sirat_pro_blog_layout_option')=='Right')
+{
+    $theme_blog='text-align:right;';
+}else{
+    $theme_blog='';
+}
+$content_type = get_theme_mod( 'vw_sirat_pro_post_content_blog','Excerpt Content');
+$blog_text="";
+if($content_type=="Excerpt Content"){
+  $blog_text=get_theme_mod( 'vw_sirat_pro_excerpt_length',29);
+}
+$theme_lay = get_theme_mod( 'vw_sirat_pro_plugin_single_blog_option','two_col');
+if($theme_lay == 'one_col'){ ?>
+<div id="single_post" class="col-lg-12 col-md-12 col-sm-12"> 
+  <div class="postbox wow animated slideInUp delay-1000" data-wow-duration="2s" style="<?php echo esc_attr($theme_blog); ?>">
+    <div class="postpic">
+      <div class="post_pic_inner">
+        <?php if ( get_theme_mod('vw_sirat_pro_blog_featured_image_enable',true) == "1" ) { ?>
+        <?php if (has_post_thumbnail()){ ?>
+           <img src="<?php the_post_thumbnail_url( 'full' ); ?>" alt="<?php the_title(); ?> post thumbnail">
+        <?php }}?>
+      </div>
+    </div>
+    <div class="postbox-content">
+      <?php 
+      $post_title=get_the_title();
+      if($post_title!="" || $post_title!=null){ ?>
+        <h2 class="posttitle"><a href="<?php the_permalink(); ?>"><?php the_title(); ?><span class="screen-reader-text"><?php the_title(); ?></span></a></h2>
+      <?php }else{ ?>
+        <a href="<?php the_permalink(); ?>"><?php echo esc_html_e('Read More','sirat-pro'); ?>
+          <span class="screen-reader-text"><?php esc_html_e( 'READ MORE','sirat-pro' );?></span>
+        </a>
+      <?php } ?>
+      <div class="mb-3 post-text">
+        <?php if($content_type=="Excerpt Content"){  ?>
+          <p><?php $excerpt = get_the_excerpt(); esc_html_e(vw_sirat_pro_string_limit_words($excerpt,$blog_text)); ?>
+            <span>
+              <?php echo esc_html(get_theme_mod('vw_sirat_pro_button_excerpt_suffix','[...]')); ?>
+            </span>
+          </p>
+        <?php } if($content_type=="Full Content"){  ?>
+          <?php the_content(); ?>
+        <?php } ?>
+      </div>
+      <?php if ( get_theme_mod('vw_sirat_pro_post_general_settings_post_date',true) == "1" ) { ?>
+        <span class="entry-date mr-3">
+         <i class="far fa-calendar-alt"></i>
+         <?php echo esc_html( get_the_date() ); ?>
+        </span>
+        <?php } if ( get_theme_mod('vw_sirat_pro_post_general_settings_post_author',true) == "1" ) { ?>
+          <span class="mr-3"><i class="fas fa-user"></i> <?php the_author() ?></span>
+        <?php }if ( get_theme_mod('vw_sirat_pro_post_general_settings_post_comments',true) == "1" ){ ?>
+        <span><i class="fas fa-comments"></i> <?php echo comments_number( __('no comments','sirat-pro'), __('no comments','sirat-pro'), __('% comments','sirat-pro') ); ?></span>
+      <?php } ?>
+    </div>
+  </div>
+</div>
+
+<?php }else if($theme_lay == 'two_col'){ ?>
+<div id="single_post" class="col-lg-6 col-md-6 col-sm-12"> 
+  <div class="postbox wow animated slideInUp delay-1000" data-wow-duration="2s" style="<?php echo esc_attr($theme_blog); ?>">
+    <div class="postpic">
+      <div class="post_pic_inner">
+         <?php if ( get_theme_mod('vw_sirat_pro_blog_featured_image_enable',true) == "1" ) { ?>
+        <?php if (has_post_thumbnail()){ ?>
+           <img src="<?php the_post_thumbnail_url( 'full' ); ?>" alt="<?php the_title(); ?> post thumbnail">
+        <?php }}?>
+      </div>
+    </div>
+    <div class="postbox-content">
+      <?php 
+      $post_title=get_the_title();
+      if($post_title!="" || $post_title!=null){ ?>
+        <h2 class="posttitle"><a href="<?php the_permalink(); ?>"><?php the_title(); ?><span class="screen-reader-text"><?php the_title(); ?></span></a></h2>
+      <?php }else{ ?>
+        <a href="<?php the_permalink(); ?>"><?php echo esc_html_e('Read More','sirat-pro'); ?>
+          <span class="screen-reader-text"><?php esc_html_e( 'READ MORE','sirat-pro' );?></span>
+        </a>
+      <?php } ?>
+      <div class="mb-3 post-text">
+        <?php if($content_type=="Excerpt Content"){  ?>
+          <p><?php $excerpt = get_the_excerpt(); esc_html_e(vw_sirat_pro_string_limit_words($excerpt,$blog_text)); ?>
+            <span>
+              <?php echo esc_html(get_theme_mod('vw_sirat_pro_button_excerpt_suffix','[...]')); ?>
+            </span>
+          </p>
+        <?php } if($content_type=="Full Content"){  ?>
+          <?php the_content(); ?>
+        <?php } ?>
+      </div>
+      <?php if ( get_theme_mod('vw_sirat_pro_post_general_settings_post_date',true) == "1" ) { ?>
+        <span class="entry-date mr-3">
+         <i class="far fa-calendar-alt"></i>
+         <?php echo esc_html( get_the_date() ); ?>
+        </span>
+        <?php } if ( get_theme_mod('vw_sirat_pro_post_general_settings_post_author',true) == "1" ) { ?>
+          <span class="mr-3"><i class="fas fa-user"></i> <?php the_author() ?></span>
+        <?php }if ( get_theme_mod('vw_sirat_pro_post_general_settings_post_comments',true) == "1" ){ ?>
+        <span><i class="fas fa-comments"></i> <?php echo comments_number( __('no comments','sirat-pro'), __('no comments','sirat-pro'), __('% comments','sirat-pro') ); ?></span>
+      <?php } ?>
+    </div>
+  </div>
+</div>
+
+<?php }else if($theme_lay == 'three_col'){ ?>
+<div id="single_post" class="col-lg-4 col-md-4 col-sm-12"> 
+  <div class="postbox wow animated slideInUp delay-1000" data-wow-duration="2s" style="<?php echo esc_attr($theme_blog); ?>">
+    <div class="postpic">
+      <div class="post_pic_inner">
+       <?php if ( get_theme_mod('vw_sirat_pro_blog_featured_image_enable',true) == "1" ) { ?>
+        <?php if (has_post_thumbnail()){ ?>
+           <img src="<?php the_post_thumbnail_url( 'full' ); ?>" alt="<?php the_title(); ?> post thumbnail">
+        <?php }}?>
+      </div>
+    </div>
+    <div class="postbox-content">
+      <?php 
+      $post_title=get_the_title();
+      if($post_title!="" || $post_title!=null){ ?>
+        <h2 class="posttitle"><a href="<?php the_permalink(); ?>"><?php the_title(); ?><span class="screen-reader-text"><?php the_title(); ?></span></a></h2>
+      <?php }else{ ?>
+        <a href="<?php the_permalink(); ?>"><?php echo esc_html_e('Read More','sirat-pro'); ?>
+          <span class="screen-reader-text"><?php esc_html_e( 'READ MORE','sirat-pro' );?></span>
+        </a>
+      <?php } ?>
+      <div class="mb-3 post-text">
+        <?php if($content_type=="Excerpt Content"){  ?>
+          <p><?php $excerpt = get_the_excerpt(); esc_html_e(vw_sirat_pro_string_limit_words($excerpt,$blog_text)); ?>
+            <span>
+              <?php echo esc_html(get_theme_mod('vw_sirat_pro_button_excerpt_suffix','[...]')); ?>
+            </span>
+          </p>
+        <?php } if($content_type=="Full Content"){  ?>
+          <?php the_content(); ?>
+        <?php } ?>
+      </div>
+      <?php if ( get_theme_mod('vw_sirat_pro_post_general_settings_post_date',true) == "1" ) { ?>
+        <span class="entry-date mr-3">
+         <i class="far fa-calendar-alt"></i>
+         <?php echo esc_html( get_the_date() ); ?>
+        </span>
+        <?php } if ( get_theme_mod('vw_sirat_pro_post_general_settings_post_author',true) == "1" ) { ?>
+          <span class="mr-3"><i class="fas fa-user"></i> <?php the_author() ?></span>
+        <?php }if ( get_theme_mod('vw_sirat_pro_post_general_settings_post_comments',true) == "1" ){ ?>
+        <span><i class="fas fa-comments"></i> <?php echo comments_number( __('no comments','sirat-pro'), __('no comments','sirat-pro'), __('% comments','sirat-pro') ); ?></span>
+      <?php } ?>
+    </div>
+  </div>
+</div>
+<?php } ?>
+
+
+ 

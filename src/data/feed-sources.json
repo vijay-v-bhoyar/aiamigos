@@ -1,0 +1,4 @@
+[
+  { "id": "newsletter", "name": "AI Amigos newsletter", "url": "", "enabled": false },
+  { "id": "newspaper", "name": "AI Amigos digital newspaper", "url": "", "enabled": false }
+]

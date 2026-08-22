@@ -1,0 +1,77 @@
+---
+import '../styles/global.css';
+import { site } from '../data/site';
+
+const { title = site.name, description = site.description, canonical, image = '/social-card.svg', schema } = Astro.props;
+const pageTitle = title === site.name ? title : `${title} | ${site.name}`;
+const canonicalUrl = canonical ?? new URL(Astro.url.pathname, site.url).toString();
+const umamiSiteId = import.meta.env.PUBLIC_UMAMI_WEBSITE_ID;
+const searchConsoleVerification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalUrl} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:site_name" content={site.name} />
+    <meta property="og:image" content={new URL(image, site.url)} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={new URL(image, site.url)} />
+    {searchConsoleVerification && <meta name="google-site-verification" content={searchConsoleVerification} />}
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="alternate" type="application/rss+xml" title="AI Amigos articles" href="/rss.xml" />
+    <title>{pageTitle}</title>
+    {schema && <script type="application/ld+json" set:html={JSON.stringify(schema)} />}
+    {umamiSiteId && <script async defer data-website-id={umamiSiteId} src="https://analytics.aiamigos.org/script.js"></script>}
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="/" aria-label="AI Amigos home">AI <span>Amigos</span></a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          {site.navigation.map((item) => <a href={item.href}>{item.label}</a>)}
+          <a href="/search/">Search</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main-content" class="site-main">
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="shell footer-grid">
+        <div>
+          <strong>AI Amigos</strong>
+          <p>{site.description}</p>
+        </div>
+        <div>
+          <h2>Explore</h2>
+          <ul>
+            <li><a href="/tracks/">Practical tracks</a></li>
+            <li><a href="/tools/">Private browser tools</a></li>
+            <li><a href="/templates/">Templates</a></li>
+            <li><a href="/articles/">Guides</a></li>
+            <li><a href="/news/">AI news hub</a></li>
+            <li><a href="/rss.xml">RSS</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Trust</h2>
+          <ul>
+            <li><a href="/about/">Editorial standards</a></li>
+            <li><a href="/contact/">Contact</a></li>
+            <li><a href="/privacy/">Privacy</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

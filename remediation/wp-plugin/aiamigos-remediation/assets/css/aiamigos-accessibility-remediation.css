@@ -1,0 +1,83 @@
+/*
+ * Exact Sirat Pro accessibility targets evidenced by the 2026-08-13 crawl.
+ * The 44px dimensions are an adopted design target, not a statement that
+ * WCAG 2.2 SC 2.5.8 requires 44px.
+ */
+
+#site_top .socialbox > a,
+#footer .custom-social-icons > a.custom_linkedin,
+#open_nav.hamburger,
+#close_nav.close-sidebar,
+.header-search .search-icon,
+.header-search .serach_outer .closepop > i,
+#our-blogs .owl-nav > button,
+#our-blogs .owl-dots > button.owl-dot {
+	box-sizing: border-box;
+	min-block-size: 44px;
+	min-inline-size: 44px;
+	min-height: 44px;
+	min-width: 44px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	touch-action: manipulation;
+}
+
+amp-sidebar#sidebar1 .side-navigation .primary-menu a {
+	box-sizing: border-box;
+	min-block-size: 44px;
+	min-height: 44px;
+	display: flex;
+	align-items: center;
+}
+
+#our-blogs .our-blogs-content h3.aiamigos-blog-card-title {
+	font-size: clamp(1rem, 0.94rem + 0.32vw, 1.25rem);
+	font-weight: 700;
+	line-height: 1.35;
+	margin-block: 0 0.65rem;
+	overflow-wrap: anywhere;
+}
+
+#our-blogs .owl-dots:not(.disabled) {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 2px;
+}
+
+#site_top .socialbox > a:focus-visible,
+#footer .custom-social-icons > a.custom_linkedin:focus-visible,
+#open_nav.hamburger:focus-visible,
+#close_nav.close-sidebar:focus-visible,
+.header-search .search-icon:focus-visible,
+.header-search .serach_outer .closepop > i:focus-visible,
+amp-sidebar#sidebar1 .side-navigation .primary-menu a:focus-visible,
+#our-blogs .owl-nav > button:focus-visible,
+#our-blogs .owl-dots > button.owl-dot:focus-visible {
+	outline: 3px solid #ffffff;
+	outline-offset: 2px;
+	box-shadow: 0 0 0 6px #111111;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	#our-blogs .owl-stage {
+		transition-duration: 0.01ms !important;
+	}
+}
+
+@media (forced-colors: active) {
+	#site_top .socialbox > a:focus-visible,
+	#footer .custom-social-icons > a.custom_linkedin:focus-visible,
+	#open_nav.hamburger:focus-visible,
+	#close_nav.close-sidebar:focus-visible,
+	.header-search .search-icon:focus-visible,
+	.header-search .serach_outer .closepop > i:focus-visible,
+	amp-sidebar#sidebar1 .side-navigation .primary-menu a:focus-visible,
+	#our-blogs .owl-nav > button:focus-visible,
+	#our-blogs .owl-dots > button.owl-dot:focus-visible {
+		outline-color: Highlight;
+		box-shadow: none;
+		forced-color-adjust: auto;
+	}
+}

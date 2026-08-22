@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "artifact": "aiamigos-remediation-1.4.1-candidate.zip",
+  "version": "1.4.1",
+  "builtAt": "2026-08-13",
+  "status": "PREPARED_NOT_DEPLOY_READY",
+  "zip": {
+    "sha256": "EAE265DCE613022C0BFDE1EFCAA9EE14387963BACC5C1DD9D6D8CB39260E7FCA",
+    "bytes": 37664,
+    "rootDirectory": "aiamigos-remediation"
+  },
+  "runtimeFiles": [
+    {
+      "path": "aiamigos-remediation.php",
+      "sha256": "15A7E8B8F321A3B9CCA1A8779D411DBD69FB9D14163396C2C36AB8D03A4BDAE8",
+      "bytes": 989
+    },
+    {
+      "path": "assets/css/aiamigos-accessibility-remediation.css",
+      "sha256": "B2E3BB2005A14198D1616AD598A01FFCFEFE9DD881D0A5342856DDA389F8BD02",
+      "bytes": 2373
+    },
+    {
+      "path": "assets/js/aiamigos-accessibility-remediation.js",
+      "sha256": "2D2C4C4742AC9CD85049E55ECCC932B4AE6AA8D86AD65AE7FB17E4E8BFEFFB76",
+      "bytes": 17810
+    },
+    {
+      "path": "includes/class-aiamigos-accessibility-remediation.php",
+      "sha256": "D28292AD665CAE246681B9BB0F363A1C5C544313FE6D47104630E9372BA8CE31",
+      "bytes": 2924
+    },
+    {
+      "path": "includes/class-aiamigos-remediation-plugin.php",
+      "sha256": "EAB250381455912960CF95311A871E9D65B09742488C8A15945E6030CF53C08F",
+      "bytes": 76740
+    },
+    {
+      "path": "includes/class-aiamigos-remediation-policy.php",
+      "sha256": "FD448C889FE3B28D678393E120B6B176CC84B74DED1312D21E2E5B15A631EE63",
+      "bytes": 8313
+    },
+    {
+      "path": "README.md",
+      "sha256": "B57DC69277FAB84158553F2AE9C873C267F387373AE12D13A5FF3AD9DFEDF794",
+      "bytes": 17492
+    },
+    {
+      "path": "uninstall.php",
+      "sha256": "EC86A4275BE3580C8B88B9233C31314D787AED113B082265C3F417FD0C5C1890",
+      "bytes": 243
+    }
+  ],
+  "sourceEquivalence": {
+    "filesCompared": 8,
+    "sha256Mismatches": 0
+  },
+  "releaseGates": {
+    "localStatic": "passed",
+    "localPhpSourceLint": "passed",
+    "localPolicyFixture": "passed",
+    "localSchemaAuthorFixture": "passed",
+    "packagedZipExtractionAndPhpLint": "passed",
+    "stagingCurrentCandidate": "not_run",
+    "production": "not_authorized"
+  }
+}

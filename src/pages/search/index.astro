@@ -1,0 +1,4 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+<BaseLayout title="Search tools, templates, tracks, and guides" description="Full-text search across the practical AI Amigos workbench."><div class="shell reading"><p class="eyebrow">Full-text search</p><h1>Find the next useful action.</h1><p class="lede">Search tools, templates, tracks, guides, and feed items. Results highlight matching text and expose available filters.</p><div id="search"></div><noscript><p class="notice">Search needs JavaScript. Browse <a href="/tools/">tools</a>, <a href="/templates/">templates</a>, or <a href="/tracks/">tracks</a> instead.</p></noscript></div><link href="/pagefind/pagefind-ui.css" rel="stylesheet"><script is:inline src="/pagefind/pagefind-ui.js"></script><script>window.addEventListener('DOMContentLoaded',()=>{new PagefindUI({element:'#search',showSubResults:true,showImages:false,excerptLength:24,resetStyles:false});});</script></BaseLayout>

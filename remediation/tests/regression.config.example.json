@@ -1,0 +1,165 @@
+{
+  "routes": {
+    "root": "/",
+    "oldHome": "/home/",
+    "blog": "/blog/",
+    "legacyPageTwo": "/page/2/",
+    "contact": "/contact/"
+  },
+  "routePolicies": {
+    "gonePaths": [
+      "/classes/recent-case-title-01/",
+      "/classes/recent-case-title-02/",
+      "/testimonials/client-name-01/",
+      "/testimonials/client-name-02/",
+      "/testimonials/client-name-03/",
+      "/team/member-name-02/",
+      "/team/member-name-03/",
+      "/team/member-name-04/",
+      "/services/ai-amigos-academy/",
+      "/services/ai-amigos-pro/",
+      "/services/ai-by-job-role/",
+      "/services/ai-for-kids/",
+      "/ai-certifications/",
+      "/gpt-models/",
+      "/grokai/",
+      "/ai-model-benchmarks-a-comprehensive-guide/",
+      "/others/",
+      "/shop/",
+      "/langgraph-5-stunning-secrets-for-building-a-generative-ai-application/",
+      "/ways-to-test-a-rag-architecture-based-generative-ai-application/",
+      "/building-agentic-ai-saas-a-strategic-roadmap-using-google-gemini-enterprise/",
+      "/custom-gpt-models/",
+      "/services/",
+      "/classes/",
+      "/ai-tools-for-kids/",
+      "/ai-books-for-kids/",
+      "/newsletter/",
+      "/newsletter-2/"
+    ],
+    "quarantinedPaths": [
+      "/privacy-policy-2/",
+      "/page/",
+      "/academy/",
+      "/ai-career/"
+    ],
+    "unpublishedPaths": [],
+    "permanentRedirects": {},
+    "preservedPaths": ["/team/member-name-01/"],
+    "registrationPath": "/wp-login.php?action=register"
+  },
+  "feedPaths": [
+    "/feed/",
+    "/?feed=rss2&post_type=services",
+    "/?feed=rss2&post_type=classes",
+    "/?feed=rss2&post_type=testimonials",
+    "/?feed=rss2&post_type=team"
+  ],
+  "concurrency": 10,
+  "timeoutMs": 20000,
+  "expectedBrandPattern": "AI\\s*Amigos",
+  "metadata": {
+    "titleMin": 10,
+    "titleMax": 60,
+    "descriptionMin": 50,
+    "descriptionMax": 160,
+    "requireSocialImages": true
+  },
+  "socialImages": {
+    "allowedContentTypes": [
+      "image/png",
+      "image/jpeg",
+      "image/webp"
+    ],
+    "maxBytes": 5000000,
+    "fallbackApproval": {
+      "status": "pending",
+      "url": "/wp-content/uploads/2023/10/cropped-logo-5.png",
+      "width": 1200,
+      "height": 630,
+      "sha256": null,
+      "approvedBy": null,
+      "approvedAt": null,
+      "evidenceId": null
+    }
+  },
+  "schemaGovernance": {
+    "allowedTypes": [
+      "Article",
+      "BlogPosting",
+      "BreadcrumbList",
+      "CollectionPage",
+      "EducationalOrganization",
+      "ImageObject",
+      "ListItem",
+      "Organization",
+      "Person",
+      "Review",
+      "SearchAction",
+      "SiteNavigationElement",
+      "WebPage",
+      "WebSite"
+    ],
+    "approvalRequiredTypes": [
+      "Person",
+      "Organization",
+      "EducationalOrganization",
+      "Review"
+    ],
+    "claimAllowlist": [],
+    "collectionPagePathPatterns": [
+      "^/blog/?$"
+    ],
+    "articleDeniedPathPatterns": [
+      "^/$",
+      "^/blog/?$"
+    ],
+    "articleBodyClassPatterns": [
+      "\\bsingle-post\\b"
+    ]
+  },
+  "performance": {
+    "htmlBytes": 250000,
+    "totalTransferBytes": 3000000,
+    "imageTransferBytes": 1500000,
+    "scriptTransferBytes": 750000,
+    "resourceCount": 80,
+    "scriptCount": 20,
+    "domNodes": 1500,
+    "horizontalOverflowPx": 0
+  },
+  "browser": {
+    "settleMs": 2000,
+    "width": 390,
+    "height": 844,
+    "deviceScaleFactor": 1,
+    "mobile": true,
+    "maxPages": 4,
+    "paths": [
+      "/",
+      "/blog/",
+      "/contact/",
+      "/team/member-name-01/"
+    ],
+    "accessibility": {
+      "enabled": true,
+      "rootPath": "/",
+      "expectedCarouselDots": 20,
+      "minTargetPx": 44,
+      "autoplayObservationMs": 6250,
+      "minAutoplayObservationMs": 6000,
+      "interactionSettleMs": 650
+    }
+  },
+  "requiredHeaders": [
+    "strict-transport-security",
+    "x-content-type-options",
+    "referrer-policy",
+    "permissions-policy"
+  ],
+  "disallowedIndexablePathPatterns": [
+    "^/author/",
+    "^/page/[2-9][0-9]*/?$",
+    "^/category/"
+  ]
+}

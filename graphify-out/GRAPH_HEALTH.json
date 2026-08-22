@@ -1,0 +1,184 @@
+{
+  "node_count": 1799,
+  "unverified_node_count": 0,
+  "raw_edge_count": 3138,
+  "non_object_edges": 0,
+  "missing_endpoint_edges": 0,
+  "dangling_endpoint_edges": 0,
+  "self_loop_edges": 0,
+  "valid_candidate_edges": 3138,
+  "exact_duplicate_edges": 73,
+  "directed_unique_endpoint_pairs": 3055,
+  "directed_same_endpoint_collapsed_edges": 83,
+  "undirected_unique_endpoint_pairs": 3042,
+  "undirected_same_endpoint_collapsed_edges": 96,
+  "same_endpoint_group_count": 43,
+  "relation_variant_groups": 6,
+  "source_file_variant_groups": 0,
+  "source_location_variant_groups": 3,
+  "context_variant_groups": 0,
+  "post_build_graph_type": "Graph",
+  "post_build_node_count": 1799,
+  "post_build_edge_count": 3042,
+  "post_build_error": "",
+  "producer_suppression": {
+    "path": "C:\\Users\\vijay\\AppData\\Roaming\\uv\\tools\\graphifyy\\Lib\\site-packages\\graphify\\extract.py",
+    "total_sites": 11,
+    "sites": [
+      {
+        "line": 1131,
+        "name": "seen_ids",
+        "tuple_arity": 0,
+        "sample": "seen_ids = {n[\"id\"] for n in nodes}"
+      },
+      {
+        "line": 1397,
+        "name": "seen_ids",
+        "tuple_arity": 0,
+        "sample": "seen_ids = {n[\"id\"] for n in nodes}"
+      },
+      {
+        "line": 1399,
+        "name": "seen_doc_refs",
+        "tuple_arity": 0,
+        "sample": "seen_doc_refs: set[str] = set()"
+      },
+      {
+        "line": 1759,
+        "name": "seen_ids",
+        "tuple_arity": 0,
+        "sample": "seen_ids: set[str] = {n[\"id\"] for n in nodes}"
+      },
+      {
+        "line": 2249,
+        "name": "seen_keys",
+        "tuple_arity": 0,
+        "sample": "seen_keys: set[tuple] = set()"
+      },
+      {
+        "line": 2418,
+        "name": "seen_keys",
+        "tuple_arity": 0,
+        "sample": "seen_keys: set[tuple] = set()"
+      },
+      {
+        "line": 3824,
+        "name": "seen_ids",
+        "tuple_arity": 0,
+        "sample": "seen_ids: set[str] = set()"
+      },
+      {
+        "line": 3932,
+        "name": "seen_ids",
+        "tuple_arity": 0,
+        "sample": "seen_ids: set[str] = set()"
+      },
+      {
+        "line": 4011,
+        "name": "seen_ids",
+        "tuple_arity": 0,
+        "sample": "seen_ids: set[str] = set()"
+      },
+      {
+        "line": 4526,
+        "name": "seen_ids",
+        "tuple_arity": 0,
+        "sample": "seen_ids: set[str] = set()"
+      },
+      {
+        "line": 4527,
+        "name": "seen_edges",
+        "tuple_arity": 4,
+        "sample": "seen_edges: set[tuple[str, str, str, str | None]] = set()"
+      }
+    ],
+    "error": ""
+  },
+  "examples": [
+    {
+      "source": "assets_wp_polyfill_min_201bf9189c",
+      "target": "assets_wp_polyfill_min_201bf9189c_o",
+      "edge_count": 16,
+      "relations": [
+        "contains"
+      ],
+      "source_files": [
+        "assets/wp-polyfill.min-201bf9189c.js"
+      ],
+      "source_locations": [
+        "L1"
+      ],
+      "contexts": [
+        ""
+      ]
+    },
+    {
+      "source": "assets_wp_polyfill_min_201bf9189c",
+      "target": "assets_wp_polyfill_min_201bf9189c_n",
+      "edge_count": 11,
+      "relations": [
+        "contains"
+      ],
+      "source_files": [
+        "assets/wp-polyfill.min-201bf9189c.js"
+      ],
+      "source_locations": [
+        "L1"
+      ],
+      "contexts": [
+        ""
+      ]
+    },
+    {
+      "source": "assets_bootstrap_min_b5eee535c3",
+      "target": "assets_bootstrap_min_b5eee535c3_i",
+      "edge_count": 6,
+      "relations": [
+        "contains"
+      ],
+      "source_files": [
+        "assets/bootstrap.min-b5eee535c3.js"
+      ],
+      "source_locations": [
+        "L6"
+      ],
+      "contexts": [
+        ""
+      ]
+    },
+    {
+      "source": "assets_wp_polyfill_min_201bf9189c",
+      "target": "assets_wp_polyfill_min_201bf9189c_i",
+      "edge_count": 6,
+      "relations": [
+        "contains"
+      ],
+      "source_files": [
+        "assets/wp-polyfill.min-201bf9189c.js"
+      ],
+      "source_locations": [
+        "L1"
+      ],
+      "contexts": [
+        ""
+      ]
+    },
+    {
+      "source": "assets_wp_polyfill_min_201bf9189c",
+      "target": "assets_wp_polyfill_min_201bf9189c_e",
+      "edge_count": 4,
+      "relations": [
+        "contains"
+      ],
+      "source_files": [
+        "assets/wp-polyfill.min-201bf9189c.js"
+      ],
+      "source_locations": [
+        "L1"
+      ],
+      "contexts": [
+        ""
+      ]
+    }
+  ]
+}

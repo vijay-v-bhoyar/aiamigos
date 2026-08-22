@@ -1,0 +1,180 @@
+{
+  "communities": {
+    "0": [
+      "includes_class_aiamigos_remediation_plugin",
+      "includes_class_aiamigos_remediation_plugin_aiamigos_remediation_plugin",
+      "includes_class_aiamigos_remediation_plugin_aiamigos_remediation_plugin_activate",
+      "includes_class_aiamigos_remediation_plugin_aiamigos_remediation_plugin_allow_canonical_redirect_host",
+      "includes_class_aiamigos_remediation_plugin_aiamigos_remediation_plugin_boot",
+      "includes_class_aiamigos_remediation_plugin_aiamigos_remediation_plugin_canonical_base_url",
+      "includes_class_aiamigos_remediation_plugin_aiamigos_remediation_plugin_enqueue_inline_styles",
+      "includes_class_aiamigos_remediation_plugin_aiamigos_remediation_plugin_filter_blog_canonical",
+      "includes_class_aiamigos_remediation_plugin_aiamigos_remediation_plugin_filter_blog_document_title",
+      "includes_class_aiamigos_remediation_plugin_aiamigos_remediation_plugin_filter_blog_seo_title",
+      "includes_class_aiamigos_remediation_plugin_aiamigos_remediation_plugin_filter_footer_copy_mod",
+      "includes_class_aiamigos_remediation_plugin_aiamigos_remediation_plugin_filter_listing_thumbnail_size",
+      "includes_class_aiamigos_remediation_plugin_aiamigos_remediation_plugin_filter_rank_math_robots",
+      "includes_class_aiamigos_remediation_plugin_aiamigos_remediation_plugin_filter_rank_math_sitemap_entry",
+      "includes_class_aiamigos_remediation_plugin_aiamigos_remediation_plugin_filter_robots_string",
+      "includes_class_aiamigos_remediation_plugin_aiamigos_remediation_plugin_filter_wp_robots",
+      "includes_class_aiamigos_remediation_plugin_aiamigos_remediation_plugin_force_noindex_string",
+      "includes_class_aiamigos_remediation_plugin_aiamigos_remediation_plugin_gone_paths",
+      "includes_class_aiamigos_remediation_plugin_aiamigos_remediation_plugin_hide_theme_credit_mod",
+      "includes_class_aiamigos_remediation_plugin_aiamigos_remediation_plugin_high_risk_noindex_paths",
+      "includes_class_aiamigos_remediation_plugin_aiamigos_remediation_plugin_is_listing_context",
+      "includes_class_aiamigos_remediation_plugin_aiamigos_remediation_plugin_label_update_request_widget",
+      "includes_class_aiamigos_remediation_plugin_aiamigos_remediation_plugin_normalize_widget_heading_level",
+      "includes_class_aiamigos_remediation_plugin_aiamigos_remediation_plugin_prepend_accountable_byline",
+      "includes_class_aiamigos_remediation_plugin_aiamigos_remediation_plugin_raw_theme_mod",
+      "includes_class_aiamigos_remediation_plugin_aiamigos_remediation_plugin_redirect_paths",
+      "includes_class_aiamigos_remediation_plugin_aiamigos_remediation_plugin_remove_runtime_disclosure_header",
+      "includes_class_aiamigos_remediation_plugin_aiamigos_remediation_plugin_render_blog_archive_heading",
+      "includes_class_aiamigos_remediation_plugin_aiamigos_remediation_plugin_render_front_page_intro",
+      "includes_class_aiamigos_remediation_plugin_aiamigos_remediation_plugin_render_gone_response",
+      "includes_class_aiamigos_remediation_plugin_aiamigos_remediation_plugin_update_request_markup"
+    ],
+    "1": [
+      "includes_class_aiamigos_remediation_plugin_aiamigos_remediation_plugin_apply_route_policy",
+      "includes_class_aiamigos_remediation_plugin_aiamigos_remediation_plugin_blog_base_path",
+      "includes_class_aiamigos_remediation_plugin_aiamigos_remediation_plugin_canonical_url_for_path",
+      "includes_class_aiamigos_remediation_plugin_aiamigos_remediation_plugin_exclude_quarantined_records_from_queries",
+      "includes_class_aiamigos_remediation_plugin_aiamigos_remediation_plugin_filter_core_sitemap_query_args",
+      "includes_class_aiamigos_remediation_plugin_aiamigos_remediation_plugin_filter_response_headers",
+      "includes_class_aiamigos_remediation_plugin_aiamigos_remediation_plugin_filter_theme_email_mod",
+      "includes_class_aiamigos_remediation_plugin_aiamigos_remediation_plugin_filter_theme_phone_mod",
+      "includes_class_aiamigos_remediation_plugin_aiamigos_remediation_plugin_filter_yoast_sitemap_post_ids",
+      "includes_class_aiamigos_remediation_plugin_aiamigos_remediation_plugin_high_risk_post_ids",
+      "includes_class_aiamigos_remediation_plugin_aiamigos_remediation_plugin_is_blog_archive_request",
+      "includes_class_aiamigos_remediation_plugin_aiamigos_remediation_plugin_is_frontend_request",
+      "includes_class_aiamigos_remediation_plugin_aiamigos_remediation_plugin_make_wp_dependencies_blocking",
+      "includes_class_aiamigos_remediation_plugin_aiamigos_remediation_plugin_normalize_menu_link",
+      "includes_class_aiamigos_remediation_plugin_aiamigos_remediation_plugin_quarantined_post_ids",
+      "includes_class_aiamigos_remediation_plugin_aiamigos_remediation_plugin_replace_mailpoet_form",
+      "includes_class_aiamigos_remediation_plugin_aiamigos_remediation_plugin_should_noindex",
+      "includes_class_aiamigos_remediation_plugin_aiamigos_remediation_plugin_sitemap_excluded_post_ids",
+      "includes_class_aiamigos_remediation_policy",
+      "includes_class_aiamigos_remediation_policy_aiamigos_remediation_policy",
+      "includes_class_aiamigos_remediation_policy_aiamigos_remediation_policy_is_email_like",
+      "includes_class_aiamigos_remediation_policy_aiamigos_remediation_policy_merge_positive_ids",
+      "includes_class_aiamigos_remediation_policy_aiamigos_remediation_policy_normalize_menu_url",
+      "includes_class_aiamigos_remediation_policy_aiamigos_remediation_policy_normalize_path",
+      "includes_class_aiamigos_remediation_policy_aiamigos_remediation_policy_path_is_listed",
+      "includes_class_aiamigos_remediation_policy_aiamigos_remediation_policy_redirect_target_path",
+      "includes_class_aiamigos_remediation_policy_aiamigos_remediation_policy_replace_mailpoet_forms",
+      "includes_class_aiamigos_remediation_policy_aiamigos_remediation_policy_strip_script_loading_strategy"
+    ],
+    "2": [
+      "tests_static_check",
+      "tests_static_check_all",
+      "tests_static_check_bootstrapfile",
+      "tests_static_check_callbackmatches",
+      "tests_static_check_check",
+      "tests_static_check_methodnames",
+      "tests_static_check_missingcallbacks",
+      "tests_static_check_phpfiles",
+      "tests_static_check_pluginfile",
+      "tests_static_check_policyfile",
+      "tests_static_check_root",
+      "tests_static_check_sources",
+      "tests_static_check_structuralbalance"
+    ],
+    "3": [
+      "tests_test_policy",
+      "tests_test_policy_aiamigos_test_same"
+    ],
+    "4": [
+      "aiamigos_remediation"
+    ],
+    "5": [
+      "uninstall"
+    ]
+  },
+  "cohesion": {
+    "0": 0.06451612903225806,
+    "1": 0.07142857142857142,
+    "2": 0.15384615384615385,
+    "3": 1.0,
+    "4": 1.0,
+    "5": 1.0
+  },
+  "gods": [
+    {
+      "id": "includes_class_aiamigos_remediation_plugin_aiamigos_remediation_plugin",
+      "label": "AIAmigos_Remediation_Plugin",
+      "degree": 48
+    },
+    {
+      "id": "includes_class_aiamigos_remediation_policy_aiamigos_remediation_policy",
+      "label": "AIAmigos_Remediation_Policy",
+      "degree": 27
+    },
+    {
+      "id": "tests_static_check_all",
+      "label": "all",
+      "degree": 1
+    },
+    {
+      "id": "tests_static_check_bootstrapfile",
+      "label": "bootstrapFile",
+      "degree": 1
+    },
+    {
+      "id": "tests_static_check_callbackmatches",
+      "label": "callbackMatches",
+      "degree": 1
+    },
+    {
+      "id": "tests_static_check_methodnames",
+      "label": "methodNames",
+      "degree": 1
+    },
+    {
+      "id": "tests_static_check_missingcallbacks",
+      "label": "missingCallbacks",
+      "degree": 1
+    },
+    {
+      "id": "tests_static_check_pluginfile",
+      "label": "pluginFile",
+      "degree": 1
+    },
+    {
+      "id": "tests_static_check_policyfile",
+      "label": "policyFile",
+      "degree": 1
+    },
+    {
+      "id": "tests_static_check_root",
+      "label": "root",
+      "degree": 1
+    }
+  ],
+  "surprises": [],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `AIAmigos_Remediation_Plugin` connect `Community 0` to `Community 1`?",
+      "why": "High betweenness centrality (0.487) - this node is a cross-community bridge."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 18 inferred relationships involving `AIAmigos_Remediation_Policy` (e.g. with `.apply_route_policy()` and `.blog_base_path()`) actually correct?",
+      "why": "`AIAmigos_Remediation_Policy` has 18 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `all`, `bootstrapFile`, `callbackMatches` to the rest of the system?",
+      "why": "9 weakly-connected nodes found - possible documentation gaps or missing edges."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 0` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.06451612903225806 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 1` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.07142857142857142 - nodes in this community are weakly interconnected."
+    }
+  ]
+}

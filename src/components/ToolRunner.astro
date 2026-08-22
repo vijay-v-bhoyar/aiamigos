@@ -1,0 +1,53 @@
+---
+const { tool } = Astro.props;
+---
+<section class="tool-runner" data-tool={tool.slug} data-engine={tool.engine} data-config={JSON.stringify(tool)}>
+  <div class="privacy-strip"><strong>Private by design.</strong> Your entries stay in this browser. Nothing is sent to AI Amigos or placed in a share link.</div>
+  <form class="workbench-form" novalidate>
+    {tool.fields.map((field) => (
+      <label>
+        <span>{field.label}{field.required ? ' *' : ''}</span>
+        {field.type === 'textarea' ? <textarea name={field.name} required={field.required} placeholder={field.placeholder}></textarea> : field.type === 'select' ? <select name={field.name}>{field.options.map((option) => <option value={option.toLowerCase()}>{option}</option>)}</select> : <input name={field.name} type={field.type} required={field.required} placeholder={field.placeholder} min={field.min} max={field.max} value={field.value} />}
+      </label>
+    ))}
+    <p class="sensitive-warning" hidden role="status">This looks like it may contain sensitive information. Remove secrets, personal records, or confidential details before continuing.</p>
+    <div class="button-row"><button class="button" type="submit">Build my result</button><button class="button secondary reset-tool" type="button">Reset</button></div>
+  </form>
+  <section class="tool-result" hidden tabindex="-1" aria-live="polite">
+    <div class="section-head"><h2>Your working result</h2><span class="tag">Saved locally</span></div>
+    <div class="result-output"></div>
+    <div class="button-row tool-actions">
+      <button class="button secondary copy-result" type="button">Copy result</button>
+      <button class="button secondary export-md" type="button">Markdown</button>
+      <button class="button secondary export-json" type="button">JSON</button>
+      <button class="button secondary export-csv" type="button">CSV</button>
+      <button class="button secondary print-result" type="button">Print</button>
+      <button class="button secondary share-tool" type="button">Share this tool</button>
+    </div>
+    <p class="meta action-status" role="status"></p>
+  </section>
+</section>
+
+<script>
+  import { toolBuilders, containsSensitiveInput, asMarkdown } from '../lib/tool-engine.mjs';
+  const safe = (value) => String(value ?? '').replace(/[&<>"']/g, (char) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[char]));
+  const renderValue = (value) => Array.isArray(value) ? `<ul>${value.map((item) => `<li>${typeof item === 'object' ? safe(`${item.days ? `${item.days} days — ` : ''}${item.focus ?? JSON.stringify(item)}`) : safe(item)}</li>`).join('')}</ul>` : typeof value === 'object' ? `<pre>${safe(JSON.stringify(value, null, 2))}</pre>` : `<p>${safe(value)}</p>`;
+  const track = (name, id) => { if (window.umami) window.umami.track(name, { resource_id: id }); };
+  const download = (name, body, type) => { const link = document.createElement('a'); link.href = URL.createObjectURL(new Blob([body], { type })); link.download = name; link.click(); URL.revokeObjectURL(link.href); };
+  document.querySelectorAll('.tool-runner').forEach((root) => {
+    const form = root.querySelector('form'); const resultShell = root.querySelector('.tool-result'); const output = root.querySelector('.result-output'); const warning = root.querySelector('.sensitive-warning'); const status = root.querySelector('.action-status');
+    const slug = root.dataset.tool; const storageKey = `aiamigos:tool:${slug}:v1`; let result = null;
+    const show = (next) => { result = next; output.innerHTML = Object.entries(next).map(([key, value]) => `<section><h3>${safe(key.replace(/([A-Z])/g, ' $1').replace(/^./, (c) => c.toUpperCase()))}</h3>${renderValue(value)}</section>`).join(''); resultShell.hidden = false; localStorage.setItem(storageKey, JSON.stringify({ version: 1, savedAt: new Date().toISOString(), inputs: Object.fromEntries(new FormData(form)), result })); };
+    try { const saved = JSON.parse(localStorage.getItem(storageKey)); if (saved?.version === 1) { Object.entries(saved.inputs ?? {}).forEach(([name,value]) => { const field = form.elements.namedItem(name); if (field) field.value = value; }); show(saved.result); } } catch { localStorage.removeItem(storageKey); }
+    form.addEventListener('input', () => { warning.hidden = !containsSensitiveInput([...new FormData(form).values()].join(' ')); });
+    form.addEventListener('submit', (event) => { event.preventDefault(); if (!form.reportValidity()) return; const data = Object.fromEntries(new FormData(form)); show(toolBuilders[root.dataset.engine](data)); track('tool_completion', slug); resultShell.focus(); });
+    root.querySelector('.reset-tool').addEventListener('click', () => { form.reset(); resultShell.hidden = true; result = null; warning.hidden = true; localStorage.removeItem(storageKey); status.textContent = 'Local result cleared.'; });
+    root.querySelector('.copy-result').addEventListener('click', async () => { await navigator.clipboard.writeText(asMarkdown(result)); status.textContent = 'Result copied.'; track('tool_copy', slug); });
+    root.querySelector('.export-md').addEventListener('click', () => { download(`${slug}.md`, asMarkdown(result), 'text/markdown'); track('tool_export', slug); });
+    root.querySelector('.export-json').addEventListener('click', () => { download(`${slug}.json`, JSON.stringify(result, null, 2), 'application/json'); track('tool_export', slug); });
+    root.querySelector('.export-csv').addEventListener('click', () => { const csv = ['field,value', ...Object.entries(result).map(([key,value]) => `"${key.replaceAll('"','""')}","${(typeof value === 'string' ? value : JSON.stringify(value)).replaceAll('"','""')}"`)].join('\n'); download(`${slug}.csv`, csv, 'text/csv'); track('tool_export', slug); });
+    root.querySelector('.print-result').addEventListener('click', () => window.print());
+    root.querySelector('.share-tool').addEventListener('click', async () => { await navigator.clipboard.writeText(location.origin + location.pathname); status.textContent = 'Stable tool link copied. Your private result was not included.'; track('tool_share', slug); });
+    form.addEventListener('focusin', () => track('tool_start', slug), { once: true });
+  });
+</script>

@@ -1,0 +1,145 @@
+<?php
+/**
+ * Template part for displaying Our Blog
+ *
+ * @package sirat-pro
+ */
+
+$section_hide = get_theme_mod('vw_sirat_pro_our_blog_enable');
+if ('Disable' == $section_hide)
+{
+    return;
+}
+$img_bg = get_theme_mod('vw_sirat_pro_our_blog_bgimage_setting');
+if (get_theme_mod('vw_sirat_pro_our_blog_bgcolor', ''))
+{
+    $about_backg = 'background-color:' . esc_attr(get_theme_mod('vw_sirat_pro_our_blog_bgcolor', '')) . ';';
+}
+elseif (get_theme_mod('vw_sirat_pro_our_blog_bgimage', ''))
+{
+    $about_backg = 'background-image:url(\'' . esc_url(get_theme_mod('vw_sirat_pro_our_blog_bgimage')) . '\')';
+}
+else
+{
+    $about_backg = '';
+}
+
+$blog_loop = "true";
+if (get_theme_mod('vw_sirat_pro_our_blog_slider_loop', true) == '1')
+{
+    $blog_loop = "true";
+}
+else
+{
+    $blog_loop = "false";
+}
+
+$blog_excerpt = "";
+if (get_theme_mod('vw_sirat_pro_our_blog_excerpt_no') != '')
+{
+    $blog_excerpt = get_theme_mod('vw_sirat_pro_our_blog_excerpt_no');
+}
+?>
+<section id="our-blogs" style="<?php echo esc_attr($about_backg); ?>" class="wow slideInUp delay-1000 animated <?php echo esc_attr($img_bg); ?>" data-wow-duration="2s">
+  <div class="container">
+    <div class="row our-blogs-head">
+      <div class="col-lg-8 col-md-8">
+        <div class="blog-top">
+          <?php if (get_theme_mod('vw_sirat_pro_our_blog_small_heading') != '')
+{ ?>
+            <p class="small-heading">
+              <?php echo esc_html(get_theme_mod('vw_sirat_pro_our_blog_small_heading')); ?>
+            </p>
+          <?php
+}
+if (get_theme_mod('vw_sirat_pro_our_blog_main_heading') != '')
+{ ?>
+            <h2>
+              <?php echo esc_html(get_theme_mod('vw_sirat_pro_our_blog_main_heading')); ?>
+            </h2>
+          <?php
+} ?>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 section-button">
+        <?php if (get_theme_mod('vw_sirat_pro_our_blog_main_button_title') != '')
+{ ?>
+          <a href="<?php echo esc_html(get_theme_mod('vw_sirat_pro_our_blog_main_button_url')); ?>" class="hvr-shrink">
+            <?php echo esc_html(get_theme_mod('vw_sirat_pro_our_blog_main_button_title')); ?>
+            <i class="fas fa-caret-right"></i>
+          </a>
+        <?php
+} ?>
+      </div>
+    </div>
+    <div class="owl-carousel">
+      <?php
+$i = 1;
+$args = array(
+    'post_type' => 'post',
+    'post_status' => 'publish',
+    'posts_per_page' => get_theme_mod('vw_sirat_pro_our_blog_number')
+);
+$query = new WP_Query($args);
+if ($query->have_posts()):
+    while ($query->have_posts()):
+        $query->the_post(); ?>
+        <div class="our-blogs-content">
+          <div class="row our-blogs-box">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <div class="latest-blog-image">
+                <?php
+                $aiamigos_blog_image_id = get_post_thumbnail_id();
+                if ( $aiamigos_blog_image_id ) {
+                  echo wp_get_attachment_image(
+                    $aiamigos_blog_image_id,
+                    'medium_large',
+                    false,
+                    array(
+                      'class'    => 'aiamigos-home-blog-image',
+                      'alt'      => wp_strip_all_tags( (string) get_theme_mod( 'vw_sirat_pro_blog_image_alt_text' . $i ) ),
+                      'loading'  => 'lazy',
+                      'decoding' => 'async',
+                      'sizes'    => '(max-width: 767px) calc(100vw - 30px), (max-width: 1199px) 50vw, 33vw',
+                    )
+                  );
+                }
+                ?>
+                <div class="blog-date" style="<?php if (has_post_thumbnail() == "")
+        {
+            echo "position: unset;";
+        } ?>">
+                  <span>
+                    <?php the_time('d'); ?>
+                  </span>
+                  <span>
+                    <?php the_time('M'); ?>
+                  </span>
+                  <span>
+                    <?php the_time('Y'); ?>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 blog-info">
+              <h3 class="aiamigos-blog-card-title"><?php the_title(); ?><span class="screen-reader-text"><?php the_title(); ?></span></h3>
+              <div class="news-text"><?php $excerpt = get_the_excerpt();
+        echo esc_html(vw_sirat_pro_string_limit_words($excerpt, $blog_excerpt)); ?></div>
+              <?php if (get_theme_mod('vw_sirat_pro_our_blog_main_link_title') != '')
+        { ?>
+                <a href="<?php the_permalink(); ?>" class="blog-link">
+                  <?php echo esc_html(get_theme_mod('vw_sirat_pro_our_blog_main_link_title')); ?>
+                  <i class="fas fa-long-arrow-alt-right"></i>
+                </a>
+              <?php
+        } ?>
+            </div>
+          </div>
+        </div>
+      <?php $i++;
+    endwhile;
+endif; ?>
+    </div>
+  </div>
+  <span id="blog-loop"><?php echo esc_html($blog_loop); ?></span>
+</section>

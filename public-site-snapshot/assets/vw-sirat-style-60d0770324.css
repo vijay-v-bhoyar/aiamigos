@@ -1,0 +1,445 @@
+/* ------ Slider -------- */
+.vw-sirat-slider  .carousel-content{
+    width: 54%;
+    padding-left: 125px;
+}
+.vw-sirat-slider button:focus {
+    outline: none !important;
+}
+.vw-sirat-slider .owl-nav .owl-prev{
+    margin-left: 55px !important;
+    margin-top: 24px !important;
+}
+.vw-sirat-slider  .owl-nav .owl-next{
+    margin-right: 74px !important;
+    margin-top: 24px !important;
+}
+.vw-sirat-contact-right-section {
+  clip-path: polygon(0 0%, 100% 0, 100% 100%, 10% 100%);
+    width: 100%;
+    padding: 0px;
+    margin: 0;
+}
+.vw-sirat-contact-left-section{
+  clip-path: polygon(0 0%, 90% 0, 100% 100%, 0 100%);
+  width: 111% !important;
+}
+.vw-sirat-feature-heading-text{
+  border-left: 5px solid #febe00;
+
+}
+.vw-sirat-outer-cover{
+      min-height: 635px !important;
+      width: 85% !important;
+}
+.vw-sirat-inner-cover{
+    border: 10px solid #fff;
+    box-shadow: 0px 0px 57px 0px rgb(0 0 0 / 11%);
+    width: max-content;
+    max-width: 100%;
+    position: relative;
+    top: 190px;
+    left: 110px;
+}
+.vw-sirat-feature-image{
+    border: 2px solid #febe00;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.vw-sirat-feature-image img{
+    margin-top: 12px;
+}
+.vw-sirat-feature-image:hover{
+  background-color: #febe00;
+}
+.vw-sirat-record-p p:before {
+    content: "";
+    width: 20px;
+    height: 3px;
+    background-color: #febe00;
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+}
+.vw-sirat-counter-image img{
+    border: 2px solid #febe00;
+    padding: 8px;
+}
+.vw-sirat-services-heading-text{
+   border-left: 5px solid #121212;
+}
+.vw-sirat-outer-cover-box{
+  border-radius: 20px;
+}
+.vw-sirat-services-iconimg img{
+  width: auto !important;
+  background-color: #121212;
+  padding: 20px; 
+  border-radius: 5px;
+}
+.vw-sirat-services-iconimg1 img{
+  width: auto !important;
+  background-color: #121212;
+  padding: 20px 28px; 
+  border-radius: 5px;
+}
+.vw-sirat-services-iconimg img:hover{
+  background-color: #febe00; 
+}
+.vw-sirat-services-iconimg1 img:hover{
+  background-color: #febe00; 
+}
+.vw-sirat-services-colum{
+  margin-top: 60px;
+}
+.vw-sirat-classes-inner-cover{
+  width: 70% !important;
+  position: relative;
+  bottom: 73px;
+  left: 20px;
+}
+.vw-sirat-services-heading-textright{
+  border-right: 5px solid #febe00;
+}
+.vw-sirat-testi-team-1-col{
+    text-align: center !important;
+}
+.vw-sirat-team-member-bg{
+    background-color: #121212;
+    position: relative;
+    bottom: 45px;
+    width: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.vw-sirat-team-member-bg:hover{
+  background-color: #febe00;
+}
+.vw-sirat-team-colum{
+    margin-top: 120px;
+}
+.vw-sirat-ourservices-image i{
+    border: 2px solid #febe00;
+    width: 60px;
+    height: 60px;
+    padding: 15px;
+    border-radius: 50%;
+}
+.vw-sirat-ourservices-image i:hover{
+  background-color: #febe00; 
+}
+.vw-sirat-ourservices-banner-cover {
+    width: 80% !important;
+}
+.vw-sirat-ourservices-banner-inner-cover {
+    position: relative;
+    top: 95px;
+    right: 85px;
+}
+.vw-sirat-testimonial-client-text-bg{
+    border-radius: 20px;
+    position: relative;
+}
+.vw-sirat-testimonial-client-img img{
+    width: auto !important;
+    position: absolute;
+    top: 50%;
+    left: -44px;
+    transform: translateY(-50%);
+}
+.vw-sirat-blog .post-meta-content{
+    background-color: #febe00;
+    padding: 10px;
+    position: relative;
+    bottom: 291px;
+}
+.vw-sirat-blog .ive-inner-post-content{
+    background-color: #cccccc26;
+}
+.vw-sirat-contact-form input[type="email"] {
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #121212;
+    font-weight: 400;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 18px 15px;
+    margin-bottom: 0;
+}
+.vw-sirat-contact-form input[type="submit"] {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #121212;
+    font-weight: 700;
+    background-color: #febe00;
+    border-radius: 10px;
+    position: relative;
+    bottom: 48px;
+    right: 10px;
+    float: right;
+    padding: 10px 24px;
+}
+.vw-sirat-pricing-cover:hover{
+    opacity: 0.5;
+    background-color: unset;
+}
+.vw-sirat-price-section{
+    border: 1px solid #f3f4f5 !important;
+    padding-bottom: 30px;
+}
+@media screen and (max-width: 599px){
+    .vw-sirat-slider  .carousel-content{
+        width: 100%;
+        padding-left: 0px;
+    }
+    .vw-sirat-contact-left-section{
+        width: auto !important;
+    }
+    .vw-sirat-contact-right-section,.vw-sirat-contact-left-section{
+        clip-path: none;
+    }
+    .vw-sirat-outer-cover{
+        width: auto !important;
+    }
+    .vw-sirat-feature-heading-text{
+        border: none;
+    }
+    .vw-sirat-inner-cover{
+        left:0px !important;
+    }
+    .vw-sirat-ourservices-image i {
+        padding:16px !important;
+    }
+    .vw-sirat-ourservices-banner-cover{
+        width: auto !important;
+    }
+    .vw-sirat-ourservices-banner-inner-cover{
+        right: 0px;
+        top: 0px;
+    }
+    .vw-sirat-services-heading-text{
+        border: none;
+    }
+    .vw-sirat-classes-inner-cover {
+        width: 83% !important;
+    }
+    .vw-sirat-testi-team-1-col{
+        text-align: center !important;
+    }
+    .vw-sirat-team-member-bg {
+        width:auto !important;
+    }
+    .vw-sirat-team-colum{
+        margin-top: 0px;
+    }
+    .vw-sirat-services-heading-textright{
+        border: none;
+    }
+   .vw-sirat-testimonial-client-img img{
+        top: 68%;
+   }
+
+}
+@media screen and (max-width: 991px){
+     .vw-sirat-contact-left-section{
+        width: auto !important;
+    }
+    .vw-sirat-contact-right-section,.vw-sirat-contact-left-section{
+        clip-path: none;
+    }
+    .vw-sirat-inner-cover{
+        top: 310px;
+        left: 79px;
+    }
+    .vw-sirat-ourservices-image i {
+        padding: 14px;
+    }
+  
+}
+/*************Nnew*******************/
+
+#about-us .our-features .img-gold img{
+     margin: 0 2px!important;
+}
+@media only screen and (max-width: 1024px) {
+ #contact-details {
+   /*height: 157px;*/
+   top: -17px;
+}
+}
+
+@media only screen and (max-width: 1024px) {
+.logo p {
+   text-align: left; 
+}
+/*.sticky{
+    margin-top: 39px;
+}*/
+.service-title-boxes{
+        margin-top: 23px;
+}
+.testimonials-box{
+    margin-top: 31px!important;
+}
+/*.footer-cols{
+    text-align: left;
+}*/
+#footer ul li{
+    text-align: left!important; 
+}
+#about-us .about-us-img2-box {
+  right: -50px;
+    position: relative;
+    margin-top: -253px;
+}
+#contact-details {
+  padding: 29px 0px 0 86px!important;
+}
+
+}
+
+
+@media only screen and (max-width: 768px) {
+#our-team .our-team-head{
+        padding-top: 30px;
+    }
+ #our-team .our-team-head h2{ 
+      font-size: 19px;
+    }
+    #our-team{
+        padding-bottom:0px!important;
+    }
+    #video .video-img1-box p{
+           width: 91%;
+ }
+  #video .video-img2-box {
+  max-width: 83%;
+    bottom: -70px;
+    margin-left: 15px!important;
+        margin-top: 8px!important;
+}
+.price-plans:last-child{
+    margin: 0 auto;
+}
+#slider .slide_nav i {
+    width: 29px;
+    height: 29px;
+        padding: 5px 16px 6px 8px;
+}
+.slider-box {
+ margin: 0 20px;
+}
+#our-team .our-team-head .section-button {
+padding: 0 20px;
+}
+#get-quote a {
+   padding: 0 20px;
+}
+#our-services .section-button {
+    padding: 0 20px;
+}
+#contact-details {
+    height: auto;
+}
+
+#contact-details {
+padding: 14px 19px!important;
+}
+/*#contact-details .fa-envelope{
+    margin-top: 8px;
+}
+.email-cons {
+    float: none!important;
+}
+#partners-details {
+    padding: 27px 0 24px 40px;
+    }*/
+    #contact-details {
+    padding: 29px 4px 0 18px!important;
+}
+#partners-details {
+    padding: 27px 0 16px 40px!important;
+
+}
+#contact-details .offset-md-3 {
+    margin-left: 1%!important;
+}
+
+
+}
+/*****************/
+ #slider h1 {
+   
+    max-width: 100%!important;
+   /* padding: 20px 0 0 104px!important;*/
+}
+#slider h2, #slider p, #slider h1 {
+   
+    max-width: 100%;
+}
+a:focus {
+    outline: none!important;
+}
+#footer .about_me table p {
+    font-size: 15px;
+}
+#footer .widget p {
+    font-size: 15px;
+}
+.footer3{
+padding-left: 0!important;
+}
+.header-search{
+    padding-left: 0!important;
+}
+#slider .slider-box {
+padding: 19px 61px 0 35px!important;
+}
+
+#about-us .about-us-img1-box img{
+    position: relative;
+}
+
+/*****link buttons**********/
+.links-btns a{
+    margin: 0 57px;
+
+    background: var(--yellowfe);
+    padding: 9px 32px;
+   
+    font-size: 15px;
+       font-weight: 600;
+}
+.links-btns a: hover{
+    color: #fff;
+
+  }
+  .about-btn a{
+  margin: 0px 0!important;
+}
+  .about-us-info{
+        margin-bottom: 38px;
+  }
+.service-btn-link a{
+        margin: 0px 0!important;
+    border: 2px solid #000;
+    border-radius: 40px;
+}
+.team-btn{
+margin-top: 18px!important;
+ }
+.team-btn a{ 
+  margin-left: 0!important;
+}
+#our-services .services-icon img{
+    margin: 3px auto;
+    display: block;
+}
+
+#single_post .postbox i{
+    margin-left: 7px!important;
+}
+#site_top ul{
+ padding-left: 0!important
+}

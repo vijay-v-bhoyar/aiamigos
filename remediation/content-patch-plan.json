@@ -1,0 +1,1839 @@
+{
+  "schema_version": "1.0.0",
+  "plan_id": "aiamigos-staging-content-remediation-2026-08-13",
+  "generated_at": "2026-08-13",
+  "execution_status": "plan_only_not_applied",
+  "site": {
+    "production_origin": "https://www.aiamigos.org",
+    "staging_origin": "https://remediation.aiamigos.org",
+    "apply_scope": "staging_only",
+    "production_authority": "not_granted_by_this_plan"
+  },
+  "purpose": "A bounded, reversible WordPress content remediation plan. It does not claim that any proposed content patch is live.",
+  "evidence": [
+    {
+      "id": "hostile_review",
+      "path": "AIAMIGOS_HOSTILE_SEO_CONTENT_REVIEW_2026-08-13.md",
+      "use": "Finding severity, factual-risk boundary, trust gaps, and remediation intent"
+    },
+    {
+      "id": "deterministic_audit",
+      "path": "output/seo-audit.json",
+      "use": "Captured titles, descriptions, headings, word counts, links, and sitemap inventory for 114 production URLs"
+    },
+    {
+      "id": "public_snapshot",
+      "path": "public-site-snapshot/snapshot-manifest.json",
+      "use": "Captured public HTML file mapping, HTTP headers, WordPress REST or shortlink IDs, and rollback evidence"
+    },
+    {
+      "id": "staging_pre_plugin",
+      "path": "remediation/tests/results/seo-regression-staging-pre-plugin.json",
+      "use": "Staging route, link, metadata, heading, leak, and inventory state before the remediation plugin"
+    },
+    {
+      "id": "registry",
+      "path": "remediation/remediation-registry.json",
+      "use": "Complete deterministic queues; this plan deliberately selects the highest-risk executable content batch rather than duplicating 1,051 registry records"
+    }
+  ],
+  "evidence_boundary": [
+    "The public snapshot is deployed output, not an authoritative WordPress database or PHP repository.",
+    "A title or description length flag is a review heuristic, not a ranking penalty.",
+    "No credential, customer, accreditation, safety, performance, legal, affiliate, or independent-review claim may be added without owner-supplied evidence.",
+    "When verification is absent, the prescribed action is draft or noindex quarantine, not speculative copy.",
+    "All proposed copy must be checked against the final edited body before publication; metadata must not promise content the page does not deliver."
+  ],
+  "pre_apply_gates": [
+    "Export each target record's ID, post type, slug, status, title, content, excerpt, SEO fields, author, modified date, and taxonomy assignments from staging.",
+    "Retain a Hostinger backup and a WordPress revision or serialized export for every edited record.",
+    "Confirm that target IDs and slugs still match this plan; stop on any mismatch.",
+    "Apply only to https://remediation.aiamigos.org and keep staging disallowed in robots.txt.",
+    "Do not publish a gated item until its named factual, legal, disclosure, or owner-approval gate is satisfied."
+  ],
+  "rollback_policy": {
+    "unit": "one patch at a time",
+    "preferred": "Restore the target's pre-change WordPress revision or serialized export.",
+    "fallback": "Restore the retained Hostinger staging backup, then re-run the complete staging regression suite.",
+    "verification": [
+      "Original status, title, slug, content, SEO fields, author, and taxonomy assignments match the pre-change export.",
+      "Original public route behavior matches the cited staging-pre-plugin evidence where that behavior was intentional.",
+      "No unrelated record changed."
+    ]
+  },
+  "phases": [
+    {
+      "id": "P0_QUARANTINE",
+      "order": 1,
+      "patch_ids": [
+        "CP-001",
+        "CP-002",
+        "CP-003",
+        "CP-004"
+      ]
+    },
+    {
+      "id": "P0_HUBS_AND_LINKS",
+      "order": 2,
+      "patch_ids": [
+        "CP-005",
+        "CP-006",
+        "CP-007",
+        "CP-008",
+        "CP-009",
+        "CP-010",
+        "CP-011"
+      ]
+    },
+    {
+      "id": "P1_TRUST_AND_SAFETY",
+      "order": 3,
+      "patch_ids": [
+        "CP-012",
+        "CP-013",
+        "CP-014",
+        "CP-015",
+        "CP-016"
+      ]
+    },
+    {
+      "id": "P1_METADATA_HEADINGS_TAXONOMY",
+      "order": 4,
+      "patch_ids": [
+        "CP-017",
+        "CP-018",
+        "CP-019"
+      ]
+    }
+  ],
+  "patches": [
+    {
+      "id": "CP-001",
+      "priority": "P0",
+      "findings": [
+        "C5",
+        "C6",
+        "C7",
+        "H13"
+      ],
+      "action": "maintain_recoverable_quarantine",
+      "targets": [
+        {
+          "wp_id": 945,
+          "wp_type": "page",
+          "slug": "ai-certifications",
+          "production_url": "https://www.aiamigos.org/ai-certifications/",
+          "original": {
+            "status": "publish",
+            "title": "AI Certifications",
+            "meta_description": "These AI certifications are valued by employers in the AI industry and can help you to advance your career. The certifications listed above are just a few of",
+            "word_count": 222,
+            "snapshot_file": "public-site-snapshot/pages/ai-certifications-22e68e8ff1.html"
+          },
+          "staging_pre_plugin": {
+            "public_status": 404,
+            "expected_database_status": "draft"
+          },
+          "rewrite_gate": "Every credential must use the exact issuer name, issuer URL, current or retired status, exam code if any, verification date, prerequisites, fees, renewal, intended role, and selection method. No employer-value or career-advancement claim without evidence."
+        },
+        {
+          "wp_id": 441,
+          "wp_type": "post",
+          "slug": "gpt-models",
+          "production_url": "https://www.aiamigos.org/gpt-models/",
+          "original": {
+            "status": "publish",
+            "title": "GPT Models: 7 Groundbreaking Applications Transforming the Text Generation Landscape",
+            "meta_description_length": 210,
+            "word_count": 2272,
+            "snapshot_file": "public-site-snapshot/pages/gpt-models-08a9c96f9d.html"
+          },
+          "staging_pre_plugin": {
+            "public_status": 404,
+            "expected_database_status": "draft"
+          },
+          "rewrite_gate": "Use dated primary sources for the GPT timeline, correct GPT-J to 6B parameters, attribute Megatron-Turing NLG to Microsoft and NVIDIA, and distinguish model capability from AGI claims."
+        },
+        {
+          "wp_id": 783,
+          "wp_type": "post",
+          "slug": "grokai",
+          "production_url": "https://www.aiamigos.org/grokai/",
+          "original": {
+            "status": "publish",
+            "title": "GrokAI Unveiled: 5 Revolutionary Benefits of Custom AI for Your Business Growth",
+            "meta_description_length": 327,
+            "word_count": 1450,
+            "snapshot_file": "public-site-snapshot/pages/grokai-9e6b515015.html"
+          },
+          "staging_pre_plugin": {
+            "public_status": 404,
+            "expected_database_status": "draft"
+          },
+          "rewrite_gate": "Identify the product and vendor unambiguously. If the subject is xAI Grok, rewrite only from dated primary product material and do not infer integrations, encryption, predictive analytics, support, pricing, or enterprise capabilities."
+        },
+        {
+          "wp_id": 1405,
+          "wp_type": "post",
+          "slug": "ai-model-benchmarks-a-comprehensive-guide",
+          "production_url": "https://www.aiamigos.org/ai-model-benchmarks-a-comprehensive-guide/",
+          "original": {
+            "status": "publish",
+            "title": "AI Model Benchmarks: A Comprehensive Guide",
+            "meta_description": "In the rapidly evolving field of artificial intelligence, benchmark tests are essential tools for evaluating the performance and capabilities of AI models.",
+            "word_count": 1285,
+            "snapshot_file": "public-site-snapshot/pages/ai-model-benchmarks-a-comprehensive-guide-83f128c39f.html"
+          },
+          "staging_pre_plugin": {
+            "public_status": 404,
+            "expected_database_status": "draft"
+          },
+          "rewrite_gate": "Publish only with dated model snapshots, datasets, prompts, sample size, scoring rubric, judge method, raw outputs, limitations, and confidence treatment; otherwise retitle as a non-evaluative overview and remove result labels."
+        }
+      ],
+      "proposed": {
+        "status": "draft",
+        "search_visibility": "not_indexable",
+        "internal_links": "remove_or_replace_with_verified_surviving_resource",
+        "content": "retain only in the staging database for a sourced rewrite"
+      },
+      "rollback": {
+        "restore": "Use each target's pre-change export and snapshot file; do not republish as rollback without explicit approval because the captured public version contains the audited claims."
+      },
+      "validation": [
+        "Each route is absent from XML sitemaps and internal links.",
+        "Each route is 404 or 410 on staging while the database record remains recoverable.",
+        "The staging regression check routing.quarantine has no failure for these four routes."
+      ]
+    },
+    {
+      "id": "CP-002",
+      "priority": "P0",
+      "findings": [
+        "C4",
+        "H5",
+        "H12"
+      ],
+      "action": "maintain_duplicate_and_dead_surface_quarantine",
+      "targets": [
+        {
+          "wp_id": 1417,
+          "wp_type": "page",
+          "slug": "newsletter-2",
+          "production_url": "https://www.aiamigos.org/newsletter-2/",
+          "original": {
+            "status": "publish",
+            "title": "Newsletter",
+            "meta_description": "Welcome to Byte-Sized Chaos. By subscribing to, reading, or acting upon the content of this newsletter, you acknowledge and agree to the terms outlined below.",
+            "word_count": 461,
+            "snapshot_file": "public-site-snapshot/pages/newsletter-2-9ec1b062c9.html"
+          },
+          "staging_pre_plugin": {
+            "public_status": 404,
+            "expected_database_status": "draft"
+          },
+          "disposition": "keep draft; map any legitimate unique legal language to owner and legal review before selectively merging into page 157"
+        },
+        {
+          "wp_id": 552,
+          "wp_type": "page",
+          "slug": "others",
+          "production_url": "https://www.aiamigos.org/others/",
+          "original": {
+            "status": "publish",
+            "title": "Others",
+            "meta_description": null,
+            "word_count": 0,
+            "snapshot_file": "public-site-snapshot/pages/others-2df65989d4.html"
+          },
+          "staging_pre_plugin": {
+            "public_status": 404,
+            "expected_database_status": "draft"
+          },
+          "disposition": "keep draft; no replacement until a distinct user task exists"
+        },
+        {
+          "wp_id": 6,
+          "wp_type": "page",
+          "slug": "shop",
+          "production_url": "https://www.aiamigos.org/shop/",
+          "original": {
+            "status": "publish",
+            "title": "Shop",
+            "meta_description": null,
+            "word_count": 0,
+            "snapshot_file": "public-site-snapshot/pages/shop-d1aa1283a6.html"
+          },
+          "staging_pre_plugin": {
+            "public_status": 404,
+            "expected_database_status": "draft"
+          },
+          "disposition": "keep draft; do not imply commerce without an operating store, seller identity, terms, fulfillment, refund, and privacy details"
+        }
+      ],
+      "proposed": {
+        "status": "draft",
+        "internal_links": "remove",
+        "search_visibility": "not_indexable"
+      },
+      "rollback": {
+        "restore": "Use target-specific pre-change export; original field values and snapshot files are recorded above."
+      },
+      "validation": [
+        "Routes remain outside XML sitemaps.",
+        "No navigation, hub, or body copy links to these routes.",
+        "Newsletter content resolves only to page 157."
+      ]
+    },
+    {
+      "id": "CP-003",
+      "priority": "P0",
+      "findings": [
+        "C3",
+        "M3",
+        "M8"
+      ],
+      "action": "quarantine_theme_demo_entities",
+      "targets": [
+        {
+          "wp_id": 34,
+          "wp_type": "classes",
+          "slug": "recent-case-title-01",
+          "original_status": "publish",
+          "staging_pre_plugin_status": 404,
+          "snapshot_file": "public-site-snapshot/pages/classes-recent-case-title-01-9b98cb91e2.html"
+        },
+        {
+          "wp_id": 36,
+          "wp_type": "classes",
+          "slug": "recent-case-title-02",
+          "original_status": "publish",
+          "staging_pre_plugin_status": 200,
+          "snapshot_file": "public-site-snapshot/pages/classes-recent-case-title-02-b111c94815.html"
+        },
+        {
+          "wp_id": 46,
+          "wp_type": "testimonials",
+          "slug": "client-name-01",
+          "original_status": "publish",
+          "staging_pre_plugin_status": 200,
+          "snapshot_file": "public-site-snapshot/pages/testimonials-client-name-01-0bc8ffe278.html"
+        },
+        {
+          "wp_id": 48,
+          "wp_type": "testimonials",
+          "slug": "client-name-02",
+          "original_status": "publish",
+          "staging_pre_plugin_status": 200,
+          "snapshot_file": "public-site-snapshot/pages/testimonials-client-name-02-457cb3d884.html"
+        },
+        {
+          "wp_id": 50,
+          "wp_type": "testimonials",
+          "slug": "client-name-03",
+          "original_status": "publish",
+          "staging_pre_plugin_status": 200,
+          "snapshot_file": "public-site-snapshot/pages/testimonials-client-name-03-a6fcb03eba.html"
+        },
+        {
+          "wp_id": 40,
+          "wp_type": "team",
+          "slug": "member-name-02",
+          "original_status": "publish",
+          "staging_pre_plugin_status": 200,
+          "snapshot_file": "public-site-snapshot/pages/team-member-name-02-dde22a9cb2.html"
+        },
+        {
+          "wp_id": 42,
+          "wp_type": "team",
+          "slug": "member-name-03",
+          "original_status": "publish",
+          "staging_pre_plugin_status": 200,
+          "snapshot_file": "public-site-snapshot/pages/team-member-name-03-33f364e973.html"
+        },
+        {
+          "wp_id": 44,
+          "wp_type": "team",
+          "slug": "member-name-04",
+          "original_status": "publish",
+          "staging_pre_plugin_status": 200,
+          "snapshot_file": "public-site-snapshot/pages/team-member-name-04-fb23e4b2a8.html"
+        }
+      ],
+      "original_shared_values": {
+        "titles": "Recent Case Title 01-02, Client Name 01-03, and Member Name 02-04",
+        "description_prefix": "Te obtinuit ut adepto satis somno",
+        "defects": [
+          "Latin-like theme demo copy",
+          "placeholder identities",
+          "Linkden misspelling"
+        ]
+      },
+      "explicit_exclusion": {
+        "wp_id": 38,
+        "wp_type": "team",
+        "slug": "member-name-01",
+        "reason": "Captured page identifies Vijay Bhoyar; it requires a separate verified profile patch, not demo deletion."
+      },
+      "proposed": {
+        "status": "draft",
+        "public_response": 410,
+        "search_visibility": "remove from sitemaps and internal queries",
+        "content": "do not adapt demo copy into a real case, testimonial, or person"
+      },
+      "rollback": {
+        "restore": "Restore each exact ID from its pre-change export. Do not republish without permissioned identity or case evidence."
+      },
+      "validation": [
+        "All eight exact routes return 410 on staging.",
+        "No demo target appears in a sitemap, listing, schema graph, or internal link.",
+        "ID 38 remains available and is not affected.",
+        "routing.quarantine and content.leaks pass for demo patterns."
+      ]
+    },
+    {
+      "id": "CP-004",
+      "priority": "P0",
+      "findings": [
+        "H13",
+        "H2"
+      ],
+      "action": "quarantine_or_reframe_unfulfilled_technical_promises",
+      "targets": [
+        {
+          "wp_id": 1411,
+          "wp_type": "post",
+          "slug": "langgraph-5-stunning-secrets-for-building-a-generative-ai-application",
+          "original": {
+            "status": "publish",
+            "title": "LangGraph: 5 Stunning Secrets for Building a Generative AI Application",
+            "meta_description_length": 433,
+            "snapshot_file": "public-site-snapshot/pages/langgraph-5-stunning-secrets-for-building-a-generative-ai-application-641802efc2.html"
+          },
+          "overview_track": {
+            "title": "LangGraph Workflow Concepts for Generative AI Apps",
+            "meta_description": "An editorial overview of graph-based workflow, state, tools, testing, and deployment questions for generative AI applications.",
+            "required_removals": [
+              "Sample Code Repository: Link a public GitHub repo...",
+              "the claim that the reader has everything needed"
+            ]
+          }
+        },
+        {
+          "wp_id": 1407,
+          "wp_type": "post",
+          "slug": "ways-to-test-a-rag-architecture-based-generative-ai-application",
+          "original": {
+            "status": "publish",
+            "title": "Ways to Test a RAG Architecture-Based Generative AI Application",
+            "meta_description_length": 154,
+            "snapshot_file": "public-site-snapshot/pages/ways-to-test-a-rag-architecture-based-generative-ai-application-422e6f577b.html"
+          },
+          "overview_track": {
+            "title": "A Checklist for Testing RAG Applications",
+            "meta_description": "A planning checklist for RAG testing across retrieval, answer quality, latency, safety, privacy, accessibility, and regression risk.",
+            "required_removals": [
+              "the arbitrary under-500-ms target unless tied to a measured product requirement"
+            ]
+          }
+        },
+        {
+          "wp_id": 1421,
+          "wp_type": "post",
+          "slug": "building-agentic-ai-saas-a-strategic-roadmap-using-google-gemini-enterprise",
+          "original": {
+            "status": "publish",
+            "title": "Building Agentic AI SaaS: A Strategic Roadmap Using Google Gemini Enterprise",
+            "meta_description_length": 158,
+            "snapshot_file": "public-site-snapshot/pages/building-agentic-ai-saas-a-strategic-roadmap-using-google-gemini-enterprise-92daae424d.html"
+          },
+          "overview_track": {
+            "title": "Agentic AI SaaS Planning: A Curated Resource Guide",
+            "meta_description": "A curated starting point for planning an agentic AI SaaS product; it is not an implementation roadmap or a deployed reference system.",
+            "required_removals": [
+              "roadmap or implementation-completeness claims not supported by an architecture, repository, data plan, evaluation, costs, and worked result"
+            ]
+          }
+        },
+        {
+          "wp_id": 926,
+          "wp_type": "post",
+          "slug": "custom-gpt-models",
+          "original": {
+            "status": "publish",
+            "title": "A Comprehensive Guide to Creating Custom GPT Models with OpenAI and GrokAI",
+            "snapshot_file": "public-site-snapshot/pages/custom-gpt-models-481f082a8b.html"
+          },
+          "overview_track": {
+            "title": "Custom Language Model Options: A Sourced Overview",
+            "meta_description": "A dated overview of supported customization options for named language-model products, based only on each provider's primary documentation.",
+            "required_removals": [
+              "the broken internal link to the quarantined GrokAI page",
+              "any unsupported Grok customization capability"
+            ]
+          }
+        }
+      ],
+      "proposed": {
+        "status": "draft_until_overview_or_artifact_track_is_complete",
+        "artifact_track": "Keep the original promise only if a reproducible artifact and dated primary sources are supplied.",
+        "overview_track": "Use the bounded titles and descriptions above, remove unsupported promises, add verification dates and limitations, then obtain named-editor approval."
+      },
+      "rollback": {
+        "restore": "Restore exact fields and bodies from pre-change exports and cited snapshots; do not publish the captured versions as a rollback."
+      },
+      "validation": [
+        "No placeholder instruction remains.",
+        "Titles and descriptions describe the delivered page type.",
+        "Every product-specific assertion has a dated primary source.",
+        "No page is published unless its selected overview or artifact gate is complete."
+      ]
+    },
+    {
+      "id": "CP-005",
+      "priority": "P0",
+      "findings": [
+        "C1",
+        "H4",
+        "H5",
+        "H7"
+      ],
+      "action": "rewrite_home_page",
+      "targets": [
+        {
+          "wp_id": 20,
+          "wp_type": "page",
+          "slug": "home",
+          "staging_route": "/",
+          "original": {
+            "status": "publish",
+            "title": "AI Amigos - Simplifying AI for Everyone",
+            "meta_description": "Dive into the world of AI with AI Amigos! From beginners to tech enthusiasts, explore the latest AI blogs, insights, and trends. Join our community for hands-on AI experience and stay updated with our informative newsletters. Whether you're interested in AI for business, education, or personal growth, AI Amigos is your go-to AI hub. AI Amigos - Simplifying AI for Everyone",
+            "h1": null,
+            "word_count": 1048,
+            "snapshot_file": "public-site-snapshot/pages/home-d4c4647786.html"
+          }
+        }
+      ],
+      "proposed": {
+        "status": "publish_on_staging",
+        "title": "AI Amigos | Practical AI Learning Resources",
+        "meta_description": "Explore AI Amigos articles and learning resources about AI concepts, tools, careers, and responsible use. Check dates and sources because AI products change.",
+        "h1": "Practical AI learning resources from AI Amigos",
+        "intro": "AI Amigos publishes educational resources about artificial intelligence concepts, tools, software development, and careers. Articles are informational, may become outdated as products change, and should be checked against their cited sources before important decisions.",
+        "content_sections": [
+          "Start with AI concepts",
+          "Explore AI careers",
+          "Read software and generative AI guides",
+          "For parents and educators: review age, privacy, advertising, and supervision requirements before a child uses an external tool",
+          "Latest reviewed articles"
+        ],
+        "remove_or_soften": [
+          "go-to hub",
+          "community",
+          "hands-on experience",
+          "course or newsletter promises that are not operationally proven"
+        ],
+        "links": [
+          "/blog/",
+          "/academy/",
+          "/ai-career/",
+          "/about-us/",
+          "/contact/"
+        ]
+      },
+      "rollback": {
+        "original_fields": {
+          "title": "AI Amigos - Simplifying AI for Everyone",
+          "meta_description_length": 374,
+          "h1": null
+        },
+        "restore": "WordPress revision or pre-change export for page 20; captured body is in the cited snapshot."
+      },
+      "validation": [
+        "The staging root has exactly one nonempty H1 matching the page purpose.",
+        "Title is 10-60 characters and description is 50-160 characters.",
+        "No unsupported community, course, customer, safety, or performance claim appears.",
+        "Every hub link returns 200 without a redirect.",
+        "pages.metadata and pages.headings pass for the root."
+      ]
+    },
+    {
+      "id": "CP-006",
+      "priority": "P0",
+      "findings": [
+        "C2",
+        "H4",
+        "H5"
+      ],
+      "action": "define_blog_archive_content",
+      "targets": [
+        {
+          "wp_id": 23,
+          "wp_type": "page_for_posts",
+          "slug": "blog",
+          "staging_route": "/blog/",
+          "original": {
+            "status": "publish",
+            "title": "Blog",
+            "meta_description": null,
+            "captured_production_route": "/",
+            "snapshot_file": "public-site-snapshot/pages/home-7df9c6845f.html"
+          }
+        }
+      ],
+      "proposed": {
+        "status": "publish_on_staging",
+        "title": "AI Articles and Guides | AI Amigos",
+        "meta_description": "Browse AI Amigos articles about AI concepts, tools, software development, learning, and careers, ordered by publication date.",
+        "h1": "AI articles and guides",
+        "archive_intro": "Browse educational articles from AI Amigos. Check each article's publication or review date and cited sources before relying on fast-changing product details.",
+        "pagination": "Keep native /blog/page/N/ pages unique and crawlable; page N must identify its page number in title and canonical."
+      },
+      "rollback": {
+        "original_fields": {
+          "title": "Blog",
+          "meta_description": null
+        },
+        "restore": "Restore page 23 and the Reading settings export as one rollback unit."
+      },
+      "validation": [
+        "Archive page 1 through the last page expose all published posts exactly once in aggregate.",
+        "Each page has one H1, a differentiated title, and a self-canonical URL.",
+        "No /page/N/ legacy route remains an indexable duplicate after the native archive is complete.",
+        "archives.pagination, pages.metadata, and pages.headings pass."
+      ]
+    },
+    {
+      "id": "CP-007",
+      "priority": "P0",
+      "findings": [
+        "C4",
+        "M10"
+      ],
+      "action": "rewrite_newsletter_as_honest_update_request",
+      "targets": [
+        {
+          "wp_id": 157,
+          "wp_type": "page",
+          "slug": "newsletter",
+          "original": {
+            "status": "publish",
+            "title": "Newsletter",
+            "meta_description": null,
+            "h1": "Newsletter",
+            "word_count": 4,
+            "raw_shortcode": "[mailpoet_form id=\u00e2\u20ac\u009d2\u00e2\u20ac\u00b3]",
+            "snapshot_file": "public-site-snapshot/pages/newsletter-9f7cb4526c.html"
+          }
+        }
+      ],
+      "proposed": {
+        "status": "publish_on_staging",
+        "title": "Request AI Amigos Updates",
+        "meta_description": "Send your email to request occasional AI Amigos updates. The request goes to the site owner for manual follow-up; no automated subscription is promised.",
+        "h1": "Request occasional AI Amigos updates",
+        "intro": "Submit your email if you would like the site owner to follow up manually about occasional AI Amigos updates. This form does not create an automated mailing-list subscription.",
+        "required_disclosure": [
+          "what is collected",
+          "manual recipient",
+          "purpose",
+          "privacy-policy link",
+          "no automated cadence, confirmation, or delivery promise"
+        ],
+        "form_fields": [
+          "required email",
+          "required privacy acknowledgement"
+        ]
+      },
+      "rollback": {
+        "original_fields": {
+          "title": "Newsletter",
+          "meta_description": null,
+          "word_count": 4
+        },
+        "restore": "Restore page 157 and the associated form export together."
+      },
+      "validation": [
+        "No raw MailPoet shortcode or unresolved company token is visible.",
+        "The form purpose and manual handling are stated adjacent to submission.",
+        "A staging submission reaches the configured owner without creating an unpromised subscription.",
+        "content.leaks and pages.metadata pass for /newsletter/."
+      ]
+    },
+    {
+      "id": "CP-008",
+      "priority": "P0",
+      "findings": [
+        "H2",
+        "H5",
+        "H7"
+      ],
+      "action": "rewrite_academy_hub",
+      "targets": [
+        {
+          "wp_id": 158,
+          "wp_type": "page",
+          "slug": "academy",
+          "original": {
+            "status": "publish",
+            "title": "Academy",
+            "meta_description": "AI Books for Kids",
+            "h1": "Academy",
+            "word_count": 8,
+            "broken_href": "www.youtube.com/@Aieducation4kids",
+            "snapshot_file": "public-site-snapshot/pages/academy-6e3a34d9ea.html"
+          }
+        }
+      ],
+      "proposed": {
+        "status": "publish_on_staging_after_link_review",
+        "title": "AI Learning Resources | AI Amigos Academy",
+        "meta_description": "Browse AI Amigos learning resources for foundational concepts, career exploration, and technical study. Review dates, sources, and external-site terms.",
+        "h1": "AI learning resources",
+        "intro": "Use this page to choose an AI learning path. AI Amigos does not claim accreditation or course completion credentials; verify dates, sources, prerequisites, and external-site terms before enrolling or relying on a resource.",
+        "content_sections": [
+          "Foundational AI concepts",
+          "Career exploration",
+          "Technical guides",
+          "Resources for parents and educators under safety and privacy review"
+        ],
+        "link_change": {
+          "from": "www.youtube.com/@Aieducation4kids",
+          "to": "https://www.youtube.com/@Aieducation4kids",
+          "gate": "Confirm the channel identity and ownership; otherwise remove the link.",
+          "external_notice": "Opens YouTube. Review YouTube's age, privacy, account, advertising, and supervision terms before child use."
+        }
+      },
+      "rollback": {
+        "original_fields": {
+          "title": "Academy",
+          "meta_description": "AI Books for Kids",
+          "broken_href": "www.youtube.com/@Aieducation4kids"
+        },
+        "restore": "Use page 158 pre-change export and cited snapshot."
+      },
+      "validation": [
+        "The page has one H1 and at least three distinct, descriptive sections.",
+        "Every internal link returns 200 without redirect.",
+        "The malformed /academy/www.youtube.com/... route is absent.",
+        "No accreditation, course, safety, or outcome claim is added."
+      ]
+    },
+    {
+      "id": "CP-009",
+      "priority": "P0",
+      "findings": [
+        "C5",
+        "H5",
+        "H12"
+      ],
+      "action": "rewrite_ai_career_hub",
+      "targets": [
+        {
+          "wp_id": 941,
+          "wp_type": "page",
+          "slug": "ai-career",
+          "original": {
+            "status": "publish",
+            "title": "AI Career",
+            "meta_description": "AI Career Path",
+            "word_count": 11,
+            "snapshot_file": "public-site-snapshot/pages/ai-career-018e268ffa.html"
+          }
+        }
+      ],
+      "proposed": {
+        "status": "publish_on_staging",
+        "title": "AI Career Resources and Learning Paths | AI Amigos",
+        "meta_description": "Explore AI career paths, common roles, learning resources, and questions to verify before choosing training or credentials.",
+        "h1": "AI career resources and learning paths",
+        "intro": "Explore role descriptions and learning resources before deciding whether an AI-related career fits your goals. Job requirements vary by employer and location, and training or credential claims should be verified with the original provider.",
+        "internal_links": [
+          {
+            "label": "AI career paths",
+            "url": "/ai-career-paths/",
+            "wp_id": 944
+          },
+          {
+            "label": "Machine learning engineer roadmap",
+            "url": "/machine-learning-engineer/",
+            "wp_id": 1007
+          },
+          {
+            "label": "AI career questions",
+            "url": "/ai-career-faq/",
+            "wp_id": 942
+          },
+          {
+            "label": "AI career guide",
+            "url": "/career-in-ai/",
+            "wp_id": 156
+          }
+        ],
+        "link_changes": [
+          {
+            "from": "/ai-career-path/",
+            "to": "/ai-career-paths/"
+          },
+          {
+            "from": "/ai-certifications/",
+            "to": null,
+            "reason": "credential page remains quarantined"
+          }
+        ]
+      },
+      "rollback": {
+        "original_fields": {
+          "title": "AI Career",
+          "meta_description": "AI Career Path",
+          "word_count": 11
+        },
+        "restore": "Use page 941 pre-change export and cited snapshot."
+      },
+      "validation": [
+        "The page contains no link to quarantined page 945.",
+        "Every surviving link returns 200 directly.",
+        "No salary, demand, employer-value, certification, or outcome claim appears without a dated source.",
+        "The page has exactly one H1 and no blank headings."
+      ]
+    },
+    {
+      "id": "CP-010",
+      "priority": "P0",
+      "findings": [
+        "H2",
+        "M8"
+      ],
+      "action": "repair_exact_editorial_links",
+      "targets": [
+        {
+          "wp_id": 52,
+          "wp_type": "post",
+          "slug": "latest-blog-title-01",
+          "original": {
+            "title": "Demystifying Artificial Intelligence (AI): How Does It Shape Our World?\"",
+            "broken_href": "https://www.aiamigos.org/demystifying-artificial-intelligence-ai-how-does-it-shape-our-world",
+            "snapshot_file": "public-site-snapshot/pages/latest-blog-title-01-e452e4138f.html"
+          },
+          "proposed": {
+            "title": "How Artificial Intelligence Shapes Everyday Technology",
+            "meta_description": "An introductory overview of artificial intelligence, machine learning, common applications, and questions about future systems.",
+            "link_change": "Remove the generic Read More link; it points to a missing route and does not add a distinct source.",
+            "heading_change": "Change the skipped H5 heading to the correct next level after inspecting its parent section."
+          }
+        },
+        {
+          "wp_id": 481,
+          "wp_type": "post",
+          "slug": "prompt-engineering",
+          "original_href": "https://remediation.aiamigos.org/AI-app-development",
+          "proposed_href": "https://remediation.aiamigos.org/ai-app-development/",
+          "snapshot_file": "public-site-snapshot/pages/prompt-engineering-92c4e736a4.html"
+        },
+        {
+          "wp_id": 581,
+          "wp_type": "post",
+          "slug": "generative-ai-solutions",
+          "original_href": "/the-magical-world-of-ai-from-baby-steps-to-quantum-leaps/",
+          "proposed_href": "/ai-evolution/"
+        },
+        {
+          "wp_id": 424,
+          "wp_type": "post",
+          "slug": "co-evolving-ai",
+          "original_href": "/the-magical-world-of-ai-from-baby-steps-to-quantum-leaps/",
+          "proposed_href": "/ai-evolution/"
+        },
+        {
+          "wp_id": 206,
+          "wp_type": "post",
+          "slug": "ai-in-finance",
+          "original_href": "/the-magical-world-of-ai-from-baby-steps-to-quantum-leaps/",
+          "proposed_href": "/ai-evolution/"
+        },
+        {
+          "wp_id": 198,
+          "wp_type": "post",
+          "slug": "ai-in-healthcare",
+          "original_href": "/the-magical-world-of-ai-from-baby-steps-to-quantum-leaps/",
+          "proposed_href": "/ai-evolution/"
+        },
+        {
+          "wp_id": 721,
+          "wp_type": "post",
+          "slug": "large-language-model",
+          "original_href": "/the-magical-world-of-ai-from-baby-steps-to-quantum-leaps/",
+          "proposed_href": "/ai-evolution/"
+        },
+        {
+          "wp_id": 18,
+          "wp_type": "post",
+          "slug": "artificial-intelligence-ai",
+          "original_href": "/the-magical-world-of-ai-from-baby-steps-to-quantum-leaps/",
+          "proposed_href": "/ai-evolution/"
+        },
+        {
+          "wp_id": 578,
+          "wp_type": "post",
+          "slug": "ai-data-types-models",
+          "original_href": "/the-magical-world-of-ai-from-baby-steps-to-quantum-leaps/",
+          "proposed_href": "/ai-evolution/"
+        },
+        {
+          "wp_id": 535,
+          "wp_type": "post",
+          "slug": "text-to-video-software",
+          "original_href": "/the-magical-world-of-ai-from-baby-steps-to-quantum-leaps/",
+          "proposed_href": "/ai-evolution/"
+        },
+        {
+          "wp_id": 446,
+          "wp_type": "post",
+          "slug": "ais-dawn-revolutionizing-the-digital-realm",
+          "original_href": "/the-magical-world-of-ai-from-baby-steps-to-quantum-leaps/",
+          "proposed_href": "/ai-evolution/"
+        }
+      ],
+      "proposed": {
+        "apply_rule": "Replace only the exact captured href in the exact record. Do not perform a database-wide string replacement.",
+        "link_text_rule": "Use descriptive link text that names the destination; never use a generic Read More link when no distinct destination exists."
+      },
+      "rollback": {
+        "restore": "Restore each target's exact original href from its pre-change export; original values are listed above."
+      },
+      "validation": [
+        "links.internal_integrity reports zero broken and zero avoidable redirecting internal targets.",
+        "No target introduces an apex, HTTP, mixed-case, or /index.php/ variant.",
+        "Each changed source page still renders and its intended link text is meaningful."
+      ]
+    },
+    {
+      "id": "CP-011",
+      "priority": "P0",
+      "findings": [
+        "H5",
+        "H7",
+        "H10"
+      ],
+      "action": "quarantine_unproven_service_and_course_offers",
+      "targets": [
+        {
+          "wp_id": 21,
+          "wp_type": "page",
+          "slug": "services",
+          "original_title": "Services",
+          "original_word_count": 105,
+          "snapshot_file": "public-site-snapshot/pages/services-7f2795f6d3.html"
+        },
+        {
+          "wp_id": 22,
+          "wp_type": "page",
+          "slug": "classes",
+          "original_title": "Courses",
+          "original_word_count": 8,
+          "snapshot_file": "public-site-snapshot/pages/classes-14c49e5e53.html"
+        },
+        {
+          "wp_id": 26,
+          "wp_type": "services",
+          "slug": "ai-amigos-academy",
+          "original_title": "AI Amigos Academy",
+          "snapshot_file": "public-site-snapshot/pages/services-ai-amigos-academy-13c06bbf36.html"
+        },
+        {
+          "wp_id": 28,
+          "wp_type": "services",
+          "slug": "ai-amigos-pro",
+          "original_title": "AI Amigos Business",
+          "snapshot_file": "public-site-snapshot/pages/services-ai-amigos-pro-0c53021bc9.html"
+        },
+        {
+          "wp_id": 30,
+          "wp_type": "services",
+          "slug": "ai-by-job-role",
+          "original_title": "AI by Job Role",
+          "snapshot_file": "public-site-snapshot/pages/services-ai-by-job-role-292a02aa06.html"
+        }
+      ],
+      "explicitly_separate_target": {
+        "wp_id": 32,
+        "wp_type": "services",
+        "slug": "ai-for-kids",
+        "reason": "Handled by the child-safety quarantine in CP-014."
+      },
+      "proposed": {
+        "status": "draft_until_offer_is_verified",
+        "offer_gate": [
+          "named provider and accountable owner",
+          "specific deliverable and audience",
+          "price or an explicit no-charge statement",
+          "prerequisites and limitations",
+          "delivery method and support boundary",
+          "terms, privacy, cancellation or refund rules where applicable",
+          "evidence for workshops, modules, expertise, customers, or outcomes"
+        ],
+        "alternative": "If these are informational audience guides rather than services, move verified useful copy into Academy or Career hubs, remove offer language, then redirect the old routes."
+      },
+      "rollback": {
+        "original_status": "publish",
+        "restore": "Restore exact records from pre-change exports and cited snapshots."
+      },
+      "validation": [
+        "No service/course route is indexable while its offer gate is incomplete.",
+        "No visible Service Url placeholder remains.",
+        "No menu or hub links to an unverified offer."
+      ]
+    },
+    {
+      "id": "CP-012",
+      "priority": "P1",
+      "findings": [
+        "C8",
+        "H10",
+        "M3"
+      ],
+      "action": "rewrite_about_and_merge_mission",
+      "targets": [
+        {
+          "wp_id": 513,
+          "wp_type": "page",
+          "slug": "about-us",
+          "original": {
+            "status": "publish",
+            "title": "About us",
+            "meta_description_length": 157,
+            "word_count": 353,
+            "heading_defect": "nearly the entire body is one 353-word H2",
+            "snapshot_file": "public-site-snapshot/pages/about-us-7b24d71848.html"
+          }
+        },
+        {
+          "wp_id": 24,
+          "wp_type": "page",
+          "slug": "page",
+          "original": {
+            "status": "publish",
+            "title": "Mission",
+            "meta_description_length": 152,
+            "word_count": 205,
+            "snapshot_file": "public-site-snapshot/pages/page-9b27428a40.html"
+          }
+        }
+      ],
+      "proposed": {
+        "page_513": {
+          "status": "publish_on_staging_after_owner_attestation",
+          "title": "About AI Amigos | Scope, Editor and Standards",
+          "meta_description": "Learn what AI Amigos publishes, who maintains the site, how articles are reviewed, and how to request a correction or contact the editor.",
+          "h1": "About AI Amigos",
+          "sections": [
+            "What AI Amigos publishes",
+            "Who owns and maintains the site - fill only from owner-attested legal and operating facts",
+            "Editorial and sourcing approach",
+            "Corrections and update requests",
+            "Contact"
+          ],
+          "remove": [
+            "premier",
+            "renowned",
+            "thriving community",
+            "international events",
+            "courses, tools, hands-on experience, or outcomes not backed by a current public record"
+          ]
+        },
+        "page_24": {
+          "status": "draft",
+          "disposition": "Merge any unique, owner-approved mission sentence into page 513, then redirect /page/ to /about-us/#mission."
+        }
+      },
+      "rollback": {
+        "restore": "Restore pages 513 and 24 plus the redirect map as one unit; original titles, status, word counts, and snapshot files are listed above."
+      },
+      "validation": [
+        "About has one H1 and short, semantic H2 sections.",
+        "No empty superlative or unsupported operating claim remains.",
+        "Any named owner/editor statement has retained approval evidence.",
+        "/page/ no longer remains a separate indexable intent."
+      ]
+    },
+    {
+      "id": "CP-013",
+      "priority": "P1",
+      "findings": [
+        "M10",
+        "H11"
+      ],
+      "action": "rewrite_contact_and_gate_privacy_copy",
+      "targets": [
+        {
+          "wp_id": 25,
+          "wp_type": "page",
+          "slug": "contact",
+          "original": {
+            "status": "publish",
+            "title": "Contact",
+            "meta_description": "Don't miss out on this opportunity to stay ahead of the curve in the AI revolution in our world! Sign up today and be part of the future. Your journey into",
+            "word_count": 48,
+            "snapshot_file": "public-site-snapshot/pages/contact-f69a4923b1.html"
+          }
+        },
+        {
+          "wp_id": 292,
+          "wp_type": "page",
+          "slug": "privacy-policy-2",
+          "original": {
+            "status": "publish",
+            "title": "Privacy Policy",
+            "meta_description": "Our website address is: https://aiamigos.org.",
+            "word_count": 598,
+            "snapshot_file": "public-site-snapshot/pages/privacy-policy-2-edffa8eca5.html"
+          }
+        }
+      ],
+      "proposed": {
+        "contact_page": {
+          "title": "Contact AI Amigos",
+          "meta_description": "Contact AI Amigos about editorial corrections, content questions, or update requests. Review what information is collected before submitting.",
+          "h1": "Contact AI Amigos",
+          "intro": "Use this form for editorial corrections, content questions, or general contact. Do not submit confidential, medical, financial, legal, employment, or children's personal information.",
+          "form_minimization": "Keep only fields with an approved purpose. Remove phone and file upload unless the owner documents why they are necessary, allowed formats and size, malware handling, recipient, retention, and deletion.",
+          "adjacent_notice": "State recipient, purpose, expected response window only if operationally supportable, retention basis, and link to the reviewed privacy notice."
+        },
+        "privacy_page": {
+          "status": "publish_but_noindex_until_legal_review_complete",
+          "title": "AI Amigos Privacy Notice",
+          "meta_description": "Read how AI Amigos proposes to handle contact requests, analytics, embeds, cookies, and other website data. Effective details require owner and legal approval.",
+          "publication_gate": "A qualified reviewer and the legal operator must approve the controller identity, effective date, actual forms, newsletter/update processing, analytics, embeds, affiliate links, child-directed content, vendors, lawful bases where applicable, retention, rights, and contact method.",
+          "placeholder_rule": "Do not publish bracketed placeholders or assumed legal facts. Keep the current route accessible while review is open, but do not add new collection mechanisms that the notice does not cover."
+        }
+      },
+      "rollback": {
+        "restore": "Restore pages 25 and 292 and their form configuration from pre-change exports; original values and snapshot files are listed above."
+      },
+      "validation": [
+        "Contact copy names the real action and data purpose.",
+        "No unnecessary phone or attachment field remains without an approved data-flow record.",
+        "Privacy text matches an approved inventory of actual site processing.",
+        "No legal entity, retention period, response time, or right is invented."
+      ]
+    },
+    {
+      "id": "CP-014",
+      "priority": "P1",
+      "findings": [
+        "H8",
+        "H9"
+      ],
+      "action": "quarantine_child_safety_and_affiliate_style_pages",
+      "targets": [
+        {
+          "wp_id": 877,
+          "wp_type": "page",
+          "slug": "ai-tools-for-kids",
+          "original": {
+            "status": "publish",
+            "title": "AI Tools for Kids",
+            "meta_description_length": 191,
+            "word_count": 753,
+            "unsafe_absolute": "shows kids only websites that are safe and educational",
+            "snapshot_file": "public-site-snapshot/pages/ai-tools-for-kids-77048aad96.html"
+          }
+        },
+        {
+          "wp_id": 32,
+          "wp_type": "services",
+          "slug": "ai-for-kids",
+          "original": {
+            "status": "publish",
+            "title": "AI for Kids",
+            "meta_description_length": 187,
+            "word_count": 391,
+            "snapshot_file": "public-site-snapshot/pages/services-ai-for-kids-74148dc2ae.html"
+          }
+        },
+        {
+          "wp_id": 149,
+          "wp_type": "page",
+          "slug": "ai-books-for-kids",
+          "original": {
+            "status": "publish",
+            "title": "AI Books for Kids",
+            "meta_description_length": 200,
+            "word_count": 147,
+            "outbound_short_links": [
+              "https://amzn.to/44pWXab",
+              "https://amzn.to/4dfA654",
+              "https://amzn.to/3UgHmoS",
+              "https://amzn.to/3JAbiqO"
+            ],
+            "snapshot_file": "public-site-snapshot/pages/ai-books-for-kids-434f077877.html"
+          }
+        }
+      ],
+      "proposed": {
+        "status": "draft_until_safety_privacy_and_relationship_review",
+        "child_tool_gate": [
+          "named parent or educator reviewer",
+          "review date and tested version",
+          "age and supervision band",
+          "account and parental-consent requirements",
+          "privacy and data collection",
+          "advertising and purchase risk",
+          "moderation or community risk",
+          "accessibility and learning objective",
+          "clear notice before leaving the domain"
+        ],
+        "book_page_gate": [
+          "owner confirms whether each short link is affiliate, referral, or ordinary tracking",
+          "prominent accurate relationship disclosure",
+          "exact author, edition, ISBN where available, and audience band",
+          "selection method, strengths, limitations, and review date",
+          "replace best with a descriptive, non-comparative label unless a documented comparison supports it"
+        ],
+        "candidate_book_title_after_gate": "Selected AI Books for Kids: A Parent Review Guide",
+        "candidate_book_meta_description_after_gate": "A parent-oriented review of selected AI books for children, with editions, age guidance, selection criteria, limitations, and relationship disclosures."
+      },
+      "rollback": {
+        "restore": "Restore exact IDs from pre-change exports and cited snapshots; do not republish the captured safety or best claims as rollback."
+      },
+      "validation": [
+        "No absolute safe, best, or educational guarantee remains.",
+        "Every external resource has the required safety and disclosure fields.",
+        "Relationship language exactly matches owner evidence.",
+        "Legal/privacy review evidence is retained before publication."
+      ]
+    },
+    {
+      "id": "CP-015",
+      "priority": "P1",
+      "findings": [
+        "C8",
+        "H10"
+      ],
+      "action": "make_real_team_profile_accountable_without_invented_credentials",
+      "targets": [
+        {
+          "wp_id": 38,
+          "wp_type": "team",
+          "slug": "member-name-01",
+          "original": {
+            "status": "publish",
+            "title": "Vijay Bhoyar",
+            "meta_description": null,
+            "word_count": 95,
+            "snapshot_file": "public-site-snapshot/pages/team-member-name-01-95b84657c8.html"
+          }
+        }
+      ],
+      "proposed": {
+        "status": "publish_on_staging_after_identity_attestation",
+        "slug": "vijay-bhoyar",
+        "title": "Vijay Bhoyar | AI Amigos",
+        "meta_description": "Learn about Vijay Bhoyar's role and editorial responsibilities at AI Amigos, with links to verified work and contact information where approved.",
+        "h1": "Vijay Bhoyar",
+        "content_rule": "State only identity, role, editorial responsibility, work history, qualifications, publications, and links that Vijay or the legal operator attests and can document. Do not imply independent review, accreditation, medical, legal, financial, child-safety, or security expertise.",
+        "redirect": "/team/member-name-01/ -> /team/vijay-bhoyar/"
+      },
+      "rollback": {
+        "original_fields": {
+          "slug": "member-name-01",
+          "title": "Vijay Bhoyar",
+          "meta_description": null
+        },
+        "restore": "Restore ID 38 and redirect map from pre-change export."
+      },
+      "validation": [
+        "Identity and role statements have retained owner evidence.",
+        "No unsupported qualification appears.",
+        "The old placeholder slug redirects once to the final HTTPS URL.",
+        "Person schema uses the verified name and final URL."
+      ]
+    },
+    {
+      "id": "CP-016",
+      "priority": "P1",
+      "findings": [
+        "C8",
+        "H9",
+        "H10",
+        "H11"
+      ],
+      "action": "create_draft_trust_policy_pages",
+      "targets": [
+        {
+          "wp_id": null,
+          "wp_type": "new_page",
+          "slug": "editorial-policy",
+          "title": "AI Amigos Editorial and Sourcing Policy",
+          "meta_description": "How AI Amigos selects topics, uses sources, identifies authors and reviewers, dates updates, handles conflicts, and limits high-stakes claims.",
+          "required_sections": [
+            "scope and audience",
+            "primary-source standard",
+            "authorship and review",
+            "dates and freshness",
+            "high-stakes content boundary",
+            "conflicts and sponsorship",
+            "contact"
+          ]
+        },
+        {
+          "wp_id": null,
+          "wp_type": "new_page",
+          "slug": "corrections-policy",
+          "title": "AI Amigos Corrections Policy",
+          "meta_description": "How to report an error to AI Amigos and how material corrections, review dates, and update notes are recorded.",
+          "required_sections": [
+            "reporting channel",
+            "triage and response ownership",
+            "material correction note",
+            "reviewed-on date",
+            "retraction criteria"
+          ]
+        },
+        {
+          "wp_id": null,
+          "wp_type": "new_page",
+          "slug": "affiliate-disclosure",
+          "title": "AI Amigos Affiliate and Commercial Disclosure",
+          "meta_description": "How AI Amigos identifies affiliate, referral, sponsored, or other commercial relationships in recommendations and links.",
+          "required_sections": [
+            "relationship types actually in use",
+            "link-level disclosure placement",
+            "selection independence",
+            "compensation effect",
+            "contact"
+          ]
+        },
+        {
+          "wp_id": null,
+          "wp_type": "new_page",
+          "slug": "ai-use-policy",
+          "title": "AI Amigos AI-Use Policy",
+          "meta_description": "How AI Amigos discloses any use of AI tools in research, drafting, images, fact-checking, review, and corrections.",
+          "required_sections": [
+            "owner-attested tools and uses",
+            "human responsibility",
+            "source verification",
+            "image disclosure",
+            "prohibited unsupervised uses",
+            "corrections"
+          ]
+        }
+      ],
+      "proposed": {
+        "status": "draft_until_owner_and_legal_approval",
+        "template_rule": "A required section is a question to answer from actual operations, not permission to invent a policy or claim compliance.",
+        "publication_order": "Approve operations first, then publish wording that matches them, then link policies from About, footer, affected content, and forms."
+      },
+      "rollback": {
+        "restore": "Move newly created pages to trash or draft and remove their links; no original live values exist."
+      },
+      "validation": [
+        "Each published sentence is traceable to an approved operating practice.",
+        "No generic policy template or placeholder remains.",
+        "Affiliate and AI-use disclosures describe actual relationships and use, including none where owner-attested."
+      ]
+    },
+    {
+      "id": "CP-017",
+      "priority": "P1",
+      "findings": [
+        "H4",
+        "M7",
+        "M8"
+      ],
+      "action": "apply_priority_metadata_batch",
+      "targets_ref": "metadata_priority_queue",
+      "proposed": {
+        "rule": "Update body and evidence first, then apply the exact candidate title and description. If the body does not support the candidate, keep the record draft and revise both together.",
+        "length_gate": {
+          "title_min": 10,
+          "title_max": 60,
+          "description_min": 50,
+          "description_max": 160
+        },
+        "language_gate": "Remove hype, keyword dumps, fake precision, superlatives, and unverified future or transformation claims."
+      },
+      "rollback": {
+        "restore": "Use each queue record's pre-change export. Queue records include captured original title and description length plus evidence file."
+      },
+      "validation": [
+        "pages.metadata passes for every published queue target.",
+        "OG and Twitter titles/descriptions match the approved SEO fields.",
+        "A default social image exists for every published target.",
+        "No metadata claim exceeds the evidence in the body."
+      ]
+    },
+    {
+      "id": "CP-018",
+      "priority": "P1",
+      "findings": [
+        "H5",
+        "M8"
+      ],
+      "action": "apply_exact_heading_repairs",
+      "targets_ref": "heading_priority_queue",
+      "proposed": {
+        "rule": "One nonempty H1 supplied by the page or post title; section headings begin at H2 and do not skip levels; remove blank headings rather than hiding them."
+      },
+      "rollback": {
+        "restore": "Use each target's pre-change body export and cited snapshot."
+      },
+      "validation": [
+        "pages.headings passes for every published target.",
+        "Heading text remains descriptive when read as an outline.",
+        "No theme or footer heading defect is falsely marked fixed by a content-only edit."
+      ]
+    },
+    {
+      "id": "CP-019",
+      "priority": "P1",
+      "findings": [
+        "H12",
+        "M9"
+      ],
+      "action": "noindex_then_consolidate_taxonomy",
+      "targets_ref": "taxonomy_plan",
+      "proposed": {
+        "first_step": "Noindex archive terms until each has a distinct intent, useful introduction, enough assigned reviewed content, and unique metadata.",
+        "second_step": "Export post-to-term assignments, choose a small user-journey taxonomy, merge micro-categories with explicit redirects, and update every post assignment.",
+        "do_not": "Do not merge based on URL count alone and do not redirect archives until /blog/ pagination exposes the complete published inventory."
+      },
+      "rollback": {
+        "restore": "Restore the term export, descriptions, assignments, SEO fields, and redirect map."
+      },
+      "validation": [
+        "No disallowed category archive is indexable during review.",
+        "Every retained term has a unique purpose, title, description, and nonempty reviewed inventory.",
+        "inventory.discovered_indexables passes without hiding posts from /blog/."
+      ]
+    }
+  ],
+  "metadata_priority_queue": [
+    {
+      "wp_id": 1388,
+      "wp_type": "post",
+      "slug": "fine-tuning-your-generative-ai-application-a-comprehensive-guide-to-parameters-and-configurations",
+      "current_title": "Fine-Tuning Your Generative AI Application: A Comprehensive Guide to Parameters and Configurations",
+      "current_title_length": 98,
+      "current_description_length": 201,
+      "candidate_title": "Generative AI Tuning Parameters: A Practical Guide",
+      "candidate_meta_description": "Distinguish model fine-tuning from inference and retrieval settings such as temperature, top-k, top-p, and chunk size, with model-specific limits.",
+      "publication_gate": "technical review against dated provider documentation",
+      "evidence_file": "public-site-snapshot/pages/fine-tuning-your-generative-ai-application-a-comprehensive-guide-to-parameters-and-configurations-60a04e77e3.html"
+    },
+    {
+      "wp_id": 1375,
+      "wp_type": "post",
+      "slug": "choosing-the-right-vector-database-with-caching-a-comprehensive-guide-for-genai-applications",
+      "current_title": "Choosing the Right Vector Database with Caching: A Comprehensive Guide for GenAI Applications",
+      "current_title_length": 93,
+      "current_description_length": 75,
+      "candidate_title": "Choosing a Vector Database and Caching Strategy",
+      "candidate_meta_description": "Compare criteria for selecting a vector database and cache for a generative AI application, with dated product facts and explicit trade-offs.",
+      "publication_gate": "dated product-source and comparison-method review",
+      "evidence_file": "public-site-snapshot/pages/choosing-the-right-vector-database-with-caching-a-comprehensive-guide-for-genai-applications-e7fc77b15d.html"
+    },
+    {
+      "wp_id": 446,
+      "wp_type": "post",
+      "slug": "ais-dawn-revolutionizing-the-digital-realm",
+      "current_title": "AI's Digital Transformation: Shaping Daily Realms with Unique Zeal and Empowering Change",
+      "current_title_length": 88,
+      "current_description_length": 151,
+      "candidate_title": "Artificial Intelligence in Everyday Digital Systems",
+      "candidate_meta_description": "An introductory look at where artificial intelligence appears in common digital products, with dated examples, sources, and limitations.",
+      "publication_gate": "example-by-example source review",
+      "evidence_file": "public-site-snapshot/pages/ais-dawn-revolutionizing-the-digital-realm-d0f0a1484f.html"
+    },
+    {
+      "wp_id": 823,
+      "wp_type": "post",
+      "slug": "prompt-design-and-engineering",
+      "current_title": "Prompt Design and Engineering: 3 Essential Distinctions for Effective AI Development",
+      "current_title_length": 84,
+      "current_description_length": 481,
+      "candidate_title": "Prompt Design vs. Prompt Engineering",
+      "candidate_meta_description": "Compare prompt design and prompt engineering by scope, workflow, testing, maintenance, and responsibility, with clear limits for each term.",
+      "publication_gate": "named-editor terminology review",
+      "evidence_file": "public-site-snapshot/pages/prompt-design-and-engineering-1f3b96a18c.html"
+    },
+    {
+      "wp_id": 400,
+      "wp_type": "post",
+      "slug": "deep-learning-ai",
+      "current_title": "Deep Learning (DL): Deep Dive into AI's Unraveling Tech Wonders in Everyday Moments",
+      "current_title_length": 83,
+      "current_description_length": 242,
+      "candidate_title": "Deep Learning: Concepts and Everyday Examples",
+      "candidate_meta_description": "An introduction to deep learning, neural networks, training, common applications, and limitations, using sourced examples rather than outcome claims.",
+      "publication_gate": "technical and example-source review",
+      "evidence_file": "public-site-snapshot/pages/deep-learning-ai-14c471d997.html"
+    },
+    {
+      "wp_id": 1356,
+      "wp_type": "post",
+      "slug": "tesseract-an-ocr-optical-character-recognition-tool-for-image-reading-from-excel",
+      "current_title": "Tesseract, an OCR (Optical Character Recognition) tool for Image Reading from Excel",
+      "current_title_length": 83,
+      "current_description_length": 153,
+      "candidate_title": "Extract Text from Excel Images with Tesseract OCR",
+      "candidate_meta_description": "A step-by-step overview of extracting text from images used in an Excel workflow with Tesseract OCR, including setup and output checks.",
+      "publication_gate": "reproduce steps on a clean fixture and record versions",
+      "evidence_file": "public-site-snapshot/pages/tesseract-an-ocr-optical-character-recognition-tool-for-image-reading-from-excel-cbfdaae91c.html"
+    },
+    {
+      "wp_id": 296,
+      "wp_type": "post",
+      "slug": "ai-evolution",
+      "current_title": "AI Evolution: 13 Breakthrough Stages from Rule-Based Systems to Quantum Wonders",
+      "current_title_length": 79,
+      "current_description_length": 150,
+      "candidate_title": "A Brief History of Artificial Intelligence Approaches",
+      "candidate_meta_description": "A sourced timeline of major AI approaches that separates historical systems, current methods, and speculative research directions.",
+      "publication_gate": "historical primary-source review; remove unsourced quantum-wonders framing",
+      "evidence_file": "public-site-snapshot/pages/ai-evolution-faa2ece8cb.html"
+    },
+    {
+      "wp_id": 198,
+      "wp_type": "post",
+      "slug": "ai-in-healthcare",
+      "current_title": "AI in Healthcare: 14 Inspiring Stories Fueling the Positive Medical Revolution",
+      "current_title_length": 78,
+      "current_description_length": 143,
+      "candidate_title": "Examples of AI Use in Healthcare",
+      "candidate_meta_description": "An educational overview of reported AI uses in healthcare. Not medical advice; each example requires a dated primary source and limitation note.",
+      "publication_gate": "health-domain reviewer, primary sources, limitations, and non-advice disclosure",
+      "evidence_file": "public-site-snapshot/pages/ai-in-healthcare-a18ddd8b16.html"
+    },
+    {
+      "wp_id": 394,
+      "wp_type": "post",
+      "slug": "ai-rule-based-systems",
+      "current_title": "\"Demystifying AI Rule-Based Systems: A Deep Dive into the Heart of Classic AI\"",
+      "current_title_length": 78,
+      "current_description_length": 193,
+      "candidate_title": "Rule-Based AI Systems: Concepts and Examples",
+      "candidate_meta_description": "Learn how rule-based systems represent knowledge and apply explicit rules, with examples, strengths, limitations, and comparisons to learned models.",
+      "publication_gate": "technical review and remove decorative quotation marks",
+      "evidence_file": "public-site-snapshot/pages/ai-rule-based-systems-8cff0914fc.html"
+    },
+    {
+      "wp_id": 18,
+      "wp_type": "post",
+      "slug": "artificial-intelligence-ai",
+      "current_title": "Artificial Intelligence (AI): 5 Essential Insights to Easily Grasp its Wonders",
+      "current_title_length": 78,
+      "current_description_length": 153,
+      "candidate_title": "Artificial Intelligence: Core Concepts and Limits",
+      "candidate_meta_description": "An introduction to artificial intelligence, machine learning, common system types, applications, and limitations, with dated sources for examples.",
+      "publication_gate": "technical review and source verification",
+      "evidence_file": "public-site-snapshot/pages/artificial-intelligence-ai-f8b7ef136f.html"
+    },
+    {
+      "wp_id": 206,
+      "wp_type": "post",
+      "slug": "ai-in-finance",
+      "current_title": "AI in Finance: 11 Revolutionary Changes Reshaping Banking & Investments",
+      "current_title_length": 71,
+      "current_description_length": 1084,
+      "candidate_title": "How AI Is Used in Finance: Examples and Risks",
+      "candidate_meta_description": "An educational overview of AI uses in banking, fraud detection, investing, and insurance, with risks, limits, and dated sources. Not financial advice.",
+      "publication_gate": "finance-domain reviewer, primary sources, limitations, and non-advice disclosure",
+      "evidence_file": "public-site-snapshot/pages/ai-in-finance-3926dcb68c.html"
+    },
+    {
+      "wp_id": 1222,
+      "wp_type": "post",
+      "slug": "open-source-generative-ai-projects",
+      "current_title": "Open-source Generative AI Projects",
+      "current_title_length": 34,
+      "current_description_length": 905,
+      "candidate_title": "Open-Source Generative AI Projects: A Dated List",
+      "candidate_meta_description": "A dated overview of selected open-source generative AI projects, including purpose, primary repository, license, maintenance status, and limitations.",
+      "publication_gate": "verify every project against its primary repository on the review date",
+      "evidence_file": "public-site-snapshot/pages/open-source-generative-ai-projects-057441509e.html"
+    },
+    {
+      "wp_id": 1223,
+      "wp_type": "post",
+      "slug": "the-role-of-generative-ai-in-creative-industries",
+      "current_title": "The Role of Generative AI in Creative Industries",
+      "current_title_length": 48,
+      "current_description_length": 874,
+      "candidate_title": "Generative AI in Creative Work: Uses and Limits",
+      "candidate_meta_description": "An overview of generative AI in creative work, with attention to authorship, originality, bias, labor, disclosure, and human oversight.",
+      "publication_gate": "source and rights-risk review",
+      "evidence_file": "public-site-snapshot/pages/the-role-of-generative-ai-in-creative-industries-76de7ca193.html"
+    },
+    {
+      "wp_id": 1220,
+      "wp_type": "post",
+      "slug": "generative-ai-vs-traditional-ai",
+      "current_title": "Generative AI vs. Traditional AI",
+      "current_title_length": 32,
+      "current_description_length": 827,
+      "candidate_title": "Generative AI vs. Predictive and Rule-Based AI",
+      "candidate_meta_description": "Compare generative, predictive, and rule-based AI by objective, output, data, evaluation, common uses, and limitations.",
+      "publication_gate": "technical taxonomy review; avoid treating traditional AI as one precise class",
+      "evidence_file": "public-site-snapshot/pages/generative-ai-vs-traditional-ai-dc9af6f90e.html"
+    },
+    {
+      "wp_id": 721,
+      "wp_type": "post",
+      "slug": "large-language-model",
+      "current_title": "Large Language Model (LLM) Secrets: 10 Astonishing Ways AI Enhances Work",
+      "current_title_length": 72,
+      "current_description_length": 774,
+      "candidate_title": "Large Language Models: Uses, Limits and Risks",
+      "candidate_meta_description": "An introduction to large language models, including training, common uses, evaluation limits, bias, privacy, reliability, and responsible use.",
+      "publication_gate": "technical review with dated model examples",
+      "evidence_file": "public-site-snapshot/pages/large-language-model-f89b996920.html"
+    },
+    {
+      "wp_id": 1097,
+      "wp_type": "post",
+      "slug": "algorithms-in-artificial-intelligence",
+      "current_title": "A Guide to Different Algorithms in Artificial Intelligence",
+      "current_title_length": 58,
+      "current_description_length": 638,
+      "candidate_title": "Common Algorithm Families Used in AI",
+      "candidate_meta_description": "A structured overview of supervised, unsupervised, neural, evolutionary, and fuzzy-system methods, with examples and limits for each family.",
+      "publication_gate": "technical classification and example review",
+      "evidence_file": "public-site-snapshot/pages/algorithms-in-artificial-intelligence-8056666b17.html"
+    },
+    {
+      "wp_id": 1219,
+      "wp_type": "post",
+      "slug": "the-future-of-generative-ai",
+      "current_title": "The Future of Generative AI",
+      "current_title_length": 27,
+      "current_description_length": 537,
+      "candidate_title": "Possible Directions for Generative AI",
+      "candidate_meta_description": "A scenario-based review of possible generative AI developments, separated into observed trends, open research questions, risks, and speculation.",
+      "publication_gate": "date every trend and label forecasts as uncertainty, not fact",
+      "evidence_file": "public-site-snapshot/pages/the-future-of-generative-ai-a992f0cf93.html"
+    },
+    {
+      "wp_id": 1215,
+      "wp_type": "post",
+      "slug": "applications-of-generative-ai",
+      "current_title": "Applications of Generative AI",
+      "current_title_length": 29,
+      "current_description_length": 492,
+      "candidate_title": "Generative AI Applications and Their Limitations",
+      "candidate_meta_description": "Examples of generative AI in text, images, audio, video, design, and data work, with limitations, review needs, and source dates.",
+      "publication_gate": "verify examples and add limitations",
+      "evidence_file": "public-site-snapshot/pages/applications-of-generative-ai-76713f6eaa.html"
+    },
+    {
+      "wp_id": 1333,
+      "wp_type": "post",
+      "slug": "ai-healthcare-interoperability",
+      "current_title": "Healthcare Interoperability: AI Breaking Down the Wall",
+      "current_title_length": 54,
+      "current_description_length": 491,
+      "candidate_title": "AI and Healthcare Interoperability: Uses and Limits",
+      "candidate_meta_description": "An educational overview of AI-related interoperability use cases, data standards, privacy, reliability, and implementation limits. Not medical advice.",
+      "publication_gate": "health-domain and standards review with primary sources",
+      "evidence_file": "public-site-snapshot/pages/ai-healthcare-interoperability-ceea6f4484.html"
+    },
+    {
+      "wp_id": 1160,
+      "wp_type": "post",
+      "slug": "local-llm-on-your-laptop",
+      "current_title": "Run Your Own Mini-AI: Local LLM on Your Laptop (Free, DIY, & Fun!)",
+      "current_title_length": 66,
+      "current_description_length": 489,
+      "candidate_title": "Running a Local LLM with Ollama: An Overview",
+      "candidate_meta_description": "An introductory guide to running a local language model with Ollama, including version, hardware, storage, privacy, licensing, and safety checks.",
+      "publication_gate": "reproduce on a clean fixture and verify current Ollama documentation",
+      "evidence_file": "public-site-snapshot/pages/local-llm-on-your-laptop-3320797b26.html"
+    },
+    {
+      "wp_id": 430,
+      "wp_type": "post",
+      "slug": "ethical-ai",
+      "current_title": "Ethical AI: How to use it in good and fair ways",
+      "current_title_length": 47,
+      "current_description_length": 478,
+      "candidate_title": "Ethical AI: Fairness, Privacy and Accountability",
+      "candidate_meta_description": "An overview of fairness, privacy, transparency, accountability, human oversight, and documented risk management for AI systems.",
+      "publication_gate": "remove unverified tool names and cite recognized primary frameworks",
+      "evidence_file": "public-site-snapshot/pages/ethical-ai-7c1c06c7b1.html"
+    }
+  ],
+  "heading_priority_queue": [
+    {
+      "wp_id": 1361,
+      "wp_type": "post",
+      "slug": "a-comprehensive-guide-to-nvidia-monai-unlocking-ai-in-medical-imaging",
+      "original_h1": [
+        "A Comprehensive Guide to NVIDIA MONAI: Unlocking AI in Medical Imaging",
+        "",
+        "Introduction"
+      ],
+      "proposed": "Remove the blank H1 and convert Introduction to H2; retain one title H1.",
+      "publication_gate": "health-domain and current NVIDIA MONAI source review",
+      "evidence_file": "public-site-snapshot/pages/a-comprehensive-guide-to-nvidia-monai-unlocking-ai-in-medical-imaging-d4306e85d4.html"
+    },
+    {
+      "wp_id": 1311,
+      "wp_type": "post",
+      "slug": "python-deployment-best-practices-a-comprehensive-guide",
+      "original_h1": [
+        "Python Deployment Best Practices: A Comprehensive Guide",
+        "Introduction"
+      ],
+      "proposed": "Convert Introduction to H2; retain one title H1.",
+      "publication_gate": "reproduce version-specific instructions",
+      "evidence_file": "public-site-snapshot/pages/python-deployment-best-practices-a-comprehensive-guide-5d8c8ff810.html"
+    },
+    {
+      "wp_id": 1222,
+      "wp_type": "post",
+      "slug": "open-source-generative-ai-projects",
+      "original_defect": "one blank heading",
+      "proposed": "Delete the blank heading and preserve the surrounding level sequence.",
+      "evidence_file": "public-site-snapshot/pages/open-source-generative-ai-projects-057441509e.html"
+    },
+    {
+      "wp_id": 418,
+      "wp_type": "post",
+      "slug": "creative-ai",
+      "original_defect": "one blank heading",
+      "proposed": "Delete the blank heading and preserve the surrounding level sequence.",
+      "evidence_file": "public-site-snapshot/pages/creative-ai-89a1af6693.html"
+    },
+    {
+      "wp_id": 721,
+      "wp_type": "post",
+      "slug": "large-language-model",
+      "original_defect": "one blank heading",
+      "proposed": "Delete the blank heading and preserve the surrounding level sequence.",
+      "evidence_file": "public-site-snapshot/pages/large-language-model-f89b996920.html"
+    },
+    {
+      "wp_id": 446,
+      "wp_type": "post",
+      "slug": "ais-dawn-revolutionizing-the-digital-realm",
+      "original_defect": "one blank heading",
+      "proposed": "Delete the blank heading and preserve the surrounding level sequence.",
+      "evidence_file": "public-site-snapshot/pages/ais-dawn-revolutionizing-the-digital-realm-d0f0a1484f.html"
+    },
+    {
+      "wp_id": 1411,
+      "wp_type": "post",
+      "slug": "langgraph-5-stunning-secrets-for-building-a-generative-ai-application",
+      "original_h1": [
+        "LangGraph: 5 Stunning Secrets for Building a Generative AI Application",
+        ""
+      ],
+      "proposed": "Delete the blank H1; retain one title H1 after the CP-004 content rewrite.",
+      "evidence_file": "public-site-snapshot/pages/langgraph-5-stunning-secrets-for-building-a-generative-ai-application-641802efc2.html"
+    }
+  ],
+  "taxonomy_plan": {
+    "captured_categories": [
+      {
+        "term_id": 1,
+        "slug": "blog",
+        "name": "Blog",
+        "current_description": "Your blog category",
+        "captured_post_count": 61,
+        "proposed": "noindex and redirect to /blog/ only after native blog pagination exposes the complete reviewed post inventory"
+      },
+      {
+        "term_id": 25,
+        "slug": "professional",
+        "name": "Professional",
+        "proposed": "noindex pending assignment export and distinct-intent decision"
+      },
+      {
+        "term_id": 40,
+        "slug": "video",
+        "name": "Video",
+        "proposed": "noindex pending assignment export; format alone is not a sufficient editorial journey"
+      },
+      {
+        "term_id": 42,
+        "slug": "everyone",
+        "name": "Everyone",
+        "proposed": "noindex and retire unless a defined audience and reviewed inventory justify it"
+      },
+      {
+        "term_id": 44,
+        "slug": "technology",
+        "name": "Technology",
+        "proposed": "noindex pending assignment export and overlap review"
+      },
+      {
+        "term_id": 48,
+        "slug": "ai-algorithms",
+        "name": "AI Algorithms",
+        "proposed": "noindex until it has a useful introduction and enough reviewed articles"
+      },
+      {
+        "term_id": 55,
+        "slug": "artificial-intelligence",
+        "name": "Artificial Intelligence",
+        "proposed": "noindex pending overlap review with Blog and foundational AI posts"
+      },
+      {
+        "term_id": 60,
+        "slug": "ai-tools",
+        "name": "AI Tools",
+        "proposed": "noindex until tool entries have dated testing, versions, limitations, and disclosure"
+      }
+    ],
+    "unresolved_term": {
+      "captured_label": "High School or Collage",
+      "candidate_label": "High School or College",
+      "term_id": null,
+      "apply_gate": "Locate the exact taxonomy, term ID, slug, assignments, and inbound links in an admin export before renaming; create a redirect if the slug changes."
+    },
+    "rollback_originals": "Export every term's ID, taxonomy, parent, name, slug, description, SEO fields, and assigned post IDs before edits."
+  },
+  "release_validation": [
+    {
+      "gate": "JSON and plan integrity",
+      "criteria": [
+        "This file parses as strict JSON.",
+        "Patch IDs are unique.",
+        "No duplicate target ID is assigned incompatible publication actions without an explicit cross-reference."
+      ]
+    },
+    {
+      "gate": "Content regression",
+      "criteria": [
+        "Run remediation/tests/seo-regression.mjs against staging.",
+        "routing.quarantine, links.internal_integrity, pages.metadata, pages.headings, content.leaks, and inventory.discovered_indexables pass or have a documented non-content dependency.",
+        "A content-only patch is not credited for a theme, plugin, header, runtime, media, or performance failure."
+      ]
+    },
+    {
+      "gate": "Hostile factual review",
+      "criteria": [
+        "Search every published page for certification, benchmark, best, safe, secure, accredited, expert, roadmap, comprehensive, guaranteed, and revolutionizing claims.",
+        "Each retained high-risk claim has a named reviewer, dated primary source, scope, method, and limitation.",
+        "No draft or quarantined target appears in sitemaps, archives, schema, navigation, or related-post links."
+      ]
+    },
+    {
+      "gate": "Rollback drill",
+      "criteria": [
+        "Restore one representative page, one post, one custom post type, and one term in staging from retained exports.",
+        "Verify exact original fields and then reapply the approved patch."
+      ]
+    },
+    {
+      "gate": "Production boundary",
+      "criteria": [
+        "Do not promote the staging database wholesale without reconciling production users, comments, registration settings, and newer content.",
+        "Use a scoped deployment manifest listing exact IDs and fields after staging acceptance.",
+        "Repeat the full crawl and browser verification on production before closing any finding."
+      ]
+    }
+  ]
+}

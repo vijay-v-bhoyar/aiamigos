@@ -1,0 +1,449 @@
+{
+  "generatedAt": "2026-08-13T18:17:26.210Z",
+  "baseUrl": "https://remediation.aiamigos.org/",
+  "cacheBust": false,
+  "pass": true,
+  "failures": [],
+  "pages": [
+    {
+      "route": "/",
+      "requestedUrl": "https://remediation.aiamigos.org/",
+      "finalUrl": "https://remediation.aiamigos.org/",
+      "status": 200,
+      "targetImageCount": 20,
+      "nonLazyTargetImages": 0,
+      "images": [
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/NVIDIA-MONAI-768x439.webp",
+          "width": 640,
+          "height": 366,
+          "loading": "lazy",
+          "decoding": "async",
+          "hasSrcset": true,
+          "sizes": "auto, (max-width: 767px) calc(100vw - 30px), (max-width: 1199px) 50vw, 33vw",
+          "response": {
+            "status": 200,
+            "contentLength": 107616,
+            "contentType": "image/webp"
+          }
+        },
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/fine-tuning-768x439.webp",
+          "width": 640,
+          "height": 366,
+          "loading": "lazy",
+          "decoding": "async",
+          "hasSrcset": true,
+          "sizes": "auto, (max-width: 767px) calc(100vw - 30px), (max-width: 1199px) 50vw, 33vw",
+          "response": {
+            "status": 200,
+            "contentLength": 91760,
+            "contentType": "image/webp"
+          }
+        },
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/vectordb-768x768.png",
+          "width": 640,
+          "height": 640,
+          "loading": "lazy",
+          "decoding": "async",
+          "hasSrcset": true,
+          "sizes": "auto, (max-width: 767px) calc(100vw - 30px), (max-width: 1199px) 50vw, 33vw",
+          "response": {
+            "status": 200,
+            "contentLength": 380249,
+            "contentType": "image/png"
+          }
+        },
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/09/tesseract-ocr.png",
+          "width": 483,
+          "height": 311,
+          "loading": "lazy",
+          "decoding": "async",
+          "hasSrcset": true,
+          "sizes": "auto, (max-width: 767px) calc(100vw - 30px), (max-width: 1199px) 50vw, 33vw",
+          "response": {
+            "status": 200,
+            "contentLength": 68575,
+            "contentType": "image/png"
+          }
+        },
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/RAG-1-768x485.png",
+          "width": 640,
+          "height": 404,
+          "loading": "lazy",
+          "decoding": "async",
+          "hasSrcset": true,
+          "sizes": "auto, (max-width: 767px) calc(100vw - 30px), (max-width: 1199px) 50vw, 33vw",
+          "response": {
+            "status": 200,
+            "contentLength": 452493,
+            "contentType": "image/png"
+          }
+        },
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/06/Interoperability-768x439.jpg",
+          "width": 640,
+          "height": 366,
+          "loading": "lazy",
+          "decoding": "async",
+          "hasSrcset": true,
+          "sizes": "auto, (max-width: 767px) calc(100vw - 30px), (max-width: 1199px) 50vw, 33vw",
+          "response": {
+            "status": 200,
+            "contentLength": 70463,
+            "contentType": "image/jpeg"
+          }
+        },
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/02/DALL%C2%B7E-2024-02-24-20.03.54-Imagine-a-sleek-futuristic-desktop-environment-illuminated-by-the-soft-glow-of-neon-lights-reflecting-the-cutting-edge-technology-of-NVIDIAs-RTX-gr-768x768.webp",
+          "width": 640,
+          "height": 640,
+          "loading": "lazy",
+          "decoding": "async",
+          "hasSrcset": true,
+          "sizes": "auto, (max-width: 767px) calc(100vw - 30px), (max-width: 1199px) 50vw, 33vw",
+          "response": {
+            "status": 200,
+            "contentLength": 80484,
+            "contentType": "image/webp"
+          }
+        },
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/03/Python-Dep-Practices-1.jpg",
+          "width": 254,
+          "height": 229,
+          "loading": "lazy",
+          "decoding": "async",
+          "hasSrcset": false,
+          "sizes": "auto, (max-width: 767px) calc(100vw - 30px), (max-width: 1199px) 50vw, 33vw",
+          "response": {
+            "status": 200,
+            "contentLength": 16625,
+            "contentType": "image/jpeg"
+          }
+        },
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/01/AI-Leader-with-No-Code-768x768.png",
+          "width": 640,
+          "height": 640,
+          "loading": "lazy",
+          "decoding": "async",
+          "hasSrcset": true,
+          "sizes": "auto, (max-width: 767px) calc(100vw - 30px), (max-width: 1199px) 50vw, 33vw",
+          "response": {
+            "status": 200,
+            "contentLength": 1116964,
+            "contentType": "image/png"
+          }
+        },
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.08.06-Create-a-realistic-image-symbolizing-Training-data-for-generative-AI-models.-The-image-should-depict-a-diverse-array-of-information-sources-like-bo-768x768.png",
+          "width": 640,
+          "height": 640,
+          "loading": "lazy",
+          "decoding": "async",
+          "hasSrcset": true,
+          "sizes": "auto, (max-width: 767px) calc(100vw - 30px), (max-width: 1199px) 50vw, 33vw",
+          "response": {
+            "status": 200,
+            "contentLength": 1197312,
+            "contentType": "image/png"
+          }
+        },
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.15.01-Create-a-realistic-image-symbolizing-The-Role-of-Generative-AI-in-Creative-Industries.-The-image-should-depict-a-modern-well-lit-artists-studio-wi-768x768.png",
+          "width": 640,
+          "height": 640,
+          "loading": "lazy",
+          "decoding": "async",
+          "hasSrcset": true,
+          "sizes": "auto, (max-width: 767px) calc(100vw - 30px), (max-width: 1199px) 50vw, 33vw",
+          "response": {
+            "status": 200,
+            "contentLength": 1012584,
+            "contentType": "image/png"
+          }
+        },
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/OpenSource-768x439.jpg",
+          "width": 640,
+          "height": 366,
+          "loading": "lazy",
+          "decoding": "async",
+          "hasSrcset": true,
+          "sizes": "auto, (max-width: 767px) calc(100vw - 30px), (max-width: 1199px) 50vw, 33vw",
+          "response": {
+            "status": 200,
+            "contentLength": 95479,
+            "contentType": "image/jpeg"
+          }
+        },
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.22.02-Create-a-realistic-image-representing-The-Explainability-of-Generative-AI-Models.-The-scene-should-depict-a-human-figure-symbolic-of-a-scientist-or-768x768.png",
+          "width": 640,
+          "height": 640,
+          "loading": "lazy",
+          "decoding": "async",
+          "hasSrcset": true,
+          "sizes": "auto, (max-width: 767px) calc(100vw - 30px), (max-width: 1199px) 50vw, 33vw",
+          "response": {
+            "status": 200,
+            "contentLength": 1109051,
+            "contentType": "image/png"
+          }
+        },
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.29.33-Create-a-realistic-image-illustrating-the-concept-Generative-AI-vs.-Traditional-AI.-On-one-side-show-a-modern-sleek-and-advanced-AI-system-with-v-768x768.png",
+          "width": 640,
+          "height": 640,
+          "loading": "lazy",
+          "decoding": "async",
+          "hasSrcset": true,
+          "sizes": "auto, (max-width: 767px) calc(100vw - 30px), (max-width: 1199px) 50vw, 33vw",
+          "response": {
+            "status": 200,
+            "contentLength": 902850,
+            "contentType": "image/png"
+          }
+        },
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.45.28-Create-a-realistic-image-representing-The-Future-of-Generative-AI.-The-scene-should-depict-a-modern-high-tech-laboratory-with-sleek-futuristic-des-768x768.png",
+          "width": 640,
+          "height": 640,
+          "loading": "lazy",
+          "decoding": "async",
+          "hasSrcset": true,
+          "sizes": "auto, (max-width: 767px) calc(100vw - 30px), (max-width: 1199px) 50vw, 33vw",
+          "response": {
+            "status": 200,
+            "contentLength": 1113206,
+            "contentType": "image/png"
+          }
+        },
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.48.18-Create-a-realistic-image-illustrating-Limitations-of-Generative-AI.-The-image-should-depict-a-large-modern-digital-canvas-displaying-an-incomplete-768x768.png",
+          "width": 640,
+          "height": 640,
+          "loading": "lazy",
+          "decoding": "async",
+          "hasSrcset": true,
+          "sizes": "auto, (max-width: 767px) calc(100vw - 30px), (max-width: 1199px) 50vw, 33vw",
+          "response": {
+            "status": 200,
+            "contentLength": 1026373,
+            "contentType": "image/png"
+          }
+        },
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.51.16-Create-a-realistic-image-depicting-Applications-of-Generative-AI.-The-image-should-show-a-diverse-range-of-applications-in-different-sectors.-Includ-768x768.png",
+          "width": 640,
+          "height": 640,
+          "loading": "lazy",
+          "decoding": "async",
+          "hasSrcset": true,
+          "sizes": "auto, (max-width: 767px) calc(100vw - 30px), (max-width: 1199px) 50vw, 33vw",
+          "response": {
+            "status": 200,
+            "contentLength": 1231622,
+            "contentType": "image/png"
+          }
+        },
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.53.24-Create-a-realistic-image-representing-Top-20-Generative-AI-Tools-for-Creative-Exploration.-The-image-should-feature-a-modern-sleek-digital-workspac-768x768.png",
+          "width": 640,
+          "height": 640,
+          "loading": "lazy",
+          "decoding": "async",
+          "hasSrcset": true,
+          "sizes": "auto, (max-width: 767px) calc(100vw - 30px), (max-width: 1199px) 50vw, 33vw",
+          "response": {
+            "status": 200,
+            "contentLength": 1163670,
+            "contentType": "image/png"
+          }
+        },
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-12-23.42.49-Create-an-image-representing-the-theme-_AI-to-the-Rescue_-Building-Features-Faster-and-Better_.-The-artwork-should-depict-a-futuristic-AI-entity-char-768x768.png",
+          "width": 640,
+          "height": 640,
+          "loading": "lazy",
+          "decoding": "async",
+          "hasSrcset": true,
+          "sizes": "auto, (max-width: 767px) calc(100vw - 30px), (max-width: 1199px) 50vw, 33vw",
+          "response": {
+            "status": 200,
+            "contentLength": 1051230,
+            "contentType": "image/png"
+          }
+        },
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-12-23.42.52-Create-an-image-representing-the-theme-_AI-to-the-Rescue_-Building-Features-Faster-and-Better_.-The-artwork-should-depict-a-futuristic-AI-entity-char-768x768.png",
+          "width": 640,
+          "height": 640,
+          "loading": "lazy",
+          "decoding": "async",
+          "hasSrcset": true,
+          "sizes": "auto, (max-width: 767px) calc(100vw - 30px), (max-width: 1199px) 50vw, 33vw",
+          "response": {
+            "status": 200,
+            "contentLength": 1068226,
+            "contentType": "image/png"
+          }
+        }
+      ]
+    },
+    {
+      "route": "/blog/",
+      "requestedUrl": "https://remediation.aiamigos.org/blog/",
+      "finalUrl": "https://remediation.aiamigos.org/blog/",
+      "status": 200,
+      "targetImageCount": 10,
+      "nonLazyTargetImages": 3,
+      "images": [
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/NVIDIA-MONAI-768x439.webp",
+          "width": 640,
+          "height": 366,
+          "loading": null,
+          "decoding": "async",
+          "hasSrcset": true,
+          "sizes": "(max-width: 767px) calc(100vw - 30px), (max-width: 1199px) 33vw, 360px",
+          "response": {
+            "status": 200,
+            "contentLength": 107616,
+            "contentType": "image/webp"
+          }
+        },
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/fine-tuning-768x439.webp",
+          "width": 640,
+          "height": 366,
+          "loading": null,
+          "decoding": "async",
+          "hasSrcset": true,
+          "sizes": "(max-width: 767px) calc(100vw - 30px), (max-width: 1199px) 33vw, 360px",
+          "response": {
+            "status": 200,
+            "contentLength": 91760,
+            "contentType": "image/webp"
+          }
+        },
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/vectordb-768x768.png",
+          "width": 640,
+          "height": 640,
+          "loading": null,
+          "decoding": "async",
+          "hasSrcset": true,
+          "sizes": "(max-width: 767px) calc(100vw - 30px), (max-width: 1199px) 33vw, 360px",
+          "response": {
+            "status": 200,
+            "contentLength": 380249,
+            "contentType": "image/png"
+          }
+        },
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/09/tesseract-ocr.png",
+          "width": 483,
+          "height": 311,
+          "loading": "lazy",
+          "decoding": "async",
+          "hasSrcset": true,
+          "sizes": "auto, (max-width: 767px) calc(100vw - 30px), (max-width: 1199px) 33vw, 360px",
+          "response": {
+            "status": 200,
+            "contentLength": 68575,
+            "contentType": "image/png"
+          }
+        },
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/10/RAG-1-768x485.png",
+          "width": 640,
+          "height": 404,
+          "loading": "lazy",
+          "decoding": "async",
+          "hasSrcset": true,
+          "sizes": "auto, (max-width: 767px) calc(100vw - 30px), (max-width: 1199px) 33vw, 360px",
+          "response": {
+            "status": 200,
+            "contentLength": 452493,
+            "contentType": "image/png"
+          }
+        },
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/06/Interoperability-768x439.jpg",
+          "width": 640,
+          "height": 366,
+          "loading": "lazy",
+          "decoding": "async",
+          "hasSrcset": true,
+          "sizes": "auto, (max-width: 767px) calc(100vw - 30px), (max-width: 1199px) 33vw, 360px",
+          "response": {
+            "status": 200,
+            "contentLength": 70463,
+            "contentType": "image/jpeg"
+          }
+        },
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/02/DALL%C2%B7E-2024-02-24-20.03.54-Imagine-a-sleek-futuristic-desktop-environment-illuminated-by-the-soft-glow-of-neon-lights-reflecting-the-cutting-edge-technology-of-NVIDIAs-RTX-gr-768x768.webp",
+          "width": 640,
+          "height": 640,
+          "loading": "lazy",
+          "decoding": "async",
+          "hasSrcset": true,
+          "sizes": "auto, (max-width: 767px) calc(100vw - 30px), (max-width: 1199px) 33vw, 360px",
+          "response": {
+            "status": 200,
+            "contentLength": 80484,
+            "contentType": "image/webp"
+          }
+        },
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/03/Python-Dep-Practices-1.jpg",
+          "width": 254,
+          "height": 229,
+          "loading": "lazy",
+          "decoding": "async",
+          "hasSrcset": false,
+          "sizes": "auto, (max-width: 767px) calc(100vw - 30px), (max-width: 1199px) 33vw, 360px",
+          "response": {
+            "status": 200,
+            "contentLength": 16625,
+            "contentType": "image/jpeg"
+          }
+        },
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2024/01/AI-Leader-with-No-Code-768x768.png",
+          "width": 640,
+          "height": 640,
+          "loading": "lazy",
+          "decoding": "async",
+          "hasSrcset": true,
+          "sizes": "auto, (max-width: 767px) calc(100vw - 30px), (max-width: 1199px) 33vw, 360px",
+          "response": {
+            "status": 200,
+            "contentLength": 1116964,
+            "contentType": "image/png"
+          }
+        },
+        {
+          "src": "https://remediation.aiamigos.org/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-19-23.08.06-Create-a-realistic-image-symbolizing-Training-data-for-generative-AI-models.-The-image-should-depict-a-diverse-array-of-information-sources-like-bo-768x768.png",
+          "width": 640,
+          "height": 640,
+          "loading": "lazy",
+          "decoding": "async",
+          "hasSrcset": true,
+          "sizes": "auto, (max-width: 767px) calc(100vw - 30px), (max-width: 1199px) 33vw, 360px",
+          "response": {
+            "status": 200,
+            "contentLength": 1197312,
+            "contentType": "image/png"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1001 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-21T21:34:02.766Z",
+  "mode": "live",
+  "baseUrl": "https://www.aiamigos.org/",
+  "cacheBypass": "off",
+  "snapshotRoot": null,
+  "durationMs": 16162,
+  "result": "fail",
+  "summary": {
+    "checks": 21,
+    "pass": 2,
+    "fail": 7,
+    "skip": 12,
+    "sitemapUrls": 0,
+    "uniqueInternalTargets": 0
+  },
+  "checks": [
+    {
+      "id": "routing.root_home_blog",
+      "title": "Root, legacy home, and blog routing",
+      "severity": "critical",
+      "status": "fail",
+      "summary": "Primary route consolidation is incomplete.",
+      "metrics": {
+        "rootStatus": 0,
+        "oldHomeInitialStatus": null,
+        "oldHomeFinalStatus": 0,
+        "blogStatus": 0
+      },
+      "failures": [
+        {
+          "message": "Root response was not present in the selected evidence source.",
+          "url": "https://www.aiamigos.org/"
+        },
+        {
+          "message": "Configured /blog/ archive is missing or not 200.",
+          "url": "https://www.aiamigos.org/blog/",
+          "status": 0
+        }
+      ],
+      "notes": [
+        "Legacy /home/ redirect is not observable in this snapshot."
+      ]
+    },
+    {
+      "id": "routing.quarantine",
+      "title": "Quarantine, redirect, and preserved-route policy",
+      "severity": "critical",
+      "status": "skip",
+      "summary": "Exact policy routes were not observable.",
+      "metrics": {
+        "configuredGone": 28,
+        "configuredQuarantined": 4,
+        "configuredUnpublished": 0,
+        "configuredPermanentRedirects": 0,
+        "configuredPreserved": 1,
+        "observed": 0,
+        "gone410": 0,
+        "unpublished404Or410": 0,
+        "healthyPermanentRedirects": 0
+      },
+      "failures": [],
+      "notes": [
+        "Exact quarantine routes are not present in the selected snapshot."
+      ]
+    },
+    {
+      "id": "feeds.quarantine",
+      "title": "Bare and cache-busted feed quarantine",
+      "severity": "critical",
+      "status": "fail",
+      "summary": "Feed quarantine evidence failed.",
+      "metrics": {
+        "configuredFeeds": 5,
+        "expectedVariants": 10,
+        "observedVariants": 10,
+        "bareVariants": 5,
+        "cacheBustedVariants": 5,
+        "forbiddenHits": 0,
+        "feeds": [
+          {
+            "pathname": "/feed/",
+            "variant": "bare",
+            "status": 0,
+            "finalUrl": "https://www.aiamigos.org/feed/",
+            "networkRequestedUrl": "https://www.aiamigos.org/feed/",
+            "itemCount": 0,
+            "forbiddenHits": []
+          },
+          {
+            "pathname": "/feed/",
+            "variant": "cache-busted",
+            "status": 0,
+            "finalUrl": "https://www.aiamigos.org/feed/",
+            "networkRequestedUrl": "https://www.aiamigos.org/feed/?_aiamigos_cache_bust=mt3gv7u2-40",
+            "itemCount": 0,
+            "forbiddenHits": []
+          },
+          {
+            "pathname": "/?feed=rss2&post_type=services",
+            "variant": "bare",
+            "status": 0,
+            "finalUrl": "https://www.aiamigos.org/?feed=rss2&post_type=services",
+            "networkRequestedUrl": "https://www.aiamigos.org/?feed=rss2&post_type=services",
+            "itemCount": 0,
+            "forbiddenHits": []
+          },
+          {
+            "pathname": "/?feed=rss2&post_type=services",
+            "variant": "cache-busted",
+            "status": 0,
+            "finalUrl": "https://www.aiamigos.org/?feed=rss2&post_type=services",
+            "networkRequestedUrl": "https://www.aiamigos.org/?feed=rss2&post_type=services&_aiamigos_cache_bust=mt3gv7u4-42",
+            "itemCount": 0,
+            "forbiddenHits": []
+          },
+          {
+            "pathname": "/?feed=rss2&post_type=classes",
+            "variant": "bare",
+            "status": 0,
+            "finalUrl": "https://www.aiamigos.org/?feed=rss2&post_type=classes",
+            "networkRequestedUrl": "https://www.aiamigos.org/?feed=rss2&post_type=classes",
+            "itemCount": 0,
+            "forbiddenHits": []
+          },
+          {
+            "pathname": "/?feed=rss2&post_type=classes",
+            "variant": "cache-busted",
+            "status": 0,
+            "finalUrl": "https://www.aiamigos.org/?feed=rss2&post_type=classes",
+            "networkRequestedUrl": "https://www.aiamigos.org/?feed=rss2&post_type=classes&_aiamigos_cache_bust=mt3gv7u5-44",
+            "itemCount": 0,
+            "forbiddenHits": []
+          },
+          {
+            "pathname": "/?feed=rss2&post_type=testimonials",
+            "variant": "bare",
+            "status": 0,
+            "finalUrl": "https://www.aiamigos.org/?feed=rss2&post_type=testimonials",
+            "networkRequestedUrl": "https://www.aiamigos.org/?feed=rss2&post_type=testimonials",
+            "itemCount": 0,
+            "forbiddenHits": []
+          },
+          {
+            "pathname": "/?feed=rss2&post_type=testimonials",
+            "variant": "cache-busted",
+            "status": 0,
+            "finalUrl": "https://www.aiamigos.org/?feed=rss2&post_type=testimonials",
+            "networkRequestedUrl": "https://www.aiamigos.org/?feed=rss2&post_type=testimonials&_aiamigos_cache_bust=mt3gv7u7-46",
+            "itemCount": 0,
+            "forbiddenHits": []
+          },
+          {
+            "pathname": "/?feed=rss2&post_type=team",
+            "variant": "bare",
+            "status": 0,
+            "finalUrl": "https://www.aiamigos.org/?feed=rss2&post_type=team",
+            "networkRequestedUrl": "https://www.aiamigos.org/?feed=rss2&post_type=team",
+            "itemCount": 0,
+            "forbiddenHits": []
+          },
+          {
+            "pathname": "/?feed=rss2&post_type=team",
+            "variant": "cache-busted",
+            "status": 0,
+            "finalUrl": "https://www.aiamigos.org/?feed=rss2&post_type=team",
+            "networkRequestedUrl": "https://www.aiamigos.org/?feed=rss2&post_type=team&_aiamigos_cache_bust=mt3gv7u8-48",
+            "itemCount": 0,
+            "forbiddenHits": []
+          }
+        ]
+      },
+      "failures": [
+        {
+          "message": "Feed variant did not return 200.",
+          "pathname": "/feed/",
+          "variant": "bare",
+          "status": 0,
+          "finalUrl": "https://www.aiamigos.org/feed/"
+        },
+        {
+          "message": "Feed variant did not return 200.",
+          "pathname": "/feed/",
+          "variant": "cache-busted",
+          "status": 0,
+          "finalUrl": "https://www.aiamigos.org/feed/"
+        },
+        {
+          "message": "Feed variant did not return 200.",
+          "pathname": "/?feed=rss2&post_type=services",
+          "variant": "bare",
+          "status": 0,
+          "finalUrl": "https://www.aiamigos.org/?feed=rss2&post_type=services"
+        },
+        {
+          "message": "Feed variant did not return 200.",
+          "pathname": "/?feed=rss2&post_type=services",
+          "variant": "cache-busted",
+          "status": 0,
+          "finalUrl": "https://www.aiamigos.org/?feed=rss2&post_type=services"
+        },
+        {
+          "message": "Feed variant did not return 200.",
+          "pathname": "/?feed=rss2&post_type=classes",
+          "variant": "bare",
+          "status": 0,
+          "finalUrl": "https://www.aiamigos.org/?feed=rss2&post_type=classes"
+        },
+        {
+          "message": "Feed variant did not return 200.",
+          "pathname": "/?feed=rss2&post_type=classes",
+          "variant": "cache-busted",
+          "status": 0,
+          "finalUrl": "https://www.aiamigos.org/?feed=rss2&post_type=classes"
+        },
+        {
+          "message": "Feed variant did not return 200.",
+          "pathname": "/?feed=rss2&post_type=testimonials",
+          "variant": "bare",
+          "status": 0,
+          "finalUrl": "https://www.aiamigos.org/?feed=rss2&post_type=testimonials"
+        },
+        {
+          "message": "Feed variant did not return 200.",
+          "pathname": "/?feed=rss2&post_type=testimonials",
+          "variant": "cache-busted",
+          "status": 0,
+          "finalUrl": "https://www.aiamigos.org/?feed=rss2&post_type=testimonials"
+        },
+        {
+          "message": "Feed variant did not return 200.",
+          "pathname": "/?feed=rss2&post_type=team",
+          "variant": "bare",
+          "status": 0,
+          "finalUrl": "https://www.aiamigos.org/?feed=rss2&post_type=team"
+        },
+        {
+          "message": "Feed variant did not return 200.",
+          "pathname": "/?feed=rss2&post_type=team",
+          "variant": "cache-busted",
+          "status": 0,
+          "finalUrl": "https://www.aiamigos.org/?feed=rss2&post_type=team"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "security.registration_closed",
+      "title": "Public account registration is closed",
+      "severity": "critical",
+      "status": "skip",
+      "summary": "Registration was not observable.",
+      "metrics": {
+        "observed": false,
+        "status": 0,
+        "finalUrl": "https://www.aiamigos.org/wp-login.php?action=register"
+      },
+      "failures": [],
+      "notes": [
+        "The registration endpoint is not present in the selected snapshot."
+      ]
+    },
+    {
+      "id": "inventory.sitemaps",
+      "title": "Sitemap and indexable inventory",
+      "severity": "critical",
+      "status": "fail",
+      "summary": "Sitemap/indexability invariants failed.",
+      "metrics": {
+        "sitemapFiles": 0,
+        "sitemapUrls": 0,
+        "observedPages": 0,
+        "non200": 0,
+        "redirects": 0,
+        "noindex": 0,
+        "canonicalMismatch": 0
+      },
+      "failures": [
+        {
+          "message": "robots.txt was missing or non-200.",
+          "url": "https://www.aiamigos.org/robots.txt",
+          "status": 0
+        },
+        {
+          "message": "No valid sitemap was discovered."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "archives.pagination",
+      "title": "Blog pager uniqueness and completeness",
+      "severity": "critical",
+      "status": "fail",
+      "summary": "Pager routing, uniqueness, or completeness failed.",
+      "metrics": {
+        "pagerPages": 0,
+        "discoveredPagerNumbers": [],
+        "postSitemapUrls": 0,
+        "expectedPagerPages": 2,
+        "legacyPagerProbeThrough": 2,
+        "legacyPagerUrlsObserved": 0
+      },
+      "failures": [
+        {
+          "message": "Primary blog archive cannot be crawled.",
+          "url": "https://www.aiamigos.org/blog/",
+          "status": 0
+        },
+        {
+          "message": "No valid primary blog pager page was found.",
+          "url": "https://www.aiamigos.org/blog/"
+        },
+        {
+          "message": "Discovered blog pager has a numeric gap.",
+          "missingPages": [
+            1
+          ]
+        }
+      ],
+      "notes": [
+        "Legacy root pager behavior is not present in the offline snapshot."
+      ]
+    },
+    {
+      "id": "links.internal_integrity",
+      "title": "Internal broken links and redirect waste",
+      "severity": "critical",
+      "status": "pass",
+      "summary": "No broken or redirecting internal targets were found.",
+      "metrics": {
+        "sourcePages": 0,
+        "uniqueInternalTargets": 0,
+        "discoveredArchivePagerTargets": 0,
+        "testedTargets": 0,
+        "unobservedTargets": 0,
+        "requestErrors": 0,
+        "brokenTargets": 0,
+        "redirectingTargets": 0,
+        "directNoncanonicalTargets": 0
+      },
+      "failures": [],
+      "notes": []
+    },
+    {
+      "id": "inventory.discovered_indexables",
+      "title": "Discovered indexable routes outside canonical inventory",
+      "severity": "high",
+      "status": "pass",
+      "summary": "No configured legacy/archive indexability leak was found.",
+      "metrics": {
+        "discoveredHtmlPages": 0,
+        "indexableOutsideSitemap": 0,
+        "disallowedIndexables": 0
+      },
+      "failures": [],
+      "notes": [
+        "Indexable pagination may legitimately sit outside XML sitemaps; only configured disallowed path classes fail this check."
+      ]
+    },
+    {
+      "id": "pages.metadata",
+      "title": "Metadata, canonicals, and social cards",
+      "severity": "high",
+      "status": "skip",
+      "summary": "Metadata could not be evaluated without healthy canonical pages.",
+      "metrics": {
+        "pages": 0,
+        "missingTitles": 0,
+        "missingDescriptions": 0,
+        "invalidDescriptionTagCounts": 0,
+        "invalidOpenGraphDescriptionTagCounts": 0,
+        "invalidTwitterDescriptionTagCounts": 0,
+        "longTitles": 0,
+        "longDescriptions": 0,
+        "incompleteOpenGraph": 0,
+        "incompleteTwitter": 0
+      },
+      "failures": [],
+      "notes": [
+        "Zero healthy, indexable canonical HTML pages were available; this check cannot establish compliance."
+      ]
+    },
+    {
+      "id": "pages.social_images",
+      "title": "Social image resources and approved 1200x630 fallback",
+      "severity": "high",
+      "status": "fail",
+      "summary": "Social image delivery or fallback approval remains incomplete.",
+      "metrics": {
+        "pages": 0,
+        "references": 0,
+        "uniqueReferencedImages": 0,
+        "invalidHttpsReferences": 0,
+        "fetchedImages": 1,
+        "sharedAcrossPages": 0,
+        "fallback": {
+          "url": "https://www.aiamigos.org/wp-content/uploads/2023/10/cropped-logo-5.png",
+          "status": null,
+          "contentType": null,
+          "width": null,
+          "height": null,
+          "sha256": null,
+          "referenceCount": 0,
+          "approvalStatus": "pending"
+        },
+        "images": [
+          {
+            "url": "https://www.aiamigos.org/wp-content/uploads/2023/10/cropped-logo-5.png",
+            "occurrences": [
+              {
+                "pageUrl": null,
+                "kind": "configured-fallback"
+              }
+            ],
+            "observed": false,
+            "status": null,
+            "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2023/10/cropped-logo-5.png",
+            "redirectCount": 0,
+            "contentType": null,
+            "contentLength": 0,
+            "sha256": null,
+            "format": null,
+            "width": null,
+            "height": null
+          }
+        ]
+      },
+      "failures": [
+        {
+          "message": "Social image was not observed.",
+          "url": "https://www.aiamigos.org/wp-content/uploads/2023/10/cropped-logo-5.png",
+          "code": "unobserved",
+          "evidence": {
+            "observed": false,
+            "status": null,
+            "finalUrl": "https://www.aiamigos.org/wp-content/uploads/2023/10/cropped-logo-5.png",
+            "redirectCount": 0,
+            "contentType": null,
+            "contentLength": 0,
+            "sha256": null,
+            "format": null,
+            "width": null,
+            "height": null
+          },
+          "occurrences": [
+            {
+              "pageUrl": null,
+              "kind": "configured-fallback"
+            }
+          ]
+        },
+        {
+          "message": "The 1200x630 fallback social card has no explicit approved status.",
+          "url": "https://www.aiamigos.org/wp-content/uploads/2023/10/cropped-logo-5.png",
+          "code": "not_approved",
+          "actual": null,
+          "expected": null
+        },
+        {
+          "message": "Fallback approval is missing sha256.",
+          "url": "https://www.aiamigos.org/wp-content/uploads/2023/10/cropped-logo-5.png",
+          "code": "missing_sha256",
+          "actual": null,
+          "expected": null
+        },
+        {
+          "message": "Fallback approval is missing approvedBy.",
+          "url": "https://www.aiamigos.org/wp-content/uploads/2023/10/cropped-logo-5.png",
+          "code": "missing_approvedBy",
+          "actual": null,
+          "expected": null
+        },
+        {
+          "message": "Fallback approval is missing approvedAt.",
+          "url": "https://www.aiamigos.org/wp-content/uploads/2023/10/cropped-logo-5.png",
+          "code": "missing_approvedAt",
+          "actual": null,
+          "expected": null
+        },
+        {
+          "message": "Fallback approval is missing evidenceId.",
+          "url": "https://www.aiamigos.org/wp-content/uploads/2023/10/cropped-logo-5.png",
+          "code": "missing_evidenceId",
+          "actual": null,
+          "expected": null
+        },
+        {
+          "message": "Fetched fallback social card is not exactly 1200x630.",
+          "url": "https://www.aiamigos.org/wp-content/uploads/2023/10/cropped-logo-5.png",
+          "code": "asset_dimensions",
+          "actual": {
+            "width": null,
+            "height": null
+          }
+        }
+      ],
+      "notes": [
+        "Zero healthy, indexable canonical HTML pages were available; this check cannot establish compliance.",
+        "A single approved fallback may be shared by many pages; this gate does not require page-specific or unique imagery.",
+        "Approval requires an exact 1200x630 asset, pinned SHA-256, named approver, date, and evidence ID; HTTP success alone is not brand approval or platform-preview proof."
+      ]
+    },
+    {
+      "id": "pages.headings",
+      "title": "Heading structure",
+      "severity": "high",
+      "status": "skip",
+      "summary": "Headings could not be evaluated without healthy canonical pages.",
+      "metrics": {
+        "pages": 0,
+        "missingOrMultipleH1": 0,
+        "pagesWithBlankHeadings": 0,
+        "pagesWithLevelSkips": 0
+      },
+      "failures": [],
+      "notes": [
+        "Zero healthy, indexable canonical HTML pages were available; this check cannot establish compliance."
+      ]
+    },
+    {
+      "id": "pages.jsonld",
+      "title": "JSON-LD syntax and identity hygiene",
+      "severity": "high",
+      "status": "skip",
+      "summary": "JSON-LD could not be evaluated without healthy canonical pages.",
+      "metrics": {
+        "pages": 0,
+        "missingJsonLd": 0,
+        "parseErrorPages": 0,
+        "placeholderPersonPages": 0
+      },
+      "failures": [],
+      "notes": [
+        "Zero healthy, indexable canonical HTML pages were available; this check cannot establish compliance."
+      ]
+    },
+    {
+      "id": "pages.jsonld_semantics",
+      "title": "JSON-LD claim allowlist and DOM/template consistency",
+      "severity": "high",
+      "status": "skip",
+      "summary": "JSON-LD semantic evidence could not be evaluated without healthy canonical pages.",
+      "metrics": {
+        "pages": 0,
+        "configuredAllowedTypes": [
+          "Article",
+          "BlogPosting",
+          "BreadcrumbList",
+          "CollectionPage",
+          "EducationalOrganization",
+          "ImageObject",
+          "ListItem",
+          "Organization",
+          "Person",
+          "Review",
+          "SearchAction",
+          "SiteNavigationElement",
+          "WebPage",
+          "WebSite"
+        ],
+        "approvalPackets": 0,
+        "failures": 0,
+        "failuresByCode": {},
+        "affectedPages": 0
+      },
+      "failures": [],
+      "notes": [
+        "Zero healthy, indexable canonical HTML pages were available; this check cannot establish compliance.",
+        "Parseability is reported separately. This check rejects unreviewed types, identity/review claims without complete approval packets, and configured DOM/template mismatches.",
+        "A green result records configured evidence consistency; it does not replace Schema Markup Validator/Rich Results output or establish that a real-world claim is true."
+      ]
+    },
+    {
+      "id": "content.leaks",
+      "title": "Shortcode, demo-copy, and placeholder leaks",
+      "severity": "critical",
+      "status": "fail",
+      "summary": "Public placeholder or shortcode leakage remains.",
+      "metrics": {
+        "pages": 0,
+        "hits": 0,
+        "affectedPages": 0,
+        "knownDemoPaths": 0,
+        "pagesWithoutMainLandmark": 0,
+        "countsByPattern": {
+          "raw_mailpoet_shortcode": 0,
+          "theme_latin_demo_copy": 0,
+          "placeholder_client_name": 0,
+          "placeholder_member_name": 0,
+          "placeholder_case_title": 0,
+          "placeholder_company_token": 0,
+          "placeholder_service_url": 0,
+          "misspelled_linkedin": 0
+        }
+      },
+      "failures": [
+        {
+          "message": "Zero healthy, indexable canonical HTML pages were available; this check cannot establish compliance.",
+          "healthyCanonicalPages": 0
+        }
+      ],
+      "notes": []
+    },
+    {
+      "id": "content.production_defects",
+      "title": "Known grammar and production defects",
+      "severity": "high",
+      "status": "skip",
+      "summary": "Production defects could not be evaluated without public HTML.",
+      "metrics": {
+        "pages": 0,
+        "hits": 0,
+        "affectedPages": 0,
+        "countsByDefect": {}
+      },
+      "failures": [],
+      "notes": [
+        "No observed public HTML was available for production-defect scanning.",
+        "Empty list items and explicit numbering sequences are checked only in main content and only for deterministic structural shapes."
+      ]
+    },
+    {
+      "id": "content.contact_exchange",
+      "title": "Contact exchange privacy and response expectation",
+      "severity": "high",
+      "status": "fail",
+      "summary": "The Contact exchange remains incomplete for M10.",
+      "metrics": {
+        "status": 0,
+        "exchangeCount": 0,
+        "adjacentPrivacyContext": false,
+        "explicitResponseExpectation": false,
+        "completeExchangeContext": false
+      },
+      "failures": [
+        {
+          "message": "The configured Contact page was not observed.",
+          "url": "https://www.aiamigos.org/contact/"
+        }
+      ],
+      "notes": [
+        "A statement that response timing is unpublished is honest interim copy, but it is not a time-bounded response expectation and cannot close M10."
+      ]
+    },
+    {
+      "id": "resources.http_references",
+      "title": "Explicit HTTP references",
+      "severity": "medium",
+      "status": "skip",
+      "summary": "HTTP references could not be evaluated without healthy canonical pages.",
+      "metrics": {
+        "pages": 0,
+        "affectedPages": 0,
+        "references": 0,
+        "uniqueReferences": 0
+      },
+      "failures": [],
+      "notes": [
+        "Zero healthy, indexable canonical HTML pages were available; this check cannot establish compliance."
+      ]
+    },
+    {
+      "id": "responses.headers",
+      "title": "Response security and cache headers",
+      "severity": "medium",
+      "status": "skip",
+      "summary": "Response headers could not be evaluated without healthy canonical pages.",
+      "metrics": {
+        "pages": 0,
+        "missingByHeader": {
+          "strict-transport-security": 0,
+          "x-content-type-options": 0,
+          "referrer-policy": 0,
+          "permissions-policy": 0
+        },
+        "missingFrameProtection": 0,
+        "missingCacheControl": 0,
+        "poweredByExposed": 0
+      },
+      "failures": [],
+      "notes": [
+        "Zero healthy, indexable canonical HTML pages were available; this check cannot establish compliance."
+      ]
+    },
+    {
+      "id": "browser.runtime",
+      "title": "Rendered console and runtime health",
+      "severity": "high",
+      "status": "skip",
+      "summary": "Rendered runtime was not observed.",
+      "metrics": {
+        "pages": 0,
+        "wafBlocked403": 0,
+        "exceptions": 0,
+        "consoleErrors": 0,
+        "logErrors": 0,
+        "networkFailures": 0
+      },
+      "failures": [],
+      "notes": [
+        "Browser probe failed before completion: CDP command timed out: Page.enable"
+      ]
+    },
+    {
+      "id": "browser.accessibility",
+      "title": "Structured mobile control accessibility evidence",
+      "severity": "high",
+      "status": "skip",
+      "summary": "Structured rendered accessibility evidence was not collected.",
+      "metrics": {
+        "configuredRootUrl": "https://www.aiamigos.org/",
+        "observedPageUrl": null,
+        "violationCount": 0,
+        "violationCodes": [],
+        "evidence": null
+      },
+      "failures": [],
+      "notes": [
+        "Rendered DOM, bounding boxes, focus, keyboard handlers, and autoplay state were not observed."
+      ]
+    },
+    {
+      "id": "performance.budgets",
+      "title": "HTML and rendered transfer budgets",
+      "severity": "high",
+      "status": "skip",
+      "summary": "Only static performance budgets were observable.",
+      "metrics": {
+        "staticPages": [],
+        "rejectedStaticPages": [],
+        "browserPages": [],
+        "budgets": {
+          "htmlBytes": 250000,
+          "totalTransferBytes": 3000000,
+          "imageTransferBytes": 1500000,
+          "scriptTransferBytes": 750000,
+          "resourceCount": 80,
+          "scriptCount": 20,
+          "domNodes": 1500,
+          "horizontalOverflowPx": 0
+        }
+      },
+      "failures": [],
+      "notes": [
+        "No observed 200 HTML route was available for static performance checks.",
+        "Transfer-byte and rendered-DOM budgets require live browser observation; static HTML checks still ran."
+      ]
+    }
+  ],
+  "evidence": {
+    "robots": {
+      "url": "https://www.aiamigos.org/robots.txt",
+      "status": 0,
+      "observed": false
+    },
+    "sitemaps": [],
+    "browser": {
+      "skipped": true,
+      "failed": true,
+      "reason": "Browser probe failed before completion: CDP command timed out: Page.enable",
+      "pagesCompleted": 0
+    },
+    "cacheBypass": {
+      "mode": "off",
+      "reservedQueryParameter": "_aiamigos_cache_bust"
+    },
+    "limitations": [
+      "This is a deterministic lab crawl, not Search Console, field Core Web Vitals, analytics, or legal validation.",
+      "The structured accessibility probe observes rendered DOM attributes, CSS-pixel boxes, focus, and synthetic keyboard events; it is not a platform accessibility-tree snapshot, human keyboard session, screen-reader test, or certification."
+    ]
+  },
+  "config": {
+    "routes": {
+      "root": "/",
+      "oldHome": "/home/",
+      "blog": "/blog/",
+      "legacyPageTwo": "/page/2/",
+      "contact": "/contact/"
+    },
+    "routePolicies": {
+      "gonePaths": [
+        "/classes/recent-case-title-01/",
+        "/classes/recent-case-title-02/",
+        "/testimonials/client-name-01/",
+        "/testimonials/client-name-02/",
+        "/testimonials/client-name-03/",
+        "/team/member-name-02/",
+        "/team/member-name-03/",
+        "/team/member-name-04/",
+        "/services/ai-amigos-academy/",
+        "/services/ai-amigos-pro/",
+        "/services/ai-by-job-role/",
+        "/services/ai-for-kids/",
+        "/ai-certifications/",
+        "/gpt-models/",
+        "/grokai/",
+        "/ai-model-benchmarks-a-comprehensive-guide/",
+        "/others/",
+        "/shop/",
+        "/langgraph-5-stunning-secrets-for-building-a-generative-ai-application/",
+        "/ways-to-test-a-rag-architecture-based-generative-ai-application/",
+        "/building-agentic-ai-saas-a-strategic-roadmap-using-google-gemini-enterprise/",
+        "/custom-gpt-models/",
+        "/services/",
+        "/classes/",
+        "/ai-tools-for-kids/",
+        "/ai-books-for-kids/",
+        "/newsletter/",
+        "/newsletter-2/"
+      ],
+      "quarantinedPaths": [
+        "/privacy-policy-2/",
+        "/page/",
+        "/academy/",
+        "/ai-career/"
+      ],
+      "unpublishedPaths": [],
+      "permanentRedirects": {},
+      "preservedPaths": [
+        "/team/member-name-01/"
+      ],
+      "registrationPath": "/wp-login.php?action=register"
+    },
+    "feedPaths": [
+      "/feed/",
+      "/?feed=rss2&post_type=services",
+      "/?feed=rss2&post_type=classes",
+      "/?feed=rss2&post_type=testimonials",
+      "/?feed=rss2&post_type=team"
+    ],
+    "concurrency": 10,
+    "timeoutMs": 20000,
+    "maxSitemaps": 50,
+    "maxSitemapUrls": 1000,
+    "maxInternalTargets": 500,
+    "internalProbeSeedLimit": 30,
+    "maxPagerPages": 50,
+    "detailLimit": 50,
+    "expectedBrandPattern": "AI\\s*Amigos",
+    "genericRootTitlePattern": "^(?:blog|home|welcome)$",
+    "metadata": {
+      "titleMin": 10,
+      "titleMax": 60,
+      "descriptionMin": 50,
+      "descriptionMax": 160,
+      "requireSocialImages": true
+    },
+    "socialImages": {
+      "allowedContentTypes": [
+        "image/png",
+        "image/jpeg",
+        "image/webp"
+      ],
+      "maxBytes": 5000000,
+      "fallbackApproval": {
+        "status": "pending",
+        "url": "/wp-content/uploads/2023/10/cropped-logo-5.png",
+        "width": 1200,
+        "height": 630,
+        "sha256": null,
+        "approvedBy": null,
+        "approvedAt": null,
+        "evidenceId": null
+      }
+    },
+    "schemaGovernance": {
+      "allowedTypes": [
+        "Article",
+        "BlogPosting",
+        "BreadcrumbList",
+        "CollectionPage",
+        "EducationalOrganization",
+        "ImageObject",
+        "ListItem",
+        "Organization",
+        "Person",
+        "Review",
+        "SearchAction",
+        "SiteNavigationElement",
+        "WebPage",
+        "WebSite"
+      ],
+      "approvalRequiredTypes": [
+        "Person",
+        "Organization",
+        "EducationalOrganization",
+        "Review"
+      ],
+      "claimAllowlist": [],
+      "collectionPagePathPatterns": [
+        "^/blog/?$"
+      ],
+      "articleDeniedPathPatterns": [
+        "^/$",
+        "^/blog/?$"
+      ],
+      "articleBodyClassPatterns": [
+        "\\bsingle-post\\b"
+      ]
+    },
+    "headings": {
+      "maxHeadingWords": 60,
+      "disallowLevelSkips": true
+    },
+    "performance": {
+      "htmlBytes": 250000,
+      "totalTransferBytes": 3000000,
+      "imageTransferBytes": 1500000,
+      "scriptTransferBytes": 750000,
+      "resourceCount": 80,
+      "scriptCount": 20,
+      "domNodes": 1500,
+      "horizontalOverflowPx": 0
+    },
+    "browser": {
+      "settleMs": 2000,
+      "width": 390,
+      "height": 844,
+      "deviceScaleFactor": 1,
+      "mobile": true,
+      "maxPages": 4,
+      "paths": [
+        "/",
+        "/blog/",
+        "/contact/",
+        "/team/member-name-01/"
+      ],
+      "accessibility": {
+        "enabled": true,
+        "rootPath": "/",
+        "expectedCarouselDots": 20,
+        "minTargetPx": 44,
+        "autoplayObservationMs": 6250,
+        "minAutoplayObservationMs": 6000,
+        "interactionSettleMs": 650
+      }
+    },
+    "requiredHeaders": [
+      "strict-transport-security",
+      "x-content-type-options",
+      "referrer-policy",
+      "permissions-policy"
+    ],
+    "requireFrameProtection": true,
+    "requireHtmlCachePolicy": true,
+    "forbidPoweredBy": true,
+    "disallowedIndexablePathPatterns": [
+      "^/author/",
+      "^/page/[2-9][0-9]*/?$",
+      "^/category/"
+    ],
+    "placeholderPatterns": [
+      {
+        "id": "raw_mailpoet_shortcode",
+        "pattern": "\\[mailpoet_form\\b[^\\]]*\\]",
+        "flags": "i",
+        "scope": "body"
+      },
+      {
+        "id": "theme_latin_demo_copy",
+        "pattern": "Te obtinuit ut adepto satis somno",
+        "flags": "i"
+      },
+      {
+        "id": "placeholder_client_name",
+        "pattern": "\\bClient Name \\d{1,2}\\b",
+        "flags": "i",
+        "scope": "body"
+      },
+      {
+        "id": "placeholder_member_name",
+        "pattern": "\\bMember Name \\d{1,2}\\b",
+        "flags": "i",
+        "scope": "body"
+      },
+      {
+        "id": "placeholder_case_title",
+        "pattern": "\\bRecent Case Title \\d{1,2}\\b",
+        "flags": "i",
+        "scope": "body"
+      },
+      {
+        "id": "placeholder_company_token",
+        "pattern": "\\[Your Company Name(?:/AIAmigos\\.org)?\\]",
+        "flags": "i"
+      },
+      {
+        "id": "placeholder_service_url",
+        "pattern": "\\bService Url\\b",
+        "flags": "i"
+      },
+      {
+        "id": "misspelled_linkedin",
+        "pattern": "\\bLinkden\\b",
+        "flags": "i"
+      }
+    ]
+  }
+}

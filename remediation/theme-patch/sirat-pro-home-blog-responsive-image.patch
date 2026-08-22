@@ -1,0 +1,23 @@
+--- wp-content/themes/sirat-pro/template-parts/home/section-our-blog.php
++++ wp-content/themes/sirat-pro/template-parts/home/section-our-blog.php
+@@ -90,3 +90,19 @@
+               <div class="latest-blog-image">
+-                 <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id()); ?>" alt="<?php echo esc_html(get_theme_mod('vw_sirat_pro_blog_image_alt_text' . $i)); ?>">
++                <?php
++                $aiamigos_blog_image_id = get_post_thumbnail_id();
++                if ( $aiamigos_blog_image_id ) {
++                  echo wp_get_attachment_image(
++                    $aiamigos_blog_image_id,
++                    'medium_large',
++                    false,
++                    array(
++                      'class'    => 'aiamigos-home-blog-image',
++                      'alt'      => wp_strip_all_tags( (string) get_theme_mod( 'vw_sirat_pro_blog_image_alt_text' . $i ) ),
++                      'loading'  => 'lazy',
++                      'decoding' => 'async',
++                      'sizes'    => '(max-width: 767px) calc(100vw - 30px), (max-width: 1199px) 50vw, 33vw',
++                    )
++                  );
++                }
++                ?>
+                 <div class="blog-date" style="<?php if (has_post_thumbnail() == "")

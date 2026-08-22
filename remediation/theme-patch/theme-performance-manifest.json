@@ -1,0 +1,26 @@
+{
+  "generatedAt": "2026-08-13",
+  "scope": "staging-only Sirat Pro compatibility patch for H3 mobile payload",
+  "targets": [
+    {
+      "remotePath": "wp-content/themes/sirat-pro/template-parts/home/section-our-blog.php",
+      "preimagePath": "remediation/theme-patch/evidence/section-our-blog.php.patched",
+      "preimageSha256": "2dea4f7a2800034b9addc82be14e7da18002d155cc6d829f0f1fc15b2a84e815",
+      "patchPath": "remediation/theme-patch/sirat-pro-home-blog-responsive-image.patch",
+      "preparedPath": "remediation/theme-patch/prepared/wp-content/themes/sirat-pro/template-parts/home/section-our-blog.php",
+      "preparedSha256": "8cc6a5771f0b7ae557c263a3cf422976751eb655079f0b611a19d02828206258",
+      "expectedReplacementCount": 1
+    },
+    {
+      "remotePath": "wp-content/themes/sirat-pro/template-parts/post/post-content.php",
+      "preimagePath": "remediation/theme-patch/evidence/post-content.php.preimage",
+      "preimageSha256": "8b024f9215d35798fa220b9c827e712bfd0fb777016e66a52f31726911c7822c",
+      "patchPath": "remediation/theme-patch/sirat-pro-archive-responsive-image.patch",
+      "preparedPath": "remediation/theme-patch/prepared/wp-content/themes/sirat-pro/template-parts/post/post-content.php",
+      "preparedSha256": "f24051f220b6191122db539201a3aad582e474b8e402d917f3b9ae392272c070",
+      "expectedReplacementCount": 3
+    }
+  ],
+  "rollback": "Restore the exact preimage bytes for both targets and purge only the affected staging cache keys.",
+  "productionAuthorized": false
+}

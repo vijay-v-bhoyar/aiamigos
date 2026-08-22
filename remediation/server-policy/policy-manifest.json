@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "status": "dormant-not-deployed",
+  "target": "https://remediation.aiamigos.org/ document-root .htaccess insertion",
+  "artifact": "aiamigos-origin-policy.htaccess",
+  "sha256": "f211e0af8ce7090222647965fa079a9af85ca4afbaba7336aceaa0b2e5245421",
+  "actualBytes": 4848,
+  "maxBytes": 8192,
+  "markers": {
+    "begin": "# BEGIN AIAMIGOS ORIGIN POLICY v1",
+    "end": "# END AIAMIGOS ORIGIN POLICY v1"
+  },
+  "placement": {
+    "afterLastCompletedProviderOrCacheBlock": true,
+    "immediatelyBefore": "# BEGIN WordPress",
+    "insideWordPressManagedBlock": false,
+    "requiresExactlyOneWordPressMarkerPair": true,
+    "abortWhenAmbiguous": true
+  },
+  "publicHtmlAllowlist": [
+    "/",
+    "/blog/",
+    "/about-us/",
+    "/contact/",
+    "/privacy-policy-2/",
+    "/team/member-name-01/"
+  ],
+  "originPublicCacheEnabled": false,
+  "cspDisposition": "report-only",
+  "productionAuthorized": false
+}

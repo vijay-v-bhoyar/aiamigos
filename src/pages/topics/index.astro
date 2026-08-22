@@ -1,0 +1,15 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { site } from '../../data/site';
+---
+<BaseLayout title="Topics" description="Explore the AI Amigos professional AI topic paths.">
+  <div class="shell reading">
+    <p class="eyebrow">The field guide</p>
+    <h1>Topics with a clear job to do.</h1>
+    <p class="lede">Topic hubs explain concepts in context. For a task-first route with a workbench and templates, use the practical tracks.</p>
+    <p><a class="button" href="/tracks/">Choose a practical track</a></p>
+    <div class="topic-grid" style="margin-top: 2rem;">
+      {site.topics.map((topic) => <a class="topic-link" href={`/topics/${topic.slug}/`}><strong>{topic.label}</strong><span>{topic.description}</span></a>)}
+    </div>
+  </div>
+</BaseLayout>

@@ -1065,8 +1065,8 @@
     "semantic_hash": ""
   },
   "package.json": {
-    "mtime": 1787426629.8506422,
-    "ast_hash": "5b343526893c1583679c54128bac3741",
+    "mtime": 1787427992.7828584,
+    "ast_hash": "11f8bafe33f4a789f89541f6745f4325",
     "semantic_hash": ""
   },
   "scripts/import-snapshot.mjs": {
@@ -1080,8 +1080,8 @@
     "semantic_hash": ""
   },
   "scripts/verify-static-site.mjs": {
-    "mtime": 1787427514.191346,
-    "ast_hash": "e35fddf1e31fa5c85730b7bfd19b0739",
+    "mtime": 1787428162.9849737,
+    "ast_hash": "327d73a02a3940b92709c258a24073a9",
     "semantic_hash": ""
   },
   "src/components/ArticleCard.astro": {
@@ -1095,8 +1095,8 @@
     "semantic_hash": ""
   },
   "src/content.config.ts": {
-    "mtime": 1787426780.4842608,
-    "ast_hash": "e1cff9ac62e3c855dd39afd3e2ea54eb",
+    "mtime": 1787428104.3967304,
+    "ast_hash": "b4790d92aa4c8ecb3bdca3ca2bac879d",
     "semantic_hash": ""
   },
   "src/data/site.ts": {
@@ -1120,8 +1120,8 @@
     "semantic_hash": ""
   },
   "src/pages/articles/[...slug].astro": {
-    "mtime": 1787427171.404666,
-    "ast_hash": "3597149f70a35fbb83c1ffa1f2856100",
+    "mtime": 1787428138.7339773,
+    "ast_hash": "fcaea92b7a355a8fd798ca108c57509b",
     "semantic_hash": ""
   },
   "src/pages/articles/index.astro": {
@@ -1595,8 +1595,8 @@
     "semantic_hash": ""
   },
   "scripts/check-content.mjs": {
-    "mtime": 1787427260.4850328,
-    "ast_hash": "6ac15102e33510ac17abb69f9f5ec35a",
+    "mtime": 1787427756.712737,
+    "ast_hash": "7d3fcb5e15a960113f44d8c2ab95f166",
     "semantic_hash": ""
   },
   "scripts/sync-feeds.mjs": {
@@ -1665,8 +1665,8 @@
     "semantic_hash": ""
   },
   "tests/platform-contract.test.mjs": {
-    "mtime": 1787426502.8805184,
-    "ast_hash": "1c4734794d958b149a3cf8843668c47b",
+    "mtime": 1787427812.5120106,
+    "ast_hash": "5fae146abe4e26d378284d094ba949ed",
     "semantic_hash": ""
   },
   "tests/tool-engine.test.mjs": {
@@ -1675,13 +1675,23 @@
     "semantic_hash": ""
   },
   ".github/workflows/deploy.yml": {
-    "mtime": 1787426643.898403,
-    "ast_hash": "b4505afed0e16fb0136440681ea33fb5",
+    "mtime": 1787427857.1011147,
+    "ast_hash": "24f91cbdacd3f418282a2c011fec423d",
     "semantic_hash": ""
   },
   ".github/workflows/quality.yml": {
     "mtime": 1787426642.7591035,
     "ast_hash": "2bdebfbbfd4bb9aa61d273a9a999cbcb",
+    "semantic_hash": ""
+  },
+  "scripts/deploy-hostinger.mjs": {
+    "mtime": 1787427855.7124104,
+    "ast_hash": "ee5a40e7caeb12d40f841b2cd7885de9",
+    "semantic_hash": ""
+  },
+  "src/data/resource-graph.mjs": {
+    "mtime": 1787427755.1505954,
+    "ast_hash": "e6c3b66f0b9bf2bb2b5fc3f8dc1f9de6",
     "semantic_hash": ""
   }
 }

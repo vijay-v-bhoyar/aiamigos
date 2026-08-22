@@ -12449,28 +12449,6 @@
       "norm_label": "generative-and-discriminative-models.md"
     },
     {
-      "label": "AI Amigos editorial trust and publication governance plan",
-      "file_type": "document",
-      "source_file": "remediation/editorial-trust-governance-plan.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "remediation_editorial_trust_governance_plan_ai_amigos_editorial_trust_and_publication_governance_plan",
-      "community": 14,
-      "community_name": "Finding actions",
-      "norm_label": "ai amigos editorial trust and publication governance plan"
-    },
-    {
-      "label": "Automated versus human proof register",
-      "file_type": "document",
-      "source_file": "remediation/editorial-trust-governance-plan.md",
-      "source_location": "L343",
-      "_origin": "ast",
-      "id": "remediation_editorial_trust_governance_plan_automated_versus_human_proof_register",
-      "community": 14,
-      "community_name": "Finding actions",
-      "norm_label": "automated versus human proof register"
-    },
-    {
       "label": "C5 - High-stakes career guidance contains mislabeled, retired, or unsupported credentials",
       "file_type": "document",
       "source_file": "remediation/editorial-trust-governance-plan.md",
@@ -12515,39 +12493,6 @@
       "norm_label": "c8 - there is no accountable author behind 71 posts"
     },
     {
-      "label": "Decision boundary",
-      "file_type": "document",
-      "source_file": "remediation/editorial-trust-governance-plan.md",
-      "source_location": "L8",
-      "_origin": "ast",
-      "id": "remediation_editorial_trust_governance_plan_decision_boundary",
-      "community": 14,
-      "community_name": "Finding actions",
-      "norm_label": "decision boundary"
-    },
-    {
-      "label": "Evidence packet required for any publication",
-      "file_type": "document",
-      "source_file": "remediation/editorial-trust-governance-plan.md",
-      "source_location": "L61",
-      "_origin": "ast",
-      "id": "remediation_editorial_trust_governance_plan_evidence_packet_required_for_any_publication",
-      "community": 14,
-      "community_name": "Finding actions",
-      "norm_label": "evidence packet required for any publication"
-    },
-    {
-      "label": "Fail-closed publication policy",
-      "file_type": "document",
-      "source_file": "remediation/editorial-trust-governance-plan.md",
-      "source_location": "L49",
-      "_origin": "ast",
-      "id": "remediation_editorial_trust_governance_plan_fail_closed_publication_policy",
-      "community": 14,
-      "community_name": "Finding actions",
-      "norm_label": "fail-closed publication policy"
-    },
-    {
       "label": "Finding actions",
       "file_type": "document",
       "source_file": "remediation/editorial-trust-governance-plan.md",
@@ -12557,17 +12502,6 @@
       "community": 14,
       "community_name": "Finding actions",
       "norm_label": "finding actions"
-    },
-    {
-      "label": "Finding coverage",
-      "file_type": "document",
-      "source_file": "remediation/editorial-trust-governance-plan.md",
-      "source_location": "L356",
-      "_origin": "ast",
-      "id": "remediation_editorial_trust_governance_plan_finding_coverage",
-      "community": 14,
-      "community_name": "Finding actions",
-      "norm_label": "finding coverage"
     },
     {
       "label": "H10 - About, mission, and service claims lack evidence",
@@ -12722,39 +12656,6 @@
       "community": 14,
       "community_name": "Finding actions",
       "norm_label": "m9 - taxonomy has no visible editorial strategy"
-    },
-    {
-      "label": "Release sequence and closure accounting",
-      "file_type": "document",
-      "source_file": "remediation/editorial-trust-governance-plan.md",
-      "source_location": "L330",
-      "_origin": "ast",
-      "id": "remediation_editorial_trust_governance_plan_release_sequence_and_closure_accounting",
-      "community": 14,
-      "community_name": "Finding actions",
-      "norm_label": "release sequence and closure accounting"
-    },
-    {
-      "label": "Required roles and separation of duties",
-      "file_type": "document",
-      "source_file": "remediation/editorial-trust-governance-plan.md",
-      "source_location": "L28",
-      "_origin": "ast",
-      "id": "remediation_editorial_trust_governance_plan_required_roles_and_separation_of_duties",
-      "community": 14,
-      "community_name": "Finding actions",
-      "norm_label": "required roles and separation of duties"
-    },
-    {
-      "label": "Status vocabulary",
-      "file_type": "document",
-      "source_file": "remediation/editorial-trust-governance-plan.md",
-      "source_location": "L16",
-      "_origin": "ast",
-      "id": "remediation_editorial_trust_governance_plan_status_vocabulary",
-      "community": 14,
-      "community_name": "Finding actions",
-      "norm_label": "status vocabulary"
     },
     {
       "label": "gpt-models.md",
@@ -13450,6 +13351,105 @@
       "norm_label": "sourcespath"
     },
     {
+      "label": "AI Amigos editorial trust and publication governance plan",
+      "file_type": "document",
+      "source_file": "remediation/editorial-trust-governance-plan.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "remediation_editorial_trust_governance_plan_ai_amigos_editorial_trust_and_publication_governance_plan",
+      "community": 173,
+      "community_name": "AI Amigos editorial trust and publication governance plan",
+      "norm_label": "ai amigos editorial trust and publication governance plan"
+    },
+    {
+      "label": "Automated versus human proof register",
+      "file_type": "document",
+      "source_file": "remediation/editorial-trust-governance-plan.md",
+      "source_location": "L343",
+      "_origin": "ast",
+      "id": "remediation_editorial_trust_governance_plan_automated_versus_human_proof_register",
+      "community": 173,
+      "community_name": "AI Amigos editorial trust and publication governance plan",
+      "norm_label": "automated versus human proof register"
+    },
+    {
+      "label": "Decision boundary",
+      "file_type": "document",
+      "source_file": "remediation/editorial-trust-governance-plan.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "remediation_editorial_trust_governance_plan_decision_boundary",
+      "community": 173,
+      "community_name": "AI Amigos editorial trust and publication governance plan",
+      "norm_label": "decision boundary"
+    },
+    {
+      "label": "Evidence packet required for any publication",
+      "file_type": "document",
+      "source_file": "remediation/editorial-trust-governance-plan.md",
+      "source_location": "L61",
+      "_origin": "ast",
+      "id": "remediation_editorial_trust_governance_plan_evidence_packet_required_for_any_publication",
+      "community": 173,
+      "community_name": "AI Amigos editorial trust and publication governance plan",
+      "norm_label": "evidence packet required for any publication"
+    },
+    {
+      "label": "Fail-closed publication policy",
+      "file_type": "document",
+      "source_file": "remediation/editorial-trust-governance-plan.md",
+      "source_location": "L49",
+      "_origin": "ast",
+      "id": "remediation_editorial_trust_governance_plan_fail_closed_publication_policy",
+      "community": 173,
+      "community_name": "AI Amigos editorial trust and publication governance plan",
+      "norm_label": "fail-closed publication policy"
+    },
+    {
+      "label": "Finding coverage",
+      "file_type": "document",
+      "source_file": "remediation/editorial-trust-governance-plan.md",
+      "source_location": "L356",
+      "_origin": "ast",
+      "id": "remediation_editorial_trust_governance_plan_finding_coverage",
+      "community": 173,
+      "community_name": "AI Amigos editorial trust and publication governance plan",
+      "norm_label": "finding coverage"
+    },
+    {
+      "label": "Release sequence and closure accounting",
+      "file_type": "document",
+      "source_file": "remediation/editorial-trust-governance-plan.md",
+      "source_location": "L330",
+      "_origin": "ast",
+      "id": "remediation_editorial_trust_governance_plan_release_sequence_and_closure_accounting",
+      "community": 173,
+      "community_name": "AI Amigos editorial trust and publication governance plan",
+      "norm_label": "release sequence and closure accounting"
+    },
+    {
+      "label": "Required roles and separation of duties",
+      "file_type": "document",
+      "source_file": "remediation/editorial-trust-governance-plan.md",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "remediation_editorial_trust_governance_plan_required_roles_and_separation_of_duties",
+      "community": 173,
+      "community_name": "AI Amigos editorial trust and publication governance plan",
+      "norm_label": "required roles and separation of duties"
+    },
+    {
+      "label": "Status vocabulary",
+      "file_type": "document",
+      "source_file": "remediation/editorial-trust-governance-plan.md",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "remediation_editorial_trust_governance_plan_status_vocabulary",
+      "community": 173,
+      "community_name": "AI Amigos editorial trust and publication governance plan",
+      "norm_label": "status vocabulary"
+    },
+    {
       "label": "astro:content",
       "file_type": "code",
       "source_file": "astro:content",
@@ -13648,81 +13648,92 @@
       "norm_label": "schema"
     },
     {
-      "label": "Accountable identity",
-      "file_type": "document",
-      "source_file": "remediation/STAGING_CHANGELOG_2026-08-13.md",
-      "source_location": "L72",
+      "label": "check-graph-artifact.mjs",
+      "file_type": "code",
+      "source_file": "scripts/check-graph-artifact.mjs",
+      "source_location": "L1",
       "_origin": "ast",
-      "id": "remediation_staging_changelog_2026_08_13_accountable_identity",
+      "id": "scripts_check_graph_artifact",
       "community": 176,
-      "community_name": "Staging changes",
-      "norm_label": "accountable identity"
+      "community_name": "check-graph-artifact.mjs",
+      "norm_label": "check-graph-artifact.mjs"
     },
     {
-      "label": "Platform",
-      "file_type": "document",
-      "source_file": "remediation/STAGING_CHANGELOG_2026-08-13.md",
-      "source_location": "L27",
+      "label": "endpointPairs",
+      "file_type": "code",
+      "source_file": "scripts/check-graph-artifact.mjs",
+      "source_location": "L29",
       "_origin": "ast",
-      "id": "remediation_staging_changelog_2026_08_13_platform",
+      "id": "scripts_check_graph_artifact_endpointpairs",
       "community": 176,
-      "community_name": "Staging changes",
-      "norm_label": "platform"
+      "community_name": "check-graph-artifact.mjs",
+      "norm_label": "endpointpairs"
     },
     {
-      "label": "Reading and navigation",
-      "file_type": "document",
-      "source_file": "remediation/STAGING_CHANGELOG_2026-08-13.md",
-      "source_location": "L38",
+      "label": "exactEdges",
+      "file_type": "code",
+      "source_file": "scripts/check-graph-artifact.mjs",
+      "source_location": "L30",
       "_origin": "ast",
-      "id": "remediation_staging_changelog_2026_08_13_reading_and_navigation",
+      "id": "scripts_check_graph_artifact_exactedges",
       "community": 176,
-      "community_name": "Staging changes",
-      "norm_label": "reading and navigation"
+      "community_name": "check-graph-artifact.mjs",
+      "norm_label": "exactedges"
     },
     {
-      "label": "Recoverable content quarantine",
-      "file_type": "document",
-      "source_file": "remediation/STAGING_CHANGELOG_2026-08-13.md",
-      "source_location": "L47",
+      "label": "findings",
+      "file_type": "code",
+      "source_file": "scripts/check-graph-artifact.mjs",
+      "source_location": "L14",
       "_origin": "ast",
-      "id": "remediation_staging_changelog_2026_08_13_recoverable_content_quarantine",
+      "id": "scripts_check_graph_artifact_findings",
       "community": 176,
-      "community_name": "Staging changes",
-      "norm_label": "recoverable content quarantine"
+      "community_name": "check-graph-artifact.mjs",
+      "norm_label": "findings"
     },
     {
-      "label": "Staging changes",
-      "file_type": "document",
-      "source_file": "remediation/STAGING_CHANGELOG_2026-08-13.md",
-      "source_location": "L25",
+      "label": "graph",
+      "file_type": "code",
+      "source_file": "scripts/check-graph-artifact.mjs",
+      "source_location": "L11",
       "_origin": "ast",
-      "id": "remediation_staging_changelog_2026_08_13_staging_changes",
+      "id": "scripts_check_graph_artifact_graph",
       "community": 176,
-      "community_name": "Staging changes",
-      "norm_label": "staging changes"
+      "community_name": "check-graph-artifact.mjs",
+      "norm_label": "graph"
     },
     {
-      "label": "Theme compatibility patches",
-      "file_type": "document",
-      "source_file": "remediation/STAGING_CHANGELOG_2026-08-13.md",
-      "source_location": "L86",
+      "label": "graphPath",
+      "file_type": "code",
+      "source_file": "scripts/check-graph-artifact.mjs",
+      "source_location": "L5",
       "_origin": "ast",
-      "id": "remediation_staging_changelog_2026_08_13_theme_compatibility_patches",
+      "id": "scripts_check_graph_artifact_graphpath",
       "community": 176,
-      "community_name": "Staging changes",
-      "norm_label": "theme compatibility patches"
+      "community_name": "check-graph-artifact.mjs",
+      "norm_label": "graphpath"
     },
     {
-      "label": "Update-request form",
-      "file_type": "document",
-      "source_file": "remediation/STAGING_CHANGELOG_2026-08-13.md",
-      "source_location": "L80",
+      "label": "nodeIds",
+      "file_type": "code",
+      "source_file": "scripts/check-graph-artifact.mjs",
+      "source_location": "L19",
       "_origin": "ast",
-      "id": "remediation_staging_changelog_2026_08_13_update_request_form",
+      "id": "scripts_check_graph_artifact_nodeids",
       "community": 176,
-      "community_name": "Staging changes",
-      "norm_label": "update-request form"
+      "community_name": "check-graph-artifact.mjs",
+      "norm_label": "nodeids"
+    },
+    {
+      "label": "root",
+      "file_type": "code",
+      "source_file": "scripts/check-graph-artifact.mjs",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "scripts_check_graph_artifact_root",
+      "community": 176,
+      "community_name": "check-graph-artifact.mjs",
+      "norm_label": "root"
     },
     {
       "label": "wp-plugin/aiamigos-remediation/assets/js/aiamigos-accessibility-remediation.js",
@@ -16812,8 +16823,19 @@
       "_origin": "ast",
       "id": "remediation_staging_changelog_2026_08_13",
       "community": 47,
-      "community_name": "AI Amigos staging remediation changelog \u2014 2026-08-13",
+      "community_name": "Staging changes",
       "norm_label": "staging_changelog_2026-08-13.md"
+    },
+    {
+      "label": "Accountable identity",
+      "file_type": "document",
+      "source_file": "remediation/STAGING_CHANGELOG_2026-08-13.md",
+      "source_location": "L72",
+      "_origin": "ast",
+      "id": "remediation_staging_changelog_2026_08_13_accountable_identity",
+      "community": 47,
+      "community_name": "Staging changes",
+      "norm_label": "accountable identity"
     },
     {
       "label": "AI Amigos staging remediation changelog \u2014 2026-08-13",
@@ -16823,7 +16845,7 @@
       "_origin": "ast",
       "id": "remediation_staging_changelog_2026_08_13_ai_amigos_staging_remediation_changelog_2026_08_13",
       "community": 47,
-      "community_name": "AI Amigos staging remediation changelog \u2014 2026-08-13",
+      "community_name": "Staging changes",
       "norm_label": "ai amigos staging remediation changelog \u2014 2026-08-13"
     },
     {
@@ -16834,7 +16856,7 @@
       "_origin": "ast",
       "id": "remediation_staging_changelog_2026_08_13_authority_and_rollback",
       "community": 47,
-      "community_name": "AI Amigos staging remediation changelog \u2014 2026-08-13",
+      "community_name": "Staging changes",
       "norm_label": "authority and rollback"
     },
     {
@@ -16845,7 +16867,7 @@
       "_origin": "ast",
       "id": "remediation_staging_changelog_2026_08_13_known_non_changes_and_release_blockers",
       "community": 47,
-      "community_name": "AI Amigos staging remediation changelog \u2014 2026-08-13",
+      "community_name": "Staging changes",
       "norm_label": "known non-changes and release blockers"
     },
     {
@@ -16856,8 +16878,19 @@
       "_origin": "ast",
       "id": "remediation_staging_changelog_2026_08_13_local_remediation_source_and_tests",
       "community": 47,
-      "community_name": "AI Amigos staging remediation changelog \u2014 2026-08-13",
+      "community_name": "Staging changes",
       "norm_label": "local remediation source and tests"
+    },
+    {
+      "label": "Platform",
+      "file_type": "document",
+      "source_file": "remediation/STAGING_CHANGELOG_2026-08-13.md",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "remediation_staging_changelog_2026_08_13_platform",
+      "community": 47,
+      "community_name": "Staging changes",
+      "norm_label": "platform"
     },
     {
       "label": "Production change",
@@ -16867,8 +16900,30 @@
       "_origin": "ast",
       "id": "remediation_staging_changelog_2026_08_13_production_change",
       "community": 47,
-      "community_name": "AI Amigos staging remediation changelog \u2014 2026-08-13",
+      "community_name": "Staging changes",
       "norm_label": "production change"
+    },
+    {
+      "label": "Reading and navigation",
+      "file_type": "document",
+      "source_file": "remediation/STAGING_CHANGELOG_2026-08-13.md",
+      "source_location": "L38",
+      "_origin": "ast",
+      "id": "remediation_staging_changelog_2026_08_13_reading_and_navigation",
+      "community": 47,
+      "community_name": "Staging changes",
+      "norm_label": "reading and navigation"
+    },
+    {
+      "label": "Recoverable content quarantine",
+      "file_type": "document",
+      "source_file": "remediation/STAGING_CHANGELOG_2026-08-13.md",
+      "source_location": "L47",
+      "_origin": "ast",
+      "id": "remediation_staging_changelog_2026_08_13_recoverable_content_quarantine",
+      "community": 47,
+      "community_name": "Staging changes",
+      "norm_label": "recoverable content quarantine"
     },
     {
       "label": "Regression evidence",
@@ -16878,8 +16933,41 @@
       "_origin": "ast",
       "id": "remediation_staging_changelog_2026_08_13_regression_evidence",
       "community": 47,
-      "community_name": "AI Amigos staging remediation changelog \u2014 2026-08-13",
+      "community_name": "Staging changes",
       "norm_label": "regression evidence"
+    },
+    {
+      "label": "Staging changes",
+      "file_type": "document",
+      "source_file": "remediation/STAGING_CHANGELOG_2026-08-13.md",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "remediation_staging_changelog_2026_08_13_staging_changes",
+      "community": 47,
+      "community_name": "Staging changes",
+      "norm_label": "staging changes"
+    },
+    {
+      "label": "Theme compatibility patches",
+      "file_type": "document",
+      "source_file": "remediation/STAGING_CHANGELOG_2026-08-13.md",
+      "source_location": "L86",
+      "_origin": "ast",
+      "id": "remediation_staging_changelog_2026_08_13_theme_compatibility_patches",
+      "community": 47,
+      "community_name": "Staging changes",
+      "norm_label": "theme compatibility patches"
+    },
+    {
+      "label": "Update-request form",
+      "file_type": "document",
+      "source_file": "remediation/STAGING_CHANGELOG_2026-08-13.md",
+      "source_location": "L80",
+      "_origin": "ast",
+      "id": "remediation_staging_changelog_2026_08_13_update_request_form",
+      "community": 47,
+      "community_name": "Staging changes",
+      "norm_label": "update-request form"
     },
     {
       "label": "Version 1.4.0 deployment",
@@ -16889,7 +16977,7 @@
       "_origin": "ast",
       "id": "remediation_staging_changelog_2026_08_13_version_1_4_0_deployment",
       "community": 47,
-      "community_name": "AI Amigos staging remediation changelog \u2014 2026-08-13",
+      "community_name": "Staging changes",
       "norm_label": "version 1.4.0 deployment"
     },
     {
@@ -19360,7 +19448,7 @@
       "label": "dependencies",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L19",
+      "source_location": "L20",
       "_origin": "ast",
       "id": "package_dependencies",
       "community": 88,
@@ -19371,7 +19459,7 @@
       "label": "astro",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L20",
+      "source_location": "L21",
       "_origin": "ast",
       "id": "package_dependencies_astro",
       "community": 88,
@@ -19382,7 +19470,7 @@
       "label": "pagefind",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L21",
+      "source_location": "L22",
       "_origin": "ast",
       "id": "package_dependencies_pagefind",
       "community": 88,
@@ -19393,7 +19481,7 @@
       "label": "ssh2-sftp-client",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L22",
+      "source_location": "L23",
       "_origin": "ast",
       "id": "package_dependencies_ssh2_sftp_client",
       "community": 88,
@@ -19470,7 +19558,7 @@
       "label": "deploy:hostinger",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L17",
+      "source_location": "L18",
       "_origin": "ast",
       "id": "package_scripts_deploy_hostinger",
       "community": 88,
@@ -19481,7 +19569,7 @@
       "label": "deploy:hostinger:prepare",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L16",
+      "source_location": "L17",
       "_origin": "ast",
       "id": "package_scripts_deploy_hostinger_prepare",
       "community": 88,
@@ -19511,10 +19599,21 @@
       "norm_label": "feeds:sync"
     },
     {
-      "label": "graph:update",
+      "label": "graph:check",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L15",
+      "_origin": "ast",
+      "id": "package_scripts_graph_check",
+      "community": 88,
+      "community_name": "scripts",
+      "norm_label": "graph:check"
+    },
+    {
+      "label": "graph:update",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L16",
       "_origin": "ast",
       "id": "package_scripts_graph_update",
       "community": 88,
@@ -19580,7 +19679,7 @@
       "label": "astro",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L20",
+      "source_location": "L21",
       "_origin": "ast",
       "id": "astro",
       "community": 88,
@@ -19591,7 +19690,7 @@
       "label": "pagefind",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L21",
+      "source_location": "L22",
       "_origin": "ast",
       "id": "pagefind",
       "community": 88,
@@ -19602,7 +19701,7 @@
       "label": "ssh2-sftp-client",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L22",
+      "source_location": "L23",
       "_origin": "ast",
       "id": "ssh2_sftp_client",
       "community": 88,
@@ -28848,7 +28947,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L20",
+      "source_location": "L21",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -28860,7 +28959,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L21",
+      "source_location": "L22",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -28872,7 +28971,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L22",
+      "source_location": "L23",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -31392,22 +31491,22 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L19",
+      "source_location": "L2",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package",
-      "target": "package_dependencies",
+      "target": "package_name",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L2",
+      "source_location": "L20",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package",
-      "target": "package_name",
+      "target": "package_dependencies",
       "confidence_score": 1.0
     },
     {
@@ -31458,7 +31557,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L20",
+      "source_location": "L21",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_dependencies",
@@ -31469,7 +31568,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L21",
+      "source_location": "L22",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_dependencies",
@@ -31480,7 +31579,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L22",
+      "source_location": "L23",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_dependencies",
@@ -31550,7 +31649,7 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_scripts",
-      "target": "package_scripts_graph_update",
+      "target": "package_scripts_graph_check",
       "confidence_score": 1.0
     },
     {
@@ -31561,7 +31660,7 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_scripts",
-      "target": "package_scripts_deploy_hostinger_prepare",
+      "target": "package_scripts_graph_update",
       "confidence_score": 1.0
     },
     {
@@ -31569,6 +31668,17 @@
       "confidence": "EXTRACTED",
       "source_file": "package.json",
       "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "package_scripts",
+      "target": "package_scripts_deploy_hostinger_prepare",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L18",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_scripts",
@@ -41368,6 +41478,83 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "scripts/check-graph-artifact.mjs",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_check_graph_artifact",
+      "target": "scripts_check_graph_artifact_graph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/check-graph-artifact.mjs",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_check_graph_artifact",
+      "target": "scripts_check_graph_artifact_findings",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/check-graph-artifact.mjs",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_check_graph_artifact",
+      "target": "scripts_check_graph_artifact_nodeids",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/check-graph-artifact.mjs",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_check_graph_artifact",
+      "target": "scripts_check_graph_artifact_endpointpairs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/check-graph-artifact.mjs",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_check_graph_artifact",
+      "target": "scripts_check_graph_artifact_exactedges",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/check-graph-artifact.mjs",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_check_graph_artifact",
+      "target": "scripts_check_graph_artifact_root",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/check-graph-artifact.mjs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_check_graph_artifact",
+      "target": "scripts_check_graph_artifact_graphpath",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "scripts/deploy-hostinger.mjs",
       "source_location": "L11",
       "weight": 1.0,
@@ -51137,5 +51324,6 @@
       "target": "src_components_toolrunner_track"
     }
   ],
-  "hyperedges": []
+  "hyperedges": [],
+  "built_at_commit": "59794d5a5a5ea270b84da5b7cd1cab4807a431bf"
 }

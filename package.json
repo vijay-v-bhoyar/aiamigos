@@ -12,6 +12,7 @@
     "test:unit": "node --test tests/*.test.mjs",
     "test": "npm run test:unit && node scripts/verify-static-site.mjs",
     "feeds:sync": "node scripts/sync-feeds.mjs",
+    "graph:check": "node scripts/check-graph-artifact.mjs",
     "graph:update": "graphify update .",
     "deploy:hostinger:prepare": "node scripts/prepare-hostinger-deploy.mjs",
     "deploy:hostinger": "node scripts/deploy-hostinger.mjs"

@@ -54,7 +54,7 @@
   "52": "AI Amigos staging content patch plan",
   "53": "FINDING_CLOSURE_STATUS_2026-08-13.md",
   "54": "manifest.json",
-  "55": "tracks/[slug]/index.astro",
+  "55": "deploy-hostinger.mjs",
   "56": "custom-657fd4ab0e.js",
   "57": "wp-consent-api.min-29676f10ff.js",
   "58": "templates.mjs",
@@ -172,9 +172,7 @@
   "170": "ways-to-test-a-rag-architecture-based-generative-ai-application.md",
   "171": "check-content.mjs",
   "172": "sync-feeds.mjs",
-  "173": "tool-engine.mjs",
-  "174": "topics/[slug]/index.astro",
+  "174": "tracks/[slug]/index.astro",
   "175": "[...slug].astro",
-  "176": "Staging changes",
-  "177": "ToolRunner.astro"
+  "176": "Staging changes"
 }

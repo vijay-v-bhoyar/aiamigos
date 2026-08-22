@@ -1,11 +1,11 @@
 # Graph Report - aiamigos  (2026-08-22)
 
 ## Corpus Check
-- 288 files · ~1,539,621 words
+- 290 files · ~1,540,380 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1740 nodes · 2667 edges · 178 communities (166 shown, 12 thin omitted)
+- 1762 nodes · 2698 edges · 176 communities (165 shown, 11 thin omitted)
 - Extraction: 89% EXTRACTED · 11% INFERRED · 0% AMBIGUOUS · INFERRED: 284 edges (avg confidence: 0.73)
 - Token cost: 0 input · 0 output
 
@@ -65,7 +65,7 @@
 - AI Amigos staging content patch plan
 - FINDING_CLOSURE_STATUS_2026-08-13.md
 - manifest.json
-- tracks/[slug]/index.astro
+- deploy-hostinger.mjs
 - wp-consent-api.min-29676f10ff.js
 - templates.mjs
 - PHP 8.4.24 validation evidence — v1.4.1 current source
@@ -83,11 +83,9 @@
 - content.config.ts
 - check-content.mjs
 - sync-feeds.mjs
-- tool-engine.mjs
-- topics/[slug]/index.astro
+- tracks/[slug]/index.astro
 - [...slug].astro
 - Staging changes
-- ToolRunner.astro
 
 ## God Nodes (most connected - your core abstractions)
 1. `AIAmigos_Remediation_Plugin` - 84 edges
@@ -116,7 +114,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (178 total, 12 thin omitted)
+## Communities (176 total, 11 thin omitted)
 
 ### Community 0 - "seo-regression.mjs"
 Cohesion: 0.06
@@ -128,11 +126,11 @@ Nodes (4): Owl(), prefixed(), TODO: Should be computed from number of min width 
 
 ### Community 2 - "jquery.min-01a0307c4b.js"
 Cohesion: 0.06
-Nodes (53): i(), l(), n(), o(), r(), s(), Se(), 243() (+45 more)
+Nodes (52): i(), l(), n(), o(), r(), s(), Se(), 243() (+44 more)
 
 ### Community 6 - "FakeElement"
-Cohesion: 0.06
-Nodes (14): buildCarouselFixture(), buildSlide(), failures, FakeClassList, FakeDocument, FakeElement, FakeEvent, matchesSimple() (+6 more)
+Cohesion: 0.05
+Nodes (23): buildCarouselFixture(), buildSlide(), failures, FakeClassList, FakeDocument, FakeElement, FakeEvent, matchesSimple() (+15 more)
 
 ### Community 7 - "High-severity findings"
 Cohesion: 0.04
@@ -159,8 +157,8 @@ Cohesion: 0.09
 Nodes (29): ancestorContext(), assetSource(), candidateProbeMap, decodeHtml(), extractImages(), extractScripts(), heavyImages, imageSource() (+21 more)
 
 ### Community 13 - "y"
-Cohesion: 0.22
-Nodes (26): E(), h(), j(), k(), l(), O(), u(), x() (+18 more)
+Cohesion: 0.20
+Nodes (27): J(), E(), h(), j(), k(), l(), O(), u() (+19 more)
 
 ### Community 14 - "Finding actions"
 Cohesion: 0.07
@@ -318,17 +316,17 @@ Nodes (4): Evidence boundary, PHP 8.4.24 validation evidence — 2026-08-13, Res
 Cohesion: 0.29
 Nodes (6): action, appliedAt, backupFiles, origin, schemaVersion, targets
 
-### Community 55 - "tracks/[slug]/index.astro"
-Cohesion: 0.21
-Nodes (6): sources, toolBySlug, tools, schema, articles, categoryMap
+### Community 55 - "deploy-hostinger.mjs"
+Cohesion: 0.16
+Nodes (11): dist, files, nextPaths, releaseId, releaseRoot, remotePath(), remoteRoot, required (+3 more)
 
 ### Community 57 - "wp-consent-api.min-29676f10ff.js"
 Cohesion: 0.70
 Nodes (4): consent_api_get_cookie(), consent_api_set_cookie(), wp_has_consent(), wp_set_consent()
 
 ### Community 58 - "templates.mjs"
-Cohesion: 0.19
-Nodes (6): templateMarkdown(), templates, markdown, schema, status, root
+Cohesion: 0.13
+Nodes (9): track(), templateBySlug, templateMarkdown(), templates, templates, markdown, schema, status (+1 more)
 
 ### Community 59 - "PHP 8.4.24 validation evidence — v1.4.1 current source"
 Cohesion: 0.40
@@ -343,8 +341,8 @@ Cohesion: 0.07
 Nodes (30): balancedDiv(), contentRoot, dataRoot, decodeHtml(), dispositions, extractBody(), firstParagraph(), frontmatter() (+22 more)
 
 ### Community 88 - "scripts"
-Cohesion: 0.10
-Nodes (20): astro, dependencies, astro, pagefind, name, private, scripts, build (+12 more)
+Cohesion: 0.08
+Nodes (23): astro, dependencies, astro, pagefind, ssh2-sftp-client, name, private, scripts (+15 more)
 
 ### Community 89 - "prepare-hostinger-deploy.mjs"
 Cohesion: 0.22
@@ -355,52 +353,48 @@ Cohesion: 0.29
 Nodes (6): astro/tsconfigs/strict, compilerOptions, allowJs, checkJs, verbatimModuleSyntax, extends
 
 ### Community 91 - "verify-static-site.mjs"
-Cohesion: 0.18
-Nodes (8): dist, existingPaths, failures, htmlFiles, root, templatePages, toolAssets, trackPages
+Cohesion: 0.17
+Nodes (9): articlePages, dist, existingPaths, failures, htmlFiles, root, templatePages, toolAssets (+1 more)
 
 ### Community 171 - "check-content.mjs"
-Cohesion: 0.24
-Nodes (7): articleDir, failures, files, root, slugs, trackBySlug, tracks
+Cohesion: 0.15
+Nodes (12): articleDir, failures, files, root, slugs, categoriesByTrack, resourceGraph, sources (+4 more)
 
 ### Community 172 - "sync-feeds.mjs"
 Cohesion: 0.20
 Nodes (10): cachePath, enabled, items, now, prior, root, sources, sourcesPath (+2 more)
 
-### Community 173 - "tool-engine.mjs"
-Cohesion: 0.45
-Nodes (9): buildCareerRoadmap(), buildEvaluationPlan(), buildTeachingPlan(), buildWorkflow(), clean(), containsSensitiveInput(), number(), scoreBusinessUseCase() (+1 more)
-
-### Community 174 - "topics/[slug]/index.astro"
-Cohesion: 0.22
-Nodes (4): topicBySlug, articles, categories, articles
+### Community 174 - "tracks/[slug]/index.astro"
+Cohesion: 0.15
+Nodes (7): topicBySlug, toolBySlug, articles, categories, articles, articles, categoryMap
 
 ### Community 175 - "[...slug].astro"
-Cohesion: 0.20
-Nodes (7): templateBySlug, categoryTrack, defaultTemplates, defaultTools, externalSources, schema, templates
+Cohesion: 0.29
+Nodes (5): categoryTrack, defaultTemplates, defaultTools, externalSources, schema
 
 ### Community 176 - "Staging changes"
 Cohesion: 0.29
 Nodes (7): Accountable identity, Platform, Reading and navigation, Recoverable content quarantine, Staging changes, Theme compatibility patches, Update-request form
 
 ## Knowledge Gaps
-- **523 isolated node(s):** `name`, `version`, `private`, `type`, `dev` (+518 more)
+- **535 isolated node(s):** `name`, `version`, `private`, `type`, `dev` (+530 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **12 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **11 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `value()` connect `FakeElement` to `seo-regression.mjs`, `Owl`, `check-content.mjs`?**
-  _High betweenness centrality (0.085) - this node is a cross-community bridge._
+  _High betweenness centrality (0.092) - this node is a cross-community bridge._
 - **Why does `main()` connect `seo-regression.mjs` to `apply-staging-quarantine.mjs`, `FakeElement`?**
-  _High betweenness centrality (0.046) - this node is a cross-community bridge._
+  _High betweenness centrality (0.043) - this node is a cross-community bridge._
 - **What connects `name`, `version`, `private` to the rest of the system?**
-  _523 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _535 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `seo-regression.mjs` be split into smaller, more focused modules?**
   _Cohesion score 0.06334735857877513 - nodes in this community are weakly interconnected._
 - **Should `Owl` be split into smaller, more focused modules?**
   _Cohesion score 0.06288568909785483 - nodes in this community are weakly interconnected._
 - **Should `jquery.min-01a0307c4b.js` be split into smaller, more focused modules?**
-  _Cohesion score 0.060641627543035995 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.06116700201207243 - nodes in this community are weakly interconnected._
 - **Should `AIAmigos_Remediation_Plugin` be split into smaller, more focused modules?**
   _Cohesion score 0.03354037267080745 - nodes in this community are weakly interconnected._

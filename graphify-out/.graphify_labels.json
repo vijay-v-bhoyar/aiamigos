@@ -46,7 +46,7 @@
   "44": "AIAmigos remediation registry",
   "45": "AI Amigos Remediation WordPress plugin",
   "46": "AI Amigos Remediation WordPress plugin",
-  "47": "AI Amigos staging remediation changelog — 2026-08-13",
+  "47": "Staging changes",
   "48": "Production browser spot-check — 2026-08-21",
   "49": "AI Amigos Remediation WordPress plugin",
   "50": "i18n.min-9fecd1f3b8.js",
@@ -172,7 +172,8 @@
   "170": "ways-to-test-a-rag-architecture-based-generative-ai-application.md",
   "171": "check-content.mjs",
   "172": "sync-feeds.mjs",
+  "173": "AI Amigos editorial trust and publication governance plan",
   "174": "tracks/[slug]/index.astro",
   "175": "[...slug].astro",
-  "176": "Staging changes"
+  "176": "check-graph-artifact.mjs"
 }

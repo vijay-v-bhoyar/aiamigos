@@ -1,13 +1,18 @@
 # Graph Report - aiamigos  (2026-08-22)
 
 ## Corpus Check
-- 290 files · ~1,540,380 words
+- 291 files · ~1,540,656 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1762 nodes · 2698 edges · 176 communities (165 shown, 11 thin omitted)
-- Extraction: 89% EXTRACTED · 11% INFERRED · 0% AMBIGUOUS · INFERRED: 284 edges (avg confidence: 0.73)
+- 1771 nodes · 2706 edges · 177 communities (166 shown, 11 thin omitted)
+- Extraction: 90% EXTRACTED · 10% INFERRED · 0% AMBIGUOUS · INFERRED: 284 edges (avg confidence: 0.73)
 - Token cost: 0 input · 0 output
+
+## Graph Freshness
+- Built from commit: `59794d5a`
+- Run `git rev-parse HEAD` and compare to check if the graph is stale.
+- Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - seo-regression.mjs
@@ -57,7 +62,7 @@
 - AIAmigos remediation registry
 - AI Amigos Remediation WordPress plugin
 - AI Amigos Remediation WordPress plugin
-- AI Amigos staging remediation changelog — 2026-08-13
+- Staging changes
 - Production browser spot-check — 2026-08-21
 - AI Amigos Remediation WordPress plugin
 - i18n.min-9fecd1f3b8.js
@@ -83,9 +88,10 @@
 - content.config.ts
 - check-content.mjs
 - sync-feeds.mjs
+- AI Amigos editorial trust and publication governance plan
 - tracks/[slug]/index.astro
 - [...slug].astro
-- Staging changes
+- check-graph-artifact.mjs
 
 ## God Nodes (most connected - your core abstractions)
 1. `AIAmigos_Remediation_Plugin` - 84 edges
@@ -114,7 +120,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (176 total, 11 thin omitted)
+## Communities (177 total, 11 thin omitted)
 
 ### Community 0 - "seo-regression.mjs"
 Cohesion: 0.06
@@ -161,8 +167,8 @@ Cohesion: 0.20
 Nodes (27): J(), E(), h(), j(), k(), l(), O(), u() (+19 more)
 
 ### Community 14 - "Finding actions"
-Cohesion: 0.07
-Nodes (28): AI Amigos editorial trust and publication governance plan, Automated versus human proof register, C5 - High-stakes career guidance contains mislabeled, retired, or unsupported credentials, C6 - Foundational AI explainers contain basic factual errors, C7 - The Grok article appears to invent or conflate a business platform, C8 - There is no accountable author behind 71 posts, Decision boundary, Evidence packet required for any publication (+20 more)
+Cohesion: 0.11
+Nodes (19): C5 - High-stakes career guidance contains mislabeled, retired, or unsupported credentials, C6 - Foundational AI explainers contain basic factual errors, C7 - The Grok article appears to invent or conflate a business platform, C8 - There is no accountable author behind 71 posts, Finding actions, H10 - About, mission, and service claims lack evidence, H11 - Privacy copy does not match site activities, H12 - Content and archive clusters overlap without an intent map (+11 more)
 
 ### Community 15 - "aiamigos-remediation-1.4.1-candidate/aiamigos-remediation/assets/js/aiamigos-accessibility-remediation.js"
 Cohesion: 0.22
@@ -284,9 +290,9 @@ Nodes (7): Acceptance checklist, AI Amigos Remediation WordPress plugin, Filters
 Cohesion: 0.25
 Nodes (7): Acceptance checklist, AI Amigos Remediation WordPress plugin, Filters, Install and activate, Rollback and uninstall, Tests, What it changes at runtime
 
-### Community 47 - "AI Amigos staging remediation changelog — 2026-08-13"
-Cohesion: 0.25
-Nodes (7): AI Amigos staging remediation changelog — 2026-08-13, Authority and rollback, Known non-changes and release blockers, Local remediation source and tests, Production change, Regression evidence, Version 1.4.0 deployment
+### Community 47 - "Staging changes"
+Cohesion: 0.13
+Nodes (14): Accountable identity, AI Amigos staging remediation changelog — 2026-08-13, Authority and rollback, Known non-changes and release blockers, Local remediation source and tests, Platform, Production change, Reading and navigation (+6 more)
 
 ### Community 48 - "Production browser spot-check — 2026-08-21"
 Cohesion: 0.08
@@ -342,7 +348,7 @@ Nodes (30): balancedDiv(), contentRoot, dataRoot, decodeHtml(), dispositions, ex
 
 ### Community 88 - "scripts"
 Cohesion: 0.08
-Nodes (23): astro, dependencies, astro, pagefind, ssh2-sftp-client, name, private, scripts (+15 more)
+Nodes (24): astro, dependencies, astro, pagefind, ssh2-sftp-client, name, private, scripts (+16 more)
 
 ### Community 89 - "prepare-hostinger-deploy.mjs"
 Cohesion: 0.22
@@ -364,6 +370,10 @@ Nodes (12): articleDir, failures, files, root, slugs, categoriesByTrack, resourc
 Cohesion: 0.20
 Nodes (10): cachePath, enabled, items, now, prior, root, sources, sourcesPath (+2 more)
 
+### Community 173 - "AI Amigos editorial trust and publication governance plan"
+Cohesion: 0.22
+Nodes (9): AI Amigos editorial trust and publication governance plan, Automated versus human proof register, Decision boundary, Evidence packet required for any publication, Fail-closed publication policy, Finding coverage, Release sequence and closure accounting, Required roles and separation of duties (+1 more)
+
 ### Community 174 - "tracks/[slug]/index.astro"
 Cohesion: 0.15
 Nodes (7): topicBySlug, toolBySlug, articles, categories, articles, articles, categoryMap
@@ -372,12 +382,12 @@ Nodes (7): topicBySlug, toolBySlug, articles, categories, articles, articles, ca
 Cohesion: 0.29
 Nodes (5): categoryTrack, defaultTemplates, defaultTools, externalSources, schema
 
-### Community 176 - "Staging changes"
-Cohesion: 0.29
-Nodes (7): Accountable identity, Platform, Reading and navigation, Recoverable content quarantine, Staging changes, Theme compatibility patches, Update-request form
+### Community 176 - "check-graph-artifact.mjs"
+Cohesion: 0.25
+Nodes (7): endpointPairs, exactEdges, findings, graph, graphPath, nodeIds, root
 
 ## Knowledge Gaps
-- **535 isolated node(s):** `name`, `version`, `private`, `type`, `dev` (+530 more)
+- **543 isolated node(s):** `name`, `version`, `private`, `type`, `dev` (+538 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **11 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -385,11 +395,11 @@ Nodes (7): Accountable identity, Platform, Reading and navigation, Recoverable c
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `value()` connect `FakeElement` to `seo-regression.mjs`, `Owl`, `check-content.mjs`?**
-  _High betweenness centrality (0.092) - this node is a cross-community bridge._
+  _High betweenness centrality (0.087) - this node is a cross-community bridge._
 - **Why does `main()` connect `seo-regression.mjs` to `apply-staging-quarantine.mjs`, `FakeElement`?**
   _High betweenness centrality (0.043) - this node is a cross-community bridge._
 - **What connects `name`, `version`, `private` to the rest of the system?**
-  _535 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _543 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `seo-regression.mjs` be split into smaller, more focused modules?**
   _Cohesion score 0.06334735857877513 - nodes in this community are weakly interconnected._
 - **Should `Owl` be split into smaller, more focused modules?**

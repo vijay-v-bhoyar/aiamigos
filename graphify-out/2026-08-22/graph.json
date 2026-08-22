@@ -2962,6 +2962,18 @@
       "norm_label": "srcsetcandidates()"
     },
     {
+      "label": "J()",
+      "file_type": "code",
+      "source_file": "public-site-snapshot/assets/jquery.min-01a0307c4b.js",
+      "source_location": "L2",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "public_site_snapshot_assets_jquery_min_01a0307c4b_j",
+      "community": 13,
+      "community_name": "y",
+      "norm_label": "j()"
+    },
+    {
       "label": "d()",
       "file_type": "code",
       "source_file": "public-site-snapshot/assets/regenerator-runtime.min-ff50f4e9f0.js",
@@ -4258,6 +4270,30 @@
       "norm_label": "wiresearchcontrols()"
     },
     {
+      "label": "buildResourceGraph()",
+      "file_type": "code",
+      "source_file": "src/data/resource-graph.mjs",
+      "source_location": "L12",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "src_data_resource_graph_buildresourcegraph",
+      "community": 171,
+      "community_name": "check-content.mjs",
+      "norm_label": "buildresourcegraph()"
+    },
+    {
+      "label": "read()",
+      "file_type": "code",
+      "source_file": "tests/platform-contract.test.mjs",
+      "source_location": "L8",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "tests_platform_contract_test_read",
+      "community": 171,
+      "community_name": "check-content.mjs",
+      "norm_label": "read()"
+    },
+    {
       "label": "strip()",
       "file_type": "code",
       "source_file": "scripts/sync-feeds.mjs",
@@ -4282,102 +4318,6 @@
       "norm_label": "tag()"
     },
     {
-      "label": "buildCareerRoadmap()",
-      "file_type": "code",
-      "source_file": "src/lib/tool-engine.mjs",
-      "source_location": "L47",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "src_lib_tool_engine_buildcareerroadmap",
-      "community": 173,
-      "community_name": "tool-engine.mjs",
-      "norm_label": "buildcareerroadmap()"
-    },
-    {
-      "label": "buildEvaluationPlan()",
-      "file_type": "code",
-      "source_file": "src/lib/tool-engine.mjs",
-      "source_location": "L78",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "src_lib_tool_engine_buildevaluationplan",
-      "community": 173,
-      "community_name": "tool-engine.mjs",
-      "norm_label": "buildevaluationplan()"
-    },
-    {
-      "label": "buildTeachingPlan()",
-      "file_type": "code",
-      "source_file": "src/lib/tool-engine.mjs",
-      "source_location": "L64",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "src_lib_tool_engine_buildteachingplan",
-      "community": 173,
-      "community_name": "tool-engine.mjs",
-      "norm_label": "buildteachingplan()"
-    },
-    {
-      "label": "buildWorkflow()",
-      "file_type": "code",
-      "source_file": "src/lib/tool-engine.mjs",
-      "source_location": "L8",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "src_lib_tool_engine_buildworkflow",
-      "community": 173,
-      "community_name": "tool-engine.mjs",
-      "norm_label": "buildworkflow()"
-    },
-    {
-      "label": "clean()",
-      "file_type": "code",
-      "source_file": "src/lib/tool-engine.mjs",
-      "source_location": "L1",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "src_lib_tool_engine_clean",
-      "community": 173,
-      "community_name": "tool-engine.mjs",
-      "norm_label": "clean()"
-    },
-    {
-      "label": "containsSensitiveInput()",
-      "file_type": "code",
-      "source_file": "src/lib/tool-engine.mjs",
-      "source_location": "L4",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "src_lib_tool_engine_containssensitiveinput",
-      "community": 173,
-      "community_name": "tool-engine.mjs",
-      "norm_label": "containssensitiveinput()"
-    },
-    {
-      "label": "number()",
-      "file_type": "code",
-      "source_file": "src/lib/tool-engine.mjs",
-      "source_location": "L2",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "src_lib_tool_engine_number",
-      "community": 173,
-      "community_name": "tool-engine.mjs",
-      "norm_label": "number()"
-    },
-    {
-      "label": "scoreBusinessUseCase()",
-      "file_type": "code",
-      "source_file": "src/lib/tool-engine.mjs",
-      "source_location": "L26",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "src_lib_tool_engine_scorebusinessusecase",
-      "community": 173,
-      "community_name": "tool-engine.mjs",
-      "norm_label": "scorebusinessusecase()"
-    },
-    {
       "label": "filter()",
       "file_type": "code",
       "source_file": "src/pages/articles/index.astro",
@@ -4386,7 +4326,7 @@
       "_origin": "ast",
       "id": "src_pages_articles_index_filter",
       "community": 174,
-      "community_name": "topics/[slug]/index.astro",
+      "community_name": "tracks/[slug]/index.astro",
       "norm_label": "filter()"
     },
     {
@@ -4398,7 +4338,19 @@
       "_origin": "ast",
       "id": "src_pages_topics_slug_index_getstaticpaths",
       "community": 174,
-      "community_name": "topics/[slug]/index.astro",
+      "community_name": "tracks/[slug]/index.astro",
+      "norm_label": "getstaticpaths()"
+    },
+    {
+      "label": "getStaticPaths()",
+      "file_type": "code",
+      "source_file": "src/pages/tracks/[slug]/index.astro",
+      "source_location": "L3",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "src_pages_tracks_slug_index_getstaticpaths",
+      "community": 174,
+      "community_name": "tracks/[slug]/index.astro",
       "norm_label": "getstaticpaths()"
     },
     {
@@ -4412,42 +4364,6 @@
       "community": 175,
       "community_name": "[...slug].astro",
       "norm_label": "getstaticpaths()"
-    },
-    {
-      "label": "download()",
-      "file_type": "code",
-      "source_file": "src/components/ToolRunner.astro",
-      "source_location": "L36",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "src_components_toolrunner_download",
-      "community": 177,
-      "community_name": "ToolRunner.astro",
-      "norm_label": "download()"
-    },
-    {
-      "label": "renderValue()",
-      "file_type": "code",
-      "source_file": "src/components/ToolRunner.astro",
-      "source_location": "L34",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "src_components_toolrunner_rendervalue",
-      "community": 177,
-      "community_name": "ToolRunner.astro",
-      "norm_label": "rendervalue()"
-    },
-    {
-      "label": "track()",
-      "file_type": "code",
-      "source_file": "src/components/ToolRunner.astro",
-      "source_location": "L35",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "src_components_toolrunner_track",
-      "community": 177,
-      "community_name": "ToolRunner.astro",
-      "norm_label": "track()"
     },
     {
       "label": "containsActiveFocus()",
@@ -5480,18 +5396,6 @@
       "community": 2,
       "community_name": "jquery.min-01a0307c4b.js",
       "norm_label": "it()"
-    },
-    {
-      "label": "J()",
-      "file_type": "code",
-      "source_file": "public-site-snapshot/assets/jquery.min-01a0307c4b.js",
-      "source_location": "L2",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "public_site_snapshot_assets_jquery_min_01a0307c4b_j",
-      "community": 2,
-      "community_name": "jquery.min-01a0307c4b.js",
-      "norm_label": "j()"
     },
     {
       "label": "K()",
@@ -9586,28 +9490,52 @@
       "norm_label": "u()"
     },
     {
-      "label": "getStaticPaths()",
+      "label": "localFiles()",
       "file_type": "code",
-      "source_file": "src/pages/tools/[slug]/index.astro",
-      "source_location": "L7",
+      "source_file": "scripts/deploy-hostinger.mjs",
+      "source_location": "L25",
       "_callable": true,
       "_origin": "ast",
-      "id": "src_pages_tools_slug_index_getstaticpaths",
+      "id": "scripts_deploy_hostinger_localfiles",
       "community": 55,
-      "community_name": "tracks/[slug]/index.astro",
-      "norm_label": "getstaticpaths()"
+      "community_name": "deploy-hostinger.mjs",
+      "norm_label": "localfiles()"
     },
     {
-      "label": "getStaticPaths()",
+      "label": "readJson()",
       "file_type": "code",
-      "source_file": "src/pages/tracks/[slug]/index.astro",
-      "source_location": "L3",
+      "source_file": "scripts/deploy-hostinger.mjs",
+      "source_location": "L39",
       "_callable": true,
       "_origin": "ast",
-      "id": "src_pages_tracks_slug_index_getstaticpaths",
+      "id": "scripts_deploy_hostinger_readjson",
       "community": 55,
-      "community_name": "tracks/[slug]/index.astro",
-      "norm_label": "getstaticpaths()"
+      "community_name": "deploy-hostinger.mjs",
+      "norm_label": "readjson()"
+    },
+    {
+      "label": "remotePath()",
+      "file_type": "code",
+      "source_file": "scripts/deploy-hostinger.mjs",
+      "source_location": "L22",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "scripts_deploy_hostinger_remotepath",
+      "community": 55,
+      "community_name": "deploy-hostinger.mjs",
+      "norm_label": "remotepath()"
+    },
+    {
+      "label": "safeRelativePath()",
+      "file_type": "code",
+      "source_file": "scripts/deploy-hostinger.mjs",
+      "source_location": "L14",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "scripts_deploy_hostinger_saferelativepath",
+      "community": 55,
+      "community_name": "deploy-hostinger.mjs",
+      "norm_label": "saferelativepath()"
     },
     {
       "label": "close()",
@@ -9706,6 +9634,42 @@
       "norm_label": "wp_set_consent()"
     },
     {
+      "label": "download()",
+      "file_type": "code",
+      "source_file": "src/components/ToolRunner.astro",
+      "source_location": "L36",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "src_components_toolrunner_download",
+      "community": 58,
+      "community_name": "templates.mjs",
+      "norm_label": "download()"
+    },
+    {
+      "label": "renderValue()",
+      "file_type": "code",
+      "source_file": "src/components/ToolRunner.astro",
+      "source_location": "L34",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "src_components_toolrunner_rendervalue",
+      "community": 58,
+      "community_name": "templates.mjs",
+      "norm_label": "rendervalue()"
+    },
+    {
+      "label": "track()",
+      "file_type": "code",
+      "source_file": "src/components/ToolRunner.astro",
+      "source_location": "L35",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "src_components_toolrunner_track",
+      "community": 58,
+      "community_name": "templates.mjs",
+      "norm_label": "track()"
+    },
+    {
       "label": "template()",
       "file_type": "code",
       "source_file": "src/data/templates.mjs",
@@ -9742,16 +9706,16 @@
       "norm_label": "getstaticpaths()"
     },
     {
-      "label": "read()",
+      "label": "getStaticPaths()",
       "file_type": "code",
-      "source_file": "tests/platform-contract.test.mjs",
-      "source_location": "L8",
+      "source_file": "src/pages/tools/[slug]/index.astro",
+      "source_location": "L7",
       "_callable": true,
       "_origin": "ast",
-      "id": "tests_platform_contract_test_read",
+      "id": "src_pages_tools_slug_index_getstaticpaths",
       "community": 58,
       "community_name": "templates.mjs",
-      "norm_label": "read()"
+      "norm_label": "getstaticpaths()"
     },
     {
       "label": "buildCarouselFixture()",
@@ -10297,7 +10261,7 @@
       "label": "value()",
       "file_type": "code",
       "source_file": "scripts/check-content.mjs",
-      "source_location": "L12",
+      "source_location": "L13",
       "_callable": true,
       "_origin": "ast",
       "id": "scripts_check_content_value",
@@ -10316,6 +10280,102 @@
       "community": 6,
       "community_name": "FakeElement",
       "norm_label": "asmarkdown()"
+    },
+    {
+      "label": "buildCareerRoadmap()",
+      "file_type": "code",
+      "source_file": "src/lib/tool-engine.mjs",
+      "source_location": "L47",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "src_lib_tool_engine_buildcareerroadmap",
+      "community": 6,
+      "community_name": "FakeElement",
+      "norm_label": "buildcareerroadmap()"
+    },
+    {
+      "label": "buildEvaluationPlan()",
+      "file_type": "code",
+      "source_file": "src/lib/tool-engine.mjs",
+      "source_location": "L78",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "src_lib_tool_engine_buildevaluationplan",
+      "community": 6,
+      "community_name": "FakeElement",
+      "norm_label": "buildevaluationplan()"
+    },
+    {
+      "label": "buildTeachingPlan()",
+      "file_type": "code",
+      "source_file": "src/lib/tool-engine.mjs",
+      "source_location": "L64",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "src_lib_tool_engine_buildteachingplan",
+      "community": 6,
+      "community_name": "FakeElement",
+      "norm_label": "buildteachingplan()"
+    },
+    {
+      "label": "buildWorkflow()",
+      "file_type": "code",
+      "source_file": "src/lib/tool-engine.mjs",
+      "source_location": "L8",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "src_lib_tool_engine_buildworkflow",
+      "community": 6,
+      "community_name": "FakeElement",
+      "norm_label": "buildworkflow()"
+    },
+    {
+      "label": "clean()",
+      "file_type": "code",
+      "source_file": "src/lib/tool-engine.mjs",
+      "source_location": "L1",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "src_lib_tool_engine_clean",
+      "community": 6,
+      "community_name": "FakeElement",
+      "norm_label": "clean()"
+    },
+    {
+      "label": "containsSensitiveInput()",
+      "file_type": "code",
+      "source_file": "src/lib/tool-engine.mjs",
+      "source_location": "L4",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "src_lib_tool_engine_containssensitiveinput",
+      "community": 6,
+      "community_name": "FakeElement",
+      "norm_label": "containssensitiveinput()"
+    },
+    {
+      "label": "number()",
+      "file_type": "code",
+      "source_file": "src/lib/tool-engine.mjs",
+      "source_location": "L2",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "src_lib_tool_engine_number",
+      "community": 6,
+      "community_name": "FakeElement",
+      "norm_label": "number()"
+    },
+    {
+      "label": "scoreBusinessUseCase()",
+      "file_type": "code",
+      "source_file": "src/lib/tool-engine.mjs",
+      "source_location": "L26",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "src_lib_tool_engine_scorebusinessusecase",
+      "community": 6,
+      "community_name": "FakeElement",
+      "norm_label": "scorebusinessusecase()"
     },
     {
       "label": "._next()",
@@ -13074,7 +13134,7 @@
       "label": "articleDir",
       "file_type": "code",
       "source_file": "scripts/check-content.mjs",
-      "source_location": "L9",
+      "source_location": "L10",
       "_origin": "ast",
       "id": "scripts_check_content_articledir",
       "community": 171,
@@ -13085,7 +13145,7 @@
       "label": "failures",
       "file_type": "code",
       "source_file": "scripts/check-content.mjs",
-      "source_location": "L11",
+      "source_location": "L12",
       "_origin": "ast",
       "id": "scripts_check_content_failures",
       "community": 171,
@@ -13096,7 +13156,7 @@
       "label": "files",
       "file_type": "code",
       "source_file": "scripts/check-content.mjs",
-      "source_location": "L10",
+      "source_location": "L11",
       "_origin": "ast",
       "id": "scripts_check_content_files",
       "community": 171,
@@ -13107,7 +13167,7 @@
       "label": "root",
       "file_type": "code",
       "source_file": "scripts/check-content.mjs",
-      "source_location": "L8",
+      "source_location": "L9",
       "_origin": "ast",
       "id": "scripts_check_content_root",
       "community": 171,
@@ -13118,12 +13178,78 @@
       "label": "slugs",
       "file_type": "code",
       "source_file": "scripts/check-content.mjs",
-      "source_location": "L11",
+      "source_location": "L12",
       "_origin": "ast",
       "id": "scripts_check_content_slugs",
       "community": 171,
       "community_name": "check-content.mjs",
       "norm_label": "slugs"
+    },
+    {
+      "label": "resource-graph.mjs",
+      "file_type": "code",
+      "source_file": "src/data/resource-graph.mjs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_data_resource_graph",
+      "community": 171,
+      "community_name": "check-content.mjs",
+      "norm_label": "resource-graph.mjs"
+    },
+    {
+      "label": "categoriesByTrack",
+      "file_type": "code",
+      "source_file": "src/data/resource-graph.mjs",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "src_data_resource_graph_categoriesbytrack",
+      "community": 171,
+      "community_name": "check-content.mjs",
+      "norm_label": "categoriesbytrack"
+    },
+    {
+      "label": "resourceGraph",
+      "file_type": "code",
+      "source_file": "src/data/resource-graph.mjs",
+      "source_location": "L43",
+      "_origin": "ast",
+      "id": "src_data_resource_graph_resourcegraph",
+      "community": 171,
+      "community_name": "check-content.mjs",
+      "norm_label": "resourcegraph"
+    },
+    {
+      "label": "tools.mjs",
+      "file_type": "code",
+      "source_file": "src/data/tools.mjs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_data_tools",
+      "community": 171,
+      "community_name": "check-content.mjs",
+      "norm_label": "tools.mjs"
+    },
+    {
+      "label": "sources",
+      "file_type": "code",
+      "source_file": "src/data/tools.mjs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_data_tools_sources",
+      "community": 171,
+      "community_name": "check-content.mjs",
+      "norm_label": "sources"
+    },
+    {
+      "label": "tools",
+      "file_type": "code",
+      "source_file": "src/data/tools.mjs",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "src_data_tools_tools",
+      "community": 171,
+      "community_name": "check-content.mjs",
+      "norm_label": "tools"
     },
     {
       "label": "tracks.mjs",
@@ -13170,6 +13296,28 @@
       "norm_label": "pages/index.astro"
     },
     {
+      "label": "templates/index.astro",
+      "file_type": "code",
+      "source_file": "src/pages/templates/index.astro",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_pages_templates_index",
+      "community": 171,
+      "community_name": "check-content.mjs",
+      "norm_label": "templates/index.astro"
+    },
+    {
+      "label": "tools/index.astro",
+      "file_type": "code",
+      "source_file": "src/pages/tools/index.astro",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_pages_tools_index",
+      "community": 171,
+      "community_name": "check-content.mjs",
+      "norm_label": "tools/index.astro"
+    },
+    {
       "label": "tracks/index.astro",
       "file_type": "code",
       "source_file": "src/pages/tracks/index.astro",
@@ -13179,6 +13327,28 @@
       "community": 171,
       "community_name": "check-content.mjs",
       "norm_label": "tracks/index.astro"
+    },
+    {
+      "label": "platform-contract.test.mjs",
+      "file_type": "code",
+      "source_file": "tests/platform-contract.test.mjs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tests_platform_contract_test",
+      "community": 171,
+      "community_name": "check-content.mjs",
+      "norm_label": "platform-contract.test.mjs"
+    },
+    {
+      "label": "root",
+      "file_type": "code",
+      "source_file": "tests/platform-contract.test.mjs",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "tests_platform_contract_test_root",
+      "community": 171,
+      "community_name": "check-content.mjs",
+      "norm_label": "root"
     },
     {
       "label": "sync-feeds.mjs",
@@ -13280,39 +13450,6 @@
       "norm_label": "sourcespath"
     },
     {
-      "label": "tool-engine.mjs",
-      "file_type": "code",
-      "source_file": "src/lib/tool-engine.mjs",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "src_lib_tool_engine",
-      "community": 173,
-      "community_name": "tool-engine.mjs",
-      "norm_label": "tool-engine.mjs"
-    },
-    {
-      "label": "toolBuilders",
-      "file_type": "code",
-      "source_file": "src/lib/tool-engine.mjs",
-      "source_location": "L93",
-      "_origin": "ast",
-      "id": "src_lib_tool_engine_toolbuilders",
-      "community": 173,
-      "community_name": "tool-engine.mjs",
-      "norm_label": "toolbuilders"
-    },
-    {
-      "label": "tool-engine.test.mjs",
-      "file_type": "code",
-      "source_file": "tests/tool-engine.test.mjs",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "tests_tool_engine_test",
-      "community": 173,
-      "community_name": "tool-engine.mjs",
-      "norm_label": "tool-engine.test.mjs"
-    },
-    {
       "label": "astro:content",
       "file_type": "code",
       "source_file": "astro:content",
@@ -13320,7 +13457,7 @@
       "_origin": "ast",
       "id": "astro_content",
       "community": 174,
-      "community_name": "topics/[slug]/index.astro",
+      "community_name": "tracks/[slug]/index.astro",
       "norm_label": "astro:content"
     },
     {
@@ -13331,7 +13468,7 @@
       "_origin": "ast",
       "id": "src_components_articlecard",
       "community": 174,
-      "community_name": "topics/[slug]/index.astro",
+      "community_name": "tracks/[slug]/index.astro",
       "norm_label": "articlecard.astro"
     },
     {
@@ -13342,8 +13479,19 @@
       "_origin": "ast",
       "id": "src_data_site_topicbyslug",
       "community": 174,
-      "community_name": "topics/[slug]/index.astro",
+      "community_name": "tracks/[slug]/index.astro",
       "norm_label": "topicbyslug"
+    },
+    {
+      "label": "toolBySlug",
+      "file_type": "code",
+      "source_file": "src/data/tools.mjs",
+      "source_location": "L38",
+      "_origin": "ast",
+      "id": "src_data_tools_toolbyslug",
+      "community": 174,
+      "community_name": "tracks/[slug]/index.astro",
+      "norm_label": "toolbyslug"
     },
     {
       "label": "articles/index.astro",
@@ -13353,7 +13501,7 @@
       "_origin": "ast",
       "id": "src_pages_articles_index",
       "community": 174,
-      "community_name": "topics/[slug]/index.astro",
+      "community_name": "tracks/[slug]/index.astro",
       "norm_label": "articles/index.astro"
     },
     {
@@ -13364,7 +13512,7 @@
       "_origin": "ast",
       "id": "src_pages_articles_index_articles",
       "community": 174,
-      "community_name": "topics/[slug]/index.astro",
+      "community_name": "tracks/[slug]/index.astro",
       "norm_label": "articles"
     },
     {
@@ -13375,7 +13523,7 @@
       "_origin": "ast",
       "id": "src_pages_articles_index_categories",
       "community": 174,
-      "community_name": "topics/[slug]/index.astro",
+      "community_name": "tracks/[slug]/index.astro",
       "norm_label": "categories"
     },
     {
@@ -13386,7 +13534,7 @@
       "_origin": "ast",
       "id": "src_pages_topics_slug_index",
       "community": 174,
-      "community_name": "topics/[slug]/index.astro",
+      "community_name": "tracks/[slug]/index.astro",
       "norm_label": "topics/[slug]/index.astro"
     },
     {
@@ -13397,19 +13545,41 @@
       "_origin": "ast",
       "id": "src_pages_topics_slug_index_articles",
       "community": 174,
-      "community_name": "topics/[slug]/index.astro",
+      "community_name": "tracks/[slug]/index.astro",
       "norm_label": "articles"
     },
     {
-      "label": "templateBySlug",
+      "label": "tracks/[slug]/index.astro",
       "file_type": "code",
-      "source_file": "src/data/templates.mjs",
-      "source_location": "L25",
+      "source_file": "src/pages/tracks/[slug]/index.astro",
+      "source_location": "L1",
       "_origin": "ast",
-      "id": "src_data_templates_templatebyslug",
-      "community": 175,
-      "community_name": "[...slug].astro",
-      "norm_label": "templatebyslug"
+      "id": "src_pages_tracks_slug_index",
+      "community": 174,
+      "community_name": "tracks/[slug]/index.astro",
+      "norm_label": "tracks/[slug]/index.astro"
+    },
+    {
+      "label": "articles",
+      "file_type": "code",
+      "source_file": "src/pages/tracks/[slug]/index.astro",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "src_pages_tracks_slug_index_articles",
+      "community": 174,
+      "community_name": "tracks/[slug]/index.astro",
+      "norm_label": "articles"
+    },
+    {
+      "label": "categoryMap",
+      "file_type": "code",
+      "source_file": "src/pages/tracks/[slug]/index.astro",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "src_pages_tracks_slug_index_categorymap",
+      "community": 174,
+      "community_name": "tracks/[slug]/index.astro",
+      "norm_label": "categorymap"
     },
     {
       "label": "[...slug].astro",
@@ -13476,28 +13646,6 @@
       "community": 175,
       "community_name": "[...slug].astro",
       "norm_label": "schema"
-    },
-    {
-      "label": "careers/index.astro",
-      "file_type": "code",
-      "source_file": "src/pages/careers/index.astro",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "src_pages_careers_index",
-      "community": 175,
-      "community_name": "[...slug].astro",
-      "norm_label": "careers/index.astro"
-    },
-    {
-      "label": "templates",
-      "file_type": "code",
-      "source_file": "src/pages/careers/index.astro",
-      "source_location": "L3",
-      "_origin": "ast",
-      "id": "src_pages_careers_index_templates",
-      "community": 175,
-      "community_name": "[...slug].astro",
-      "norm_label": "templates"
     },
     {
       "label": "Accountable identity",
@@ -13575,17 +13723,6 @@
       "community": 176,
       "community_name": "Staging changes",
       "norm_label": "update-request form"
-    },
-    {
-      "label": "ToolRunner.astro",
-      "file_type": "code",
-      "source_file": "src/components/ToolRunner.astro",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "src_components_toolrunner",
-      "community": 177,
-      "community_name": "ToolRunner.astro",
-      "norm_label": "toolrunner.astro"
     },
     {
       "label": "wp-plugin/aiamigos-remediation/assets/js/aiamigos-accessibility-remediation.js",
@@ -17394,125 +17531,114 @@
       "norm_label": "targets"
     },
     {
-      "label": "Breadcrumbs.astro",
+      "label": "deploy-hostinger.mjs",
       "file_type": "code",
-      "source_file": "src/components/Breadcrumbs.astro",
+      "source_file": "scripts/deploy-hostinger.mjs",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "src_components_breadcrumbs",
+      "id": "scripts_deploy_hostinger",
       "community": 55,
-      "community_name": "tracks/[slug]/index.astro",
-      "norm_label": "breadcrumbs.astro"
+      "community_name": "deploy-hostinger.mjs",
+      "norm_label": "deploy-hostinger.mjs"
     },
     {
-      "label": "tools.mjs",
+      "label": "dist",
       "file_type": "code",
-      "source_file": "src/data/tools.mjs",
-      "source_location": "L1",
+      "source_file": "scripts/deploy-hostinger.mjs",
+      "source_location": "L8",
       "_origin": "ast",
-      "id": "src_data_tools",
+      "id": "scripts_deploy_hostinger_dist",
       "community": 55,
-      "community_name": "tracks/[slug]/index.astro",
-      "norm_label": "tools.mjs"
+      "community_name": "deploy-hostinger.mjs",
+      "norm_label": "dist"
     },
     {
-      "label": "sources",
+      "label": "files",
       "file_type": "code",
-      "source_file": "src/data/tools.mjs",
-      "source_location": "L1",
+      "source_file": "scripts/deploy-hostinger.mjs",
+      "source_location": "L32",
       "_origin": "ast",
-      "id": "src_data_tools_sources",
+      "id": "scripts_deploy_hostinger_files",
       "community": 55,
-      "community_name": "tracks/[slug]/index.astro",
-      "norm_label": "sources"
+      "community_name": "deploy-hostinger.mjs",
+      "norm_label": "files"
     },
     {
-      "label": "toolBySlug",
+      "label": "nextPaths",
       "file_type": "code",
-      "source_file": "src/data/tools.mjs",
-      "source_location": "L38",
+      "source_file": "scripts/deploy-hostinger.mjs",
+      "source_location": "L36",
       "_origin": "ast",
-      "id": "src_data_tools_toolbyslug",
+      "id": "scripts_deploy_hostinger_nextpaths",
       "community": 55,
-      "community_name": "tracks/[slug]/index.astro",
-      "norm_label": "toolbyslug"
+      "community_name": "deploy-hostinger.mjs",
+      "norm_label": "nextpaths"
     },
     {
-      "label": "tools",
+      "label": "releaseId",
       "file_type": "code",
-      "source_file": "src/data/tools.mjs",
-      "source_location": "L9",
+      "source_file": "scripts/deploy-hostinger.mjs",
+      "source_location": "L23",
       "_origin": "ast",
-      "id": "src_data_tools_tools",
+      "id": "scripts_deploy_hostinger_releaseid",
       "community": 55,
-      "community_name": "tracks/[slug]/index.astro",
-      "norm_label": "tools"
+      "community_name": "deploy-hostinger.mjs",
+      "norm_label": "releaseid"
     },
     {
-      "label": "tools/index.astro",
+      "label": "releaseRoot",
       "file_type": "code",
-      "source_file": "src/pages/tools/index.astro",
-      "source_location": "L1",
+      "source_file": "scripts/deploy-hostinger.mjs",
+      "source_location": "L21",
       "_origin": "ast",
-      "id": "src_pages_tools_index",
+      "id": "scripts_deploy_hostinger_releaseroot",
       "community": 55,
-      "community_name": "tracks/[slug]/index.astro",
-      "norm_label": "tools/index.astro"
+      "community_name": "deploy-hostinger.mjs",
+      "norm_label": "releaseroot"
     },
     {
-      "label": "tools/[slug]/index.astro",
+      "label": "remoteRoot",
       "file_type": "code",
-      "source_file": "src/pages/tools/[slug]/index.astro",
-      "source_location": "L1",
+      "source_file": "scripts/deploy-hostinger.mjs",
+      "source_location": "L20",
       "_origin": "ast",
-      "id": "src_pages_tools_slug_index",
+      "id": "scripts_deploy_hostinger_remoteroot",
       "community": 55,
-      "community_name": "tracks/[slug]/index.astro",
-      "norm_label": "tools/[slug]/index.astro"
+      "community_name": "deploy-hostinger.mjs",
+      "norm_label": "remoteroot"
     },
     {
-      "label": "schema",
+      "label": "required",
       "file_type": "code",
-      "source_file": "src/pages/tools/[slug]/index.astro",
-      "source_location": "L9",
+      "source_file": "scripts/deploy-hostinger.mjs",
+      "source_location": "L11",
       "_origin": "ast",
-      "id": "src_pages_tools_slug_index_schema",
+      "id": "scripts_deploy_hostinger_required",
       "community": 55,
-      "community_name": "tracks/[slug]/index.astro",
-      "norm_label": "schema"
+      "community_name": "deploy-hostinger.mjs",
+      "norm_label": "required"
     },
     {
-      "label": "tracks/[slug]/index.astro",
+      "label": "root",
       "file_type": "code",
-      "source_file": "src/pages/tracks/[slug]/index.astro",
-      "source_location": "L1",
+      "source_file": "scripts/deploy-hostinger.mjs",
+      "source_location": "L7",
       "_origin": "ast",
-      "id": "src_pages_tracks_slug_index",
+      "id": "scripts_deploy_hostinger_root",
       "community": 55,
-      "community_name": "tracks/[slug]/index.astro",
-      "norm_label": "tracks/[slug]/index.astro"
+      "community_name": "deploy-hostinger.mjs",
+      "norm_label": "root"
     },
     {
-      "label": "articles",
+      "label": "sftp",
       "file_type": "code",
-      "source_file": "src/pages/tracks/[slug]/index.astro",
-      "source_location": "L4",
+      "source_file": "scripts/deploy-hostinger.mjs",
+      "source_location": "L37",
       "_origin": "ast",
-      "id": "src_pages_tracks_slug_index_articles",
+      "id": "scripts_deploy_hostinger_sftp",
       "community": 55,
-      "community_name": "tracks/[slug]/index.astro",
-      "norm_label": "articles"
-    },
-    {
-      "label": "categoryMap",
-      "file_type": "code",
-      "source_file": "src/pages/tracks/[slug]/index.astro",
-      "source_location": "L4",
-      "_origin": "ast",
-      "id": "src_pages_tracks_slug_index_categorymap",
-      "community": 55,
-      "community_name": "tracks/[slug]/index.astro",
-      "norm_label": "categorymap"
+      "community_name": "deploy-hostinger.mjs",
+      "norm_label": "sftp"
     },
     {
       "label": "custom-657fd4ab0e.js",
@@ -17537,6 +17663,28 @@
       "norm_label": "wp-consent-api.min-29676f10ff.js"
     },
     {
+      "label": "Breadcrumbs.astro",
+      "file_type": "code",
+      "source_file": "src/components/Breadcrumbs.astro",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_components_breadcrumbs",
+      "community": 58,
+      "community_name": "templates.mjs",
+      "norm_label": "breadcrumbs.astro"
+    },
+    {
+      "label": "ToolRunner.astro",
+      "file_type": "code",
+      "source_file": "src/components/ToolRunner.astro",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_components_toolrunner",
+      "community": 58,
+      "community_name": "templates.mjs",
+      "norm_label": "toolrunner.astro"
+    },
+    {
       "label": "templates.mjs",
       "file_type": "code",
       "source_file": "src/data/templates.mjs",
@@ -17546,6 +17694,17 @@
       "community": 58,
       "community_name": "templates.mjs",
       "norm_label": "templates.mjs"
+    },
+    {
+      "label": "templateBySlug",
+      "file_type": "code",
+      "source_file": "src/data/templates.mjs",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "src_data_templates_templatebyslug",
+      "community": 58,
+      "community_name": "templates.mjs",
+      "norm_label": "templatebyslug"
     },
     {
       "label": "templates",
@@ -17559,15 +17718,26 @@
       "norm_label": "templates"
     },
     {
-      "label": "templates/index.astro",
+      "label": "careers/index.astro",
       "file_type": "code",
-      "source_file": "src/pages/templates/index.astro",
+      "source_file": "src/pages/careers/index.astro",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "src_pages_templates_index",
+      "id": "src_pages_careers_index",
       "community": 58,
       "community_name": "templates.mjs",
-      "norm_label": "templates/index.astro"
+      "norm_label": "careers/index.astro"
+    },
+    {
+      "label": "templates",
+      "file_type": "code",
+      "source_file": "src/pages/careers/index.astro",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "src_pages_careers_index_templates",
+      "community": 58,
+      "community_name": "templates.mjs",
+      "norm_label": "templates"
     },
     {
       "label": "templates/[slug]/index.astro",
@@ -17614,26 +17784,26 @@
       "norm_label": "status"
     },
     {
-      "label": "platform-contract.test.mjs",
+      "label": "tools/[slug]/index.astro",
       "file_type": "code",
-      "source_file": "tests/platform-contract.test.mjs",
+      "source_file": "src/pages/tools/[slug]/index.astro",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "tests_platform_contract_test",
+      "id": "src_pages_tools_slug_index",
       "community": 58,
       "community_name": "templates.mjs",
-      "norm_label": "platform-contract.test.mjs"
+      "norm_label": "tools/[slug]/index.astro"
     },
     {
-      "label": "root",
+      "label": "schema",
       "file_type": "code",
-      "source_file": "tests/platform-contract.test.mjs",
-      "source_location": "L7",
+      "source_file": "src/pages/tools/[slug]/index.astro",
+      "source_location": "L9",
       "_origin": "ast",
-      "id": "tests_platform_contract_test_root",
+      "id": "src_pages_tools_slug_index_schema",
       "community": 58,
       "community_name": "templates.mjs",
-      "norm_label": "root"
+      "norm_label": "schema"
     },
     {
       "label": "PHP_8_4_24_V1_4_1_VALIDATION_2026-08-13.md",
@@ -17733,6 +17903,39 @@
       "community": 6,
       "community_name": "FakeElement",
       "norm_label": "tests"
+    },
+    {
+      "label": "tool-engine.mjs",
+      "file_type": "code",
+      "source_file": "src/lib/tool-engine.mjs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_lib_tool_engine",
+      "community": 6,
+      "community_name": "FakeElement",
+      "norm_label": "tool-engine.mjs"
+    },
+    {
+      "label": "toolBuilders",
+      "file_type": "code",
+      "source_file": "src/lib/tool-engine.mjs",
+      "source_location": "L93",
+      "_origin": "ast",
+      "id": "src_lib_tool_engine_toolbuilders",
+      "community": 6,
+      "community_name": "FakeElement",
+      "norm_label": "toolbuilders"
+    },
+    {
+      "label": "tool-engine.test.mjs",
+      "file_type": "code",
+      "source_file": "tests/tool-engine.test.mjs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tests_tool_engine_test",
+      "community": 6,
+      "community_name": "FakeElement",
+      "norm_label": "tool-engine.test.mjs"
     },
     {
       "label": "ACCESSIBILITY-PATCH.md",
@@ -19157,7 +19360,7 @@
       "label": "dependencies",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L18",
+      "source_location": "L19",
       "_origin": "ast",
       "id": "package_dependencies",
       "community": 88,
@@ -19168,7 +19371,7 @@
       "label": "astro",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L19",
+      "source_location": "L20",
       "_origin": "ast",
       "id": "package_dependencies_astro",
       "community": 88,
@@ -19179,12 +19382,23 @@
       "label": "pagefind",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L20",
+      "source_location": "L21",
       "_origin": "ast",
       "id": "package_dependencies_pagefind",
       "community": 88,
       "community_name": "scripts",
       "norm_label": "pagefind"
+    },
+    {
+      "label": "ssh2-sftp-client",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "package_dependencies_ssh2_sftp_client",
+      "community": 88,
+      "community_name": "scripts",
+      "norm_label": "ssh2-sftp-client"
     },
     {
       "label": "name",
@@ -19256,12 +19470,23 @@
       "label": "deploy:hostinger",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L16",
+      "source_location": "L17",
       "_origin": "ast",
       "id": "package_scripts_deploy_hostinger",
       "community": 88,
       "community_name": "scripts",
       "norm_label": "deploy:hostinger"
+    },
+    {
+      "label": "deploy:hostinger:prepare",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "package_scripts_deploy_hostinger_prepare",
+      "community": 88,
+      "community_name": "scripts",
+      "norm_label": "deploy:hostinger:prepare"
     },
     {
       "label": "dev",
@@ -19355,7 +19580,7 @@
       "label": "astro",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L19",
+      "source_location": "L20",
       "_origin": "ast",
       "id": "astro",
       "community": 88,
@@ -19366,12 +19591,23 @@
       "label": "pagefind",
       "file_type": "concept",
       "source_file": "package.json",
-      "source_location": "L20",
+      "source_location": "L21",
       "_origin": "ast",
       "id": "pagefind",
       "community": 88,
       "community_name": "scripts",
       "norm_label": "pagefind"
+    },
+    {
+      "label": "ssh2-sftp-client",
+      "file_type": "concept",
+      "source_file": "package.json",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "ssh2_sftp_client",
+      "community": 88,
+      "community_name": "scripts",
+      "norm_label": "ssh2-sftp-client"
     },
     {
       "label": "prepare-hostinger-deploy.mjs",
@@ -19902,6 +20138,17 @@
       "norm_label": "verify-static-site.mjs"
     },
     {
+      "label": "articlePages",
+      "file_type": "code",
+      "source_file": "scripts/verify-static-site.mjs",
+      "source_location": "L56",
+      "_origin": "ast",
+      "id": "scripts_verify_static_site_articlepages",
+      "community": 91,
+      "community_name": "verify-static-site.mjs",
+      "norm_label": "articlepages"
+    },
+    {
       "label": "dist",
       "file_type": "code",
       "source_file": "scripts/verify-static-site.mjs",
@@ -19960,7 +20207,7 @@
       "label": "templatePages",
       "file_type": "code",
       "source_file": "scripts/verify-static-site.mjs",
-      "source_location": "L51",
+      "source_location": "L52",
       "_origin": "ast",
       "id": "scripts_verify_static_site_templatepages",
       "community": 91,
@@ -19971,7 +20218,7 @@
       "label": "toolAssets",
       "file_type": "code",
       "source_file": "scripts/verify-static-site.mjs",
-      "source_location": "L59",
+      "source_location": "L62",
       "_origin": "ast",
       "id": "scripts_verify_static_site_toolassets",
       "community": 91,
@@ -19982,7 +20229,7 @@
       "label": "trackPages",
       "file_type": "code",
       "source_file": "scripts/verify-static-site.mjs",
-      "source_location": "L53",
+      "source_location": "L54",
       "_origin": "ast",
       "id": "scripts_verify_static_site_trackpages",
       "community": 91,
@@ -20004,7 +20251,7 @@
       "label": "articles",
       "file_type": "code",
       "source_file": "src/content.config.ts",
-      "source_location": "L3",
+      "source_location": "L4",
       "_origin": "ast",
       "id": "src_content_config_articles",
       "community": 92,
@@ -20015,7 +20262,7 @@
       "label": "collections",
       "file_type": "code",
       "source_file": "src/content.config.ts",
-      "source_location": "L40",
+      "source_location": "L41",
       "_origin": "ast",
       "id": "src_content_config_collections",
       "community": 92,
@@ -28313,6 +28560,30 @@
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
+      "source_file": "scripts/deploy-hostinger.mjs",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_deploy_hostinger_files",
+      "target": "scripts_deploy_hostinger_saferelativepath",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/deploy-hostinger.mjs",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_deploy_hostinger_remotepath",
+      "target": "scripts_deploy_hostinger_saferelativepath",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
       "source_file": "scripts/import-snapshot.mjs",
       "source_location": "L105",
       "weight": 1.0,
@@ -28577,7 +28848,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L19",
+      "source_location": "L20",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
@@ -28589,12 +28860,24 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L20",
+      "source_location": "L21",
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
       "source": "package_dependencies_pagefind",
       "target": "pagefind",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L22",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "source": "package_dependencies_ssh2_sftp_client",
+      "target": "ssh2_sftp_client",
       "confidence_score": 1.0
     },
     {
@@ -29393,6 +29676,54 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "scripts/check-content.mjs",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_check_content",
+      "target": "src_data_resource_graph_resourcegraph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/resource-graph.mjs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_data_resource_graph",
+      "target": "src_data_tracks_tracks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/resource-graph.mjs",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_data_resource_graph",
+      "target": "src_data_tools_tools",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/resource-graph.mjs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_data_resource_graph",
+      "target": "src_data_templates_templates",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "src/layouts/BaseLayout.astro",
       "source_location": "L3",
       "weight": 1.0,
@@ -30047,6 +30378,54 @@
       "_origin": "ast",
       "source": "scripts_check_content",
       "target": "src_data_tracks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/check-content.mjs",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_check_content",
+      "target": "src_data_resource_graph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/resource-graph.mjs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_data_resource_graph",
+      "target": "src_data_tracks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/resource-graph.mjs",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_data_resource_graph",
+      "target": "src_data_tools",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/resource-graph.mjs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_data_resource_graph",
+      "target": "src_data_templates",
       "confidence_score": 1.0
     },
     {
@@ -31013,7 +31392,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L18",
+      "source_location": "L19",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package",
@@ -31079,7 +31458,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L19",
+      "source_location": "L20",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_dependencies",
@@ -31090,11 +31469,22 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L20",
+      "source_location": "L21",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_dependencies",
       "target": "package_dependencies_pagefind",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "package_dependencies",
+      "target": "package_dependencies_ssh2_sftp_client",
       "confidence_score": 1.0
     },
     {
@@ -31168,6 +31558,17 @@
       "confidence": "EXTRACTED",
       "source_file": "package.json",
       "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "package_scripts",
+      "target": "package_scripts_deploy_hostinger_prepare",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L17",
       "weight": 1.0,
       "_origin": "ast",
       "source": "package_scripts",
@@ -40906,29 +41307,18 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "scripts_check_content",
+      "target": "scripts_check_content_articledir",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/check-content.mjs",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_check_content",
       "target": "scripts_check_content_files",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/check-content.mjs",
-      "source_location": "L11",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "scripts_check_content",
-      "target": "scripts_check_content_failures",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/check-content.mjs",
-      "source_location": "L11",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "scripts_check_content",
-      "target": "scripts_check_content_slugs",
       "confidence_score": 1.0
     },
     {
@@ -40939,18 +41329,29 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "scripts_check_content",
-      "target": "scripts_check_content_value",
+      "target": "scripts_check_content_failures",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/check-content.mjs",
-      "source_location": "L8",
+      "source_location": "L12",
       "weight": 1.0,
       "_origin": "ast",
       "source": "scripts_check_content",
-      "target": "scripts_check_content_root",
+      "target": "scripts_check_content_slugs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/check-content.mjs",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_check_content",
+      "target": "scripts_check_content_value",
       "confidence_score": 1.0
     },
     {
@@ -40961,7 +41362,150 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "scripts_check_content",
-      "target": "scripts_check_content_articledir",
+      "target": "scripts_check_content_root",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/deploy-hostinger.mjs",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_deploy_hostinger",
+      "target": "scripts_deploy_hostinger_required",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/deploy-hostinger.mjs",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_deploy_hostinger",
+      "target": "scripts_deploy_hostinger_saferelativepath",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/deploy-hostinger.mjs",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_deploy_hostinger",
+      "target": "scripts_deploy_hostinger_remoteroot",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/deploy-hostinger.mjs",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_deploy_hostinger",
+      "target": "scripts_deploy_hostinger_releaseroot",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/deploy-hostinger.mjs",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_deploy_hostinger",
+      "target": "scripts_deploy_hostinger_remotepath",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/deploy-hostinger.mjs",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_deploy_hostinger",
+      "target": "scripts_deploy_hostinger_releaseid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/deploy-hostinger.mjs",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_deploy_hostinger",
+      "target": "scripts_deploy_hostinger_localfiles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/deploy-hostinger.mjs",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_deploy_hostinger",
+      "target": "scripts_deploy_hostinger_files",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/deploy-hostinger.mjs",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_deploy_hostinger",
+      "target": "scripts_deploy_hostinger_nextpaths",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/deploy-hostinger.mjs",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_deploy_hostinger",
+      "target": "scripts_deploy_hostinger_sftp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/deploy-hostinger.mjs",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_deploy_hostinger",
+      "target": "scripts_deploy_hostinger_readjson",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/deploy-hostinger.mjs",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_deploy_hostinger",
+      "target": "scripts_deploy_hostinger_root",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/deploy-hostinger.mjs",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_deploy_hostinger",
+      "target": "scripts_deploy_hostinger_dist",
       "confidence_score": 1.0
     },
     {
@@ -41881,7 +42425,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/verify-static-site.mjs",
-      "source_location": "L51",
+      "source_location": "L52",
       "weight": 1.0,
       "_origin": "ast",
       "source": "scripts_verify_static_site",
@@ -41892,7 +42436,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/verify-static-site.mjs",
-      "source_location": "L53",
+      "source_location": "L54",
       "weight": 1.0,
       "_origin": "ast",
       "source": "scripts_verify_static_site",
@@ -41903,11 +42447,11 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/verify-static-site.mjs",
-      "source_location": "L59",
+      "source_location": "L56",
       "weight": 1.0,
       "_origin": "ast",
       "source": "scripts_verify_static_site",
-      "target": "scripts_verify_static_site_toolassets",
+      "target": "scripts_verify_static_site_articlepages",
       "confidence_score": 1.0
     },
     {
@@ -41919,6 +42463,17 @@
       "_origin": "ast",
       "source": "scripts_verify_static_site",
       "target": "scripts_verify_static_site_dist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/verify-static-site.mjs",
+      "source_location": "L62",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_verify_static_site",
+      "target": "scripts_verify_static_site_toolassets",
       "confidence_score": 1.0
     },
     {
@@ -41980,7 +42535,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/content.config.ts",
-      "source_location": "L3",
+      "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_content_config",
@@ -41991,11 +42546,44 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/content.config.ts",
-      "source_location": "L40",
+      "source_location": "L41",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_content_config",
       "target": "src_content_config_collections",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/resource-graph.mjs",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_data_resource_graph",
+      "target": "src_data_resource_graph_buildresourcegraph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/resource-graph.mjs",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_data_resource_graph",
+      "target": "src_data_resource_graph_resourcegraph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/resource-graph.mjs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_data_resource_graph",
+      "target": "src_data_resource_graph_categoriesbytrack",
       "confidence_score": 1.0
     },
     {
@@ -42502,6 +43090,15 @@
       "_origin": "ast",
       "source": "tsconfig_compileroptions",
       "target": "tsconfig_compileroptions_verbatimmodulesyntax",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "dynamic_import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/platform-contract.test.mjs",
+      "_origin": "ast",
+      "source": "tests_platform_contract_test",
+      "target": "src_data_resource_graph",
       "confidence_score": 1.0
     },
     {

@@ -52,9 +52,15 @@ test('GitHub quality and production-gated deployment workflows exist', () => {
   const quality = read('.github/workflows/quality.yml');
   const deploy = read('.github/workflows/deploy.yml');
   assert.match(quality, /content:check/);
-  assert.match(quality, /graph:update/);
+  assert.match(quality, /graph:check/);
   assert.match(deploy, /environment:\s*production/);
   assert.match(deploy, /HOSTINGER/);
+});
+
+test('Graphify has separate local refresh and portable CI integrity commands', () => {
+  const pkg = JSON.parse(read('package.json'));
+  assert.match(pkg.scripts['graph:update'], /graphify update/);
+  assert.match(pkg.scripts['graph:check'], /check-graph-artifact/);
 });
 
 test('Hostinger deployment is manifest-scoped and creates a rollback copy', () => {

@@ -7,7 +7,7 @@ import { templates } from '../data/templates.mjs';
 export async function GET() {
   const articles = await getCollection('articles', ({ data }) => data.status === 'published');
   const urls = [
-    '/', '/start-here/', '/topics/', '/articles/', '/careers/', '/about/', '/contact/', '/newsletter/', '/privacy/', '/search/', '/news/', '/tools/', '/templates/', '/tracks/',
+    '/', '/start-here/', '/app/', '/playbooks/', '/topics/', '/articles/', '/careers/', '/about/', '/contact/', '/newsletter/', '/privacy/', '/search/', '/news/', '/tools/', '/templates/', '/tracks/',
     ...tracks.map((track) => `/tracks/${track.slug}/`),
     ...tools.map((tool) => `/tools/${tool.slug}/`),
     ...templates.map((template) => `/templates/${template.slug}/`),

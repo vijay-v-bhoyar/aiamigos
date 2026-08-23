@@ -5,6 +5,7 @@ export const site = {
   email: 'contact@aiamigos.org',
   navigation: [
     { href: '/start-here/', label: 'Start here' },
+    { href: '/app/', label: 'Workspace' },
     { href: '/tools/', label: 'Tools' },
     { href: '/templates/', label: 'Templates' },
     { href: '/tracks/', label: 'Tracks' },

@@ -175,5 +175,10 @@
   "173": "AI Amigos editorial trust and publication governance plan",
   "174": "tracks/[slug]/index.astro",
   "175": "[...slug].astro",
-  "176": "check-graph-artifact.mjs"
+  "176": "check-graph-artifact.mjs",
+  "177": "PracticeWorkspace.astro",
+  "178": "202608230001_practice_os.sql",
+  "180": "AI Amigos Supabase architecture",
+  "182": "run-model/index.ts",
+  "183": "publish-playbook/index.ts"
 }

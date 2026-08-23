@@ -9,16 +9,16 @@ import { tools } from '../data/tools.mjs';
       <p class="eyebrow">A practical AI workbench — no login</p>
       <h1>What are you trying to accomplish with AI?</h1>
       <p class="lede">Start with your real task. Build a useful work product, keep your inputs private, and use the supporting evidence to check the result.</p>
-      <div class="button-row"><a class="button" href="/tools/ai-task-workflow-planner/">Plan an AI workflow</a><a class="button secondary" href="/start-here/">Find my best path</a></div>
+      <div class="button-row"><a class="button" href="/app/">Open the practice workspace</a><a class="button secondary" href="/start-here/">Find my best path</a></div>
     </section>
     <section aria-labelledby="track-heading">
       <div class="section-head"><h2 id="track-heading">Choose your work</h2><a href="/tracks/">Compare all tracks</a></div>
       <div class="track-grid">{tracks.map((track) => <a class="work-card" href={`/tracks/${track.slug}/`}><span class="tag">{track.label}</span><h3>{track.short}</h3><p>{track.description}</p><span class="text-link">Open this track →</span></a>)}</div>
     </section>
     <section aria-labelledby="tool-heading" class="section-space">
-      <div class="section-head"><h2 id="tool-heading">Build something useful now</h2><a href="/tools/">All five tools</a></div>
+      <div class="section-head"><h2 id="tool-heading">Build something useful now</h2><a href="/app/">Continue in your workspace</a></div>
       <div class="article-grid">{tools.slice(1,4).map((tool) => <article class="article-card"><span class="tag">Runs in your browser</span><h3><a href={`/tools/${tool.slug}/`}>{tool.title}</a></h3><p>{tool.summary}</p><p class="meta">About {tool.estimatedMinutes} minutes · exportable result</p></article>)}</div>
     </section>
-    <section class="trust-band section-space"><div><p class="eyebrow">Recently tested resources</p><h2>Evidence is visible, and unfinished review is visible too.</h2></div><p>Tools show their assumptions and limitations. Historical guides retain their original dates and are labeled “source-preserved” until a named reviewer and current sources are added.</p><a class="button secondary" href="/about/">Read the review method</a></section>
+    <section class="trust-band section-space"><div><p class="eyebrow">From task to proof</p><h2>Keep the decision, not just the generated answer.</h2></div><p>Use the workspace to record a baseline, compare results, measure an outcome, and prepare a reviewed playbook. Historical guides remain supporting evidence—not substitutes for doing the work.</p><a class="button secondary" href="/playbooks/">See the playbook standard</a></section>
   </div>
 </BaseLayout>

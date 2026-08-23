@@ -1,0 +1,77 @@
+---
+import { blueprintList, PROJECT_STAGES, STAGE_LABELS } from '../data/practice-blueprints.mjs';
+---
+<section id="practice-workspace" class="practice-workspace" data-blueprints={JSON.stringify(blueprintList)} data-stages={JSON.stringify(PROJECT_STAGES)} data-stage-labels={JSON.stringify(STAGE_LABELS)}>
+  <div class="privacy-strip"><strong>Local-first.</strong> This workspace saves projects in this browser. No login is required, and nothing is shared until you export or submit a proof pack.</div>
+  <div class="practice-toolbar">
+    <div><p class="eyebrow">AI Practice OS</p><h2 id="workspace-heading">Do the work, keep the evidence.</h2><p class="meta">Create a project, test an AI workflow, record what happened, and return when the outcome is due.</p></div>
+    <button class="button" type="button" id="new-project">New project</button>
+  </div>
+  <form id="new-project-form" class="new-project-form" hidden>
+    <label>Project name<input name="title" required maxlength="160" placeholder="Weekly support triage pilot" /></label>
+    <label>Track<select name="track">{blueprintList.map((item) => <option value={item.slug}>{item.label}</option>)}</select></label>
+    <div class="button-row"><button class="button" type="submit">Create project</button><button class="button secondary" type="button" id="cancel-new-project">Cancel</button></div>
+  </form>
+  <div id="workspace-status" class="status-line" role="status" aria-live="polite"></div>
+  <div id="workspace-list" class="practice-project-list"></div>
+  <div id="workspace-detail" hidden></div>
+</section>
+
+<script>
+  import { createProject, transitionProject, addArtifact, addExperiment, addEvaluation, addOutcome, buildProofPack, sanitizeProofPack, evaluationSummary } from '../lib/practice-os.mjs';
+  import { createProjectStore } from '../lib/local-project-store.mjs';
+  const root = document.querySelector('#practice-workspace');
+  const blueprints = JSON.parse(root.dataset.blueprints); const stages = JSON.parse(root.dataset.stages); const labels = JSON.parse(root.dataset.stageLabels);
+  const store = createProjectStore(); let projects = []; let selected = null;
+  const safe = (value) => String(value ?? '').replace(/[&<>"']/g, (char) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[char]));
+  const status = (message) => { document.querySelector('#workspace-status').textContent = message; };
+  const blueprint = (track) => blueprints.find((item) => item.slug === track) ?? blueprints[0];
+  const save = async () => { await store.saveProject(selected); projects = await store.listProjects(); renderList(); renderDetail(); status(`Saved locally in ${store.kind}.`); };
+  const formValue = (form, name) => new FormData(form).get(name) ?? '';
+  function renderList() {
+    const list = document.querySelector('#workspace-list');
+    if (!projects.length) { list.innerHTML = '<div class="notice"><strong>No projects yet.</strong> Start with one real task. A useful project ends with a decision and an outcome—not a paragraph of generated text.</div>'; return; }
+    list.innerHTML = `<div class="section-head"><h3>Your projects</h3><span class="meta">${projects.length} saved locally</span></div><div class="practice-cards">${projects.map((project) => `<button class="practice-card ${selected?.id === project.id ? 'is-selected' : ''}" data-project="${project.id}" type="button"><span class="tag">${safe(blueprint(project.track).label)}</span><strong>${safe(project.title)}</strong><span>${safe(labels[project.stage])}</span><small>${project.evaluations.length} evaluations · ${project.outcomes.length} outcomes</small></button>`).join('')}</div>`;
+    list.querySelectorAll('[data-project]').forEach((button) => button.addEventListener('click', () => { selected = projects.find((item) => item.id === button.dataset.project); renderList(); renderDetail(); }));
+  }
+  function renderDetail() {
+    const shell = document.querySelector('#workspace-detail');
+    if (!selected) { shell.hidden = true; return; }
+    shell.hidden = false; const bp = blueprint(selected.track); const summary = evaluationSummary(selected); const stageIndex = stages.indexOf(selected.stage);
+    shell.innerHTML = `<div class="practice-detail"><div class="section-head"><div><p class="eyebrow">${safe(bp.label)}</p><h3>${safe(selected.title)}</h3><p>${safe(bp.promise)}</p></div><button class="button secondary" type="button" id="export-proof">Export proof pack</button></div><ol class="stage-list" aria-label="Project stages">${stages.map((stage, index) => `<li class="${index <= stageIndex ? 'is-done' : ''} ${stage === selected.stage ? 'is-current' : ''}"><span>${index + 1}</span>${safe(labels[stage])}</li>`).join('')}</ol><div class="practice-grid"><section class="practice-panel"><h4>Current stage: ${safe(labels[selected.stage])}</h4><p class="meta">${safe(bp.evidencePrompt)}</p>${stageForm(selected, bp)}</section><aside class="practice-panel"><h4>Evidence ledger</h4><dl class="ledger"><div><dt>Artifacts</dt><dd>${selected.artifacts.length}</dd></div><div><dt>Experiments</dt><dd>${selected.experiments.length}</dd></div><div><dt>Evaluations</dt><dd>${summary.count ? `${summary.average}/5 · ${summary.band}` : 'Not started'}</dd></div><div><dt>Outcomes</dt><dd>${selected.outcomes.length}</dd></div></dl><h4>Guardrails</h4><ul>${bp.questions.map((item) => `<li>${safe(item)}</li>`).join('')}</ul></aside></div></div>`;
+    shell.querySelector('#export-proof').addEventListener('click', () => { const body = JSON.stringify(buildProofPack(selected), null, 2); const link = document.createElement('a'); link.href = URL.createObjectURL(new Blob([body], { type: 'application/json' })); link.download = `${selected.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'ai-proof-pack'}.json`; link.click(); URL.revokeObjectURL(link.href); status('Proof pack exported. Remove sensitive details before sharing.'); });
+    shell.querySelectorAll('form').forEach((form) => form.addEventListener('submit', async (event) => { event.preventDefault(); await handleStage(form); }));
+  }
+  function stageForm(project, bp) {
+    const next = stages[stages.indexOf(project.stage) + 1];
+    const advance = next ? `<button class="button" name="advance" value="true" type="submit">Save and continue to ${safe(labels[next])}</button>` : '<span class="tag">Ready for review</span>';
+    if (project.stage === 'frame') return `<form class="practice-form"><label>What are you trying to accomplish?<textarea name="goal" required>${safe(project.goal)}</textarea></label><label>Data sensitivity<select name="sensitivity"><option ${project.sensitivity==='public'?'selected':''}>public</option><option ${project.sensitivity==='internal'?'selected':''}>internal</option><option ${project.sensitivity==='confidential'?'selected':''}>confidential</option></select></label><label>Owner or reviewer note<textarea name="ownerNote">${safe(project.ownerNote)}</textarea></label><div class="button-row">${advance}</div></form>`;
+    if (project.stage === 'baseline') return `<form class="practice-form"><label>Baseline measure<input name="metric" required placeholder="${safe(bp.metricLabel)}" /></label><label>Baseline value<input name="baseline" placeholder="e.g. 120 minutes or 70%" /></label><label>What would count as success?<textarea name="target" required></textarea></label><div class="button-row">${advance}</div></form>`;
+    if (project.stage === 'experiment') return `<form class="practice-form"><label>How did you run it?<select name="method"><option>manual import</option><option>approved model connector</option><option>local model</option></select></label><label>Provider and model<input name="model" placeholder="Keep version/date visible" /></label><label>Test case label<input name="inputLabel" required placeholder="Case 01" /></label><label>Imported output<textarea name="output" required placeholder="Paste the output you want to evaluate. Do not paste secrets or personal records."></textarea></label><label>Notes and prompt version<textarea name="notes"></textarea></label><div class="button-row">${advance}</div></form>`;
+    if (project.stage === 'evaluate') return `<form class="practice-form"><label>Test case label<input name="caseLabel" required placeholder="Case 01" /></label><label>Score (0–5)<input name="score" type="number" min="0" max="5" step="0.5" required /></label><label>Expected evidence<textarea name="expected" required></textarea></label><label>Observed result<textarea name="observed" required></textarea></label><label>Failure or limitation<textarea name="failure" placeholder="Leave blank only when no failure was found."></textarea></label><div class="button-row"><button class="button secondary" name="addOnly" value="true" type="submit">Save evaluation</button>${advance}</div></form>`;
+    if (project.stage === 'decide') return `<form class="practice-form"><label>Decision<select name="decision"><option>Adopt with controls</option><option>Revise and retest</option><option>Do not use</option><option>Roll back</option></select></label><label>Decision evidence<textarea name="content" required placeholder="What did the evaluation prove or fail to prove?"></textarea></label><label>Human approval owner<input name="owner" required /></label><div class="button-row">${advance}</div></form>`;
+    if (project.stage === 'follow-up') return `<form class="practice-form"><label>Outcome metric<input name="metric" required value="${safe(bp.metricLabel)}" /></label><label>Measured value<input name="value" type="number" step="any" /></label><label>Unit<input name="unit" placeholder="minutes, %, cases, hours" /></label><label>Measured date<input name="measuredAt" type="date" /></label><label>What changed after use?<textarea name="note" required></textarea></label><div class="button-row">${advance}</div></form>`;
+    if (project.status === 'submitted-for-review') return `<div class="notice"><strong>Review candidate prepared.</strong> Your sanitized proof pack is still private. A named human reviewer must approve it before it becomes a public CC BY-SA 4.0 playbook.</div><pre>${safe(JSON.stringify(project.reviewCandidate, null, 2))}</pre>`;
+    return `<form class="practice-form"><label>Public summary<textarea name="content" required placeholder="Describe the task, method, evidence, result, and limits without private details."></textarea></label><label>Limitations<textarea name="limitations" required></textarea></label><p class="notice">Submission creates a sanitized CC BY-SA 4.0 review candidate. A human reviewer must approve it before it becomes public.</p><div class="button-row"><button class="button" name="submitReview" value="true" type="submit">Prepare review submission</button></div></form>`;
+  }
+  async function handleStage(form) {
+    const values = Object.fromEntries(new FormData(form));
+    try {
+      let advanced = false;
+      if (selected.stage === 'frame') selected = { ...selected, goal: values.goal, sensitivity: values.sensitivity, ownerNote: values.ownerNote, updatedAt: new Date().toISOString() };
+      if (selected.stage === 'baseline') selected = addArtifact(selected, { type: 'baseline', title: values.metric, content: `Baseline: ${values.baseline}\nSuccess: ${values.target}` });
+      if (selected.stage === 'experiment') selected = addExperiment(selected, values);
+      if (selected.stage === 'evaluate') { selected = addEvaluation(selected, values); if (values.addOnly !== 'true') { selected = transitionProject(selected, 'decide', 'Evaluation recorded'); advanced = true; } }
+      if (selected.stage === 'decide') selected = addArtifact(selected, { type: 'decision', title: values.decision, content: `${values.content}\nApproval owner: ${values.owner}` });
+      if (selected.stage === 'follow-up') selected = addOutcome(selected, values);
+      if (selected.stage === 'publish' && values.submitReview === 'true') { selected = { ...selected, status: 'submitted-for-review', reviewCandidate: { ...sanitizeProofPack(selected), publicSummary: values.content, publicLimitations: [values.limitations] }, updatedAt: new Date().toISOString() }; }
+      if (!advanced && selected.stage !== 'publish' && !(selected.stage === 'evaluate' && values.addOnly === 'true')) { const next = stages[stages.indexOf(selected.stage) + 1]; if (next) selected = transitionProject(selected, next, `${labels[selected.stage]} saved`); }
+      await save();
+    } catch (error) { status(error.message); }
+  }
+  const newProjectForm = document.querySelector('#new-project-form');
+  document.querySelector('#new-project').addEventListener('click', () => { newProjectForm.hidden = false; newProjectForm.querySelector('input').focus(); });
+  document.querySelector('#cancel-new-project').addEventListener('click', () => { newProjectForm.reset(); newProjectForm.hidden = true; });
+  newProjectForm.addEventListener('submit', async (event) => { event.preventDefault(); const values = Object.fromEntries(new FormData(newProjectForm)); selected = createProject(values); projects = [...projects, selected]; newProjectForm.reset(); newProjectForm.hidden = true; await save(); });
+  projects = await store.listProjects(); renderList(); renderDetail();
+</script>

@@ -1100,8 +1100,8 @@
     "semantic_hash": ""
   },
   "src/data/site.ts": {
-    "mtime": 1787426782.2064757,
-    "ast_hash": "883bde37791db8ad51baaf6b20915dbb",
+    "mtime": 1787488050.8009603,
+    "ast_hash": "8638471120b27e5241db36a664a5bbc5",
     "semantic_hash": ""
   },
   "src/layouts/BaseLayout.astro": {
@@ -1115,8 +1115,8 @@
     "semantic_hash": ""
   },
   "src/pages/about/index.astro": {
-    "mtime": 1787427119.0366094,
-    "ast_hash": "15e97eaf95f8d01b58e24d40b5855e85",
+    "mtime": 1787488849.577407,
+    "ast_hash": "b12584daca7e1f4b526936276b393575",
     "semantic_hash": ""
   },
   "src/pages/articles/[...slug].astro": {
@@ -1140,8 +1140,8 @@
     "semantic_hash": ""
   },
   "src/pages/index.astro": {
-    "mtime": 1787426906.8612306,
-    "ast_hash": "97ad719371fc7a2d5761d2522ba95db0",
+    "mtime": 1787488052.8290126,
+    "ast_hash": "f2ddb3eec51af5ce9bdfbbd1d7160ef1",
     "semantic_hash": ""
   },
   "src/pages/newsletter/index.astro": {
@@ -1150,8 +1150,8 @@
     "semantic_hash": ""
   },
   "src/pages/privacy/index.astro": {
-    "mtime": 1787427121.8464134,
-    "ast_hash": "6f30e3c8cac6ac5da58ec8f878786196",
+    "mtime": 1787488847.58043,
+    "ast_hash": "aaf5f613c733bd7f2a9919b44e320736",
     "semantic_hash": ""
   },
   "src/pages/rss.xml.ts": {
@@ -1645,8 +1645,8 @@
     "semantic_hash": ""
   },
   "src/pages/tools/[slug]/index.astro": {
-    "mtime": 1787426978.3769445,
-    "ast_hash": "d0be40c0ea7fe63f78d0d1de32b72ff6",
+    "mtime": 1787488851.5776947,
+    "ast_hash": "cc6d2a2bb5c92c8f8d5f150a04309b14",
     "semantic_hash": ""
   },
   "src/pages/tools/index.astro": {
@@ -1665,8 +1665,8 @@
     "semantic_hash": ""
   },
   "tests/platform-contract.test.mjs": {
-    "mtime": 1787436562.19843,
-    "ast_hash": "7c390e5de27cb07286110d1b58202491",
+    "mtime": 1787488551.3443952,
+    "ast_hash": "9d65b97c9d74e6a748f8b1eb2f5ef0d1",
     "semantic_hash": ""
   },
   "tests/tool-engine.test.mjs": {
@@ -1690,13 +1690,68 @@
     "semantic_hash": ""
   },
   "src/data/resource-graph.mjs": {
-    "mtime": 1787427755.1505954,
-    "ast_hash": "e6c3b66f0b9bf2bb2b5fc3f8dc1f9de6",
+    "mtime": 1787488088.89063,
+    "ast_hash": "c73c91241cea3345b3a9c1571b2b1c87",
     "semantic_hash": ""
   },
   "scripts/check-graph-artifact.mjs": {
     "mtime": 1787436595.6694696,
     "ast_hash": "ff7eff86e50e504598133dfc14a8533d",
+    "semantic_hash": ""
+  },
+  "src/components/PracticeWorkspace.astro": {
+    "mtime": 1787488521.2488923,
+    "ast_hash": "4e84bad7e8c7b258a8435206a1cb6547",
+    "semantic_hash": ""
+  },
+  "src/data/practice-blueprints.mjs": {
+    "mtime": 1787487989.15551,
+    "ast_hash": "b6d71a5058f3ad310c601dc9b56d550e",
+    "semantic_hash": ""
+  },
+  "src/lib/local-project-store.mjs": {
+    "mtime": 1787488571.7144277,
+    "ast_hash": "911b090da60827b3a1a2336d2dff11c1",
+    "semantic_hash": ""
+  },
+  "src/lib/practice-os.mjs": {
+    "mtime": 1787487991.9377573,
+    "ast_hash": "41da2f167520ff33d4735165141c3675",
+    "semantic_hash": ""
+  },
+  "src/pages/app/index.astro": {
+    "mtime": 1787488002.7119884,
+    "ast_hash": "cd90504e4fe1e19a88dd214d6edd83ef",
+    "semantic_hash": ""
+  },
+  "src/pages/playbooks/index.astro": {
+    "mtime": 1787488008.8560197,
+    "ast_hash": "84fdbfc2bf28d1e278ec6371494ebc61",
+    "semantic_hash": ""
+  },
+  "supabase/functions/publish-playbook/index.ts": {
+    "mtime": 1787488226.9495206,
+    "ast_hash": "fca3cff9ffae8ae1f1061e8275ebb84d",
+    "semantic_hash": ""
+  },
+  "supabase/functions/run-model/index.ts": {
+    "mtime": 1787488223.3715625,
+    "ast_hash": "75167cb9bf2115033bf0c17aa977cba3",
+    "semantic_hash": ""
+  },
+  "supabase/migrations/202608230001_practice_os.sql": {
+    "mtime": 1787488218.6728897,
+    "ast_hash": "a786aa7b98be616659702e00d1d60267",
+    "semantic_hash": ""
+  },
+  "tests/practice-os.test.mjs": {
+    "mtime": 1787488539.0121727,
+    "ast_hash": "23a7db5a3002a2b0ed9ae96651a50fb5",
+    "semantic_hash": ""
+  },
+  "docs/SUPABASE_ARCHITECTURE.md": {
+    "mtime": 1787488230.0851707,
+    "ast_hash": "ff22e8cf6e9a9f9b105f13539a3a6a9c",
     "semantic_hash": ""
   }
 }

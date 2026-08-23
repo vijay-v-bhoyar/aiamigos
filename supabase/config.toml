@@ -1,0 +1,7 @@
+project_id = "aiamigos-practice"
+
+[functions.run-model]
+verify_jwt = true
+
+[functions.publish-playbook]
+verify_jwt = true

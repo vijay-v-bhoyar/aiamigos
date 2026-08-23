@@ -1,16 +1,16 @@
-# Graph Report - aiamigos  (2026-08-22)
+# Graph Report - aiamigos  (2026-08-23)
 
 ## Corpus Check
-- 291 files · ~1,540,656 words
+- 302 files · ~1,546,327 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1771 nodes · 2706 edges · 177 communities (166 shown, 11 thin omitted)
-- Extraction: 90% EXTRACTED · 10% INFERRED · 0% AMBIGUOUS · INFERRED: 284 edges (avg confidence: 0.73)
+- 1847 nodes · 2863 edges · 182 communities (169 shown, 13 thin omitted)
+- Extraction: 90% EXTRACTED · 10% INFERRED · 0% AMBIGUOUS · INFERRED: 285 edges (avg confidence: 0.73)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `59794d5a`
+- Built from commit: `364cd6b4`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -92,6 +92,11 @@
 - tracks/[slug]/index.astro
 - [...slug].astro
 - check-graph-artifact.mjs
+- PracticeWorkspace.astro
+- 202608230001_practice_os.sql
+- AI Amigos Supabase architecture
+- run-model/index.ts
+- publish-playbook/index.ts
 
 ## God Nodes (most connected - your core abstractions)
 1. `AIAmigos_Remediation_Plugin` - 84 edges
@@ -112,15 +117,15 @@
   remediation/tests/seo-regression.mjs → scripts/check-content.mjs
 - `asMarkdown()` --indirect_call--> `value()`  [INFERRED]
   src/lib/tool-engine.mjs → scripts/check-content.mjs
-- `243()` --indirect_call--> `k()`  [INFERRED]
-  public-site-snapshot/assets/googlesitekit-consent-mode-86cb52dcb9f2b27ed244-313fe6f64e.js → public-site-snapshot/assets/regenerator-runtime.min-ff50f4e9f0.js
 - `r()` --indirect_call--> `ot()`  [INFERRED]
+  public-site-snapshot/assets/bootstrap.min-b5eee535c3.js → public-site-snapshot/assets/jquery.min-01a0307c4b.js
+- `o()` --indirect_call--> `fe()`  [INFERRED]
   public-site-snapshot/assets/bootstrap.min-b5eee535c3.js → public-site-snapshot/assets/jquery.min-01a0307c4b.js
 
 ## Import Cycles
 - None detected.
 
-## Communities (177 total, 11 thin omitted)
+## Communities (182 total, 13 thin omitted)
 
 ### Community 0 - "seo-regression.mjs"
 Cohesion: 0.06
@@ -131,8 +136,8 @@ Cohesion: 0.06
 Nodes (4): Owl(), prefixed(), TODO: Should be computed from number of min width items in stage, test()
 
 ### Community 2 - "jquery.min-01a0307c4b.js"
-Cohesion: 0.06
-Nodes (52): i(), l(), n(), o(), r(), s(), Se(), 243() (+44 more)
+Cohesion: 0.05
+Nodes (61): i(), l(), n(), o(), r(), s(), Se(), 243() (+53 more)
 
 ### Community 6 - "FakeElement"
 Cohesion: 0.05
@@ -163,8 +168,8 @@ Cohesion: 0.09
 Nodes (29): ancestorContext(), assetSource(), candidateProbeMap, decodeHtml(), extractImages(), extractScripts(), heavyImages, imageSource() (+21 more)
 
 ### Community 13 - "y"
-Cohesion: 0.20
-Nodes (27): J(), E(), h(), j(), k(), l(), O(), u() (+19 more)
+Cohesion: 0.48
+Nodes (18): a(), d(), e(), f(), g(), h(), i(), l() (+10 more)
 
 ### Community 14 - "Finding actions"
 Cohesion: 0.11
@@ -331,7 +336,7 @@ Cohesion: 0.70
 Nodes (4): consent_api_get_cookie(), consent_api_set_cookie(), wp_has_consent(), wp_set_consent()
 
 ### Community 58 - "templates.mjs"
-Cohesion: 0.13
+Cohesion: 0.14
 Nodes (9): track(), templateBySlug, templateMarkdown(), templates, templates, markdown, schema, status (+1 more)
 
 ### Community 59 - "PHP 8.4.24 validation evidence — v1.4.1 current source"
@@ -363,7 +368,7 @@ Cohesion: 0.17
 Nodes (9): articlePages, dist, existingPaths, failures, htmlFiles, root, templatePages, toolAssets (+1 more)
 
 ### Community 171 - "check-content.mjs"
-Cohesion: 0.15
+Cohesion: 0.14
 Nodes (12): articleDir, failures, files, root, slugs, categoriesByTrack, resourceGraph, sources (+4 more)
 
 ### Community 172 - "sync-feeds.mjs"
@@ -386,10 +391,22 @@ Nodes (5): categoryTrack, defaultTemplates, defaultTools, externalSources, schem
 Cohesion: 0.25
 Nodes (7): endpointPairs, exactEdges, findings, graph, graphPath, nodeIds, root
 
+### Community 177 - "PracticeWorkspace.astro"
+Cohesion: 0.11
+Nodes (35): blueprint(), blueprints, handleStage(), labels, newProjectForm, projects, renderDetail(), renderList() (+27 more)
+
+### Community 178 - "202608230001_practice_os.sql"
+Cohesion: 0.21
+Nodes (18): auth.users, public.set_updated_at, artifacts_updated_at, profiles_updated_at, projects_updated_at, public.artifacts, public.audit_events, public.evaluations (+10 more)
+
+### Community 180 - "AI Amigos Supabase architecture"
+Cohesion: 0.40
+Nodes (4): AI Amigos Supabase architecture, Human gate before remote application, Native, custom, external, Security invariants
+
 ## Knowledge Gaps
-- **543 isolated node(s):** `name`, `version`, `private`, `type`, `dev` (+538 more)
+- **556 isolated node(s):** `name`, `version`, `private`, `type`, `dev` (+551 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **11 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **13 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
@@ -399,12 +416,12 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `main()` connect `seo-regression.mjs` to `apply-staging-quarantine.mjs`, `FakeElement`?**
   _High betweenness centrality (0.043) - this node is a cross-community bridge._
 - **What connects `name`, `version`, `private` to the rest of the system?**
-  _543 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _556 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `seo-regression.mjs` be split into smaller, more focused modules?**
   _Cohesion score 0.06334735857877513 - nodes in this community are weakly interconnected._
 - **Should `Owl` be split into smaller, more focused modules?**
   _Cohesion score 0.06288568909785483 - nodes in this community are weakly interconnected._
 - **Should `jquery.min-01a0307c4b.js` be split into smaller, more focused modules?**
-  _Cohesion score 0.06116700201207243 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.05048766494549627 - nodes in this community are weakly interconnected._
 - **Should `AIAmigos_Remediation_Plugin` be split into smaller, more focused modules?**
   _Cohesion score 0.03354037267080745 - nodes in this community are weakly interconnected._

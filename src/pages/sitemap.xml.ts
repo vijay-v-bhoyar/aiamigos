@@ -3,11 +3,13 @@ import { site } from '../data/site';
 import { tracks } from '../data/tracks.mjs';
 import { tools } from '../data/tools.mjs';
 import { templates } from '../data/templates.mjs';
+import { playbooks } from '../data/outcome-network.mjs';
 
 export async function GET() {
-  const articles = await getCollection('articles', ({ data }) => data.status === 'published');
+  const articles = await getCollection('articles', ({ data }) => data.status === 'published' && data.reviewStatus === 'reviewed');
   const urls = [
-    '/', '/start-here/', '/app/', '/playbooks/', '/topics/', '/articles/', '/careers/', '/about/', '/contact/', '/newsletter/', '/privacy/', '/search/', '/news/', '/tools/', '/templates/', '/tracks/',
+    '/', '/start-here/', '/app/', '/playbooks/', '/benchmarks/', '/challenges/', '/topics/', '/articles/', '/careers/', '/about/', '/contact/', '/newsletter/', '/privacy/', '/search/', '/news/', '/tools/', '/templates/', '/tracks/',
+    ...playbooks.map((playbook) => `/playbooks/${playbook.slug}/`),
     ...tracks.map((track) => `/tracks/${track.slug}/`),
     ...tools.map((tool) => `/tools/${tool.slug}/`),
     ...templates.map((template) => `/templates/${template.slug}/`),

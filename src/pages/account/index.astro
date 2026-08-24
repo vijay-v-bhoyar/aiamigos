@@ -1,0 +1,7 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+const configured = Boolean(import.meta.env.PUBLIC_SUPABASE_URL && import.meta.env.PUBLIC_SUPABASE_ANON_KEY);
+---
+<BaseLayout title="AI Amigos account" description="Optional cross-device sync for private AI practice projects." robots="noindex,follow">
+  <div class="shell"><section class="hero reading"><p class="eyebrow">Optional account</p><h1>{configured ? 'Sign in to sync approved project fields.' : 'Account sync is not active yet.'}</h1><p class="lede">The workbench remains available without an account. Local projects stay in your browser and can be exported at any time.</p></section>{configured ? <div id="account-root" class="notice">The Supabase environment is configured, but the authenticated interface must pass live RLS and conflict tests before release.</div> : <div class="permission-state"><span class="status pending">Fail-closed</span><h2>Remote sync is intentionally unavailable.</h2><p>No production Supabase URL or anonymous key is present in this build. AI Amigos will not show a sign-in form that cannot safely persist and isolate projects.</p><a class="button" href="/app/">Use the local workbench</a></div>}</div>
+</BaseLayout>

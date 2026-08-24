@@ -1,0 +1,18 @@
+export const guideReviewQueue = [
+  { slug:'ai-leader-with-no-code', title:'Choose a no-code AI pilot with measurable controls', track:'business', status:'in-review', gate:'Worked example and named domain review' },
+  { slug:'crafting-the-future-ais-role-in-modern-manufacturing', title:'Scope a manufacturing AI pilot without hiding failure modes', track:'business', status:'in-review', gate:'Primary industry evidence and pilot metrics' },
+  { slug:'unboxing-ai-the-retail-revolution-behind-your-shopping-spree', title:'Evaluate a retail AI workflow with human approval points', track:'business', status:'in-review', gate:'Current sources and limitations' },
+  { slug:'ethical-ai', title:'Build a practical AI risk and oversight register', track:'business', status:'in-review', gate:'Policy artifact and reviewer' },
+  { slug:'ai-career-paths', title:'Compare AI career paths using current role evidence', track:'careers', status:'in-review', gate:'Current labor sources and role rubric' },
+  { slug:'ai-career-faq', title:'Make evidence-based decisions about an AI career', track:'careers', status:'in-review', gate:'Current labor sources and reviewer' },
+  { slug:'career-in-ai', title:'Build a 90-day proof-of-work plan for an AI role', track:'careers', status:'in-review', gate:'Portfolio example and role freshness' },
+  { slug:'ai-jobs-whats-the-real-deal--f0-9f-8c-8d', title:'Assess an AI job posting without relying on hype', track:'careers', status:'in-review', gate:'Current job-source sample and limitations' },
+  { slug:'prompt-engineering', title:'Teach prompt experiments as evidence, not prompt tricks', track:'teaching', status:'in-review', gate:'Assessment rubric and educator review' },
+  { slug:'limitations-of-generative-ai', title:'Teach learners to test generative AI limitations', track:'teaching', status:'in-review', gate:'Worked lesson and accessibility review' },
+  { slug:'ai-ethics-for-everyday-folks-the-stuff-you-gotta-know--f0-9f-a4-96-f0-9f-94-8d', title:'Create clear AI-use rules for a learning task', track:'teaching', status:'in-review', gate:'Policy example and institutional scope' },
+  { slug:'training-data-for-generative-ai-models', title:'Explain training-data limits with a claim-check lab', track:'teaching', status:'in-review', gate:'Primary sources and learner exercise' },
+  { slug:'rag-architecture-types-with-implementation-details-and-their-use-cases', title:'Select a RAG architecture using testable constraints', track:'builders', status:'in-review', gate:'Versioned lab and evaluation set' },
+  { slug:'choosing-the-right-vector-database-with-caching-a-comprehensive-guide-for-genai-applications', title:'Compare vector storage options with a reproducible matrix', track:'builders', status:'in-review', gate:'Versioned benchmarks and disclosure' },
+  { slug:'local-llm-on-your-laptop', title:'Evaluate a local model on privacy, quality, and cost', track:'builders', status:'in-review', gate:'Pinned versions and test cases' },
+  { slug:'python-deployment-best-practices-a-comprehensive-guide', title:'Gate an AI service deployment with rollback evidence', track:'builders', status:'in-review', gate:'Reproducible lab and failure tests' },
+];

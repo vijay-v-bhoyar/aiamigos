@@ -61,7 +61,7 @@ export function addExperiment(project, input = {}) {
 
 export function addEvaluation(project, input = {}) {
   const score = Math.max(0, Math.min(5, Number(input.score) || 0));
-  return { ...project, evaluations: [...project.evaluations, withTimestamp({ caseLabel: clean(input.caseLabel, 'Unnamed case'), score, expected: clean(input.expected), observed: clean(input.observed), failure: clean(input.failure) })], updatedAt: new Date().toISOString() };
+  return { ...project, evaluations: [...project.evaluations, withTimestamp({ caseLabel: clean(input.caseLabel, 'Unnamed case'), dimension: clean(input.dimension, 'Overall quality'), score, expected: clean(input.expected), observed: clean(input.observed), failure: clean(input.failure) })], updatedAt: new Date().toISOString() };
 }
 
 export function addOutcome(project, input = {}) {

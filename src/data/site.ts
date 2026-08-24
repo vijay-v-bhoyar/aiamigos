@@ -1,14 +1,12 @@
 export const site = {
   name: 'AI Amigos',
   url: 'https://www.aiamigos.org',
-  description: 'Private, practical AI tools, templates, and evidence for real work and learning.',
+  description: 'Turn AI experiments into tested workflows, reusable evidence, and trustworthy benchmarks.',
   email: 'contact@aiamigos.org',
   navigation: [
-    { href: '/start-here/', label: 'Start here' },
-    { href: '/app/', label: 'Workspace' },
-    { href: '/tools/', label: 'Tools' },
-    { href: '/templates/', label: 'Templates' },
-    { href: '/tracks/', label: 'Tracks' },
+    { href: '/app/', label: 'Workbench' },
+    { href: '/playbooks/', label: 'Playbooks' },
+    { href: '/benchmarks/', label: 'Benchmarks' },
     { href: '/articles/', label: 'Guides' },
     { href: '/news/', label: 'News' }
   ],

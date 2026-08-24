@@ -10,7 +10,7 @@ export function getStaticPaths() {
 
 const { slug } = Astro.params;
 const topic = topicBySlug[slug];
-const articles = (await getCollection('articles', ({ data }) => data.status === 'published' && data.category === slug))
+const articles = (await getCollection('articles', ({ data }) => data.status === 'published' && data.reviewStatus === 'reviewed' && data.category === slug))
   .sort((a, b) => b.data.publishedAt.localeCompare(a.data.publishedAt));
 ---
 <BaseLayout title={topic.label} description={topic.description} canonical={`https://www.aiamigos.org/topics/${slug}/`}>

@@ -170,7 +170,7 @@
   "168": "unboxing-ai-the-retail-revolution-behind-your-shopping-spree.md",
   "169": "unlocking-ai-magic-in-entertainment-a-light-hearted-guide.md",
   "170": "ways-to-test-a-rag-architecture-based-generative-ai-application.md",
-  "171": "check-content.mjs",
+  "171": "resource-graph.mjs",
   "172": "sync-feeds.mjs",
   "173": "AI Amigos editorial trust and publication governance plan",
   "174": "tracks/[slug]/index.astro",
@@ -178,7 +178,11 @@
   "176": "check-graph-artifact.mjs",
   "177": "PracticeWorkspace.astro",
   "178": "202608230001_practice_os.sql",
+  "179": "202608240001_verified_practice_network.sql",
   "180": "AI Amigos Supabase architecture",
+  "181": "outcome-network.mjs",
   "182": "run-model/index.ts",
-  "183": "publish-playbook/index.ts"
+  "183": "publish-playbook/index.ts",
+  "184": "AI Amigos design system",
+  "185": "Q: Where does the current AI Amigos outcome loop connect workspace, project, evaluation, outcome, playbook, fork, run report, and benchmark?"
 }

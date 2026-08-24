@@ -1,24 +1,32 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { tracks } from '../data/tracks.mjs';
-import { tools } from '../data/tools.mjs';
+import { playbooks, challenges, benchmarkDefinitions, MIN_BENCHMARK_SAMPLE } from '../data/outcome-network.mjs';
 ---
-<BaseLayout title="AI Amigos" description="Private browser tools, tested workflows, and practical templates for using AI at work, in study, and in technical systems.">
+<BaseLayout title="AI Amigos" description="Turn AI experiments into tested workflows, reusable evidence, and trustworthy benchmarks." pageClass="home-page">
   <div class="shell">
-    <section class="hero">
-      <p class="eyebrow">A practical AI workbench — no login</p>
-      <h1>What are you trying to accomplish with AI?</h1>
-      <p class="lede">Start with your real task. Build a useful work product, keep your inputs private, and use the supporting evidence to check the result.</p>
-      <div class="button-row"><a class="button" href="/app/">Open the practice workspace</a><a class="button secondary" href="/start-here/">Find my best path</a></div>
+    <section class="hero home-hero">
+      <p class="eyebrow">Practical AI, proven in use</p>
+      <h1>Turn an AI experiment into evidence you can trust.</h1>
+      <p class="lede">Define the baseline, compare approaches, record failures and human decisions, then return for the real outcome. Your work stays in this browser unless you choose to export it.</p>
+      <div class="button-row"><a class="button" href="/app/">Start a project</a><a class="button secondary" href="/playbooks/">Use a reviewed protocol</a></div>
+      <dl class="proof-stats" aria-label="AI Amigos publication state"><div><dt>4</dt><dd>practice tracks</dd></div><div><dt>{playbooks.length}</dt><dd>reviewed protocols</dd></div><div><dt>0</dt><dd>public outcome claims</dd></div><div><dt>{MIN_BENCHMARK_SAMPLE}+</dt><dd>reports before a benchmark</dd></div></dl>
     </section>
-    <section aria-labelledby="track-heading">
-      <div class="section-head"><h2 id="track-heading">Choose your work</h2><a href="/tracks/">Compare all tracks</a></div>
-      <div class="track-grid">{tracks.map((track) => <a class="work-card" href={`/tracks/${track.slug}/`}><span class="tag">{track.label}</span><h3>{track.short}</h3><p>{track.description}</p><span class="text-link">Open this track →</span></a>)}</div>
+    <section class="task-entrances" aria-labelledby="track-heading">
+      <div class="section-head"><div><p class="eyebrow">Choose the work</p><h2 id="track-heading">Four equal paths. One evidence standard.</h2></div><a href="/tracks/">Compare tracks</a></div>
+      <div class="track-list">{tracks.map((track, index) => <a href={`/tracks/${track.slug}/`}><span>0{index + 1}</span><div><strong>{track.label}</strong><p>{track.short}</p></div><b aria-hidden="true">→</b></a>)}</div>
     </section>
-    <section aria-labelledby="tool-heading" class="section-space">
-      <div class="section-head"><h2 id="tool-heading">Build something useful now</h2><a href="/app/">Continue in your workspace</a></div>
-      <div class="article-grid">{tools.slice(1,4).map((tool) => <article class="article-card"><span class="tag">Runs in your browser</span><h3><a href={`/tools/${tool.slug}/`}>{tool.title}</a></h3><p>{tool.summary}</p><p class="meta">About {tool.estimatedMinutes} minutes · exportable result</p></article>)}</div>
+    <section class="network-loop section-space" aria-labelledby="loop-heading">
+      <div><p class="eyebrow">The compounding loop</p><h2 id="loop-heading">The result is not a roadmap. It is a reusable record of what worked, what failed, and why.</h2><p>Better models may improve the experiment. The project history, evaluation cases, outcomes, reviewer decisions, and comparable reports remain useful.</p></div>
+      <ol><li><span>1</span>Frame a real job and baseline</li><li><span>2</span>Compare versions on fixed evidence</li><li><span>3</span>Record the outcome after use</li><li><span>4</span>Sanitize and submit a proof pack</li><li><span>5</span>Fork reviewed playbooks</li><li><span>6</span>Publish benchmarks only at sufficient sample</li></ol>
     </section>
-    <section class="trust-band section-space"><div><p class="eyebrow">From task to proof</p><h2>Keep the decision, not just the generated answer.</h2></div><p>Use the workspace to record a baseline, compare results, measure an outcome, and prepare a reviewed playbook. Historical guides remain supporting evidence—not substitutes for doing the work.</p><a class="button secondary" href="/playbooks/">See the playbook standard</a></section>
+    <section class="section-space" aria-labelledby="playbook-heading">
+      <div class="section-head"><div><p class="eyebrow">Recently verified</p><h2 id="playbook-heading">Operational protocols, not success stories</h2></div><a href="/playbooks/">All playbooks</a></div>
+      <div class="record-table" role="region" aria-label="Reviewed playbook protocols" tabindex="0"><table><thead><tr><th>Protocol</th><th>Track</th><th>Version</th><th>Review scope</th><th></th></tr></thead><tbody>{playbooks.map((item) => <tr><td><strong>{item.title}</strong><small>{item.jobToBeDone}</small></td><td>{item.track}</td><td>{item.version}</td><td>{item.reviewerScope}</td><td><a href={`/playbooks/${item.slug}/`}>Open →</a></td></tr>)}</tbody></table></div>
+    </section>
+    <section class="split-section section-space">
+      <div><p class="eyebrow">Benchmarks</p><h2>Suppressed until the evidence is real.</h2><p>No outcome benchmark is public today. Each cohort needs at least {MIN_BENCHMARK_SAMPLE} reviewed, comparable reports and editorial approval.</p><ul class="plain-list">{benchmarkDefinitions.map((item) => <li><span>{item.task}</span><strong>{item.sampleCount}/{MIN_BENCHMARK_SAMPLE}</strong></li>)}</ul><a href="/benchmarks/">Read the method →</a></div>
+      <div><p class="eyebrow">September field tests</p><h2>Run the same protocol together.</h2><ul class="challenge-list">{challenges.map((item) => <li><span class="tag">{item.track}</span><a href={`/challenges/#${item.slug}`}>{item.title}</a></li>)}</ul><a href="/challenges/">See all challenges →</a></div>
+    </section>
   </div>
 </BaseLayout>

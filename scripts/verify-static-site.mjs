@@ -21,7 +21,7 @@ function filesUnder(dir) {
 }
 
 if (!fs.existsSync(dist)) failures.push('dist/ does not exist; run npm run build first');
-for (const required of ['index.html', 'articles/index.html', 'topics/index.html', 'start-here/index.html', 'search/index.html', 'tools/index.html', 'templates/index.html', 'tracks/index.html', 'news/index.html', 'rss.xml', 'sitemap.xml', 'robots.txt', '.htaccess', 'legacy-redirects.json', 'pagefind/pagefind-ui.js']) exists(required);
+for (const required of ['index.html', 'app/index.html', 'playbooks/index.html', 'benchmarks/index.html', 'challenges/index.html', 'account/index.html', 'articles/index.html', 'topics/index.html', 'start-here/index.html', 'search/index.html', 'tools/index.html', 'templates/index.html', 'tracks/index.html', 'news/index.html', 'rss.xml', 'sitemap.xml', 'robots.txt', '.htaccess', 'legacy-redirects.json', 'pagefind/pagefind-ui.js']) exists(required);
 for (const slug of ['ai-task-workflow-planner','business-use-case-scorecard','career-roadmap-builder','teaching-training-planner','builder-evaluation-workbench']) exists(`tools/${slug}/index.html`);
 
 const htmlFiles = filesUnder(dist).filter((file) => file.endsWith('.html'));
@@ -55,6 +55,13 @@ const trackPages = filesUnder(path.join(dist, 'tracks')).filter((file)=>file.end
 if (trackPages.length !== 4) failures.push(`expected 4 track pages, found ${trackPages.length}`);
 const articlePages = filesUnder(path.join(dist, 'articles')).filter((file)=>file.endsWith('index.html') && path.dirname(file) !== path.join(dist,'articles'));
 if (articlePages.length !== 57) failures.push(`expected 57 published article routes, found ${articlePages.length}`);
+for (const file of articlePages) {
+  const html=fs.readFileSync(file,'utf8');
+  if (!/<meta[^>]+name="robots"[^>]+content="noindex,follow"/i.test(html)) failures.push(`${path.relative(dist,file)}: unreviewed legacy guide lacks noindex,follow`);
+  if (/data-pagefind-body/i.test(html)) failures.push(`${path.relative(dist,file)}: quarantined guide entered Pagefind`);
+}
+const playbookPages=filesUnder(path.join(dist,'playbooks')).filter((file)=>file.endsWith('index.html') && path.dirname(file)!==path.join(dist,'playbooks'));
+if(playbookPages.length!==4) failures.push(`expected 4 reviewed protocol pages, found ${playbookPages.length}`);
 for (const file of filesUnder(path.join(dist,'tools')).filter((file)=>file.endsWith('index.html'))) {
   const html=fs.readFileSync(file,'utf8');
   if (file !== path.join(dist,'tools','index.html') && (!html.includes('class="tool-runner"') || !html.includes('Share this tool') || !html.includes('Nothing is sent'))) failures.push(`${path.relative(dist,file)}: missing private tool controls`);
@@ -70,6 +77,11 @@ try {
 
 const sitemap = fs.existsSync(path.join(dist, 'sitemap.xml')) ? fs.readFileSync(path.join(dist, 'sitemap.xml'), 'utf8') : '';
 if (!sitemap.includes('https://www.aiamigos.org/')) failures.push('sitemap.xml lacks canonical site URL');
+if (/\/articles\/[^<]+<\/loc>/.test(sitemap)) failures.push('sitemap.xml contains quarantined legacy guides');
+if (!/\/playbooks\/support-triage-controlled-pilot\//.test(sitemap)) failures.push('sitemap.xml lacks reviewed playbooks');
+const home=fs.existsSync(path.join(dist,'index.html'))?fs.readFileSync(path.join(dist,'index.html'),'utf8'):'';
+if(!home.includes('class="nav-toggle"')||!home.includes('Use AI for')) failures.push('responsive compact navigation is missing');
+if(!home.includes('Practical AI, proven in use.')) failures.push('brand descriptor is missing');
 const htaccess = fs.existsSync(path.join(dist, '.htaccess')) ? fs.readFileSync(path.join(dist, '.htaccess'), 'utf8') : '';
 if (!/RewriteEngine\s+On/i.test(htaccess)) failures.push('.htaccess missing RewriteEngine');
 if (!/R=410/i.test(htaccess)) failures.push('.htaccess missing retirement rules');

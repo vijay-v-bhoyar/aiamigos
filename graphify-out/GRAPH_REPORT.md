@@ -1,16 +1,16 @@
-# Graph Report - aiamigos  (2026-08-23)
+# Graph Report - aiamigos  (2026-08-24)
 
 ## Corpus Check
-- 302 files · ~1,546,327 words
+- 313 files · ~1,551,227 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1847 nodes · 2863 edges · 182 communities (169 shown, 13 thin omitted)
+- 1916 nodes · 2984 edges · 186 communities (174 shown, 12 thin omitted)
 - Extraction: 90% EXTRACTED · 10% INFERRED · 0% AMBIGUOUS · INFERRED: 285 edges (avg confidence: 0.73)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `364cd6b4`
+- Built from commit: `3d4602d1`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -86,7 +86,7 @@
 - compilerOptions
 - verify-static-site.mjs
 - content.config.ts
-- check-content.mjs
+- resource-graph.mjs
 - sync-feeds.mjs
 - AI Amigos editorial trust and publication governance plan
 - tracks/[slug]/index.astro
@@ -94,9 +94,13 @@
 - check-graph-artifact.mjs
 - PracticeWorkspace.astro
 - 202608230001_practice_os.sql
+- 202608240001_verified_practice_network.sql
 - AI Amigos Supabase architecture
+- outcome-network.mjs
 - run-model/index.ts
 - publish-playbook/index.ts
+- AI Amigos design system
+- Q: Where does the current AI Amigos outcome loop connect workspace, project, evaluation, outcome, playbook, fork, run report, and benchmark?
 
 ## God Nodes (most connected - your core abstractions)
 1. `AIAmigos_Remediation_Plugin` - 84 edges
@@ -117,15 +121,15 @@
   remediation/tests/seo-regression.mjs → scripts/check-content.mjs
 - `asMarkdown()` --indirect_call--> `value()`  [INFERRED]
   src/lib/tool-engine.mjs → scripts/check-content.mjs
-- `r()` --indirect_call--> `ot()`  [INFERRED]
-  public-site-snapshot/assets/bootstrap.min-b5eee535c3.js → public-site-snapshot/assets/jquery.min-01a0307c4b.js
-- `o()` --indirect_call--> `fe()`  [INFERRED]
-  public-site-snapshot/assets/bootstrap.min-b5eee535c3.js → public-site-snapshot/assets/jquery.min-01a0307c4b.js
+- `243()` --indirect_call--> `k()`  [INFERRED]
+  public-site-snapshot/assets/googlesitekit-consent-mode-86cb52dcb9f2b27ed244-313fe6f64e.js → public-site-snapshot/assets/regenerator-runtime.min-ff50f4e9f0.js
+- `renderValue()` --calls--> `safe()`  [INFERRED]
+  src/components/ToolRunner.astro → src/components/PracticeWorkspace.astro
 
 ## Import Cycles
 - None detected.
 
-## Communities (182 total, 13 thin omitted)
+## Communities (186 total, 12 thin omitted)
 
 ### Community 0 - "seo-regression.mjs"
 Cohesion: 0.06
@@ -136,8 +140,8 @@ Cohesion: 0.06
 Nodes (4): Owl(), prefixed(), TODO: Should be computed from number of min width items in stage, test()
 
 ### Community 2 - "jquery.min-01a0307c4b.js"
-Cohesion: 0.05
-Nodes (61): i(), l(), n(), o(), r(), s(), Se(), 243() (+53 more)
+Cohesion: 0.06
+Nodes (52): i(), l(), n(), o(), r(), s(), Se(), 243() (+44 more)
 
 ### Community 6 - "FakeElement"
 Cohesion: 0.05
@@ -168,8 +172,8 @@ Cohesion: 0.09
 Nodes (29): ancestorContext(), assetSource(), candidateProbeMap, decodeHtml(), extractImages(), extractScripts(), heavyImages, imageSource() (+21 more)
 
 ### Community 13 - "y"
-Cohesion: 0.48
-Nodes (18): a(), d(), e(), f(), g(), h(), i(), l() (+10 more)
+Cohesion: 0.20
+Nodes (27): J(), E(), h(), j(), k(), l(), O(), u() (+19 more)
 
 ### Community 14 - "Finding actions"
 Cohesion: 0.11
@@ -336,8 +340,8 @@ Cohesion: 0.70
 Nodes (4): consent_api_get_cookie(), consent_api_set_cookie(), wp_has_consent(), wp_set_consent()
 
 ### Community 58 - "templates.mjs"
-Cohesion: 0.14
-Nodes (9): track(), templateBySlug, templateMarkdown(), templates, templates, markdown, schema, status (+1 more)
+Cohesion: 0.12
+Nodes (9): renderValue(), track(), templateBySlug, templateMarkdown(), templates, schema, markdown, schema (+1 more)
 
 ### Community 59 - "PHP 8.4.24 validation evidence — v1.4.1 current source"
 Cohesion: 0.40
@@ -351,9 +355,13 @@ Nodes (3): Exact gate, Local validation, Sirat Pro duplicate-title accessibility
 Cohesion: 0.07
 Nodes (30): balancedDiv(), contentRoot, dataRoot, decodeHtml(), dispositions, extractBody(), firstParagraph(), frontmatter() (+22 more)
 
+### Community 87 - "BaseLayout.astro"
+Cohesion: 0.14
+Nodes (3): site, configured, actions
+
 ### Community 88 - "scripts"
-Cohesion: 0.08
-Nodes (24): astro, dependencies, astro, pagefind, ssh2-sftp-client, name, private, scripts (+16 more)
+Cohesion: 0.07
+Nodes (28): astro, @fontsource-variable/ibm-plex-sans, @fontsource-variable/source-serif-4, dependencies, astro, @fontsource-variable/ibm-plex-sans, @fontsource-variable/source-serif-4, pagefind (+20 more)
 
 ### Community 89 - "prepare-hostinger-deploy.mjs"
 Cohesion: 0.22
@@ -364,12 +372,12 @@ Cohesion: 0.29
 Nodes (6): astro/tsconfigs/strict, compilerOptions, allowJs, checkJs, verbatimModuleSyntax, extends
 
 ### Community 91 - "verify-static-site.mjs"
-Cohesion: 0.17
-Nodes (9): articlePages, dist, existingPaths, failures, htmlFiles, root, templatePages, toolAssets (+1 more)
+Cohesion: 0.15
+Nodes (10): articlePages, dist, existingPaths, failures, htmlFiles, playbookPages, root, templatePages (+2 more)
 
-### Community 171 - "check-content.mjs"
+### Community 171 - "resource-graph.mjs"
 Cohesion: 0.14
-Nodes (12): articleDir, failures, files, root, slugs, categoriesByTrack, resourceGraph, sources (+4 more)
+Nodes (13): articleDir, failures, files, root, slugs, buildResourceGraph(), categoriesByTrack, outcomePathForTrack() (+5 more)
 
 ### Community 172 - "sync-feeds.mjs"
 Cohesion: 0.20
@@ -380,48 +388,69 @@ Cohesion: 0.22
 Nodes (9): AI Amigos editorial trust and publication governance plan, Automated versus human proof register, Decision boundary, Evidence packet required for any publication, Fail-closed publication policy, Finding coverage, Release sequence and closure accounting, Required roles and separation of duties (+1 more)
 
 ### Community 174 - "tracks/[slug]/index.astro"
-Cohesion: 0.15
-Nodes (7): topicBySlug, toolBySlug, articles, categories, articles, articles, categoryMap
+Cohesion: 0.16
+Nodes (7): guideReviewQueue, topicBySlug, articles, categories, articles, articles, categoryMap
 
 ### Community 175 - "[...slug].astro"
-Cohesion: 0.29
-Nodes (5): categoryTrack, defaultTemplates, defaultTools, externalSources, schema
+Cohesion: 0.20
+Nodes (8): sources, toolBySlug, tools, categoryTrack, defaultTemplates, defaultTools, externalSources, schema
 
 ### Community 176 - "check-graph-artifact.mjs"
 Cohesion: 0.25
 Nodes (7): endpointPairs, exactEdges, findings, graph, graphPath, nodeIds, root
 
 ### Community 177 - "PracticeWorkspace.astro"
-Cohesion: 0.11
-Nodes (35): blueprint(), blueprints, handleStage(), labels, newProjectForm, projects, renderDetail(), renderList() (+27 more)
+Cohesion: 0.09
+Nodes (42): blueprint(), blueprints, challenges, handleStage(), labels, newProjectForm, playbooks, projects (+34 more)
 
 ### Community 178 - "202608230001_practice_os.sql"
 Cohesion: 0.21
-Nodes (18): auth.users, public.set_updated_at, artifacts_updated_at, profiles_updated_at, projects_updated_at, public.artifacts, public.audit_events, public.evaluations (+10 more)
+Nodes (18): artifacts_updated_at, profiles_updated_at, projects_updated_at, public.artifacts, public.audit_events, public.evaluations, public.experiments, public.outcome_measurements (+10 more)
+
+### Community 179 - "202608240001_verified_practice_network.sql"
+Cohesion: 0.19
+Nodes (19): auth, public.projects, public.public_playbooks, organizations_updated_at, proof_packs_updated_at, public.benchmark_snapshots, public.challenge_entries, public.challenges (+11 more)
 
 ### Community 180 - "AI Amigos Supabase architecture"
 Cohesion: 0.40
 Nodes (4): AI Amigos Supabase architecture, Human gate before remote application, Native, custom, external, Security invariants
 
+### Community 181 - "outcome-network.mjs"
+Cohesion: 0.27
+Nodes (9): aggregateBenchmark(), benchmarkDefinitions, buildRunReport(), challenges, isBenchmarkPublishable(), MIN_BENCHMARK_SAMPLE, playbookBySlug, playbooks (+1 more)
+
+### Community 184 - "AI Amigos design system"
+Cohesion: 0.22
+Nodes (8): AI Amigos design system, Brand, Color, Components, Evidence rules, Layout, Required states, Type and scale
+
+### Community 185 - "Q: Where does the current AI Amigos outcome loop connect workspace, project, evaluation, outcome, playbook, fork, run report, and benchmark?"
+Cohesion: 0.40
+Nodes (4): Answer, Outcome, Q: Where does the current AI Amigos outcome loop connect workspace, project, evaluation, outcome, playbook, fork, run report, and benchmark?, Source Nodes
+
 ## Knowledge Gaps
-- **556 isolated node(s):** `name`, `version`, `private`, `type`, `dev` (+551 more)
+- **578 isolated node(s):** `name`, `version`, `private`, `type`, `dev` (+573 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **13 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **12 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+
+## Work-memory lessons
+
+**Known dead ends** — questions that led nowhere; don't re-derive.
+- "Where does the current AI Amigos outcome loop connect workspace, project, evaluation, outcome, playbook, fork, run report, and benchmark?" -> `PracticeWorkspace.astro`, `public.public_playbooks`
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `value()` connect `FakeElement` to `seo-regression.mjs`, `Owl`, `check-content.mjs`?**
-  _High betweenness centrality (0.087) - this node is a cross-community bridge._
+- **Why does `value()` connect `FakeElement` to `seo-regression.mjs`, `Owl`, `resource-graph.mjs`?**
+  _High betweenness centrality (0.095) - this node is a cross-community bridge._
 - **Why does `main()` connect `seo-regression.mjs` to `apply-staging-quarantine.mjs`, `FakeElement`?**
-  _High betweenness centrality (0.043) - this node is a cross-community bridge._
+  _High betweenness centrality (0.039) - this node is a cross-community bridge._
 - **What connects `name`, `version`, `private` to the rest of the system?**
-  _556 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _578 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `seo-regression.mjs` be split into smaller, more focused modules?**
   _Cohesion score 0.06334735857877513 - nodes in this community are weakly interconnected._
 - **Should `Owl` be split into smaller, more focused modules?**
   _Cohesion score 0.06288568909785483 - nodes in this community are weakly interconnected._
 - **Should `jquery.min-01a0307c4b.js` be split into smaller, more focused modules?**
-  _Cohesion score 0.05048766494549627 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.06116700201207243 - nodes in this community are weakly interconnected._
 - **Should `AIAmigos_Remediation_Plugin` be split into smaller, more focused modules?**
   _Cohesion score 0.03354037267080745 - nodes in this community are weakly interconnected._

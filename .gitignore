@@ -5,6 +5,7 @@ deploy/
 .playwright-cli/
 .playwright-mcp/
 output/
+/.lighthouse-*.json
 *.png
 /([{]title
 /[[]x.name

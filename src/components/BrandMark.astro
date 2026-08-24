@@ -1,0 +1,12 @@
+---
+const { compact = false } = Astro.props;
+---
+<span class:list={["brand-lockup", compact && "is-compact"]} aria-hidden="true">
+  <svg class="brand-symbol" viewBox="0 0 32 32" role="img">
+    <path d="M5 7h6c4 0 5 3 5 7v2" />
+    <path d="M5 16h5c4 0 6 2 6 6v3" />
+    <path d="M5 25h7c3 0 4-2 4-5v-4" />
+    <path class="brand-check" d="m15 18 4 4 8-11" />
+  </svg>
+  <span class="brand-copy"><strong>AI Amigos</strong><small>Practical AI, proven in use.</small></span>
+</span>

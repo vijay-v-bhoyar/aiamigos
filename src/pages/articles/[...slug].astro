@@ -22,13 +22,14 @@ const toolSlug = data.relatedTools[0] ?? defaultTools[track];
 const templateSlug = data.relatedTemplates[0] ?? defaultTemplates[track];
 const tool = toolBySlug[toolSlug]; const template = templateBySlug[templateSlug];
 const externalSources = data.sources.filter((source) => !source.includes('aiamigos.org'));
+const isReviewed = data.reviewStatus === 'reviewed';
 const schema = { '@context':'https://schema.org', '@type':'Article', headline:data.title, description:data.description, datePublished:data.publishedAt, dateModified:data.updatedAt ?? data.publishedAt, author:{'@type':'Organization',name:data.author}, mainEntityOfPage:`https://www.aiamigos.org/articles/${data.routeSlug}/` };
 ---
-<BaseLayout title={data.title} description={data.description} canonical={`https://www.aiamigos.org/articles/${data.routeSlug}/`} schema={schema}>
+<BaseLayout title={data.title} description={data.description} canonical={`https://www.aiamigos.org/articles/${data.routeSlug}/`} schema={isReviewed ? schema : undefined} robots={isReviewed ? 'index,follow' : 'noindex,follow'}>
   <div class="shell">
     <Breadcrumbs items={[{ href: '/articles/', label: 'Articles' }]} />
     <div class="two-col">
-      <article data-pagefind-body data-pagefind-filter={`track:${track}`} data-pagefind-meta={`review:${data.reviewStatus}`}>
+      <article data-pagefind-body={isReviewed ? '' : undefined} data-pagefind-filter={isReviewed ? `track:${track}` : undefined} data-pagefind-meta={isReviewed ? `review:${data.reviewStatus}` : undefined}>
         <header class="article-header reading">
           <span class="tag">{data.category}</span>
           <h1>{data.title}</h1>
@@ -41,7 +42,7 @@ const schema = { '@context':'https://schema.org', '@type':'Article', headline:da
         {headings.length > 0 && <nav class="toc" aria-label="On this page"><strong>On this page</strong>{headings.map((heading) => <a href={`#${heading.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}`}>{heading}</a>)}</nav>}
         <div class="article-body reading"><Content /></div>
         <aside class="evidence"><strong>{data.reviewStatus === 'reviewed' ? 'Reviewed resource.' : 'Source-preserved guide.'}</strong> {data.reviewStatus === 'reviewed' ? 'The named reviewer and dated evidence above passed the current editorial gate.' : 'The historical route and publication date are preserved, but this guide has not yet passed the current source, worked-example, and named-review gate. Do not treat it as recently reviewed.'}</aside>
-        <section class="feature-panel section-space"><div><p class="eyebrow">Make this practical</p><h2>{tool.title}</h2><p>{tool.summary}</p><a class="button" href={`/tools/${tool.slug}/`}>Use related tool</a></div><div><h2>{template.title}</h2><p>{template.purpose}</p><a href={`/templates/${template.slug}/`}>Open the template →</a></div></section>
+        {isReviewed && <section class="feature-panel section-space"><div><p class="eyebrow">Make this practical</p><h2>{tool.title}</h2><p>{tool.summary}</p><a class="button" href={`/tools/${tool.slug}/`}>Use related tool</a></div><div><h2>{template.title}</h2><p>{template.purpose}</p><a href={`/templates/${template.slug}/`}>Open the template →</a></div></section>}
         <section class="reading"><h2>Sources and limitations</h2>{externalSources.length ? <ul>{externalSources.map((source)=><li><a href={source} rel="external">{source}</a></li>)}</ul> : <p class="notice">Authoritative external sources have not yet been attached. This is one reason the guide remains source-preserved.</p>}{data.limitations.length ? <ul>{data.limitations.map((item)=><li>{item}</li>)}</ul> : <p>General limitation: AI capabilities, vendor behavior, and implementation outcomes change by context and date. Verify before acting.</p>}<h2>Change log</h2>{data.changeLog.length ? <ul>{data.changeLog.map((change)=><li><strong>{change.date}</strong> — {change.summary}</li>)}</ul> : <p>No substantive post-migration changes have been approved.</p>}</section>
       </article>
     </div>

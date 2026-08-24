@@ -67,12 +67,18 @@ test('Practice OS workspace, playbook routes, and Supabase security boundary exi
   const workspace = read('src/pages/app/index.astro');
   const playbooks = read('src/pages/playbooks/index.astro');
   const migration = read('supabase/migrations/202608230001_practice_os.sql');
+  const networkMigration = read('supabase/migrations/202608240001_verified_practice_network.sql');
   const modelFunction = read('supabase/functions/run-model/index.ts');
   const publishFunction = read('supabase/functions/publish-playbook/index.ts');
   assert.match(workspace, /PracticeWorkspace/);
-  assert.match(playbooks, /CC BY-SA 4\.0/);
+  assert.match(playbooks, /reviewed protocol/i);
+  assert.match(read('src/pages/playbooks/[slug]/index.astro'), /Fork into workbench/);
+  assert.match(read('src/pages/benchmarks/index.astro'), /suppressed/i);
   assert.match(migration, /enable row level security/gi);
   assert.match(migration, /public_playbooks_read_approved/);
+  assert.match(networkMigration, /sample_count integer not null check \(sample_count >= 10\)/);
+  assert.match(networkMigration, /enable row level security/g);
+  assert.match(networkMigration, /privacy_check_status/);
   assert.match(modelFunction, /Cache-Control.*no-store/);
   assert.doesNotMatch(modelFunction, /console\.log/);
   assert.doesNotMatch(modelFunction, /SUPABASE_SERVICE_ROLE_KEY/);
@@ -89,23 +95,21 @@ test('Hostinger deployment is manifest-scoped and creates a rollback copy', () =
   assert.doesNotMatch(deploy, /rmdir\(|rm\([^\n]*recursive/);
 });
 
-test('resource graph covers every track, tool, and template without malformed edges', async () => {
-  const { buildResourceGraph } = await import('../src/data/resource-graph.mjs');
+test('resource graph covers every track and the complete outcome-network path without malformed edges', async () => {
+  const { buildResourceGraph, outcomePathForTrack } = await import('../src/data/resource-graph.mjs');
   const graph = buildResourceGraph();
   assert.equal(graph.nodes.filter((node) => node.type === 'track').length, 4);
   assert.equal(graph.nodes.filter((node) => node.type === 'tool').length, 5);
   assert.equal(graph.nodes.filter((node) => node.type === 'template').length, 20);
-  assert.equal(graph.nodes.filter((node) => node.type === 'blueprint').length, 4);
   assert.equal(graph.nodes.filter((node) => node.type === 'project-stage').length, 7);
-  assert.ok(graph.nodes.some((node) => node.id === 'playbook:verified'));
+  assert.equal(graph.nodes.filter((node) => node.type === 'project').length, 4);
+  assert.equal(graph.nodes.filter((node) => node.type === 'playbook').length, 4);
+  assert.equal(graph.nodes.filter((node) => node.type === 'benchmark').length, 4);
   assert.equal(graph.findings.length, 0, graph.findings.join('\n'));
   for (const track of graph.nodes.filter((node) => node.type === 'track')) {
-    assert.ok(graph.edges.some((edge) => edge.from === track.id && edge.relation === 'uses-tool'));
-    assert.ok(graph.edges.filter((edge) => edge.from === track.id && edge.relation === 'uses-template').length >= 5);
-  }
-  for (const blueprint of graph.nodes.filter((node) => node.type === 'blueprint')) {
-    assert.equal(graph.edges.filter((edge) => edge.from === blueprint.id && edge.relation === 'includes-stage').length, 6);
-    assert.ok(graph.edges.some((edge) => edge.from === blueprint.id && edge.relation === 'records-outcome'));
-    assert.ok(graph.edges.some((edge) => edge.from === blueprint.id && edge.relation === 'can-publish'));
+    const slug=track.id.split(':')[1];
+    assert.ok(graph.edges.some((edge) => edge.from === track.id && edge.relation === 'uses-instrument'));
+    assert.ok(graph.edges.filter((edge) => edge.from === track.id && edge.relation === 'uses-record').length >= 5);
+    assert.deepEqual(outcomePathForTrack(slug), [`track:${slug}`,`project:${slug}`,`experiment:${slug}`,`evaluation:${slug}`,`outcome:${slug}`,`proof-pack:${slug}`,`playbook:${slug}`,`fork:${slug}`,`run-report:${slug}`,`benchmark:${slug}`]);
   }
 });

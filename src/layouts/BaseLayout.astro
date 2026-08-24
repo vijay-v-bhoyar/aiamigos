@@ -1,8 +1,12 @@
 ---
+import '@fontsource-variable/ibm-plex-sans';
+import '@fontsource-variable/source-serif-4';
 import '../styles/global.css';
 import { site } from '../data/site';
+import BrandMark from '../components/BrandMark.astro';
+import { tracks } from '../data/tracks.mjs';
 
-const { title = site.name, description = site.description, canonical, image = '/social-card.svg', schema } = Astro.props;
+const { title = site.name, description = site.description, canonical, image = '/social-card.svg', schema, robots = 'index,follow', pageClass = '' } = Astro.props;
 const pageTitle = title === site.name ? title : `${title} | ${site.name}`;
 const canonicalUrl = canonical ?? new URL(Astro.url.pathname, site.url).toString();
 const umamiSiteId = import.meta.env.PUBLIC_UMAMI_WEBSITE_ID;
@@ -14,6 +18,7 @@ const searchConsoleVerification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATIO
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content={description} />
+    <meta name="robots" content={robots} />
     <link rel="canonical" href={canonicalUrl} />
     <meta property="og:type" content="website" />
     <meta property="og:title" content={pageTitle} />
@@ -32,14 +37,16 @@ const searchConsoleVerification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATIO
     {schema && <script type="application/ld+json" set:html={JSON.stringify(schema)} />}
     {umamiSiteId && <script async defer data-website-id={umamiSiteId} src="https://analytics.aiamigos.org/script.js"></script>}
   </head>
-  <body>
+  <body class={pageClass}>
     <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="site-header">
       <div class="shell header-inner">
-        <a class="brand" href="/" aria-label="AI Amigos home">AI <span>Amigos</span></a>
-        <nav class="site-nav" aria-label="Primary navigation">
-          {site.navigation.map((item) => <a href={item.href}>{item.label}</a>)}
-          <a href="/search/">Search</a>
+        <a class="brand" href="/" aria-label="AI Amigos home"><BrandMark /></a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation"><span class="sr-only">Open navigation</span><span></span><span></span><span></span></button>
+        <nav class="site-nav" id="primary-navigation" aria-label="Primary navigation">
+          <div class="nav-primary">{site.navigation.map((item) => <a href={item.href}>{item.label}</a>)}</div>
+          <details class="track-switcher"><summary>Use AI for…</summary><div class="track-menu">{tracks.map((track) => <a href={`/tracks/${track.slug}/`}><strong>{track.label}</strong><small>{track.short}</small></a>)}</div></details>
+          <div class="nav-actions"><a href="/search/" aria-label="Search AI Amigos">Search</a><a class="account-link" href="/account/">Sign in</a></div>
         </nav>
       </div>
     </header>
@@ -49,14 +56,17 @@ const searchConsoleVerification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATIO
     <footer class="site-footer">
       <div class="shell footer-grid">
         <div>
-          <strong>AI Amigos</strong>
+          <BrandMark />
           <p>{site.description}</p>
         </div>
         <div>
           <h2>Explore</h2>
           <ul>
-            <li><a href="/tracks/">Practical tracks</a></li>
-            <li><a href="/tools/">Private browser tools</a></li>
+            <li><a href="/app/">Workbench</a></li>
+            <li><a href="/playbooks/">Reviewed playbooks</a></li>
+            <li><a href="/benchmarks/">Benchmarks</a></li>
+            <li><a href="/challenges/">Field challenges</a></li>
+            <li><a href="/tracks/">Use AI for…</a></li>
             <li><a href="/templates/">Templates</a></li>
             <li><a href="/articles/">Guides</a></li>
             <li><a href="/news/">AI news hub</a></li>
@@ -73,5 +83,18 @@ const searchConsoleVerification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATIO
         </div>
       </div>
     </footer>
+    <script is:inline>
+      const toggle = document.querySelector('.nav-toggle');
+      const navigation = document.querySelector('#primary-navigation');
+      const closeNavigation = () => { toggle?.setAttribute('aria-expanded', 'false'); navigation?.classList.remove('is-open'); };
+      toggle?.addEventListener('click', () => {
+        const open = toggle.getAttribute('aria-expanded') !== 'true';
+        toggle.setAttribute('aria-expanded', String(open));
+        navigation?.classList.toggle('is-open', open);
+      });
+      navigation?.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeNavigation));
+      document.addEventListener('keydown', (event) => { if (event.key === 'Escape') { closeNavigation(); toggle?.focus(); } });
+      matchMedia('(min-width: 961px)').addEventListener('change', (event) => { if (event.matches) closeNavigation(); });
+    </script>
   </body>
 </html>

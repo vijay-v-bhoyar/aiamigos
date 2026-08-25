@@ -1,16 +1,16 @@
 # Graph Report - aiamigos  (2026-08-25)
 
 ## Corpus Check
-- 335 files · ~1,559,340 words
+- 335 files · ~1,559,417 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 2473 nodes · 3958 edges · 231 communities (216 shown, 15 thin omitted)
+- 2473 nodes · 3958 edges · 232 communities (217 shown, 15 thin omitted)
 - Extraction: 92% EXTRACTED · 8% INFERRED · 0% AMBIGUOUS · INFERRED: 312 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `0658c3c7`
+- Built from commit: `fb81e44d`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -146,6 +146,7 @@
 - required
 - required
 - Controlled staging sequence
+- enum
 
 ## God Nodes (most connected - your core abstractions)
 1. `243()` - 175 edges
@@ -174,7 +175,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (231 total, 15 thin omitted)
+## Communities (232 total, 15 thin omitted)
 
 ### Community 0 - "seo-regression.mjs"
 Cohesion: 0.06
@@ -477,8 +478,8 @@ Cohesion: 0.09
 Nodes (39): ae(), ce(), Ct(), cu(), ea(), eo(), er(), Et() (+31 more)
 
 ### Community 189 - "properties"
-Cohesion: 0.11
-Nodes (19): type, enum, type, type, format, type, const, properties (+11 more)
+Cohesion: 0.13
+Nodes (15): type, type, type, format, type, const, properties, conflictDisclosure (+7 more)
 
 ### Community 190 - "ii"
 Cohesion: 0.16
@@ -639,6 +640,10 @@ Nodes (6): required, type, humanDecision, decision, ownerRole, reason
 ### Community 230 - "Controlled staging sequence"
 Cohesion: 0.40
 Nodes (5): Controlled staging sequence, Gate 0 — capture a restorable baseline, Gate 1 — resolve theme and extension provenance, Gate 2 — migrate PHP without widening the blast radius, Gate 3 — move headers to the host/CDN plane
+
+### Community 231 - "enum"
+Cohesion: 0.50
+Nodes (4): enum, consentStatus, granted, not-applicable
 
 ## Knowledge Gaps
 - **775 isolated node(s):** `name`, `version`, `private`, `type`, `dev` (+770 more)

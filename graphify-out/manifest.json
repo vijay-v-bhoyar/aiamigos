@@ -1284,9 +1284,9 @@
     "semantic_hash": ""
   },
   "scripts/import-snapshot.mjs": {
-    "mtime": 1787414168.0079534,
-    "seen": 1787639263.029705,
-    "ast_hash": "be20a9e2f536ce2acba47d79f6d7f4d8",
+    "mtime": 1787640818.2952485,
+    "seen": 1787640889.8442454,
+    "ast_hash": "ce38a06918988cfa3e8e2c2858e0bcd3",
     "semantic_hash": ""
   },
   "scripts/prepare-hostinger-deploy.mjs": {
@@ -1296,9 +1296,9 @@
     "semantic_hash": ""
   },
   "scripts/verify-static-site.mjs": {
-    "mtime": 1787638794.8950107,
-    "seen": 1787639263.029709,
-    "ast_hash": "421227a0eb64dca67602fef45c64558a",
+    "mtime": 1787640819.678897,
+    "seen": 1787640889.844612,
+    "ast_hash": "65f2bf4128b33eb3d5da65ae858fc14e",
     "semantic_hash": ""
   },
   "src/components/ArticleCard.astro": {
@@ -1326,9 +1326,9 @@
     "semantic_hash": ""
   },
   "src/layouts/BaseLayout.astro": {
-    "mtime": 1787638337.3468516,
-    "seen": 1787639263.0297265,
-    "ast_hash": "b19f8e594fadc9f9fdbc40e9ef71a1a1",
+    "mtime": 1787639775.6462004,
+    "seen": 1787640112.340328,
+    "ast_hash": "2b28a142cb5474882e132af2206611fe",
     "semantic_hash": ""
   },
   "src/pages/404.astro": {
@@ -2106,9 +2106,9 @@
     "semantic_hash": ""
   },
   "src/components/BrandMark.astro": {
-    "mtime": 1787582376.8957908,
-    "seen": 1787639263.029711,
-    "ast_hash": "bbbc0a064cc8861f113e4896e3bab9e1",
+    "mtime": 1787639774.4311788,
+    "seen": 1787640112.3385344,
+    "ast_hash": "d156d27cae95d2a1dee0383e20c1982e",
     "semantic_hash": ""
   },
   "src/data/guide-review-queue.mjs": {

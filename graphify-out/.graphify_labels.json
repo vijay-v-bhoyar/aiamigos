@@ -229,5 +229,6 @@
   "227": "properties",
   "228": "required",
   "229": "required",
-  "230": "Controlled staging sequence"
+  "230": "Controlled staging sequence",
+  "231": "enum"
 }

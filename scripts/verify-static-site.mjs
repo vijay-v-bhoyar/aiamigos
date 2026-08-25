@@ -97,6 +97,7 @@ if(filesUnder(dist).some((file)=>/private-evidence|counsel-exports/i.test(path.r
 if(htmlFiles.some((file)=>/criterion satisfied|prong satisfied|qualifies for EB-1A|qualifies for NIW/i.test(fs.readFileSync(file,'utf8')))) failures.push('public page renders an immigration eligibility verdict');
 const htaccess = fs.existsSync(path.join(dist, '.htaccess')) ? fs.readFileSync(path.join(dist, '.htaccess'), 'utf8') : '';
 if (!/RewriteEngine\s+On/i.test(htaccess)) failures.push('.htaccess missing RewriteEngine');
+if (!/RewriteCond\s+%\{HTTP_HOST\}\s+\^aiamigos\\\.org\$/i.test(htaccess) || !/https:\/\/www\.aiamigos\.org%\{REQUEST_URI\}/i.test(htaccess)) failures.push('.htaccess missing canonical www host redirect');
 if (!/R=410/i.test(htaccess)) failures.push('.htaccess missing retirement rules');
 if (!/\/articles\//.test(htaccess)) failures.push('.htaccess missing article redirects');
 

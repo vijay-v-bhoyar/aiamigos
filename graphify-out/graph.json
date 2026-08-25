@@ -18883,17 +18883,6 @@
       "source_location": "L25"
     },
     {
-      "id": "public_schemas_public_evidence_record_schema_consentstatus_enum",
-      "label": "enum",
-      "_origin": "ast",
-      "community": 189,
-      "community_name": "properties",
-      "file_type": "code",
-      "norm_label": "enum",
-      "source_file": "public/schemas/public-evidence-record.schema.json",
-      "source_location": "L22"
-    },
-    {
       "id": "public_schemas_public_evidence_record_schema_controlledby_type",
       "label": "type",
       "_origin": "ast",
@@ -18971,17 +18960,6 @@
       "source_location": "L25"
     },
     {
-      "id": "public_schemas_public_evidence_record_schema_properties_consentstatus",
-      "label": "consentStatus",
-      "_origin": "ast",
-      "community": 189,
-      "community_name": "properties",
-      "file_type": "code",
-      "norm_label": "consentstatus",
-      "source_file": "public/schemas/public-evidence-record.schema.json",
-      "source_location": "L22"
-    },
-    {
       "id": "public_schemas_public_evidence_record_schema_properties_controlledby",
       "label": "controlledBy",
       "_origin": "ast",
@@ -19057,28 +19035,6 @@
       "norm_label": "const",
       "source_file": "public/schemas/public-evidence-record.schema.json",
       "source_location": "L9"
-    },
-    {
-      "id": "ref_granted",
-      "label": "granted",
-      "_origin": "ast",
-      "community": 189,
-      "community_name": "properties",
-      "file_type": "concept",
-      "norm_label": "granted",
-      "source_file": "public/schemas/public-evidence-record.schema.json",
-      "source_location": "L22"
-    },
-    {
-      "id": "ref_not_applicable",
-      "label": "not-applicable",
-      "_origin": "ast",
-      "community": 189,
-      "community_name": "properties",
-      "file_type": "concept",
-      "norm_label": "not-applicable",
-      "source_file": "public/schemas/public-evidence-record.schema.json",
-      "source_location": "L22"
     },
     {
       "id": "public_site_snapshot_assets_tether_87037ead7a",
@@ -23540,6 +23496,50 @@
       "norm_label": "gate 3 \u2014 move headers to the host/cdn plane",
       "source_file": "remediation/runtime-security-plan.md",
       "source_location": "L161"
+    },
+    {
+      "id": "public_schemas_public_evidence_record_schema_consentstatus_enum",
+      "label": "enum",
+      "_origin": "ast",
+      "community": 231,
+      "community_name": "enum",
+      "file_type": "code",
+      "norm_label": "enum",
+      "source_file": "public/schemas/public-evidence-record.schema.json",
+      "source_location": "L22"
+    },
+    {
+      "id": "public_schemas_public_evidence_record_schema_properties_consentstatus",
+      "label": "consentStatus",
+      "_origin": "ast",
+      "community": 231,
+      "community_name": "enum",
+      "file_type": "code",
+      "norm_label": "consentstatus",
+      "source_file": "public/schemas/public-evidence-record.schema.json",
+      "source_location": "L22"
+    },
+    {
+      "id": "ref_granted",
+      "label": "granted",
+      "_origin": "ast",
+      "community": 231,
+      "community_name": "enum",
+      "file_type": "concept",
+      "norm_label": "granted",
+      "source_file": "public/schemas/public-evidence-record.schema.json",
+      "source_location": "L22"
+    },
+    {
+      "id": "ref_not_applicable",
+      "label": "not-applicable",
+      "_origin": "ast",
+      "community": 231,
+      "community_name": "enum",
+      "file_type": "concept",
+      "norm_label": "not-applicable",
+      "source_file": "public/schemas/public-evidence-record.schema.json",
+      "source_location": "L22"
     },
     {
       "id": "remediation_graph_impact_map",
@@ -28495,7 +28495,7 @@
       "file_type": "code",
       "norm_label": "dispositions",
       "source_file": "scripts/import-snapshot.mjs",
-      "source_location": "L219"
+      "source_location": "L221"
     },
     {
       "id": "scripts_import_snapshot_here",
@@ -28517,7 +28517,7 @@
       "file_type": "code",
       "norm_label": "manifest",
       "source_file": "scripts/import-snapshot.mjs",
-      "source_location": "L217"
+      "source_location": "L219"
     },
     {
       "id": "scripts_import_snapshot_pagesroot",
@@ -28550,7 +28550,7 @@
       "file_type": "code",
       "norm_label": "published",
       "source_file": "scripts/import-snapshot.mjs",
-      "source_location": "L272"
+      "source_location": "L274"
     },
     {
       "id": "scripts_import_snapshot_records",
@@ -28561,7 +28561,7 @@
       "file_type": "code",
       "norm_label": "records",
       "source_file": "scripts/import-snapshot.mjs",
-      "source_location": "L220"
+      "source_location": "L222"
     },
     {
       "id": "scripts_import_snapshot_redirects",
@@ -28572,7 +28572,7 @@
       "file_type": "code",
       "norm_label": "redirects",
       "source_file": "scripts/import-snapshot.mjs",
-      "source_location": "L274"
+      "source_location": "L276"
     },
     {
       "id": "scripts_import_snapshot_reviewplanpath",
@@ -28605,7 +28605,7 @@
       "file_type": "code",
       "norm_label": "searchindex",
       "source_file": "scripts/import-snapshot.mjs",
-      "source_location": "L273"
+      "source_location": "L275"
     },
     {
       "id": "scripts_import_snapshot_servedspecialroutes",
@@ -28671,7 +28671,7 @@
       "file_type": "code",
       "norm_label": "summary",
       "source_file": "scripts/import-snapshot.mjs",
-      "source_location": "L282"
+      "source_location": "L284"
     },
     {
       "id": "ibm_plex_sans",
@@ -62853,7 +62853,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "scripts/import-snapshot.mjs",
-      "source_location": "L217",
+      "source_location": "L219",
       "weight": 1.0
     },
     {
@@ -62864,7 +62864,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "scripts/import-snapshot.mjs",
-      "source_location": "L219",
+      "source_location": "L221",
       "weight": 1.0
     },
     {
@@ -62875,7 +62875,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "scripts/import-snapshot.mjs",
-      "source_location": "L220",
+      "source_location": "L222",
       "weight": 1.0
     },
     {
@@ -62897,7 +62897,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "scripts/import-snapshot.mjs",
-      "source_location": "L272",
+      "source_location": "L274",
       "weight": 1.0
     },
     {
@@ -62908,7 +62908,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "scripts/import-snapshot.mjs",
-      "source_location": "L273",
+      "source_location": "L275",
       "weight": 1.0
     },
     {
@@ -62919,7 +62919,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "scripts/import-snapshot.mjs",
-      "source_location": "L274",
+      "source_location": "L276",
       "weight": 1.0
     },
     {
@@ -62941,7 +62941,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "scripts/import-snapshot.mjs",
-      "source_location": "L282",
+      "source_location": "L284",
       "weight": 1.0
     },
     {
@@ -75331,5 +75331,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "0658c3c78632ef49c08c1ebda3603f46e5949874"
+  "built_at_commit": "fb81e44dcf9abb402ff53d8854aeef313544cfa2"
 }

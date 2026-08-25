@@ -21,7 +21,7 @@ function filesUnder(dir) {
 }
 
 if (!fs.existsSync(dist)) failures.push('dist/ does not exist; run npm run build first');
-for (const required of ['index.html', 'app/index.html', 'playbooks/index.html', 'benchmarks/index.html', 'challenges/index.html', 'account/index.html', 'articles/index.html', 'topics/index.html', 'start-here/index.html', 'search/index.html', 'tools/index.html', 'templates/index.html', 'tracks/index.html', 'news/index.html', 'rss.xml', 'sitemap.xml', 'robots.txt', '.htaccess', 'legacy-redirects.json', 'pagefind/pagefind-ui.js']) exists(required);
+for (const required of ['index.html', 'app/index.html', 'endeavor/index.html', 'methods/index.html', 'evidence/index.html', 'field-studies/index.html', 'adoption/index.html', 'outcomes/index.html', 'impact/index.html', 'research/index.html', 'reviews/index.html', 'timeline/index.html', 'corrections/index.html', 'data-policy/index.html', 'about/vijay-bhoyar/index.html', 'playbooks/index.html', 'benchmarks/index.html', 'challenges/index.html', 'account/index.html', 'articles/index.html', 'topics/index.html', 'start-here/index.html', 'search/index.html', 'tools/index.html', 'templates/index.html', 'tracks/index.html', 'news/index.html', 'schemas/workflow-evidence-record.schema.json', 'schemas/public-evidence-record.schema.json', 'schemas/counsel-evidence-record.schema.json', 'rss.xml', 'sitemap.xml', 'robots.txt', '.htaccess', 'legacy-redirects.json', 'pagefind/pagefind-ui.js']) exists(required);
 for (const slug of ['ai-task-workflow-planner','business-use-case-scorecard','career-roadmap-builder','teaching-training-planner','builder-evaluation-workbench']) exists(`tools/${slug}/index.html`);
 
 const htmlFiles = filesUnder(dist).filter((file) => file.endsWith('.html'));
@@ -82,6 +82,19 @@ if (!/\/playbooks\/support-triage-controlled-pilot\//.test(sitemap)) failures.pu
 const home=fs.existsSync(path.join(dist,'index.html'))?fs.readFileSync(path.join(dist,'index.html'),'utf8'):'';
 if(!home.includes('class="nav-toggle"')||!home.includes('Use AI for')) failures.push('responsive compact navigation is missing');
 if(!home.includes('Practical AI, proven in use.')) failures.push('brand descriptor is missing');
+if(!home.includes('verified adoptions') || !home.includes('reviewed outcomes') || !home.includes('external citations')) failures.push('homepage lacks explicit evidence-state counters');
+const methodPages=filesUnder(path.join(dist,'methods')).filter((file)=>file.endsWith('index.html') && path.dirname(file)!==path.join(dist,'methods'));
+if(methodPages.length!==3) failures.push(`expected 3 method pages, found ${methodPages.length}`);
+for (const file of methodPages) {
+  const html=fs.readFileSync(file,'utf8');
+  if(!html.includes('Author controlled') || !html.includes('0 verified') || !html.includes('Publication gate')) failures.push(`${path.relative(dist,file)}: method page hides evidence boundary or publication gate`);
+}
+for (const registry of ['adoption','outcomes','reviews','field-studies']) {
+  const html=fs.readFileSync(path.join(dist,registry,'index.html'),'utf8');
+  if(!/0 (verified|reviewed|independent|publishable)/i.test(html)) failures.push(`${registry}/index.html: empty evidence registry is not explicit`);
+}
+if(filesUnder(dist).some((file)=>/private-evidence|counsel-exports/i.test(path.relative(dist,file)))) failures.push('private counsel artifact path entered dist');
+if(htmlFiles.some((file)=>/criterion satisfied|prong satisfied|qualifies for EB-1A|qualifies for NIW/i.test(fs.readFileSync(file,'utf8')))) failures.push('public page renders an immigration eligibility verdict');
 const htaccess = fs.existsSync(path.join(dist, '.htaccess')) ? fs.readFileSync(path.join(dist, '.htaccess'), 'utf8') : '';
 if (!/RewriteEngine\s+On/i.test(htaccess)) failures.push('.htaccess missing RewriteEngine');
 if (!/R=410/i.test(htaccess)) failures.push('.htaccess missing retirement rules');

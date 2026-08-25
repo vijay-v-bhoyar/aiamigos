@@ -1,1812 +1,2726 @@
 {
   "public-site-snapshot/assets/SmoothScroll-1f4c4cea2c.js": {
     "mtime": 1786661129.3391476,
+    "seen": 1787639263.0295818,
     "ast_hash": "3be7611437deb6f71ed503cc2aaa58fa",
     "semantic_hash": "3be7611437deb6f71ed503cc2aaa58fa"
   },
   "public-site-snapshot/assets/bootstrap.min-b5eee535c3.js": {
     "mtime": 1786661129.0665984,
+    "seen": 1787639263.0295837,
     "ast_hash": "e1d98d47689e00f8ecbc5d9f61bdb42e",
     "semantic_hash": "e1d98d47689e00f8ecbc5d9f61bdb42e"
   },
   "public-site-snapshot/assets/comment-reply.min-9ed675ce47.js": {
     "mtime": 1786661129.7040958,
+    "seen": 1787639263.029585,
     "ast_hash": "492f2c1a7ea7eb83fe42e0ff7cb51aa2",
     "semantic_hash": "492f2c1a7ea7eb83fe42e0ff7cb51aa2"
   },
   "public-site-snapshot/assets/custom-657fd4ab0e.js": {
     "mtime": 1786661129.5299866,
+    "seen": 1787639263.0295858,
     "ast_hash": "7512bd857dfdf0f40d6a05d0a5a2ac2e",
     "semantic_hash": "7512bd857dfdf0f40d6a05d0a5a2ac2e"
   },
   "public-site-snapshot/assets/googlesitekit-consent-mode-86cb52dcb9f2b27ed244-313fe6f64e.js": {
     "mtime": 1786661129.8243258,
+    "seen": 1787639263.029587,
     "ast_hash": "9eb8c2d343c14a7bb08054d022f78229",
     "semantic_hash": "9eb8c2d343c14a7bb08054d022f78229"
   },
   "public-site-snapshot/assets/hooks.min-e459880fa2.js": {
     "mtime": 1786661128.5897007,
+    "seen": 1787639263.0295882,
     "ast_hash": "7bd48eb3bd568033e96caf0fb62e6690",
     "semantic_hash": "7bd48eb3bd568033e96caf0fb62e6690"
   },
   "public-site-snapshot/assets/i18n.min-9fecd1f3b8.js": {
     "mtime": 1786661128.6748817,
+    "seen": 1787639263.0295892,
     "ast_hash": "c2c4e2a562e06e1cb22293a5b920aca6",
     "semantic_hash": "c2c4e2a562e06e1cb22293a5b920aca6"
   },
   "public-site-snapshot/assets/index-488296b410.js": {
     "mtime": 1786661128.8650806,
+    "seen": 1787639263.0295901,
     "ast_hash": "0b1719adf5fa7231cb1a1b54cf11a50e",
     "semantic_hash": "0b1719adf5fa7231cb1a1b54cf11a50e"
   },
   "public-site-snapshot/assets/index-ad38efec80.js": {
     "mtime": 1786661128.7714326,
+    "seen": 1787639263.029591,
     "ast_hash": "efc27e253fae1b7b891fb5a40e687768",
     "semantic_hash": "efc27e253fae1b7b891fb5a40e687768"
   },
   "public-site-snapshot/assets/jquery-migrate.min-ddf92e775e.js": {
     "mtime": 1786661128.1902382,
+    "seen": 1787639263.0295923,
     "ast_hash": "9ffeb32e2d9efbf8f70caabded242267",
     "semantic_hash": "9ffeb32e2d9efbf8f70caabded242267"
   },
   "public-site-snapshot/assets/jquery-progressbar-b7f6fce149.js": {
     "mtime": 1786661129.4343047,
+    "seen": 1787639263.029593,
     "ast_hash": "dbfa83b95a45ef323697efa9f1cdeabc",
     "semantic_hash": "dbfa83b95a45ef323697efa9f1cdeabc"
   },
   "public-site-snapshot/assets/jquery.appear-cb9443d6a1.js": {
     "mtime": 1786661129.2605755,
+    "seen": 1787639263.0295942,
     "ast_hash": "058de81a33e8190cfb088443ed07fd65",
     "semantic_hash": "058de81a33e8190cfb088443ed07fd65"
   },
   "public-site-snapshot/assets/jquery.min-01a0307c4b.js": {
     "mtime": 1786661128.0849605,
+    "seen": 1787639263.0295951,
     "ast_hash": "826eb77e86b02ab7724fe3d0141ff87c",
     "semantic_hash": "826eb77e86b02ab7724fe3d0141ff87c"
   },
   "public-site-snapshot/assets/owl.carousel-78e514b265.js": {
     "mtime": 1786661129.1724732,
+    "seen": 1787639263.0295959,
     "ast_hash": "6508b785f668502b540d981f0df6dc33",
     "semantic_hash": "6508b785f668502b540d981f0df6dc33"
   },
   "public-site-snapshot/assets/regenerator-runtime.min-ff50f4e9f0.js": {
     "mtime": 1786661128.3747768,
+    "seen": 1787639263.029597,
     "ast_hash": "fd7ef2e4737acd74fd0dcdc3b515e304",
     "semantic_hash": "fd7ef2e4737acd74fd0dcdc3b515e304"
   },
   "public-site-snapshot/assets/tether-87037ead7a.js": {
     "mtime": 1786661128.966305,
+    "seen": 1787639263.029598,
     "ast_hash": "b6ef83d382b88ca1198416ecb1929c36",
     "semantic_hash": "b6ef83d382b88ca1198416ecb1929c36"
   },
   "public-site-snapshot/assets/wow.min-8a798896bc.js": {
     "mtime": 1786661129.6138241,
+    "seen": 1787639263.0295987,
     "ast_hash": "36050285bfeeb7395752f0f9bbc08273",
     "semantic_hash": "36050285bfeeb7395752f0f9bbc08273"
   },
   "public-site-snapshot/assets/wp-consent-api.min-29676f10ff.js": {
     "mtime": 1786661129.9200819,
+    "seen": 1787639263.0295994,
     "ast_hash": "5b8c53385d24f50048816a956b89f80a",
     "semantic_hash": "5b8c53385d24f50048816a956b89f80a"
   },
   "public-site-snapshot/assets/wp-polyfill-inert.min-c7a56991a9.js": {
     "mtime": 1786661128.286311,
+    "seen": 1787639263.0296006,
     "ast_hash": "dda652db133fddb9b80a05c6d1b5c540",
     "semantic_hash": "dda652db133fddb9b80a05c6d1b5c540"
   },
   "public-site-snapshot/assets/wp-polyfill.min-201bf9189c.js": {
     "mtime": 1786661128.493025,
+    "seen": 1787639263.0296013,
     "ast_hash": "9a98016751e498c06d434cc022ca1a44",
     "semantic_hash": "9a98016751e498c06d434cc022ca1a44"
   },
   "remediation/performance/build-performance-inventory.mjs": {
     "mtime": 1786644212.3044746,
+    "seen": 1787639263.0296128,
     "ast_hash": "203518056ea1c31c8b703bc5f2f2f85f",
     "semantic_hash": "203518056ea1c31c8b703bc5f2f2f85f"
   },
   "remediation/performance/performance-markup-gate.mjs": {
     "mtime": 1786644332.157604,
+    "seen": 1787639263.0296147,
     "ast_hash": "2a432a08a4b32854125ddc9dca6f4300",
     "semantic_hash": "2a432a08a4b32854125ddc9dca6f4300"
   },
   "remediation/performance/performance-static-check.mjs": {
     "mtime": 1786644418.487886,
+    "seen": 1787639263.0296156,
     "ast_hash": "74bb309ef84785726fb57cbfe3613f6e",
     "semantic_hash": "74bb309ef84785726fb57cbfe3613f6e"
   },
   "remediation/releases/aiamigos-remediation-1.4.1-candidate/aiamigos-remediation/aiamigos-remediation.php": {
     "mtime": 1786648999.408486,
+    "seen": 1787639263.0296173,
     "ast_hash": "feaef93d7c10f1dd2b99b3270e9580fa",
     "semantic_hash": "feaef93d7c10f1dd2b99b3270e9580fa"
   },
   "remediation/releases/aiamigos-remediation-1.4.1-candidate/aiamigos-remediation/assets/js/aiamigos-accessibility-remediation.js": {
     "mtime": 1786646956.3904757,
+    "seen": 1787639263.0296185,
     "ast_hash": "ffadad478d684dc0b56151f312f3dde0",
     "semantic_hash": "ffadad478d684dc0b56151f312f3dde0"
   },
   "remediation/releases/aiamigos-remediation-1.4.1-candidate/aiamigos-remediation/includes/class-aiamigos-accessibility-remediation.php": {
     "mtime": 1786646957.1415932,
+    "seen": 1787639263.0296192,
     "ast_hash": "b54b682c60fc8d8f2ff69d201c30e2b4",
     "semantic_hash": "b54b682c60fc8d8f2ff69d201c30e2b4"
   },
   "remediation/releases/aiamigos-remediation-1.4.1-candidate/aiamigos-remediation/includes/class-aiamigos-remediation-plugin.php": {
     "mtime": 1786658586.2453923,
+    "seen": 1787639263.0296202,
     "ast_hash": "3e6b255781f26aa8fc009164eec81a01",
     "semantic_hash": "3e6b255781f26aa8fc009164eec81a01"
   },
   "remediation/releases/aiamigos-remediation-1.4.1-candidate/aiamigos-remediation/includes/class-aiamigos-remediation-policy.php": {
     "mtime": 1786638438.201776,
+    "seen": 1787639263.029621,
     "ast_hash": "129a99197c7584189ea167df9f1be98f",
     "semantic_hash": "129a99197c7584189ea167df9f1be98f"
   },
   "remediation/releases/aiamigos-remediation-1.4.1-candidate/aiamigos-remediation/uninstall.php": {
     "mtime": 1786636598.812338,
+    "seen": 1787639263.0296218,
     "ast_hash": "c40d196e08d15667e4e1aff0f4072350",
     "semantic_hash": "c40d196e08d15667e4e1aff0f4072350"
   },
   "remediation/releases/aiamigos-remediation/aiamigos-remediation.php": {
     "mtime": 1786645426.5668998,
+    "seen": 1787639263.0296226,
     "ast_hash": "0b4f83d05c3f3702f143d953bcb3bdaf",
     "semantic_hash": "0b4f83d05c3f3702f143d953bcb3bdaf"
   },
   "remediation/releases/aiamigos-remediation/assets/js/aiamigos-accessibility-remediation.js": {
     "mtime": 1786646956.3904757,
+    "seen": 1787639263.0296233,
     "ast_hash": "ffadad478d684dc0b56151f312f3dde0",
     "semantic_hash": "ffadad478d684dc0b56151f312f3dde0"
   },
   "remediation/releases/aiamigos-remediation/includes/class-aiamigos-accessibility-remediation.php": {
     "mtime": 1786646957.1415932,
+    "seen": 1787639263.0296242,
     "ast_hash": "b54b682c60fc8d8f2ff69d201c30e2b4",
     "semantic_hash": "b54b682c60fc8d8f2ff69d201c30e2b4"
   },
   "remediation/releases/aiamigos-remediation/includes/class-aiamigos-remediation-plugin.php": {
     "mtime": 1786646032.3396418,
+    "seen": 1787639263.0296254,
     "ast_hash": "405da1c84681daeaf05fd37ab59cfb5b",
     "semantic_hash": "405da1c84681daeaf05fd37ab59cfb5b"
   },
   "remediation/releases/aiamigos-remediation/includes/class-aiamigos-remediation-policy.php": {
     "mtime": 1786638438.201776,
+    "seen": 1787639263.0296264,
     "ast_hash": "129a99197c7584189ea167df9f1be98f",
     "semantic_hash": "129a99197c7584189ea167df9f1be98f"
   },
   "remediation/releases/aiamigos-remediation/uninstall.php": {
     "mtime": 1786636598.812338,
+    "seen": 1787639263.0296273,
     "ast_hash": "c40d196e08d15667e4e1aff0f4072350",
     "semantic_hash": "c40d196e08d15667e4e1aff0f4072350"
   },
   "remediation/scripts/apply-staging-quarantine.mjs": {
     "mtime": 1786641915.1533868,
+    "seen": 1787639263.0296285,
     "ast_hash": "c5ae68d931001b896e3e1a862d38dc2e",
     "semantic_hash": "c5ae68d931001b896e3e1a862d38dc2e"
   },
   "remediation/staging-backups/quarantine-2026-08-13T17-25-51-990Z/manifest.json": {
     "mtime": 1786641955.692248,
+    "seen": 1787639263.0296307,
     "ast_hash": "006a34bba11e8ed49d5ac141abb0b031",
     "semantic_hash": "006a34bba11e8ed49d5ac141abb0b031"
   },
   "remediation/tests/accessibility-self-test.mjs": {
     "mtime": 1786649265.27548,
+    "seen": 1787639263.0296383,
     "ast_hash": "b4ba6430fa31ad7fe517a433243b4553",
     "semantic_hash": "b4ba6430fa31ad7fe517a433243b4553"
   },
   "remediation/tests/content-intent-freshness-inventory.mjs": {
     "mtime": 1786648828.8653884,
+    "seen": 1787639263.0296392,
     "ast_hash": "579e5cc5834ea3600ba918d64374dfcd",
     "semantic_hash": "579e5cc5834ea3600ba918d64374dfcd"
   },
   "remediation/tests/finding-completion-ledger.mjs": {
     "mtime": 1787347678.155229,
+    "seen": 1787639263.0296402,
     "ast_hash": "9e39b8a7b2b17e4f18fb6c682b61d474",
     "semantic_hash": ""
   },
   "remediation/tests/fixtures/accessibility-fixtures.mjs": {
     "mtime": 1786649175.8818066,
+    "seen": 1787639263.0296412,
     "ast_hash": "c1324776382c2bf9dc55a1bae193870b",
     "semantic_hash": "c1324776382c2bf9dc55a1bae193870b"
   },
   "remediation/tests/fixtures/response-fixtures.mjs": {
     "mtime": 1786644869.7167168,
+    "seen": 1787639263.0296419,
     "ast_hash": "a5d0ff512baf1bdb5ead005675f2534d",
     "semantic_hash": "a5d0ff512baf1bdb5ead005675f2534d"
   },
   "remediation/tests/lib/accessibility-evidence.mjs": {
     "mtime": 1786649201.8985643,
+    "seen": 1787639263.029643,
     "ast_hash": "0997f9f5ea7ad73aea4312630306b445",
     "semantic_hash": "0997f9f5ea7ad73aea4312630306b445"
   },
   "remediation/tests/lib/browser-probe.mjs": {
     "mtime": 1786649197.820994,
+    "seen": 1787639263.0296438,
     "ast_hash": "e8d0f2cb8bd19dbab51598dc236861d7",
     "semantic_hash": "e8d0f2cb8bd19dbab51598dc236861d7"
   },
   "remediation/tests/lib/content-gates.mjs": {
     "mtime": 1786649388.7678475,
+    "seen": 1787639263.0296447,
     "ast_hash": "7279b2d25ced4b8ee27f8f20a569aadd",
     "semantic_hash": "7279b2d25ced4b8ee27f8f20a569aadd"
   },
   "remediation/tests/lib/html.mjs": {
     "mtime": 1786649722.1163087,
+    "seen": 1787639263.0296457,
     "ast_hash": "534519e71291a98a54f474eadd0f3943",
     "semantic_hash": "534519e71291a98a54f474eadd0f3943"
   },
   "remediation/tests/lib/invariants.mjs": {
     "mtime": 1786658445.0123644,
+    "seen": 1787639263.0296466,
     "ast_hash": "9b985eb5f11584b0d6fe6a8c58c5d3dd",
     "semantic_hash": "9b985eb5f11584b0d6fe6a8c58c5d3dd"
   },
   "remediation/tests/lib/social-schema.mjs": {
     "mtime": 1786649722.8045712,
+    "seen": 1787639263.0296474,
     "ast_hash": "7c32622db069b8ce3b795612cfae8f44",
     "semantic_hash": "7c32622db069b8ce3b795612cfae8f44"
   },
   "remediation/tests/lib/sources.mjs": {
     "mtime": 1786660038.0644252,
+    "seen": 1787639263.0296483,
     "ast_hash": "3b1eed71fd35aa0bc75f16c37415daaa",
     "semantic_hash": "3b1eed71fd35aa0bc75f16c37415daaa"
   },
   "remediation/tests/media-accessibility-inventory.mjs": {
     "mtime": 1786648707.331922,
+    "seen": 1787639263.0296493,
     "ast_hash": "9d9d783ab24eeaf422ae858409ca320a",
     "semantic_hash": "9d9d783ab24eeaf422ae858409ca320a"
   },
   "remediation/tests/release-v141-static-check.mjs": {
     "mtime": 1786650804.829039,
+    "seen": 1787639263.0296507,
     "ast_hash": "a42aebb27fffe594d1db070cda3ee5d9",
     "semantic_hash": "a42aebb27fffe594d1db070cda3ee5d9"
   },
   "remediation/tests/self-test.mjs": {
     "mtime": 1786658447.6092026,
+    "seen": 1787639263.0296834,
     "ast_hash": "7b00b5203cb46f4e30e4e591b1ebf1a6",
     "semantic_hash": "7b00b5203cb46f4e30e4e591b1ebf1a6"
   },
   "remediation/tests/seo-regression.mjs": {
     "mtime": 1786650075.1996982,
+    "seen": 1787639263.0296845,
     "ast_hash": "515b0f5218d0fd4b37b8a24b0fff8e4d",
     "semantic_hash": "515b0f5218d0fd4b37b8a24b0fff8e4d"
   },
   "remediation/tests/server-policy-static-check.mjs": {
     "mtime": 1786650078.3554337,
+    "seen": 1787639263.0296855,
     "ast_hash": "c09dd6944bcf827c35b7a73b5861d795",
     "semantic_hash": "c09dd6944bcf827c35b7a73b5861d795"
   },
   "remediation/theme-patch/prepared-accessibility/wp-content/themes/sirat-pro/template-parts/home/section-our-blog.php": {
     "mtime": 1786644929.3872292,
+    "seen": 1787639263.0296862,
     "ast_hash": "8aa5b97ada1cfdfd21bf2f612b118409",
     "semantic_hash": "8aa5b97ada1cfdfd21bf2f612b118409"
   },
   "remediation/theme-patch/prepared/wp-content/themes/sirat-pro/template-parts/home/section-our-blog.php": {
     "mtime": 1786644127.1209025,
+    "seen": 1787639263.0296874,
     "ast_hash": "98b7c53a09f4a861f8a886b58280b056",
     "semantic_hash": "98b7c53a09f4a861f8a886b58280b056"
   },
   "remediation/theme-patch/prepared/wp-content/themes/sirat-pro/template-parts/post/post-content.php": {
     "mtime": 1786644127.1670387,
+    "seen": 1787639263.0296881,
     "ast_hash": "e77a41f1d5e9f4347f6fc8c0a853ca6f",
     "semantic_hash": "e77a41f1d5e9f4347f6fc8c0a853ca6f"
   },
   "remediation/theme-patch/validate-accessibility-patch.mjs": {
     "mtime": 1786645293.111269,
+    "seen": 1787639263.0296907,
     "ast_hash": "c73170bea6a312de246a6ab790111172",
     "semantic_hash": "c73170bea6a312de246a6ab790111172"
   },
   "remediation/wp-plugin/aiamigos-remediation/aiamigos-remediation.php": {
     "mtime": 1786648999.408486,
+    "seen": 1787639263.0296915,
     "ast_hash": "feaef93d7c10f1dd2b99b3270e9580fa",
     "semantic_hash": "feaef93d7c10f1dd2b99b3270e9580fa"
   },
   "remediation/wp-plugin/aiamigos-remediation/assets/js/aiamigos-accessibility-remediation.js": {
     "mtime": 1786646956.3904757,
+    "seen": 1787639263.0296922,
     "ast_hash": "ffadad478d684dc0b56151f312f3dde0",
     "semantic_hash": "ffadad478d684dc0b56151f312f3dde0"
   },
   "remediation/wp-plugin/aiamigos-remediation/includes/class-aiamigos-accessibility-remediation.php": {
     "mtime": 1786646957.1415932,
+    "seen": 1787639263.029693,
     "ast_hash": "b54b682c60fc8d8f2ff69d201c30e2b4",
     "semantic_hash": "b54b682c60fc8d8f2ff69d201c30e2b4"
   },
   "remediation/wp-plugin/aiamigos-remediation/includes/class-aiamigos-remediation-plugin.php": {
     "mtime": 1786658586.2453923,
+    "seen": 1787639263.0296936,
     "ast_hash": "3e6b255781f26aa8fc009164eec81a01",
     "semantic_hash": "3e6b255781f26aa8fc009164eec81a01"
   },
   "remediation/wp-plugin/aiamigos-remediation/includes/class-aiamigos-remediation-policy.php": {
     "mtime": 1786638438.201776,
+    "seen": 1787639263.0296946,
     "ast_hash": "129a99197c7584189ea167df9f1be98f",
     "semantic_hash": "129a99197c7584189ea167df9f1be98f"
   },
   "remediation/wp-plugin/aiamigos-remediation/tests/dom-accessibility-module-fixture.mjs": {
     "mtime": 1786646977.0600698,
+    "seen": 1787639263.029695,
     "ast_hash": "98c0bf01391b0463ae22f68ac1cffbb1",
     "semantic_hash": "98c0bf01391b0463ae22f68ac1cffbb1"
   },
   "remediation/wp-plugin/aiamigos-remediation/tests/static-accessibility-module-check.mjs": {
     "mtime": 1786647862.840846,
+    "seen": 1787639263.029696,
     "ast_hash": "77a6020dc7ec2c99f12af81262e0ca3f",
     "semantic_hash": "77a6020dc7ec2c99f12af81262e0ca3f"
   },
   "remediation/wp-plugin/aiamigos-remediation/tests/static-check.mjs": {
     "mtime": 1786658760.831458,
+    "seen": 1787639263.0296967,
     "ast_hash": "b302c229c6f35a7ca0752474e63c52b0",
     "semantic_hash": "b302c229c6f35a7ca0752474e63c52b0"
   },
   "remediation/wp-plugin/aiamigos-remediation/tests/test-policy.php": {
     "mtime": 1786650029.5779512,
+    "seen": 1787639263.0296974,
     "ast_hash": "c320291ad5e443d7e82a2f912aff919c",
     "semantic_hash": "c320291ad5e443d7e82a2f912aff919c"
   },
   "remediation/wp-plugin/aiamigos-remediation/tests/test-schema-author.php": {
     "mtime": 1786650545.0062652,
+    "seen": 1787639263.0296984,
     "ast_hash": "3b35b787e842dcdc0b4d9c5df8210b57",
     "semantic_hash": "3b35b787e842dcdc0b4d9c5df8210b57"
   },
   "remediation/wp-plugin/aiamigos-remediation/uninstall.php": {
     "mtime": 1786636598.812338,
+    "seen": 1787639263.029699,
     "ast_hash": "c40d196e08d15667e4e1aff0f4072350",
     "semantic_hash": "c40d196e08d15667e4e1aff0f4072350"
   },
   "scripts/audit-snapshot.mjs": {
     "mtime": 1786629750.416062,
+    "seen": 1787639263.0296998,
     "ast_hash": "f618c49bf67838751773500b9bd912a7",
     "semantic_hash": "f618c49bf67838751773500b9bd912a7"
   },
   "scripts/snapshot-site.mjs": {
     "mtime": 1786629283.9224632,
+    "seen": 1787639263.0297065,
     "ast_hash": "72cffbedc8ddacc996fab087205d07a4",
     "semantic_hash": "72cffbedc8ddacc996fab087205d07a4"
   },
   "scripts/validate-graphify-chunks.mjs": {
     "mtime": 1786631496.7322707,
+    "seen": 1787639263.0297084,
     "ast_hash": "f812d9fe0cc963c403ac772465b94a3d",
     "semantic_hash": "f812d9fe0cc963c403ac772465b94a3d"
   },
   "AIAMIGOS_HOSTILE_SEO_CONTENT_REVIEW_2026-08-13.md": {
     "mtime": 1786632105.6548371,
+    "seen": 1787639263.02977,
     "ast_hash": "64429c2e69e0ccacb64124d94f1e313a",
     "semantic_hash": ""
   },
   "public-site-snapshot/meta/robots.txt": {
     "mtime": 1786661093.2350006,
+    "seen": 1787639263.0297742,
     "ast_hash": "9587d50fc340f202a7665595c1b83672",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/a-comprehensive-guide-to-nvidia-monai-unlocking-ai-in-medical-imaging-d4306e85d4.html": {
     "mtime": 1786661114.4863167,
+    "seen": 1787639263.0297751,
     "ast_hash": "185424d9a71d7684c6167a7dd16542b9",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/about-us-7b24d71848.html": {
     "mtime": 1786661120.1307445,
+    "seen": 1787639263.0297759,
     "ast_hash": "a1c9c2dad6f66f0abeabdc64ec74dec4",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/academy-6e3a34d9ea.html": {
     "mtime": 1786661117.320374,
+    "seen": 1787639263.0297768,
     "ast_hash": "871272f389194687f44750ea433f9480",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/adaptive-ai-ef3cd84d1a.html": {
     "mtime": 1786661101.4160104,
+    "seen": 1787639263.0297778,
     "ast_hash": "bfd1ce31b23ba3cce52835f0ce84f2cd",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/ai-and-robotics-fe5a50afca.html": {
     "mtime": 1786661108.716822,
+    "seen": 1787639263.0297785,
     "ast_hash": "cf3fa193bab39aca111004aa7523ea91",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/ai-app-development-3b936de0e1.html": {
     "mtime": 1786661095.293551,
+    "seen": 1787639263.0297792,
     "ast_hash": "ee59a0d6ccebfbc71992bf329250c822",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/ai-books-for-kids-434f077877.html": {
     "mtime": 1786661117.5681329,
+    "seen": 1787639263.02978,
     "ast_hash": "1e8c482d4e1a452aafcc356387479db4",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/ai-career-018e268ffa.html": {
     "mtime": 1786661119.0387664,
+    "seen": 1787639263.0297806,
     "ast_hash": "071badfbaa2211af39552039a9811545",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/ai-career-faq-880d8964b6.html": {
     "mtime": 1786661117.785111,
+    "seen": 1787639263.0297816,
     "ast_hash": "0937ae9d8eda0b166774dfa428a258bd",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/ai-career-paths-9a56a41949.html": {
     "mtime": 1786661118.3586843,
+    "seen": 1787639263.0297823,
     "ast_hash": "906d86178ce7b2e3faba9a9b823b012b",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/ai-certifications-22e68e8ff1.html": {
     "mtime": 1786661118.8424044,
+    "seen": 1787639263.029783,
     "ast_hash": "e682298d3b72e544ef18a054abc5091c",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/ai-companies-top-100-94cef03ae9.html": {
     "mtime": 1786661107.3651123,
+    "seen": 1787639263.0297837,
     "ast_hash": "16c16c4236012c1d3838afbab39ff7b8",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/ai-data-types-models-4cc865709e.html": {
     "mtime": 1786661105.467275,
+    "seen": 1787639263.0297842,
     "ast_hash": "78f6024f0e1b322ce867356654cd794f",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/ai-ethics-for-everyday-folks-the-stuff-you-gotta-know--f0-9f-a4-96-f0-9f-94-8d-bff75776a0.html": {
     "mtime": 1786661097.030954,
+    "seen": 1787639263.0297854,
     "ast_hash": "37cc10eca40d11502293c042ff8c2f2b",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/ai-evolution-faa2ece8cb.html": {
     "mtime": 1786661099.741552,
+    "seen": 1787639263.029786,
     "ast_hash": "5d7d6e978c3e8208874b51ff9d8fef2b",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/ai-healthcare-interoperability-ceea6f4484.html": {
     "mtime": 1786661113.830099,
+    "seen": 1787639263.0297868,
     "ast_hash": "c06a1d24b68d8ef7ce37a031dc5dc3b2",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/ai-in-finance-3926dcb68c.html": {
     "mtime": 1786661097.78929,
+    "seen": 1787639263.0297875,
     "ast_hash": "33fa7a0f8b2588705b5a6a7f22a6f8f6",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/ai-in-healthcare-a18ddd8b16.html": {
     "mtime": 1786661097.4615974,
+    "seen": 1787639263.0297885,
     "ast_hash": "19d1d3226bc2c66a6f9c5c3b90b33766",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/ai-jobs-whats-the-real-deal--f0-9f-8c-8d-f2c9400ce9.html": {
     "mtime": 1786661096.7293952,
+    "seen": 1787639263.029789,
     "ast_hash": "07aded4922f811d4246e816616216aeb",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/ai-leader-with-no-code-378d2d7b1d.html": {
     "mtime": 1786661112.9523814,
+    "seen": 1787639263.0297897,
     "ast_hash": "81c25c8ea11ba054f71f43fbce9aeda2",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/ai-model-benchmarks-a-comprehensive-guide-83f128c39f.html": {
     "mtime": 1786661115.6707366,
+    "seen": 1787639263.0297904,
     "ast_hash": "a9b3b1caacad4a08418919203aa346ff",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/ai-pin-technology-and-its-5-main-benefits-b1d582602d.html": {
     "mtime": 1786661108.105837,
+    "seen": 1787639263.029791,
     "ast_hash": "520430e964e29e9ce03f30ae6233cce5",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/ai-rule-based-systems-8cff0914fc.html": {
     "mtime": 1786661100.0116832,
+    "seen": 1787639263.029792,
     "ast_hash": "a9bd10d959f71863ee20a0e7ca8f2336",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/ai-tools-for-kids-77048aad96.html": {
     "mtime": 1786661119.4861722,
+    "seen": 1787639263.0297928,
     "ast_hash": "4540d3ecad9af55f829e13bf20e4bb8c",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/ais-dawn-revolutionizing-the-digital-realm-d0f0a1484f.html": {
     "mtime": 1786661104.0093,
+    "seen": 1787639263.0297933,
     "ast_hash": "6e22b59cc1bd5afe63c6529f163e4fed",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/algorithms-in-artificial-intelligence-8056666b17.html": {
     "mtime": 1786661108.9810536,
+    "seen": 1787639263.0297942,
     "ast_hash": "f24e93266aa98faa39572dede76bdc30",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/applications-of-generative-ai-76713f6eaa.html": {
     "mtime": 1786661110.6920295,
+    "seen": 1787639263.029795,
     "ast_hash": "446dcb1cb39832d7aa78e052971d7569",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/artificial-intelligence-ai-f8b7ef136f.html": {
     "mtime": 1786661095.8550925,
+    "seen": 1787639263.0297956,
     "ast_hash": "bf9d736be1d01fb151992219f100fe3e",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/blog-2-9c98344e82.html": {
     "mtime": 1786661095.5414474,
+    "seen": 1787639263.0297964,
     "ast_hash": "be0fe099b77d0a354e245bc07e1483c7",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/blog-4-4d7315dc1f.html": {
     "mtime": 1786661096.107504,
+    "seen": 1787639263.029797,
     "ast_hash": "39c3258a9df04d457a77a86022fd4ba6",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/building-agentic-ai-saas-a-strategic-roadmap-using-google-gemini-enterprise-92daae424d.html": {
     "mtime": 1786661116.5730708,
+    "seen": 1787639263.0297978,
     "ast_hash": "385110b8fce2496d589a9e94bff994ac",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/building-features-faster-and-better-with-ai-6dc3c178fa.html": {
     "mtime": 1786661109.8454435,
+    "seen": 1787639263.0297987,
     "ast_hash": "15ed19dbb8a11a3438018b3f76bbcd41",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/career-in-ai-5314d88df7.html": {
     "mtime": 1786661119.280761,
+    "seen": 1787639263.0297995,
     "ast_hash": "0c2628242b2dc9e20d5013b10b3d0266",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/category-ai-algorithms-4a2df4d6c8.html": {
     "mtime": 1786661125.8413887,
+    "seen": 1787639263.0298,
     "ast_hash": "2c9b27c9b6506b895f339eef1d32f70e",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/category-ai-tools-e9ebd221df.html": {
     "mtime": 1786661126.3230631,
+    "seen": 1787639263.0298007,
     "ast_hash": "3d80ff5bbea2d4b406cb8ed6bcedc9b7",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/category-artificial-intelligence-5ecfb7a6b6.html": {
     "mtime": 1786661126.089952,
+    "seen": 1787639263.0298014,
     "ast_hash": "5140a1b3e7b742cd182df2b4b918c1bc",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/category-blog-2ed5d207d4.html": {
     "mtime": 1786661124.6076336,
+    "seen": 1787639263.029802,
     "ast_hash": "4cabc9724cffc4ae581644e0a84f8a77",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/category-blog-everyone-1b96939567.html": {
     "mtime": 1786661125.370954,
+    "seen": 1787639263.0298028,
     "ast_hash": "a12e66bf1b7505dfd4446cacb5ba74df",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/category-blog-professional-fb0204920b.html": {
     "mtime": 1786661124.8674343,
+    "seen": 1787639263.0298035,
     "ast_hash": "28e08040de2ea880a763009d94449074",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/category-blog-video-23edaf74f1.html": {
     "mtime": 1786661125.121776,
+    "seen": 1787639263.0298042,
     "ast_hash": "a55c2979cc53fd36afca38dc1fa06510",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/category-technology-b70ab668b9.html": {
     "mtime": 1786661125.602093,
+    "seen": 1787639263.029805,
     "ast_hash": "e628995dcb7e0731532a6119515a71cb",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/choosing-the-right-vector-database-with-caching-a-comprehensive-guide-for-genai-applications-e7fc77b15d.html": {
     "mtime": 1786661114.7806888,
+    "seen": 1787639263.029806,
     "ast_hash": "d55d6695f923a7ea0e04bd43ba8966ca",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/classes-14c49e5e53.html": {
     "mtime": 1786661117.0300498,
+    "seen": 1787639263.0298066,
     "ast_hash": "7c4b08406fb23cc699cc8f4a7973553b",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/classes-recent-case-title-01-9b98cb91e2.html": {
     "mtime": 1786661122.5876656,
+    "seen": 1787639263.0298073,
     "ast_hash": "0e16acab29810e48ecea851495a7dc49",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/classes-recent-case-title-02-b111c94815.html": {
     "mtime": 1786661122.79169,
+    "seen": 1787639263.029808,
     "ast_hash": "921fd0f75efd830466d0c8976611148b",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/co-evolving-ai-e42ce3e54e.html": {
     "mtime": 1786661102.5236328,
+    "seen": 1787639263.029809,
     "ast_hash": "28a1e3bed3d63f9276a3563c0bee64db",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/contact-f69a4923b1.html": {
     "mtime": 1786661120.4043982,
+    "seen": 1787639263.0298097,
     "ast_hash": "fcd90b44baabf029c61effd46dae881e",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/crafting-the-future-ais-role-in-modern-manufacturing-9da8ca6d3f.html": {
     "mtime": 1786661098.6745787,
+    "seen": 1787639263.0298104,
     "ast_hash": "f64e73670d1713bcd6c59993002a502a",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/creative-ai-89a1af6693.html": {
     "mtime": 1786661101.9775403,
+    "seen": 1787639263.0298111,
     "ast_hash": "c63f860f95b85f00cf7d513e18d7a0c3",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/custom-gpt-models-481f082a8b.html": {
     "mtime": 1786661108.3910317,
+    "seen": 1787639263.0298123,
     "ast_hash": "ebb5276aa61d521c2752098f079ceee1",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/data-gen-ai-fd6e6489ef.html": {
     "mtime": 1786661104.941692,
+    "seen": 1787639263.029813,
     "ast_hash": "c684c296545c6ef0371798b93742d829",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/decentralized-ai-7550461b1c.html": {
     "mtime": 1786661102.8061461,
+    "seen": 1787639263.0298138,
     "ast_hash": "95eb666bfeb5744c7bf6cd64946d3274",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/deep-learning-ai-14c471d997.html": {
     "mtime": 1786661100.579486,
+    "seen": 1787639263.0298142,
     "ast_hash": "a05a0b60506314636ee2b41382be6d2d",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/emotional-ai-5732eddd6c.html": {
     "mtime": 1786661101.7111146,
+    "seen": 1787639263.029815,
     "ast_hash": "aec4dfa2043afe96cbead51043dd8dda",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/ethical-ai-7c1c06c7b1.html": {
     "mtime": 1786661103.1338582,
+    "seen": 1787639263.029816,
     "ast_hash": "68111519b2a63f3ecd85993390d1f0b8",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/faq-9cf9b64ec9.html": {
     "mtime": 1786661120.8301613,
+    "seen": 1787639263.0298166,
     "ast_hash": "f9e169e4b5f4e0ce3550929f8f139185",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/fine-tuning-your-generative-ai-application-a-comprehensive-guide-to-parameters-and-configurations-60a04e77e3.html": {
     "mtime": 1786661115.1134186,
+    "seen": 1787639263.0298176,
     "ast_hash": "689e8174d74b0da0bd4145adeebf4f13",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/general-ai-7863a26c7e.html": {
     "mtime": 1786661100.884806,
+    "seen": 1787639263.0298183,
     "ast_hash": "db59b0028ddb023f07098ae120b17486",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/generative-ai-solutions-d2db5df852.html": {
     "mtime": 1786661106.0368483,
+    "seen": 1787639263.0298193,
     "ast_hash": "3915ba2e4fa18e86d4bbd8512504cfd9",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/generative-ai-vs-traditional-ai-dc9af6f90e.html": {
     "mtime": 1786661111.591455,
+    "seen": 1787639263.02982,
     "ast_hash": "a0743f4930f138a7f07bdbfa31da8e9b",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/generative-and-discriminative-models-f6a5b4eb5e.html": {
     "mtime": 1786661109.550781,
+    "seen": 1787639263.0298204,
     "ast_hash": "e71095e5aeb7b64c5553acb4b9303876",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/gpt-models-08a9c96f9d.html": {
     "mtime": 1786661103.759673,
+    "seen": 1787639263.0298212,
     "ast_hash": "d41f08614b2a82d9658151997da004f8",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/grokai-9e6b515015.html": {
     "mtime": 1786661106.8224313,
+    "seen": 1787639263.0298219,
     "ast_hash": "bc8baaa9d32612cf22aa4661432fa663",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/hello-world-9763be3ae2.html": {
     "mtime": 1786661095.0314405,
+    "seen": 1787639263.0298228,
     "ast_hash": "3439d95d086cb3947d5aba782038597a",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/home-7df9c6845f.html": {
     "mtime": 1786661094.7798507,
+    "seen": 1787639263.0298235,
     "ast_hash": "08a256d4c6047873a438baee80a9ee9f",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/home-d4c4647786.html": {
     "mtime": 1786661118.1179962,
+    "seen": 1787639263.0298243,
     "ast_hash": "746c605231da3cb6a7f62c8320cca97a",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/how-ai-is-transforming-software-engineering-481fa09a5e.html": {
     "mtime": 1786661110.130142,
+    "seen": 1787639263.029825,
     "ast_hash": "50c40965fefbe104ca8b7e9dfa73bb0c",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/langgraph-5-stunning-secrets-for-building-a-generative-ai-application-641802efc2.html": {
     "mtime": 1786661116.2968445,
+    "seen": 1787639263.0298254,
     "ast_hash": "d8b483ba9f230b4785a87e76f6942c7e",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/large-language-model-f89b996920.html": {
     "mtime": 1786661106.528154,
+    "seen": 1787639263.0298264,
     "ast_hash": "73de6801d4f99a9530718c0c7cd73dde",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/latest-blog-title-01-e452e4138f.html": {
     "mtime": 1786661096.3974962,
+    "seen": 1787639263.029827,
     "ast_hash": "dd61f6eefe06680c305f41bc87ee202f",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/limitations-of-generative-ai-71ad206f25.html": {
     "mtime": 1786661110.9819021,
+    "seen": 1787639263.029828,
     "ast_hash": "df7daa713aac0b1d3f4132b6fe15c93b",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/local-llm-on-your-laptop-3320797b26.html": {
     "mtime": 1786661109.265318,
+    "seen": 1787639263.0298285,
     "ast_hash": "7d4ce78c3b09af5072c356b1fc5e1f6c",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/machine-learning-62cfb192bb.html": {
     "mtime": 1786661100.2754574,
+    "seen": 1787639263.0298293,
     "ast_hash": "7c6f78b338ab2e9adb8c4cc5a83ef03d",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/machine-learning-engineer-14e01ce9f7.html": {
     "mtime": 1786661118.6044989,
+    "seen": 1787639263.0298302,
     "ast_hash": "8ca3f842dd86506df4b805a2b50487e6",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/newsletter-2-9ec1b062c9.html": {
     "mtime": 1786661116.8133643,
+    "seen": 1787639263.029831,
     "ast_hash": "4c69764138e145f51832e9214f316ec7",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/newsletter-9f7cb4526c.html": {
     "mtime": 1786661119.683974,
+    "seen": 1787639263.0298316,
     "ast_hash": "41acd48c79f3c3b4130947ff9563061c",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/nvidias-chat-with-rtx-the-key-to-next-generation-chatbots-on-your-pc-cf9add243f.html": {
     "mtime": 1786661113.2356822,
+    "seen": 1787639263.0298321,
     "ast_hash": "f4338127423ee1ad2722e299665ac853",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/open-source-generative-ai-projects-057441509e.html": {
     "mtime": 1786661112.1404712,
+    "seen": 1787639263.0298333,
     "ast_hash": "a4f98161303b56aef52bfcc79f30ebbb",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/others-2df65989d4.html": {
     "mtime": 1786661119.91706,
+    "seen": 1787639263.0298338,
     "ast_hash": "bcf65ac57b106371954ed1c74903d712",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/page-9b27428a40.html": {
     "mtime": 1786661121.043196,
+    "seen": 1787639263.0298345,
     "ast_hash": "ef01f06d00e6cc62e3e42ec0f4a885c7",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/privacy-policy-2-edffa8eca5.html": {
     "mtime": 1786661120.6116018,
+    "seen": 1787639263.0298355,
     "ast_hash": "757fd8eee5f5c89b151e6c4b3df07419",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/prompt-design-and-engineering-1f3b96a18c.html": {
     "mtime": 1786661107.7887719,
+    "seen": 1787639263.0298362,
     "ast_hash": "6bb75ad49f02baa61c19f6ab5732aa57",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/prompt-engineering-92c4e736a4.html": {
     "mtime": 1786661104.3062818,
+    "seen": 1787639263.0298371,
     "ast_hash": "f8abe8ce8c81d8abdf35b2d7ca38e6d1",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/python-deployment-best-practices-a-comprehensive-guide-5d8c8ff810.html": {
     "mtime": 1786661113.545312,
+    "seen": 1787639263.0298378,
     "ast_hash": "5a657a594e7d3c24a758c3545b1fdd8c",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/quantum-ai-23bd2ba6c7.html": {
     "mtime": 1786661103.4833279,
+    "seen": 1787639263.0298386,
     "ast_hash": "0696bdca5a6b380b0488b5d8e7bb7a78",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/rag-architecture-types-with-implementation-details-and-their-use-cases-8596395945.html": {
     "mtime": 1786661115.4076025,
+    "seen": 1787639263.0298395,
     "ast_hash": "4ca2b758f7e42e466311df501ea8d341",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/self-aware-ai-1eefc7678f.html": {
     "mtime": 1786661102.2529032,
+    "seen": 1787639263.0298405,
     "ast_hash": "fb437765fdbdf45671b2a02e362e9c36",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/services-7f2795f6d3.html": {
     "mtime": 1786661121.2400777,
+    "seen": 1787639263.0298412,
     "ast_hash": "5b9a203717b890a84bc13205dbac992c",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/services-ai-amigos-academy-13c06bbf36.html": {
     "mtime": 1786661122.351461,
+    "seen": 1787639263.029842,
     "ast_hash": "babf2684f480c7854e2f86526f3ddf2e",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/services-ai-amigos-pro-0c53021bc9.html": {
     "mtime": 1786661121.9250464,
+    "seen": 1787639263.0298426,
     "ast_hash": "8a9093ef0d021c66595b7434c9e781b9",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/services-ai-by-job-role-292a02aa06.html": {
     "mtime": 1786661122.1317005,
+    "seen": 1787639263.0298436,
     "ast_hash": "a180af79ad90d7ec0eaf83d737f7fb3d",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/services-ai-for-kids-74148dc2ae.html": {
     "mtime": 1786661121.6897428,
+    "seen": 1787639263.0298443,
     "ast_hash": "d15c7c3d693f43d16d3946bd7453bd3f",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/shop-d1aa1283a6.html": {
     "mtime": 1786661121.4529583,
+    "seen": 1787639263.029845,
     "ast_hash": "b7003b0055c3a63e04b0e983284a7f27",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/superintelligent-ai-1b4c04c3e7.html": {
     "mtime": 1786661101.1430926,
+    "seen": 1787639263.0298455,
     "ast_hash": "44e0caaee9cadcbb4ab963b462620067",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/team-member-name-01-95b84657c8.html": {
     "mtime": 1786661123.685714,
+    "seen": 1787639263.0298464,
     "ast_hash": "47dba659f8b65a53425c9dfa246a7f16",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/team-member-name-02-dde22a9cb2.html": {
     "mtime": 1786661123.9128146,
+    "seen": 1787639263.0298471,
     "ast_hash": "b33a419013e45b1734bb2d9f4fb3de03",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/team-member-name-03-33f364e973.html": {
     "mtime": 1786661124.1409206,
+    "seen": 1787639263.0298479,
     "ast_hash": "cccb1e2f3b7812d26129d8502d7b1765",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/team-member-name-04-fb23e4b2a8.html": {
     "mtime": 1786661124.3605235,
+    "seen": 1787639263.0298488,
     "ast_hash": "b91390617365a5b44a2bad2622d33911",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/tesseract-an-ocr-optical-character-recognition-tool-for-image-reading-from-excel-cbfdaae91c.html": {
     "mtime": 1786661114.1123352,
+    "seen": 1787639263.0298495,
     "ast_hash": "123bd541ac60535e2e2a40a00bfec76d",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/testimonials-client-name-01-0bc8ffe278.html": {
     "mtime": 1786661123.0026457,
+    "seen": 1787639263.0298505,
     "ast_hash": "5cdfcf0f08094c92ddade4edc3731a56",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/testimonials-client-name-02-457cb3d884.html": {
     "mtime": 1786661123.2148888,
+    "seen": 1787639263.0298512,
     "ast_hash": "3158e45265881d3bad2c912266d3afe6",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/testimonials-client-name-03-a6fcb03eba.html": {
     "mtime": 1786661123.4551156,
+    "seen": 1787639263.029852,
     "ast_hash": "8ca6d985b0aff71197111704510f123f",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/text-to-video-software-1c6dc34043.html": {
     "mtime": 1786661104.5911486,
+    "seen": 1787639263.0298524,
     "ast_hash": "158f83c8b821880fd9c07e61fcf3fc29",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/the-blog-publishing-checklist-ensuring-your-content-doesnt-go-oops-b2bf3911a7.html": {
     "mtime": 1786661098.9346356,
+    "seen": 1787639263.029853,
     "ast_hash": "7307b08a6085855ee63b44b2dc15839c",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/the-explainability-of-generative-ai-models-2bd920e91b.html": {
     "mtime": 1786661111.848637,
+    "seen": 1787639263.029854,
     "ast_hash": "0d059ffcad2e8561339757fdd13c1e0b",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/the-future-farm-ais-role-in-our-fields-and-beyond-232d1e4e8e.html": {
     "mtime": 1786661098.3712778,
+    "seen": 1787639263.0298548,
     "ast_hash": "c80974e083512f7150d8a2537a11f9ae",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/the-future-of-generative-ai-a992f0cf93.html": {
     "mtime": 1786661111.3211462,
+    "seen": 1787639263.0298555,
     "ast_hash": "bd440703a298321a3c0839ae8815a8c8",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/the-future-on-wheels-how-ai-is-steering-the-world-of-transportation--f0-9f-9a-97-f0-9f-92-a8-98e8a03d09.html": {
     "mtime": 1786661099.4489121,
+    "seen": 1787639263.0298562,
     "ast_hash": "481cc9509ae6f6487ec1ce1def25ff00",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/the-role-of-generative-ai-in-creative-industries-76de7ca193.html": {
     "mtime": 1786661112.4042845,
+    "seen": 1787639263.029857,
     "ast_hash": "3d59c4c4218801f47b306d77f72c41c3",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/top-20-generative-ai-tools-for-creative-exploration-5355c42d3f.html": {
     "mtime": 1786661110.4080677,
+    "seen": 1787639263.0298579,
     "ast_hash": "348b563f8661b561dd54bea8c1870483",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/training-data-for-generative-ai-models-a6204b411f.html": {
     "mtime": 1786661112.6680236,
+    "seen": 1787639263.0298586,
     "ast_hash": "a628db8dbaa1d4738416ac1c223b902d",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/unboxing-ai-the-retail-revolution-behind-your-shopping-spree-73508110f7.html": {
     "mtime": 1786661098.0951922,
+    "seen": 1787639263.0298593,
     "ast_hash": "d242ed857e4c93a1f0b57cb3e5dc7996",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/unlocking-ai-magic-in-entertainment-a-light-hearted-guide-b6781ba9fd.html": {
     "mtime": 1786661099.1781063,
+    "seen": 1787639263.02986,
     "ast_hash": "7cb2925219a33220046c0a43f993afd4",
     "semantic_hash": ""
   },
   "public-site-snapshot/pages/ways-to-test-a-rag-architecture-based-generative-ai-application-422e6f577b.html": {
     "mtime": 1786661116.0145202,
+    "seen": 1787639263.0298612,
     "ast_hash": "59ae0a5836afe91bc7ea93d68bb952af",
     "semantic_hash": ""
   },
   "remediation/FINDING_CLOSURE_STATUS_2026-08-13.md": {
     "mtime": 1786648478.8788595,
+    "seen": 1787639263.0298624,
     "ast_hash": "250d2995846beb4a0c3bce5e1f09a9a4",
     "semantic_hash": ""
   },
   "remediation/GRAPH_IMPACT_MAP.md": {
     "mtime": 1786635231.2684581,
+    "seen": 1787639263.0298634,
     "ast_hash": "e5db1b922de1744ec3d2fb4247b4a3ee",
     "semantic_hash": ""
   },
   "remediation/MEDIA_ACCESSIBILITY_REMEDIATION.md": {
     "mtime": 1786648706.665744,
+    "seen": 1787639263.0298638,
     "ast_hash": "3b76fdb8a2ff8c2ee5529c76a74bc5b9",
     "semantic_hash": ""
   },
   "remediation/README.md": {
     "mtime": 1786648020.0961044,
+    "seen": 1787639263.0298648,
     "ast_hash": "07aeaebdb6b36b2339233ec5fb14b47e",
     "semantic_hash": ""
   },
   "remediation/STAGING_CHANGELOG_2026-08-13.md": {
     "mtime": 1786648474.3924842,
+    "seen": 1787639263.0298655,
     "ast_hash": "1bf7910f3038f27d2b55ffc420c328ad",
     "semantic_hash": ""
   },
   "remediation/content-governance/CONTENT_INTENT_FRESHNESS_REVIEW.md": {
     "mtime": 1786662480.7250738,
+    "seen": 1787639263.0298662,
     "ast_hash": "4401cc8dda20c1f41c1164fbcd787de6",
     "semantic_hash": ""
   },
   "remediation/content-patch-plan.README.md": {
     "mtime": 1786638803.61911,
+    "seen": 1787639263.029867,
     "ast_hash": "f78ac7a0cf2d0ed1d4bd9078e5f390dc",
     "semantic_hash": ""
   },
   "remediation/editorial-trust-governance-plan.md": {
     "mtime": 1786641944.6178515,
+    "seen": 1787639263.029868,
     "ast_hash": "7af4c215df8b96ebed75491bd4599e97",
     "semantic_hash": ""
   },
   "remediation/performance/PERFORMANCE_REMEDIATION.md": {
     "mtime": 1786648475.3531802,
+    "seen": 1787639263.0298686,
     "ast_hash": "5c72171a21273f9da3c3281258f65bfe",
     "semantic_hash": ""
   },
   "remediation/releases/aiamigos-remediation-1.4.1-candidate/RELEASE_STATUS.md": {
     "mtime": 1787347663.0620172,
+    "seen": 1787639263.0298693,
     "ast_hash": "301f81db63162587bc55ec0a0e2ca2d9",
     "semantic_hash": ""
   },
   "remediation/releases/aiamigos-remediation-1.4.1-candidate/aiamigos-remediation/README.md": {
     "mtime": 1786658763.7663968,
+    "seen": 1787639263.02987,
     "ast_hash": "0b46c468bb9429678f2ab79089b6de14",
     "semantic_hash": ""
   },
   "remediation/releases/aiamigos-remediation/README.md": {
     "mtime": 1786648478.0602612,
+    "seen": 1787639263.0298705,
     "ast_hash": "255220a0899c218956dc1d000d2f7ce5",
     "semantic_hash": ""
   },
   "remediation/runtime-evidence/PHP_8_4_24_V1_4_1_VALIDATION_2026-08-13.md": {
     "mtime": 1786659037.620733,
+    "seen": 1787639263.0298717,
     "ast_hash": "7ebe6b14ffe52346ab9ba33a1b4f9f6e",
     "semantic_hash": ""
   },
   "remediation/runtime-evidence/PHP_8_4_24_VALIDATION_2026-08-13.md": {
     "mtime": 1786648472.492657,
+    "seen": 1787639263.0298724,
     "ast_hash": "5fe727a8caa355547f7610c92ca19799",
     "semantic_hash": ""
   },
   "remediation/runtime-security-plan.md": {
     "mtime": 1786648473.4920707,
+    "seen": 1787639263.0298731,
     "ast_hash": "e5c5634623b6f53a9e9e441b03da2f7c",
     "semantic_hash": ""
   },
   "remediation/server-policy/README.md": {
     "mtime": 1786650126.4780056,
+    "seen": 1787639263.0298738,
     "ast_hash": "e2a1fc085e6b5513c5a70e884207ea9f",
     "semantic_hash": ""
   },
   "remediation/social-card/README.md": {
     "mtime": 1786657787.259271,
+    "seen": 1787639263.0298748,
     "ast_hash": "d119b6f787e6080b8d47997c627f6ef4",
     "semantic_hash": ""
   },
   "remediation/status-v2/FINDING_COMPLETION_STATUS_V2.md": {
     "mtime": 1787347897.387103,
+    "seen": 1787639263.0298755,
     "ast_hash": "a468af2eeb5ff9c815d12385cb73a6f4",
     "semantic_hash": ""
   },
   "remediation/tests/M1_M3_GATE_EVIDENCE_2026-08-13.md": {
     "mtime": 1786649858.1477818,
+    "seen": 1787639263.029877,
     "ast_hash": "d73b0d935df17ff7cc86ed04eb6ed73f",
     "semantic_hash": ""
   },
   "remediation/tests/README.md": {
     "mtime": 1786650076.4739587,
+    "seen": 1787639263.0298777,
     "ast_hash": "5f653dc2ce980b20e37ade576dd9f670",
     "semantic_hash": ""
   },
   "remediation/theme-patch/ACCESSIBILITY-PATCH.md": {
     "mtime": 1786645292.1774008,
+    "seen": 1787639263.0298793,
     "ast_hash": "869c2f8c88d53e0bea191d2f5667be46",
     "semantic_hash": ""
   },
   "remediation/theme-patch/README.md": {
     "mtime": 1786643460.7342443,
+    "seen": 1787639263.02988,
     "ast_hash": "2ea73b407da6f0deedeefe459f8b5b89",
     "semantic_hash": ""
   },
   "remediation/wp-plugin/aiamigos-remediation/README.md": {
     "mtime": 1786658763.7663968,
+    "seen": 1787639263.0298808,
     "ast_hash": "0b46c468bb9429678f2ab79089b6de14",
     "semantic_hash": ""
   },
   "remediation/wp-plugin/aiamigos-remediation/docs/ACCESSIBILITY-MODULE.md": {
     "mtime": 1786648476.3285346,
+    "seen": 1787639263.0298817,
     "ast_hash": "89e5a5b885a0ab70db3348b492904bee",
     "semantic_hash": ""
   },
   "astro.config.mjs": {
     "mtime": 1787413263.6115441,
+    "seen": 1787639263.0295734,
     "ast_hash": "3eeec88976f3f979e15317bc4d0cf53b",
     "semantic_hash": ""
   },
   "package.json": {
-    "mtime": 1787583299.9462707,
-    "ast_hash": "939814f3cd24d18320a3913baee99590",
+    "mtime": 1787638633.610139,
+    "seen": 1787639263.029579,
+    "ast_hash": "d82337837d5347404843448b4a21cc6b",
     "semantic_hash": ""
   },
   "scripts/import-snapshot.mjs": {
     "mtime": 1787414168.0079534,
+    "seen": 1787639263.029705,
     "ast_hash": "be20a9e2f536ce2acba47d79f6d7f4d8",
     "semantic_hash": ""
   },
   "scripts/prepare-hostinger-deploy.mjs": {
     "mtime": 1787413554.6996074,
+    "seen": 1787639263.029706,
     "ast_hash": "294346d11f5a8bbe426085074782dff2",
     "semantic_hash": ""
   },
   "scripts/verify-static-site.mjs": {
-    "mtime": 1787582975.648954,
-    "ast_hash": "194142df10e0703f2ae1bb235ea28356",
+    "mtime": 1787638794.8950107,
+    "seen": 1787639263.029709,
+    "ast_hash": "421227a0eb64dca67602fef45c64558a",
     "semantic_hash": ""
   },
   "src/components/ArticleCard.astro": {
     "mtime": 1787413314.364944,
+    "seen": 1787639263.02971,
     "ast_hash": "38ef2b2c04e69a88cea2bd67e5221310",
     "semantic_hash": ""
   },
   "src/components/Breadcrumbs.astro": {
     "mtime": 1787412808.1649244,
+    "seen": 1787639263.029712,
     "ast_hash": "ab428a9eb974e01064b5f10c80890281",
     "semantic_hash": ""
   },
   "src/content.config.ts": {
     "mtime": 1787428104.3967304,
+    "seen": 1787639263.0297143,
     "ast_hash": "b4790d92aa4c8ecb3bdca3ca2bac879d",
     "semantic_hash": ""
   },
   "src/data/site.ts": {
-    "mtime": 1787582377.7892375,
-    "ast_hash": "adaa49b9fc3004e0fd635e11f26480ce",
+    "mtime": 1787638336.2370064,
+    "seen": 1787639263.0297227,
+    "ast_hash": "c5910b5c4d4c9c4aefb0cd1041a0654f",
     "semantic_hash": ""
   },
   "src/layouts/BaseLayout.astro": {
-    "mtime": 1787583308.619131,
-    "ast_hash": "844627d60a7e9e13a292e538188dd211",
+    "mtime": 1787638337.3468516,
+    "seen": 1787639263.0297265,
+    "ast_hash": "b19f8e594fadc9f9fdbc40e9ef71a1a1",
     "semantic_hash": ""
   },
   "src/pages/404.astro": {
     "mtime": 1787413044.2798073,
+    "seen": 1787639263.0297298,
     "ast_hash": "b9faac997a6cf308a5a1ee5fa3f06b42",
     "semantic_hash": ""
   },
   "src/pages/about/index.astro": {
-    "mtime": 1787583135.633324,
-    "ast_hash": "75a1ae86fd1a7669d4d6920b4cd771ea",
+    "mtime": 1787638513.4868875,
+    "seen": 1787639263.0297306,
+    "ast_hash": "a280babec1bce4e7a162dce34e0a16ca",
     "semantic_hash": ""
   },
   "src/pages/articles/[...slug].astro": {
     "mtime": 1787582755.9268453,
+    "seen": 1787639263.0297344,
     "ast_hash": "148c2bbf5f9bc80292cbf3e3c768d35f",
     "semantic_hash": ""
   },
   "src/pages/articles/index.astro": {
     "mtime": 1787583109.1970253,
+    "seen": 1787639263.0297353,
     "ast_hash": "10e1624edd5d5268638f1049155a80ac",
     "semantic_hash": ""
   },
   "src/pages/careers/index.astro": {
     "mtime": 1787427110.1069002,
+    "seen": 1787639263.029737,
     "ast_hash": "cff548ec32d6c6e9d177ddd94198b9b8",
     "semantic_hash": ""
   },
   "src/pages/contact/index.astro": {
-    "mtime": 1787427120.5124245,
-    "ast_hash": "ca003248876b855cd58e31ef4f58e562",
+    "mtime": 1787638539.347923,
+    "seen": 1787639263.0297384,
+    "ast_hash": "2247ca90a608a635ab62caf228a6ba59",
     "semantic_hash": ""
   },
   "src/pages/index.astro": {
-    "mtime": 1787582583.951651,
-    "ast_hash": "70e92bd75c2a4641801c8f078933901d",
+    "mtime": 1787639506.6231177,
+    "seen": 1787639615.0178611,
+    "ast_hash": "20f841e5cecd24b39a7e37a4c6bbe7ce",
     "semantic_hash": ""
   },
   "src/pages/newsletter/index.astro": {
     "mtime": 1787427116.9112792,
+    "seen": 1787639263.0297475,
     "ast_hash": "d4312ba373846f4856fa117cf3aefc25",
     "semantic_hash": ""
   },
   "src/pages/privacy/index.astro": {
-    "mtime": 1787488847.58043,
-    "ast_hash": "aaf5f613c733bd7f2a9919b44e320736",
+    "mtime": 1787638569.6738791,
+    "seen": 1787639263.0297503,
+    "ast_hash": "3963347b6d7628eed70a544b31f361ff",
     "semantic_hash": ""
   },
   "src/pages/rss.xml.ts": {
     "mtime": 1787582815.479809,
+    "seen": 1787639263.0297525,
     "ast_hash": "55e9c46eba5f62ab465aba85ac3791d6",
     "semantic_hash": ""
   },
   "src/pages/search/index.astro": {
     "mtime": 1787427330.8848433,
+    "seen": 1787639263.0297537,
     "ast_hash": "1fe6abc0a7c16cdfc78f577b6ddf1e94",
     "semantic_hash": ""
   },
   "src/pages/sitemap.xml.ts": {
-    "mtime": 1787582816.4098015,
-    "ast_hash": "2da7f88ba1c6325a1dc167c0301da7ce",
+    "mtime": 1787638338.469382,
+    "seen": 1787639263.0297544,
+    "ast_hash": "2ba3e2d13229fe1ecd289607cfeff964",
     "semantic_hash": ""
   },
   "src/pages/start-here/index.astro": {
     "mtime": 1787583015.7762861,
+    "seen": 1787639263.0297549,
     "ast_hash": "15353a49d7e2b8a75a362d49190ea17c",
     "semantic_hash": ""
   },
   "src/pages/topics/[slug]/index.astro": {
     "mtime": 1787582814.5862577,
+    "seen": 1787639263.0297592,
     "ast_hash": "2f3c5851d8c9560fb7eca12ae64c65f3",
     "semantic_hash": ""
   },
   "src/pages/topics/index.astro": {
     "mtime": 1787427173.2738523,
+    "seen": 1787639263.02976,
     "ast_hash": "1f637cc278eafd3dca5a78ca820fb92b",
     "semantic_hash": ""
   },
   "tsconfig.json": {
     "mtime": 1787412800.0854049,
+    "seen": 1787639263.0297678,
     "ast_hash": "c723225c8a73e5e36f6b8a516a99e456",
     "semantic_hash": ""
   },
   "public/robots.txt": {
     "mtime": 1787413045.5358067,
+    "seen": 1787639263.0298617,
     "ast_hash": "7246cd7c29fd8a0462c9ed17c699f218",
     "semantic_hash": ""
   },
   "remediation/status-v2/STATUS_2026-08-21.md": {
     "mtime": 1787347945.501408,
+    "seen": 1787639263.0298762,
     "ast_hash": "143a998e7d4db6c2b4374f9de9f8c7b8",
     "semantic_hash": ""
   },
   "remediation/tests/results/PRODUCTION_BROWSER_SPOTCHECK_2026-08-21.md": {
     "mtime": 1787347755.85752,
+    "seen": 1787639263.0298784,
     "ast_hash": "3114a9f5899af4ed7499b689d3a739df",
     "semantic_hash": ""
   },
   "src/content/articles/a-comprehensive-guide-to-nvidia-monai-unlocking-ai-in-medical-imaging.md": {
     "mtime": 1787414176.0683148,
+    "seen": 1787639263.0298827,
     "ast_hash": "2654dbac079f4b2316d5fc263bb5a49e",
     "semantic_hash": ""
   },
   "src/content/articles/adaptive-ai.md": {
     "mtime": 1787414175.9895396,
+    "seen": 1787639263.0298834,
     "ast_hash": "4637e834f63dd33644550e13165546ea",
     "semantic_hash": ""
   },
   "src/content/articles/ai-and-robotics.md": {
     "mtime": 1787414176.0342588,
+    "seen": 1787639263.0298839,
     "ast_hash": "078af14f374266e31ca0303ffc882970",
     "semantic_hash": ""
   },
   "src/content/articles/ai-app-development.md": {
     "mtime": 1787414175.950497,
+    "seen": 1787639263.0298848,
     "ast_hash": "2025df951a2a084440c2c863c35e93e4",
     "semantic_hash": ""
   },
   "src/content/articles/ai-books-for-kids.md": {
     "mtime": 1787414176.0910301,
+    "seen": 1787639263.0298858,
     "ast_hash": "66e77da1a320790381fee6b94e0bfa00",
     "semantic_hash": ""
   },
   "src/content/articles/ai-career-faq.md": {
     "mtime": 1787414176.0910301,
+    "seen": 1787639263.0298862,
     "ast_hash": "3a1877b9acadb89ac85dc4a783bad0b2",
     "semantic_hash": ""
   },
   "src/content/articles/ai-career-paths.md": {
     "mtime": 1787414176.0947485,
+    "seen": 1787639263.029887,
     "ast_hash": "d591e0759baebfc9b8d86b9aeb8f1bff",
     "semantic_hash": ""
   },
   "src/content/articles/ai-career.md": {
     "mtime": 1787414176.0995429,
+    "seen": 1787639263.0298877,
     "ast_hash": "8e717e71f38e8f8c20a4272ddbfa2b49",
     "semantic_hash": ""
   },
   "src/content/articles/ai-companies-top-100.md": {
     "mtime": 1787414176.0269296,
+    "seen": 1787639263.0298886,
     "ast_hash": "285c165fc2bda624711b08689912deff",
     "semantic_hash": ""
   },
   "src/content/articles/ai-data-types-models.md": {
     "mtime": 1787427593.7461812,
+    "seen": 1787639263.0298893,
     "ast_hash": "33f5e43f341cdc41250e76ffb0bcf9e0",
     "semantic_hash": ""
   },
   "src/content/articles/ai-ethics-for-everyday-folks-the-stuff-you-gotta-know--f0-9f-a4-96-f0-9f-94-8d.md": {
     "mtime": 1787414175.9594362,
+    "seen": 1787639263.0298898,
     "ast_hash": "72e1bc3ba7c9c18c7f3feb6e8b7168f0",
     "semantic_hash": ""
   },
   "src/content/articles/ai-evolution.md": {
     "mtime": 1787414175.9771852,
+    "seen": 1787639263.0298908,
     "ast_hash": "1e2f9d04b7a3ba09ba21c1ab1aaae0b3",
     "semantic_hash": ""
   },
   "src/content/articles/ai-healthcare-interoperability.md": {
     "mtime": 1787414176.0640423,
+    "seen": 1787639263.0298913,
     "ast_hash": "b6ca190e7a02a37ef2c5e60b18aabcb9",
     "semantic_hash": ""
   },
   "src/content/articles/ai-in-finance.md": {
     "mtime": 1787427594.9801328,
+    "seen": 1787639263.0298922,
     "ast_hash": "403cfcb58083080c013fcd7fa2872797",
     "semantic_hash": ""
   },
   "src/content/articles/ai-in-healthcare.md": {
     "mtime": 1787427596.20021,
+    "seen": 1787639263.029893,
     "ast_hash": "5e60b9da389c168297b0513ecbbb1cfc",
     "semantic_hash": ""
   },
   "src/content/articles/ai-jobs-whats-the-real-deal--f0-9f-8c-8d.md": {
     "mtime": 1787414175.9584365,
+    "seen": 1787639263.0298936,
     "ast_hash": "628470e826925e17de2deb74071f0076",
     "semantic_hash": ""
   },
   "src/content/articles/ai-leader-with-no-code.md": {
     "mtime": 1787414176.0573082,
+    "seen": 1787639263.0298944,
     "ast_hash": "23289a41a7864d1f0af20346309b478b",
     "semantic_hash": ""
   },
   "src/content/articles/ai-model-benchmarks-a-comprehensive-guide.md": {
     "mtime": 1787414176.0787685,
+    "seen": 1787639263.0298948,
     "ast_hash": "adb42014f4e13779c527221d0b3926e0",
     "semantic_hash": ""
   },
   "src/content/articles/ai-pin-technology-and-its-5-main-benefits.md": {
     "mtime": 1787414176.0293262,
+    "seen": 1787639263.0298958,
     "ast_hash": "814402139f8f48de7020421f6abdcbdc",
     "semantic_hash": ""
   },
   "src/content/articles/ai-rule-based-systems.md": {
     "mtime": 1787427597.4734056,
+    "seen": 1787639263.0298965,
     "ast_hash": "3f885b61204119d80b9d988a5602720b",
     "semantic_hash": ""
   },
   "src/content/articles/ai-tools-for-kids.md": {
     "mtime": 1787414176.1035426,
+    "seen": 1787639263.0298972,
     "ast_hash": "1aef3c614c9532be6129f85542536ab5",
     "semantic_hash": ""
   },
   "src/content/articles/ais-dawn-revolutionizing-the-digital-realm.md": {
     "mtime": 1787427598.8677416,
+    "seen": 1787639263.029898,
     "ast_hash": "e90d05da135739cf39f0d50fd09b706d",
     "semantic_hash": ""
   },
   "src/content/articles/algorithms-in-artificial-intelligence.md": {
     "mtime": 1787414176.0357647,
+    "seen": 1787639263.0298986,
     "ast_hash": "940feb401e138fd1e97b94d84664f488",
     "semantic_hash": ""
   },
   "src/content/articles/applications-of-generative-ai.md": {
     "mtime": 1787414176.0448596,
+    "seen": 1787639263.0298996,
     "ast_hash": "9b6717d5f2199223215922d0baec458e",
     "semantic_hash": ""
   },
   "src/content/articles/artificial-intelligence-ai.md": {
     "mtime": 1787427600.150637,
+    "seen": 1787639263.0299003,
     "ast_hash": "f5cf3328a147abbfc553efc896877583",
     "semantic_hash": ""
   },
   "src/content/articles/building-agentic-ai-saas-a-strategic-roadmap-using-google-gemini-enterprise.md": {
     "mtime": 1787414176.0822616,
+    "seen": 1787639263.029901,
     "ast_hash": "1e6283303b66c3e0690cad828d29ef47",
     "semantic_hash": ""
   },
   "src/content/articles/building-features-faster-and-better-with-ai.md": {
     "mtime": 1787414176.0406222,
+    "seen": 1787639263.0299017,
     "ast_hash": "edf5578568c046b69f03bb90b898fe56",
     "semantic_hash": ""
   },
   "src/content/articles/career-in-ai.md": {
     "mtime": 1787414176.1015413,
+    "seen": 1787639263.0299022,
     "ast_hash": "6fd6a8948385201c13925f8d7e06849e",
     "semantic_hash": ""
   },
   "src/content/articles/choosing-the-right-vector-database-with-caching-a-comprehensive-guide-for-genai-applications.md": {
     "mtime": 1787414176.0683148,
+    "seen": 1787639263.0299032,
     "ast_hash": "203a10735fe826388f7d139fb9ee9b27",
     "semantic_hash": ""
   },
   "src/content/articles/classes.md": {
     "mtime": 1787414176.0894163,
+    "seen": 1787639263.029904,
     "ast_hash": "f886899e40a9d52c3bd4cca47a21f882",
     "semantic_hash": ""
   },
   "src/content/articles/co-evolving-ai.md": {
     "mtime": 1787427601.4617767,
+    "seen": 1787639263.0299048,
     "ast_hash": "5b7ba3da753970529eb67a2b4e4b7102",
     "semantic_hash": ""
   },
   "src/content/articles/crafting-the-future-ais-role-in-modern-manufacturing.md": {
     "mtime": 1787414175.970271,
+    "seen": 1787639263.0299056,
     "ast_hash": "3579f742f76384a1792d8c167efc1295",
     "semantic_hash": ""
   },
   "src/content/articles/creative-ai.md": {
     "mtime": 1787414175.9946494,
+    "seen": 1787639263.0299063,
     "ast_hash": "8437c73a1b18d4f5b37ebd15795d2296",
     "semantic_hash": ""
   },
   "src/content/articles/custom-gpt-models.md": {
     "mtime": 1787414176.0327692,
+    "seen": 1787639263.029907,
     "ast_hash": "bd873cae6c331d07603b5905de29dd6d",
     "semantic_hash": ""
   },
   "src/content/articles/data-gen-ai.md": {
     "mtime": 1787414176.0160165,
+    "seen": 1787639263.029908,
     "ast_hash": "712b7f3a9eeec40610a1d552ddcfe6d9",
     "semantic_hash": ""
   },
   "src/content/articles/decentralized-ai.md": {
     "mtime": 1787414176.0006528,
+    "seen": 1787639263.029909,
     "ast_hash": "87637d22eab1e989d81c3a9debcfcd49",
     "semantic_hash": ""
   },
   "src/content/articles/deep-learning-ai.md": {
     "mtime": 1787414175.984161,
+    "seen": 1787639263.0299096,
     "ast_hash": "babf8185f201ccedbed195e6ff7e0367",
     "semantic_hash": ""
   },
   "src/content/articles/emotional-ai.md": {
     "mtime": 1787414175.9930706,
+    "seen": 1787639263.0299103,
     "ast_hash": "76a7be976a86fe44d8dedaf8d527a55e",
     "semantic_hash": ""
   },
   "src/content/articles/ethical-ai.md": {
     "mtime": 1787414176.002651,
+    "seen": 1787639263.029911,
     "ast_hash": "cca16dfbf8b695c4364f82afc3f61e50",
     "semantic_hash": ""
   },
   "src/content/articles/faq.md": {
     "mtime": 1787414176.1095428,
+    "seen": 1787639263.0299118,
     "ast_hash": "61a1867e551bfe2c7adb58528ed1d734",
     "semantic_hash": ""
   },
   "src/content/articles/fine-tuning-your-generative-ai-application-a-comprehensive-guide-to-parameters-and-configurations.md": {
     "mtime": 1787414176.075343,
+    "seen": 1787639263.0299122,
     "ast_hash": "99724888bd9380efe6c2750050da7e7c",
     "semantic_hash": ""
   },
   "src/content/articles/general-ai.md": {
     "mtime": 1787414175.9855022,
+    "seen": 1787639263.0299132,
     "ast_hash": "6a62fdc5dc4896618b2c1ede4634014f",
     "semantic_hash": ""
   },
   "src/content/articles/generative-ai-solutions.md": {
     "mtime": 1787427603.4659839,
+    "seen": 1787639263.029914,
     "ast_hash": "d7c696a4bba84f7cdb8b6a9bdbb27a70",
     "semantic_hash": ""
   },
   "src/content/articles/generative-ai-vs-traditional-ai.md": {
     "mtime": 1787414176.0494404,
+    "seen": 1787639263.0299146,
     "ast_hash": "e11ca34363fe66972b6306c53b19b4ab",
     "semantic_hash": ""
   },
   "src/content/articles/generative-and-discriminative-models.md": {
     "mtime": 1787414176.0397751,
+    "seen": 1787639263.0299153,
     "ast_hash": "d357653cc859b938104d9db767cc51fe",
     "semantic_hash": ""
   },
   "src/content/articles/gpt-models.md": {
     "mtime": 1787427604.7760499,
+    "seen": 1787639263.029916,
     "ast_hash": "2274c8eb3df5fb7b5ce48467d16fce71",
     "semantic_hash": ""
   },
   "src/content/articles/grokai.md": {
     "mtime": 1787414176.024605,
+    "seen": 1787639263.029917,
     "ast_hash": "da3fb593ae3ba061acca404e2de5db3f",
     "semantic_hash": ""
   },
   "src/content/articles/how-ai-is-transforming-software-engineering.md": {
     "mtime": 1787414176.042853,
+    "seen": 1787639263.0299177,
     "ast_hash": "b85fe5b8d2493b1009aa9bf70f07277e",
     "semantic_hash": ""
   },
   "src/content/articles/langgraph-5-stunning-secrets-for-building-a-generative-ai-application.md": {
     "mtime": 1787414176.0822616,
+    "seen": 1787639263.0299184,
     "ast_hash": "8e53ebf203f7391ef7a4bae4699249c8",
     "semantic_hash": ""
   },
   "src/content/articles/large-language-model.md": {
     "mtime": 1787427606.020931,
+    "seen": 1787639263.0299191,
     "ast_hash": "755483c9b342bca23876da6815ec029d",
     "semantic_hash": ""
   },
   "src/content/articles/limitations-of-generative-ai.md": {
     "mtime": 1787414176.0477533,
+    "seen": 1787639263.02992,
     "ast_hash": "89cb5ec4c02167f5a2c71d2081511a11",
     "semantic_hash": ""
   },
   "src/content/articles/local-llm-on-your-laptop.md": {
     "mtime": 1787414176.037771,
+    "seen": 1787639263.0299206,
     "ast_hash": "b4821829622e07467bb07b95572c6c32",
     "semantic_hash": ""
   },
   "src/content/articles/machine-learning-engineer.md": {
     "mtime": 1787414176.0962913,
+    "seen": 1787639263.0299213,
     "ast_hash": "af4f1cab2caaec3500abae77b04d98e6",
     "semantic_hash": ""
   },
   "src/content/articles/machine-learning.md": {
     "mtime": 1787414175.9815176,
+    "seen": 1787639263.0299222,
     "ast_hash": "e173639a97eb5cbaf960c46697aaefcf",
     "semantic_hash": ""
   },
   "src/content/articles/nvidias-chat-with-rtx-the-key-to-next-generation-chatbots-on-your-pc.md": {
     "mtime": 1787414176.0573082,
+    "seen": 1787639263.0299234,
     "ast_hash": "2f969bedc78e236653f682613c4ccbb7",
     "semantic_hash": ""
   },
   "src/content/articles/open-source-generative-ai-projects.md": {
     "mtime": 1787414176.0521307,
+    "seen": 1787639263.029924,
     "ast_hash": "066676507eb9a5c343753900e58b9bc9",
     "semantic_hash": ""
   },
   "src/content/articles/prompt-design-and-engineering.md": {
     "mtime": 1787414176.0293262,
+    "seen": 1787639263.0299246,
     "ast_hash": "d32bc4060b879829c72ee295ae66a66e",
     "semantic_hash": ""
   },
   "src/content/articles/prompt-engineering.md": {
     "mtime": 1787427607.5675204,
+    "seen": 1787639263.0299253,
     "ast_hash": "f6300fd47558879ebfb220c32b241409",
     "semantic_hash": ""
   },
   "src/content/articles/python-deployment-best-practices-a-comprehensive-guide.md": {
     "mtime": 1787414176.061586,
+    "seen": 1787639263.029926,
     "ast_hash": "a1c35683790fe97bca614a44e703c91b",
     "semantic_hash": ""
   },
   "src/content/articles/quantum-ai.md": {
     "mtime": 1787414176.0060034,
+    "seen": 1787639263.029927,
     "ast_hash": "6317ce677a6f41ac2effffa895d8e62a",
     "semantic_hash": ""
   },
   "src/content/articles/rag-architecture-types-with-implementation-details-and-their-use-cases.md": {
     "mtime": 1787414176.0787685,
+    "seen": 1787639263.0299277,
     "ast_hash": "f8fc7455ba23060b2281a7f4c7566f29",
     "semantic_hash": ""
   },
   "src/content/articles/self-aware-ai.md": {
     "mtime": 1787414175.9956503,
+    "seen": 1787639263.0299284,
     "ast_hash": "da1876d41f319f935dd72b9918e86d9c",
     "semantic_hash": ""
   },
   "src/content/articles/superintelligent-ai.md": {
     "mtime": 1787414175.9875405,
+    "seen": 1787639263.0299292,
     "ast_hash": "72cce9d11612c0fdafaa9f5b110e831d",
     "semantic_hash": ""
   },
   "src/content/articles/tesseract-an-ocr-optical-character-recognition-tool-for-image-reading-from-excel.md": {
     "mtime": 1787414176.0661578,
+    "seen": 1787639263.0299299,
     "ast_hash": "ff4529f94545554049ae6b041d4eba87",
     "semantic_hash": ""
   },
   "src/content/articles/text-to-video-software.md": {
     "mtime": 1787427608.7594936,
+    "seen": 1787639263.029931,
     "ast_hash": "8c5b81a57f5b59e8d3e69e2ff19283cd",
     "semantic_hash": ""
   },
   "src/content/articles/the-blog-publishing-checklist-ensuring-your-content-doesnt-go-oops.md": {
     "mtime": 1787414175.9722784,
+    "seen": 1787639263.0299318,
     "ast_hash": "2f372b4de301ec200875d83d3ce09d0f",
     "semantic_hash": ""
   },
   "src/content/articles/the-explainability-of-generative-ai-models.md": {
     "mtime": 1787414176.0494404,
+    "seen": 1787639263.0299325,
     "ast_hash": "d90006f9162e84d0c715a71841102ca4",
     "semantic_hash": ""
   },
   "src/content/articles/the-future-farm-ais-role-in-our-fields-and-beyond.md": {
     "mtime": 1787414175.969306,
+    "seen": 1787639263.0299332,
     "ast_hash": "a717288c754b696d3e37096c4256c5f0",
     "semantic_hash": ""
   },
   "src/content/articles/the-future-of-generative-ai.md": {
     "mtime": 1787414176.0487535,
+    "seen": 1787639263.0299342,
     "ast_hash": "4ced6ab1ff048cf289fdfa215ea4f277",
     "semantic_hash": ""
   },
   "src/content/articles/the-future-on-wheels-how-ai-is-steering-the-world-of-transportation--f0-9f-9a-97-f0-9f-92-a8.md": {
     "mtime": 1787414175.974277,
+    "seen": 1787639263.029935,
     "ast_hash": "5a7125c05e0ffcc59fc5f884f697fc3c",
     "semantic_hash": ""
   },
   "src/content/articles/the-role-of-generative-ai-in-creative-industries.md": {
     "mtime": 1787414176.053612,
+    "seen": 1787639263.0299356,
     "ast_hash": "49c877e564bc7d24ca7d167c4828b332",
     "semantic_hash": ""
   },
   "src/content/articles/top-20-generative-ai-tools-for-creative-exploration.md": {
     "mtime": 1787414176.0448596,
+    "seen": 1787639263.0299363,
     "ast_hash": "27a89f6cd2de135f028caf6743f266e8",
     "semantic_hash": ""
   },
   "src/content/articles/training-data-for-generative-ai-models.md": {
     "mtime": 1787414176.0552056,
+    "seen": 1787639263.0299373,
     "ast_hash": "679338211e1744965f98224abb5fd709",
     "semantic_hash": ""
   },
   "src/content/articles/unboxing-ai-the-retail-revolution-behind-your-shopping-spree.md": {
     "mtime": 1787414175.9683065,
+    "seen": 1787639263.029938,
     "ast_hash": "40ee38aad4218616dfedcf9be01f228b",
     "semantic_hash": ""
   },
   "src/content/articles/unlocking-ai-magic-in-entertainment-a-light-hearted-guide.md": {
     "mtime": 1787414175.973277,
+    "seen": 1787639263.0299387,
     "ast_hash": "661416f93e17cbb29ab2df0d8312110e",
     "semantic_hash": ""
   },
   "src/content/articles/ways-to-test-a-rag-architecture-based-generative-ai-application.md": {
     "mtime": 1787414176.0822616,
+    "seen": 1787639263.0299394,
     "ast_hash": "de3d814ad622001fcc433343ea2f5c19",
     "semantic_hash": ""
   },
   "public/social-card.svg": {
     "mtime": 1787412809.5255673,
+    "seen": 1787639263.029941,
     "ast_hash": "2c2603f0ba143567357623646235c163",
     "semantic_hash": ""
   },
   "public/favicon.svg": {
     "mtime": 1787413814.0402012,
+    "seen": 1787639263.0299401,
     "ast_hash": "4cf3864be5758ce48514c4819554a024",
     "semantic_hash": ""
   },
   "scripts/check-content.mjs": {
-    "mtime": 1787427756.712737,
-    "ast_hash": "7d3fcb5e15a960113f44d8c2ab95f166",
+    "mtime": 1787638792.944016,
+    "seen": 1787639263.0297012,
+    "ast_hash": "e8f3f2998a49b800e43a5c876a192619",
     "semantic_hash": ""
   },
   "scripts/sync-feeds.mjs": {
     "mtime": 1787427261.729345,
+    "seen": 1787639263.0297074,
     "ast_hash": "eba9ee3384d7b625c505669a732c6430",
     "semantic_hash": ""
   },
   "src/components/ToolRunner.astro": {
     "mtime": 1787426785.33095,
+    "seen": 1787639263.0297136,
     "ast_hash": "cb2dde3eca4b62d88ffda6e4a30a13b3",
     "semantic_hash": ""
   },
   "src/data/templates.mjs": {
     "mtime": 1787426637.0256124,
+    "seen": 1787639263.0297241,
     "ast_hash": "ba89731d43aeed78fd83078ba1c6c7ec",
     "semantic_hash": ""
   },
   "src/data/tools.mjs": {
     "mtime": 1787426635.5849202,
+    "seen": 1787639263.0297248,
     "ast_hash": "16442287fa209dcff14ca51a1cb90aed",
     "semantic_hash": ""
   },
   "src/data/tracks.mjs": {
     "mtime": 1787426634.2332656,
+    "seen": 1787639263.0297258,
     "ast_hash": "d771bcd9a77a1b7e1a4edc542123ce4b",
     "semantic_hash": ""
   },
   "src/lib/tool-engine.mjs": {
     "mtime": 1787426632.7531815,
+    "seen": 1787639263.0297291,
     "ast_hash": "807c8c32cb159df9f076f80a1fa7a252",
     "semantic_hash": ""
   },
   "src/pages/news/index.astro": {
     "mtime": 1787426990.7467556,
+    "seen": 1787639263.0297465,
     "ast_hash": "a0f7f9d8a424fd8f4f27c50cd1610390",
     "semantic_hash": ""
   },
   "src/pages/templates/[slug]/index.astro": {
     "mtime": 1787583017.6343167,
+    "seen": 1787639263.0297556,
     "ast_hash": "7ebbe7533d09319e0e55ebc30414ebcb",
     "semantic_hash": ""
   },
   "src/pages/templates/index.astro": {
     "mtime": 1787426980.2966933,
+    "seen": 1787639263.0297563,
     "ast_hash": "8bb6cefa4ae1ebacceea98879a049e10",
     "semantic_hash": ""
   },
   "src/pages/tools/[slug]/index.astro": {
     "mtime": 1787583016.721115,
+    "seen": 1787639263.0297577,
     "ast_hash": "e3b9f4c5c6a55678a0bdb34369bd3505",
     "semantic_hash": ""
   },
   "src/pages/tools/index.astro": {
     "mtime": 1787426976.548333,
+    "seen": 1787639263.0297585,
     "ast_hash": "e33f3ed07e44ca297ca94d24c59f1fff",
     "semantic_hash": ""
   },
   "src/pages/tracks/[slug]/index.astro": {
     "mtime": 1787582813.668793,
+    "seen": 1787639263.0297606,
     "ast_hash": "93cc3fbc4f71ec619f28e97fef07f5b0",
     "semantic_hash": ""
   },
   "src/pages/tracks/index.astro": {
     "mtime": 1787426985.2063265,
+    "seen": 1787639263.0297613,
     "ast_hash": "9eb0752aa6eb853c73c2623b221e6bc3",
     "semantic_hash": ""
   },
   "tests/platform-contract.test.mjs": {
-    "mtime": 1787582955.5158794,
-    "ast_hash": "d844c8cc78b61e42d3e98bffecfc116d",
+    "mtime": 1787638757.1493433,
+    "seen": 1787639263.0297651,
+    "ast_hash": "996c349965b52452f836cea54e0a603a",
     "semantic_hash": ""
   },
   "tests/tool-engine.test.mjs": {
     "mtime": 1787426501.30699,
+    "seen": 1787639263.0297668,
     "ast_hash": "29e1ae18b1092bded16d67170b5120b1",
     "semantic_hash": ""
   },
   ".github/workflows/deploy.yml": {
     "mtime": 1787427857.1011147,
+    "seen": 1787639263.0297685,
     "ast_hash": "24f91cbdacd3f418282a2c011fec423d",
     "semantic_hash": ""
   },
   ".github/workflows/quality.yml": {
     "mtime": 1787436599.5379307,
+    "seen": 1787639263.0297692,
     "ast_hash": "6f9562ad12f33c7b263c2219587a6b72",
     "semantic_hash": ""
   },
   "scripts/deploy-hostinger.mjs": {
     "mtime": 1787427855.7124104,
+    "seen": 1787639263.0297034,
     "ast_hash": "ee5a40e7caeb12d40f841b2cd7885de9",
     "semantic_hash": ""
   },
   "src/data/resource-graph.mjs": {
-    "mtime": 1787582866.0109751,
-    "ast_hash": "8b075bae547b43a8c2ea0ca5b2edd7e0",
+    "mtime": 1787638755.774412,
+    "seen": 1787639263.029721,
+    "ast_hash": "a905a83cc262c17bf28caea7a5bb3b36",
     "semantic_hash": ""
   },
   "scripts/check-graph-artifact.mjs": {
     "mtime": 1787436595.6694696,
+    "seen": 1787639263.0297024,
     "ast_hash": "ff7eff86e50e504598133dfc14a8533d",
     "semantic_hash": ""
   },
   "src/components/PracticeWorkspace.astro": {
     "mtime": 1787583565.491739,
+    "seen": 1787639263.0297127,
     "ast_hash": "c5d44b908cceebfd05b1419f86bdd23a",
     "semantic_hash": ""
   },
   "src/data/practice-blueprints.mjs": {
     "mtime": 1787583379.9564762,
+    "seen": 1787639263.0297194,
     "ast_hash": "b3d9e580bf0bdc98a7d58786e5c6b1bf",
     "semantic_hash": ""
   },
   "src/lib/local-project-store.mjs": {
     "mtime": 1787488571.7144277,
+    "seen": 1787639263.0297272,
     "ast_hash": "911b090da60827b3a1a2336d2dff11c1",
     "semantic_hash": ""
   },
   "src/lib/practice-os.mjs": {
     "mtime": 1787583380.8768418,
+    "seen": 1787639263.029728,
     "ast_hash": "959a8a9ce33725786a5e6ccb42c72dab",
     "semantic_hash": ""
   },
   "src/pages/app/index.astro": {
     "mtime": 1787582656.4605052,
+    "seen": 1787639263.0297337,
     "ast_hash": "a3304708192768fb2d3e8a91d5e7f861",
     "semantic_hash": ""
   },
   "src/pages/playbooks/index.astro": {
     "mtime": 1787582584.8644383,
+    "seen": 1787639263.0297494,
     "ast_hash": "6ef5859451dc8985b4537988348781ac",
     "semantic_hash": ""
   },
   "supabase/functions/publish-playbook/index.ts": {
     "mtime": 1787488226.9495206,
+    "seen": 1787639263.0297618,
     "ast_hash": "fca3cff9ffae8ae1f1061e8275ebb84d",
     "semantic_hash": ""
   },
   "supabase/functions/run-model/index.ts": {
     "mtime": 1787488223.3715625,
+    "seen": 1787639263.0297627,
     "ast_hash": "75167cb9bf2115033bf0c17aa977cba3",
     "semantic_hash": ""
   },
   "supabase/migrations/202608230001_practice_os.sql": {
     "mtime": 1787488218.6728897,
+    "seen": 1787639318.2563658,
     "ast_hash": "a786aa7b98be616659702e00d1d60267",
     "semantic_hash": ""
   },
   "tests/practice-os.test.mjs": {
     "mtime": 1787488539.0121727,
+    "seen": 1787639263.029766,
     "ast_hash": "23a7db5a3002a2b0ed9ae96651a50fb5",
     "semantic_hash": ""
   },
   "docs/SUPABASE_ARCHITECTURE.md": {
     "mtime": 1787488230.0851707,
+    "seen": 1787639263.0297723,
     "ast_hash": "ff22e8cf6e9a9f9b105f13539a3a6a9c",
     "semantic_hash": ""
   },
   "src/components/BrandMark.astro": {
     "mtime": 1787582376.8957908,
+    "seen": 1787639263.029711,
     "ast_hash": "bbbc0a064cc8861f113e4896e3bab9e1",
     "semantic_hash": ""
   },
   "src/data/guide-review-queue.mjs": {
     "mtime": 1787583088.255865,
+    "seen": 1787639263.0297172,
     "ast_hash": "edd7788958cc41ba87bcbeedda9681a8",
     "semantic_hash": ""
   },
   "src/data/outcome-network.mjs": {
-    "mtime": 1787583343.6279259,
-    "ast_hash": "eccf968b430bb35ae4eeb62e180f22c0",
+    "mtime": 1787638388.6891117,
+    "seen": 1787639263.029718,
+    "ast_hash": "acf2d424e6db26ed7b27bfee6375ba34",
     "semantic_hash": ""
   },
   "src/pages/account/index.astro": {
     "mtime": 1787582590.7855594,
+    "seen": 1787639263.029732,
     "ast_hash": "ae19a3ffbd77547f70039cb770569984",
     "semantic_hash": ""
   },
   "src/pages/benchmarks/index.astro": {
-    "mtime": 1787582587.8406641,
-    "ast_hash": "858e3598f620df91451e7077a1a43c64",
+    "mtime": 1787638389.8492558,
+    "seen": 1787639263.0297363,
+    "ast_hash": "41e1ef4ea631a1bf435dacbaa13af4e9",
     "semantic_hash": ""
   },
   "src/pages/challenges/index.astro": {
     "mtime": 1787582589.3169494,
+    "seen": 1787639263.0297377,
     "ast_hash": "d0ca324333275d3d9388c9a6fb3390f4",
     "semantic_hash": ""
   },
   "src/pages/playbooks/[slug]/index.astro": {
     "mtime": 1787582586.3815217,
+    "seen": 1787639263.0297487,
     "ast_hash": "66fabed3e46933fecb1d64e1589f69af",
     "semantic_hash": ""
   },
   "supabase/migrations/202608240001_verified_practice_network.sql": {
     "mtime": 1787582908.6211941,
+    "seen": 1787639318.256369,
     "ast_hash": "2c7e516e19a95cf6f11293eb3ffefccd",
     "semantic_hash": ""
   },
   "tests/outcome-network.test.mjs": {
-    "mtime": 1787583333.5945282,
-    "ast_hash": "7f4abb3999235046b777ea39bd9ba345",
+    "mtime": 1787638391.221574,
+    "seen": 1787639263.0297644,
+    "ast_hash": "fa5ad392a9620bfa02f9574e0f632256",
     "semantic_hash": ""
   },
   "DESIGN.md": {
     "mtime": 1787583312.8606498,
+    "seen": 1787639263.029771,
     "ast_hash": "3d2a3dd37ee465e854ab6de1adf1072b",
     "semantic_hash": ""
   },
   "graphify-out/memory/query_20260824_143317_where_does_the_current_ai_amigos_outcome_loop_conn.md": {
     "mtime": 1787581997.0607657,
+    "seen": 1787639263.0297732,
     "ast_hash": "7d9ad8e88f07915547038643ed335ecc",
+    "semantic_hash": ""
+  },
+  "public-site-snapshot/meta/wp-rest-index.json": {
+    "mtime": 1786661130.3682742,
+    "seen": 1787639263.0296023,
+    "ast_hash": "0e17ac39f015a75781b86a67065688d6",
+    "semantic_hash": ""
+  },
+  "public-site-snapshot/snapshot-manifest.json": {
+    "mtime": 1786661130.3692741,
+    "seen": 1787639263.0296032,
+    "ast_hash": "a2c41842b9f8a22b13506df8b4a0fb30",
+    "semantic_hash": ""
+  },
+  "public/legacy-redirects.json": {
+    "mtime": 1787414176.1362643,
+    "seen": 1787639263.0296042,
+    "ast_hash": "2f98d660cdee16427f0fb4d03e232dbb",
+    "semantic_hash": ""
+  },
+  "public/schemas/counsel-evidence-record.schema.json": {
+    "mtime": 1787638293.0559213,
+    "seen": 1787639263.0296052,
+    "ast_hash": "d5701bc20292d411100e110d2d041749",
+    "semantic_hash": ""
+  },
+  "public/schemas/public-evidence-record.schema.json": {
+    "mtime": 1787638291.9502008,
+    "seen": 1787639263.0296063,
+    "ast_hash": "2d07688d0a4f7294625fdfa3f3d78d88",
+    "semantic_hash": ""
+  },
+  "public/schemas/workflow-evidence-record.schema.json": {
+    "mtime": 1787638290.883526,
+    "seen": 1787639263.029607,
+    "ast_hash": "dffd6504bebbe4508cfe786626e9daf5",
+    "semantic_hash": ""
+  },
+  "public/search-index.json": {
+    "mtime": 1787414176.1362643,
+    "seen": 1787639263.0296082,
+    "ast_hash": "d19a49a0b82491381a7757edef3919de",
+    "semantic_hash": ""
+  },
+  "remediation/content-governance/content-intent-freshness-inventory.json": {
+    "mtime": 1786662480.7250738,
+    "seen": 1787639263.0296094,
+    "ast_hash": "1b2fcc188f9c1e863fc26048fb45d76d",
+    "semantic_hash": ""
+  },
+  "remediation/content-patch-plan.json": {
+    "mtime": 1786638775.7775776,
+    "seen": 1787639263.0296102,
+    "ast_hash": "2b6a2f790b3c4435d75900eb450b50b7",
+    "semantic_hash": ""
+  },
+  "remediation/media-accessibility-decisions.json": {
+    "mtime": 1786648705.9954062,
+    "seen": 1787639263.029611,
+    "ast_hash": "e074b7e4f5f9bb3bfbbd223d279ccb00",
+    "semantic_hash": ""
+  },
+  "remediation/media-accessibility-inventory.json": {
+    "mtime": 1786661985.3581793,
+    "seen": 1787639263.0296118,
+    "ast_hash": "3b8681a7bd6ffdbce5638db67865d86e",
+    "semantic_hash": ""
+  },
+  "remediation/performance/performance-inventory.json": {
+    "mtime": 1786644219.5008628,
+    "seen": 1787639263.0296137,
+    "ast_hash": "eca782fb84e5b83efc47f11d77b32104",
+    "semantic_hash": ""
+  },
+  "remediation/releases/aiamigos-remediation-1.4.1-candidate-manifest.json": {
+    "mtime": 1786658884.082788,
+    "seen": 1787639263.0296164,
+    "ast_hash": "c77ed4be935e8eb49ed7793874986fd4",
+    "semantic_hash": ""
+  },
+  "remediation/server-policy/policy-manifest.json": {
+    "mtime": 1786650125.6802387,
+    "seen": 1787639263.029629,
+    "ast_hash": "596708398248aa4168109819c9f88e92",
+    "semantic_hash": ""
+  },
+  "remediation/social-card/candidate-manifest.json": {
+    "mtime": 1786657782.0467093,
+    "seen": 1787639263.0296297,
+    "ast_hash": "8c366ccbfff8a22a0be824fddf822320",
+    "semantic_hash": ""
+  },
+  "remediation/staging-backups/quarantine-2026-08-13T17-25-51-990Z/pages-149.before.json": {
+    "mtime": 1786641951.9981103,
+    "seen": 1787639263.0296311,
+    "ast_hash": "87e9269df87b416b2e24537c4a137a89",
+    "semantic_hash": ""
+  },
+  "remediation/staging-backups/quarantine-2026-08-13T17-25-51-990Z/pages-21.before.json": {
+    "mtime": 1786641951.9961095,
+    "seen": 1787639263.029632,
+    "ast_hash": "6d266f2a9096c1e90197e8228bfaee1e",
+    "semantic_hash": ""
+  },
+  "remediation/staging-backups/quarantine-2026-08-13T17-25-51-990Z/pages-22.before.json": {
+    "mtime": 1786641951.9971085,
+    "seen": 1787639263.0296326,
+    "ast_hash": "72c7f7ec910d9c773f7e8547f59939a5",
+    "semantic_hash": ""
+  },
+  "remediation/staging-backups/quarantine-2026-08-13T17-25-51-990Z/pages-877.before.json": {
+    "mtime": 1786641951.9971085,
+    "seen": 1787639263.0296335,
+    "ast_hash": "7501b74fd7e7d18fceb1ef3a81e05746",
+    "semantic_hash": ""
+  },
+  "remediation/staging-backups/quarantine-2026-08-13T17-25-51-990Z/posts-1407.before.json": {
+    "mtime": 1786641951.99411,
+    "seen": 1787639263.029634,
+    "ast_hash": "b351af6be0f9a00769913168fce4cbb5",
+    "semantic_hash": ""
+  },
+  "remediation/staging-backups/quarantine-2026-08-13T17-25-51-990Z/posts-1411.before.json": {
+    "mtime": 1786641951.99411,
+    "seen": 1787639263.0296347,
+    "ast_hash": "58a0cbd6f100b63810e8cdc14f901dfe",
+    "semantic_hash": ""
+  },
+  "remediation/staging-backups/quarantine-2026-08-13T17-25-51-990Z/posts-1421.before.json": {
+    "mtime": 1786641951.9951117,
+    "seen": 1787639263.0296357,
+    "ast_hash": "584e15452881bb97794a086e469f19a6",
+    "semantic_hash": ""
+  },
+  "remediation/staging-backups/quarantine-2026-08-13T17-25-51-990Z/posts-926.before.json": {
+    "mtime": 1786641951.9961095,
+    "seen": 1787639263.0296364,
+    "ast_hash": "3341d8b6e192ab6d541f0c220543135e",
+    "semantic_hash": ""
+  },
+  "remediation/status-v2/finding-completion-ledger.json": {
+    "mtime": 1787347896.5761712,
+    "seen": 1787639263.0296373,
+    "ast_hash": "907042c65da2c92796052a7fa61c0521",
+    "semantic_hash": ""
+  },
+  "remediation/tests/regression.config.example.json": {
+    "mtime": 1786650075.828326,
+    "seen": 1787639263.02965,
+    "ast_hash": "dfdc9d1f78d318790da7ded2157a5e41",
+    "semantic_hash": ""
+  },
+  "remediation/tests/results/performance-markup-staging-postpatch-bare.json": {
+    "mtime": 1786645046.2121887,
+    "seen": 1787639263.0296514,
+    "ast_hash": "3245960b0111a4736c0f357e13298be9",
+    "semantic_hash": ""
+  },
+  "remediation/tests/results/performance-markup-staging-postpatch.json": {
+    "mtime": 1786644604.590703,
+    "seen": 1787639263.0296526,
+    "ast_hash": "14fbc4cd0f077b6ef22b88a770952e6d",
+    "semantic_hash": ""
+  },
+  "remediation/tests/results/performance-markup-staging-prepatch.json": {
+    "mtime": 1786644345.6059494,
+    "seen": 1787639263.0296535,
+    "ast_hash": "c5ae1544a277cdd0e90108d8300f8c4e",
+    "semantic_hash": ""
+  },
+  "remediation/tests/results/seo-regression-current.json": {
+    "mtime": 1786661994.4737177,
+    "seen": 1787639263.0296545,
+    "ast_hash": "1829aa95e496614300f02e9d008bc320",
+    "semantic_hash": ""
+  },
+  "remediation/tests/results/seo-regression-final.json": {
+    "mtime": 1786659393.42533,
+    "seen": 1787639263.0296552,
+    "ast_hash": "71fed64384d2452cb7bb4c1b1185d292",
+    "semantic_hash": ""
+  },
+  "remediation/tests/results/seo-regression-live-current.json": {
+    "mtime": 1786660929.8118362,
+    "seen": 1787639263.0296562,
+    "ast_hash": "982e2de591176efdf7d383bb69f1ab95",
+    "semantic_hash": ""
+  },
+  "remediation/tests/results/seo-regression-live-fresh.json": {
+    "mtime": 1786660263.0658,
+    "seen": 1787639263.029657,
+    "ast_hash": "1f770af67c3e42d37eeaeb12f26b4ead",
+    "semantic_hash": ""
+  },
+  "remediation/tests/results/seo-regression-live-latest-check.json": {
+    "mtime": 1786661997.8373573,
+    "seen": 1787639263.0296576,
+    "ast_hash": "39202e9ddb898c344fea7c9598061f98",
+    "semantic_hash": ""
+  },
+  "remediation/tests/results/seo-regression-live-latest.json": {
+    "mtime": 1786660614.1423924,
+    "seen": 1787639263.0296583,
+    "ast_hash": "f83d6f061e366b6d328824bb28ab8c6f",
+    "semantic_hash": ""
+  },
+  "remediation/tests/results/seo-regression-live-no-tls.json": {
+    "mtime": 1786661344.3054159,
+    "seen": 1787639263.029659,
+    "ast_hash": "5f6eda29a069b575678fd3c8380c7e9d",
+    "semantic_hash": ""
+  },
+  "remediation/tests/results/seo-regression-live-remediation-now.json": {
+    "mtime": 1786660780.7528546,
+    "seen": 1787639263.02966,
+    "ast_hash": "f345093993ecae51228babb5bb437c65",
+    "semantic_hash": ""
+  },
+  "remediation/tests/results/seo-regression-live.json": {
+    "mtime": 1787348042.7702475,
+    "seen": 1787639263.0296605,
+    "ast_hash": "d44df544db245d3f1b38b12743cd2bc0",
+    "semantic_hash": ""
+  },
+  "remediation/tests/results/seo-regression-offline-current.json": {
+    "mtime": 1786660926.3239813,
+    "seen": 1787639263.0296612,
+    "ast_hash": "d71a6df1aa5b288238911f01c1d58509",
+    "semantic_hash": ""
+  },
+  "remediation/tests/results/seo-regression-offline-final.json": {
+    "mtime": 1786660071.5718808,
+    "seen": 1787639263.0296621,
+    "ast_hash": "8ceec77d5e773f3c94fae68ec46ac519",
+    "semantic_hash": ""
+  },
+  "remediation/tests/results/seo-regression-production-2026-08-21.json": {
+    "mtime": 1787347707.4731672,
+    "seen": 1787639263.0296626,
+    "ast_hash": "42010926876f36a921ae5023a8013cee",
+    "semantic_hash": ""
+  },
+  "remediation/tests/results/seo-regression-remediation-live.json": {
+    "mtime": 1786662772.6026764,
+    "seen": 1787639263.0296638,
+    "ast_hash": "38e0a9c8dec78e1e38ef6d8d5d14e98a",
+    "semantic_hash": ""
+  },
+  "remediation/tests/results/seo-regression-snapshot-2026-08-21.json": {
+    "mtime": 1787347701.6436121,
+    "seen": 1787639263.0296645,
+    "ast_hash": "908e4d42a4df73af9eb222ab2f7254f6",
+    "semantic_hash": ""
+  },
+  "remediation/tests/results/seo-regression-snapshot-current-after.json": {
+    "mtime": 1786661134.0234013,
+    "seen": 1787639263.0296652,
+    "ast_hash": "f52e5216f470e8fa40eb0dc9ea72741a",
+    "semantic_hash": ""
+  },
+  "remediation/tests/results/seo-regression-snapshot-current-again.json": {
+    "mtime": 1786661077.4240437,
+    "seen": 1787639263.029666,
+    "ast_hash": "25747f478eebf20930d6c028b18c48bb",
+    "semantic_hash": ""
+  },
+  "remediation/tests/results/seo-regression-snapshot-current-check.json": {
+    "mtime": 1786661262.1024973,
+    "seen": 1787639263.029667,
+    "ast_hash": "c7cd85cfc5d6aa59c489c99a5c3a92b3",
+    "semantic_hash": ""
+  },
+  "remediation/tests/results/seo-regression-snapshot-current-final.json": {
+    "mtime": 1786661827.3175762,
+    "seen": 1787639263.0296676,
+    "ast_hash": "9089720c045e79cea909e66f5662c871",
+    "semantic_hash": ""
+  },
+  "remediation/tests/results/seo-regression-snapshot-current.json": {
+    "mtime": 1786658550.896447,
+    "seen": 1787639263.029668,
+    "ast_hash": "2f96ef5bd9ce42dcdc1759e7961821b9",
+    "semantic_hash": ""
+  },
+  "remediation/tests/results/seo-regression-snapshot-current2.json": {
+    "mtime": 1786659952.1443138,
+    "seen": 1787639263.029669,
+    "ast_hash": "9a9043441b3a1eec2de5de2bb8813a82",
+    "semantic_hash": ""
+  },
+  "remediation/tests/results/seo-regression-snapshot-v1-4-1.json": {
+    "mtime": 1786662786.4372125,
+    "seen": 1787639263.0296695,
+    "ast_hash": "eee2bf46d1295b4ebe827422d918397a",
+    "semantic_hash": ""
+  },
+  "remediation/tests/results/seo-regression-snapshot.json": {
+    "mtime": 1786662487.736191,
+    "seen": 1787639263.0296705,
+    "ast_hash": "07544f7be2062273fc824db10a1da70e",
+    "semantic_hash": ""
+  },
+  "remediation/tests/results/seo-regression-staging-check.json": {
+    "mtime": 1786661820.110435,
+    "seen": 1787639263.0296712,
+    "ast_hash": "2f6b8da0f5eef1045ca8dcd5f1b95e48",
+    "semantic_hash": ""
+  },
+  "remediation/tests/results/seo-regression-staging-content-quarantine.json": {
+    "mtime": 1786642135.6570215,
+    "seen": 1787639263.029672,
+    "ast_hash": "06cbbb80467c2e98a5b7554b61ab5f8b",
+    "semantic_hash": ""
+  },
+  "remediation/tests/results/seo-regression-staging-current-attempt.json": {
+    "mtime": 1786660504.9676569,
+    "seen": 1787639263.0296729,
+    "ast_hash": "d778e15fda7ac7819131739e8c84b5c5",
+    "semantic_hash": ""
+  },
+  "remediation/tests/results/seo-regression-staging-live-verify.json": {
+    "mtime": 1786662651.0059795,
+    "seen": 1787639263.0296738,
+    "ast_hash": "e770fbbacb0709daad48eb4e53ca10c2",
+    "semantic_hash": ""
+  },
+  "remediation/tests/results/seo-regression-staging-post-fix.json": {
+    "mtime": 1786640959.5603924,
+    "seen": 1787639263.0296745,
+    "ast_hash": "f62663fb39779c6fc00c89adc155bd6f",
+    "semantic_hash": ""
+  },
+  "remediation/tests/results/seo-regression-staging-post-fix2.json": {
+    "mtime": 1786641099.3748984,
+    "seen": 1787639263.0296752,
+    "ast_hash": "58a722bed9bcf895042c1bfbb530b9f5",
+    "semantic_hash": ""
+  },
+  "remediation/tests/results/seo-regression-staging-post-plugin.json": {
+    "mtime": 1786640295.0563745,
+    "seen": 1787639263.029676,
+    "ast_hash": "be80453e80df28f5ebbacd3c172150e4",
+    "semantic_hash": ""
+  },
+  "remediation/tests/results/seo-regression-staging-pre-plugin.json": {
+    "mtime": 1786637913.4215288,
+    "seen": 1787639263.029677,
+    "ast_hash": "4f278be58f4341df42c47b29acb8476c",
+    "semantic_hash": ""
+  },
+  "remediation/tests/results/seo-regression-staging-v1.2.0.json": {
+    "mtime": 1786642797.7018592,
+    "seen": 1787639263.0296776,
+    "ast_hash": "aa3b7186c7652c861ef931037c14e31e",
+    "semantic_hash": ""
+  },
+  "remediation/tests/results/seo-regression-staging-v1.3.0-browser.json": {
+    "mtime": 1786645238.0953243,
+    "seen": 1787639263.0296783,
+    "ast_hash": "fd3459b2ec14e46f0075127c078a1a93",
+    "semantic_hash": ""
+  },
+  "remediation/tests/results/seo-regression-staging-v1.3.0.json": {
+    "mtime": 1786644223.9807675,
+    "seen": 1787639263.029679,
+    "ast_hash": "207846c4955213f5282cf3a08f06852a",
+    "semantic_hash": ""
+  },
+  "remediation/tests/results/seo-regression-staging-v1.4.0-a11y2-browser.json": {
+    "mtime": 1786647382.6259031,
+    "seen": 1787639263.0296798,
+    "ast_hash": "c35c162c1be5970542b65e31659631b6",
+    "semantic_hash": ""
+  },
+  "remediation/tests/results/seo-regression-staging-v1.4.0-browser-rerun.json": {
+    "mtime": 1786646925.020199,
+    "seen": 1787639263.0296805,
+    "ast_hash": "9ec18afdc564743fa43d6eb9fda1bf18",
+    "semantic_hash": ""
+  },
+  "remediation/tests/results/seo-regression-staging-v1.4.0-browser.json": {
+    "mtime": 1786646750.2858217,
+    "seen": 1787639263.0296812,
+    "ast_hash": "2f807fb6b4aebd154b0c4055ba83f61e",
+    "semantic_hash": ""
+  },
+  "remediation/tests/results/seo-regression-staging-v1.4.0-policy-hardened.json": {
+    "mtime": 1786649019.5399442,
+    "seen": 1787639263.029682,
+    "ast_hash": "e33d84bdd488a438b38cc4062375aada",
+    "semantic_hash": ""
+  },
+  "remediation/tests/results/seo-regression-staging-v1.4.0.json": {
+    "mtime": 1786646587.1118839,
+    "seen": 1787639263.0296824,
+    "ast_hash": "a8c02660140934dc1c5fbd60658cbd07",
+    "semantic_hash": ""
+  },
+  "remediation/theme-patch/theme-accessibility-manifest.json": {
+    "mtime": 1786645303.1202247,
+    "seen": 1787639263.0296888,
+    "ast_hash": "260837383e97013838df7f9f80125e13",
+    "semantic_hash": ""
+  },
+  "remediation/theme-patch/theme-performance-manifest.json": {
+    "mtime": 1786644411.7467024,
+    "seen": 1787639263.0296896,
+    "ast_hash": "2dd5e9489b7e0545f494122741b33a7f",
+    "semantic_hash": ""
+  },
+  "scripts/export-counsel-evidence.mjs": {
+    "mtime": 1787638635.395319,
+    "seen": 1787639263.029704,
+    "ast_hash": "a893de471082f5910caf77f5d9a11cbc",
+    "semantic_hash": ""
+  },
+  "src/data/evidence-platform.mjs": {
+    "mtime": 1787638078.5246334,
+    "seen": 1787639263.0297153,
+    "ast_hash": "c9a1a2fb9fee89542cc223a09ef7001f",
+    "semantic_hash": ""
+  },
+  "src/data/feed-cache.json": {
+    "mtime": 1787426640.2452579,
+    "seen": 1787639263.0297158,
+    "ast_hash": "92360e473385c5b64d65d467107786c3",
+    "semantic_hash": ""
+  },
+  "src/data/feed-sources.json": {
+    "mtime": 1787426638.737391,
+    "seen": 1787639263.0297165,
+    "ast_hash": "d1e2459b273f904d7e1263607580e0d6",
+    "semantic_hash": ""
+  },
+  "src/data/redirects.json": {
+    "mtime": 1787414176.135759,
+    "seen": 1787639263.02972,
+    "ast_hash": "2f98d660cdee16427f0fb4d03e232dbb",
+    "semantic_hash": ""
+  },
+  "src/data/search-index.json": {
+    "mtime": 1787414176.135759,
+    "seen": 1787639263.0297217,
+    "ast_hash": "e1930a955fcaafdf7d1e8cbd6c2a5ced",
+    "semantic_hash": ""
+  },
+  "src/data/source-records.json": {
+    "mtime": 1787414176.1347597,
+    "seen": 1787639263.0297234,
+    "ast_hash": "3994b4b1ed9ca6c08b61d74b3f82bbf8",
+    "semantic_hash": ""
+  },
+  "src/pages/about/vijay-bhoyar/index.astro": {
+    "mtime": 1787638253.309475,
+    "seen": 1787639263.0297313,
+    "ast_hash": "68bfd4d4d9e3a8f4083cd9295c8d3e92",
+    "semantic_hash": ""
+  },
+  "src/pages/adoption/index.astro": {
+    "mtime": 1787638186.4970303,
+    "seen": 1787639263.029733,
+    "ast_hash": "1061a39bb9e419d06a5ea1ce7eeafe2e",
+    "semantic_hash": ""
+  },
+  "src/pages/corrections/index.astro": {
+    "mtime": 1787638248.9853497,
+    "seen": 1787639263.0297396,
+    "ast_hash": "ca384a3c85e9df8297d00c9091cfa238",
+    "semantic_hash": ""
+  },
+  "src/pages/data-policy/index.astro": {
+    "mtime": 1787638251.169042,
+    "seen": 1787639263.0297403,
+    "ast_hash": "02c10263170361a58b999d9e086df385",
+    "semantic_hash": ""
+  },
+  "src/pages/endeavor/index.astro": {
+    "mtime": 1787638126.4142654,
+    "seen": 1787639263.029741,
+    "ast_hash": "806091a06db1f03265bd3a2aa76fb3d3",
+    "semantic_hash": ""
+  },
+  "src/pages/evidence/index.astro": {
+    "mtime": 1787638134.2868595,
+    "seen": 1787639263.029742,
+    "ast_hash": "2c4c507022330f739e86ab9203ba4430",
+    "semantic_hash": ""
+  },
+  "src/pages/field-studies/index.astro": {
+    "mtime": 1787638184.3731422,
+    "seen": 1787639263.029743,
+    "ast_hash": "05f764ad2e493ccbdda46ba80252fcb1",
+    "semantic_hash": ""
+  },
+  "src/pages/impact/index.astro": {
+    "mtime": 1787638245.144438,
+    "seen": 1787639263.0297437,
+    "ast_hash": "761bc9e713916f0d34ffe326f2eed182",
+    "semantic_hash": ""
+  },
+  "src/pages/methods/[slug]/index.astro": {
+    "mtime": 1787638131.8921092,
+    "seen": 1787639263.029745,
+    "ast_hash": "698abb4d0a1470a00cec9ab41086606b",
+    "semantic_hash": ""
+  },
+  "src/pages/methods/index.astro": {
+    "mtime": 1787638129.5719776,
+    "seen": 1787639263.0297458,
+    "ast_hash": "849bee21f65a499ebaeae77ed03b27e2",
+    "semantic_hash": ""
+  },
+  "src/pages/outcomes/index.astro": {
+    "mtime": 1787638188.78911,
+    "seen": 1787639263.0297482,
+    "ast_hash": "ed3180650b316afc2f53b0886c7ba809",
+    "semantic_hash": ""
+  },
+  "src/pages/research/index.astro": {
+    "mtime": 1787638191.0748444,
+    "seen": 1787639263.029751,
+    "ast_hash": "574e89c6e0e986d59b8b958a65be29df",
+    "semantic_hash": ""
+  },
+  "src/pages/reviews/index.astro": {
+    "mtime": 1787638193.6931803,
+    "seen": 1787639263.0297518,
+    "ast_hash": "38416bc7a4fff019817b5b47fb5069d5",
+    "semantic_hash": ""
+  },
+  "src/pages/timeline/index.astro": {
+    "mtime": 1787638246.8892152,
+    "seen": 1787639263.0297573,
+    "ast_hash": "8236020fe8e3ef55dfe1cd4b920f6d40",
+    "semantic_hash": ""
+  },
+  "tests/evidence-platform.test.mjs": {
+    "mtime": 1787639529.5341885,
+    "seen": 1787639615.0223322,
+    "ast_hash": "4daaf1253c89dcc2803c713c27e83b7e",
+    "semantic_hash": ""
+  },
+  "docs/COUNSEL_EVIDENCE_WORKFLOW.md": {
+    "mtime": 1787638637.335667,
+    "seen": 1787639263.0297718,
+    "ast_hash": "84bf78f2dd240a629ff407c87b0be583",
+    "semantic_hash": ""
+  },
+  "supabase/migrations/202608250001_public_evidence_platform.sql": {
+    "mtime": 1787639299.5800567,
+    "seen": 1787639318.256371,
+    "ast_hash": "ad79427d8c311e68b882a537ac00d456",
     "semantic_hash": ""
   }
 }

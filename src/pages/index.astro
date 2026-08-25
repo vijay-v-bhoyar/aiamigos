@@ -2,30 +2,33 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { tracks } from '../data/tracks.mjs';
 import { playbooks, challenges, benchmarkDefinitions, MIN_BENCHMARK_SAMPLE } from '../data/outcome-network.mjs';
+import { methods, endeavor, publicEvidenceStats } from '../data/evidence-platform.mjs';
 ---
-<BaseLayout title="AI Amigos" description="Turn AI experiments into tested workflows, reusable evidence, and trustworthy benchmarks." pageClass="home-page">
+<BaseLayout title="AI Amigos" description="Test AI in real work, preserve the evidence, and publish only what verification supports." pageClass="home-page">
   <div class="shell">
     <section class="hero home-hero">
       <p class="eyebrow">Practical AI, proven in use</p>
-      <h1>Turn an AI experiment into evidence you can trust.</h1>
-      <p class="lede">Define the baseline, compare approaches, record failures and human decisions, then return for the real outcome. Your work stays in this browser unless you choose to export it.</p>
-      <div class="button-row"><a class="button" href="/app/">Start a project</a><a class="button secondary" href="/playbooks/">Use a reviewed protocol</a></div>
-      <dl class="proof-stats" aria-label="AI Amigos publication state"><div><dt>4</dt><dd>practice tracks</dd></div><div><dt>{playbooks.length}</dt><dd>reviewed protocols</dd></div><div><dt>0</dt><dd>public outcome claims</dd></div><div><dt>{MIN_BENCHMARK_SAMPLE}+</dt><dd>reports before a benchmark</dd></div></dl>
+      <h1>Test AI in real work. Keep the proof.</h1>
+      <p class="lede">Use versioned methods to define the baseline, compare approaches, record failures and human decisions, and measure what happened after use. Private work stays local; public claims begin only after verification.</p>
+      <div class="button-row"><a class="button" href="/app/">Start a private project</a><a class="button secondary" href="/methods/">Inspect the methods</a></div>
+      <dl class="proof-stats" aria-label="AI Amigos evidence state"><div><dt>{publicEvidenceStats.workingMethods}</dt><dd>author-controlled methods</dd></div><div><dt>{publicEvidenceStats.independentlyVerifiedAdoptions}</dt><dd>verified adoptions</dd></div><div><dt>{publicEvidenceStats.reviewedOutcomes}</dt><dd>reviewed outcomes</dd></div><div><dt>{publicEvidenceStats.externalCitations}</dt><dd>external citations</dd></div></dl>
     </section>
+    <section class="endeavor-strip"><div><p class="eyebrow">One defined endeavor</p><h2>{endeavor.title}</h2><p>{endeavor.statement}</p></div><a class="button secondary" href="/endeavor/">Scope, milestones, limits →</a></section>
     <section class="task-entrances" aria-labelledby="track-heading">
       <div class="section-head"><div><p class="eyebrow">Choose the work</p><h2 id="track-heading">Four equal paths. One evidence standard.</h2></div><a href="/tracks/">Compare tracks</a></div>
       <div class="track-list">{tracks.map((track, index) => <a href={`/tracks/${track.slug}/`}><span>0{index + 1}</span><div><strong>{track.label}</strong><p>{track.short}</p></div><b aria-hidden="true">→</b></a>)}</div>
     </section>
     <section class="network-loop section-space" aria-labelledby="loop-heading">
-      <div><p class="eyebrow">The compounding loop</p><h2 id="loop-heading">The result is not a roadmap. It is a reusable record of what worked, what failed, and why.</h2><p>Better models may improve the experiment. The project history, evaluation cases, outcomes, reviewer decisions, and comparable reports remain useful.</p></div>
-      <ol><li><span>1</span>Frame a real job and baseline</li><li><span>2</span>Compare versions on fixed evidence</li><li><span>3</span>Record the outcome after use</li><li><span>4</span>Sanitize and submit a proof pack</li><li><span>5</span>Fork reviewed playbooks</li><li><span>6</span>Publish benchmarks only at sufficient sample</li></ol>
+      <div><p class="eyebrow">The public evidence loop</p><h2 id="loop-heading">A method becomes useful evidence only when others can inspect, run, verify, and challenge it.</h2><p>The platform preserves the chain from contribution and version through independent adoption, measured outcome, outside review, and external citation.</p></div>
+      <ol><li><span>1</span>Publish a bounded, versioned method</li><li><span>2</span>Run it on a real baseline</li><li><span>3</span>Measure follow-up outcomes</li><li><span>4</span>Verify adoption outside AI Amigos</li><li><span>5</span>Bind review to an exact version</li><li><span>6</span>Aggregate only comparable evidence</li></ol>
     </section>
+    <section class="section-space" aria-labelledby="method-heading"><div class="section-head"><div><p class="eyebrow">Working specifications</p><h2 id="method-heading">Operational methods with visible non-claims.</h2></div><a href="/methods/">All methods</a></div><div class="method-list compact">{methods.map((method, index) => <article class="method-row"><div class="method-number">0{index+1}</div><div><span class="status pending">{method.version}</span><h3><a href={`/methods/${method.slug}/`}>{method.title}</a></h3><p>{method.jobToBeDone}</p></div><a class="text-link" href={`/methods/${method.slug}/`}>Inspect →</a></article>)}</div></section>
     <section class="section-space" aria-labelledby="playbook-heading">
-      <div class="section-head"><div><p class="eyebrow">Recently verified</p><h2 id="playbook-heading">Operational protocols, not success stories</h2></div><a href="/playbooks/">All playbooks</a></div>
-      <div class="record-table" role="region" aria-label="Reviewed playbook protocols" tabindex="0"><table><thead><tr><th>Protocol</th><th>Track</th><th>Version</th><th>Review scope</th><th></th></tr></thead><tbody>{playbooks.map((item) => <tr><td><strong>{item.title}</strong><small>{item.jobToBeDone}</small></td><td>{item.track}</td><td>{item.version}</td><td>{item.reviewerScope}</td><td><a href={`/playbooks/${item.slug}/`}>Open →</a></td></tr>)}</tbody></table></div>
+      <div class="section-head"><div><p class="eyebrow">Editorial reference protocols</p><h2 id="playbook-heading">Operational protocols, not success stories</h2></div><a href="/playbooks/">All playbooks</a></div>
+      <div class="record-table" role="region" aria-label="Reviewed playbook protocols" tabindex="0"><table><thead><tr><th>Protocol</th><th>Track</th><th>Version</th><th>Review scope</th><th>Action</th></tr></thead><tbody>{playbooks.map((item) => <tr><td><strong>{item.title}</strong><small>{item.jobToBeDone}</small></td><td>{item.track}</td><td>{item.version}</td><td>{item.reviewerScope}</td><td><a href={`/playbooks/${item.slug}/`}>Open →</a></td></tr>)}</tbody></table></div>
     </section>
     <section class="split-section section-space">
-      <div><p class="eyebrow">Benchmarks</p><h2>Suppressed until the evidence is real.</h2><p>No outcome benchmark is public today. Each cohort needs at least {MIN_BENCHMARK_SAMPLE} reviewed, comparable reports and editorial approval.</p><ul class="plain-list">{benchmarkDefinitions.map((item) => <li><span>{item.task}</span><strong>{item.sampleCount}/{MIN_BENCHMARK_SAMPLE}</strong></li>)}</ul><a href="/benchmarks/">Read the method →</a></div>
+      <div><p class="eyebrow">Benchmarks</p><h2>Suppressed until the evidence is real.</h2><p>No outcome benchmark is public today. Each cohort needs at least {MIN_BENCHMARK_SAMPLE} reviewed reports from at least three independent organizations, with no majority contributor.</p><ul class="plain-list">{benchmarkDefinitions.map((item) => <li><span>{item.task}</span><strong>{item.sampleCount}/{MIN_BENCHMARK_SAMPLE}</strong></li>)}</ul><a href="/benchmarks/">Read the method →</a></div>
       <div><p class="eyebrow">September field tests</p><h2>Run the same protocol together.</h2><ul class="challenge-list">{challenges.map((item) => <li><span class="tag">{item.track}</span><a href={`/challenges/#${item.slug}`}>{item.title}</a></li>)}</ul><a href="/challenges/">See all challenges →</a></div>
     </section>
   </div>

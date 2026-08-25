@@ -1,4 +1,5 @@
 export const MIN_BENCHMARK_SAMPLE = 10;
+export const MIN_BENCHMARK_ORGANIZATIONS = 3;
 
 export const playbooks = [
   {
@@ -91,14 +92,14 @@ export const challenges = [
 ];
 
 export const benchmarkDefinitions = [
-  { slug: 'support-triage', track: 'business', task: 'AI-assisted support triage', sampleCount: 0, reviewStatus: 'collecting', metric: 'median minutes per reviewed case' },
-  { slug: 'portfolio-proof', track: 'careers', task: 'Weekly portfolio proof cycle', sampleCount: 0, reviewStatus: 'collecting', metric: 'rubric score change' },
-  { slug: 'declared-ai-assessment', track: 'teaching', task: 'Assessment with declared AI roles', sampleCount: 0, reviewStatus: 'collecting', metric: 'rubric alignment score' },
-  { slug: 'rag-change-gate', track: 'builders', task: 'RAG change evaluation', sampleCount: 0, reviewStatus: 'collecting', metric: 'case pass rate' },
+  { slug: 'support-triage', track: 'business', task: 'AI-assisted support triage', sampleCount: 0, independentOrganizationCount: 0, reviewStatus: 'collecting', metric: 'median minutes per reviewed case' },
+  { slug: 'portfolio-proof', track: 'careers', task: 'Weekly portfolio proof cycle', sampleCount: 0, independentOrganizationCount: 0, reviewStatus: 'collecting', metric: 'rubric score change' },
+  { slug: 'declared-ai-assessment', track: 'teaching', task: 'Assessment with declared AI roles', sampleCount: 0, independentOrganizationCount: 0, reviewStatus: 'collecting', metric: 'rubric alignment score' },
+  { slug: 'rag-change-gate', track: 'builders', task: 'RAG change evaluation', sampleCount: 0, independentOrganizationCount: 0, reviewStatus: 'collecting', metric: 'case pass rate' },
 ];
 
 export function isBenchmarkPublishable(snapshot) {
-  return Number(snapshot?.sampleCount) >= MIN_BENCHMARK_SAMPLE && snapshot?.reviewStatus === 'reviewed';
+  return Number(snapshot?.sampleCount) >= MIN_BENCHMARK_SAMPLE && Number(snapshot?.independentOrganizationCount) >= MIN_BENCHMARK_ORGANIZATIONS && Number(snapshot?.maxOrganizationShare) <= 0.5 && snapshot?.reviewStatus === 'reviewed';
 }
 
 export function quantile(sorted, probability) {
@@ -109,11 +110,20 @@ export function quantile(sorted, probability) {
 }
 
 export function aggregateBenchmark(reports = [], metadata = {}) {
-  const values = reports.map((item) => Number(item.value)).filter(Number.isFinite).sort((a, b) => a - b);
+  const validReports = reports.filter((item) => Number.isFinite(Number(item.value)) && typeof item.organizationId === 'string' && item.organizationId.trim());
+  const values = validReports.map((item) => Number(item.value)).sort((a, b) => a - b);
   const sampleCount = values.length;
   const reviewed = metadata.reviewStatus === 'reviewed';
-  if (sampleCount < MIN_BENCHMARK_SAMPLE || !reviewed) return { ...metadata, sampleCount, publishable: false, suppressionReason: sampleCount < MIN_BENCHMARK_SAMPLE ? `At least ${MIN_BENCHMARK_SAMPLE} reviewed reports are required.` : 'Editorial review is required.' };
-  return { ...metadata, sampleCount, publishable: true, median: quantile(values, .5), q1: quantile(values, .25), q3: quantile(values, .75) };
+  const organizationCounts = validReports.reduce((counts, item) => counts.set(item.organizationId, (counts.get(item.organizationId) ?? 0) + 1), new Map());
+  const independentOrganizationCount = organizationCounts.size;
+  const maxOrganizationShare = sampleCount ? Math.max(...organizationCounts.values(), 0) / sampleCount : 1;
+  let suppressionReason = null;
+  if (sampleCount < MIN_BENCHMARK_SAMPLE) suppressionReason = `At least ${MIN_BENCHMARK_SAMPLE} reviewed reports are required.`;
+  else if (!reviewed) suppressionReason = 'Editorial review is required.';
+  else if (independentOrganizationCount < MIN_BENCHMARK_ORGANIZATIONS) suppressionReason = `At least ${MIN_BENCHMARK_ORGANIZATIONS} independent organizations are required.`;
+  else if (maxOrganizationShare > 0.5) suppressionReason = 'No organization may supply more than half of the cohort.';
+  if (suppressionReason) return { ...metadata, sampleCount, independentOrganizationCount, maxOrganizationShare, publishable: false, suppressionReason };
+  return { ...metadata, sampleCount, independentOrganizationCount, maxOrganizationShare, publishable: true, median: quantile(values, .5), q1: quantile(values, .25), q3: quantile(values, .75) };
 }
 
 export function buildRunReport(project, playbookSlug) {

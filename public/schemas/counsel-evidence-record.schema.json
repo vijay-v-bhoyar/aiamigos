@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.aiamigos.org/schemas/counsel-evidence-record.schema.json",
+  "title": "Local Counsel Evidence Record",
+  "description": "Schema only. Completed records are confidential local artifacts and must never be deployed.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["claimId", "exactClaim", "factDate", "possibleMappings", "primaryEvidence", "independence", "strengths", "weaknesses", "counselStatus"],
+  "properties": {
+    "claimId": { "type": "string" },
+    "exactClaim": { "type": "string" },
+    "factDate": { "type": "string", "format": "date" },
+    "possibleMappings": { "type": "array", "items": { "type": "string" } },
+    "primaryEvidence": { "type": "array", "items": { "type": "object", "required": ["issuer", "source", "sha256"], "properties": { "issuer": { "type": "string" }, "source": { "type": "string" }, "sha256": { "type": "string", "pattern": "^[a-fA-F0-9]{64}$" } } } },
+    "independence": { "enum": ["independent", "jointly-verified", "author-controlled", "unknown"] },
+    "strengths": { "type": "array", "items": { "type": "string" } },
+    "weaknesses": { "type": "array", "items": { "type": "string" } },
+    "contradictoryEvidence": { "type": "array", "items": { "type": "string" } },
+    "confidentiality": { "enum": ["public", "counsel-only", "restricted"] },
+    "counselStatus": { "enum": ["not-reviewed", "reviewed", "exclude", "needs-evidence"] },
+    "exhibitId": { "type": "string" }
+  }
+}

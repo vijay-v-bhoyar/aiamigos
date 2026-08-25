@@ -1,0 +1,13 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { endeavor, publicEvidenceStats } from '../../data/evidence-platform.mjs';
+---
+<BaseLayout title="Public endeavor" description="The defined public problem, method, milestones, limits, and current evidence state guiding AI Amigos.">
+  <div class="shell">
+    <section class="hero reading"><p class="eyebrow">Working public endeavor</p><h1>{endeavor.title}</h1><p class="lede">{endeavor.statement}</p><div class="evidence"><strong>Evidence boundary.</strong> This page defines the work and its intended public benefit. It does not establish adoption, impact, recognition, or legal eligibility.</div></section>
+    <section class="split-section"><div><h2>The problem</h2><p>{endeavor.problem}</p></div><div><h2>Intended public benefit</h2><p>{endeavor.publicBenefit}</p></div></section>
+    <section class="section-space"><div class="section-head"><div><p class="eyebrow">Current evidence state</p><h2>Claims begin at zero and move only with proof.</h2></div><a href="/evidence/">Open evidence ledger</a></div><dl class="proof-stats"><div><dt>{publicEvidenceStats.workingMethods}</dt><dd>author-controlled working methods</dd></div><div><dt>{publicEvidenceStats.independentlyVerifiedAdoptions}</dt><dd>independently verified adoptions</dd></div><div><dt>{publicEvidenceStats.reviewedOutcomes}</dt><dd>reviewed outcomes</dd></div><div><dt>{publicEvidenceStats.externalCitations}</dt><dd>verified external citations</dd></div></dl></section>
+    <section class="section-space"><h2>Milestones and status</h2><div class="record-table" role="region" aria-label="Endeavor milestones" tabindex="0"><table><thead><tr><th>Window</th><th>Target</th><th>Status</th></tr></thead><tbody>{endeavor.milestones.map((item) => <tr><td><strong>{item.window}</strong></td><td>{item.target}</td><td><span class={`status ${item.status === 'in-progress' ? 'reviewed' : 'pending'}`}>{item.status}</span></td></tr>)}</tbody></table></div></section>
+    <section class="reading section-space"><h2>What this page does not claim</h2><ul>{endeavor.nonClaims.map((item) => <li>{item}</li>)}</ul><h2>Public-policy context</h2><p>The operating method is informed by public guidance on governance, mapping, measurement, management, performance, and monitoring. These sources support the problem context; they do not endorse AI Amigos.</p><ul>{endeavor.sources.map((source) => <li><a href={source.url} rel="external">{source.title}</a> - {source.publisher}</li>)}</ul><h2>Change control</h2><p>Owner: <a href="/about/vijay-bhoyar/">{endeavor.owner}</a>. Status: {endeavor.status}. Material changes are dated in the <a href="/timeline/">public timeline</a> and never backdated.</p></section>
+  </div>
+</BaseLayout>

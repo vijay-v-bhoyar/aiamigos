@@ -14,6 +14,7 @@
     "feeds:sync": "node scripts/sync-feeds.mjs",
     "graph:check": "node scripts/check-graph-artifact.mjs",
     "graph:update": "graphify update .",
+    "evidence:export:counsel": "node scripts/export-counsel-evidence.mjs",
     "deploy:hostinger:prepare": "node scripts/prepare-hostinger-deploy.mjs",
     "deploy:hostinger": "node scripts/deploy-hostinger.mjs"
   },

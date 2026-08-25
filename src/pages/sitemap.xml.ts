@@ -4,11 +4,13 @@ import { tracks } from '../data/tracks.mjs';
 import { tools } from '../data/tools.mjs';
 import { templates } from '../data/templates.mjs';
 import { playbooks } from '../data/outcome-network.mjs';
+import { methods } from '../data/evidence-platform.mjs';
 
 export async function GET() {
   const articles = await getCollection('articles', ({ data }) => data.status === 'published' && data.reviewStatus === 'reviewed');
   const urls = [
-    '/', '/start-here/', '/app/', '/playbooks/', '/benchmarks/', '/challenges/', '/topics/', '/articles/', '/careers/', '/about/', '/contact/', '/newsletter/', '/privacy/', '/search/', '/news/', '/tools/', '/templates/', '/tracks/',
+    '/', '/start-here/', '/app/', '/endeavor/', '/methods/', '/evidence/', '/field-studies/', '/adoption/', '/outcomes/', '/impact/', '/research/', '/reviews/', '/timeline/', '/corrections/', '/data-policy/', '/playbooks/', '/benchmarks/', '/challenges/', '/topics/', '/articles/', '/careers/', '/about/', '/about/vijay-bhoyar/', '/contact/', '/newsletter/', '/privacy/', '/search/', '/news/', '/tools/', '/templates/', '/tracks/',
+    ...methods.map((method) => `/methods/${method.slug}/`),
     ...playbooks.map((playbook) => `/playbooks/${playbook.slug}/`),
     ...tracks.map((track) => `/tracks/${track.slug}/`),
     ...tools.map((tool) => `/tools/${tool.slug}/`),

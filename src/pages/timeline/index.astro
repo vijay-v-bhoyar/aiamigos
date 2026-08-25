@@ -1,0 +1,13 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+const events = [
+  { date:'2026-08-25', type:'Author-controlled release', title:'Public evidence architecture released', detail:'Added the public endeavor, three working method specifications, evidence tiers, empty adoption/outcome/review registries, claim ledger, schemas, and publication gates.', href:'/evidence/' },
+  { date:'2026-08-24', type:'Author-controlled release', title:'Verified practice network released', detail:'Added the local project-to-outcome loop, reviewed editorial protocols, benchmark suppression, field challenges, and legacy-content quarantine.', href:'/about/' },
+  { date:'2026-08-23', type:'Author-controlled release', title:'Local-first workbench released', detail:'Added the seven-stage project record, private proof-pack boundary, optional account architecture, and exports.', href:'/app/' },
+  { date:'2026-08-22', type:'Author-controlled release', title:'Practical utility platform released', detail:'Added four tracks, five browser tools, twenty templates, and inactive-by-default external integrations.', href:'/tools/' },
+];
+---
+<BaseLayout title="Public development timeline" description="A dated, source-controlled timeline of AI Amigos methods, releases, corrections, independent records, and continuing work.">
+  <div class="shell"><section class="hero reading"><p class="eyebrow">Continuity and change</p><h1>A timeline should preserve history, not manufacture freshness.</h1><p class="lede">Every entry identifies who controls the evidence. Independent events will link to the outside issuer when they exist.</p></section>
+  <ol class="public-timeline">{events.map((event) => <li><time datetime={event.date}>{event.date}</time><div><span class="tag">{event.type}</span><h2><a href={event.href}>{event.title}</a></h2><p>{event.detail}</p></div></li>)}</ol></div>
+</BaseLayout>

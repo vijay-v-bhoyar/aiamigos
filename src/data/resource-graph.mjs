@@ -3,6 +3,7 @@ import { tools } from './tools.mjs';
 import { templates } from './templates.mjs';
 import { PROJECT_STAGES } from './practice-blueprints.mjs';
 import { playbooks, benchmarkDefinitions, challenges } from './outcome-network.mjs';
+import { endeavor, methods } from './evidence-platform.mjs';
 
 const categoriesByTrack = {
   business: ['foundations', 'industry-applications', 'responsible-ai'],
@@ -28,6 +29,16 @@ export function buildResourceGraph() {
     ...challenges.map((item) => ({ id:`challenge:${item.track}`, type:'challenge', route:`/challenges/#${item.slug}` })),
     ...PROJECT_STAGES.map((stage) => ({ id:`stage:${stage}`, type:'project-stage', route:`/app/#${stage}` })),
     ...[...new Set(Object.values(categoriesByTrack).flat())].map((slug) => ({ id:`guide-category:${slug}`, type:'guide-category', route:`/topics/${slug}/` })),
+    { id:`endeavor:${endeavor.slug}`, type:'endeavor', route:'/endeavor/' },
+    ...methods.flatMap((method) => [
+      { id:`contribution:${method.slug}`, type:'contribution', route:`/methods/${method.slug}/` },
+      { id:`contribution-version:${method.slug}:${method.version}`, type:'contribution-version', route:`/methods/${method.slug}/#version` },
+      { id:`adoption:${method.slug}`, type:'adoption-registry', route:`/adoption/?method=${method.slug}` },
+      { id:`implementation:${method.slug}`, type:'implementation-registry', route:`/field-studies/?method=${method.slug}` },
+      { id:`evidence-outcome:${method.slug}`, type:'verified-outcome-registry', route:`/outcomes/?method=${method.slug}` },
+      { id:`independent-review:${method.slug}`, type:'independent-review-registry', route:`/reviews/?method=${method.slug}` },
+      { id:`citation:${method.slug}`, type:'external-citation-registry', route:`/research/?method=${method.slug}` },
+    ]),
   ];
   const edges = [];
   for (const track of tracks) {
@@ -48,9 +59,18 @@ export function buildResourceGraph() {
   }
   for (const tool of tools) for (const templateSlug of tool.templateSlugs) edges.push({ from:`tool:${tool.slug}`, to:`template:${templateSlug}`, relation:'produces-with' });
   PROJECT_STAGES.forEach((stage, index) => { if (index > 0) edges.push({ from:`stage:${PROJECT_STAGES[index - 1]}`, to:`stage:${stage}`, relation:'next-stage' }); });
+  for (const method of methods) {
+    edges.push({ from:`endeavor:${endeavor.slug}`, to:`contribution:${method.slug}`, relation:'produces-contribution' });
+    edges.push({ from:`contribution:${method.slug}`, to:`contribution-version:${method.slug}:${method.version}`, relation:'versioned-as' });
+    edges.push({ from:`contribution-version:${method.slug}:${method.version}`, to:`adoption:${method.slug}`, relation:'eligible-for-independent-adoption' });
+    edges.push({ from:`adoption:${method.slug}`, to:`implementation:${method.slug}`, relation:'verified-in-implementation' });
+    edges.push({ from:`implementation:${method.slug}`, to:`evidence-outcome:${method.slug}`, relation:'measures-outcome' });
+    edges.push({ from:`evidence-outcome:${method.slug}`, to:`independent-review:${method.slug}`, relation:'reviewed-outside-author' });
+    edges.push({ from:`independent-review:${method.slug}`, to:`citation:${method.slug}`, relation:'documented-by-external-record' });
+  }
 
-  const ids = new Set(nodes.map((node) => node.id)); const findings=[]; const seen=new Set(); const pairs=new Set();
-  for (const node of nodes) if ([...ids].filter((id)=>id===node.id).length > 1) findings.push(`duplicate node: ${node.id}`);
+  const nodeIds = nodes.map((node) => node.id); const ids = new Set(nodeIds); const findings=[]; const seen=new Set(); const pairs=new Set();
+  for (const node of nodes) if (nodeIds.filter((id)=>id===node.id).length > 1 && !findings.includes(`duplicate node: ${node.id}`)) findings.push(`duplicate node: ${node.id}`);
   for (const edge of edges) {
     const key=`${edge.from}|${edge.relation}|${edge.to}`; const pair=`${edge.from}|${edge.to}`;
     if (!ids.has(edge.from) || !ids.has(edge.to)) findings.push(`missing endpoint: ${key}`);
@@ -63,12 +83,24 @@ export function buildResourceGraph() {
     required.forEach((id)=>{if(!ids.has(id)) findings.push(`${slug}: missing ${id}`);});
     if (edges.filter((edge)=>edge.from===`track:${slug}`&&edge.relation==='uses-record').length<5) findings.push(`track:${slug}: insufficient templates`);
   }
+  for (const method of methods) {
+    const required=[`contribution:${method.slug}`,`contribution-version:${method.slug}:${method.version}`,`adoption:${method.slug}`,`implementation:${method.slug}`,`evidence-outcome:${method.slug}`,`independent-review:${method.slug}`,`citation:${method.slug}`];
+    required.forEach((id)=>{if(!ids.has(id)) findings.push(`${method.slug}: missing ${id}`);});
+  }
   return { nodes, edges, findings };
 }
 
 export function outcomePathForTrack(track) {
   const graph=buildResourceGraph(); const start=`track:${track}`; const target=`benchmark:${track}`; const path=[start]; let cursor=start;
   while(cursor!==target) { const edge=graph.edges.find((item)=>item.from===cursor && ['starts-project','records-experiment','evaluated-by','supports-outcome','included-in-proof','approved-as','forked-as','produces-report','aggregates-when-reviewed'].includes(item.relation)); if(!edge) return []; path.push(edge.to); cursor=edge.to; }
+  return path;
+}
+
+export function evidencePathForMethod(methodSlug) {
+  const method=methods.find((item)=>item.slug===methodSlug); if(!method) return [];
+  const graph=buildResourceGraph(); const start=`endeavor:${endeavor.slug}`; const target=`citation:${method.slug}`; const path=[start]; let cursor=start;
+  const allowed=['produces-contribution','versioned-as','eligible-for-independent-adoption','verified-in-implementation','measures-outcome','reviewed-outside-author','documented-by-external-record'];
+  while(cursor!==target) { const edge=graph.edges.find((item)=>item.from===cursor && allowed.includes(item.relation) && (cursor!==start || item.to===`contribution:${method.slug}`)); if(!edge) return []; path.push(edge.to); cursor=edge.to; }
   return path;
 }
 

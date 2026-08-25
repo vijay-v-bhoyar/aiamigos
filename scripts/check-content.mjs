@@ -5,6 +5,7 @@ import { tools } from '../src/data/tools.mjs';
 import { templates } from '../src/data/templates.mjs';
 import { tracks } from '../src/data/tracks.mjs';
 import { resourceGraph } from '../src/data/resource-graph.mjs';
+import { methods, validateEvidencePlatform } from '../src/data/evidence-platform.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const articleDir = path.join(root, 'src', 'content', 'articles');
@@ -32,6 +33,8 @@ if (published !== 57) failures.push(`expected 57 published legacy routes, found 
 if (drafts !== 19) failures.push(`expected 19 governed drafts, found ${drafts}`);
 if (tracks.length !== 4 || tools.length !== 5 || templates.length !== 20) failures.push('utility catalog count mismatch');
 failures.push(...resourceGraph.findings.map((finding)=>`resource graph: ${finding}`));
+failures.push(...validateEvidencePlatform().map((finding)=>`evidence platform: ${finding}`));
+if (methods.length !== 3) failures.push(`expected 3 working evidence methods, found ${methods.length}`);
 for (const tool of tools) if (tool.sources.length < 2 || !tool.limitations.length) failures.push(`${tool.slug}: incomplete evidence fields`);
 if (failures.length) { console.error(`Content check failed with ${failures.length} finding(s):`); failures.forEach((item)=>console.error(`- ${item}`)); process.exit(1); }
-console.log(`Content check passed: ${published} published legacy routes, ${drafts} governed drafts, ${reviewed} fully reviewed legacy guides, 4 tracks, 5 tools, and 20 templates. Legacy importer was not run.`);
+console.log(`Content check passed: ${published} published legacy routes, ${drafts} governed drafts, ${reviewed} fully reviewed legacy guides, 4 tracks, 5 tools, 20 templates, and ${methods.length} author-controlled evidence methods. Legacy importer was not run.`);

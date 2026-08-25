@@ -10,3 +10,5 @@ output/
 /([{]title
 /[[]x.name
 i.hasAttribute(alt)
+private-evidence/
+counsel-exports/

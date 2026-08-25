@@ -1,0 +1,10 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { methods, publications, externalCitations } from '../../data/evidence-platform.mjs';
+---
+<BaseLayout title="Research and external records" description="Versioned methods, external publications, permanent archives, citations, replications, presentations, and corrections.">
+  <div class="shell"><section class="hero reading"><p class="eyebrow">Research registry</p><h1>External records matter more than a self-written bibliography.</h1><p class="lede">This registry separates AI Amigos releases from publications, citations, replications, talks, and other records controlled by outside issuers.</p></section>
+  <section><h2>AI Amigos releases</h2><div class="record-table"><table><thead><tr><th>Release</th><th>Version</th><th>Evidence tier</th><th>Permanent archive</th></tr></thead><tbody>{methods.map((method) => <tr><td><a href={`/methods/${method.slug}/`}>{method.title}</a></td><td>{method.version}</td><td>{method.evidenceTier}</td><td>Pending external archive</td></tr>)}</tbody></table></div></section>
+  <section class="split-section section-space"><div><span class="status pending">{publications.length} external publications</span><h2>Publications and presentations</h2><p>No journal, conference, trade publication, institutional repository, or invited presentation is currently represented as verified.</p></div><div><span class="status pending">{externalCitations.length} external citations</span><h2>Citations and replications</h2><p>No outside citation, derivative use, or independent replication is currently represented as verified.</p></div></section>
+  <section class="reading section-space"><h2>Required external-record fields</h2><ul><li>Issuer-controlled URL and publication identifier</li><li>Title, issuer, date, contributors, and exact version discussed</li><li>Relationship and compensation disclosure</li><li>Archived copy or preservation identifier where permitted</li><li>Correction, withdrawal, or retraction state</li></ul></section></div>
+</BaseLayout>

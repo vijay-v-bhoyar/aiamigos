@@ -1,0 +1,10 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { endeavor, publicEvidenceStats } from '../../data/evidence-platform.mjs';
+---
+<BaseLayout title="Public impact status" description="Current verified public-impact state, intended benefit, measurement plan, limitations, and official problem context.">
+  <div class="shell"><section class="hero reading"><p class="eyebrow">Impact status</p><h1>Intended benefit is not measured impact.</h1><p class="lede">AI Amigos is designed to help practitioners evaluate AI use responsibly. The public record currently supports the existence of working methods, not independently verified public impact.</p></section>
+  <dl class="proof-stats"><div><dt>{publicEvidenceStats.workingMethods}</dt><dd>working methods</dd></div><div><dt>{publicEvidenceStats.independentlyVerifiedAdoptions}</dt><dd>verified adoptions</dd></div><div><dt>{publicEvidenceStats.reviewedOutcomes}</dt><dd>reviewed outcomes</dd></div><div><dt>{publicEvidenceStats.externalCitations}</dt><dd>external citations</dd></div></dl>
+  <section class="split-section section-space"><div><h2>What can be stated now</h2><p>{endeavor.publicBenefit}</p><p>This is the intended operating mechanism, not a result claim.</p></div><div><h2>What requires future evidence</h2><ul><li>Use by independent U.S. organizations</li><li>Measured quality, cost, capacity, or safety outcomes</li><li>Independent replication and citation</li><li>Influence beyond participating organizations</li></ul></div></section>
+  <section class="reading section-space"><h2>Measurement plan</h2><ol><li>Pre-register the baseline, metric, sample, method version, and stop criteria.</li><li>Measure the same unit after use and record confounders.</li><li>Obtain participant verification and publication consent.</li><li>Publish negative and inconclusive results with positive results.</li><li>Aggregate only after multi-organization privacy and comparability gates pass.</li></ol><p><a href="/endeavor/">Read the endeavor and milestones</a> or <a href="/field-studies/">inspect the field-study gate</a>.</p></section></div>
+</BaseLayout>

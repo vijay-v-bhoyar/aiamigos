@@ -96,7 +96,8 @@ test('Hostinger deployment is manifest-scoped and creates a rollback copy', () =
 });
 
 test('resource graph covers every track and the complete outcome-network path without malformed edges', async () => {
-  const { buildResourceGraph, outcomePathForTrack } = await import('../src/data/resource-graph.mjs');
+  const { buildResourceGraph, outcomePathForTrack, evidencePathForMethod } = await import('../src/data/resource-graph.mjs');
+  const { methods, endeavor } = await import('../src/data/evidence-platform.mjs');
   const graph = buildResourceGraph();
   assert.equal(graph.nodes.filter((node) => node.type === 'track').length, 4);
   assert.equal(graph.nodes.filter((node) => node.type === 'tool').length, 5);
@@ -105,11 +106,16 @@ test('resource graph covers every track and the complete outcome-network path wi
   assert.equal(graph.nodes.filter((node) => node.type === 'project').length, 4);
   assert.equal(graph.nodes.filter((node) => node.type === 'playbook').length, 4);
   assert.equal(graph.nodes.filter((node) => node.type === 'benchmark').length, 4);
+  assert.equal(graph.nodes.filter((node) => node.type === 'contribution').length, 3);
+  assert.equal(graph.nodes.filter((node) => node.type === 'independent-review-registry').length, 3);
   assert.equal(graph.findings.length, 0, graph.findings.join('\n'));
   for (const track of graph.nodes.filter((node) => node.type === 'track')) {
     const slug=track.id.split(':')[1];
     assert.ok(graph.edges.some((edge) => edge.from === track.id && edge.relation === 'uses-instrument'));
     assert.ok(graph.edges.filter((edge) => edge.from === track.id && edge.relation === 'uses-record').length >= 5);
     assert.deepEqual(outcomePathForTrack(slug), [`track:${slug}`,`project:${slug}`,`experiment:${slug}`,`evaluation:${slug}`,`outcome:${slug}`,`proof-pack:${slug}`,`playbook:${slug}`,`fork:${slug}`,`run-report:${slug}`,`benchmark:${slug}`]);
+  }
+  for (const method of methods) {
+    assert.deepEqual(evidencePathForMethod(method.slug), [`endeavor:${endeavor.slug}`,`contribution:${method.slug}`,`contribution-version:${method.slug}:${method.version}`,`adoption:${method.slug}`,`implementation:${method.slug}`,`evidence-outcome:${method.slug}`,`independent-review:${method.slug}`,`citation:${method.slug}`]);
   }
 });

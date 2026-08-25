@@ -1,0 +1,10 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { evidenceTiers, publicEvidenceClaims, publicEvidenceStats } from '../../data/evidence-platform.mjs';
+---
+<BaseLayout title="Public evidence ledger" description="A claim-by-claim ledger separating author-controlled provenance from jointly verified and independent evidence.">
+  <div class="shell"><section class="hero reading"><p class="eyebrow">Public evidence ledger</p><h1>Every claim should reveal who controls its proof.</h1><p class="lede">The ledger starts with bounded provenance records. Adoption, outcomes, reviews, citations, and recognition stay at zero until their own publication gates pass.</p></section>
+  <section class="evidence-tier-grid">{evidenceTiers.map((tier) => <article><span class={`tier-marker ${tier.id}`}></span><h2>{tier.label}</h2><p>{tier.description}</p></article>)}</section>
+  <section class="section-space"><h2>Current public claims</h2><div class="record-table" role="region" aria-label="Public evidence claims" tabindex="0"><table><thead><tr><th>Claim</th><th>Tier</th><th>Status</th><th>Source</th></tr></thead><tbody>{publicEvidenceClaims.map((item) => <tr><td><strong>{item.claim}</strong><small>{item.limitations}</small></td><td>{item.tier}</td><td>{item.status}</td><td><a href={item.source}>Inspect →</a></td></tr>)}</tbody></table></div></section>
+  <section class="split-section section-space"><div><h2>Independent evidence</h2><p><strong>{publicEvidenceStats.independentlyVerifiedAdoptions + publicEvidenceStats.externalCitations}</strong> qualifying adoption or citation records are public. None will be inferred from traffic, downloads, private email, or unverified testimonials.</p><a href="/adoption/">Adoption registry →</a></div><div><h2>Measured outcomes</h2><p><strong>{publicEvidenceStats.reviewedOutcomes}</strong> reviewed outcome records are public. Offline scores and generated roadmaps do not count as real-world outcomes.</p><a href="/outcomes/">Outcome registry →</a></div></section></div>
+</BaseLayout>

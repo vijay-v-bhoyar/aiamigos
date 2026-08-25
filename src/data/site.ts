@@ -1,14 +1,14 @@
 export const site = {
   name: 'AI Amigos',
   url: 'https://www.aiamigos.org',
-  description: 'Turn AI experiments into tested workflows, reusable evidence, and trustworthy benchmarks.',
+  description: 'Test AI in real work, preserve the evidence, and publish only what verification supports.',
   email: 'contact@aiamigos.org',
   navigation: [
     { href: '/app/', label: 'Workbench' },
-    { href: '/playbooks/', label: 'Playbooks' },
+    { href: '/methods/', label: 'Methods' },
+    { href: '/evidence/', label: 'Evidence' },
     { href: '/benchmarks/', label: 'Benchmarks' },
-    { href: '/articles/', label: 'Guides' },
-    { href: '/news/', label: 'News' }
+    { href: '/research/', label: 'Research' }
   ],
   topics: [
     { slug: 'foundations', label: 'AI foundations', description: 'Core concepts, terminology, history, and limits.' },

@@ -1,0 +1,13 @@
+---
+import fs from 'node:fs';
+import path from 'node:path';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { pilotReadyRelease } from '../../../data/pilot-ready-release.mjs';
+const manifestPath = path.join(process.cwd(), 'public', 'releases', pilotReadyRelease.id, 'manifest.json');
+const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
+---
+<BaseLayout title="Pilot-ready evidence kit v0.1.1" description="Versioned release manifest and SHA-256 checksums for the AI Amigos synthetic examples, schemas, pilot records, and reviewer kit.">
+  <div class="shell"><section class="hero reading"><p class="eyebrow">Author-controlled release · {manifest.releaseId}</p><h1>{manifest.title}</h1><p class="lede">A stable, checksum-bound release of three synthetic method examples, four pilot packages, participant records, and the external reviewer kit.</p><div class="notice"><strong>Non-claim:</strong> {manifest.nonClaim}</div><div class="button-row"><a class="button" href={pilotReadyRelease.manifestPath} download>Download manifest JSON</a><a class="button secondary" href="/methods/examples/">Inspect examples</a></div></section>
+  <section class="section-space"><dl class="metadata"><div><dt>Release ID</dt><dd>{manifest.releaseId}</dd></div><div><dt>Released</dt><dd>{manifest.releasedAt}</dd></div><div><dt>Status</dt><dd>{manifest.status}</dd></div><div><dt>Artifacts</dt><dd>{manifest.artifactCount}</dd></div></dl><h2>Artifact integrity ledger</h2><div class="record-table" role="region" aria-label="Release artifact checksums" tabindex="0"><table><thead><tr><th>Artifact</th><th>Bytes</th><th>SHA-256</th></tr></thead><tbody>{manifest.files.map((file) => <tr><td><a href={file.path}>{file.path}</a></td><td>{file.bytes}</td><td><code>{file.sha256}</code></td></tr>)}</tbody></table></div></section>
+  <section class="split-section section-space"><div><h2>How to verify</h2><ol><li>Download the artifact and this manifest.</li><li>Calculate the artifact’s SHA-256 digest locally.</li><li>Compare all 64 hexadecimal characters with the manifest.</li><li>Record the release ID, artifact path, digest, and review date in any review or replication.</li></ol></div><div><h2>Archive and corrections</h2><p>This version remains at its stable URL. Future releases receive new versioned paths and do not silently overwrite this record. Material corrections appear in the <a href="/corrections/">correction registry</a> and <a href="/timeline/">public timeline</a>.</p><p><a href="/reviews/kit/">Open the reviewer kit →</a></p></div></section></div>
+</BaseLayout>

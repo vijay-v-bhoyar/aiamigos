@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "claim": "AI Amigos published Workflow Evidence Protocol version 0.1.0 as an author-controlled working specification.",
+  "subjectType": "version",
+  "subjectId": "ai-workflow-evidence-protocol-0.1.0-synthetic-fixture",
+  "evidenceTier": "author-controlled",
+  "issuer": "AI Amigos",
+  "controlledBy": "AI Amigos",
+  "observedAt": "2026-08-25",
+  "sourceUrl": "https://www.aiamigos.org/methods/ai-workflow-evidence-protocol/",
+  "methodVersion": "0.1.0",
+  "privacyStatus": "passed",
+  "consentStatus": "not-applicable",
+  "reviewStatus": "approved",
+  "limitations": [
+    "Synthetic schema fixture only; artifact integrity is recorded separately in the v0.1.1 release manifest.",
+    "Approval refers only to fixture structure, not adoption, outcome, originality, significance, or independent review."
+  ],
+  "conflictDisclosure": "Created and controlled by AI Amigos; not independent."
+}

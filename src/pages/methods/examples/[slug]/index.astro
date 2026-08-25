@@ -1,0 +1,19 @@
+---
+import fs from 'node:fs';
+import path from 'node:path';
+import crypto from 'node:crypto';
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import { methodExamples, pilotReadyRelease } from '../../../../data/pilot-ready-release.mjs';
+import { methodBySlug } from '../../../../data/evidence-platform.mjs';
+export function getStaticPaths() { return methodExamples.map((example) => ({ params: { slug: example.slug }, props: { example } })); }
+const { example } = Astro.props;
+const method = methodBySlug[example.methodSlug];
+const jsonFile = path.join(process.cwd(), 'public', example.jsonPath.replace(/^\//, ''));
+const jsonBody = fs.readFileSync(jsonFile);
+const sha256 = crypto.createHash('sha256').update(jsonBody).digest('hex');
+const exampleRecord = JSON.parse(jsonBody.toString('utf8'));
+---
+<BaseLayout title={example.title} description={example.summary}>
+  <div class="shell"><section class="article-header reading"><p class="eyebrow">Synthetic fixture · not evidence</p><h1>{example.title}</h1><p class="lede">{example.summary}</p><dl class="metadata"><div><dt>Method</dt><dd><a href={`/methods/${method.slug}/`}>{method.shortTitle}</a></dd></div><div><dt>Method version</dt><dd>{method.version}</dd></div><div><dt>Release</dt><dd><a href="/releases/v0.1.1/">{pilotReadyRelease.id}</a></dd></div><div><dt>Validation</dt><dd>{example.expectedValidation}</dd></div></dl><div class="notice"><strong>Do not cite as a result:</strong> every person, organization, case, value, decision, and result in this fixture is invented. It is not listed in any evidence registry.</div></section>
+  <div class="article-layout section-space"><article class="reading"><h2>Scenario</h2><p>{example.scenario}</p><h2>What the example teaches</h2><ul>{example.lessons.map((item) => <li>{item}</li>)}</ul><h2>Structured record preview</h2><pre><code>{JSON.stringify(exampleRecord, null, 2)}</code></pre><h2>Limitations</h2><ul><li>The fixture validates structure, not the truth of a future participant record.</li><li>The method remains author controlled and has no independently verified adoption or outcome.</li><li>Real work requires authorization, privacy review, consent, source evidence, and human review.</li></ul></article><aside class="evidence-ledger"><h2>Download and verify</h2><p><a href={example.jsonPath} download>Download example JSON</a></p><p><a href={example.schemaPath}>Open JSON Schema</a></p><dl><div><dt>SHA-256</dt><dd><code>{sha256}</code></dd></div><div><dt>Release</dt><dd>{pilotReadyRelease.id}</dd></div><div><dt>Evidence tier</dt><dd>Not an evidence record</dd></div></dl><p><a href={pilotReadyRelease.manifestPath}>Machine-readable manifest</a></p><p><a href="/participate/">Use a pilot package →</a></p></aside></div></div>
+</BaseLayout>

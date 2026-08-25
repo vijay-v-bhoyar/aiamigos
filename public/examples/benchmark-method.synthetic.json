@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "methodVersion": "0.1.0",
+  "synthetic": true,
+  "taskDefinition": "Fictional support-triage handling time",
+  "metric": "minutes per case",
+  "dateWindow": { "start": "2026-07-01", "end": "2026-07-31" },
+  "reports": [
+    { "reportKey": "SYN-A-01", "organizationCode": "FICTIONAL-A", "value": 8.1 },
+    { "reportKey": "SYN-A-02", "organizationCode": "FICTIONAL-A", "value": 8.5 },
+    { "reportKey": "SYN-A-03", "organizationCode": "FICTIONAL-A", "value": 9.0 },
+    { "reportKey": "SYN-A-04", "organizationCode": "FICTIONAL-A", "value": 7.9 },
+    { "reportKey": "SYN-A-05", "organizationCode": "FICTIONAL-A", "value": 8.7 },
+    { "reportKey": "SYN-B-01", "organizationCode": "FICTIONAL-B", "value": 9.4 },
+    { "reportKey": "SYN-B-02", "organizationCode": "FICTIONAL-B", "value": 9.1 },
+    { "reportKey": "SYN-B-03", "organizationCode": "FICTIONAL-B", "value": 8.9 }
+  ],
+  "gates": { "minimumReports": 10, "minimumOrganizations": 3, "maximumContributorShare": 0.5 },
+  "decision": {
+    "publicationEligible": false,
+    "suppressionReasons": ["Only 8 reports", "Only 2 fictional organizations", "One fictional organization contributes 62.5% of reports"]
+  },
+  "limitations": [
+    "All organization codes, reports, and values are invented.",
+    "No benchmark statistic, adoption, outcome, or external participation is claimed."
+  ]
+}

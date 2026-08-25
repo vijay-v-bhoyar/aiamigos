@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.aiamigos.org/schemas/benchmark-demonstration.schema.json",
+  "title": "AI Amigos Synthetic Benchmark Demonstration",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "methodVersion", "synthetic", "taskDefinition", "metric", "dateWindow", "reports", "gates", "decision", "limitations"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "methodVersion": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
+    "synthetic": { "const": true },
+    "taskDefinition": { "type": "string", "minLength": 10 },
+    "metric": { "type": "string", "minLength": 2 },
+    "dateWindow": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["start", "end"],
+      "properties": { "start": { "type": "string", "format": "date" }, "end": { "type": "string", "format": "date" } }
+    },
+    "reports": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["reportKey", "organizationCode", "value"],
+        "properties": { "reportKey": { "type": "string" }, "organizationCode": { "type": "string" }, "value": { "type": "number" } }
+      }
+    },
+    "gates": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["minimumReports", "minimumOrganizations", "maximumContributorShare"],
+      "properties": {
+        "minimumReports": { "type": "integer", "minimum": 10 },
+        "minimumOrganizations": { "type": "integer", "minimum": 3 },
+        "maximumContributorShare": { "type": "number", "maximum": 0.5 }
+      }
+    },
+    "decision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["publicationEligible", "suppressionReasons"],
+      "properties": {
+        "publicationEligible": { "const": false },
+        "suppressionReasons": { "type": "array", "minItems": 1, "items": { "type": "string" } }
+      }
+    },
+    "limitations": { "type": "array", "minItems": 2, "items": { "type": "string" } }
+  }
+}

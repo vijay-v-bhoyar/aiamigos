@@ -1,0 +1,16 @@
+{
+  "templateVersion": "0.1.1",
+  "status": "private-draft",
+  "methodVersion": "",
+  "boundedClaim": "",
+  "evidenceTier": "author-controlled",
+  "sourceManifest": [
+    { "issuer": "", "sourceUrl": "", "observedAt": "", "sha256": "" }
+  ],
+  "measurement": { "baseline": {}, "result": {}, "calculation": "", "confounders": [] },
+  "privacyReview": { "directIdentifiersRemoved": false, "quasiIdentifiersReviewed": false, "forbiddenDataAbsent": false },
+  "consent": { "publishSanitizedRecord": false, "nameParticipant": false, "nameOrganization": false },
+  "limitations": [],
+  "externalVerificationUrl": "",
+  "note": "A completed submission is not public evidence until privacy, consent, claim-scope, and human review gates pass."
+}

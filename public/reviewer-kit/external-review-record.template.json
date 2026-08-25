@@ -1,0 +1,14 @@
+{
+  "templateVersion": "0.1.1",
+  "reviewer": { "name": "", "qualification": "", "organization": "", "role": "" },
+  "scope": { "included": [], "excluded": [] },
+  "conflicts": { "relationship": "", "compensation": "", "other": "" },
+  "artifact": { "releaseId": "v0.1.1", "methodSlug": "", "methodVersion": "", "path": "", "sha256": "" },
+  "workPerformed": { "sourcesInspected": [], "testsRun": [], "limitations": [], "disagreements": [] },
+  "decision": "changes-required",
+  "decisionReason": "",
+  "reviewedAt": "",
+  "reviewerControlledVerificationUrl": "",
+  "correctionOrWithdrawalProcess": "Publish a dated update at the verification URL and notify AI Amigos.",
+  "nonClaim": "This review does not by itself prove adoption, outcomes, originality, major significance, recognition, or immigration eligibility."
+}

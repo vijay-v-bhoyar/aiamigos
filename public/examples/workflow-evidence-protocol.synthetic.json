@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "methodVersion": "0.1.0",
+  "job": "Classify fictional support requests and draft a routing note for human approval.",
+  "ownerRole": "Synthetic operations lead",
+  "dataSensitivity": "public",
+  "baseline": {
+    "metric": "median handling time",
+    "value": 11.5,
+    "unit": "minutes per case",
+    "windowStart": "2026-07-01",
+    "windowEnd": "2026-07-07",
+    "sampleSize": 30
+  },
+  "evaluationCases": [
+    { "caseKey": "SYN-001", "criteria": ["Correct queue", "No invented customer detail", "Human approval required"] },
+    { "caseKey": "SYN-002", "criteria": ["Escalates ambiguous request", "Records uncertainty", "No external action"] }
+  ],
+  "experiments": [
+    {
+      "version": "synthetic-run-1",
+      "system": "Fictional drafting assistant, configuration demo-2026-08",
+      "results": [{ "caseKey": "SYN-001", "status": "pass" }, { "caseKey": "SYN-002", "status": "fail" }],
+      "failures": [{ "caseKey": "SYN-002", "category": "missed escalation" }],
+      "humanOverrides": [{ "caseKey": "SYN-002", "decision": "route to specialist" }]
+    }
+  ],
+  "humanDecision": {
+    "ownerRole": "Synthetic operations lead",
+    "decision": "revise",
+    "reason": "The fictional run missed a required escalation; no deployment or outcome is claimed."
+  },
+  "privacyStatus": "passed",
+  "limitations": [
+    "All people, organizations, cases, values, and results are invented for schema demonstration.",
+    "This fixture is not an adoption, field study, outcome, testimonial, or independent review."
+  ]
+}

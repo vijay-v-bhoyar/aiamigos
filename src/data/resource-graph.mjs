@@ -4,6 +4,7 @@ import { templates } from './templates.mjs';
 import { PROJECT_STAGES } from './practice-blueprints.mjs';
 import { playbooks, benchmarkDefinitions, challenges } from './outcome-network.mjs';
 import { endeavor, methods } from './evidence-platform.mjs';
+import { methodExamples, pilotPackages, pilotReadyRelease } from './pilot-ready-release.mjs';
 
 const categoriesByTrack = {
   business: ['foundations', 'industry-applications', 'responsible-ai'],
@@ -30,6 +31,12 @@ export function buildResourceGraph() {
     ...PROJECT_STAGES.map((stage) => ({ id:`stage:${stage}`, type:'project-stage', route:`/app/#${stage}` })),
     ...[...new Set(Object.values(categoriesByTrack).flat())].map((slug) => ({ id:`guide-category:${slug}`, type:'guide-category', route:`/topics/${slug}/` })),
     { id:`endeavor:${endeavor.slug}`, type:'endeavor', route:'/endeavor/' },
+    { id:'participation:governed-pilots', type:'participation-hub', route:'/participate/' },
+    ...pilotPackages.map((pilot) => ({ id:`pilot-package:${pilot.slug}`, type:'pilot-package', route:`/participate/#${pilot.slug}` })),
+    { id:'proof-pack-template:v0.1.1', type:'proof-pack-template', route:'/pilot-kit/proof-pack-submission.template.json' },
+    { id:'reviewer-kit:v0.1.1', type:'reviewer-kit', route:'/reviews/kit/' },
+    { id:`release:${pilotReadyRelease.id}`, type:'release-manifest', route:`/releases/${pilotReadyRelease.id}/` },
+    ...methodExamples.map((example) => ({ id:`synthetic-example:${example.methodSlug}`, type:'synthetic-example', route:`/methods/examples/${example.slug}/` })),
     ...methods.flatMap((method) => [
       { id:`contribution:${method.slug}`, type:'contribution', route:`/methods/${method.slug}/` },
       { id:`contribution-version:${method.slug}:${method.version}`, type:'contribution-version', route:`/methods/${method.slug}/#version` },
@@ -62,12 +69,18 @@ export function buildResourceGraph() {
   for (const method of methods) {
     edges.push({ from:`endeavor:${endeavor.slug}`, to:`contribution:${method.slug}`, relation:'produces-contribution' });
     edges.push({ from:`contribution:${method.slug}`, to:`contribution-version:${method.slug}:${method.version}`, relation:'versioned-as' });
-    edges.push({ from:`contribution-version:${method.slug}:${method.version}`, to:`adoption:${method.slug}`, relation:'eligible-for-independent-adoption' });
+    edges.push({ from:`contribution-version:${method.slug}:${method.version}`, to:`synthetic-example:${method.slug}`, relation:'demonstrated-by-non-evidence-fixture' });
+    edges.push({ from:`synthetic-example:${method.slug}`, to:'participation:governed-pilots', relation:'prepares-governed-participation' });
+    edges.push({ from:`release:${pilotReadyRelease.id}`, to:`adoption:${method.slug}`, relation:'eligible-for-independent-adoption' });
     edges.push({ from:`adoption:${method.slug}`, to:`implementation:${method.slug}`, relation:'verified-in-implementation' });
     edges.push({ from:`implementation:${method.slug}`, to:`evidence-outcome:${method.slug}`, relation:'measures-outcome' });
     edges.push({ from:`evidence-outcome:${method.slug}`, to:`independent-review:${method.slug}`, relation:'reviewed-outside-author' });
     edges.push({ from:`independent-review:${method.slug}`, to:`citation:${method.slug}`, relation:'documented-by-external-record' });
   }
+  edges.push({ from:'participation:governed-pilots', to:'proof-pack-template:v0.1.1', relation:'uses-sanitized-proof-pack' });
+  edges.push({ from:'proof-pack-template:v0.1.1', to:'reviewer-kit:v0.1.1', relation:'submitted-for-external-review' });
+  edges.push({ from:'reviewer-kit:v0.1.1', to:`release:${pilotReadyRelease.id}`, relation:'verifies-release-artifacts' });
+  for (const pilot of pilotPackages) edges.push({ from:'participation:governed-pilots', to:`pilot-package:${pilot.slug}`, relation:'offers-pilot-package' });
 
   const nodeIds = nodes.map((node) => node.id); const ids = new Set(nodeIds); const findings=[]; const seen=new Set(); const pairs=new Set();
   for (const node of nodes) if (nodeIds.filter((id)=>id===node.id).length > 1 && !findings.includes(`duplicate node: ${node.id}`)) findings.push(`duplicate node: ${node.id}`);
@@ -84,7 +97,7 @@ export function buildResourceGraph() {
     if (edges.filter((edge)=>edge.from===`track:${slug}`&&edge.relation==='uses-record').length<5) findings.push(`track:${slug}: insufficient templates`);
   }
   for (const method of methods) {
-    const required=[`contribution:${method.slug}`,`contribution-version:${method.slug}:${method.version}`,`adoption:${method.slug}`,`implementation:${method.slug}`,`evidence-outcome:${method.slug}`,`independent-review:${method.slug}`,`citation:${method.slug}`];
+    const required=[`contribution:${method.slug}`,`contribution-version:${method.slug}:${method.version}`,`synthetic-example:${method.slug}`,`adoption:${method.slug}`,`implementation:${method.slug}`,`evidence-outcome:${method.slug}`,`independent-review:${method.slug}`,`citation:${method.slug}`];
     required.forEach((id)=>{if(!ids.has(id)) findings.push(`${method.slug}: missing ${id}`);});
   }
   return { nodes, edges, findings };
@@ -99,8 +112,15 @@ export function outcomePathForTrack(track) {
 export function evidencePathForMethod(methodSlug) {
   const method=methods.find((item)=>item.slug===methodSlug); if(!method) return [];
   const graph=buildResourceGraph(); const start=`endeavor:${endeavor.slug}`; const target=`citation:${method.slug}`; const path=[start]; let cursor=start;
-  const allowed=['produces-contribution','versioned-as','eligible-for-independent-adoption','verified-in-implementation','measures-outcome','reviewed-outside-author','documented-by-external-record'];
-  while(cursor!==target) { const edge=graph.edges.find((item)=>item.from===cursor && allowed.includes(item.relation) && (cursor!==start || item.to===`contribution:${method.slug}`)); if(!edge) return []; path.push(edge.to); cursor=edge.to; }
+  const allowed=['produces-contribution','versioned-as','demonstrated-by-non-evidence-fixture','prepares-governed-participation','uses-sanitized-proof-pack','submitted-for-external-review','verifies-release-artifacts','eligible-for-independent-adoption','verified-in-implementation','measures-outcome','reviewed-outside-author','documented-by-external-record'];
+  while(cursor!==target) {
+    const edge=graph.edges.find((item)=>item.from===cursor && allowed.includes(item.relation)
+      && (cursor!==start || item.to===`contribution:${method.slug}`)
+      && (cursor!==`release:${pilotReadyRelease.id}` || item.to===`adoption:${method.slug}`));
+    if(!edge) return [];
+    path.push(edge.to);
+    cursor=edge.to;
+  }
   return path;
 }
 

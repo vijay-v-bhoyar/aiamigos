@@ -196,7 +196,8 @@ function frontmatter(record) {
 function redirectsFor(records) {
   const lines = [
     'RewriteEngine On',
-    'RewriteCond %{HTTP_HOST} ^aiamigos\\.org$ [NC]',
+    'RewriteCond %{HTTPS} !=on [OR]',
+    'RewriteCond %{HTTP_HOST} !^www\\.aiamigos\\.org$ [NC]',
     'RewriteRule ^ https://www.aiamigos.org%{REQUEST_URI} [R=301,L,NE]',
     'RewriteRule ^wp-admin(?:/|$) - [R=410,L]',
     'RewriteRule ^wp-json(?:/|$) - [R=410,L]',

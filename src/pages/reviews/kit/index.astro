@@ -1,0 +1,20 @@
+---
+import fs from 'node:fs';
+import path from 'node:path';
+import crypto from 'node:crypto';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { site } from '../../../data/site';
+import { methods } from '../../../data/evidence-platform.mjs';
+import { methodExamples, pilotReadyRelease, reviewerDecisionOptions } from '../../../data/pilot-ready-release.mjs';
+const hashes = methodExamples.map((example) => {
+  const full = path.join(process.cwd(), 'public', example.jsonPath.replace(/^\//, ''));
+  return { ...example, sha256: crypto.createHash('sha256').update(fs.readFileSync(full)).digest('hex'), method: methods.find((item) => item.slug === example.methodSlug) };
+});
+const subject = encodeURIComponent(`AI Amigos ${pilotReadyRelease.id} - external review inquiry`);
+---
+<BaseLayout title="External reviewer kit" description="Exact method versions, checksums, review scope, qualifications, conflicts, decisions, corrections, and reviewer-controlled verification requirements.">
+  <div class="shell"><section class="hero reading"><p class="eyebrow">External reviewer kit · {pilotReadyRelease.id}</p><h1>Review the exact artifact, publish your own decision.</h1><p class="lede">This kit lets an outside practitioner challenge method structure, measurement logic, privacy boundaries, reproducibility, and claim scope without allowing AI Amigos to control the reviewer’s statement.</p><div class="notice"><strong>Independence boundary:</strong> AI Amigos may request or link a review, but cannot write it, host the only verification copy, conceal compensation, or relabel a scoped method review as adoption or outcome proof.</div></section>
+  <section class="section-space"><h2>Artifacts available for review</h2><div class="record-table" role="region" aria-label="Versioned review artifacts" tabindex="0"><table><thead><tr><th>Method and fixture</th><th>Version</th><th>SHA-256</th><th>Download</th></tr></thead><tbody>{hashes.map((item) => <tr><td><strong>{item.method.title}</strong><br />{item.title}</td><td>{item.method.version}</td><td><code>{item.sha256}</code></td><td><a href={item.jsonPath}>JSON</a> · <a href={item.schemaPath}>schema</a></td></tr>)}</tbody></table></div><p><a href={pilotReadyRelease.manifestPath}>Download the machine-readable release manifest</a>. Verify the digest locally before beginning the review.</p></section>
+  <section class="split-section section-space"><div><h2>Reviewer record must disclose</h2><ul class="check-list"><li>Name and relevant qualification</li><li>Included and excluded review scope</li><li>Relationship to the author or AI Amigos</li><li>Compensation, funding, collaboration, and other conflicts</li><li>Exact release, method version, artifact path, and SHA-256</li><li>Sources inspected, tests run, limitations, and disagreements</li><li>A reviewer-controlled HTTPS verification URL</li></ul></div><div><h2>Decision options</h2><ul>{reviewerDecisionOptions.map((item) => <li><strong>{item.label}</strong></li>)}</ul><p>A reviewer can correct or withdraw a decision by publishing a dated update at the same external URL and notifying AI Amigos. AI Amigos will preserve the correction or withdrawal link in its registry.</p></div></section>
+  <section class="reading section-space"><h2>Review scope suggestions</h2><p>Choose only the areas you are qualified to assess: task definition, baseline comparability, evaluation design, failure retention, privacy and consent boundary, benchmark suppression, schema clarity, reproducibility, or claim language. Explicitly list exclusions.</p><h2>What a review does not establish</h2><p>A method review does not itself establish adoption, an implementation, a real-world outcome, originality, major significance, recognition, endorsement, or satisfaction of an immigration standard.</p><div class="button-row"><a class="button" href="/reviewer-kit/external-review-record.template.json" download>Download review record</a><a class="button secondary" href="/reviewer-kit/external-review-checklist.md" download>Download checklist</a><a href={`mailto:${site.email}?subject=${subject}`}>Email review inquiry →</a></div></section></div>
+</BaseLayout>

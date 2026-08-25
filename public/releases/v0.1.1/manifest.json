@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "releaseId": "v0.1.1",
+  "releasedAt": "2026-08-25",
+  "title": "Pilot-ready evidence kit",
+  "status": "author-controlled-release",
+  "canonicalUrl": "https://www.aiamigos.org/releases/v0.1.1/",
+  "nonClaim": "This release documents methods, synthetic fixtures, and participation controls. It is not evidence of adoption, outcomes, independent review, recognition, or immigration eligibility.",
+  "artifactCount": 11,
+  "files": [
+    {
+      "path": "/examples/benchmark-method.synthetic.json",
+      "bytes": 1372,
+      "sha256": "62503c3a1fd7f97c07c2d6fefcb973e4813b115cb66a4c0b94034137d8f4bac2"
+    },
+    {
+      "path": "/examples/proof-pack.synthetic.json",
+      "bytes": 917,
+      "sha256": "9207be97f73937dc17817ede37721fad2df679d04f56201ec900826d0d2fd96e"
+    },
+    {
+      "path": "/examples/workflow-evidence-protocol.synthetic.json",
+      "bytes": 1551,
+      "sha256": "ff1642953b38abbbed1e354592f2baf9de0e203d10530eba0f257d8d899ec102"
+    },
+    {
+      "path": "/pilot-kit/participant-checklist.md",
+      "bytes": 1540,
+      "sha256": "93dea576f2f70a67f5338899e0fc7b3c0b5271429df9fa2e266c6d11a211cb6d"
+    },
+    {
+      "path": "/pilot-kit/pilot-preregistration.template.json",
+      "bytes": 840,
+      "sha256": "e95fe9cb9ee9b8fd79fc847dfc86d6dc94a7918893dc530f1ab459b1bc04494b"
+    },
+    {
+      "path": "/pilot-kit/proof-pack-submission.template.json",
+      "bytes": 737,
+      "sha256": "974febc6c641f51a3023a21483c118304d018e4e7626d6beec4b6b1dc85942d9"
+    },
+    {
+      "path": "/reviewer-kit/external-review-checklist.md",
+      "bytes": 1277,
+      "sha256": "4e5da679a4163ebf046aef3c63c1389622c44f125b9dc0bae20dfb258e00659d"
+    },
+    {
+      "path": "/reviewer-kit/external-review-record.template.json",
+      "bytes": 820,
+      "sha256": "9c93138d3fc92bca4f7238317b5457365fb2f5b82a135dbffc8a6b769a5a8422"
+    },
+    {
+      "path": "/schemas/benchmark-demonstration.schema.json",
+      "bytes": 2113,
+      "sha256": "82afb088b8072e5c0c163b0acc632955346cbcece7532a1ed789f19d265df9a7"
+    },
+    {
+      "path": "/schemas/public-evidence-record.schema.json",
+      "bytes": 1634,
+      "sha256": "fb35ab6987d666bbd413d08f53c7456937afe863110d56ff0ccd905edcc367ab"
+    },
+    {
+      "path": "/schemas/workflow-evidence-record.schema.json",
+      "bytes": 2412,
+      "sha256": "6b95c3bad6fdde845026d4900b300c6f2de9cc204f5f347cf8c5fedeb53c0338"
+    }
+  ]
+}

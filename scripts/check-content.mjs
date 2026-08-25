@@ -6,6 +6,7 @@ import { templates } from '../src/data/templates.mjs';
 import { tracks } from '../src/data/tracks.mjs';
 import { resourceGraph } from '../src/data/resource-graph.mjs';
 import { methods, validateEvidencePlatform } from '../src/data/evidence-platform.mjs';
+import { validatePilotReadyRelease } from '../src/data/pilot-ready-release.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const articleDir = path.join(root, 'src', 'content', 'articles');
@@ -34,6 +35,7 @@ if (drafts !== 19) failures.push(`expected 19 governed drafts, found ${drafts}`)
 if (tracks.length !== 4 || tools.length !== 5 || templates.length !== 20) failures.push('utility catalog count mismatch');
 failures.push(...resourceGraph.findings.map((finding)=>`resource graph: ${finding}`));
 failures.push(...validateEvidencePlatform().map((finding)=>`evidence platform: ${finding}`));
+failures.push(...validatePilotReadyRelease().map((finding)=>`pilot-ready release: ${finding}`));
 if (methods.length !== 3) failures.push(`expected 3 working evidence methods, found ${methods.length}`);
 for (const tool of tools) if (tool.sources.length < 2 || !tool.limitations.length) failures.push(`${tool.slug}: incomplete evidence fields`);
 if (failures.length) { console.error(`Content check failed with ${failures.length} finding(s):`); failures.forEach((item)=>console.error(`- ${item}`)); process.exit(1); }

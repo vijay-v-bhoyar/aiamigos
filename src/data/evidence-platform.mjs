@@ -19,7 +19,7 @@ export const endeavor = {
     'The four practice tracks are application settings for one evidence method, not four unrelated endeavors.',
   ],
   milestones: [
-    { window: '0–90 days', target: 'Release three working specifications, their schemas, examples, tests, and public correction process.', status: 'in-progress' },
+    { window: '0–90 days', target: 'Release three working specifications, their schemas, examples, tests, and public correction process.', status: 'completed' },
     { window: '3–6 months', target: 'Complete governed pilots with independently verifiable U.S. participants and publish both positive and negative results.', status: 'not-started' },
     { window: '6–12 months', target: 'Publish reviewed replications and the first privacy-safe benchmark only after cohort gates pass.', status: 'not-started' },
     { window: '12–24 months', target: 'Document external derivative use, citations, reviewer feedback, corrections, and sustained method development.', status: 'not-started' },
@@ -34,6 +34,7 @@ export const endeavor = {
 export const methods = [
   {
     slug: 'ai-workflow-evidence-protocol',
+    exampleSlug: 'workflow-evidence-protocol-synthetic-example',
     title: 'AI Workflow Evidence Protocol',
     shortTitle: 'Workflow Evidence Protocol',
     version: '0.1.0',
@@ -63,6 +64,7 @@ export const methods = [
   },
   {
     slug: 'proof-pack-specification',
+    exampleSlug: 'proof-pack-synthetic-example',
     title: 'AI Proof Pack Specification',
     shortTitle: 'Proof Pack Specification',
     version: '0.1.0',
@@ -91,6 +93,7 @@ export const methods = [
   },
   {
     slug: 'comparable-outcome-benchmark-method',
+    exampleSlug: 'benchmark-method-suppressed-example',
     title: 'Comparable Outcome Benchmark Method',
     shortTitle: 'Outcome Benchmark Method',
     version: '0.1.0',
@@ -170,6 +173,7 @@ export function validateEvidencePlatform() {
     if (method.sources.length < 2) findings.push(`${method.slug}: requires at least two authoritative sources`);
     if (method.steps.length < 5 || method.publicationGate.length < 5) findings.push(`${method.slug}: method is not operational enough`);
     if (method.evidenceTier !== 'author-controlled') findings.push(`${method.slug}: cannot claim independent status without external evidence`);
+    if (!method.exampleSlug) findings.push(`${method.slug}: requires a synthetic method example`);
   }
   if (adoptions.some((record) => !canPublishAdoption(record))) findings.push('adoption registry contains an unpublishable record');
   if (verifiedOutcomes.some((record) => !canPublishOutcome(record))) findings.push('outcome registry contains an unpublishable record');

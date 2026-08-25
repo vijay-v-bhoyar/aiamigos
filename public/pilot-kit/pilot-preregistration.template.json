@@ -1,0 +1,12 @@
+{
+  "templateVersion": "0.1.1",
+  "status": "private-draft",
+  "pilotPackage": "choose-one-package-slug",
+  "participant": { "organizationType": "", "uSConnection": "", "decisionOwnerRole": "", "externalVerificationUrl": "" },
+  "job": { "boundedTask": "", "affectedPeople": "", "dataBoundary": "", "forbiddenDataConfirmed": false },
+  "baseline": { "metric": "", "value": null, "unit": "", "sampleSize": null, "windowStart": "", "windowEnd": "" },
+  "evaluation": { "caseCount": null, "successCriterion": "", "stopCriterion": "", "humanApprovalPoint": "" },
+  "publicationChoice": "private-only",
+  "consentChoices": { "contactForFollowUp": false, "publishSanitizedRecord": false, "nameOrganization": false },
+  "notes": "Do not place personal, confidential, regulated, student, customer, employer, or credential data in this template."
+}

@@ -116,6 +116,6 @@ test('resource graph covers every track and the complete outcome-network path wi
     assert.deepEqual(outcomePathForTrack(slug), [`track:${slug}`,`project:${slug}`,`experiment:${slug}`,`evaluation:${slug}`,`outcome:${slug}`,`proof-pack:${slug}`,`playbook:${slug}`,`fork:${slug}`,`run-report:${slug}`,`benchmark:${slug}`]);
   }
   for (const method of methods) {
-    assert.deepEqual(evidencePathForMethod(method.slug), [`endeavor:${endeavor.slug}`,`contribution:${method.slug}`,`contribution-version:${method.slug}:${method.version}`,`adoption:${method.slug}`,`implementation:${method.slug}`,`evidence-outcome:${method.slug}`,`independent-review:${method.slug}`,`citation:${method.slug}`]);
+    assert.deepEqual(evidencePathForMethod(method.slug), [`endeavor:${endeavor.slug}`,`contribution:${method.slug}`,`contribution-version:${method.slug}:${method.version}`,`synthetic-example:${method.slug}`,'participation:governed-pilots','proof-pack-template:v0.1.1','reviewer-kit:v0.1.1','release:v0.1.1',`adoption:${method.slug}`,`implementation:${method.slug}`,`evidence-outcome:${method.slug}`,`independent-review:${method.slug}`,`citation:${method.slug}`]);
   }
 });

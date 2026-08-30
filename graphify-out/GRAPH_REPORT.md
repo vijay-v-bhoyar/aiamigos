@@ -1,16 +1,16 @@
-# Graph Report - aiamigos  (2026-08-25)
+# Graph Report - aiamigos  (2026-08-30)
 
 ## Corpus Check
-- 353 files · ~1,563,508 words
+- 357 files · ~1,564,785 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 2633 nodes · 4163 edges · 250 communities (236 shown, 14 thin omitted)
+- 2652 nodes · 4212 edges · 250 communities (236 shown, 14 thin omitted)
 - Extraction: 93% EXTRACTED · 7% INFERRED · 0% AMBIGUOUS · INFERRED: 312 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `fd1cdb86`
+- Built from commit: `ca2a4f3a`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -72,7 +72,7 @@
 - manifest.json
 - deploy-hostinger.mjs
 - wp-consent-api.min-29676f10ff.js
-- [...slug].astro
+- sitemap.xml.ts
 - PHP 8.4.24 validation evidence — v1.4.1 current source
 - Sirat Pro duplicate-title accessibility patch
 - d
@@ -181,13 +181,13 @@
 ## Surprising Connections (you probably didn't know these)
 - `a()` --indirect_call--> `St()`  [INFERRED]
   public-site-snapshot/assets/bootstrap.min-b5eee535c3.js → public-site-snapshot/assets/googlesitekit-consent-mode-86cb52dcb9f2b27ed244-313fe6f64e.js
-- `renderValue()` --calls--> `safe()`  [INFERRED]
-  src/components/ToolRunner.astro → src/components/PracticeWorkspace.astro
 - `r()` --indirect_call--> `ot()`  [INFERRED]
   public-site-snapshot/assets/bootstrap.min-b5eee535c3.js → public-site-snapshot/assets/jquery.min-01a0307c4b.js
 - `243()` --indirect_call--> `Ae()`  [INFERRED]
   public-site-snapshot/assets/googlesitekit-consent-mode-86cb52dcb9f2b27ed244-313fe6f64e.js → public-site-snapshot/assets/jquery.min-01a0307c4b.js
 - `243()` --indirect_call--> `Ie()`  [INFERRED]
+  public-site-snapshot/assets/googlesitekit-consent-mode-86cb52dcb9f2b27ed244-313fe6f64e.js → public-site-snapshot/assets/jquery.min-01a0307c4b.js
+- `243()` --indirect_call--> `We()`  [INFERRED]
   public-site-snapshot/assets/googlesitekit-consent-mode-86cb52dcb9f2b27ed244-313fe6f64e.js → public-site-snapshot/assets/jquery.min-01a0307c4b.js
 
 ## Import Cycles
@@ -205,7 +205,7 @@ Nodes (4): Owl(), prefixed(), TODO: Should be computed from number of min width 
 
 ### Community 2 - "jquery.min-01a0307c4b.js"
 Cohesion: 0.06
-Nodes (42): a(), i(), r(), s(), Se(), w(), Ae(), B() (+34 more)
+Nodes (41): a(), i(), r(), s(), Se(), w(), Ae(), B() (+33 more)
 
 ### Community 6 - "FakeElement"
 Cohesion: 0.06
@@ -236,8 +236,8 @@ Cohesion: 0.09
 Nodes (30): ancestorContext(), assetSource(), candidateProbeMap, decodeHtml(), extractImages(), extractScripts(), heavyImages, imageSource() (+22 more)
 
 ### Community 13 - "wp-polyfill.min-201bf9189c.js"
-Cohesion: 0.20
-Nodes (26): E(), a(), h(), j(), l(), O(), u(), x() (+18 more)
+Cohesion: 0.19
+Nodes (27): J(), E(), a(), h(), j(), l(), O(), u() (+19 more)
 
 ### Community 14 - "Finding actions"
 Cohesion: 0.11
@@ -399,9 +399,9 @@ Nodes (11): dist, files, nextPaths, releaseId, releaseRoot, remotePath(), remote
 Cohesion: 0.70
 Nodes (4): consent_api_get_cookie(), consent_api_set_cookie(), wp_has_consent(), wp_set_consent()
 
-### Community 58 - "[...slug].astro"
+### Community 58 - "sitemap.xml.ts"
 Cohesion: 0.08
-Nodes (14): renderValue(), track(), templateBySlug, templateMarkdown(), categoryTrack, defaultTemplates, defaultTools, externalSources (+6 more)
+Nodes (19): track(), templateBySlug, templateMarkdown(), templates, sources, toolBySlug, tools, categoryTrack (+11 more)
 
 ### Community 59 - "PHP 8.4.24 validation evidence — v1.4.1 current source"
 Cohesion: 0.40
@@ -433,11 +433,11 @@ Nodes (6): astro/tsconfigs/strict, compilerOptions, allowJs, checkJs, verbatimMo
 
 ### Community 91 - "verify-static-site.mjs"
 Cohesion: 0.11
-Nodes (15): articlePages, dist, examplePages, existingPaths, failures, htmlFiles, methodPages, participation (+7 more)
+Nodes (16): articlePages, dist, examplePages, existingPaths, failures, htmlFiles, methodPages, participation (+8 more)
 
 ### Community 171 - "resource-graph.mjs"
-Cohesion: 0.11
-Nodes (19): articleDir, failures, files, root, slugs, buildResourceGraph(), categoriesByTrack, evidencePathForMethod() (+11 more)
+Cohesion: 0.15
+Nodes (11): articleDir, failures, files, root, slugs, buildResourceGraph(), categoriesByTrack, evidencePathForMethod() (+3 more)
 
 ### Community 172 - "sync-feeds.mjs"
 Cohesion: 0.20
@@ -460,8 +460,8 @@ Cohesion: 0.25
 Nodes (7): endpointPairs, exactEdges, findings, graph, graphPath, nodeIds, root
 
 ### Community 177 - "PracticeWorkspace.astro"
-Cohesion: 0.09
-Nodes (42): blueprint(), blueprints, challenges, handleStage(), labels, newProjectForm, playbooks, projects (+34 more)
+Cohesion: 0.06
+Nodes (57): blueprint(), blueprints, challenges, handleStage(), labels, newProjectForm, playbooks, projects (+49 more)
 
 ### Community 178 - "243"
 Cohesion: 0.07
@@ -476,8 +476,8 @@ Cohesion: 0.40
 Nodes (4): AI Amigos Supabase architecture, Human gate before remote application, Native, custom, external, Security invariants
 
 ### Community 181 - "outcome-network.mjs"
-Cohesion: 0.23
-Nodes (10): aggregateBenchmark(), benchmarkDefinitions, buildRunReport(), challenges, isBenchmarkPublishable(), MIN_BENCHMARK_ORGANIZATIONS, MIN_BENCHMARK_SAMPLE, playbookBySlug (+2 more)
+Cohesion: 0.19
+Nodes (12): aggregateBenchmark(), benchmarkDefinitions, buildRunReport(), challenges, isBenchmarkPublishable(), MIN_BENCHMARK_ORGANIZATIONS, MIN_BENCHMARK_SAMPLE, playbookBySlug (+4 more)
 
 ### Community 184 - "AI Amigos design system"
 Cohesion: 0.22
@@ -740,7 +740,7 @@ Cohesion: 0.40
 Nodes (5): enum, privacyStatus, failed, not-run, passed
 
 ## Knowledge Gaps
-- **874 isolated node(s):** `name`, `version`, `private`, `type`, `dev` (+869 more)
+- **877 isolated node(s):** `name`, `version`, `private`, `type`, `dev` (+872 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **14 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -759,10 +759,10 @@ _Questions this graph is uniquely positioned to answer:_
 - **Are the 17 inferred relationships involving `243()` (e.g. with `be()` and `de()`) actually correct?**
   _`243()` has 17 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `name`, `version`, `private` to the rest of the system?**
-  _874 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _877 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Owl` be split into smaller, more focused modules?**
   _Cohesion score 0.06288568909785483 - nodes in this community are weakly interconnected._
 - **Should `jquery.min-01a0307c4b.js` be split into smaller, more focused modules?**
-  _Cohesion score 0.05541346973572037 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.05575065847234416 - nodes in this community are weakly interconnected._
 - **Should `AIAmigos_Remediation_Plugin` be split into smaller, more focused modules?**
   _Cohesion score 0.03354037267080745 - nodes in this community are weakly interconnected._

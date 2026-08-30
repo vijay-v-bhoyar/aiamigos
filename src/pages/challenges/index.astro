@@ -1,8 +1,10 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import CollectionFilters from '../../components/CollectionFilters.astro';
 import { challenges } from '../../data/outcome-network.mjs';
+import { tracks } from '../../data/tracks.mjs';
 ---
 <BaseLayout title="AI field challenges" description="Monthly, track-specific AI field tests using shared evaluation protocols.">
   <div class="shell"><section class="hero reading"><p class="eyebrow">Monthly field tests</p><h1>Run the same test. Compare the evidence.</h1><p class="lede">Challenges align practitioners around a shared protocol. Work stays local; publishing a sanitized report is optional and always requires review.</p></section>
-  <div class="challenge-timeline">{challenges.map((item, index) => <article id={item.slug}><span class="timeline-index">0{index+1}</span><div><p class="eyebrow">{item.track} · {item.month}</p><h2>{item.title}</h2><p>{item.prompt}</p><p><strong>Protocol:</strong> {item.protocol}</p><div class="button-row"><a class="button" href={`/app/?challenge=${item.slug}`}>Start this challenge</a><a href={`/tracks/${item.track}/`}>Track method →</a></div></div></article>)}</div></div>
+  <CollectionFilters id="challenge-browser" total={challenges.length} singular="challenge" plural="challenges" searchLabel="Find a challenge by task" filters={[{name:'track',label:'Track',allLabel:'All tracks',options:tracks.map((track)=>({value:track.slug,label:track.label}))}]}><div class="challenge-timeline" data-filter-results>{challenges.map((item, index) => <article id={item.slug} data-filter-item data-search={`${item.title} ${item.prompt} ${item.protocol} ${item.month}`} data-track={item.track}><span class="timeline-index">0{index+1}</span><div><p class="eyebrow">{item.track} · {item.month}</p><h2>{item.title}</h2><p>{item.prompt}</p><p><strong>Protocol:</strong> {item.protocol}</p><div class="button-row"><a class="button" href={`/app/?challenge=${item.slug}`}>Start this challenge</a><a href={`/tracks/${item.track}/`}>Track method →</a></div></div></article>)}</div></CollectionFilters></div>
 </BaseLayout>

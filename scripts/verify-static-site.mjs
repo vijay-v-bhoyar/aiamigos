@@ -21,7 +21,7 @@ function filesUnder(dir) {
 }
 
 if (!fs.existsSync(dist)) failures.push('dist/ does not exist; run npm run build first');
-for (const required of ['index.html', 'app/index.html', 'endeavor/index.html', 'methods/index.html', 'methods/examples/index.html', 'participate/index.html', 'evidence/index.html', 'field-studies/index.html', 'adoption/index.html', 'outcomes/index.html', 'impact/index.html', 'research/index.html', 'reviews/index.html', 'reviews/kit/index.html', 'releases/v0.1.1/index.html', 'releases/v0.1.1/manifest.json', 'timeline/index.html', 'corrections/index.html', 'data-policy/index.html', 'about/vijay-bhoyar/index.html', 'playbooks/index.html', 'benchmarks/index.html', 'challenges/index.html', 'account/index.html', 'articles/index.html', 'topics/index.html', 'start-here/index.html', 'search/index.html', 'tools/index.html', 'templates/index.html', 'tracks/index.html', 'news/index.html', 'schemas/workflow-evidence-record.schema.json', 'schemas/public-evidence-record.schema.json', 'schemas/counsel-evidence-record.schema.json', 'schemas/benchmark-demonstration.schema.json', 'examples/workflow-evidence-protocol.synthetic.json', 'examples/proof-pack.synthetic.json', 'examples/benchmark-method.synthetic.json', 'pilot-kit/participant-checklist.md', 'pilot-kit/pilot-preregistration.template.json', 'pilot-kit/proof-pack-submission.template.json', 'reviewer-kit/external-review-checklist.md', 'reviewer-kit/external-review-record.template.json', 'rss.xml', 'sitemap.xml', 'robots.txt', '.htaccess', 'legacy-redirects.json', 'pagefind/pagefind-ui.js']) exists(required);
+for (const required of ['index.html', 'app/index.html', 'endeavor/index.html', 'methods/index.html', 'methods/examples/index.html', 'participate/index.html', 'evidence/index.html', 'field-studies/index.html', 'adoption/index.html', 'outcomes/index.html', 'impact/index.html', 'research/index.html', 'reviews/index.html', 'reviews/kit/index.html', 'releases/v0.1.1/index.html', 'releases/v0.1.1/manifest.json', 'timeline/index.html', 'corrections/index.html', 'data-policy/index.html', 'about/vijay-bhoyar/index.html', 'playbooks/index.html', 'benchmarks/index.html', 'challenges/index.html', 'account/index.html', 'articles/index.html', 'topics/index.html', 'start-here/index.html', 'search/index.html', 'tools/index.html', 'templates/index.html', 'tracks/index.html', 'news/index.html', 'schemas/workflow-evidence-record.schema.json', 'schemas/public-evidence-record.schema.json', 'schemas/counsel-evidence-record.schema.json', 'schemas/benchmark-demonstration.schema.json', 'examples/workflow-evidence-protocol.synthetic.json', 'examples/proof-pack.synthetic.json', 'examples/benchmark-method.synthetic.json', 'pilot-kit/participant-checklist.md', 'pilot-kit/pilot-preregistration.template.json', 'pilot-kit/proof-pack-submission.template.json', 'reviewer-kit/external-review-checklist.md', 'reviewer-kit/external-review-record.template.json', 'rss.xml', 'sitemap.xml', 'robots.txt', '.htaccess', 'legacy-redirects.json', 'pagefind/pagefind-component-ui.js', 'pagefind/pagefind-component-ui.css']) exists(required);
 for (const slug of ['ai-task-workflow-planner','business-use-case-scorecard','career-roadmap-builder','teaching-training-planner','builder-evaluation-workbench']) exists(`tools/${slug}/index.html`);
 
 const htmlFiles = filesUnder(dist).filter((file) => file.endsWith('.html'));
@@ -62,6 +62,21 @@ for (const file of articlePages) {
 }
 const playbookPages=filesUnder(path.join(dist,'playbooks')).filter((file)=>file.endsWith('index.html') && path.dirname(file)!==path.join(dist,'playbooks'));
 if(playbookPages.length!==4) failures.push(`expected 4 reviewed protocol pages, found ${playbookPages.length}`);
+for (const file of playbookPages) {
+  const html=fs.readFileSync(file,'utf8');
+  if (!html.includes('data-pagefind-body') || !html.includes('data-pagefind-filter="type:Playbook"') || !/data-pagefind-filter="track:(business|careers|teaching|builders)"/.test(html)) failures.push(`${path.relative(dist,file)}: playbook is missing Pagefind body, type, or track metadata`);
+}
+for (const library of ['tools','templates','playbooks','benchmarks','challenges']) {
+  const html=fs.readFileSync(path.join(dist,library,'index.html'),'utf8');
+  if (!html.includes('data-filter-root') || !html.includes('data-filter-reset') || !html.includes('data-filter-empty') || !html.includes('data-filter-item')) failures.push(`${library}/index.html: shared filter, reset, empty state, or filter items are missing`);
+}
+const searchPage=fs.readFileSync(path.join(dist,'search','index.html'),'utf8');
+if (!/<pagefind-config[^>]+faceted(?:="true")?[^>]+preload(?:="true")?/i.test(searchPage) || !searchPage.includes('filter="type"') || !searchPage.includes('filter="track"')) failures.push('search/index.html: faceted type and track filters are missing');
+for (const [directory,type,expected] of [['tools','Tool',5],['templates','Template',20],['tracks','Track',4]]) {
+  const pages=filesUnder(path.join(dist,directory)).filter((file)=>file.endsWith('index.html') && path.dirname(file)!==path.join(dist,directory));
+  if (pages.length!==expected) failures.push(`${directory}: expected ${expected} detail pages, found ${pages.length}`);
+  for (const file of pages) if (!fs.readFileSync(file,'utf8').includes(`data-pagefind-filter="type:${type}"`)) failures.push(`${path.relative(dist,file)}: missing Pagefind type ${type}`);
+}
 for (const file of filesUnder(path.join(dist,'tools')).filter((file)=>file.endsWith('index.html'))) {
   const html=fs.readFileSync(file,'utf8');
   if (file !== path.join(dist,'tools','index.html') && (!html.includes('class="tool-runner"') || !html.includes('Share this tool') || !html.includes('Nothing is sent'))) failures.push(`${path.relative(dist,file)}: missing private tool controls`);

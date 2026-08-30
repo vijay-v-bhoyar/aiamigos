@@ -1,8 +1,12 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import CollectionFilters from '../../components/CollectionFilters.astro';
 import { tools } from '../../data/tools.mjs';
+import { tracks } from '../../data/tracks.mjs';
 ---
 <BaseLayout title="Private AI workbench tools" description="Five no-login tools that turn practical AI tasks into exportable workflows, scorecards, roadmaps, lesson plans, and evaluation plans.">
   <div class="shell"><div class="reading"><p class="eyebrow">Private browser tools</p><h1>Finish real planning work—not another AI quiz.</h1><p class="lede">Each tool works without an account or model API. Inputs and generated results stay in your browser and can be copied, printed, or exported.</p></div>
-  <div class="utility-grid section-space">{tools.map((tool) => <article class="work-card"><span class="tag">{tool.track}</span><h2><a href={`/tools/${tool.slug}/`}>{tool.title}</a></h2><p>{tool.summary}</p><p><strong>Output:</strong> {tool.outcome}</p><p class="meta">About {tool.estimatedMinutes} minutes · local-only state</p><a class="button" href={`/tools/${tool.slug}/`}>Use this tool</a></article>)}</div></div>
+  <CollectionFilters id="tool-browser" total={tools.length} singular="tool" plural="tools" searchLabel="Find a tool by task" filters={[{name:'track',label:'Track',allLabel:'All tracks',options:tracks.map((track)=>({value:track.slug,label:track.label}))}]}>
+    <div class="utility-grid" data-filter-results>{tools.map((tool) => <article class="work-card" data-filter-item data-search={`${tool.title} ${tool.summary} ${tool.outcome}`} data-track={tool.track}><span class="tag">{tool.track}</span><h2><a href={`/tools/${tool.slug}/`}>{tool.title}</a></h2><p>{tool.summary}</p><p><strong>Output:</strong> {tool.outcome}</p><p class="meta">About {tool.estimatedMinutes} minutes · local-only state</p><a class="button" href={`/tools/${tool.slug}/`}>Use this tool</a></article>)}</div>
+  </CollectionFilters></div>
 </BaseLayout>

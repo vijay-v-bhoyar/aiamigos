@@ -1,0 +1,25 @@
+---
+const {
+  id,
+  total,
+  singular = 'result',
+  plural = `${singular}s`,
+  searchLabel = 'Search this collection',
+  searchPlaceholder = 'Search by task or title…',
+  filters = [],
+} = Astro.props;
+---
+<section id={id} class="collection-browser" data-filter-root data-filter-singular={singular} data-filter-plural={plural}>
+  <form class="collection-filter-bar" data-filter-form role="search" aria-label={`Filter ${plural}`}>
+    <label>{searchLabel}<input name="q" type="search" placeholder={searchPlaceholder} autocomplete="off" /></label>
+    {filters.map((filter) => <label>{filter.label}<select name={filter.name}><option value="">{filter.allLabel ?? `All ${filter.label.toLowerCase()}`}</option>{filter.options.map((option) => <option value={option.value}>{option.label}</option>)}</select></label>)}
+    <div class="filter-actions"><button class="button secondary" type="button" data-filter-reset disabled>Reset filters</button></div>
+  </form>
+  <p class="filter-summary" data-filter-count role="status" aria-live="polite">{total} {total === 1 ? singular : plural}</p>
+  <slot />
+  <div class="notice filter-empty" data-filter-empty hidden><strong>No matching {plural}.</strong> Change a filter or reset the collection to see every available item.</div>
+</section>
+<script>
+  import { initCollectionFilters } from '../lib/collection-filter.mjs';
+  document.querySelectorAll('[data-filter-root]:not([data-filter-ready="true"])').forEach((root) => initCollectionFilters(root));
+</script>

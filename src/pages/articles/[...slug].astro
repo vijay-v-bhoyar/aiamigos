@@ -30,6 +30,7 @@ const schema = { '@context':'https://schema.org', '@type':'Article', headline:da
     <Breadcrumbs items={[{ href: '/articles/', label: 'Articles' }]} />
     <div class="two-col">
       <article data-pagefind-body={isReviewed ? '' : undefined} data-pagefind-filter={isReviewed ? `track:${track}` : undefined} data-pagefind-meta={isReviewed ? `review:${data.reviewStatus}` : undefined}>
+        {isReviewed && <><span hidden data-pagefind-filter="type:Guide"></span><span hidden data-pagefind-filter={`topic:${data.category}`}></span><span hidden data-pagefind-filter={`difficulty:${data.difficulty}`}></span><span hidden data-pagefind-filter={`review:${data.reviewStatus}`}></span></>}
         <header class="article-header reading">
           <span class="tag">{data.category}</span>
           <h1>{data.title}</h1>

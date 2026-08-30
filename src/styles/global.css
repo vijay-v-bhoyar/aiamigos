@@ -22,6 +22,7 @@
 }
 
 * { box-sizing: border-box; }
+[hidden] { display: none !important; }
 html { scroll-behavior: smooth; }
 body { margin: 0; min-width: 320px; overflow-x: hidden; background: var(--paper); line-height: 1.6; }
 a { color: var(--accent-strong); text-decoration-thickness: .1em; text-underline-offset: .16em; }
@@ -153,6 +154,17 @@ button.button { border: 1px solid transparent; font: inherit; cursor: pointer; }
 .writing-lines { min-height: 5rem; background: repeating-linear-gradient(transparent,transparent 1.9rem,var(--line) 2rem); }
 .filter-bar { display: grid; grid-template-columns: 2fr repeat(3,1fr); gap: .75rem; margin: 2rem 0 1rem; padding: 1rem; background: var(--surface); border: 1px solid var(--line); }
 .filter-bar label { display:grid; gap:.3rem; font-size:.85rem; font-weight:700; }
+.collection-browser { margin-top:2rem; }
+.collection-filter-bar { display:grid; grid-template-columns:minmax(16rem,2fr) repeat(2,minmax(10rem,1fr)) auto; gap:.75rem; align-items:end; padding:1rem; background:var(--surface-secondary); border:1px solid var(--line); }
+.collection-filter-bar label { display:grid; gap:.3rem; min-width:0; font-size:.85rem; font-weight:700; }
+.collection-filter-bar input,.collection-filter-bar select { width:100%; min-height:2.75rem; padding:.65rem .7rem; border:1px solid #8b99a5; border-radius:.3rem; background:#fff; color:var(--ink); font:inherit; }
+.collection-filter-bar .filter-actions { display:flex; align-items:end; }
+.collection-filter-bar .button:disabled { cursor:not-allowed; opacity:.5; }
+.filter-summary { margin:.75rem 0 1rem; color:var(--muted); font-size:.9rem; font-weight:700; }
+.filter-empty { margin-top:1rem; }
+.pagefind-workspace { margin-top:2rem; padding:1.25rem; border:1px solid var(--line); background:var(--surface); }
+.pagefind-filter-row { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.75rem; margin:1rem 0; }
+.pagefind-workspace pagefind-input,.pagefind-workspace pagefind-summary,.pagefind-workspace pagefind-results,.pagefind-workspace pagefind-filter-dropdown { display:block; min-width:0; }
 .status { display: inline-block; border-radius: 999px; padding: .2rem .6rem; font-size: .78rem; font-weight: 800; text-transform: capitalize; }
 .status.pending { background: #fff1e8; color: #7a3e0b; }
 .status.reviewed { background: #e8f6ed; color: var(--success); }
@@ -230,8 +242,8 @@ button.button { border: 1px solid transparent; font: inherit; cursor: pointer; }
 .protocol-meta dt { color:var(--muted); }
 .protocol-meta dd { margin:0; font-weight:650; }
 .protocol-layout { display:grid; grid-template-columns:minmax(0,1fr) 20rem; gap:4rem; padding-top:2rem; }
-.protocol-layout article { max-width:var(--reading); }
-.protocol-layout article li { margin:.55rem 0; }
+.protocol-layout > :first-child { max-width:var(--reading); }
+.protocol-layout > :first-child li { margin:.55rem 0; }
 .evidence-ledger { padding:1.25rem; background:var(--surface-secondary); align-self:start; position:sticky; top:5.5rem; }
 .evidence-ledger h2 { margin-top:0; font-size:1.3rem; }
 .evidence-ledger h3 { font-size:1rem; margin-top:1.5rem; }
@@ -330,7 +342,7 @@ button.button { border: 1px solid transparent; font: inherit; cursor: pointer; }
   .track-menu a { display:grid; }
   .account-link { border:0; }
   .topic-grid, .article-grid, .utility-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .trust-band, .feature-panel, .workbench-layout, .filter-bar { grid-template-columns: 1fr; }
+  .trust-band, .feature-panel, .workbench-layout, .filter-bar, .collection-filter-bar { grid-template-columns: 1fr; }
   .practice-cards { grid-template-columns:repeat(2,minmax(0,1fr)); }
   .practice-grid { grid-template-columns:1fr; }
   .stage-list { grid-template-columns:repeat(4,minmax(0,1fr)); }
@@ -357,6 +369,7 @@ button.button { border: 1px solid transparent; font: inherit; cursor: pointer; }
   .hero { padding-block: 1.75rem 2rem; }
   h1,.home-page h1 { font-size:clamp(2rem,9vw,2.25rem); }
   .topic-grid, .article-grid, .footer-grid, .track-grid, .utility-grid, .journey, .workbench-form { grid-template-columns: 1fr; }
+  .pagefind-filter-row { grid-template-columns:1fr; }
   .practice-toolbar { align-items:start; flex-direction:column; }
   .new-project-form { grid-template-columns:1fr; align-items:stretch; }
   .practice-cards { grid-template-columns:1fr; }

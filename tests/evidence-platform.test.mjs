@@ -47,13 +47,14 @@ test('independent review requires qualification, conflict disclosure, exact vers
 
 test('evidence migration defines the complete RLS-protected provenance model', () => {
   const sql=fs.readFileSync(new URL('../supabase/migrations/202608250001_public_evidence_platform.sql',import.meta.url),'utf8');
-  for (const table of ['contributions','contribution_versions','prior_art_references','adopters','adoption_attestations','implementations','outcome_measurements','external_evidence','independent_reviews','reviewer_conflicts','citations','publications','recognition_events','judging_events','endeavor_milestones','evidence_claims','evidence_links','consent_records','evidence_snapshots']) {
+  for (const table of ['contributions','contribution_versions','prior_art_references','adopters','adoption_attestations','implementations','verified_outcome_measurements','external_evidence','independent_reviews','reviewer_conflicts','citations','publications','recognition_events','judging_events','endeavor_milestones','evidence_claims','evidence_links','consent_records','evidence_snapshots']) {
     assert.match(sql,new RegExp(`create table public\\.${table} \\(`));
     assert.match(sql,new RegExp(`alter table public\\.${table} enable row level security`));
   }
   assert.match(sql,/evidence_claims_private/);
   assert.match(sql,/consent_records_reviewer_only/);
   assert.doesNotMatch(sql,/grant select on public\.evidence_claims to anon/);
+  assert.doesNotMatch(sql,/create table public\.outcome_measurements \(/);
 });
 
 test('public and private evidence exchange schemas are valid JSON Schemas', () => {

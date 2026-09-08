@@ -1,16 +1,16 @@
-# Graph Report - aiamigos  (2026-08-30)
+# Graph Report - aiamigos  (2026-09-05)
 
 ## Corpus Check
-- 357 files · ~1,564,785 words
+- 362 files · ~1,568,302 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 2652 nodes · 4212 edges · 250 communities (236 shown, 14 thin omitted)
+- 2682 nodes · 4264 edges · 255 communities (140 shown, 15 thin omitted)
 - Extraction: 93% EXTRACTED · 7% INFERRED · 0% AMBIGUOUS · INFERRED: 312 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `ca2a4f3a`
+- Built from commit: `bef4f943`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -72,7 +72,7 @@
 - manifest.json
 - deploy-hostinger.mjs
 - wp-consent-api.min-29676f10ff.js
-- sitemap.xml.ts
+- resource-graph.mjs
 - PHP 8.4.24 validation evidence — v1.4.1 current source
 - Sirat Pro duplicate-title accessibility patch
 - d
@@ -86,9 +86,9 @@
 - compilerOptions
 - verify-static-site.mjs
 - content.config.ts
-- resource-graph.mjs
+- 202609050001_project_authorization_hardening.sql
 - sync-feeds.mjs
-- AI Amigos editorial trust and publication governance plan
+- Controlled staging sequence
 - pilot-ready-release.mjs
 - required
 - check-graph-artifact.mjs
@@ -101,8 +101,8 @@
 - publish-playbook/index.ts
 - AI Amigos design system
 - Q: Where does the current AI Amigos outcome loop connect workspace, project, evaluation, outcome, playbook, fork, run report, and benchmark?
-- de
-- Do
+- St
+- _e
 - t
 - properties
 - ii
@@ -120,8 +120,8 @@
 - export-counsel-evidence.mjs
 - properties
 - required
-- so
-- af
+- df
+- je
 - properties
 - counsel-evidence-record.schema.json
 - required
@@ -144,7 +144,7 @@
 - required
 - properties
 - accessibility-evidence.mjs
-- required
+- Production-safe deployment boundary
 - self-test.mjs
 - enum
 - browser-probe.mjs
@@ -152,7 +152,7 @@
 - dateWindow
 - html.mjs
 - decision
-- items
+- af
 - content-gates.mjs
 - comparableUrl
 - v0.1.1/manifest.json
@@ -164,7 +164,12 @@
 - workflow-evidence-record.schema.json
 - AI Amigos governed-pilot checklist v0.1.1
 - AI Amigos external method-review checklist v0.1.1
-- enum
+- required
+- [...slug].astro
+- supabase-migrations.integration.test.mjs
+- Migration packet — 20260825 public evidence platform
+- Migration packet — 20260905 project authorization hardening
+- Engineering decisions
 
 ## God Nodes (most connected - your core abstractions)
 1. `243()` - 175 edges
@@ -173,7 +178,7 @@
 4. `AIAmigos_Remediation_Plugin` - 80 edges
 5. `Owl()` - 56 edges
 6. `t()` - 41 edges
-7. `main()` - 40 edges
+7. `main()` - 41 edges
 8. `r()` - 32 edges
 9. `AIAmigos_Remediation_Policy` - 29 edges
 10. `AIAmigos_Remediation_Policy` - 28 edges
@@ -181,19 +186,19 @@
 ## Surprising Connections (you probably didn't know these)
 - `a()` --indirect_call--> `St()`  [INFERRED]
   public-site-snapshot/assets/bootstrap.min-b5eee535c3.js → public-site-snapshot/assets/googlesitekit-consent-mode-86cb52dcb9f2b27ed244-313fe6f64e.js
+- `renderValue()` --calls--> `safe()`  [INFERRED]
+  src/components/ToolRunner.astro → src/components/PracticeWorkspace.astro
 - `r()` --indirect_call--> `ot()`  [INFERRED]
   public-site-snapshot/assets/bootstrap.min-b5eee535c3.js → public-site-snapshot/assets/jquery.min-01a0307c4b.js
 - `243()` --indirect_call--> `Ae()`  [INFERRED]
   public-site-snapshot/assets/googlesitekit-consent-mode-86cb52dcb9f2b27ed244-313fe6f64e.js → public-site-snapshot/assets/jquery.min-01a0307c4b.js
 - `243()` --indirect_call--> `Ie()`  [INFERRED]
   public-site-snapshot/assets/googlesitekit-consent-mode-86cb52dcb9f2b27ed244-313fe6f64e.js → public-site-snapshot/assets/jquery.min-01a0307c4b.js
-- `243()` --indirect_call--> `We()`  [INFERRED]
-  public-site-snapshot/assets/googlesitekit-consent-mode-86cb52dcb9f2b27ed244-313fe6f64e.js → public-site-snapshot/assets/jquery.min-01a0307c4b.js
 
 ## Import Cycles
 - None detected.
 
-## Communities (250 total, 14 thin omitted)
+## Communities (255 total, 15 thin omitted)
 
 ### Community 0 - "seo-regression.mjs"
 Cohesion: 0.17
@@ -208,8 +213,8 @@ Cohesion: 0.06
 Nodes (41): a(), i(), r(), s(), Se(), w(), Ae(), B() (+33 more)
 
 ### Community 6 - "FakeElement"
-Cohesion: 0.06
-Nodes (12): buildCarouselFixture(), buildSlide(), failures, FakeClassList, FakeDocument, FakeElement, FakeEvent, matchesSimple() (+4 more)
+Cohesion: 0.07
+Nodes (13): buildCarouselFixture(), buildSlide(), createHarness(), failures, FakeClassList, FakeDocument, FakeElement, FakeEvent (+5 more)
 
 ### Community 7 - "High-severity findings"
 Cohesion: 0.04
@@ -240,8 +245,8 @@ Cohesion: 0.19
 Nodes (27): J(), E(), a(), h(), j(), l(), O(), u() (+19 more)
 
 ### Community 14 - "Finding actions"
-Cohesion: 0.11
-Nodes (19): C5 - High-stakes career guidance contains mislabeled, retired, or unsupported credentials, C6 - Foundational AI explainers contain basic factual errors, C7 - The Grok article appears to invent or conflate a business platform, C8 - There is no accountable author behind 71 posts, Finding actions, H10 - About, mission, and service claims lack evidence, H11 - Privacy copy does not match site activities, H12 - Content and archive clusters overlap without an intent map (+11 more)
+Cohesion: 0.07
+Nodes (28): AI Amigos editorial trust and publication governance plan, Automated versus human proof register, C5 - High-stakes career guidance contains mislabeled, retired, or unsupported credentials, C6 - Foundational AI explainers contain basic factual errors, C7 - The Grok article appears to invent or conflate a business platform, C8 - There is no accountable author behind 71 posts, Decision boundary, Evidence packet required for any publication (+20 more)
 
 ### Community 15 - "aiamigos-remediation-1.4.1-candidate/aiamigos-remediation/assets/js/aiamigos-accessibility-remediation.js"
 Cohesion: 0.18
@@ -264,8 +269,8 @@ Cohesion: 0.13
 Nodes (14): addClass(), _classCallCheck(), Evented(), extend(), getActualBoundingClientRect(), getBoundingRect(), getBounds(), getClassName() (+6 more)
 
 ### Community 20 - "AI Amigos runtime and security remediation plan"
-Cohesion: 0.08
-Nodes (25): AI Amigos runtime and security remediation plan, Authoritative references, Closure decision, Controlled staging sequence, Current response-header matrix, Cutover sequence, Evidence and confidence rules, Executive disposition (+17 more)
+Cohesion: 0.12
+Nodes (16): AI Amigos runtime and security remediation plan, Authoritative references, Closure decision, Current response-header matrix, Evidence and confidence rules, Executive disposition, Isolated staging: `https://remediation.aiamigos.org/`, Lifecycle policy after release (+8 more)
 
 ### Community 21 - "static-check.mjs"
 Cohesion: 0.08
@@ -384,7 +389,7 @@ Cohesion: 0.29
 Nodes (6): Acceptance boundary, AI Amigos staging content patch plan, Execution order, Local artifact validation, Safety rules, What it covers
 
 ### Community 53 - "FINDING_CLOSURE_STATUS_2026-08-13.md"
-Cohesion: 0.29
+Cohesion: 0.33
 Nodes (4): Evidence boundary, PHP 8.4.24 validation evidence — 2026-08-13, Results, Trusted runtime
 
 ### Community 54 - "manifest.json"
@@ -399,9 +404,9 @@ Nodes (11): dist, files, nextPaths, releaseId, releaseRoot, remotePath(), remote
 Cohesion: 0.70
 Nodes (4): consent_api_get_cookie(), consent_api_set_cookie(), wp_has_consent(), wp_set_consent()
 
-### Community 58 - "sitemap.xml.ts"
+### Community 58 - "resource-graph.mjs"
 Cohesion: 0.08
-Nodes (19): track(), templateBySlug, templateMarkdown(), templates, sources, toolBySlug, tools, categoryTrack (+11 more)
+Nodes (21): articleDir, failures, files, root, slugs, renderValue(), track(), buildResourceGraph() (+13 more)
 
 ### Community 59 - "PHP 8.4.24 validation evidence — v1.4.1 current source"
 Cohesion: 0.40
@@ -416,12 +421,12 @@ Cohesion: 0.07
 Nodes (30): balancedDiv(), contentRoot, dataRoot, decodeHtml(), dispositions, extractBody(), firstParagraph(), frontmatter() (+22 more)
 
 ### Community 87 - "BaseLayout.astro"
-Cohesion: 0.08
-Nodes (9): guideReviewQueue, site, topicBySlug, configured, articles, categories, actions, events (+1 more)
+Cohesion: 0.10
+Nodes (6): site, topicBySlug, configured, actions, events, articles
 
 ### Community 88 - "scripts"
-Cohesion: 0.06
-Nodes (34): ajv, ajv-formats, astro, @fontsource-variable/ibm-plex-sans, @fontsource-variable/source-serif-4, dependencies, ajv, ajv-formats (+26 more)
+Cohesion: 0.05
+Nodes (38): ajv, ajv-formats, astro, @electric-sql/pglite, @fontsource-variable/ibm-plex-sans, @fontsource-variable/source-serif-4, dependencies, ajv (+30 more)
 
 ### Community 89 - "prepare-hostinger-deploy.mjs"
 Cohesion: 0.22
@@ -435,25 +440,25 @@ Nodes (6): astro/tsconfigs/strict, compilerOptions, allowJs, checkJs, verbatimMo
 Cohesion: 0.11
 Nodes (16): articlePages, dist, examplePages, existingPaths, failures, htmlFiles, methodPages, participation (+8 more)
 
-### Community 171 - "resource-graph.mjs"
-Cohesion: 0.15
-Nodes (11): articleDir, failures, files, root, slugs, buildResourceGraph(), categoriesByTrack, evidencePathForMethod() (+3 more)
+### Community 171 - "202609050001_project_authorization_hardening.sql"
+Cohesion: 0.40
+Nodes (5): public.project_members, public.can_edit_project(), public.can_view_project(), public.is_project_owner(), public.projects
 
 ### Community 172 - "sync-feeds.mjs"
 Cohesion: 0.20
 Nodes (10): cachePath, enabled, items, now, prior, root, sources, sourcesPath (+2 more)
 
-### Community 173 - "AI Amigos editorial trust and publication governance plan"
-Cohesion: 0.22
-Nodes (9): AI Amigos editorial trust and publication governance plan, Automated versus human proof register, Decision boundary, Evidence packet required for any publication, Fail-closed publication policy, Finding coverage, Release sequence and closure accounting, Required roles and separation of duties (+1 more)
+### Community 173 - "Controlled staging sequence"
+Cohesion: 0.40
+Nodes (5): Controlled staging sequence, Gate 0 — capture a restorable baseline, Gate 1 — resolve theme and extension provenance, Gate 2 — migrate PHP without widening the blast radius, Gate 3 — move headers to the host/CDN plane
 
 ### Community 174 - "pilot-ready-release.mjs"
-Cohesion: 0.09
+Cohesion: 0.08
 Nodes (24): artifactPaths, files, manifest, outputDir, publicRoot, root, target, uniquePaths (+16 more)
 
 ### Community 175 - "required"
-Cohesion: 0.20
-Nodes (10): methodVersion, privacyStatus, schemaVersion, required, baseline, dataSensitivity, evaluationCases, experiments (+2 more)
+Cohesion: 0.12
+Nodes (16): required, type, decision, methodVersion, privacyStatus, schemaVersion, humanDecision, required (+8 more)
 
 ### Community 176 - "check-graph-artifact.mjs"
 Cohesion: 0.25
@@ -461,11 +466,11 @@ Nodes (7): endpointPairs, exactEdges, findings, graph, graphPath, nodeIds, root
 
 ### Community 177 - "PracticeWorkspace.astro"
 Cohesion: 0.06
-Nodes (57): blueprint(), blueprints, challenges, handleStage(), labels, newProjectForm, playbooks, projects (+49 more)
+Nodes (56): blueprint(), blueprints, challenges, handleStage(), labels, newProjectForm, playbooks, projects (+48 more)
 
 ### Community 178 - "243"
-Cohesion: 0.07
-Nodes (26): 243(), At(), Bf(), Bi(), _f(), Ge(), he(), Hr() (+18 more)
+Cohesion: 0.08
+Nodes (22): 243(), Bi(), _f(), Ge(), he(), Hr(), Ht(), ie() (+14 more)
 
 ### Community 179 - "evidence-platform.mjs"
 Cohesion: 0.13
@@ -487,17 +492,17 @@ Nodes (8): AI Amigos design system, Brand, Color, Components, Evidence rules, La
 Cohesion: 0.40
 Nodes (4): Answer, Outcome, Q: Where does the current AI Amigos outcome loop connect workspace, project, evaluation, outcome, playbook, fork, run report, and benchmark?, Source Nodes
 
-### Community 186 - "de"
-Cohesion: 0.19
-Nodes (18): de(), fa(), Gr(), Jo(), ki(), Le(), oe(), pi() (+10 more)
+### Community 186 - "St"
+Cohesion: 0.15
+Nodes (20): de(), eo(), er(), fr(), ji(), ki(), Ko(), mu() (+12 more)
 
-### Community 187 - "Do"
-Cohesion: 0.31
-Nodes (9): di(), Do(), ee(), ei(), eu(), gi(), qr(), uu() (+1 more)
+### Community 187 - "_e"
+Cohesion: 0.15
+Nodes (17): ce(), di(), Do(), _e(), ei(), ha(), hu(), Kr() (+9 more)
 
 ### Community 188 - "t"
-Cohesion: 0.09
-Nodes (39): ae(), ce(), Ct(), cu(), ea(), eo(), er(), Et() (+31 more)
+Cohesion: 0.13
+Nodes (22): ae(), At(), Ct(), cu(), Et(), fa(), Jo(), jt() (+14 more)
 
 ### Community 189 - "properties"
 Cohesion: 0.10
@@ -505,27 +510,27 @@ Nodes (21): type, type, minLength, type, type, format, type, const (+13 more)
 
 ### Community 190 - "ii"
 Cohesion: 0.16
-Nodes (17): be(), Bt(), _e(), fi(), go(), ii(), iu(), mi() (+9 more)
+Nodes (17): be(), Bf(), Bt(), fi(), go(), ii(), Le(), mi() (+9 more)
 
 ### Community 191 - "required"
 Cohesion: 0.14
 Nodes (14): issuer, limitations, methodVersion, privacyStatus, schemaVersion, required, claim, consentStatus (+6 more)
 
 ### Community 192 - "properties"
-Cohesion: 0.14
-Nodes (14): $ref, $ref, maxLength, minLength, type, pattern, type, properties (+6 more)
+Cohesion: 0.11
+Nodes (19): $ref, $ref, maxLength, minLength, type, pattern, type, enum (+11 more)
 
 ### Community 193 - "gu"
-Cohesion: 0.20
-Nodes (16): au(), Bu(), gu(), ha(), hi(), _i(), ir(), ku() (+8 more)
+Cohesion: 0.14
+Nodes (22): ai(), au(), Bu(), gi(), Gr(), gu(), hi(), _i() (+14 more)
 
 ### Community 194 - "type"
 Cohesion: 0.15
 Nodes (13): items, type, type, items, type, contradictoryEvidence, possibleMappings, strengths (+5 more)
 
 ### Community 195 - "properties"
-Cohesion: 0.15
-Nodes (13): type, type, type, properties, caseKey, failures, humanOverrides, results (+5 more)
+Cohesion: 0.12
+Nodes (17): type, items, minItems, type, type, type, properties, caseKey (+9 more)
 
 ### Community 196 - "202608250001_public_evidence_platform.sql"
 Cohesion: 0.15
@@ -536,8 +541,8 @@ Cohesion: 0.14
 Nodes (14): enum, properties, maxLength, minLength, type, decision, ownerRole, reason (+6 more)
 
 ### Community 198 - "required"
-Cohesion: 0.17
-Nodes (12): items, minItems, type, required, version, experiments, caseKey, criteria (+4 more)
+Cohesion: 0.11
+Nodes (20): items, minItems, type, items, minItems, type, required, type (+12 more)
 
 ### Community 199 - "tool-engine.mjs"
 Cohesion: 0.39
@@ -548,8 +553,8 @@ Cohesion: 0.18
 Nodes (11): version, enum, adoption, citation, contribution, implementation, judging, outcome (+3 more)
 
 ### Community 201 - "fu"
-Cohesion: 0.18
-Nodes (17): ai(), ar(), cr(), df(), du(), fu(), gf(), hf() (+9 more)
+Cohesion: 0.43
+Nodes (8): ar(), cr(), du(), fu(), or(), ou(), rr(), tu()
 
 ### Community 202 - "export-counsel-evidence.mjs"
 Cohesion: 0.18
@@ -563,13 +568,13 @@ Nodes (10): type, type, type, format, type, properties, claimId, exactClaim (+2 
 Cohesion: 0.20
 Nodes (10): required, claimId, counselStatus, exactClaim, factDate, independence, possibleMappings, primaryEvidence (+2 more)
 
-### Community 205 - "so"
-Cohesion: 0.80
-Nodes (5): so(), b(), d(), g(), y()
+### Community 205 - "df"
+Cohesion: 0.27
+Nodes (11): df(), gf(), pf(), pu(), so(), b(), d(), g() (+3 more)
 
-### Community 206 - "af"
-Cohesion: 0.39
-Nodes (9): af(), ef(), ff(), Ho(), je(), nf(), re(), rf() (+1 more)
+### Community 206 - "je"
+Cohesion: 0.36
+Nodes (9): ef(), ff(), hf(), Ho(), je(), nf(), re(), rf() (+1 more)
 
 ### Community 207 - "properties"
 Cohesion: 0.25
@@ -648,16 +653,16 @@ Cohesion: 0.12
 Nodes (16): additionalProperties, $id, decision, limitations, methodVersion, metric, schemaVersion, required (+8 more)
 
 ### Community 227 - "properties"
-Cohesion: 0.07
-Nodes (27): $defs, measurement, metric, value, additionalProperties, properties, required, type (+19 more)
+Cohesion: 0.12
+Nodes (16): properties, type, metric, sampleSize, unit, value, windowEnd, windowStart (+8 more)
 
 ### Community 228 - "accessibility-evidence.mjs"
 Cohesion: 0.23
 Nodes (12): violationCodes(), disclosure(), mutateAccessibilityEvidence(), passingAccessibilityEvidence(), target(), ACCESSIBILITY_DEFAULTS, ACCESSIBILITY_EVIDENCE_SCHEMA_VERSION, accessibilityEvidenceViolations() (+4 more)
 
-### Community 229 - "required"
-Cohesion: 0.33
-Nodes (6): required, type, decision, humanDecision, ownerRole, reason
+### Community 229 - "Production-safe deployment boundary"
+Cohesion: 0.50
+Nodes (4): Cutover sequence, Hard constraints, Production-safe deployment boundary, Rollback sequence
 
 ### Community 230 - "self-test.mjs"
 Cohesion: 0.23
@@ -668,7 +673,7 @@ Cohesion: 0.50
 Nodes (4): enum, consentStatus, granted, not-applicable
 
 ### Community 232 - "browser-probe.mjs"
-Cohesion: 0.26
+Cohesion: 0.27
 Nodes (9): browserCandidates(), browserProbeFailure(), CdpClient, delay(), exceptionText(), exists(), launchBrowser(), normalBrowserUserAgent() (+1 more)
 
 ### Community 233 - "properties"
@@ -687,9 +692,9 @@ Nodes (11): analyzeHtml(), decodeHtml(), enclosed(), metaValue(), metaValues(), 
 Cohesion: 0.17
 Nodes (12): additionalProperties, properties, required, type, decision, publicationEligible, suppressionReasons, const (+4 more)
 
-### Community 237 - "items"
-Cohesion: 0.17
-Nodes (12): items, minItems, type, items, minItems, type, type, items (+4 more)
+### Community 237 - "af"
+Cohesion: 0.27
+Nodes (11): af(), ea(), ee(), eu(), fe(), Gt(), iu(), ju() (+3 more)
 
 ### Community 238 - "content-gates.mjs"
 Cohesion: 0.29
@@ -724,8 +729,8 @@ Cohesion: 0.33
 Nodes (6): type, items, minItems, type, limitations, items
 
 ### Community 246 - "workflow-evidence-record.schema.json"
-Cohesion: 0.33
-Nodes (5): additionalProperties, $id, $schema, title, type
+Cohesion: 0.20
+Nodes (9): additionalProperties, $defs, measurement, $id, additionalProperties, type, $schema, title (+1 more)
 
 ### Community 247 - "AI Amigos governed-pilot checklist v0.1.1"
 Cohesion: 0.40
@@ -735,14 +740,30 @@ Nodes (4): After the pilot, AI Amigos governed-pilot checklist v0.1.1, Before th
 Cohesion: 0.40
 Nodes (4): AI Amigos external method-review checklist v0.1.1, Decision, Independence boundary, Reviewer record
 
-### Community 249 - "enum"
+### Community 249 - "required"
+Cohesion: 0.29
+Nodes (7): metric, value, required, sampleSize, unit, windowEnd, windowStart
+
+### Community 250 - "[...slug].astro"
+Cohesion: 0.10
+Nodes (13): guideReviewQueue, sources, toolBySlug, articles, categories, categoryTrack, defaultTemplates, defaultTools (+5 more)
+
+### Community 251 - "supabase-migrations.integration.test.mjs"
+Cohesion: 0.38
+Nodes (6): asRole(), migrationDirectory, migrationFiles, repositoryRoot, resetRequestIdentity(), setRequestIdentity()
+
+### Community 252 - "Migration packet — 20260825 public evidence platform"
 Cohesion: 0.40
-Nodes (5): enum, privacyStatus, failed, not-run, passed
+Nodes (4): CLASSIFICATION, Migration packet — 20260825 public evidence platform, PLAN, RUNBOOK
+
+### Community 253 - "Migration packet — 20260905 project authorization hardening"
+Cohesion: 0.40
+Nodes (4): CLASSIFICATION, Migration packet — 20260905 project authorization hardening, PLAN, RUNBOOK
 
 ## Knowledge Gaps
-- **877 isolated node(s):** `name`, `version`, `private`, `type`, `dev` (+872 more)
-  These have ≤1 connection - possible missing edges or undocumented components.
-- **14 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **889 isolated node(s):** `name`, `version`, `private`, `type`, `dev` (+884 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 1376 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **15 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Work-memory lessons
 
@@ -752,14 +773,14 @@ Nodes (5): enum, privacyStatus, failed, not-run, passed
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `243()` connect `243` to `gu`, `jquery.min-01a0307c4b.js`, `fu`, `so`, `af`, `de`, `Do`, `t`, `ii`?**
+- **Why does `243()` connect `243` to `gu`, `jquery.min-01a0307c4b.js`, `fu`, `af`, `df`, `je`, `St`, `_e`, `t`, `ii`?**
   _High betweenness centrality (0.021) - this node is a cross-community bridge._
-- **Why does `Ri()` connect `243` to `gu`, `Owl`?**
+- **Why does `Ri()` connect `gu` to `Owl`, `243`, `t`?**
   _High betweenness centrality (0.011) - this node is a cross-community bridge._
 - **Are the 17 inferred relationships involving `243()` (e.g. with `be()` and `de()`) actually correct?**
   _`243()` has 17 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `name`, `version`, `private` to the rest of the system?**
-  _877 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _889 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Owl` be split into smaller, more focused modules?**
   _Cohesion score 0.06288568909785483 - nodes in this community are weakly interconnected._
 - **Should `jquery.min-01a0307c4b.js` be split into smaller, more focused modules?**

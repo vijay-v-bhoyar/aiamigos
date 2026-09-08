@@ -1,6 +1,9 @@
 -- Public evidence platform v1. Apply only after human review in a verified development project.
 -- Public reads are fail-closed. Private counsel strategy never belongs in these tables.
 
+set local lock_timeout = '2s';
+set local statement_timeout = '60s';
+
 create table public.contributions (
   id uuid primary key default gen_random_uuid(),
   slug text not null unique check (slug ~ '^[a-z0-9]+(?:-[a-z0-9]+)*$'),
@@ -98,7 +101,9 @@ create table public.implementations (
   check ((publication_status='approved' and privacy_status='passed' and reviewed_by is not null and reviewed_at is not null) or publication_status<>'approved')
 );
 
-create table public.outcome_measurements (
+-- Public, editorially reviewed measurements are intentionally separate from
+-- the private project outcome_measurements table created by the Practice OS.
+create table public.verified_outcome_measurements (
   id uuid primary key default gen_random_uuid(),
   implementation_id uuid not null references public.implementations(id) on delete cascade,
   metric text not null,
@@ -307,7 +312,7 @@ alter table public.prior_art_references enable row level security;
 alter table public.adopters enable row level security;
 alter table public.adoption_attestations enable row level security;
 alter table public.implementations enable row level security;
-alter table public.outcome_measurements enable row level security;
+alter table public.verified_outcome_measurements enable row level security;
 alter table public.external_evidence enable row level security;
 alter table public.independent_reviews enable row level security;
 alter table public.reviewer_conflicts enable row level security;
@@ -321,9 +326,9 @@ alter table public.evidence_links enable row level security;
 alter table public.consent_records enable row level security;
 alter table public.evidence_snapshots enable row level security;
 
-revoke all on public.contributions, public.contribution_versions, public.prior_art_references, public.adopters, public.adoption_attestations, public.implementations, public.outcome_measurements, public.external_evidence, public.independent_reviews, public.reviewer_conflicts, public.citations, public.publications, public.recognition_events, public.judging_events, public.endeavor_milestones, public.evidence_claims, public.evidence_links, public.consent_records, public.evidence_snapshots from anon, authenticated;
-grant select on public.contributions, public.contribution_versions, public.prior_art_references, public.adopters, public.adoption_attestations, public.implementations, public.outcome_measurements, public.external_evidence, public.independent_reviews, public.reviewer_conflicts, public.citations, public.publications, public.recognition_events, public.judging_events, public.endeavor_milestones, public.evidence_snapshots to anon, authenticated;
-grant select, insert, update, delete on public.contributions, public.contribution_versions, public.prior_art_references, public.adopters, public.adoption_attestations, public.implementations, public.outcome_measurements, public.external_evidence, public.independent_reviews, public.reviewer_conflicts, public.citations, public.publications, public.recognition_events, public.judging_events, public.endeavor_milestones, public.evidence_claims, public.evidence_links, public.consent_records, public.evidence_snapshots to authenticated;
+revoke all on public.contributions, public.contribution_versions, public.prior_art_references, public.adopters, public.adoption_attestations, public.implementations, public.verified_outcome_measurements, public.external_evidence, public.independent_reviews, public.reviewer_conflicts, public.citations, public.publications, public.recognition_events, public.judging_events, public.endeavor_milestones, public.evidence_claims, public.evidence_links, public.consent_records, public.evidence_snapshots from anon, authenticated;
+grant select on public.contributions, public.contribution_versions, public.prior_art_references, public.adopters, public.adoption_attestations, public.implementations, public.verified_outcome_measurements, public.external_evidence, public.independent_reviews, public.reviewer_conflicts, public.citations, public.publications, public.recognition_events, public.judging_events, public.endeavor_milestones, public.evidence_snapshots to anon, authenticated;
+grant select, insert, update, delete on public.contributions, public.contribution_versions, public.prior_art_references, public.adopters, public.adoption_attestations, public.implementations, public.verified_outcome_measurements, public.external_evidence, public.independent_reviews, public.reviewer_conflicts, public.citations, public.publications, public.recognition_events, public.judging_events, public.endeavor_milestones, public.evidence_claims, public.evidence_links, public.consent_records, public.evidence_snapshots to authenticated;
 
 create policy contributions_public_read on public.contributions for select to anon, authenticated using (status='published');
 create policy contributions_editorial_write on public.contributions for all to authenticated using (owner_id=auth.uid() or public.is_reviewer()) with check (owner_id=auth.uid() or public.is_reviewer());
@@ -337,8 +342,8 @@ create policy adoption_attestations_public_read on public.adoption_attestations 
 create policy adoption_attestations_reviewer_write on public.adoption_attestations for all to authenticated using (public.is_reviewer()) with check (public.is_reviewer());
 create policy implementations_public_read on public.implementations for select to anon, authenticated using (publication_status='approved' and privacy_status='passed');
 create policy implementations_reviewer_write on public.implementations for all to authenticated using (public.is_reviewer()) with check (public.is_reviewer());
-create policy outcomes_public_read on public.outcome_measurements for select to anon, authenticated using (review_status='approved' and privacy_status='passed' and exists (select 1 from public.implementations i where i.id=implementation_id and i.publication_status='approved'));
-create policy outcomes_reviewer_write on public.outcome_measurements for all to authenticated using (public.is_reviewer()) with check (public.is_reviewer());
+create policy verified_outcomes_public_read on public.verified_outcome_measurements for select to anon, authenticated using (review_status='approved' and privacy_status='passed' and exists (select 1 from public.implementations i where i.id=implementation_id and i.publication_status='approved'));
+create policy verified_outcomes_reviewer_write on public.verified_outcome_measurements for all to authenticated using (public.is_reviewer()) with check (public.is_reviewer());
 create policy external_evidence_public_read on public.external_evidence for select to anon, authenticated using (review_status='approved' and permission_status in ('not-required','granted'));
 create policy external_evidence_reviewer_write on public.external_evidence for all to authenticated using (public.is_reviewer()) with check (public.is_reviewer());
 create policy independent_reviews_public_read on public.independent_reviews for select to anon, authenticated using (publication_status='approved');
@@ -373,7 +378,7 @@ create trigger evidence_claims_updated_at before update on public.evidence_claim
 create index contribution_versions_contribution on public.contribution_versions(contribution_id, released_at desc);
 create index adoption_attestations_version on public.adoption_attestations(contribution_version_id, adopted_at desc) where review_status='approved';
 create index implementations_task on public.implementations(task_slug, started_at desc) where publication_status='approved';
-create index outcome_measurements_implementation on public.outcome_measurements(implementation_id, created_at desc) where review_status='approved';
+create index verified_outcome_measurements_implementation on public.verified_outcome_measurements(implementation_id, created_at desc) where review_status='approved';
 create index external_evidence_subject on public.external_evidence(subject_type, subject_id, observed_at desc);
 create index independent_reviews_subject on public.independent_reviews(subject_type, subject_id, reviewed_at desc) where publication_status='approved';
 create index citations_version on public.citations(contribution_version_id, published_at desc) where verification_status='verified';

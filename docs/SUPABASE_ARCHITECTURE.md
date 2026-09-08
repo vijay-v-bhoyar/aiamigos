@@ -18,7 +18,9 @@ This document is the Phase 1 architecture boundary for the AI Practice OS. The r
 
 - The browser receives only the Supabase publishable key.
 - `service_role` is restricted to Edge Functions and migrations.
-- Private project, artifact, experiment, evaluation, and outcome rows require `auth.uid()` ownership.
+- Project membership is owner-controlled. Members can view project records; editors can create project records under their own identity; viewers cannot write; outsiders cannot attach rows to a known project ID.
+- Project access is enforced by `is_project_owner`, `can_view_project`, and `can_edit_project` security-definer helpers with an empty search path and authenticated-only execution.
+- Private project outcomes live in `public.outcome_measurements`; reviewed, sanitized public evidence lives in the separate `public.verified_outcome_measurements` table.
 - Anonymous readers can see only approved `public_playbooks` snapshots.
 - Provider credentials are accepted only by `run-model`, never stored, never logged, and never returned.
 - Public playbooks contain sanitized derived snapshots, not private source rows.
@@ -26,8 +28,12 @@ This document is the Phase 1 architecture boundary for the AI Practice OS. The r
 
 ## Human gate before remote application
 
+Run `npm run test:migrations` first. This executes every ordered migration in a PostgreSQL-compatible engine, verifies the private/public outcome split, and proves anonymous and ordinary authenticated users cannot publish verified outcomes. It complements, but does not replace, a Supabase development-project reset and advisor run.
+
 1. Provision development, staging, and production Supabase projects.
 2. Review the migration diff and run it against development only.
 3. Run cross-user RLS tests and Supabase security/performance advisors.
 4. Review Edge Function logs to prove credentials and content are not emitted.
 5. Promote the migration and functions through staging before production.
+
+Migration packets are tracked under `docs/migrations/`. Production remains fail-closed until each packet has current development and staging evidence plus a verified backup/restore point.

@@ -1,6 +1,9 @@
 -- Verified practice network extension.
 -- Apply to a reviewed development project first. Production activation remains fail-closed.
 
+set local lock_timeout = '2s';
+set local statement_timeout = '60s';
+
 create table public.organizations (
   id uuid primary key default gen_random_uuid(),
   owner_id uuid not null references auth.users(id) on delete cascade,

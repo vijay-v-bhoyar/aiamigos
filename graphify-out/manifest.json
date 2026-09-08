@@ -1278,9 +1278,9 @@
     "semantic_hash": ""
   },
   "package.json": {
-    "mtime": 1787665274.8815854,
-    "seen": 1787665363.2519443,
-    "ast_hash": "d8c71b2bb8c0ffb44ef0df4297b53835",
+    "mtime": 1788612818.4179287,
+    "seen": 1788612832.4187486,
+    "ast_hash": "4fc1cbadbce197328bb4c89852d2669e",
     "semantic_hash": ""
   },
   "scripts/import-snapshot.mjs": {
@@ -2088,9 +2088,9 @@
     "semantic_hash": ""
   },
   "supabase/migrations/202608230001_practice_os.sql": {
-    "mtime": 1787488218.6728897,
-    "seen": 1787639318.2563658,
-    "ast_hash": "a786aa7b98be616659702e00d1d60267",
+    "mtime": 1788612620.5949335,
+    "seen": 1788612637.941251,
+    "ast_hash": "e2b5f548be3fb2a95f8c1dbcaeea69fa",
     "semantic_hash": ""
   },
   "tests/practice-os.test.mjs": {
@@ -2100,9 +2100,9 @@
     "semantic_hash": ""
   },
   "docs/SUPABASE_ARCHITECTURE.md": {
-    "mtime": 1787488230.0851707,
-    "seen": 1787639263.0297723,
-    "ast_hash": "ff22e8cf6e9a9f9b105f13539a3a6a9c",
+    "mtime": 1788613111.623932,
+    "seen": 1788613129.5095546,
+    "ast_hash": "00a747c28e12b4e125a7b1c136253091",
     "semantic_hash": ""
   },
   "src/components/BrandMark.astro": {
@@ -2148,9 +2148,9 @@
     "semantic_hash": ""
   },
   "supabase/migrations/202608240001_verified_practice_network.sql": {
-    "mtime": 1787582908.6211941,
-    "seen": 1787639318.256369,
-    "ast_hash": "2c7e516e19a95cf6f11293eb3ffefccd",
+    "mtime": 1788612621.8570082,
+    "seen": 1788612637.9412541,
+    "ast_hash": "03e5ad2407d8383106e93b228c9155d3",
     "semantic_hash": ""
   },
   "tests/outcome-network.test.mjs": {
@@ -2706,9 +2706,9 @@
     "semantic_hash": ""
   },
   "tests/evidence-platform.test.mjs": {
-    "mtime": 1787639529.5341885,
-    "seen": 1787639615.0223322,
-    "ast_hash": "4daaf1253c89dcc2803c713c27e83b7e",
+    "mtime": 1788612817.2377715,
+    "seen": 1788612832.4407368,
+    "ast_hash": "32e03457c1b4fa4f14665c154b1889b4",
     "semantic_hash": ""
   },
   "docs/COUNSEL_EVIDENCE_WORKFLOW.md": {
@@ -2718,9 +2718,9 @@
     "semantic_hash": ""
   },
   "supabase/migrations/202608250001_public_evidence_platform.sql": {
-    "mtime": 1787639299.5800567,
-    "seen": 1787639318.256371,
-    "ast_hash": "ad79427d8c311e68b882a537ac00d456",
+    "mtime": 1788612588.6260674,
+    "seen": 1788612637.9412556,
+    "ast_hash": "fb6c47c13afe6796d33b904336210f52",
     "semantic_hash": ""
   },
   "public/examples/benchmark-method.synthetic.json": {
@@ -2853,6 +2853,36 @@
     "mtime": 1788119486.1545155,
     "seen": 1788120042.1842017,
     "ast_hash": "7bb268ec0bdaec159fde62672197ba76",
+    "semantic_hash": ""
+  },
+  "tests/supabase-migrations.integration.test.mjs": {
+    "mtime": 1788613065.3605895,
+    "seen": 1788613081.9676514,
+    "ast_hash": "98475b36eb96cb33e76dcc87928bf5b9",
+    "semantic_hash": ""
+  },
+  "docs/migrations/20260825-public-evidence-platform.md": {
+    "mtime": 1788612860.1451619,
+    "seen": 1788612874.5303628,
+    "ast_hash": "dea6c9f718a2855851aa20cd8e0b5730",
+    "semantic_hash": ""
+  },
+  "supabase/migrations/202609050001_project_authorization_hardening.sql": {
+    "mtime": 1788613064.1050742,
+    "seen": 1788613081.9670727,
+    "ast_hash": "eab9bd808b9ad28ae1067a117ec73c41",
+    "semantic_hash": ""
+  },
+  "docs/DECISIONS.md": {
+    "mtime": 1788613112.593191,
+    "seen": 1788613129.5095515,
+    "ast_hash": "747f130347c394c9a9c0578de39dcaf5",
+    "semantic_hash": ""
+  },
+  "docs/migrations/20260905-project-authorization-hardening.md": {
+    "mtime": 1788613113.7559536,
+    "seen": 1788613129.509642,
+    "ast_hash": "7a544fec5801479e27651f8ecc1a783a",
     "semantic_hash": ""
   }
 }

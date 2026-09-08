@@ -1,6 +1,9 @@
 -- AI Amigos Practice OS foundation.
 -- Apply only to a reviewed Supabase development project first.
 
+set local lock_timeout = '2s';
+set local statement_timeout = '60s';
+
 create extension if not exists pgcrypto;
 
 create or replace function public.set_updated_at()
